@@ -1,4 +1,4 @@
-package thread;
+package thread.test;
 
 public class MyThread extends Thread {
 	Sync s = null;
