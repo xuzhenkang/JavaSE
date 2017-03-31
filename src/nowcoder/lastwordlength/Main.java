@@ -19,7 +19,7 @@ import java.util.Scanner;
 <h5><b>Êä³öÀı×Ó:</b></h5>
 <pre>5</pre>
 </div>
- * @author kang
+ * @author Kang
  *
  */
 public class Main {

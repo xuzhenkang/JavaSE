@@ -17,6 +17,7 @@ public class Main1 {
             String s=scanner.nextLine();
             split(s);
         }
+        scanner.close();
     }
      
     public static void split(String s){

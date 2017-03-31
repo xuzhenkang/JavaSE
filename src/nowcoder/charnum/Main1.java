@@ -30,5 +30,6 @@ public class Main1 {
 		char c = s.next().charAt(0);
 		int i = getCount(str, c);
 		System.out.println(i);
+		s.close();
 	}
 }

@@ -41,6 +41,7 @@ public class TestDateFormat {
 		System.out.println(sdf.format(d));	 			//88-6-6 下午9:31
 	}
 
+	@SuppressWarnings("unused")
 	public static void demo1() {
 		//DateFormat df = new DateFormat();				//DateFormat是抽象类,不允许实例化
 		//DateFormat df1 = new SimpleDateFormat();

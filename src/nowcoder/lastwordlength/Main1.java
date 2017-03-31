@@ -16,6 +16,7 @@ public class Main1 {
         while(input.hasNextLine()){
             s=input.nextLine();
             System.out.println(s.length()-1-s.lastIndexOf(" "));
-        }    
+        } 
+        input.close();
     }
 }

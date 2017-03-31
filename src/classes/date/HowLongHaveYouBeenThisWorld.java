@@ -20,6 +20,7 @@ public class HowLongHaveYouBeenThisWorld {
 		System.out.println((thisDayTime - myBirthdayTime) / (1000*60*60*24) + "天");
 	}
 
+	@SuppressWarnings("unused")
 	private static void method1() throws ParseException {
 		// 生日字符串和今天字符串存在String类型变量中
 		String birthday = "1992年5月13日";

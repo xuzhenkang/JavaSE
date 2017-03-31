@@ -19,6 +19,7 @@ public class Main {
 				}
 			}
 		}
+		cin.close();
 		int min = r[0];
 		for (int j = 1; j < 5; j++) {
 			min = min > r[j] ? r[j] : min;

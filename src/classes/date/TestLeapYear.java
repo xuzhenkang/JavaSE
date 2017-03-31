@@ -25,6 +25,7 @@ public class TestLeapYear {
 		int year = Integer.parseInt(line);			//将数字字符串转换成数字
 		boolean b = getYear(year);
 		System.out.println(b);
+		sc.close();
 	}
 
 	private static boolean getYear(int year) {

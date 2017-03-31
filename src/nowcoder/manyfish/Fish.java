@@ -47,9 +47,9 @@ public class Fish {
 			firstLine = cin.nextLine().split(" ");
 			minSize = Integer.parseInt(firstLine[0]);
 			maxSize = Integer.parseInt(firstLine[1]);
-			if (minSize < 1 || minSize > 1000 || maxSize < 1 || maxSize > 1000 || minSize > maxSize) return;
+			if (minSize < 1 || minSize > 1000 || maxSize < 1 || maxSize > 1000 || minSize > maxSize) {cin.close(); return;}
 			n = Integer.parseInt(cin.nextLine());
-			if (n < 1 || n > 50) return;
+			if (n < 1 || n > 50) { cin.close(); return;}
 			thirdLine = cin.nextLine().split(" ");
 			fishSize = new int[n];
 			for (int i = 0; i < fishSize.length; i++) {
@@ -71,5 +71,6 @@ public class Fish {
 			}
 			System.out.println(result);
 		}
+		cin.close();
 	}
 }

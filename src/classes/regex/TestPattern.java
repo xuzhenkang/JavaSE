@@ -15,6 +15,7 @@ public class TestPattern {
 	}
 
 	// Pattern 的实用方法，与业务无关
+	@SuppressWarnings("unused")
 	private static void howToUsePattern() {
 		Pattern p = Pattern.compile("x*y");
 		Matcher m = p.matcher("xxxxxxxy");

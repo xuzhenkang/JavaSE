@@ -9,6 +9,7 @@ public class B {
 	static {
 		System.out.println("¾²Ì¬¿é");
 	}
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		B t = new B();
 	}
