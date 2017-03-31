@@ -26,13 +26,14 @@ A</pre>
  */
 public class Main {
 	public static void main(String[] args) {
-		Scanner cin = new Scanner(System.in);
 		int n = 0; 
+		Scanner cin = new Scanner(System.in);
 		while (cin.hasNext()) {
 			n = 0;
 			String firstLine = cin.nextLine();
 			String secondLine = cin.nextLine();
 			if (secondLine.length() != 1) {
+				cin.close();
 				return;
 			} else {
 				for (int i = 0; i < firstLine.length(); i++) {
