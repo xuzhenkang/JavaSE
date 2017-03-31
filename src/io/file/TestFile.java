@@ -22,6 +22,7 @@ public class TestFile {
 		
 	}
 
+	@SuppressWarnings("unused")
 	private static void method2() {
 		File f = new File("D:/");
 		File[] listFiles = f.listFiles();
@@ -32,6 +33,7 @@ public class TestFile {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static void method1() {
 		File f = new File("D:/");
 		String[] list = f.list();
@@ -42,6 +44,7 @@ public class TestFile {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static void demo1() {
 		File f = new File("C:/");
 		for (String filename : f.list()) {
