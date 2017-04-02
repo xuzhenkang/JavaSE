@@ -2,7 +2,7 @@ package javase.thread.synchronized_keyword;
 
 public class Demo5_DeadLock {
 
-	/**
+	/** 同步代码块不要嵌套，否则容易产生死锁。
 	 * @param args
 	 */
 	private static String s1 = "筷子左";
