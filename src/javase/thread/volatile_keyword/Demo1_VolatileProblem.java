@@ -1,7 +1,5 @@
 package javase.thread.volatile_keyword;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
 /**
  * <h4>volatile关键字的两层语义</h4>
  * <p>一旦一个共享变量（类的成员变量、类的静态成员变量）被volatile修饰之后，那么就具备了两层语义：</p>
