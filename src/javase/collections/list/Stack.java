@@ -27,3 +27,4 @@ public class Stack {
 		return list.isEmpty();
 	}
 }
+
