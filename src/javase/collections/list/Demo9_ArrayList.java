@@ -2,7 +2,7 @@ package javase.collections.list;
 
 import java.util.ArrayList;
 
-public class Demo9_ArrayListArrayList {
+public class Demo9_ArrayList {
 
 	/**
 	 * * A:°¸ÀýÑÝÊ¾
