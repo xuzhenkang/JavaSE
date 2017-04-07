@@ -11,6 +11,10 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 
 public class MainFrame extends JFrame {
 	private static final long serialVersionUID = 1L;
@@ -30,12 +34,13 @@ public class MainFrame extends JFrame {
 	private JLabel mainLabel; // 左侧面板中的右侧面板的北侧标签面板中的标签组件
 	private JLabel rightLabel; // 右侧面板中的北侧面板中的标签组件
 	private JButton searchNextButton; // 右侧面板中的北侧面板中的按钮组件
-	private JTextArea jTextAreaInfo; // 右侧面板中的中间Scroll面板中的TextArea组件
+	private JTextArea jTextArea; // 右侧面板中的中间Scroll面板中的TextArea组件
 	private Object[][] leftData; // 左侧面板中的左侧面板中表格的数据
 	private Object[][] mainData; // 左侧面板中的右侧面板中表格的数据
 	// 表头
 	private String[] leftColumnNames = { "关键字", "文献数" }; // 左侧面板中的左侧面板中表格的表头
 	private String[] mainColumnNames = { "中医文献名", "作者", "朝代", "年份" }; // 左侧面板中的右侧面板中表格的表头
+	
 	
 	public MainFrame() {
 		// 初始化组件
@@ -61,7 +66,9 @@ public class MainFrame extends JFrame {
 		rightNorthPanel.add(searchNextButton);
 
 		rightPanel.add(rightNorthPanel, BorderLayout.NORTH);
-		rightScrollPane = new JScrollPane(jTextAreaInfo);
+		jTextArea.setEditable(false); // 设置不可编辑
+		jTextArea.setText("asdfasdfasdf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\nf\n\nadsf\nasdf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\ndf\n");
+		rightScrollPane = new JScrollPane(jTextArea);
 		rightPanel.add(rightScrollPane, BorderLayout.CENTER);
 	}
 
@@ -69,7 +76,15 @@ public class MainFrame extends JFrame {
 		// 左侧Panel
 		leftLabelPanel.add(leftLabel);
 		lleftPanel.add(leftLabelPanel, BorderLayout.NORTH);
-		leftTable = new JTable(leftData, leftColumnNames);
+		leftTable = new JTable(leftData, leftColumnNames) {
+			private static final long serialVersionUID = 1L;
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
+		leftTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);// 仅可以单选
+		
 		lLeftScrollPane = new JScrollPane(leftTable, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
 				JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		lleftPanel.add(lLeftScrollPane, BorderLayout.CENTER);
@@ -78,10 +93,17 @@ public class MainFrame extends JFrame {
 		// 中间Panel
 		mainLabelPanel.add(mainLabel);
 		lMainPanel.add(mainLabelPanel, BorderLayout.NORTH);
-		mainTable = new JTable(mainData, mainColumnNames);
+		mainTable = new JTable(mainData, mainColumnNames){
+			private static final long serialVersionUID = 1L;
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
+		mainTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION); // 仅可以单选
 		lMainScrollPane = new JScrollPane(mainTable);
 		lMainPanel.add(lMainScrollPane, BorderLayout.CENTER);
-		lMainPanel.setPreferredSize(new Dimension(260, 500));
+		lMainPanel.setPreferredSize(new Dimension(267, 500));
 		
 		// 设定布局
 		leftPanel.add(lleftPanel, BorderLayout.WEST);
@@ -94,7 +116,7 @@ public class MainFrame extends JFrame {
 		lleftPanel = new JPanel(new BorderLayout());
 		rightPanel = new JPanel(new BorderLayout());
 		rightNorthPanel = new JPanel(new GridLayout(1,3));
-		jTextAreaInfo = new JTextArea();
+		jTextArea = new JTextArea();
 		leftLabel = new JLabel("相关关键词");
 		mainLabel = new JLabel("中医文献");
 		rightLabel = new JLabel("文献文本");
@@ -112,10 +134,10 @@ public class MainFrame extends JFrame {
 		}
 		mainData = new Object[50][4];
 		for (int i = 0; i < mainData.length; i++) {
-			mainData[i][0] = "Kathy" + i + 0;
-			mainData[i][1] = "Smith" + i + 1;
-			mainData[i][2] = "John" + i + 2;
-			mainData[i][3] = "Doe" + i + 3;
+			mainData[i][0] = "本草纲目";
+			mainData[i][1] = "李时珍";
+			mainData[i][2] = "明";
+			mainData[i][3] = "1518年";
 		}
 	}
 
