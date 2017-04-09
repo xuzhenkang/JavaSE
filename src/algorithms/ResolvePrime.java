@@ -43,9 +43,9 @@ public class ResolvePrime {
 	}
 
 	public static void main(String[] args) {
-        System.out.println(resolvePrime(90));  
-        System.out.println(resolvePrime(134));  
-        System.out.println(resolvePrime(81));
-        System.out.println(resolvePrime(2));
+		System.out.println(resolvePrime(90));
+		System.out.println(resolvePrime(134));
+		System.out.println(resolvePrime(81));
+		System.out.println(resolvePrime(2));
 	}
 }
