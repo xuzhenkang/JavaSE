@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		HashSet<Integer> set = new HashSet<>();
+		@SuppressWarnings("unused")
 		int n = 0;
 		String s = "";
 		Scanner cin = new Scanner(System.in);
