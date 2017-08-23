@@ -1,5 +1,10 @@
 package datastructure.tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+
 public class BinaryTree {
 	private int pointer = 0;
 
@@ -60,52 +65,88 @@ public class BinaryTree {
 		}
 	}
 
-	public void preOrder(TreeNode root) {
+	public void preOrderTravel(TreeNode root) {
 		if (root == null) {
 			System.out.println("二叉树为空，无法遍历！");
 			return;
 		}
 		System.out.print(root.val);
 		if (root.left != null) {
-			preOrder(root.left);
+			preOrderTravel(root.left);
 		} else
 			System.out.print("#");
 		if (root.right != null) {
-			preOrder(root.right);
+			preOrderTravel(root.right);
 		} else
 			System.out.print("#");
 	}
 
-	public void inOrder(TreeNode root) {
+	/**
+	 * 非递归先序遍历二叉树
+	 */
+	public void preorderTraversal(TreeNode root) {
+		// List<Integer> resultList=new ArrayList<>();
+		Stack<TreeNode> treeStack = new Stack<>();
+		if (root == null) // 如果为空树则返回
+			return;
+		treeStack.push(root);
+		while (!treeStack.isEmpty()) {
+			TreeNode tempNode = treeStack.pop();
+			if (tempNode != null) {
+				System.out.print(tempNode.val);// 访问根节点
+				treeStack.push(tempNode.right); // 入栈右孩子
+				treeStack.push(tempNode.left);// 入栈左孩子
+			}
+		}
+		// return resultList;
+	}
+
+	public void inOrderTravel(TreeNode root) {
 		if (root == null) {
 			System.out.println("二叉树为空，无法遍历！");
 			return;
 		}
 		if (root.left != null) {
-			inOrder(root.left);
+			inOrderTravel(root.left);
 		} else
 			System.out.print("#");
 		System.out.print(root.val);
 		if (root.right != null) {
-			inOrder(root.right);
+			inOrderTravel(root.right);
 		} else
 			System.out.print("#");
 	}
 
-	public void postOrder(TreeNode root) {
+	public void postOrderTravel(TreeNode root) {
 		if (root == null) {
 			System.out.println("二叉树为空，无法遍历！");
 			return;
 		}
 		if (root.left != null) {
-			postOrder(root.left);
+			postOrderTravel(root.left);
 		} else
 			System.out.print("#");
 		if (root.right != null) {
-			postOrder(root.right);
+			postOrderTravel(root.right);
 		} else
 			System.out.print("#");
 		System.out.print(root.val);
+	}
+
+	public void levelTravel(TreeNode root) {
+		LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
+		TreeNode current;
+		queue.offer(root);// 将根节点入队
+		while (!queue.isEmpty()) {
+			current = queue.poll();// 出队队头元素并访问
+			System.out.print(current.val);
+			if (current.left != null) { // 如果当前节点的左节点不为空入队
+				queue.offer(current.left);
+			}
+			if (current.right != null) {// 如果当前节点的右节点不为空入队
+				queue.offer(current.right);
+			}
+		}
 	}
 
 	public static void main(String[] args) {
@@ -115,10 +156,12 @@ public class BinaryTree {
 		String postStr = "##4##52##6##731";
 		TreeNode root = bt.create(preStr, "pre");
 		System.out.println("先序遍历");
-		bt.preOrder(root);
+		bt.preOrderTravel(root);
 		System.out.println("\n中序遍历");
-		bt.inOrder(root);
+		bt.inOrderTravel(root);
 		System.out.println("\n后序遍历");
-		bt.postOrder(root);
+		bt.postOrderTravel(root);
+		System.out.println("\n层次遍历");
+		bt.levelTravel(root);
 	}
 }
