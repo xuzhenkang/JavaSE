@@ -60,7 +60,6 @@ public class BinarySortTree {
 	}
 
 	public static void main(String[] args) {
-		String str = "1 2 4 # # 5 # # 3 6 # # 7 # #";
 		int[] a = { 2, 4, 12, 45, 21, 6, 111 };
 		BinarySortTree bTree = new BinarySortTree();
 		for (int i = 0; i < a.length; i++) {
