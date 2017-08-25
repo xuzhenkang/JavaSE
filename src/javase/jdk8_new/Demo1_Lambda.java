@@ -8,12 +8,13 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class Demo1_Lambda {
-	
+
 	public static void main(String[] args) {
 		/*
 		 * 例1 用lambda表达式实现Runnable
@@ -49,11 +50,10 @@ public class Demo1_Lambda {
 				System.out.println("Event handing lambda expression is boring.");
 			}
 		});
-		//Java8方式
+		// Java8方式
 		show2.addActionListener((e) -> {
 			System.out.println("Light, Camera, Action!! Lambda expression Rocks.");
 		});
-		
 
 		/**
 		 * 例3 使用Java8 lambda表达式处理Comparator匿名类
@@ -72,16 +72,14 @@ public class Demo1_Lambda {
 				return o1.name.compareTo(o2.name);
 			}
 		});
-		/*Java8的方式*/
+		/* Java8的方式 */
 		Collections.sort(list, (o1, o2) -> o1.name.compareTo(o2.name));
-		
+
 		list.forEach(a -> System.out.println(a.name));
-		
-		
+
 		/**
 		 * 例4、使用lambda表达式对列表进行迭代
 		 */
-		
 		List<String> features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
 		// Java8之前
 		for (String feature : features) {
@@ -91,19 +89,44 @@ public class Demo1_Lambda {
 		features.forEach(n -> System.out.println(n));
 		// 更爽的方法：方法引用
 		features.forEach(System.out::println);
-		
-		
-		
+
+		/**
+		 * 例5 使用lambda表达式和函数式接口Predicate 
+		 * 除了在语言层面支持函数式编程风格，Java 8也添加了一个包，叫做java.util.function。
+		 * 它包含了很多类，用来支持Java的函数式编程。其中一个便是Predicate，使用java.util.function.Predicate
+		 * 函数式接口以及lambda表达式，可以向API方法添加逻辑，用更少的代码支持更多的动态行为。
+		 * 下面是Java 8 Predicate的例子，展示了过滤集合数据的多种常用方法。Predicate接口非常适用于做过滤。
+		 */
+		List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
+		System.out.println("Languages which starts with J :");
+	    filter(languages, (str)->str.startsWith("J"));
+	 
+	    System.out.println("Languages which ends with a ");
+	    filter(languages, (str)->str.endsWith("a"));
+	 
+	    System.out.println("Print all languages :");
+	    filter(languages, (str)->true);
+	 
+	    System.out.println("Print no language : ");
+	    filter(languages, (str)->false);
+	 
+	    System.out.println("Print language whose length greater than 4:");
+	    filter(languages, (str)->str.length() > 4);
 	}
-	
-	
-	
+	public static void filter(List<String> names, Predicate<String> condition) {
+	    for(String name : names)  {
+	        if(condition.test(name)) {
+	            System.out.println(name + " ");
+	        }
+	    }
+	}
+
 }
+
 class A {
 	String name;
+
 	public A(String name) {
 		this.name = name;
 	}
 }
-
-
