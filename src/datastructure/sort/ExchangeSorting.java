@@ -59,7 +59,7 @@ public class ExchangeSorting extends Sorting {
 					arr[i] = arr[j];
 					i++;
 				}
-				while (j < i && arr[i] < temp)
+				while (i < j && arr[i] < temp)
 					i++;
 				if (i < j) {
 					arr[j] = arr[i];
