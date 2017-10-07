@@ -21,7 +21,7 @@ public class Demo5_Join {
 					if(i == 2) {
 						try {
 							//t1.join();
-							t1.join(1);					//插队指定的时间,过了指定时间后,两条线程交替执行
+							t1.join();					//插队指定的时间,过了指定时间后,两条线程交替执行
 						} catch (InterruptedException e) {
 							
 							e.printStackTrace();
