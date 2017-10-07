@@ -53,7 +53,7 @@ public class ExchangeSorting extends Sorting {
 		if (left < right) {
 			temp = arr[left];
 			while (i != j) {
-				while (j > i && arr[j] > temp)
+				while (i < j && arr[j] > temp)
 					j--;
 				if (i < j) {
 					arr[i] = arr[j];

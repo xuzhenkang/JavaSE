@@ -9,9 +9,9 @@ public class SortingTest {
 //		InsertSorting.binaryInsertSort(arr);
 //		InsertSorting.shellSort(arr);
 //		ExchangeSorting.bubbleSort(arr);
-//		ExchangeSorting.quickSort(arr, 0, arr.length - 1);
+		ExchangeSorting.quickSort(arr, 0, arr.length - 1);
 //		SelectSorting.simpleSelectSort(arr);
-		SelectSorting.heapSort(arr);
+//		SelectSorting.heapSort(arr);
 		Sorting.display(arr);
 
 	}
