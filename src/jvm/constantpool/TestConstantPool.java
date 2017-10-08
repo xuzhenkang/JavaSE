@@ -1,4 +1,4 @@
-package constantpool;
+package jvm.constantpool;
 
 public class TestConstantPool {
 	
