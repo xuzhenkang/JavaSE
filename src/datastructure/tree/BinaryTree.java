@@ -189,13 +189,13 @@ public class BinaryTree {
 				s.add(root);
 				root = root.left;
 			}
-			if (root == null)
-				System.out.print("#");
+//			if (root == null)
+//				System.out.print("#");
 			root = s.pop();
 			root = root.right;
 		}
-		if (root == null)
-			System.out.print("#");
+//		if (root == null)
+//			System.out.print("#");
 	}
 
 	/**
