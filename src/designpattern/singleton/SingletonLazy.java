@@ -14,7 +14,8 @@ public class SingletonLazy {
 	
 	public static synchronized SingletonLazy getInstance() {
 		if (null == instance) {
-			return new SingletonLazy();
-		} else return instance;
+			instance = new SingletonLazy();
+		} 
+		return instance;
 	}
 }
