@@ -1,14 +1,14 @@
 package javase.base.array.double_dimensional_array;
 /*
-* A:»­Í¼ÑİÊ¾
-	* »­Í¼½²½âÉÏÃæµÄ¶şÎ¬Êı×éÃû³Æ£¬Ò»Î¬Êı×éÃû³Æ£¬Ò»¸öÔªËØµÄÖµµÄÎÊÌâ
+* A:ç”»å›¾æ¼”ç¤º
+	* ç”»å›¾è®²è§£ä¸Šé¢çš„äºŒç»´æ•°ç»„åç§°ï¼Œä¸€ç»´æ•°ç»„åç§°ï¼Œä¸€ä¸ªå…ƒç´ çš„å€¼çš„é—®é¢˜
 */
 class Demo2_Array {
 	public static void main(String[] args) {
 		int[][] arr = new int[3][2];
 
-		System.out.println(arr);					//´òÓ¡¶şÎ¬Êı×é
-		System.out.println(arr[0]);					//´òÓ¡¶şÎ¬Êı×éÖĞµÄµÚÒ»¸öÒ»Î¬Êı×é
-		System.out.println(arr[0][0]);				//´òÓ¡¶şÎ¬Êı×éÖĞµÄµÚÒ»¸öÒ»Î¬Êı×éÖĞµÄµÚÒ»¸öÔªËØ
+		System.out.println(arr);					//æ‰“å°äºŒç»´æ•°ç»„
+		System.out.println(arr[0]);					//æ‰“å°äºŒç»´æ•°ç»„ä¸­çš„ç¬¬ä¸€ä¸ªä¸€ç»´æ•°ç»„
+		System.out.println(arr[0][0]);				//æ‰“å°äºŒç»´æ•°ç»„ä¸­çš„ç¬¬ä¸€ä¸ªä¸€ç»´æ•°ç»„ä¸­çš„ç¬¬ä¸€ä¸ªå…ƒç´ 
 	}
 }

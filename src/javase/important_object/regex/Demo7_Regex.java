@@ -3,40 +3,40 @@ package javase.important_object.regex;
 public class Demo7_Regex {
 
 	/**
-	 * * A:ÕýÔò±í´ïÊ½µÄ·Ö×é¹¦ÄÜ
-			* ²¶»ñ×é¿ÉÒÔÍ¨¹ý´Ó×óµ½ÓÒ¼ÆËãÆä¿ªÀ¨ºÅÀ´±àºÅ¡£ÀýÈç£¬ÔÚ±í´ïÊ½ ((A)(B(C))) ÖÐ£¬´æÔÚËÄ¸öÕâÑùµÄ×é£º 
+	 * * A:æ­£åˆ™è¡¨è¾¾å¼çš„åˆ†ç»„åŠŸèƒ½
+			* æ•èŽ·ç»„å¯ä»¥é€šè¿‡ä»Žå·¦åˆ°å³è®¡ç®—å…¶å¼€æ‹¬å·æ¥ç¼–å·ã€‚ä¾‹å¦‚ï¼Œåœ¨è¡¨è¾¾å¼ ((A)(B(C))) ä¸­ï¼Œå­˜åœ¨å››ä¸ªè¿™æ ·çš„ç»„ï¼š 
 		* 
 				1     ((A)(B(C))) 
 				2     (A 
 				3     (B(C)) 
 				4     (C) 
 			
-				×éÁãÊ¼ÖÕ´ú±íÕû¸ö±í´ïÊ½¡£
-		B:°¸ÀýÑÝÊ¾
-			a:ÇÐ¸î
-				ÐèÇó£ºÇë°´ÕÕµþ´ÊÇÐ¸î£º "sdqqfgkkkhjppppkl";
-			b:Ìæ»»
-				ÐèÇó£ºÎÒÎÒ....ÎÒ...ÎÒ.Òª...ÒªÒª...ÒªÑ§....Ñ§Ñ§..Ñ§.±à..±à±à.±à.³Ì.³Ì.³Ì..³Ì
-				½«×Ö·û´®»¹Ô­³É:¡°ÎÒÒªÑ§±à³Ì¡±¡£
+				ç»„é›¶å§‹ç»ˆä»£è¡¨æ•´ä¸ªè¡¨è¾¾å¼ã€‚
+		B:æ¡ˆä¾‹æ¼”ç¤º
+			a:åˆ‡å‰²
+				éœ€æ±‚ï¼šè¯·æŒ‰ç…§å è¯åˆ‡å‰²ï¼š "sdqqfgkkkhjppppkl";
+			b:æ›¿æ¢
+				éœ€æ±‚ï¼šæˆ‘æˆ‘....æˆ‘...æˆ‘.è¦...è¦è¦...è¦å­¦....å­¦å­¦..å­¦.ç¼–..ç¼–ç¼–.ç¼–.ç¨‹.ç¨‹.ç¨‹..ç¨‹
+				å°†å­—ç¬¦ä¸²è¿˜åŽŸæˆ:â€œæˆ‘è¦å­¦ç¼–ç¨‹â€ã€‚
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		//demo2();
 		
 		/*
-		 * ÐèÇó£ºÎÒÎÒ....ÎÒ...ÎÒ.Òª...ÒªÒª...ÒªÑ§....Ñ§Ñ§..Ñ§.±à..±à±à.±à.³Ì.³Ì.³Ì..³Ì
-				½«×Ö·û´®»¹Ô­³É:¡°ÎÒÒªÑ§±à³Ì¡±¡£
+		 * éœ€æ±‚ï¼šæˆ‘æˆ‘....æˆ‘...æˆ‘.è¦...è¦è¦...è¦å­¦....å­¦å­¦..å­¦.ç¼–..ç¼–ç¼–.ç¼–.ç¨‹.ç¨‹.ç¨‹..ç¨‹
+				å°†å­—ç¬¦ä¸²è¿˜åŽŸæˆ:â€œæˆ‘è¦å­¦ç¼–ç¨‹â€ã€‚
 		 */
-		String s = "ÎÒÎÒ....ÎÒ...ÎÒ.Òª...ÒªÒª...ÒªÑ§....Ñ§Ñ§..Ñ§.±à..±à±à.±à.³Ì.³Ì.³Ì..³Ì";
+		String s = "æˆ‘æˆ‘....æˆ‘...æˆ‘.è¦...è¦è¦...è¦å­¦....å­¦å­¦..å­¦.ç¼–..ç¼–ç¼–.ç¼–.ç¨‹.ç¨‹.ç¨‹..ç¨‹";
 		String s2 = s.replaceAll("\\.+", "");
-		String s3 = s2.replaceAll("(.)\\1+", "$1");	//$1´ú±íµÚÒ»×éÖÐµÄÄÚÈÝ
+		String s3 = s2.replaceAll("(.)\\1+", "$1");	//$1ä»£è¡¨ç¬¬ä¸€ç»„ä¸­çš„å†…å®¹
 		System.out.println(s3);
 	}
 
 	public static void demo2() {
-		//ÐèÇó£ºÇë°´ÕÕµþ´ÊÇÐ¸î£º "sdqqfgkkkhjppppkl";
+		//éœ€æ±‚ï¼šè¯·æŒ‰ç…§å è¯åˆ‡å‰²ï¼š "sdqqfgkkkhjppppkl";
 		String s = "sdqqfgkkkhjppppkl";
-		String regex = "(.)\\1+";					//+´ú±íµÚÒ»×é³öÏÖÒ»´Îµ½¶à´Î
+		String regex = "(.)\\1+";					//+ä»£è¡¨ç¬¬ä¸€ç»„å‡ºçŽ°ä¸€æ¬¡åˆ°å¤šæ¬¡
 		String[] arr = s.split(regex);
 		
 		for (int i = 0; i < arr.length; i++) {
@@ -45,18 +45,18 @@ public class Demo7_Regex {
 	}
 
 	public static void demo1() {
-		//µþ´Ê ¿ì¿ìÀÖÀÖ,¸ß¸ßÐËÐË
-		/*String regex = "(.)\\1(.)\\2";					//\\1´ú±íµÚÒ»×éÓÖ³öÏÖÒ»´Î	\\2´ú±íµÚ¶þ×éÓÖ³öÏÖÒ»´Î
-		System.out.println("¿ì¿ìÀÖÀÖ".matches(regex));
-		System.out.println("¿ìÀÖÀÖÀÖ".matches(regex));
-		System.out.println("¸ß¸ßÐËÐË".matches(regex));
-		System.out.println("ËÀÀ²ËÀÀ²".matches(regex));*/
+		//å è¯ å¿«å¿«ä¹ä¹,é«˜é«˜å…´å…´
+		/*String regex = "(.)\\1(.)\\2";					//\\1ä»£è¡¨ç¬¬ä¸€ç»„åˆå‡ºçŽ°ä¸€æ¬¡	\\2ä»£è¡¨ç¬¬äºŒç»„åˆå‡ºçŽ°ä¸€æ¬¡
+		System.out.println("å¿«å¿«ä¹ä¹".matches(regex));
+		System.out.println("å¿«ä¹ä¹ä¹".matches(regex));
+		System.out.println("é«˜é«˜å…´å…´".matches(regex));
+		System.out.println("æ­»å•¦æ­»å•¦".matches(regex));*/
 		
-		//µþ´Ê ËÀÀ²ËÀÀ²,¸ßÐË¸ßÐË
+		//å è¯ æ­»å•¦æ­»å•¦,é«˜å…´é«˜å…´
 		String regex2 = "(..)\\1";
-		System.out.println("ËÀÀ²ËÀÀ²".matches(regex2));
-		System.out.println("¸ßÐË¸ßÐË".matches(regex2));
-		System.out.println("¿ì¿ìÀÖÀÖ".matches(regex2));
+		System.out.println("æ­»å•¦æ­»å•¦".matches(regex2));
+		System.out.println("é«˜å…´é«˜å…´".matches(regex2));
+		System.out.println("å¿«å¿«ä¹ä¹".matches(regex2));
 	}
 
 }

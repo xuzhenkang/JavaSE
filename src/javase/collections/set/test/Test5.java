@@ -7,38 +7,38 @@ import java.util.TreeSet;
 public class Test5 {
 
 	/**
-	 * ´Ó¼üÅÌ½ÓÊÕÒ»¸ö×Ö·û´®, ³ÌĞò¶ÔÆäÖĞËùÓĞ×Ö·û½øĞĞÅÅĞò,ÀıÈç¼üÅÌÊäÈë: helloitcast³ÌĞò´òÓ¡:acehillostt
-	 * ·ÖÎö:
-	 * 1,¼üÅÌÂ¼Èë×Ö·û´®,Scanner
-	 * 2,½«×Ö·û´®×ª»»Îª×Ö·ûÊı×é
-	 * 3,¶¨ÒåTreeSet¼¯ºÏ,´«Èë±È½ÏÆ÷¶Ô×Ö·ûÅÅĞò²¢±£ÁôÖØ¸´
-	 * 4,±éÀú×Ö·ûÊı×é,½«Ã¿Ò»¸ö×Ö·û´æ´¢ÔÚTreeSet¼¯ºÏÖĞ
-	 * 5,±éÀúTreeSet¼¯ºÏ,´òÓ¡Ã¿Ò»¸ö×Ö·û
+	 * ä»é”®ç›˜æ¥æ”¶ä¸€ä¸ªå­—ç¬¦ä¸², ç¨‹åºå¯¹å…¶ä¸­æ‰€æœ‰å­—ç¬¦è¿›è¡Œæ’åº,ä¾‹å¦‚é”®ç›˜è¾“å…¥: helloitcastç¨‹åºæ‰“å°:acehillostt
+	 * åˆ†æ:
+	 * 1,é”®ç›˜å½•å…¥å­—ç¬¦ä¸²,Scanner
+	 * 2,å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+	 * 3,å®šä¹‰TreeSeté›†åˆ,ä¼ å…¥æ¯”è¾ƒå™¨å¯¹å­—ç¬¦æ’åºå¹¶ä¿ç•™é‡å¤
+	 * 4,éå†å­—ç¬¦æ•°ç»„,å°†æ¯ä¸€ä¸ªå­—ç¬¦å­˜å‚¨åœ¨TreeSeté›†åˆä¸­
+	 * 5,éå†TreeSeté›†åˆ,æ‰“å°æ¯ä¸€ä¸ªå­—ç¬¦
 	 */
 	public static void main(String[] args) {
-		//1,¼üÅÌÂ¼Èë×Ö·û´®,Scanner
+		//1,é”®ç›˜å½•å…¥å­—ç¬¦ä¸²,Scanner
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²");
 		String line = sc.nextLine();
-		//2,½«×Ö·û´®×ª»»Îª×Ö·ûÊı×é
+		//2,å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
 		char[] arr = line.toCharArray();
-		//3,¶¨ÒåTreeSet¼¯ºÏ,´«Èë±È½ÏÆ÷¶Ô×Ö·ûÅÅĞò²¢±£ÁôÖØ¸´
+		//3,å®šä¹‰TreeSeté›†åˆ,ä¼ å…¥æ¯”è¾ƒå™¨å¯¹å­—ç¬¦æ’åºå¹¶ä¿ç•™é‡å¤
 		TreeSet<Character> ts = new TreeSet<>(new Comparator<Character>() {
 
 			@Override
 			public int compare(Character c1, Character c2) {
-				//int num = c1 - c2;				//×Ô¶¯²ğÏä
+				//int num = c1 - c2;				//è‡ªåŠ¨æ‹†ç®±
 				int num = c1.compareTo(c2);
 				return num == 0 ? 1 : num;
 			}
 		});
 		
-		//4,±éÀú×Ö·ûÊı×é,½«Ã¿Ò»¸ö×Ö·û´æ´¢ÔÚTreeSet¼¯ºÏÖĞ
+		//4,éå†å­—ç¬¦æ•°ç»„,å°†æ¯ä¸€ä¸ªå­—ç¬¦å­˜å‚¨åœ¨TreeSeté›†åˆä¸­
 		for(char c : arr) {
-			ts.add(c);							//×Ô¶¯×°Ïä
+			ts.add(c);							//è‡ªåŠ¨è£…ç®±
 		}
 		
-		//5,±éÀúTreeSet¼¯ºÏ,´òÓ¡Ã¿Ò»¸ö×Ö·û
+		//5,éå†TreeSeté›†åˆ,æ‰“å°æ¯ä¸€ä¸ªå­—ç¬¦
 		for(Character c : ts) {
 			System.out.print(c);
 		}

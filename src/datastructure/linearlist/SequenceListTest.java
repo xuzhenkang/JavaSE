@@ -15,7 +15,7 @@ public class SequenceListTest {
 	public void testFindIndexOf() {
 		int data[] = {2, 5, 7, 9, 10};
 		SequenceList sqlist = new SequenceList(data);
-		System.out.println("ÔªËØ9ÔÚ¸ÃË³Ğò±íÖĞµÄÏÂ±êÎª£º" + sqlist.findIndexOf(9));	
+		System.out.println("å…ƒç´ 9åœ¨è¯¥é¡ºåºè¡¨ä¸­çš„ä¸‹æ ‡ä¸ºï¼š" + sqlist.findIndexOf(9));	
 	}
 	@Test
 	public void testInsert() {
@@ -24,7 +24,7 @@ public class SequenceListTest {
 		if (sqlist.insert(4, 99)) {
 			System.out.println(sqlist);
 		} else {
-			System.out.println("²åÈëÊ§°Ü");
+			System.out.println("æ’å…¥å¤±è´¥");
 		}
 	}
 	@Test
@@ -32,16 +32,16 @@ public class SequenceListTest {
 		int data[] = {2, 5, 7, 9, 10};
 		SequenceList sqlist = new SequenceList(data);
 		if (sqlist.delete(3)) {
-			System.out.println("É¾³ı³É¹¦\nÉ¾³ıºóµÄĞòÁĞÎª£º" + sqlist);
+			System.out.println("åˆ é™¤æˆåŠŸ\nåˆ é™¤åçš„åºåˆ—ä¸ºï¼š" + sqlist);
 		} else {
-			System.out.println("É¾³ıÊ§°Ü");
+			System.out.println("åˆ é™¤å¤±è´¥");
 		}
 	}
 	@Test
 	public void testGetElem() {
 		int data[] = {2, 5, 7, 9, 10};
 		SequenceList sqlist = new SequenceList(data);
-		System.out.println("µÚ2¸öÔªËØÖµÎª£º" + sqlist.getElem(2));
+		System.out.println("ç¬¬2ä¸ªå…ƒç´ å€¼ä¸ºï¼š" + sqlist.getElem(2));
 	}
 	
 }

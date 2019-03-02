@@ -1,7 +1,7 @@
 package aop.dynamicproxypattern;
 
 /**
- * ³éÏóÖ÷Ìâ½ÇÉ«£ºÉùÃ÷ÁËÕæÊµÖ÷ÌâºÍ´úÀíÖ÷ÌâµÄ¹²Í¬½Ó¿Ú¡£
+ * æŠ½è±¡ä¸»é¢˜è§’è‰²ï¼šå£°æ˜Žäº†çœŸå®žä¸»é¢˜å’Œä»£ç†ä¸»é¢˜çš„å…±åŒæŽ¥å£ã€‚
  * @author lenovo
  *
  */

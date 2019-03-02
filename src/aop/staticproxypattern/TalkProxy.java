@@ -1,7 +1,7 @@
 package aop.staticproxypattern;
 
 /**
- * ´úÀíÖ÷Ìâ½ÇÉ«£ºÄÚ²¿°üº¬¶ÔÕæÊµÖ÷ÌâµÄÒıÓÃ£¬²¢ÇÒÌá¹©ºÍÕæÊµÖ÷Ìâ½ÇÉ«ÏàÍ¬µÄ½Ó¿Ú¡£
+ * ä»£ç†ä¸»é¢˜è§’è‰²ï¼šå†…éƒ¨åŒ…å«å¯¹çœŸå®ä¸»é¢˜çš„å¼•ç”¨ï¼Œå¹¶ä¸”æä¾›å’ŒçœŸå®ä¸»é¢˜è§’è‰²ç›¸åŒçš„æ¥å£ã€‚
  * @author lenovo
  *
  */
@@ -24,7 +24,7 @@ public class TalkProxy implements ITalk {
 	}
 
 	private void sing(String singname) {
-		System.out.println("³ª¸è£º" + singname);
+		System.out.println("å”±æ­Œï¼š" + singname);
 	}
 	
 	

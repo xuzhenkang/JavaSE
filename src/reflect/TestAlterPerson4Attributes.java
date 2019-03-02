@@ -2,7 +2,7 @@ package reflect;
 
 import java.lang.reflect.Field;
 /**
- * Í¨¹ı·´Éä²Ù×÷ÊôĞÔ
+ * é€šè¿‡åå°„æ“ä½œå±æ€§
  * @author kang
  *
  */
@@ -16,8 +16,8 @@ public class TestAlterPerson4Attributes {
 		obj = demo.newInstance();
 
 		Field field = demo.getDeclaredField("sex");
-		field.setAccessible(true);// ´òÆÆprivateÈ¨ÏŞ
-		field.set(obj, "ÄĞ");
+		field.setAccessible(true);// æ‰“ç ´privateæƒé™
+		field.set(obj, "ç”·");
 		System.out.println(field.get(obj));
 	}
 }

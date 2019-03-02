@@ -1,7 +1,7 @@
 package reflect;
 
 /**
- * Í¨¹ıClassÊµÀı»¯ÆäËûÀàµÄ¶ÔÏó
+ * é€šè¿‡Classå®ä¾‹åŒ–å…¶ä»–ç±»çš„å¯¹è±¡
  * 
  * @author lenovo
  *

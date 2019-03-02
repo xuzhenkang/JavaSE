@@ -2,7 +2,7 @@ package oj.gettingjob.nowcoder.jd.dp;
 import java.util.Scanner;
 import java.util.Stack;
 
-/*Í¨¹ıµÄ*/
+/*é€šè¿‡çš„*/
 public class Main {
 	
 	static Scanner scanner = new Scanner(System.in);
@@ -26,10 +26,10 @@ public class Main {
 	}
 	
 	
-	// ×´Ì¬×ª»»·½³Ì£º
+	// çŠ¶æ€è½¬æ¢æ–¹ç¨‹ï¼š
 	// d(1) = 1
-	// d(i) = d(i-1)*i, À¨ºÅÇ¶Ì×
-	// d(i) = d(i-1), À¨ºÅ²»Ç¶Ì×
+	// d(i) = d(i-1)*i, æ‹¬å·åµŒå¥—
+	// d(i) = d(i-1), æ‹¬å·ä¸åµŒå¥—
 	
 	
 	
@@ -51,7 +51,7 @@ public class Main {
 	/*
 	public static void f(String str, int n, int[] d, int i) {
 		
-		if (str.charAt(i) == '(' && str.charAt(i+1) == ')') { // ²»Ç¶Ì×
+		if (str.charAt(i) == '(' && str.charAt(i+1) == ')') { // ä¸åµŒå¥—
 			d[n] = d[n-1];
 		} else {
 			d[n] = n * d[n - 1];
@@ -95,12 +95,12 @@ public class Main {
 }
 
 
-/* Í¨¹ıµÄ
+/* é€šè¿‡çš„
 import java.util.*;
-	// ×´Ì¬×ª»»·½³Ì£º
+	// çŠ¶æ€è½¬æ¢æ–¹ç¨‹ï¼š
 	// d(1) = 1
-	// d(i) = d(i-1)*i, À¨ºÅÇ¶Ì×
-	// d(i) = d(i-1), À¨ºÅ²»Ç¶Ì×
+	// d(i) = d(i-1)*i, æ‹¬å·åµŒå¥—
+	// d(i) = d(i-1), æ‹¬å·ä¸åµŒå¥—
 public class Main  {
 
     public static void main(String args[]) {

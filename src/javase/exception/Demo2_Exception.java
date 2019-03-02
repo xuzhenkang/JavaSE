@@ -3,23 +3,23 @@ package javase.exception;
 public class Demo2_Exception {
 
 	/**
-	 * * A:Òì³£´¦ÀíµÄÁ½ÖÖ·½Ê½
-			* a:try¡­catch¡­finally
+	 * * A:å¼‚å¸¸å¤„ç†çš„ä¸¤ç§æ–¹å¼
+			* a:tryâ€¦catchâ€¦finally
 				* try catch
 				* try catch finally
 				* try finally 
 			* b:throws
-		* B:try...catch´¦ÀíÒì³£µÄ»ù±¾¸ñÊ½
-			* try¡­catch¡­finally
-		* C:°¸ÀıÑİÊ¾
-			* try...catchµÄ·½Ê½´¦Àí1¸öÒì³£
+		* B:try...catchå¤„ç†å¼‚å¸¸çš„åŸºæœ¬æ ¼å¼
+			* tryâ€¦catchâ€¦finally
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* try...catchçš„æ–¹å¼å¤„ç†1ä¸ªå¼‚å¸¸
 		
-		try:ÓÃÀ´¼ì²âÒì³£µÄ
-		catch:ÓÃÀ´²¶»ñÒì³£µÄ
-		finally:ÊÍ·Å×ÊÔ´
+		try:ç”¨æ¥æ£€æµ‹å¼‚å¸¸çš„
+		catch:ç”¨æ¥æ•è·å¼‚å¸¸çš„
+		finally:é‡Šæ”¾èµ„æº
 		
-		ÊÀ½çÉÏ×îÕæÇéµÄÏàÒÀ¾ÍÊÇÄãÔÚtryÎÒÔÚcatch,ÎŞÂÛÄã·¢ÉñÂíÆ¢Æø,ÎÒ¶¼¾²¾²½ÓÊÜ,Ä¬Ä¬´¦Àí
-		µ±Í¨¹ıtrycatch½«ÎÊÌâ´¦ÀíÁË,³ÌĞò»á¼ÌĞøÖ´ĞĞ
+		ä¸–ç•Œä¸Šæœ€çœŸæƒ…çš„ç›¸ä¾å°±æ˜¯ä½ åœ¨tryæˆ‘åœ¨catch,æ— è®ºä½ å‘ç¥é©¬è„¾æ°”,æˆ‘éƒ½é™é™æ¥å—,é»˜é»˜å¤„ç†
+		å½“é€šè¿‡trycatchå°†é—®é¢˜å¤„ç†äº†,ç¨‹åºä¼šç»§ç»­æ‰§è¡Œ
 	 */
 	public static void main(String[] args) {
 		Demo2 d = new Demo2();
@@ -27,7 +27,7 @@ public class Demo2_Exception {
 			int x = d.div(10, 0);
 			System.out.println(x);
 		}catch(ArithmeticException a) {		//ArithmeticException a = new ArithmeticException();
-			System.out.println("³ö´íÁË,³ıÊıÎªÁãÁË");
+			System.out.println("å‡ºé”™äº†,é™¤æ•°ä¸ºé›¶äº†");
 		}
 		
 		System.out.println("1111111111111111");
@@ -37,10 +37,10 @@ public class Demo2_Exception {
 
 class Demo2 {
 	/*
-	 * ³ı·¨ÔËËã
+	 * é™¤æ³•è¿ç®—
 	 */
 	public int div(int a,int b) {		//a = 10,b = 0
-		return a / b;					// 10 / 0  ±»³ıÊıÊÇ10,³ıÊıÊÇ0µ±³ıÊıÊÇ0µÄÊ±ºòÎ¥±³ÁËËãÊıÔËËã·¨Ôò,Å×³öÒì³£
+		return a / b;					// 10 / 0  è¢«é™¤æ•°æ˜¯10,é™¤æ•°æ˜¯0å½“é™¤æ•°æ˜¯0çš„æ—¶å€™è¿èƒŒäº†ç®—æ•°è¿ç®—æ³•åˆ™,æŠ›å‡ºå¼‚å¸¸
 										//new ArithmeticException("/ by zero");
 	}
 } 

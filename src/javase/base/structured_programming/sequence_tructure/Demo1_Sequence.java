@@ -1,6 +1,6 @@
 package javase.base.structured_programming.sequence_tructure;
 
-class Demo1_Sequence {							//sequence À≥–Ú
+class Demo1_Sequence {							//sequence È°∫Â∫è
 	public static void main(String[] args) {
 		System.out.println("Hello World!11111");
 		System.out.println("Hello World!3333");

@@ -1,30 +1,30 @@
 package javase.oo.anonymous_object;
 
 /*
-* A:Ê²Ã´ÊÇÄäÃû¶ÔÏó
-	* Ã»ÓÐÃû×ÖµÄ¶ÔÏó 
-* B:ÄäÃû¶ÔÏóÓ¦ÓÃ³¡¾°
-	* a:µ÷ÓÃ·½·¨£¬½ö½öÖ»µ÷ÓÃÒ»´ÎµÄÊ±ºò¡£
-		* ÄÇÃ´£¬ÕâÖÖÄäÃûµ÷ÓÃÓÐÊ²Ã´ºÃ´¦Âð?
-			* ½ÚÊ¡´úÂë 
-		* ×¢Òâ£ºµ÷ÓÃ¶à´ÎµÄÊ±ºò£¬²»ÊÊºÏ¡£ÄäÃû¶ÔÏóµ÷ÓÃÍê±Ï¾ÍÊÇÀ¬»ø¡£¿ÉÒÔ±»À¬»ø»ØÊÕÆ÷»ØÊÕ¡£
-	* b:ÄäÃû¶ÔÏó¿ÉÒÔ×÷ÎªÊµ¼Ê²ÎÊý´«µÝ
-* C:°¸ÀýÑÝÊ¾
-	* ÄäÃû¶ÔÏóÓ¦ÓÃ³¡¾°
+* A:ä»€ä¹ˆæ˜¯åŒ¿åå¯¹è±¡
+	* æ²¡æœ‰åå­—çš„å¯¹è±¡ 
+* B:åŒ¿åå¯¹è±¡åº”ç”¨åœºæ™¯
+	* a:è°ƒç”¨æ–¹æ³•ï¼Œä»…ä»…åªè°ƒç”¨ä¸€æ¬¡çš„æ—¶å€™ã€‚
+		* é‚£ä¹ˆï¼Œè¿™ç§åŒ¿åè°ƒç”¨æœ‰ä»€ä¹ˆå¥½å¤„å—?
+			* èŠ‚çœä»£ç  
+		* æ³¨æ„ï¼šè°ƒç”¨å¤šæ¬¡çš„æ—¶å€™ï¼Œä¸é€‚åˆã€‚åŒ¿åå¯¹è±¡è°ƒç”¨å®Œæ¯•å°±æ˜¯åžƒåœ¾ã€‚å¯ä»¥è¢«åžƒåœ¾å›žæ”¶å™¨å›žæ”¶ã€‚
+	* b:åŒ¿åå¯¹è±¡å¯ä»¥ä½œä¸ºå®žé™…å‚æ•°ä¼ é€’
+* C:æ¡ˆä¾‹æ¼”ç¤º
+	* åŒ¿åå¯¹è±¡åº”ç”¨åœºæ™¯
 */
 class Demo2_Car {
 	public static void main(String[] args) {
-		/*Car c1 = new Car();			//´´½¨ÓÐÃû×ÖµÄ¶ÔÏó
+		/*Car c1 = new Car();			//åˆ›å»ºæœ‰åå­—çš„å¯¹è±¡
 		c1.run();
 		c1.run();
 
-		new Car().run();			//ÄäÃû¶ÔÏóµ÷ÓÃ·½·¨
-		new Car().run();	*/		//ÄäÃû¶ÔÏóÖ»ÊÊºÏ¶Ô·½·¨µÄÒ»´Îµ÷ÓÃ,ÒòÎªµ÷ÓÃ¶à´Î¾Í»á²úÉú¶à¸ö¶ÔÏó,²»ÈçÓÃÓÐÃû×ÖµÄ¶ÔÏó	
+		new Car().run();			//åŒ¿åå¯¹è±¡è°ƒç”¨æ–¹æ³•
+		new Car().run();	*/		//åŒ¿åå¯¹è±¡åªé€‚åˆå¯¹æ–¹æ³•çš„ä¸€æ¬¡è°ƒç”¨,å› ä¸ºè°ƒç”¨å¤šæ¬¡å°±ä¼šäº§ç”Ÿå¤šä¸ªå¯¹è±¡,ä¸å¦‚ç”¨æœ‰åå­—çš„å¯¹è±¡	
 	
-		//ÄäÃû¶ÔÏóÊÇ·ñ¿ÉÒÔµ÷ÓÃÊôÐÔ²¢¸³Öµ?ÓÐÊ²Ã´ÒâÒå?
+		//åŒ¿åå¯¹è±¡æ˜¯å¦å¯ä»¥è°ƒç”¨å±žæ€§å¹¶èµ‹å€¼?æœ‰ä»€ä¹ˆæ„ä¹‰?
 		/*
-		ÄäÃû¶ÔÏó¿ÉÒÔµ÷ÓÃÊôÐÔ,µ«ÊÇÃ»ÓÐÒâÒå,ÒòÎªµ÷ÓÃºó¾Í±ä³ÉÀ¬»ø
-		Èç¹ûÐèÒª¸³Öµ»¹ÊÇÓÃÓÐÃû×Ö¶ÔÏó
+		åŒ¿åå¯¹è±¡å¯ä»¥è°ƒç”¨å±žæ€§,ä½†æ˜¯æ²¡æœ‰æ„ä¹‰,å› ä¸ºè°ƒç”¨åŽå°±å˜æˆåžƒåœ¾
+		å¦‚æžœéœ€è¦èµ‹å€¼è¿˜æ˜¯ç”¨æœ‰åå­—å¯¹è±¡
 		*/
 		new Car1().color = "red";
 		new Car1().num = 8;
@@ -33,8 +33,8 @@ class Demo2_Car {
 }
 
 class Car {
-	String color;			//ÑÕÉ«
-	int num;				//ÂÖÌ¥Êý
+	String color;			//é¢œè‰²
+	int num;				//è½®èƒŽæ•°
 
 	public void run() {
 		System.out.println(color + "..." + num);

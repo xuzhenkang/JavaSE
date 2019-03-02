@@ -1,30 +1,30 @@
 package datastructure.linearlist;
 
 /**
- * Ë³Ğò±í
+ * é¡ºåºè¡¨
  * @author kang
  *
  */
 public class SequenceList {
 	/**
-	 * ¸ÃË³Ğò±í×î´ó³¤¶È
+	 * è¯¥é¡ºåºè¡¨æœ€å¤§é•¿åº¦
 	 */
 	private static int MAXSIZE = 100;
 	/**
-	 * ¸ÃË³Ğò±íµÄÊı¾İ
+	 * è¯¥é¡ºåºè¡¨çš„æ•°æ®
 	 */
 	private int data[] = new int[MAXSIZE];
 	/**
-	 * ¸ÃË³Ğò±íµÄÓĞĞ§³¤¶È
+	 * è¯¥é¡ºåºè¡¨çš„æœ‰æ•ˆé•¿åº¦
 	 */
 	private int length;
 	
 	
 	/**
-	 * È·¶¨Òª²åÈëµÄÎ»ÖÃ,½ö¹©insertIntoOrderlySequenceList·½·¨µ÷ÓÃ
+	 * ç¡®å®šè¦æ’å…¥çš„ä½ç½®,ä»…ä¾›insertIntoOrderlySequenceListæ–¹æ³•è°ƒç”¨
 	 * @param list
 	 * @param x
-	 * @return Òª²åÈëµÄÎ»ÖÃ
+	 * @return è¦æ’å…¥çš„ä½ç½®
 	 */
 	private int locateElem(int x) {
 		int index;
@@ -37,7 +37,7 @@ public class SequenceList {
 	}
 
 	/**
-	 * Ïò¸ÃÓĞĞòË³Ğò±íÖĞ²åÈëÒ»¸öÔªËØx£¬¸ÃÓĞĞò±íÎª·Çµİ¼õĞòÁĞ£¬²åÈëºóË³Ğò±íÈÔÈ»µİÔöÓĞĞò¡£
+	 * å‘è¯¥æœ‰åºé¡ºåºè¡¨ä¸­æ’å…¥ä¸€ä¸ªå…ƒç´ xï¼Œè¯¥æœ‰åºè¡¨ä¸ºéé€’å‡åºåˆ—ï¼Œæ’å…¥åé¡ºåºè¡¨ä»ç„¶é€’å¢æœ‰åºã€‚
 	 * 
 	 * @param x
 	 */
@@ -52,9 +52,9 @@ public class SequenceList {
 	
 	
 	/**
-	 * °´ÔªËØÖµ²éÕÒËã·¨£ºÔÚË³Ğò±íÖĞ²éÕÒµÚÒ»¸öÖµµÈÓÚeµÄÔªËØ£¬²¢·µ»ØÏÂ±ê¡£
+	 * æŒ‰å…ƒç´ å€¼æŸ¥æ‰¾ç®—æ³•ï¼šåœ¨é¡ºåºè¡¨ä¸­æŸ¥æ‰¾ç¬¬ä¸€ä¸ªå€¼ç­‰äºeçš„å…ƒç´ ï¼Œå¹¶è¿”å›ä¸‹æ ‡ã€‚
 	 * @param e
-	 * @return Èç¹û´æÔÚµÚÒ»¸öµÈÓÚeµÄÖµÔò·µ»ØÏÂ±ê£¬Èç¹û²»´æÔÚÔò·µ»Ø-1¡£
+	 * @return å¦‚æœå­˜åœ¨ç¬¬ä¸€ä¸ªç­‰äºeçš„å€¼åˆ™è¿”å›ä¸‹æ ‡ï¼Œå¦‚æœä¸å­˜åœ¨åˆ™è¿”å›-1ã€‚
 	 */
 	public int findIndexOf(int e) {
 		for (int i = 0; i < this.length; i++) {
@@ -65,9 +65,9 @@ public class SequenceList {
 	}
 	
 	/**
-	 * ÔÚË³Ğò±íLµÄµÚp(0<=locate<=length-1)¸öÎ»ÖÃÉÏ²åÈëĞÂµÄÔªËØe¡£Èç¹ûlocateµÄÊäÈë²»ÕıÈ·£¬·µ»Øfalse£¬´ú±í²åÈëÊ§°Ü£»
-		Èç¹ûpµÄÊäÈëÕıÈ·£¬Ôò½«Ë³Ğò±íµÚlocate¸öÔªËØÒÔ¼°ÒÔºóµÄÔªËØÓÒÒÆÒ»¸öÎ»ÖÃ£¬ÌÚ³öÒ»¸ö¿Õ¼ä²åÈëĞÂÔªËØ£¬Ë³Ğò±í³¤¶È¼Ó1.
-		²åÈë³É¹¦£¬·µ»Øtrue.
+	 * åœ¨é¡ºåºè¡¨Lçš„ç¬¬p(0<=locate<=length-1)ä¸ªä½ç½®ä¸Šæ’å…¥æ–°çš„å…ƒç´ eã€‚å¦‚æœlocateçš„è¾“å…¥ä¸æ­£ç¡®ï¼Œè¿”å›falseï¼Œä»£è¡¨æ’å…¥å¤±è´¥ï¼›
+		å¦‚æœpçš„è¾“å…¥æ­£ç¡®ï¼Œåˆ™å°†é¡ºåºè¡¨ç¬¬locateä¸ªå…ƒç´ ä»¥åŠä»¥åçš„å…ƒç´ å³ç§»ä¸€ä¸ªä½ç½®ï¼Œè…¾å‡ºä¸€ä¸ªç©ºé—´æ’å…¥æ–°å…ƒç´ ï¼Œé¡ºåºè¡¨é•¿åº¦åŠ 1.
+		æ’å…¥æˆåŠŸï¼Œè¿”å›true.
 	 */
 	public boolean insert(int locate, int x) {
 		if (locate < 0 || locate > this.length-1) {
@@ -84,9 +84,9 @@ public class SequenceList {
 	
 	
 	/**
-	 * É¾³ıË³Ğò±íÖĞÏÂ±êÎªlocate(0<=locate<=length-1)µÄÔªËØ
-	 * @param locate ÏÂ±ê
-	 * @return ³É¹¦·µ»Øtrue£¬·ñÔò·µ»Øfalse¡£
+	 * åˆ é™¤é¡ºåºè¡¨ä¸­ä¸‹æ ‡ä¸ºlocate(0<=locate<=length-1)çš„å…ƒç´ 
+	 * @param locate ä¸‹æ ‡
+	 * @return æˆåŠŸè¿”å›trueï¼Œå¦åˆ™è¿”å›falseã€‚
 	 */
 	public boolean delete(int locate) {
 		
@@ -101,7 +101,7 @@ public class SequenceList {
 	}
 	
 	/**
-	 * ÇóÖ¸¶¨Î»ÖÃÔªËØµÄËã·¨,·µ»Ø¸ÃË³Ğò±íÖĞlocate(0<=locate<=length-1)Î»ÖÃÉÏµÄÔªËØ¡£
+	 * æ±‚æŒ‡å®šä½ç½®å…ƒç´ çš„ç®—æ³•,è¿”å›è¯¥é¡ºåºè¡¨ä¸­locate(0<=locate<=length-1)ä½ç½®ä¸Šçš„å…ƒç´ ã€‚
 	 */
 	public int getElem(int locate) {
 		if (locate < 0 || locate > this.length - 1) {
@@ -112,12 +112,12 @@ public class SequenceList {
 	
 	
 	/**
-	 * ÎŞ²Î¹¹Ôì·½·¨
+	 * æ— å‚æ„é€ æ–¹æ³•
 	 */
 	public SequenceList() {
 	}
 	/**
-	 * ¹¹Ôì·½·¨
+	 * æ„é€ æ–¹æ³•
 	 * @param data
 	 */
 	public SequenceList(int[] data) {

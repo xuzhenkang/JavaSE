@@ -2,14 +2,14 @@ package datastructure.sort;
 
 public class InsertSorting extends Sorting {
 	/**
-	 * <h4>Ö±½Ó²åÈëÅÅĞò</h4>
+	 * <h4>ç›´æ¥æ’å…¥æ’åº</h4>
 	 * 
 	 * <p>
-	 * ¸´ÔÓ¶È·ÖÎö£º<br/>
+	 * å¤æ‚åº¦åˆ†æï¼š<br/>
 	 * <ul>
-	 * <li>1) ×î»µÇé¿ö£º»ù±¾²Ù×÷Ö´ĞĞ´ÎÊı£ºn(n-1)/2,Ê±¼ä¸´ÔÓ¶ÈÎªO(n^2)</li>
-	 * <li>2) ×îºÃÇé¿ö£ºÊ±¼ä¸´ÔÓ¶ÈÎªO(n)</li>
-	 * <li>3) ¿Õ¼ä¸´ÔÓ¶ÈÎªO(1)</li>
+	 * <li>1) æœ€åæƒ…å†µï¼šåŸºæœ¬æ“ä½œæ‰§è¡Œæ¬¡æ•°ï¼šn(n-1)/2,æ—¶é—´å¤æ‚åº¦ä¸ºO(n^2)</li>
+	 * <li>2) æœ€å¥½æƒ…å†µï¼šæ—¶é—´å¤æ‚åº¦ä¸ºO(n)</li>
+	 * <li>3) ç©ºé—´å¤æ‚åº¦ä¸ºO(1)</li>
 	 * </ul>
 	 * </p>
 	 * 
@@ -27,14 +27,14 @@ public class InsertSorting extends Sorting {
 	}
 
 	/**
-	 * <h4>ÕÛ°ë²åÈëÅÅĞò</h4>
+	 * <h4>æŠ˜åŠæ’å…¥æ’åº</h4>
 	 * 
 	 * <p>
-	 * ¸´ÔÓ¶È·ÖÎö£º<br/>
+	 * å¤æ‚åº¦åˆ†æï¼š<br/>
 	 * <ul>
-	 * <li>1) ×î»µÇé¿ö£º»ù±¾²Ù×÷Ö´ĞĞ´ÎÊı£ºn(n-1)/2,Ê±¼ä¸´ÔÓ¶ÈÎªO(n^2)</li>
-	 * <li>2) ×îºÃÇé¿ö£ºÊ±¼ä¸´ÔÓ¶ÈÎªO(n)</li>
-	 * <li>3) ¿Õ¼ä¸´ÔÓ¶ÈÎªO(1)</li>
+	 * <li>1) æœ€åæƒ…å†µï¼šåŸºæœ¬æ“ä½œæ‰§è¡Œæ¬¡æ•°ï¼šn(n-1)/2,æ—¶é—´å¤æ‚åº¦ä¸ºO(n^2)</li>
+	 * <li>2) æœ€å¥½æƒ…å†µï¼šæ—¶é—´å¤æ‚åº¦ä¸ºO(n)</li>
+	 * <li>3) ç©ºé—´å¤æ‚åº¦ä¸ºO(1)</li>
 	 * </ul>
 	 * </p>
 	 * 
@@ -43,7 +43,7 @@ public class InsertSorting extends Sorting {
 	public static void binaryInsertSort(int[] arr) {
 		int i, j, low, high, m, t;
 		for (i = 1; i < arr.length; i++) {
-			low = 0; // Ã¿´ÎÕÛ°ë²éÕÒ¶¼Òª½«lowÖÃÎªµÚ0¸öÎ»ÖÃ
+			low = 0; // æ¯æ¬¡æŠ˜åŠæŸ¥æ‰¾éƒ½è¦å°†lowç½®ä¸ºç¬¬0ä¸ªä½ç½®
 			t = arr[i];
 			high = i - 1;
 			while (low <= high) {
@@ -63,11 +63,11 @@ public class InsertSorting extends Sorting {
 		if (arr == null || arr.length <= 1) {
 			return;
 		}
-		// ÔöÁ¿
+		// å¢é‡
 		int incrementNum = arr.length / 2;
 		while (incrementNum >= 1) {
 			for (int i = 0; i < arr.length; i++) {
-				// ½øĞĞ²åÈëÅÅĞò
+				// è¿›è¡Œæ’å…¥æ’åº
 				for (int j = i; j < arr.length - incrementNum; j = j + incrementNum) {
 					if (arr[j] > arr[j + incrementNum]) {
 						int temple = arr[j];
@@ -76,7 +76,7 @@ public class InsertSorting extends Sorting {
 					}
 				}
 			}
-			// ÉèÖÃĞÂµÄÔöÁ¿
+			// è®¾ç½®æ–°çš„å¢é‡
 			incrementNum /= 2;
 		}
 	}

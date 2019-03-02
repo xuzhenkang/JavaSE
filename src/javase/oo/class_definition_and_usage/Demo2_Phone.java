@@ -2,15 +2,15 @@ package javase.oo.class_definition_and_usage;
 
 class Demo2_Phone {
 	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
+		//åˆ›å»ºå¯¹è±¡
 		Phone p = new Phone();
-		//µ÷ÓÃ¶ÔÏóÖĞµÄÊôĞÔ²¢¸³Öµ
-		p.brand = "´¸×Ó";
+		//è°ƒç”¨å¯¹è±¡ä¸­çš„å±æ€§å¹¶èµ‹å€¼
+		p.brand = "é”¤å­";
 		p.price = 998;
 
 		System.out.println(p.brand + "..."  + p.price);
 
-		//µ÷ÓÃ³ÉÔ±·½·¨
+		//è°ƒç”¨æˆå‘˜æ–¹æ³•
 		p.call();
 		p.sendMessage();
 		p.playGame();
@@ -18,24 +18,24 @@ class Demo2_Phone {
 }
 
 /*
-* Ä£·ÂÑ§ÉúÀà£¬ÈÃÑ§Éú×Ô¼ºÍê³É
-	* ÊôĞÔ:Æ·ÅÆ(brand)¼Û¸ñ(price)
-	* ĞĞÎª:´òµç»°(call),·¢ĞÅÏ¢(sendMessage)ÍæÓÎÏ·(playGame)
+* æ¨¡ä»¿å­¦ç”Ÿç±»ï¼Œè®©å­¦ç”Ÿè‡ªå·±å®Œæˆ
+	* å±æ€§:å“ç‰Œ(brand)ä»·æ ¼(price)
+	* è¡Œä¸º:æ‰“ç”µè¯(call),å‘ä¿¡æ¯(sendMessage)ç©æ¸¸æˆ(playGame)
 
 */
 class Phone {
-	String brand;					//Æ·ÅÆ
-	int price;						//¼Û¸ñ
+	String brand;					//å“ç‰Œ
+	int price;						//ä»·æ ¼
 
-	public void call() {			//´òµç»°
-		System.out.println("´òµç»°");
+	public void call() {			//æ‰“ç”µè¯
+		System.out.println("æ‰“ç”µè¯");
 	}
 
-	public void sendMessage() {		//·¢ĞÅÏ¢
-		System.out.println("·¢ĞÅÏ¢");
+	public void sendMessage() {		//å‘ä¿¡æ¯
+		System.out.println("å‘ä¿¡æ¯");
 	}
 
-	public void playGame() {		//ÍæÓÎÏ·
-		System.out.println("ÍæÓÎÏ·");
+	public void playGame() {		//ç©æ¸¸æˆ
+		System.out.println("ç©æ¸¸æˆ");
 	}
 }

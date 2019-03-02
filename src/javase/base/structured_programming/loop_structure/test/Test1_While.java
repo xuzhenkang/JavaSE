@@ -2,24 +2,24 @@ package javase.base.structured_programming.loop_structure.test;
 class Test1_While {
 	public static void main(String[] args) {
 		/*
-		* A:ÇóºÍË¼Ïë
-			* Çó1-100Ö®ºÍ
-		* B:Í³¼ÆË¼Ïë
-			* Í³¼Æ¡±Ë®ÏÉ»¨Êı¡±¹²ÓĞ¶àÉÙ¸ö
+		* A:æ±‚å’Œæ€æƒ³
+			* æ±‚1-100ä¹‹å’Œ
+		* B:ç»Ÿè®¡æ€æƒ³
+			* ç»Ÿè®¡â€æ°´ä»™èŠ±æ•°â€å…±æœ‰å¤šå°‘ä¸ª
 		*/
 		
-		//Çó1-100Ö®ºÍ
+		//æ±‚1-100ä¹‹å’Œ
 		/*int sum = 0;
 		int i = 1;
 		while (i <= 100) {
 			sum += i;					//sum = sum + i;
-			i++;						//ÈÃ±äÁ¿i×ÔÔö
+			i++;						//è®©å˜é‡iè‡ªå¢
 		}
 
 		System.out.println("sum = " + sum);*/
 
-		//Í³¼Æ¡±Ë®ÏÉ»¨Êı¡±¹²ÓĞ¶àÉÙ¸ö
-		int count = 0;					//¼ÆÊıÆ÷
+		//ç»Ÿè®¡â€æ°´ä»™èŠ±æ•°â€å…±æœ‰å¤šå°‘ä¸ª
+		int count = 0;					//è®¡æ•°å™¨
 		int i = 100;
 		while (i <= 999) {
 			int ge = i % 10;
@@ -35,7 +35,7 @@ class Test1_While {
 
 		System.out.println("count =" + count);
 
-		//Ä³ŒÅË¿ÎªÁË×·ÇóÅ®Éñ,Ğ´ÁËÒ»¶Î´úÂëÊ¾°®,µ«ÊÇÅ®ÉñÒ²»ájava,¸Ä¶¯Ò»ÏÂ°ÑŒÅË¿¾Ü¾ø
+		//æŸå±Œä¸ä¸ºäº†è¿½æ±‚å¥³ç¥,å†™äº†ä¸€æ®µä»£ç ç¤ºçˆ±,ä½†æ˜¯å¥³ç¥ä¹Ÿä¼šjava,æ”¹åŠ¨ä¸€ä¸‹æŠŠå±Œä¸æ‹’ç»
 		int j = 1;
 		while (j <= 10000) {
 			System.out.println("I Love You!!!");

@@ -14,12 +14,12 @@ public class Demo04_ObjectInputStream {
 	 * @throws FileNotFoundException 
 	 * @throws ClassNotFoundException 
 	 * ObjectInputStream
-	 * ¶ÔÏóÊäÈëÁ÷,·´ĞòÁĞ»¯
+	 * å¯¹è±¡è¾“å…¥æµ,ååºåˆ—åŒ–
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
 		//demo1();
 		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("e.txt"));
-		ArrayList<Person> list = (ArrayList<Person>) ois.readObject();		//½«¼¯ºÏ¶ÔÏóÒ»´Î¶ÁÈ¡
+		ArrayList<Person> list = (ArrayList<Person>) ois.readObject();		//å°†é›†åˆå¯¹è±¡ä¸€æ¬¡è¯»å–
 		
 		for (Person person : list) {
 			System.out.println(person);
@@ -34,7 +34,7 @@ public class Demo04_ObjectInputStream {
 		
 		Person p1 = (Person) ois.readObject();
 		Person p2 = (Person) ois.readObject();
-		//Person p3 = (Person) ois.readObject();			//µ±ÎÄ¼ş¶ÁÈ¡µ½ÁËÄ©Î²Ê±³öÏÖEOFException
+		//Person p3 = (Person) ois.readObject();			//å½“æ–‡ä»¶è¯»å–åˆ°äº†æœ«å°¾æ—¶å‡ºç°EOFException
 		
 		System.out.println(p1);
 		System.out.println(p2);

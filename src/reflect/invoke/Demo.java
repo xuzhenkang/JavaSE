@@ -4,9 +4,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
- * ÎªÊ²Ã´ÒªÓÃinvoke·½·¨£¿
- * Ö÷ÒªÊÇÎªÁËÀà·´Éä£¬ÕâÑùÄã¿ÉÒÔÔÚ²»ÖªµÀ¾ßÌåµÄÀàµÄÇé¿öÏÂ£¬¸ù¾İÅäÖÃµÄ×Ö·û´®È¥µ÷ÓÃÒ»¸öÀàµÄ·½·¨¡£ÔÚÁé»î±à³ÌµÄÊ±ºò·Ç³£ÓĞÓÃ¡£
- * ºÜ¶à¿ò¼Ü´úÂë¶¼ÊÇÕâÑùÈ¥ÊµÏÖµÄ¡£µ«ÊÇÒ»°ãµÄ±à³Ì£¬ÄãÊÇ²»ĞèÒªÕâÑù×öµÄ£¬ÒòÎªÀà¶¼ÊÇÄã×Ô¼ºĞ´µÄ£¬ÔõÃ´µ÷ÓÃ£¬ÔõÃ´Éú³É¶¼ÊÇÇå³şµÄ¡£
+ * ä¸ºä»€ä¹ˆè¦ç”¨invokeæ–¹æ³•ï¼Ÿ
+ * ä¸»è¦æ˜¯ä¸ºäº†ç±»åå°„ï¼Œè¿™æ ·ä½ å¯ä»¥åœ¨ä¸çŸ¥é“å…·ä½“çš„ç±»çš„æƒ…å†µä¸‹ï¼Œæ ¹æ®é…ç½®çš„å­—ç¬¦ä¸²å»è°ƒç”¨ä¸€ä¸ªç±»çš„æ–¹æ³•ã€‚åœ¨çµæ´»ç¼–ç¨‹çš„æ—¶å€™éå¸¸æœ‰ç”¨ã€‚
+ * å¾ˆå¤šæ¡†æ¶ä»£ç éƒ½æ˜¯è¿™æ ·å»å®ç°çš„ã€‚ä½†æ˜¯ä¸€èˆ¬çš„ç¼–ç¨‹ï¼Œä½ æ˜¯ä¸éœ€è¦è¿™æ ·åšçš„ï¼Œå› ä¸ºç±»éƒ½æ˜¯ä½ è‡ªå·±å†™çš„ï¼Œæ€ä¹ˆè°ƒç”¨ï¼Œæ€ä¹ˆç”Ÿæˆéƒ½æ˜¯æ¸…æ¥šçš„ã€‚
  * 
  * @author kang
  *
@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 public class Demo {
 	public static void main(String[] args)
 			throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
-		StudentDemo sd = new StudentDemo(1, "²âÊÔinvoke", "Î´Öª", "10000", "19920205", "ºşÄÏ");
+		StudentDemo sd = new StudentDemo(1, "æµ‹è¯•invoke", "æœªçŸ¥", "10000", "19920205", "æ¹–å—");
 		Object[] objs = new Object[] {};
 		StringBuilder sb = new StringBuilder();
 		sb.append("<Object.XmlString>start</Object.XmlString>");
@@ -23,7 +23,7 @@ public class Demo {
 		for (Method m : sd.getClass().getMethods()) {
 			if (m.getName().startsWith("get")) {
 				System.out.println(m.getName());
-				sb.append("\n<" + m.getName().substring(3) + ">");// subString(3)ÊÇÎªÁËÈ¥µôÇ°ÃæµÄget
+				sb.append("\n<" + m.getName().substring(3) + ">");// subString(3)æ˜¯ä¸ºäº†å»æ‰å‰é¢çš„get
 				sb.append(m.invoke(sd, objs));
 				sb.append("</" + m.getName().substring(3) + ">");
 				System.out.println("---" + m.invoke(sd, objs));

@@ -6,19 +6,19 @@ import java.util.List;
 public class Demo2_List {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * ÏòList¼¯ºÏÖĞ´æ´¢Ñ§Éú¶ÔÏó
-	 * Í¨¹ısize()ºÍget()·½·¨½áºÏÊ¹ÓÃ±éÀú¡£
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * å‘Listé›†åˆä¸­å­˜å‚¨å­¦ç”Ÿå¯¹è±¡
+	 * é€šè¿‡size()å’Œget()æ–¹æ³•ç»“åˆä½¿ç”¨éå†ã€‚
 	 */
 	public static void main(String[] args) {
 		List list = new ArrayList();
-		list.add(new Student("ÕÅÈı", 23));					//Object obj = new Student("ÕÅÈı",23);
-		list.add(new Student("ÀîËÄ", 24));
-		list.add(new Student("ÍõÎå", 25));
-		list.add(new Student("ÕÔÁù", 26));
+		list.add(new Student("å¼ ä¸‰", 23));					//Object obj = new Student("å¼ ä¸‰",23);
+		list.add(new Student("æå››", 24));
+		list.add(new Student("ç‹äº”", 25));
+		list.add(new Student("èµµå…­", 26));
 		
 		for(int i = 0; i < list.size(); i++) {
-			//System.out.println(list.get(i));	 			//Í¨¹ıË÷Òı»ñÈ¡Ã¿Ò»¸öÔªËØ
+			//System.out.println(list.get(i));	 			//é€šè¿‡ç´¢å¼•è·å–æ¯ä¸€ä¸ªå…ƒç´ 
 			Student s = (Student)list.get(i);
 			System.out.println(s.getName() + "..." + s.getAge());
 		}

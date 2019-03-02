@@ -1,17 +1,17 @@
 package reflect;
 
 /**
- * ÓëTestPerson1ÀàµÄ´úÂëÍêÈ«ÏàÍ¬£¬Î¨Ò»Ò»µãÇø±ğÔÚÓÚdemo = Class.forName("reflect.Person2");
- * ¶øTestPerson1ÀàµÄ´úÂëÎª£ºdemo = Class.forName("reflect.Person1");
- * ´Ë³ÌĞòÔËĞĞ»á±¨´í£º
+ * ä¸TestPerson1ç±»çš„ä»£ç å®Œå…¨ç›¸åŒï¼Œå”¯ä¸€ä¸€ç‚¹åŒºåˆ«åœ¨äºdemo = Class.forName("reflect.Person2");
+ * è€ŒTestPerson1ç±»çš„ä»£ç ä¸ºï¼šdemo = Class.forName("reflect.Person1");
+ * æ­¤ç¨‹åºè¿è¡Œä¼šæŠ¥é”™ï¼š
 java.lang.InstantiationException: reflect.Person2
 	at java.lang.Class.newInstance(Unknown Source)
 	at reflect.TestPerson2.main(TestPerson2.java:20)
 Exception in thread "main" java.lang.NullPointerException
 	at reflect.TestPerson2.main(TestPerson2.java:29)
 	
-Ô­ÒòÊÇPerson2ÀàÃ»ÓĞÎŞ²ÎµÄ¹¹ÔìÆ÷¡£
-ËùÒÔÒÔºóÔÙ±àĞ´Ê¹ÓÃClassÊµÀı»¯ÆäËûÀàµÄ¶ÔÏóµÄÊ±ºò£¬Ò»¶¨Òª×Ô¼º¶¨ÒåÎŞ²ÎµÄ¹¹Ôìº¯Êı¡£
+åŸå› æ˜¯Person2ç±»æ²¡æœ‰æ— å‚çš„æ„é€ å™¨ã€‚
+æ‰€ä»¥ä»¥åå†ç¼–å†™ä½¿ç”¨Classå®ä¾‹åŒ–å…¶ä»–ç±»çš„å¯¹è±¡çš„æ—¶å€™ï¼Œä¸€å®šè¦è‡ªå·±å®šä¹‰æ— å‚çš„æ„é€ å‡½æ•°ã€‚
  * @author lenovo
  *
  */

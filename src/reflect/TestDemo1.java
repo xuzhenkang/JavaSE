@@ -1,7 +1,7 @@
 package reflect;
 /**
-ËùÓĞÀàµÄ¶ÔÏóÆäÊµ¶¼ÊÇClassµÄÊµÀı¡£
-Êä³ö½á¹û£º
+æ‰€æœ‰ç±»çš„å¯¹è±¡å…¶å®éƒ½æ˜¯Classçš„å®ä¾‹ã€‚
+è¾“å‡ºç»“æœï¼š
 reflect.Demo
  */
 public class TestDemo1 {

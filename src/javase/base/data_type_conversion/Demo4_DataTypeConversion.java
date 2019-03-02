@@ -2,10 +2,10 @@ package javase.base.data_type_conversion;
 
 class Demo4_DataTypeConversion {
 	public static void main(String[] args) {
-		//System.out.println('a' + 1);			//98,ÒòÎªÓĞASCIIÂë±í,a×Ö·û¶ÔÓ¦µÄÊÇintÀàĞÍµÄ97
+		//System.out.println('a' + 1);			//98,å› ä¸ºæœ‰ASCIIç è¡¨,aå­—ç¬¦å¯¹åº”çš„æ˜¯intç±»å‹çš„97
 		//System.out.println((char)('a' + 1));
 
-		System.out.println("hello"+'a'+1);		//ÈÎºÎÊı¾İÀàĞÍÓÃ+Óë×Ö·û´®ÏàÁ¬½Ó¶¼»á²úÉúĞÂµÄ×Ö·û´®
+		System.out.println("hello"+'a'+1);		//ä»»ä½•æ•°æ®ç±»å‹ç”¨+ä¸å­—ç¬¦ä¸²ç›¸è¿æ¥éƒ½ä¼šäº§ç”Ÿæ–°çš„å­—ç¬¦ä¸²
 		System.out.println('a'+1+"hello");
 
 		System.out.println(" 5 + 5 = " + (5 + 5));

@@ -6,7 +6,7 @@ public class Test6 {
 
 	/**
 	 * @param args
-	 *  ĞèÇó:Çó³ö1000µÄ½×³ËËùÓĞÁãºÍÎ²²¿ÁãµÄ¸öÊı,²»ÓÃµİ¹é×ö
+	 *  éœ€æ±‚:æ±‚å‡º1000çš„é˜¶ä¹˜æ‰€æœ‰é›¶å’Œå°¾éƒ¨é›¶çš„ä¸ªæ•°,ä¸ç”¨é€’å½’åš
 	 */
 	public static void main(String[] args) {
 		/*int result = 1;
@@ -14,23 +14,23 @@ public class Test6 {
 			result = result * i;
 		}
 		
-		System.out.println(result);		//ÒòÎª1000µÄ½×³ËÔ¶Ô¶³¬³öÁËintµÄÈ¡Öµ·¶Î§
+		System.out.println(result);		//å› ä¸º1000çš„é˜¶ä¹˜è¿œè¿œè¶…å‡ºäº†intçš„å–å€¼èŒƒå›´
 		*/
 		//demo1();
 		demo2();
 	}
 
-	public static void demo2() {		//»ñÈ¡1000µÄ½×³ËÎ²²¿ÓĞ¶àÉÙ¸öÁã
+	public static void demo2() {		//è·å–1000çš„é˜¶ä¹˜å°¾éƒ¨æœ‰å¤šå°‘ä¸ªé›¶
 		BigInteger bi1 = new BigInteger("1");
 		for(int i = 1; i <= 1000; i++) {
 			BigInteger bi2 = new BigInteger(i+"");
-			bi1 = bi1.multiply(bi2);	//½«bi1Óëbi2Ïà³ËµÄ½á¹û¸³Öµ¸øbi1
+			bi1 = bi1.multiply(bi2);	//å°†bi1ä¸bi2ç›¸ä¹˜çš„ç»“æœèµ‹å€¼ç»™bi1
 		}
-		String str = bi1.toString();	//»ñÈ¡×Ö·û´®±íÏÖĞÎÊ½
+		String str = bi1.toString();	//è·å–å­—ç¬¦ä¸²è¡¨ç°å½¢å¼
 		StringBuilder sb = new StringBuilder(str);
-		str = sb.reverse().toString();	//Á´Ê½±à³Ì
+		str = sb.reverse().toString();	//é“¾å¼ç¼–ç¨‹
 		
-		int count = 0;					//¶¨Òå¼ÆÊıÆ÷
+		int count = 0;					//å®šä¹‰è®¡æ•°å™¨
 		for(int i = 0; i < str.length(); i++) {
 			if('0' != str.charAt(i)) {
 				break;
@@ -42,17 +42,17 @@ public class Test6 {
 		System.out.println(count);
 	}
 
-	public static void demo1() {		//Çó1000µÄ½×³ËÖĞËùÓĞµÄÁã
+	public static void demo1() {		//æ±‚1000çš„é˜¶ä¹˜ä¸­æ‰€æœ‰çš„é›¶
 		BigInteger bi1 = new BigInteger("1");
 		for(int i = 1; i <= 1000; i++) {
 			BigInteger bi2 = new BigInteger(i+"");
-			bi1 = bi1.multiply(bi2);	//½«bi1Óëbi2Ïà³ËµÄ½á¹û¸³Öµ¸øbi1
+			bi1 = bi1.multiply(bi2);	//å°†bi1ä¸bi2ç›¸ä¹˜çš„ç»“æœèµ‹å€¼ç»™bi1
 		}
-		String str = bi1.toString();	//»ñÈ¡×Ö·û´®±íÏÖĞÎÊ½
+		String str = bi1.toString();	//è·å–å­—ç¬¦ä¸²è¡¨ç°å½¢å¼
 		int count = 0;
 		for(int i = 0; i < str.length(); i++) {
-			if('0' == str.charAt(i)) {	//Èç¹û×Ö·û´®ÖĞ³öÏÖÁË0×Ö·û
-				count++;				//¼ÆÊıÆ÷¼Ó1
+			if('0' == str.charAt(i)) {	//å¦‚æœå­—ç¬¦ä¸²ä¸­å‡ºç°äº†0å­—ç¬¦
+				count++;				//è®¡æ•°å™¨åŠ 1
 			}
 		}
 		System.out.println(count);

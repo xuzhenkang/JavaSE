@@ -24,14 +24,14 @@ public class MyProxy implements InvocationHandler {
 	}
 }
 /**
- * Proxy.newProxyInstanceµÄ²ÎÊı½âÊÍ£º
+ * Proxy.newProxyInstanceçš„å‚æ•°è§£é‡Šï¼š
  * 
- * Ò»¸öClassLoader¶ÔÏó£¬¶¨ÒåÁËÓÉÄÄ¸öClassLoader¶ÔÏóÀ´¶ÔÉú³ÉµÄ´úÀí¶ÔÏó½øĞĞ¼ÓÔØ
+ * ä¸€ä¸ªClassLoaderå¯¹è±¡ï¼Œå®šä¹‰äº†ç”±å“ªä¸ªClassLoaderå¯¹è±¡æ¥å¯¹ç”Ÿæˆçš„ä»£ç†å¯¹è±¡è¿›è¡ŒåŠ è½½
  * loader - the class loader to define the proxy class  
  * 
- * Ò»¸öInterface¶ÔÏóµÄÊı×é£¬±íÊ¾µÄÊÇÎÒ½«Òª¸øÎÒĞèÒª´úÀíµÄ¶ÔÏóÌá¹©Ò»×éÊ²Ã´½Ó¿Ú
+ * ä¸€ä¸ªInterfaceå¯¹è±¡çš„æ•°ç»„ï¼Œè¡¨ç¤ºçš„æ˜¯æˆ‘å°†è¦ç»™æˆ‘éœ€è¦ä»£ç†çš„å¯¹è±¡æä¾›ä¸€ç»„ä»€ä¹ˆæ¥å£
  * interfaces - the list of interfaces for the proxy class to implement 
  * 
- * Ò»¸öInvocationHandler¶ÔÏó£¬±íÊ¾µÄÊÇµ±ÎÒÕâ¸ö¶¯Ì¬´úÀí¶ÔÏóÔÚµ÷ÓÃ·½·¨µÄÊ±ºò£¬»á¹ØÁªµ½ÄÄÒ»¸öInvocationHandler¶ÔÏóÉÏ
+ * ä¸€ä¸ªInvocationHandlerå¯¹è±¡ï¼Œè¡¨ç¤ºçš„æ˜¯å½“æˆ‘è¿™ä¸ªåŠ¨æ€ä»£ç†å¯¹è±¡åœ¨è°ƒç”¨æ–¹æ³•çš„æ—¶å€™ï¼Œä¼šå…³è”åˆ°å“ªä¸€ä¸ªInvocationHandlerå¯¹è±¡ä¸Š
  * h - the invocation handler to dispatch method invocations to  
  */

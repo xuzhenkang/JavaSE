@@ -55,10 +55,10 @@ class Printer {
 		if (flag != 1) {
 			c1.await();
 		}
-		System.out.print("´«");
-		System.out.print("ÖÇ");
-		System.out.print("²¥");
-		System.out.println("¿Í");
+		System.out.print("ä¼ ");
+		System.out.print("æ™º");
+		System.out.print("æ’­");
+		System.out.println("å®¢");
 		flag = 2;
 		c2.signal();
 		r.unlock();
@@ -69,11 +69,11 @@ class Printer {
 		if (flag != 2) {
 			c2.await();
 		}
-		System.out.print("ºÚ");
-		System.out.print("Âí");
-		System.out.print("³Ì");
-		System.out.print("Ğò");
-		System.out.println("Ô±");
+		System.out.print("é»‘");
+		System.out.print("é©¬");
+		System.out.print("ç¨‹");
+		System.out.print("åº");
+		System.out.println("å‘˜");
 		flag = 3;
 		c3.signal();
 		r.unlock();

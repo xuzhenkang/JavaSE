@@ -2,7 +2,7 @@ package oj.gettingjob.nowcoder.didi.dikdadeshu;
 
 import java.util.Scanner;
 /**
- * ÇóµÚk´óµÄÊý
+ * æ±‚ç¬¬kå¤§çš„æ•°
  * @author lenovo
  *
  */

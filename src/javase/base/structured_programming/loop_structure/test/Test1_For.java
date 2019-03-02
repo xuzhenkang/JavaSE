@@ -1,12 +1,12 @@
 package javase.base.structured_programming.loop_structure.test;
 /*
-* A:������ʾ
-	* �������ڿ���̨�������1-10
-	* �������ڿ���̨�������10-1
-* B:ע������
-	* a:�ж�����������ۼ򵥻��Ǹ��ӽ����boolean���͡�
-	* b:ѭ������������һ����䣬�����ſ���ʡ�ԣ�����Ƕ�����䣬�����Ų���ʡ�ԡ�������Զ��Ҫʡ�ԡ�
-	* c:һ����˵����������ž�û�зֺţ��зֺž�û���������
+* A:案例演示
+	* 需求：请在控制台输出数据1-10
+	* 需求：请在控制台输出数据10-1
+* B:注意事项
+	* a:判断条件语句无论简单还是复杂结果是boolean类型。
+	* b:循环体语句如果是一条语句，大括号可以省略；如果是多条语句，大括号不能省略。建议永远不要省略。
+	* c:一般来说：有左大括号就没有分号，有分号就没有左大括号
 */
 class Test1_For {
 	public static void main(String[] args) {

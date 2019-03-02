@@ -2,10 +2,10 @@ package javase.oo.interfaces.test;
 
 public class Test1_Animal {
 	public static void main(String[] args) {
-		Cat c = new Cat("¼Ó·Æ", 8);
+		Cat c = new Cat("åŠ è²", 8);
 		c.eat();
 		c.sleep();
-		JumCat jc = new JumCat("Ìø¸ßÃ¨", 3);
+		JumCat jc = new JumCat("è·³é«˜çŒ«", 3);
 		jc.eat();
 		jc.sleep();
 		jc.jump();
@@ -45,12 +45,12 @@ class Cat extends Animal {
 	}
 	@Override
 	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
+		System.out.println("çŒ«åƒé±¼");
 	}
 
 	@Override
 	public void sleep() {
-		System.out.println("²à×ÅË¯");
+		System.out.println("ä¾§ç€ç¡");
 	}
 	
 }
@@ -59,15 +59,15 @@ class JumCat extends Cat implements Jumping {
 
 	@Override
 	public void jump() {
-		System.out.println("Ã¨Ìô¸ß");
+		System.out.println("çŒ«æŒ‘é«˜");
 	}
 	public JumCat(String name, int age) {
 		super(name, age);
 	}
 }
 /** 
-A:°¸ÀıÑİÊ¾
-	¶¯ÎïÀà£ºĞÕÃû£¬ÄêÁä£¬³Ô·¹£¬Ë¯¾õ¡£
-	Ã¨ºÍ¹·
-	¶¯Îï½Ó¿Ú£ºÌô¸ß
+A:æ¡ˆä¾‹æ¼”ç¤º
+	åŠ¨ç‰©ç±»ï¼šå§“åï¼Œå¹´é¾„ï¼Œåƒé¥­ï¼Œç¡è§‰ã€‚
+	çŒ«å’Œç‹—
+	åŠ¨ç‰©æ¥å£ï¼šæŒ‘é«˜
 */

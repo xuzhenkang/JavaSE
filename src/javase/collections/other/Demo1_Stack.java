@@ -1,6 +1,6 @@
 package javase.collections.other;
-// ¿´¿´Õâ¸öStackµÄÔ´Âë£¬Äã»á·¢ÏÖ£¬¸ÃStack¼Ì³Ğ×ÔVector£¬
-// Èç¹ûÄãÖ»ĞèÒªÕ»µÄĞĞÎª£¬ÕâÀïÊ¹ÓÃ¼Ì³Ğ¾Í²»ºÏÊÊÁË£¬ÒòÎªÕâÑù»á²úÉúVectorµÄÆäËûËùÓĞ·½·¨µÄÀà¡£
+// çœ‹çœ‹è¿™ä¸ªStackçš„æºç ï¼Œä½ ä¼šå‘ç°ï¼Œè¯¥Stackç»§æ‰¿è‡ªVectorï¼Œ
+// å¦‚æœä½ åªéœ€è¦æ ˆçš„è¡Œä¸ºï¼Œè¿™é‡Œä½¿ç”¨ç»§æ‰¿å°±ä¸åˆé€‚äº†ï¼Œå› ä¸ºè¿™æ ·ä¼šäº§ç”ŸVectorçš„å…¶ä»–æ‰€æœ‰æ–¹æ³•çš„ç±»ã€‚
 import java.util.Stack;
 public class Demo1_Stack {
 	public static void main(String[] args) {

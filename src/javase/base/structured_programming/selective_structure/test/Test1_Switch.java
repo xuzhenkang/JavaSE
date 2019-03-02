@@ -1,32 +1,32 @@
 package javase.base.structured_programming.selective_structure.test;
 class Test1_Switch {
 	public static void main(String[] args) {
-		//* A:ÕûÊı(¸ø¶¨Ò»¸öÖµ,Êä³ö¶ÔÓ¦ĞÇÆÚ¼¸)
+		//* A:æ•´æ•°(ç»™å®šä¸€ä¸ªå€¼,è¾“å‡ºå¯¹åº”æ˜ŸæœŸå‡ )
 		int week = 1;
 		switch (week) {
 		case 1:
-			System.out.println("ĞÇÆÚÒ»");
+			System.out.println("æ˜ŸæœŸä¸€");
 		break;
 		case 2:
-			System.out.println("ĞÇÆÚ¶ş");
+			System.out.println("æ˜ŸæœŸäºŒ");
 		break;
 		case 3:
-			System.out.println("ĞÇÆÚÈı");
+			System.out.println("æ˜ŸæœŸä¸‰");
 		break;
 		case 4:
-			System.out.println("ĞÇÆÚËÄ");
+			System.out.println("æ˜ŸæœŸå››");
 		break;
 		case 5:
-			System.out.println("ĞÇÆÚÎå");
+			System.out.println("æ˜ŸæœŸäº”");
 		break;
 		case 6:
-			System.out.println("ĞÇÆÚÁù");
+			System.out.println("æ˜ŸæœŸå…­");
 		break;
 		case 7:
-			System.out.println("ĞÇÆÚÈÕ");
+			System.out.println("æ˜ŸæœŸæ—¥");
 		break;
 		default:
-			System.out.println("¶Ô²»ÆğÃ»ÓĞ¶ÔÓ¦µÄĞÇÆÚ");
+			System.out.println("å¯¹ä¸èµ·æ²¡æœ‰å¯¹åº”çš„æ˜ŸæœŸ");
 		break;
 		}
 	}

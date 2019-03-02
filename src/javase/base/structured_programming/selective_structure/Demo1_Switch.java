@@ -2,42 +2,42 @@ package javase.base.structured_programming.selective_structure;
 class Demo1_Switch {
 	public static void main(String[] args) {
 		/*
-		* A:switchÓï¾äµÄ¸ñÊ½
+		* A:switchè¯­å¥çš„æ ¼å¼
 		*		int x = 10;
-				switch(±í´ïÊ½) {		//»ù±¾Êı¾İÀàĞÍ¿ÉÒÔ½ÓÊÕbyte,short,char,int
-					  case Öµ1£º		//ÒıÓÃÊı¾İÀàĞÍ¿ÉÒÔ½ÓÊÕÃ¶¾Ù(JDK1.5)String×Ö·û´®(JDK1.7)
-						Óï¾äÌå1;
+				switch(è¡¨è¾¾å¼) {		//åŸºæœ¬æ•°æ®ç±»å‹å¯ä»¥æ¥æ”¶byte,short,char,int
+					  case å€¼1ï¼š		//å¼•ç”¨æ•°æ®ç±»å‹å¯ä»¥æ¥æ”¶æšä¸¾(JDK1.5)Stringå­—ç¬¦ä¸²(JDK1.7)
+						è¯­å¥ä½“1;
 						break;
-						case Öµ2£º
-						Óï¾äÌå2;
+						case å€¼2ï¼š
+						è¯­å¥ä½“2;
 						break;
-						¡­
-						default£º	
-						Óï¾äÌån+1;
+						â€¦
+						defaultï¼š	
+						è¯­å¥ä½“n+1;
 						break;
 				}
 		 
-		* B:switchÓï¾äµÄ¸ñÊ½½âÊÍ
-		* C:ÃæÊÔÌâ
-			* byte¿ÉÒÔ×÷ÎªswitchµÄ±í´ïÊ½Âğ?
-			* long¿ÉÒÔ×÷ÎªswitchµÄ±í´ïÊ½Âğ?
-			* String¿ÉÒÔ×÷ÎªswitchµÄ±í´ïÊ½Âğ?
-		* C:Ö´ĞĞÁ÷³Ì
-			* ÏÈ¼ÆËã±í´ïÊ½µÄÖµ
-			* È»ºóºÍcaseºóÃæµÄÆ¥Åä£¬Èç¹ûÓĞ¾ÍÖ´ĞĞ¶ÔÓ¦µÄÓï¾ä£¬·ñÔòÖ´ĞĞdefault¿ØÖÆµÄÓï¾ä
+		* B:switchè¯­å¥çš„æ ¼å¼è§£é‡Š
+		* C:é¢è¯•é¢˜
+			* byteå¯ä»¥ä½œä¸ºswitchçš„è¡¨è¾¾å¼å—?
+			* longå¯ä»¥ä½œä¸ºswitchçš„è¡¨è¾¾å¼å—?
+			* Stringå¯ä»¥ä½œä¸ºswitchçš„è¡¨è¾¾å¼å—?
+		* C:æ‰§è¡Œæµç¨‹
+			* å…ˆè®¡ç®—è¡¨è¾¾å¼çš„å€¼
+			* ç„¶åå’Œcaseåé¢çš„åŒ¹é…ï¼Œå¦‚æœæœ‰å°±æ‰§è¡Œå¯¹åº”çš„è¯­å¥ï¼Œå¦åˆ™æ‰§è¡Œdefaultæ§åˆ¶çš„è¯­å¥
 		*/
 
 		String name = "rose";
-		String gender = "Ñı";
+		String gender = "å¦–";
 		switch (gender) {
-		case "ÄĞÊ¿":
-			System.out.println(name + "ÊÇÒ»Î»" + gender + "Ï²»¶³Ô·¹Ë¯¾õ´òdota");
+		case "ç”·å£«":
+			System.out.println(name + "æ˜¯ä¸€ä½" + gender + "å–œæ¬¢åƒé¥­ç¡è§‰æ‰“dota");
 		break;
-		case "Å®Ê¿":
-			System.out.println(name + "ÊÇÒ»Î»" + gender + "Ï²»¶¹ä½Ö¹ºÎïÃÀÈİ");
+		case "å¥³å£«":
+			System.out.println(name + "æ˜¯ä¸€ä½" + gender + "å–œæ¬¢é€›è¡—è´­ç‰©ç¾å®¹");
 		break;
 		default:
-			System.out.println(name + "ÊÇÒ»Î»" + gender + "´ò´ÆĞÔ¼¤ËØÎ¬³ÖÃÀÃ²ÈİÑÕ");
+			System.out.println(name + "æ˜¯ä¸€ä½" + gender + "æ‰“é›Œæ€§æ¿€ç´ ç»´æŒç¾è²Œå®¹é¢œ");
 		break;
 		}
 	}

@@ -1,7 +1,7 @@
 package aop.staticproxypattern;
 
 /**
- * ÕæÊµÖ÷Ìâ½ÇÉ«£º¶¨ÒåÕæÊµµÄ¶ÔÏó¡£
+ * çœŸå®ä¸»é¢˜è§’è‰²ï¼šå®šä¹‰çœŸå®çš„å¯¹è±¡ã€‚
  * @author lenovo
  *
  */
@@ -16,7 +16,7 @@ public class PeopleTalk implements ITalk {
 
 	@Override
 	public void talk(String msg) {
-		System.out.println(msg + "!ÄãºÃ,ÎÒÊÇ" + username + "£¬ÎÒÄêÁäÊÇ" + age);
+		System.out.println(msg + "!ä½ å¥½,æˆ‘æ˜¯" + username + "ï¼Œæˆ‘å¹´é¾„æ˜¯" + age);
 	}
 	
 	public String getUsername() {

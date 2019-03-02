@@ -1,19 +1,19 @@
 package javase.oo.abstractclass.test;
 
 /*
- * - A:°¸ÀıÑİÊ¾
+ * - A:æ¡ˆä¾‹æ¼”ç¤º
 
-    - ¼ÙÈçÎÒÃÇÔÚ¿ª·¢Ò»¸öÏµÍ³Ê±ĞèÒª¶Ô³ÌĞòÔ±Àà½øĞĞÉè¼Æ£¬³ÌĞòÔ±°üº¬3¸öÊôĞÔ£ºĞÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê¡£
+    - å‡å¦‚æˆ‘ä»¬åœ¨å¼€å‘ä¸€ä¸ªç³»ç»Ÿæ—¶éœ€è¦å¯¹ç¨‹åºå‘˜ç±»è¿›è¡Œè®¾è®¡ï¼Œç¨‹åºå‘˜åŒ…å«3ä¸ªå±æ€§ï¼šå§“åã€å·¥å·ä»¥åŠå·¥èµ„ã€‚
 
-    - ¾­Àí£¬³ıÁËº¬ÓĞ³ÌĞòÔ±µÄÊôĞÔÍâ£¬ÁíÍâ»¹ÓĞÒ»¸ö½±½ğÊôĞÔ¡£
+    - ç»ç†ï¼Œé™¤äº†å«æœ‰ç¨‹åºå‘˜çš„å±æ€§å¤–ï¼Œå¦å¤–è¿˜æœ‰ä¸€ä¸ªå¥–é‡‘å±æ€§ã€‚
 
-    - ÇëÊ¹ÓÃ¼Ì³ĞµÄË¼ÏëÉè¼Æ³ö³ÌĞòÔ±ÀàºÍ¾­ÀíÀà¡£ÒªÇóÀàÖĞÌá¹©±ØÒªµÄ·½·¨½øĞĞÊôĞÔ·ÃÎÊ¡£
+    - è¯·ä½¿ç”¨ç»§æ‰¿çš„æ€æƒ³è®¾è®¡å‡ºç¨‹åºå‘˜ç±»å’Œç»ç†ç±»ã€‚è¦æ±‚ç±»ä¸­æä¾›å¿…è¦çš„æ–¹æ³•è¿›è¡Œå±æ€§è®¿é—®ã€‚
  */
 public class Test3_Employee {
 	public static void main(String[] args) {
-		Coder c = new Coder("µÂÂêÎ÷ÑÇ", "007", 8000);
+		Coder c = new Coder("å¾·ç›è¥¿äºš", "007", 8000);
 		c.work();
-		Manager m = new Manager("²ÔÀÏÊ¦", "9527", 3000, 20000);
+		Manager m = new Manager("è‹è€å¸ˆ", "9527", 3000, 20000);
 		m.work();
 	}
 }
@@ -65,7 +65,7 @@ class Coder extends Employee {
 	}
 	@Override
 	public void work() {
-		System.out.println("ÎÒµÄÃû×ÖÊÇ£º" + this.getName() + "ÎÒµÄ¹¤ºÅ: " + this.getId() + "ÎÒµÄ¹¤×Ê£º" + this.getSalary());
+		System.out.println("æˆ‘çš„åå­—æ˜¯ï¼š" + this.getName() + "æˆ‘çš„å·¥å·: " + this.getId() + "æˆ‘çš„å·¥èµ„ï¼š" + this.getSalary());
 	}
 }
 class Manager extends Employee {
@@ -78,7 +78,7 @@ class Manager extends Employee {
 
 	@Override
 	public void work() {
-		System.out.println("ÎÒµÄĞÕÃûÊÇ£º" + this.getName() + "ÎÒµÄ¹¤ºÅÊÇ£º" + this.getId() + "ÎÒµÄ¹¤×ÊÊÇ£º" + this.getSalary() + "ÎÒµÄ½±½ğÊÇ£º" + this.bonus);
+		System.out.println("æˆ‘çš„å§“åæ˜¯ï¼š" + this.getName() + "æˆ‘çš„å·¥å·æ˜¯ï¼š" + this.getId() + "æˆ‘çš„å·¥èµ„æ˜¯ï¼š" + this.getSalary() + "æˆ‘çš„å¥–é‡‘æ˜¯ï¼š" + this.bonus);
 	}
 }
 

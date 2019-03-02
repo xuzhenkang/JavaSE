@@ -1,14 +1,14 @@
 package javase.base.array.linear_array;
 class Demo4_Array {
 	public static void main(String[] args) {
-		int[] arr1 = new int[3];				//´´½¨Êı×é,³¤¶ÈÎª3
-		int[] arr2 = new int[3];				//´´½¨Êı×é,³¤¶ÈÎª3
+		int[] arr1 = new int[3];				//åˆ›å»ºæ•°ç»„,é•¿åº¦ä¸º3
+		int[] arr2 = new int[3];				//åˆ›å»ºæ•°ç»„,é•¿åº¦ä¸º3
 
-		System.out.println(arr1);				//´òÓ¡Êı×éµÄµØÖ·Öµ
+		System.out.println(arr1);				//æ‰“å°æ•°ç»„çš„åœ°å€å€¼
 		System.out.println(arr2);
 
-		arr1[0] = 10;							//¸øµÚÒ»¸öÊı×éÖĞµÚÒ»¸öÔªËØ¸³Öµ
-		arr2[1] = 20;							//¸øµÚ¶ş¸öÊı×éÖĞµÚ¶ş¸öÔªËØ¸³Öµ
+		arr1[0] = 10;							//ç»™ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­ç¬¬ä¸€ä¸ªå…ƒç´ èµ‹å€¼
+		arr2[1] = 20;							//ç»™ç¬¬äºŒä¸ªæ•°ç»„ä¸­ç¬¬äºŒä¸ªå…ƒç´ èµ‹å€¼
 
 		System.out.println(arr1[0]);
 		System.out.println(arr1[1]);

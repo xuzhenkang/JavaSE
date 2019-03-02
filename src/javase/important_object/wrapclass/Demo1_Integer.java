@@ -3,11 +3,11 @@ package javase.important_object.wrapclass;
 public class Demo1_Integer {
 
 	/**
-	 * * A:Ϊʲô���л������Ͱ�װ��
-			* �������������ͷ�װ�ɶ���ĺô����ڿ����ڶ����ж������Ĺ��ܷ������������ݡ�
-		* B:���ò���
-			* ���õĲ���֮һ�����ڻ��������������ַ���֮���ת����
-		* C:�������ͺͰ�װ��Ķ�Ӧ
+	 * * A:为什么会有基本类型包装类
+			* 将基本数据类型封装成对象的好处在于可以在对象中定义更多的功能方法操作该数据。
+		* B:常用操作
+			* 常用的操作之一：用于基本数据类型与字符串之间的转换。
+		* C:基本类型和包装类的对应
 		* 
 				byte 			Byte
 				short			Short

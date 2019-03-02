@@ -1,15 +1,15 @@
 package designpattern.singleton;
 
 /**
- * ¾²Ì¬ÄÚ²¿Ààµ¥ÀıÄ£Ê½£¨SIC£¬ Static Inner Class Singleton£©
- * ÓÅµã£ºÏß³Ì°²È«¡¢µ÷ÓÃĞ§ÂÊ¸ß¡¢¿ÉÒÔÑÓ³Ù¼ÓÔØ
- * È±µã£ºÃ»É¶È±µã£¡
+ * é™æ€å†…éƒ¨ç±»å•ä¾‹æ¨¡å¼ï¼ˆSICï¼Œ Static Inner Class Singletonï¼‰
+ * ä¼˜ç‚¹ï¼šçº¿ç¨‹å®‰å…¨ã€è°ƒç”¨æ•ˆç‡é«˜ã€å¯ä»¥å»¶è¿ŸåŠ è½½
+ * ç¼ºç‚¹ï¼šæ²¡å•¥ç¼ºç‚¹ï¼
  * @author lenovo
  *
  */
 public class SingletonSIC {
 	private static class Inner {
-		/*final ¿ÉÓÃ¿É²»ÓÃ*/
+		/*final å¯ç”¨å¯ä¸ç”¨*/
 		private static /*final*/ SingletonSIC instance = new SingletonSIC();
 	}
 	private SingletonSIC(){}

@@ -7,7 +7,7 @@ public class TestCGLibProxy {
 	public void proxyTest() {
 		CGLibProxyFactory factory = new CGLibProxyFactory();
 		
-		// 此时创建的代理对象是PersonServiceBean类的子类
+		// 姝ゆ椂鍒涘缓鐨勪唬鐞嗗璞℃槸PersonServiceBean绫荤殑瀛愮被
 		PersonServiceBean service = (PersonServiceBean) factory.createProxyInstance(new PersonServiceBean("xxx"));
 		service.save("999");
 	}

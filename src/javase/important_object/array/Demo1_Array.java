@@ -3,8 +3,8 @@ package javase.important_object.array;
 public class Demo1_Array {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	* Êı×é¸ß¼¶Ã°ÅİÅÅĞò´úÂë
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„é«˜çº§å†’æ³¡æ’åºä»£ç 
 	 */
 	public static void main(String[] args) {
 		int[] arr = {24, 69, 80, 57, 13};
@@ -14,19 +14,19 @@ public class Demo1_Array {
 	}
 	
 	/*
-	 * Ã°ÅİÅÅĞò
-	 * 1,·µ»ØÖµÀàĞÍ,void
-	 * 2,²ÎÊıÁĞ±í,int[] arr
+	 * å†’æ³¡æ’åº
+	 * 1,è¿”å›å€¼ç±»å‹,void
+	 * 2,å‚æ•°åˆ—è¡¨,int[] arr
 	 * 
-	 * 	µÚÒ»´Î:arr[0]Óëarr[1],arr[1]Óëarr[2],arr[2]Óëarr[3],arr[3]Óëarr[4]±È½Ï4´Î
-		µÚ¶ş´Î:arr[0]Óëarr[1],arr[1]Óëarr[2],arr[2]Óëarr[3]±È½Ï3´Î
-		µÚÈı´Î:arr[0]Óëarr[1],arr[1]Óëarr[2]±È½Ï2´Î
-		µÚËÄ´Î:arr[0]Óëarr[1]±È½Ï1´Î
+	 * 	ç¬¬ä¸€æ¬¡:arr[0]ä¸arr[1],arr[1]ä¸arr[2],arr[2]ä¸arr[3],arr[3]ä¸arr[4]æ¯”è¾ƒ4æ¬¡
+		ç¬¬äºŒæ¬¡:arr[0]ä¸arr[1],arr[1]ä¸arr[2],arr[2]ä¸arr[3]æ¯”è¾ƒ3æ¬¡
+		ç¬¬ä¸‰æ¬¡:arr[0]ä¸arr[1],arr[1]ä¸arr[2]æ¯”è¾ƒ2æ¬¡
+		ç¬¬å››æ¬¡:arr[0]ä¸arr[1]æ¯”è¾ƒ1æ¬¡
 	 */
 	
 	public static void bubbleSort(int[] arr) {
-		for (int i = 0; i < arr.length - 1; i++) {				//ÍâÑ­»·Ö»ĞèÒª±È½Ïarr.length-1´Î¾Í¿ÉÒÔÁË
-			for (int j = 0; j < arr.length - 1 - i; j++) {		//-1ÎªÁË·ÀÖ¹Ë÷ÒıÔ½½ç,-iÎªÁËÌá¸ßĞ§ÂÊ
+		for (int i = 0; i < arr.length - 1; i++) {				//å¤–å¾ªç¯åªéœ€è¦æ¯”è¾ƒarr.length-1æ¬¡å°±å¯ä»¥äº†
+			for (int j = 0; j < arr.length - 1 - i; j++) {		//-1ä¸ºäº†é˜²æ­¢ç´¢å¼•è¶Šç•Œ,-iä¸ºäº†æé«˜æ•ˆç‡
 				if(arr[j] > arr[j+1]) {
 					/*int temp = arr[j];
 					arr[j] = arr[j + 1];
@@ -38,9 +38,9 @@ public class Demo1_Array {
 	}
 	
 	/*
-	 * ´òÓ¡Êı×é
-	 * 1,·µ»ØÖµÀàĞÍvoid
-	 * 2,²ÎÊıÁĞ±íint[]arr
+	 * æ‰“å°æ•°ç»„
+	 * 1,è¿”å›å€¼ç±»å‹void
+	 * 2,å‚æ•°åˆ—è¡¨int[]arr
 	 */
 	
 	public static void print(int[] arr) {
@@ -50,18 +50,18 @@ public class Demo1_Array {
 	}
 	
 	/*
-	 * Ñ¡ÔñÅÅĞò
-	 * 1,·µ»ØÖµÀàĞÍvoid
-	 * 2,²ÎÊıÁĞ±íint[] arr
+	 * é€‰æ‹©æ’åº
+	 * 1,è¿”å›å€¼ç±»å‹void
+	 * 2,å‚æ•°åˆ—è¡¨int[] arr
 	 * 
-	 * 	µÚÒ»´Î:arr[0]·Ö±ğÓëarr[1-4]±È½Ï,±È½Ï4´Î
-		µÚ¶ş´Î:arr[1]·Ö±ğÓëarr[2-4]±È½Ï,±È½Ï3´Î
-		µÚÈı´Î:arr[2]·Ö±ğÓëarr[3-4]±È½Ï,±È½Ï2´Î
-		µÚËÄ´Î:arr[3]Óëarr[4]±È½Ï,±È½Ï1´Î
+	 * 	ç¬¬ä¸€æ¬¡:arr[0]åˆ†åˆ«ä¸arr[1-4]æ¯”è¾ƒ,æ¯”è¾ƒ4æ¬¡
+		ç¬¬äºŒæ¬¡:arr[1]åˆ†åˆ«ä¸arr[2-4]æ¯”è¾ƒ,æ¯”è¾ƒ3æ¬¡
+		ç¬¬ä¸‰æ¬¡:arr[2]åˆ†åˆ«ä¸arr[3-4]æ¯”è¾ƒ,æ¯”è¾ƒ2æ¬¡
+		ç¬¬å››æ¬¡:arr[3]ä¸arr[4]æ¯”è¾ƒ,æ¯”è¾ƒ1æ¬¡
 	 */
 	
 	public static void selectSort(int[] arr) {
-		for (int i = 0; i < arr.length - 1; i++) {				//Ö»ĞèÒª±È½Ïarr.length-1´Î
+		for (int i = 0; i < arr.length - 1; i++) {				//åªéœ€è¦æ¯”è¾ƒarr.length-1æ¬¡
 			for (int j = i + 1; j < arr.length; j++) {
 				if(arr[i] > arr[j]) {
 					/*int temp = arr[i];
@@ -74,11 +74,11 @@ public class Demo1_Array {
 	}
 	
 	/*
-	 * »»Î»²Ù×÷
-	 * 1,·µ»ØÖµÀàĞÍ,void
-	 * 2,²ÎÊıÁĞ±íint[] arr.int i,int j
+	 * æ¢ä½æ“ä½œ
+	 * 1,è¿”å›å€¼ç±»å‹,void
+	 * 2,å‚æ•°åˆ—è¡¨int[] arr.int i,int j
 	 * 
-	 * Èç¹ûÄ³¸ö·½·¨,Ö»Õë¶Ô±¾ÀàÊ¹ÓÃ,²»ÏëÈÃÆäËûÀàÊ¹ÓÃ¾Í¿ÉÒÔ¶¨Òå³ÉË½ÓĞµÄ
+	 * å¦‚æœæŸä¸ªæ–¹æ³•,åªé’ˆå¯¹æœ¬ç±»ä½¿ç”¨,ä¸æƒ³è®©å…¶ä»–ç±»ä½¿ç”¨å°±å¯ä»¥å®šä¹‰æˆç§æœ‰çš„
 	 */
 	
 	private static void swap(int[] arr,int i,int j) {

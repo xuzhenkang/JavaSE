@@ -2,75 +2,75 @@ package javase.oo.inherit.test;
 class Test4_Person {
 	public static void main(String[] args) {
 		Student1 s1 = new Student1();
-		s1.setName("ÕÅÈı");
+		s1.setName("å¼ ä¸‰");
 		s1.setAge(23);
 		System.out.println(s1.getName() + "..." + s1.getAge());
 		s1.eat();
 		s1.study();
 
 		System.out.println("------------------");
-		Student1 s2 = new Student1("ÀîËÄ",24);
+		Student1 s2 = new Student1("æå››",24);
 		System.out.println(s2.getName() + "..." + s2.getAge());
 		s2.eat();
 		s2.study();
 	}
 }
 /*
-* Ê¹ÓÃ¼Ì³ĞºóµÄÑ§ÉúºÍÀÏÊ¦°¸Àı
+* ä½¿ç”¨ç»§æ‰¿åçš„å­¦ç”Ÿå’Œè€å¸ˆæ¡ˆä¾‹
 */
 
 class Person {
-	private String name;					//ĞÕÃû
-	private int age;						//ÄêÁä
+	private String name;					//å§“å
+	private int age;						//å¹´é¾„
 
-	public Person() {}						//¿Õ²Î¹¹Ôì
+	public Person() {}						//ç©ºå‚æ„é€ 
 
-	public Person(String name,int age) {	//ÓĞ²Î¹¹Ôì
+	public Person(String name,int age) {	//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
 	}
 
-	public void setName(String name) {		//ÉèÖÃĞÕÃû
+	public void setName(String name) {		//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {				//»ñÈ¡ĞÕÃû
+	public String getName() {				//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {			//ÉèÖÃÄêÁä
+	public void setAge(int age) {			//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {					//»ñÈ¡ÄêÁä
+	public int getAge() {					//è·å–å¹´é¾„
 		return age;
 	}
 
-	public void eat() {						//³Ô·¹
-		System.out.println(name  + "³Ô·¹");
+	public void eat() {						//åƒé¥­
+		System.out.println(name  + "åƒé¥­");
 	}
 }
 
 class Student1 extends Person {
-	public Student1() {}						//¿Õ²Î¹¹Ôì
+	public Student1() {}						//ç©ºå‚æ„é€ 
 
 	public Student1(String name,int age) {
 		super(name,age);
 	}
 
 	public void study() {
-		System.out.println(this.getName() + "Ñ§Ï°");
+		System.out.println(this.getName() + "å­¦ä¹ ");
 	}
 }
 
 class Teacher1 extends Person {
-	public Teacher1() {}						//¿Õ²Î¹¹Ôì
+	public Teacher1() {}						//ç©ºå‚æ„é€ 
 
 	public Teacher1(String name,int age) {
 		super(name,age);
 	}
 
 	public void teach() {
-		System.out.println(this.getName() + "½²¿Î");
+		System.out.println(this.getName() + "è®²è¯¾");
 	}
 }

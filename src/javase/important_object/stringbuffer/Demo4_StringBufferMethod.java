@@ -3,16 +3,16 @@ package javase.important_object.stringbuffer;
 public class Demo4_StringBufferMethod {
 
 	/**
-	 * * A:StringBufferµÄÌæ»»¹¦ÄÜ
+	 * * A:StringBufferçš„æ›¿æ¢åŠŸèƒ½
 			* public StringBuffer replace(int start,int end,String str):
-				* ´Óstart¿ªÊ¼µ½endÓÃstrÌæ»»
-		* B:StringBufferµÄ·´×ª¹¦ÄÜ
+				* ä»startå¼€å§‹åˆ°endç”¨stræ›¿æ¢
+		* B:StringBufferçš„åè½¬åŠŸèƒ½
 			* public StringBuffer reverse():
-				* ×Ö·û´®·´×ª
+				* å­—ç¬¦ä¸²åè½¬
 	 */
 	public static void main(String[] args) {
-		StringBuffer sb = new StringBuffer("ÎÒ°®×Ü¸´Ï°");
-		//sb.replace(0, 3, "bai");					//Ìæ»»
+		StringBuffer sb = new StringBuffer("æˆ‘çˆ±æ€»å¤ä¹ ");
+		//sb.replace(0, 3, "bai");					//æ›¿æ¢
 		//System.out.println(sb);
 		
 		sb.reverse();

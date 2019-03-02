@@ -7,8 +7,8 @@ public class Demo2_LinkedHashSet {
 	/**
 	 * @param args
 	 * LinkedHashSet
-	 * µ×²ãÊÇÁ´±íÊµÏÖµÄ,ÊÇset¼¯ºÏÖĞÎ¨Ò»Ò»¸öÄÜ±£Ö¤ÔõÃ´´æ¾ÍÔõÃ´È¡µÄ¼¯ºÏ¶ÔÏó
-	 * ÒòÎªÊÇHashSetµÄ×ÓÀà,ËùÒÔÒ²ÊÇ±£Ö¤ÔªËØÎ¨Ò»µÄ,ÓëHashSetµÄÔ­ÀíÒ»Ñù
+	 * åº•å±‚æ˜¯é“¾è¡¨å®ç°çš„,æ˜¯seté›†åˆä¸­å”¯ä¸€ä¸€ä¸ªèƒ½ä¿è¯æ€ä¹ˆå­˜å°±æ€ä¹ˆå–çš„é›†åˆå¯¹è±¡
+	 * å› ä¸ºæ˜¯HashSetçš„å­ç±»,æ‰€ä»¥ä¹Ÿæ˜¯ä¿è¯å…ƒç´ å”¯ä¸€çš„,ä¸HashSetçš„åŸç†ä¸€æ ·
 	 */
 	public static void main(String[] args) {
 		LinkedHashSet<String> lhs = new LinkedHashSet<>();

@@ -10,12 +10,12 @@ public class JDKProxyFactory implements InvocationHandler {
 	public Object createProxyInstance(Object targetObject) {
 		this.targetObject = targetObject;
 
-		// newProxyInstance·½·¨µÄ²ÎÊý½âÊÍ£º
-		// µÚÒ»¸ö²ÎÊý£ºÒª´úÀíµÄÄ¿±ê¶ÔÏóµÄÀà×°ÔØÆ÷
-		// µÚ¶þ¸ö²ÎÊý£ºÄ¿±ê¶ÔÏóËùÊµÏÖµÄËùÓÐ½Ó¿Ú
-		// µÚÈý¸ö²ÎÊý£ºÒ»¸ö»Øµ÷µÄ½Ó¿Ú£¬Ò»µ©Éú³ÉÕâ¸ö´úÀí¶ÔÏóºó£¬¾Í»á»Øµ÷Õâ¸ö½Ó¿Úµ±ÖÐµÄinvoke·½·¨¡£
-		// ¿ÉÒÔÈÃJDKProxyFactoryÊµÏÖInvocationHandler½Ó¿Ú£¬È»ºóÍê³ÉÀïÃæµÄinvoke·½·¨¡£
-		// Ã¿Ò»´ÎÉú³ÉÕâ¸ö´úÀí¶ÔÏóµÄÊ±ºò£¬¾Í»áµ÷ÓÃÕâ¸öinvoke·½·¨¡£
+		// newProxyInstanceæ–¹æ³•çš„å‚æ•°è§£é‡Šï¼š
+		// ç¬¬ä¸€ä¸ªå‚æ•°ï¼šè¦ä»£ç†çš„ç›®æ ‡å¯¹è±¡çš„ç±»è£…è½½å™¨
+		// ç¬¬äºŒä¸ªå‚æ•°ï¼šç›®æ ‡å¯¹è±¡æ‰€å®žçŽ°çš„æ‰€æœ‰æŽ¥å£
+		// ç¬¬ä¸‰ä¸ªå‚æ•°ï¼šä¸€ä¸ªå›žè°ƒçš„æŽ¥å£ï¼Œä¸€æ—¦ç”Ÿæˆè¿™ä¸ªä»£ç†å¯¹è±¡åŽï¼Œå°±ä¼šå›žè°ƒè¿™ä¸ªæŽ¥å£å½“ä¸­çš„invokeæ–¹æ³•ã€‚
+		// å¯ä»¥è®©JDKProxyFactoryå®žçŽ°InvocationHandleræŽ¥å£ï¼Œç„¶åŽå®Œæˆé‡Œé¢çš„invokeæ–¹æ³•ã€‚
+		// æ¯ä¸€æ¬¡ç”Ÿæˆè¿™ä¸ªä»£ç†å¯¹è±¡çš„æ—¶å€™ï¼Œå°±ä¼šè°ƒç”¨è¿™ä¸ªinvokeæ–¹æ³•ã€‚
 		return Proxy.newProxyInstance(this.targetObject.getClass().getClassLoader(),
 				this.targetObject.getClass().getInterfaces(), this);
 	}

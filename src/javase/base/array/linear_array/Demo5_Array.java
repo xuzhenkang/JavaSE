@@ -1,5 +1,5 @@
 package javase.base.array.linear_array;
-//三个引用两个数组
+//涓変釜寮曠敤涓や釜鏁扮粍
 class Demo5_Array {
 	public static void main(String[] args) {
 		int[] arr1 = new int[3];

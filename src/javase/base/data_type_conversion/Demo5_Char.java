@@ -19,8 +19,8 @@ class Demo5_Char {
 		System.out.println(c4);
 		System.out.println(c5);
 
-		//charÀàĞÍÊÇ·ñ¿ÉÒÔ´æ´¢ÖĞÎÄ
-		char c6 = 'ÖĞ';
+		//charç±»å‹æ˜¯å¦å¯ä»¥å­˜å‚¨ä¸­æ–‡
+		char c6 = 'ä¸­';
 		System.out.println(c6);
 	}
 }

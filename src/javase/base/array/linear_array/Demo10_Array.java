@@ -1,7 +1,7 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* Êı×éÔªËØ·´×ª(¾ÍÊÇ°ÑÔªËØ¶Ôµ÷)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„å…ƒç´ åè½¬(å°±æ˜¯æŠŠå…ƒç´ å¯¹è°ƒ)
 */
 class Demo10_Array {
 	public static void main(String[] args) {
@@ -11,16 +11,16 @@ class Demo10_Array {
 	}
 
 	/*
-	Êı×éÔªËØ·´×ª
-	1,Ã÷È··µ»ØÖµÀàĞÍvoid
-	2,Ã÷È·²ÎÊıÁĞ±íint[] arr
+	æ•°ç»„å…ƒç´ åè½¬
+	1,æ˜ç¡®è¿”å›å€¼ç±»å‹void
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨int[] arr
 	*/
 
 	public static void reverseArray(int[] arr) {
 		for (int i = 0;i < arr.length / 2 ; i++) {
-			//arr[0]ºÍarr[arr.length-1-0]½»»»
-			//arr[1]ºÍarr[arr.length-1-1]½»»»
-			//arr[2]ºÍarr[arr.lentth-1-2]
+			//arr[0]å’Œarr[arr.length-1-0]äº¤æ¢
+			//arr[1]å’Œarr[arr.length-1-1]äº¤æ¢
+			//arr[2]å’Œarr[arr.lentth-1-2]
 			//...
 
 			int temp = arr[i];
@@ -30,14 +30,14 @@ class Demo10_Array {
 	}
 
 	/*
-	Êı×é±éÀú
-	1,Ã÷È··µ»ØÖµÀàĞÍvoid
-	2,Ã÷È·²ÎÊıÁĞ±íint[] arr
+	æ•°ç»„éå†
+	1,æ˜ç¡®è¿”å›å€¼ç±»å‹void
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨int[] arr
 	*/
 
 	public static void print(int[] arr) {
-		for (int i = 0;i < arr.length ;i++ ) {				//±éÀúÊı×éÖĞµÄÃ¿Ò»¸öÔªËØ
-			System.out.print(arr[i] + " ");					//´òÓ¡ÔÚ¿ØÖÆÌ¨
+		for (int i = 0;i < arr.length ;i++ ) {				//éå†æ•°ç»„ä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ 
+			System.out.print(arr[i] + " ");					//æ‰“å°åœ¨æ§åˆ¶å°
 		}
 	}
 }

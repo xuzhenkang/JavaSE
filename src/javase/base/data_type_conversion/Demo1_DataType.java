@@ -1,12 +1,12 @@
 package javase.base.data_type_conversion;
 
-class Demo1_DataType {							//DataTypeÊı¾İÀàĞÍ			
+class Demo1_DataType {							//DataTypeæ•°æ®ç±»å‹			
 	public static void main(String[] args) {
-		//ÕûÊıÀàĞÍ
-		byte b = 10;			//Õ¼Ò»¸ö×Ö½Ú,-128 µ½ 127
-		short s = 20;			//Õ¼Á½¸ö×Ö½Ú
-		int i = 30;				//Õ¼ËÄ¸ö×Ö½Ú			ÕûÊıÄ¬ÈÏµÄÊı¾İÀàĞÍ¾ÍÊÇintÀàĞÍ
-		long x = 8888888888L;	//Õ¼°Ë¸ö×Ö½Ú	Èç¹ûlongÀàĞÍºóÃæ¼ÓL½øĞĞ±êÊ¶×îºÃ¼Ó´óL,ÒòÎªĞ¡lÌ«ÏñÒ»ÁË
+		//æ•´æ•°ç±»å‹
+		byte b = 10;			//å ä¸€ä¸ªå­—èŠ‚,-128 åˆ° 127
+		short s = 20;			//å ä¸¤ä¸ªå­—èŠ‚
+		int i = 30;				//å å››ä¸ªå­—èŠ‚			æ•´æ•°é»˜è®¤çš„æ•°æ®ç±»å‹å°±æ˜¯intç±»å‹
+		long x = 8888888888L;	//å å…«ä¸ªå­—èŠ‚	å¦‚æœlongç±»å‹åé¢åŠ Lè¿›è¡Œæ ‡è¯†æœ€å¥½åŠ å¤§L,å› ä¸ºå°lå¤ªåƒä¸€äº†
 		System.out.println(b);
 		System.out.println(s);
 		System.out.println(i);
@@ -14,17 +14,17 @@ class Demo1_DataType {							//DataTypeÊı¾İÀàĞÍ
 
 		//System.out.println(12345 + 54321l);
 
-		//¸¡µãÀàĞÍ
-		float f = 12.3F;		//Õ¼ËÄ¸ö×Ö½Ú
-		double d = 33.4;		//Õ¼°Ë¸ö×Ö½Ú			Ğ¡ÊıÄ¬ÈÏµÄÊı¾İÀàĞÍÊÇdouble,doubleÀàĞÍºóÃæÒ²¿ÉÒÔÓÃD»òd±êÊ¶,µ«ÊÇÒ»°ã²»¼Ó
+		//æµ®ç‚¹ç±»å‹
+		float f = 12.3F;		//å å››ä¸ªå­—èŠ‚
+		double d = 33.4;		//å å…«ä¸ªå­—èŠ‚			å°æ•°é»˜è®¤çš„æ•°æ®ç±»å‹æ˜¯double,doubleç±»å‹åé¢ä¹Ÿå¯ä»¥ç”¨Dæˆ–dæ ‡è¯†,ä½†æ˜¯ä¸€èˆ¬ä¸åŠ 
 		System.out.println(f);
 		System.out.println(d);
 
-		//×Ö·ûÀàĞÍ
-		char c = 'a';			//Õ¼Á½¸ö×Ö½Ú
+		//å­—ç¬¦ç±»å‹
+		char c = 'a';			//å ä¸¤ä¸ªå­—èŠ‚
 		System.out.println(c);
 
-		//²¼¶ûÀàĞÍ
+		//å¸ƒå°”ç±»å‹
 		boolean b1 = true;
 		boolean b2 = false;
 		System.out.println(b1);

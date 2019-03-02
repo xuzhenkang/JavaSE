@@ -3,23 +3,23 @@ package oj.gettingjob.nowcoder.systemconvertion;
 import java.util.Scanner;
 
 /**
-<h2 class="subject-item-title">ÌâÄ¿ÃèÊö</h2>
+<h2 class="subject-item-title">é¢˜ç›®æè¿°</h2>
 <div class="subject-describe">
-<p>  Ð´³öÒ»¸ö³ÌÐò£¬½ÓÊÜÒ»¸öÊ®Áù½øÖÆµÄÊýÖµ×Ö·û´®£¬Êä³ö¸ÃÊýÖµµÄÊ®½øÖÆ×Ö·û´®¡££¨<span style="color: rgb(51,51,51);">¶à×éÍ¬Ê±ÊäÈë</span>
-  <span>£©</span>
+<p>  å†™å‡ºä¸€ä¸ªç¨‹åºï¼ŒæŽ¥å—ä¸€ä¸ªåå…­è¿›åˆ¶çš„æ•°å€¼å­—ç¬¦ä¸²ï¼Œè¾“å‡ºè¯¥æ•°å€¼çš„åè¿›åˆ¶å­—ç¬¦ä¸²ã€‚ï¼ˆ<span style="color: rgb(51,51,51);">å¤šç»„åŒæ—¶è¾“å…¥</span>
+  <span>ï¼‰</span>
 </p>
 <br/>
-<h5><b>ÊäÈëÃèÊö:</b></h5>
-<pre><p>ÊäÈëÒ»¸öÊ®Áù½øÖÆµÄÊýÖµ×Ö·û´®¡£</p></pre>
+<h5><b>è¾“å…¥æè¿°:</b></h5>
+<pre><p>è¾“å…¥ä¸€ä¸ªåå…­è¿›åˆ¶çš„æ•°å€¼å­—ç¬¦ä¸²ã€‚</p></pre>
 <br/>
 <br/>
-<h5><b>Êä³öÃèÊö:</b></h5>
-<pre><p>Êä³ö¸ÃÊýÖµµÄÊ®½øÖÆ×Ö·û´®¡£</p></pre>
+<h5><b>è¾“å‡ºæè¿°:</b></h5>
+<pre><p>è¾“å‡ºè¯¥æ•°å€¼çš„åè¿›åˆ¶å­—ç¬¦ä¸²ã€‚</p></pre>
 <br/>
-<h5><b>ÊäÈëÀý×Ó:</b></h5>
+<h5><b>è¾“å…¥ä¾‹å­:</b></h5>
 <pre>0xA</pre>
 <br/>
-<h5><b>Êä³öÀý×Ó:</b></h5>
+<h5><b>è¾“å‡ºä¾‹å­:</b></h5>
 <pre>10</pre>
 </div>
  * @author kang

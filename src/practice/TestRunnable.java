@@ -24,7 +24,7 @@ class TicketRunnable implements Runnable {
 						Thread.sleep(10);
 					} catch (InterruptedException e) {
 					}
-					System.out.println(Thread.currentThread().getName() + "...µÚ" + ticket-- + "ÕÅÆ±");
+					System.out.println(Thread.currentThread().getName() + "...ç¬¬" + ticket-- + "å¼ ç¥¨");
 				}
 			}
 		}

@@ -10,52 +10,52 @@ public class Demo3_Arrays {
 		* public static int binarySearch(int[] a,int key)
 		* 
 		*  public static String toString(int[] a) {
-		        if (a == null)								//Èç¹û´«ÈëµÄÊı×éÊÇnull
-		            return "null";							//·µ»Ønull
-		        int iMax = a.length - 1;					//iMax×î´óË÷Òı
-		        if (iMax == -1)								//Èç¹ûÊı×éÖĞÃ»ÓĞÔªËØ
-		            return "[]";							//·µ»Ø[]
+		        if (a == null)								//å¦‚æœä¼ å…¥çš„æ•°ç»„æ˜¯null
+		            return "null";							//è¿”å›null
+		        int iMax = a.length - 1;					//iMaxæœ€å¤§ç´¢å¼•
+		        if (iMax == -1)								//å¦‚æœæ•°ç»„ä¸­æ²¡æœ‰å…ƒç´ 
+		            return "[]";							//è¿”å›[]
 		
-		        StringBuilder b = new StringBuilder();		//Ïß³Ì²»°²È«,Ğ§ÂÊ¸ß
-		        b.append('[');								//½«[Ìí¼Óµ½×Ö·û´®»º³åÇøÖĞ
-		        for (int i = 0; ; i++) {					//±éÀúÊı×é,ÅĞ¶ÏÓï¾äÃ»ÓĞĞ´Ä¬ÈÏÊÇtrue
-		            b.append(a[i]);							//°ÑµÚÒ»¸öÔªËØÌí¼Ó½ø×Ö·û´®»º³åÇø
-		            if (i == iMax)							//Èç¹ûË÷ÒıµÈÓÚÁË×î´óË÷ÒıÖµ
-		                return b.append(']').toString();	//½«]Ìí¼Óµ½×Ö·û´®»º³åÇø,ÔÚ×ª»»³É×Ö·û´®²¢·µ»Ø
-		            b.append(", ");							//Èç¹û²»µÈÓÚ×î´óË÷Òı¾Í½«, Ìí¼Óµ½»º³åÇø
+		        StringBuilder b = new StringBuilder();		//çº¿ç¨‹ä¸å®‰å…¨,æ•ˆç‡é«˜
+		        b.append('[');								//å°†[æ·»åŠ åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºä¸­
+		        for (int i = 0; ; i++) {					//éå†æ•°ç»„,åˆ¤æ–­è¯­å¥æ²¡æœ‰å†™é»˜è®¤æ˜¯true
+		            b.append(a[i]);							//æŠŠç¬¬ä¸€ä¸ªå…ƒç´ æ·»åŠ è¿›å­—ç¬¦ä¸²ç¼“å†²åŒº
+		            if (i == iMax)							//å¦‚æœç´¢å¼•ç­‰äºäº†æœ€å¤§ç´¢å¼•å€¼
+		                return b.append(']').toString();	//å°†]æ·»åŠ åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒº,åœ¨è½¬æ¢æˆå­—ç¬¦ä¸²å¹¶è¿”å›
+		            b.append(", ");							//å¦‚æœä¸ç­‰äºæœ€å¤§ç´¢å¼•å°±å°†, æ·»åŠ åˆ°ç¼“å†²åŒº
 		        }
     		}
     		
     	 private static int binarySearch0(int[] a, int fromIndex, int toIndex,
                                      int key) {
-		        int low = fromIndex;				//×îĞ¡Ë÷Òı0
-		        int high = toIndex - 1;				//×î´óË÷ÒıÊı×é³¤¶È-1
+		        int low = fromIndex;				//æœ€å°ç´¢å¼•0
+		        int high = toIndex - 1;				//æœ€å¤§ç´¢å¼•æ•°ç»„é•¿åº¦-1
 		
-		        while (low <= high) {				//×îĞ¡Ë÷ÒıĞ¡ÓÚµÈÓÚ×î´óË÷Òı¿ÉÒÔÑ­»·ÅĞ¶Ï
-		            int mid = (low + high) >>> 1;	//Çó³öÖĞ¼äË÷ÒıÖµ,(×îĞ¡+×î´ó)/2
-		            int midVal = a[mid];			//Í¨¹ıÖĞ¼äË÷Òı»ñÈ¡ÖĞ¼äÖµ
+		        while (low <= high) {				//æœ€å°ç´¢å¼•å°äºç­‰äºæœ€å¤§ç´¢å¼•å¯ä»¥å¾ªç¯åˆ¤æ–­
+		            int mid = (low + high) >>> 1;	//æ±‚å‡ºä¸­é—´ç´¢å¼•å€¼,(æœ€å°+æœ€å¤§)/2
+		            int midVal = a[mid];			//é€šè¿‡ä¸­é—´ç´¢å¼•è·å–ä¸­é—´å€¼
 		
-		            if (midVal < key)				//ÖĞ¼äË÷Òı¶ÔÓ¦µÄÖµĞ¡ÓÚ²éÕÒµÄÖµ
-		                low = mid + 1;				//×îĞ¡Ë÷Òı±ä»¯
-		            else if (midVal > key)			//ÖĞ¼äË÷Òı¶ÔÓ¦µÄÖµ´óÓÚ²éÕÒµÄÖµ
-		                high = mid - 1;				//×î´óË÷Òı±ä»¯
+		            if (midVal < key)				//ä¸­é—´ç´¢å¼•å¯¹åº”çš„å€¼å°äºæŸ¥æ‰¾çš„å€¼
+		                low = mid + 1;				//æœ€å°ç´¢å¼•å˜åŒ–
+		            else if (midVal > key)			//ä¸­é—´ç´¢å¼•å¯¹åº”çš„å€¼å¤§äºæŸ¥æ‰¾çš„å€¼
+		                high = mid - 1;				//æœ€å¤§ç´¢å¼•å˜åŒ–
 		            else
-		                return mid; // key found	//ÕÒµ½ÁË
+		                return mid; // key found	//æ‰¾åˆ°äº†
 		        }
-		        return -(low + 1);  // key not found.//-²åÈëµã - 1
+		        return -(low + 1);  // key not found.//-æ’å…¥ç‚¹ - 1
 		    }
 	 */
 	public static void main(String[] args) {
 		int[] arr = {33,22,11,44,66,55};
-		System.out.println(Arrays.toString(arr));			//Êı×é×ª×Ö·û´®
+		System.out.println(Arrays.toString(arr));			//æ•°ç»„è½¬å­—ç¬¦ä¸²
 		
-		Arrays.sort(arr);									//ÅÅĞò
+		Arrays.sort(arr);									//æ’åº
 		System.out.println(Arrays.toString(arr));
 		
 		int[] arr2 = {11,22,33,44,55,66};
 		System.out.println(Arrays.binarySearch(arr2, 22));
 		System.out.println(Arrays.binarySearch(arr2, 66));
-		System.out.println(Arrays.binarySearch(arr2, 9));	//-²åÈëµã-1
+		System.out.println(Arrays.binarySearch(arr2, 9));	//-æ’å…¥ç‚¹-1
 	}
 
 }

@@ -5,10 +5,10 @@ public class MyThread extends Thread {
 	String threadname;
 	@Override
 	public void run() {
-		System.out.println(threadname+"ÔËĞĞ¿ªÊ¼");
+		System.out.println(threadname+"è¿è¡Œå¼€å§‹");
 		s.setXY(5);
-		System.out.println(threadname + "ÔËĞĞ½á¹û£º" + s.check());
-		System.out.println(threadname+"ÔËĞĞ½áÊø");
+		System.out.println(threadname + "è¿è¡Œç»“æœï¼š" + s.check());
+		System.out.println(threadname+"è¿è¡Œç»“æŸ");
 	}
 	public MyThread(Sync s, String threadname) {
 		this.s = s;

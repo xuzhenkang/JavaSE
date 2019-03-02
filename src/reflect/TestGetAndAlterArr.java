@@ -2,7 +2,7 @@ package reflect;
 
 import java.lang.reflect.Array;
 /**
- * Í¨¹ı·´ÉäÈ¡µÃ²¢ĞŞ¸ÄÊı×éµÄĞÅÏ¢
+ * é€šè¿‡åå°„å–å¾—å¹¶ä¿®æ”¹æ•°ç»„çš„ä¿¡æ¯
  * @author kang
  *
  */
@@ -12,10 +12,10 @@ public class TestGetAndAlterArr {
 
 		Class<?> demo = temp.getClass().getComponentType();
 
-		System.out.println("Êı×éÀàĞÍ£º" + demo.getName());
-		System.out.println("Êı×é³¤¶È£º" + Array.getLength(temp));
-		System.out.println("Êı×éµÄµÚÒ»¸öÔªËØ£º" + Array.get(temp, 0));
+		System.out.println("æ•°ç»„ç±»å‹ï¼š" + demo.getName());
+		System.out.println("æ•°ç»„é•¿åº¦ï¼š" + Array.getLength(temp));
+		System.out.println("æ•°ç»„çš„ç¬¬ä¸€ä¸ªå…ƒç´ ï¼š" + Array.get(temp, 0));
 		Array.set(temp, 0, 100);
-		System.out.println("ĞŞ¸ÄÖ®ºóÊı×éµÚÒ»¸öÔªËØÎª£º" + Array.get(temp, 0));
+		System.out.println("ä¿®æ”¹ä¹‹åæ•°ç»„ç¬¬ä¸€ä¸ªå…ƒç´ ä¸ºï¼š" + Array.get(temp, 0));
 	}
 }

@@ -13,7 +13,7 @@ public class Singleton implements Serializable {
 		return instance;
 	}
 	
-	/*反序列化对象*/
+	/*鍙嶅簭鍒楀寲瀵硅薄*/
 	private Object readResolve() throws ObjectStreamException {
 		return instance;
 	}

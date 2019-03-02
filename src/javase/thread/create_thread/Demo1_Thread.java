@@ -4,7 +4,7 @@ public class Demo1_Thread {
 
 	/**
 	 * @param args
-	 * Ö¤Ã÷jvmÊÇ¶àÏß³ÌµÄ
+	 * è¯æ˜jvmæ˜¯å¤šçº¿ç¨‹çš„
 	 */
 	public static void main(String[] args) {
 		for(int i = 0; i < 100000; i++) {
@@ -12,7 +12,7 @@ public class Demo1_Thread {
 		}
 		
 		for(int i = 0; i < 10000; i++) {
-			System.out.println("ÎÒÊÇÖ÷Ïß³ÌµÄÖ´ĞĞ´úÂë");
+			System.out.println("æˆ‘æ˜¯ä¸»çº¿ç¨‹çš„æ‰§è¡Œä»£ç ");
 		}
 	}
 
@@ -22,7 +22,7 @@ class Demo {
 
 	@Override
 	public void finalize() {
-		System.out.println("À¬»ø±»ÇåÉ¨ÁË");
+		System.out.println("åƒåœ¾è¢«æ¸…æ‰«äº†");
 	}
 	
 }

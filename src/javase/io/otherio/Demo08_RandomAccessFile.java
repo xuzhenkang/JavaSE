@@ -15,7 +15,7 @@ public class Demo08_RandomAccessFile {
 		//raf.write(97);
 		//int x = raf.read();
 		//System.out.println(x);
-		raf.seek(0);					//ÔÚÖ¸¶¨Î»ÖÃÉèÖÃÖ¸Õë
+		raf.seek(0);					//åœ¨æŒ‡å®šä½ç½®è®¾ç½®æŒ‡é’ˆ
 		raf.write(98);
 		raf.close();
 	}

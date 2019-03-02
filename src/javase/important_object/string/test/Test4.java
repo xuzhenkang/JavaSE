@@ -1,5 +1,5 @@
 package javase.important_object.string.test;
-//°ÑÒ»¸ö×Ö·û´®µÄÊ××ÖÄ¸×ª³É´óĞ´£¬ÆäÓàÎªĞ¡Ğ´¡£(Ö»¿¼ÂÇÓ¢ÎÄ´óĞ¡Ğ´×ÖÄ¸×Ö·û)
+//æŠŠä¸€ä¸ªå­—ç¬¦ä¸²çš„é¦–å­—æ¯è½¬æˆå¤§å†™ï¼Œå…¶ä½™ä¸ºå°å†™ã€‚(åªè€ƒè™‘è‹±æ–‡å¤§å°å†™å­—æ¯å­—ç¬¦)
 public class Test4 {
 	public static void main(String[] args) {
 		String s = "";

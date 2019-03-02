@@ -8,30 +8,30 @@ import java.util.Set;
 public class Demo2_Iterator {
 
 	/**
-	 * Í¨¹ı²é¿´Map¼¯ºÏµÄapi·¢ÏÖÃ»ÓĞiterator·½·¨,ÄÇÃ´Ë«ÁĞ¼¯ºÏÈçºÎµü´úÄØ?
-	 * ¸ù¾İ¼ü»ñÈ¡Öµ
+	 * é€šè¿‡æŸ¥çœ‹Mapé›†åˆçš„apiå‘ç°æ²¡æœ‰iteratoræ–¹æ³•,é‚£ä¹ˆåŒåˆ—é›†åˆå¦‚ä½•è¿­ä»£å‘¢?
+	 * æ ¹æ®é”®è·å–å€¼
 	 */
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<>();
-		map.put("ÕÅÈı", 23);
-		map.put("ÀîËÄ", 24);
-		map.put("ÍõÎå", 25);
-		map.put("ÕÔÁù", 26);
+		map.put("å¼ ä¸‰", 23);
+		map.put("æå››", 24);
+		map.put("ç‹äº”", 25);
+		map.put("èµµå…­", 26);
 		
-//		Integer i = map.get("ÕÅÈı");					//¸ù¾İ¼ü»ñÈ¡Öµ
+//		Integer i = map.get("å¼ ä¸‰");					//æ ¹æ®é”®è·å–å€¼
 //		System.out.println(i);
 		
-		//»ñÈ¡ËùÓĞµÄ¼ü
-		/*Set<String> keySet = map.keySet();			//»ñÈ¡ËùÓĞ¼üµÄ¼¯ºÏ
-		Iterator<String> it = keySet.iterator();	//»ñÈ¡µü´úÆ÷
-		while(it.hasNext()) {						//ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ
-			String key = it.next();					//»ñÈ¡Ã¿Ò»¸ö¼ü
-			Integer value = map.get(key);			//¸ù¾İ¼ü»ñÈ¡Öµ
+		//è·å–æ‰€æœ‰çš„é”®
+		/*Set<String> keySet = map.keySet();			//è·å–æ‰€æœ‰é”®çš„é›†åˆ
+		Iterator<String> it = keySet.iterator();	//è·å–è¿­ä»£å™¨
+		while(it.hasNext()) {						//åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ 
+			String key = it.next();					//è·å–æ¯ä¸€ä¸ªé”®
+			Integer value = map.get(key);			//æ ¹æ®é”®è·å–å€¼
 			System.out.println(key + "=" + value);
 		}*/
 		
-		//Ê¹ÓÃÔöÇ¿forÑ­»·±éÀú
-		for(String key : map.keySet()) {			//map.keySet()ÊÇËùÓĞ¼üµÄ¼¯ºÏ
+		//ä½¿ç”¨å¢å¼ºforå¾ªç¯éå†
+		for(String key : map.keySet()) {			//map.keySet()æ˜¯æ‰€æœ‰é”®çš„é›†åˆ
 			System.out.println(key + "=" + map.get(key));
 		}
 	}

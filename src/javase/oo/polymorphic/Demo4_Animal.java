@@ -1,38 +1,38 @@
 package javase.oo.polymorphic;
 /*
- * - A:¶àÌ¬µÄºÃ´¦
-    - a:Ìá¸ßÁË´úÂëµÄÎ¬»¤ĞÔ(¼Ì³Ğ±£Ö¤)
-    - b:Ìá¸ßÁË´úÂëµÄÀ©Õ¹ĞÔ(ÓĞ¶àÌ¬±£Ö¤)
-- B:°¸ÀıÑİÊ¾
+ * - A:å¤šæ€çš„å¥½å¤„
+    - a:æé«˜äº†ä»£ç çš„ç»´æŠ¤æ€§(ç»§æ‰¿ä¿è¯)
+    - b:æé«˜äº†ä»£ç çš„æ‰©å±•æ€§(æœ‰å¤šæ€ä¿è¯)
+- B:æ¡ˆä¾‹æ¼”ç¤º
 
-    - ¶àÌ¬µÄºÃ´¦
+    - å¤šæ€çš„å¥½å¤„
 
-    - ¿ÉÒÔµ±×÷ĞÎÊ½²ÎÊı£¬¿ÉÒÔ½ÓÊÕÈÎÒâ×ÓÀà¶ÔÏó
-- C:¶àÌ¬µÄ±×¶Ë
+    - å¯ä»¥å½“ä½œå½¢å¼å‚æ•°ï¼Œå¯ä»¥æ¥æ”¶ä»»æ„å­ç±»å¯¹è±¡
+- C:å¤šæ€çš„å¼Šç«¯
 
-    - ²»ÄÜÊ¹ÓÃ×ÓÀàµÄÌØÓĞÊôĞÔºÍĞĞÎª¡£
-- D:°¸ÀıÑİÊ¾ method(Animal a) method(Cat c)
+    - ä¸èƒ½ä½¿ç”¨å­ç±»çš„ç‰¹æœ‰å±æ€§å’Œè¡Œä¸ºã€‚
+- D:æ¡ˆä¾‹æ¼”ç¤º method(Animal a) method(Cat c)
  */
 public class Demo4_Animal {
 	public static void main(String[] args) {
 /*		Cat1 c1 = new Cat1();
 		c1.eat();*/
 		method(new Cat1());
-		// Cat1 c = new Dog();//´íÎó
+		// Cat1 c = new Dog();//é”™è¯¯
 		method(new Dog());
 	}
-	// ¿ª·¢µÄÊÇºÜÉÙÔÚ´´½¨¶ÔÏóµÄÊ±ºòÓÃ¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó£¬Ö±½Ó´´½¨×ÓÀà¶ÔÏó¸ü·½±ã£¬¿ÉÒÔÊ¹ÓÃ×ÓÀàÖĞµÄÌØÓĞÊôĞÔºÍĞĞÎª
+	// å¼€å‘çš„æ˜¯å¾ˆå°‘åœ¨åˆ›å»ºå¯¹è±¡çš„æ—¶å€™ç”¨çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡ï¼Œç›´æ¥åˆ›å»ºå­ç±»å¯¹è±¡æ›´æ–¹ä¾¿ï¼Œå¯ä»¥ä½¿ç”¨å­ç±»ä¸­çš„ç‰¹æœ‰å±æ€§å’Œè¡Œä¸º
 /*	public static void method(Cat1 c) {
 		c.eat();
 	}
 	public static void method(Dog d) {
 		d.eat();
 	}*/
-	// µ±×÷²ÎÊıµÄÊ±ºòÓÃ¶àÌ¬×îºÃ£¬ÒòÎªÀ©Õ¹ĞÔÇ¿
+	// å½“ä½œå‚æ•°çš„æ—¶å€™ç”¨å¤šæ€æœ€å¥½ï¼Œå› ä¸ºæ‰©å±•æ€§å¼º
 	public static void method(Animal1 a) {
 		
-		// Èç¹û°Ñ¹·Ç¿×ª³ÉÃ¨¾Í»á³öÏÖÀàĞÍ×ª»»Òì³££¬ClassCastException
-		// ¹Ø¼ü×Öinstanceof ÅĞ¶ÏÇ°±ßµÄÒıÓÃÊÇ·ñÊÇºó±ßµÄÊı¾İÀàĞÍ
+		// å¦‚æœæŠŠç‹—å¼ºè½¬æˆçŒ«å°±ä¼šå‡ºç°ç±»å‹è½¬æ¢å¼‚å¸¸ï¼ŒClassCastException
+		// å…³é”®å­—instanceof åˆ¤æ–­å‰è¾¹çš„å¼•ç”¨æ˜¯å¦æ˜¯åè¾¹çš„æ•°æ®ç±»å‹
 		if (a instanceof Cat1) {
 			Cat1 c = (Cat1) a;
 			c.eat();
@@ -49,23 +49,23 @@ public class Demo4_Animal {
 
 class Animal1 {
 	public void eat() {
-		System.out.println("¶¯Îï³Ô·¹");
+		System.out.println("åŠ¨ç‰©åƒé¥­");
 	}
 }
 class Cat1 extends Animal1 {
 	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
+		System.out.println("çŒ«åƒé±¼");
 	}
 	public void catchMouse() {
-		System.out.println("×¥ÀÏÊó");
+		System.out.println("æŠ“è€é¼ ");
 	}
 }
 
 class Dog extends Animal1 {
 	public void eat() {
-		System.out.println("¹·³ÔÈâ");
+		System.out.println("ç‹—åƒè‚‰");
 	}
 	public void lookHome() {
-		System.out.println("¿´¼Ò");
+		System.out.println("çœ‹å®¶");
 	}
 }

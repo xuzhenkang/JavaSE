@@ -1,6 +1,6 @@
 package javase.base.structured_programming.loop_structure.nest_loop;
 /*
-ĞèÇó£ºÇëÊä³öÏÂÁĞµÄĞÎ×´
+éœ€æ±‚ï¼šè¯·è¾“å‡ºä¸‹åˆ—çš„å½¢çŠ¶
 		*
 		**
 		***
@@ -9,11 +9,11 @@ package javase.base.structured_programming.loop_structure.nest_loop;
 */
 class Demo2_ForFor {
 	public static void main(String[] args) {
-		for (int i = 1;i <= 5 ; i++) {				//ÍâÑ­»·¾ö¶¨ĞĞÊı
-			for (int j = 1;j <= i ;j++ ) {			//ÄÚÑ­»·¾ö¶¨ÁĞÊı
+		for (int i = 1;i <= 5 ; i++) {				//å¤–å¾ªç¯å†³å®šè¡Œæ•°
+			for (int j = 1;j <= i ;j++ ) {			//å†…å¾ªç¯å†³å®šåˆ—æ•°
 				System.out.print("*");
 			}
-			System.out.println();					//½«¹â±ê»»µ½ÏÂÒ»ĞĞµÄĞĞÊ×
+			System.out.println();					//å°†å…‰æ ‡æ¢åˆ°ä¸‹ä¸€è¡Œçš„è¡Œé¦–
 		}
 	}
 }

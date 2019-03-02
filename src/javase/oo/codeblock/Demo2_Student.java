@@ -2,25 +2,25 @@ package javase.oo.codeblock;
 
 class Student1 {
 	static {
-		System.out.println("Student ¾²Ì¬´úÂë¿é");
+		System.out.println("Student é™æ€ä»£ç å—");
 	}
 	
 	{
-		System.out.println("Student ¹¹Ôì´úÂë¿é");
+		System.out.println("Student æ„é€ ä»£ç å—");
 	}
 	
 	public Student1() {
-		System.out.println("Student ¹¹Ôì·½·¨");
+		System.out.println("Student æ„é€ æ–¹æ³•");
 	}
 }
 
 class Demo2_Student {
 	static {
-		System.out.println("Demo2_Student¾²Ì¬´úÂë¿é");
+		System.out.println("Demo2_Studenté™æ€ä»£ç å—");
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("ÎÒÊÇmain·½·¨");
+		System.out.println("æˆ‘æ˜¯mainæ–¹æ³•");
 		
 		Student1 s1 = new Student1();
 		Student1 s2 = new Student1();

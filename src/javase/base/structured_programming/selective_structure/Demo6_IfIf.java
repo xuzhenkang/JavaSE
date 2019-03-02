@@ -1,8 +1,8 @@
 package javase.base.structured_programming.selective_structure;
 /*
-* A:°¸ÀýÑÝÊ¾
-	* ÐèÇó£º»ñÈ¡Èý¸öÊý¾ÝÖÐµÄ×î´óÖµ
-	* ifÓï¾äµÄÇ¶Ì×Ê¹ÓÃ¡£
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šèŽ·å–ä¸‰ä¸ªæ•°æ®ä¸­çš„æœ€å¤§å€¼
+	* ifè¯­å¥çš„åµŒå¥—ä½¿ç”¨ã€‚
 */
 class Demo6_IfIf {
 	public static void main(String[] args) {
@@ -12,16 +12,16 @@ class Demo6_IfIf {
 		
 		if (a > b) {
 			if (a > c) {
-				System.out.println(a + "ÊÇ×î´óÖµ");
+				System.out.println(a + "æ˜¯æœ€å¤§å€¼");
 			}else {
-				System.out.println(c + "ÊÇ×î´óÖµ");
+				System.out.println(c + "æ˜¯æœ€å¤§å€¼");
 			}
 
 		}else {	//b >= a
 			if (b > c) {
-				System.out.println(b + "ÊÇ×î´óÖµ");
+				System.out.println(b + "æ˜¯æœ€å¤§å€¼");
 			}else {
-				System.out.println(c + "ÊÇ×î´óÖµ");
+				System.out.println(c + "æ˜¯æœ€å¤§å€¼");
 			}
 		}
 	}

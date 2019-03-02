@@ -3,12 +3,12 @@ package javase.important_object.regex;
 public class Demo6_ReplaceAll {
 
 	/**
-	 * * A:正则表达式的替换功能
-	 * String类的功能：public String replaceAll(String regex,String replacement)
+	 * * A:姝ｅ垯琛ㄨ揪寮忕殑鏇挎崲鍔熻兘
+	 * String绫荤殑鍔熻兘锛歱ublic String replaceAll(String regex,String replacement)
 	 */
 	public static void main(String[] args) {
 		String s = "wo111ai222heima";
-		String regex = "\\d";			//\\d代表的是任意数字
+		String regex = "\\d";			//\\d浠ｈ〃鐨勬槸浠绘剰鏁板瓧
 		
 		String s2 = s.replaceAll(regex, "");
 		System.out.println(s2);

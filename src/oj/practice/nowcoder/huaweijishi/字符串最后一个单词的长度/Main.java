@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.字符串最后一个单词的长度;
+package oj.practice.nowcoder.huaweijishi.瀛楃涓叉渶鍚庝竴涓崟璇嶇殑闀垮害;
 
 import java.util.Scanner;
 public class Main {

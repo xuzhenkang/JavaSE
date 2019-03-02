@@ -1,45 +1,45 @@
 package javase.oo.this_keyword;
 
 /*
-* A:this¹Ø¼ü×ÖÌØµã
-	* ´ú±íµ±Ç°¶ÔÏóµÄÒıÓÃ 
-* B:°¸ÀıÑİÊ¾
-	* thisµÄÓ¦ÓÃ³¡¾°
-	* ÓÃÀ´Çø·Ö³ÉÔ±±äÁ¿ºÍ¾Ö²¿±äÁ¿ÖØÃû
+* A:thiså…³é”®å­—ç‰¹ç‚¹
+	* ä»£è¡¨å½“å‰å¯¹è±¡çš„å¼•ç”¨ 
+* B:æ¡ˆä¾‹æ¼”ç¤º
+	* thisçš„åº”ç”¨åœºæ™¯
+	* ç”¨æ¥åŒºåˆ†æˆå‘˜å˜é‡å’Œå±€éƒ¨å˜é‡é‡å
 */
 class Demo1_This {
 	public static void main(String[] args) {
 		Person p1 = new Person();
-		p1.setName("ÕÅÈı");
+		p1.setName("å¼ ä¸‰");
 		p1.setAge(23);
 		System.out.println(p1.getName() + "..." + p1.getAge());
 
 		Person p2 = new Person();
-		p2.setName("ÀîËÄ");
+		p2.setName("æå››");
 		p2.setAge(24);
 		System.out.println(p2.getName() + "..." + p2.getAge());
 	}
 }
 
 class Person {
-	private String name;			//ĞÕÃû
-	private int age;				//ÄêÁä
+	private String name;			//å§“å
+	private int age;				//å¹´é¾„
 	
-	public void setAge(int age) {		//ÉèÖÃÄêÁä
+	public void setAge(int age) {		//è®¾ç½®å¹´é¾„
 		if (age > 0 && age < 200) {
 			this.age = age;
 			//System.out.println(age);
 		}else {
-			System.out.println("Çë»Ø»ğĞÇ°É,µØÇò²»ÊÊºÏÄã");
+			System.out.println("è¯·å›ç«æ˜Ÿå§,åœ°çƒä¸é€‚åˆä½ ");
 		}
 		
 	}
 
-	public int getAge() {			//»ñÈ¡ÄêÁä
+	public int getAge() {			//è·å–å¹´é¾„
 		return age;
 	}
 
-	public void setName(String name) {	//ÉèÖÃĞÕÃû
+	public void setName(String name) {	//è®¾ç½®å§“å
 		this.name = name;
 		//System.out.println(name);
 	}

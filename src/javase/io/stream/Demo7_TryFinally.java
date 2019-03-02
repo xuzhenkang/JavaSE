@@ -40,7 +40,7 @@ public class Demo7_TryFinally {
 			try{
 				if(fis != null)
 					fis.close();
-			}finally {							//try fianllyµÄÇ¶Ì×Ä¿µÄÊÇÄÜ¹ØÒ»¸ö¾¡Á¿¹ØÒ»¸ö
+			}finally {							//try fianllyçš„åµŒå¥—ç›®çš„æ˜¯èƒ½å…³ä¸€ä¸ªå°½é‡å…³ä¸€ä¸ª
 				if(fos != null)
 					fos.close();
 			}
@@ -51,6 +51,6 @@ public class Demo7_TryFinally {
 
 class MyClose implements AutoCloseable {
 	public void close() {
-		System.out.println("ÎÒ¹ØÁË");
+		System.out.println("æˆ‘å…³äº†");
 	}
 }

@@ -9,32 +9,32 @@ public class Demo1_Name {
 		//demo1();
 		Thread t1 = new Thread() {
 			public void run() {
-				//this.setName("ÕÅÈı");
+				//this.setName("å¼ ä¸‰");
 				System.out.println(this.getName() + "....aaaaaaaaaaaaa");
 			}
 		};
 		
 		Thread t2 = new Thread() {
 			public void run() {
-				//this.setName("ÀîËÄ");
+				//this.setName("æå››");
 				System.out.println(this.getName() + "....bb");
 			}
 		};
 		
-		t1.setName("ÕÅÈı");
-		t2.setName("ÀîËÄ");
+		t1.setName("å¼ ä¸‰");
+		t2.setName("æå››");
 		t1.start();
 		t2.start();
 	}
 
 	public static void demo1() {
-		new Thread("Ü½ÈØ½ã½ã") {							//Í¨¹ı¹¹Ôì·½·¨¸øname¸³Öµ
+		new Thread("èŠ™è“‰å§å§") {							//é€šè¿‡æ„é€ æ–¹æ³•ç»™nameèµ‹å€¼
 			public void run() {
 				System.out.println(this.getName() + "....aaaaaaaaa");
 			}
 		}.start();
 		
-		new Thread("·ï½ã") {
+		new Thread("å‡¤å§") {
 			public void run() {
 				System.out.println(this.getName() + "....bb");
 			}

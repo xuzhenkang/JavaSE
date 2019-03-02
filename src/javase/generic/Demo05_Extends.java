@@ -2,7 +2,7 @@ package javase.generic;
 
 import java.util.ArrayList;
 import java.util.List;
-//* extends ºóÃæÊÇÉÏÏŞ £¬Ò²¾ÍÊÇËµ´«ÈëµÄÀàĞÍÒ»¶¨ÒªÊÇ¸ø¶¨µÄÀàµÄÖ±½Ó»ò¼ä½Ó×ÓÀà£¨º¬¸ø¶¨Àà£©
+//* extends åé¢æ˜¯ä¸Šé™ ï¼Œä¹Ÿå°±æ˜¯è¯´ä¼ å…¥çš„ç±»å‹ä¸€å®šè¦æ˜¯ç»™å®šçš„ç±»çš„ç›´æ¥æˆ–é—´æ¥å­ç±»ï¼ˆå«ç»™å®šç±»ï¼‰
 public class Demo05_Extends {
 	public static void main(String[] args) {
 		Test<Fruit> t1 = new Test<Fruit>();
@@ -20,7 +20,7 @@ public class Demo05_Extends {
 		List<FujiApple> list4 = new ArrayList<FujiApple>();
 		test(list4);
 		List<?> list5 = new ArrayList<Fruit>();
-//		test(list5); ´íÎó ? Ïàµ±ÓÚ ? extends Object
+//		test(list5); é”™è¯¯ ? ç›¸å½“äº ? extends Object
 		List< ? extends Object> list6 = new ArrayList<Object>();
 //		test(list6);
 		
@@ -30,13 +30,13 @@ public class Demo05_Extends {
 	}
 	
 	public static void test(List<? extends Fruit> list) {
-		list.add(null);// ´Ë´¦Ö»ÄÜ¼Ónull£¬²»ÄÜÌí¼ÓÆäËûµÄÈÎºÎ¶ÔÏó
-//		list.add(new Apple()); ·Ç·¨
-//		list.add(new FujiApple()); ·Ç·¨
-//		list.add(new Pear()); ·Ç·¨
+		list.add(null);// æ­¤å¤„åªèƒ½åŠ nullï¼Œä¸èƒ½æ·»åŠ å…¶ä»–çš„ä»»ä½•å¯¹è±¡
+//		list.add(new Apple()); éæ³•
+//		list.add(new FujiApple()); éæ³•
+//		list.add(new Pear()); éæ³•
 	}
 	
-	// extends ºóÃæÊÇÉÏÏŞ
+	// extends åé¢æ˜¯ä¸Šé™
 	static class Test<T extends Fruit> {
 	}
 }

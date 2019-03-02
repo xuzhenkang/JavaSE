@@ -2,14 +2,14 @@ package javase.important_object.scanner;
 
 import java.util.Scanner;
 /**
- * - A:ScannerµÄ¸ÅÊö
-- B:ScannerµÄ¹¹Ôì·½·¨Ô­Àí
+ * - A:Scannerçš„æ¦‚è¿°
+- B:Scannerçš„æ„é€ æ–¹æ³•åŸç†
     - Scanner(InputStream source)
-    - SystemÀàÏÂÓĞÒ»¸ö¾²Ì¬µÄ×Ö¶Î£º
-        - public static final InputStream in; ±ê×¼µÄÊäÈëÁ÷£¬¶ÔÓ¦×Å¼üÅÌÂ¼Èë
-- C:Ò»°ã·½·¨
-    - hasNextXxx() ÅĞ¶ÏÊÇ·ñ»¹ÓĞÏÂÒ»¸öÊäÈëÏî£¬ÆäÖĞXxx¿ÉÒÔÊÔInt£¬DoubleµÈ¡£Èç¹ûĞèÒªÅĞ¶ÏÊÇ·ñ°üº¬ÏÂÒ»¸ö×Ö·û´®£¬Ôò¿ÉÒÔÊ¡ÂÔXxx
-    - nextXxx() »ñÈ¡ÏÂÒ»¸öÊäÈëÏî¡£XxxµÄº¬ÒåºÍÉÏ¸ö·½·¨ÖĞµÄXxxÏàÍ¬£¬Ä¬ÈÏÇé¿öÏÂ£¬ScannerÊ¹ÓÃ¿Õ¸ñ£¬»Ø³µµÈ×÷Îª·Ö¸ô·û
+    - Systemç±»ä¸‹æœ‰ä¸€ä¸ªé™æ€çš„å­—æ®µï¼š
+        - public static final InputStream in; æ ‡å‡†çš„è¾“å…¥æµï¼Œå¯¹åº”ç€é”®ç›˜å½•å…¥
+- C:ä¸€èˆ¬æ–¹æ³•
+    - hasNextXxx() åˆ¤æ–­æ˜¯å¦è¿˜æœ‰ä¸‹ä¸€ä¸ªè¾“å…¥é¡¹ï¼Œå…¶ä¸­Xxxå¯ä»¥è¯•Intï¼ŒDoubleç­‰ã€‚å¦‚æœéœ€è¦åˆ¤æ–­æ˜¯å¦åŒ…å«ä¸‹ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œåˆ™å¯ä»¥çœç•¥Xxx
+    - nextXxx() è·å–ä¸‹ä¸€ä¸ªè¾“å…¥é¡¹ã€‚Xxxçš„å«ä¹‰å’Œä¸Šä¸ªæ–¹æ³•ä¸­çš„Xxxç›¸åŒï¼Œé»˜è®¤æƒ…å†µä¸‹ï¼ŒScannerä½¿ç”¨ç©ºæ ¼ï¼Œå›è½¦ç­‰ä½œä¸ºåˆ†éš”ç¬¦
  * @author Dan
  *
  */
@@ -22,7 +22,7 @@ public class Demo1_Scanner {
 			int i = sc.nextInt();
 			System.out.println(i);
 		} else {
-			System.out.println("ÊäÈëµÄÀàĞÍ´íÎó");
+			System.out.println("è¾“å…¥çš„ç±»å‹é”™è¯¯");
 		}
 	}
 }

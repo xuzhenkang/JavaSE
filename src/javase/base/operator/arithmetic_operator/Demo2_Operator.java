@@ -2,25 +2,25 @@ package javase.base.operator.arithmetic_operator;
 
 class Demo2_Operator {
 	/*
-	* a:µ¥¶ÀÊ¹ÓÃ£º
-		* ·ÅÔÚ²Ù×÷ÊýµÄÇ°ÃæºÍºóÃæÐ§¹ûÒ»Ñù¡£(ÕâÖÖÓÃ·¨ÊÇÎÒÃÇ±È½Ï³£¼ûµÄ)
-	* b:²ÎÓëÔËËãÊ¹ÓÃ£º
-		* ·ÅÔÚ²Ù×÷ÊýµÄÇ°Ãæ£¬ÏÈ×ÔÔö»òÕß×Ô¼õ£¬È»ºóÔÙ²ÎÓëÔËËã¡£
-		* ·ÅÔÚ²Ù×÷ÊýµÄºóÃæ£¬ÏÈ²ÎÓëÔËËã£¬ÔÙ×ÔÔö»òÕß×Ô¼õ¡£
+	* a:å•ç‹¬ä½¿ç”¨ï¼š
+		* æ”¾åœ¨æ“ä½œæ•°çš„å‰é¢å’ŒåŽé¢æ•ˆæžœä¸€æ ·ã€‚(è¿™ç§ç”¨æ³•æ˜¯æˆ‘ä»¬æ¯”è¾ƒå¸¸è§çš„)
+	* b:å‚ä¸Žè¿ç®—ä½¿ç”¨ï¼š
+		* æ”¾åœ¨æ“ä½œæ•°çš„å‰é¢ï¼Œå…ˆè‡ªå¢žæˆ–è€…è‡ªå‡ï¼Œç„¶åŽå†å‚ä¸Žè¿ç®—ã€‚
+		* æ”¾åœ¨æ“ä½œæ•°çš„åŽé¢ï¼Œå…ˆå‚ä¸Žè¿ç®—ï¼Œå†è‡ªå¢žæˆ–è€…è‡ªå‡ã€‚
 	*/
 	public static void main(String[] args) {
-		//µ¥¶ÀÊ¹ÓÃ
+		//å•ç‹¬ä½¿ç”¨
 		/*int a = 3;
 		//a++;						//a = a + 1;
 		++a;						//a = a + 1;
 		System.out.println(a);*/
 
-		//²ÎÓëÔËËãÊ¹ÓÃ
+		//å‚ä¸Žè¿ç®—ä½¿ç”¨
 		int a = 3;
 		int b;
 
-		//b = a++;					//µ±++ÔÚ±äÁ¿ºóÃæµÄÊ±ºò,»áÏÈ½«±äÁ¿ÖÐµÄÖµÈ¡³ö×ö¸³Öµ²Ù×÷,È»ºóÔÙ×ÔÉí¼Ó1
-		b = ++a;					//µ±++ÔÚ±äÁ¿Ç°ÃæµÄÊ±ºò,»áÏÈ×ÔÉí¼Ó1,È»ºóÔÚ½«½á¹û¸³Öµ
+		//b = a++;					//å½“++åœ¨å˜é‡åŽé¢çš„æ—¶å€™,ä¼šå…ˆå°†å˜é‡ä¸­çš„å€¼å–å‡ºåšèµ‹å€¼æ“ä½œ,ç„¶åŽå†è‡ªèº«åŠ 1
+		b = ++a;					//å½“++åœ¨å˜é‡å‰é¢çš„æ—¶å€™,ä¼šå…ˆè‡ªèº«åŠ 1,ç„¶åŽåœ¨å°†ç»“æžœèµ‹å€¼
 		System.out.println("a = " + a);
 		System.out.println("b = " + b);
 	}

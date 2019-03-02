@@ -3,20 +3,20 @@ package oj.gettingjob.nowcoder.lastwordlength;
 import java.util.Scanner;
 
 /**
-<h2 class="subject-item-title">ÌâÄ¿ÃèÊö</h2>
+<h2 class="subject-item-title">é¢˜ç›®æè¿°</h2>
 <div class="subject-describe">
-<p><span>¼ÆËã×Ö·û´®×îºóÒ»¸öµ¥´ÊµÄ³¤¶È£¬µ¥´ÊÒÔ¿Õ¸ñ¸ô¿ª¡£</span></p>
+<p><span>è®¡ç®—å­—ç¬¦ä¸²æœ€åŽä¸€ä¸ªå•è¯çš„é•¿åº¦ï¼Œå•è¯ä»¥ç©ºæ ¼éš”å¼€ã€‚</span></p>
 <br/>
-<h5><b>ÊäÈëÃèÊö:</b></h5>
-<pre><p><span>Ò»ÐÐ×Ö·û´®£¬·Ç¿Õ£¬³¤¶ÈÐ¡ÓÚ5000¡£</span></p></pre>
+<h5><b>è¾“å…¥æè¿°:</b></h5>
+<pre><p><span>ä¸€è¡Œå­—ç¬¦ä¸²ï¼Œéžç©ºï¼Œé•¿åº¦å°äºŽ5000ã€‚</span></p></pre>
 <br/>
-<h5><b>Êä³öÃèÊö:</b></h5>
-<pre><p><span>ÕûÊýN£¬×îºóÒ»¸öµ¥´ÊµÄ³¤¶È¡£</span></p></pre>
+<h5><b>è¾“å‡ºæè¿°:</b></h5>
+<pre><p><span>æ•´æ•°Nï¼Œæœ€åŽä¸€ä¸ªå•è¯çš„é•¿åº¦ã€‚</span></p></pre>
 <br/>
-<h5><b>ÊäÈëÀý×Ó:</b></h5>
+<h5><b>è¾“å…¥ä¾‹å­:</b></h5>
 <pre>hello world</pre>
 <br/>
-<h5><b>Êä³öÀý×Ó:</b></h5>
+<h5><b>è¾“å‡ºä¾‹å­:</b></h5>
 <pre>5</pre>
 </div>
  * @author Kang

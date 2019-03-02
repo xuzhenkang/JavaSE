@@ -1,7 +1,7 @@
 package javase.base.structured_programming.selective_structure.test;
 class Test2_Switch {
 	public static void main(String[] args) {
-		// A:¿´³ÌĞòĞ´½á¹û£º
+		// A:çœ‹ç¨‹åºå†™ç»“æœï¼š
 
 		/*int x = 2;
 		int y = 3;
@@ -16,7 +16,7 @@ class Test2_Switch {
 		}
 		System.out.println("y="+y);*/
 	
-	//B:¿´³ÌĞòĞ´½á¹û£º
+	//B:çœ‹ç¨‹åºå†™ç»“æœï¼š
 
 		int x = 2;
 		int y = 3;

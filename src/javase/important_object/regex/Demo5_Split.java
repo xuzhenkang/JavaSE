@@ -6,8 +6,8 @@ public class Demo5_Split {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String s = "½ğÈıÅÖ.¹ùÃÀÃÀ.Àîdayone";
-		String[] arr = s.split("\\.");				//Í¨¹ıÕıÔò±í´ïÊ½ÇĞ¸î×Ö·û´®
+		String s = "é‡‘ä¸‰èƒ–.éƒ­ç¾ç¾.ædayone";
+		String[] arr = s.split("\\.");				//é€šè¿‡æ­£åˆ™è¡¨è¾¾å¼åˆ‡å‰²å­—ç¬¦ä¸²
 		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);

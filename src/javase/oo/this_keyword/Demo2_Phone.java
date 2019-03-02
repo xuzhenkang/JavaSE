@@ -3,7 +3,7 @@ package javase.oo.this_keyword;
 class Demo2_Phone {
 	public static void main(String[] args) {
 		Phone p1 = new Phone();
-		p1.setBrand("ÈıĞÇ");
+		p1.setBrand("ä¸‰æ˜Ÿ");
 		p1.setPrice(5288);
 
 		System.out.println(p1.getBrand() + "..." + p1.getPrice());
@@ -13,39 +13,39 @@ class Demo2_Phone {
 	}
 }
 /*
-ÊÖ»úÀà
-	ÊôĞÔ:Æ·ÅÆbrand,¼Û¸ñprice
-	ĞĞÎª:´òµç»°call,·¢¶ÌĞÅsendMessage,ÍæÓÎÏ·,playGame
+æ‰‹æœºç±»
+	å±æ€§:å“ç‰Œbrand,ä»·æ ¼price
+	è¡Œä¸º:æ‰“ç”µè¯call,å‘çŸ­ä¿¡sendMessage,ç©æ¸¸æˆ,playGame
 */
 class Phone {								//java bean
-	private String brand;					//Æ·ÅÆ
-	private int price;						//¼Û¸ñ
+	private String brand;					//å“ç‰Œ
+	private int price;						//ä»·æ ¼
 
-	public void setBrand(String brand) {	//ÉèÖÃÆ·ÅÆ
+	public void setBrand(String brand) {	//è®¾ç½®å“ç‰Œ
 		this.brand = brand;
 	}
 
-	public String getBrand() {				//»ñÈ¡Æ·ÅÆ
-		return this.brand;					//this.¿ÉÒÔÊ¡ÂÔ,Äã²»¼ÓÏµÍ³»áÄ¬ÈÏ¸øÄã¼Ó
+	public String getBrand() {				//è·å–å“ç‰Œ
+		return this.brand;					//this.å¯ä»¥çœç•¥,ä½ ä¸åŠ ç³»ç»Ÿä¼šé»˜è®¤ç»™ä½ åŠ 
 	}
 
-	public void setPrice(int price) {		//ÉèÖÃ¼Û¸ñ
+	public void setPrice(int price) {		//è®¾ç½®ä»·æ ¼
 		this.price = price;
 	}
 
-	public int getPrice() {					//»ñÈ¡¼Û¸ñ
+	public int getPrice() {					//è·å–ä»·æ ¼
 		return price;
 	}
 
-	public void call() {					//´òµç»°
-		System.out.println("´òµç»°");
+	public void call() {					//æ‰“ç”µè¯
+		System.out.println("æ‰“ç”µè¯");
 	}
 
-	public void sendMessage() {				//·¢¶ÌĞÅ
-		System.out.println("·¢¶ÌĞÅ");
+	public void sendMessage() {				//å‘çŸ­ä¿¡
+		System.out.println("å‘çŸ­ä¿¡");
 	}
 
-	public void playGame() {				//ÍæÓÎÏ·
-		System.out.println("ÍæÓÎÏ·");
+	public void playGame() {				//ç©æ¸¸æˆ
+		System.out.println("ç©æ¸¸æˆ");
 	}
 }

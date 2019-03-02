@@ -6,32 +6,32 @@ import java.util.Collections;
 public class Test2 {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * Ä£Äâ¶·µØÖ÷Ï´ÅÆºÍ·¢ÅÆ£¬ÅÆÃ»ÓĞÅÅĞò
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * æ¨¡æ‹Ÿæ–—åœ°ä¸»æ´—ç‰Œå’Œå‘ç‰Œï¼Œç‰Œæ²¡æœ‰æ’åº
 	 * 
-	 * ·ÖÎö:
-	 * 1,ÂòÒ»¸±ÆË¿Ë,ÆäÊµ¾ÍÊÇ×Ô¼º´´½¨Ò»¸ö¼¯ºÏ¶ÔÏó,½«ÆË¿ËÅÆ´æ´¢½øÈ¥
-	 * 2,Ï´ÅÆ
-	 * 3,·¢ÅÆ
-	 * 4,¿´ÅÆ
+	 * åˆ†æ:
+	 * 1,ä¹°ä¸€å‰¯æ‰‘å…‹,å…¶å®å°±æ˜¯è‡ªå·±åˆ›å»ºä¸€ä¸ªé›†åˆå¯¹è±¡,å°†æ‰‘å…‹ç‰Œå­˜å‚¨è¿›å»
+	 * 2,æ´—ç‰Œ
+	 * 3,å‘ç‰Œ
+	 * 4,çœ‹ç‰Œ
 	 */
 	public static void main(String[] args) {
-		//1,ÂòÒ»¸±ÆË¿Ë,ÆäÊµ¾ÍÊÇ×Ô¼º´´½¨Ò»¸ö¼¯ºÏ¶ÔÏó,½«ÆË¿ËÅÆ´æ´¢½øÈ¥
+		//1,ä¹°ä¸€å‰¯æ‰‘å…‹,å…¶å®å°±æ˜¯è‡ªå·±åˆ›å»ºä¸€ä¸ªé›†åˆå¯¹è±¡,å°†æ‰‘å…‹ç‰Œå­˜å‚¨è¿›å»
 		String[] num = {"A","2","3","4","5","6","7","8","9","10","J","Q","K"};
-		String[] color = {"ºìÌÒ","ºÚÌÒ","·½Æ¬","Ã·»¨"};
+		String[] color = {"çº¢æ¡ƒ","é»‘æ¡ƒ","æ–¹ç‰‡","æ¢…èŠ±"};
 		ArrayList<String> poker = new ArrayList<>();
 		
-		//Æ´½Ó»¨É«ºÍÊı×Ö
+		//æ‹¼æ¥èŠ±è‰²å’Œæ•°å­—
 		for(String s1 : color) {
 			for(String s2 : num) {
-				poker.add(s1.concat(s2)); 			//concatÁ¬½ÓÁ½¸ö×Ö·û´®
+				poker.add(s1.concat(s2)); 			//concatè¿æ¥ä¸¤ä¸ªå­—ç¬¦ä¸²
 			}
 		}
-		poker.add("Ğ¡Íõ");
-		poker.add("´óÍõ");
-		//2,Ï´ÅÆ
+		poker.add("å°ç‹");
+		poker.add("å¤§ç‹");
+		//2,æ´—ç‰Œ
 		Collections.shuffle(poker);
-		//3,·¢ÅÆ
+		//3,å‘ç‰Œ
 		ArrayList<String> gaojin = new ArrayList<>();
 		ArrayList<String> longwu = new ArrayList<>();
 		ArrayList<String> me = new ArrayList<>();
@@ -39,7 +39,7 @@ public class Test2 {
 		
 		for(int i = 0; i < poker.size(); i++) {
 			if(i >= poker.size() - 3) {
-				dipai.add(poker.get(i));					//½«ÈıÕÅµ×ÅÆ´æ´¢ÔÚµ×ÅÆ¼¯ºÏÖĞ
+				dipai.add(poker.get(i));					//å°†ä¸‰å¼ åº•ç‰Œå­˜å‚¨åœ¨åº•ç‰Œé›†åˆä¸­
 			} else if(i % 3 == 0) {
 				gaojin.add(poker.get(i));
 			} else if(i % 3 == 1) {
@@ -49,7 +49,7 @@ public class Test2 {
 			}
 		}
 		
-		//4,¿´ÅÆ
+		//4,çœ‹ç‰Œ
 		System.out.println(gaojin);
 		System.out.println(longwu);
 		System.out.println(me);

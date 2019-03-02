@@ -10,29 +10,29 @@ public class Demo02_ByteArrayOutputStream {
 	/**
 	 * @param args
 	 * ByteArrayOutputStream
-	 * ÄÚ´æÊä³öÁ÷
+	 * å†…å­˜è¾“å‡ºæµ
 	 * 
-	 * FileInputStream¶ÁÈ¡ÖĞÎÄµÄÊ±ºò³öÏÖÁËÂÒÂë
+	 * FileInputStreamè¯»å–ä¸­æ–‡çš„æ—¶å€™å‡ºç°äº†ä¹±ç 
 	 * 
-	 * ½â¾ö·½°¸
-	 * 1,×Ö·ûÁ÷¶ÁÈ¡
+	 * è§£å†³æ–¹æ¡ˆ
+	 * 1,å­—ç¬¦æµè¯»å–
 	 * 2,ByteArrayOutputStream
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
 		FileInputStream fis = new FileInputStream("e.txt");
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();			//ÔÚÄÚ´æÖĞ´´½¨ÁË¿ÉÒÔÔö³¤µÄÄÚ´æÊı×é
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();			//åœ¨å†…å­˜ä¸­åˆ›å»ºäº†å¯ä»¥å¢é•¿çš„å†…å­˜æ•°ç»„
 		
 		int b;
 		while((b = fis.read()) != -1) {
-			baos.write(b);													//½«¶ÁÈ¡µ½µÄÊı¾İÖğ¸öĞ´µ½ÄÚ´æÖĞ
+			baos.write(b);													//å°†è¯»å–åˆ°çš„æ•°æ®é€ä¸ªå†™åˆ°å†…å­˜ä¸­
 		}
 		
-		//byte[] arr = baos.toByteArray();									//½«»º³åÇøµÄÊı¾İÈ«²¿»ñÈ¡³öÀ´,²¢¸³Öµ¸øarrÊı×é
+		//byte[] arr = baos.toByteArray();									//å°†ç¼“å†²åŒºçš„æ•°æ®å…¨éƒ¨è·å–å‡ºæ¥,å¹¶èµ‹å€¼ç»™arræ•°ç»„
 		//System.out.println(new String(arr));
 		
-		System.out.println(baos.toString());								//½«»º³åÇøµÄÄÚÈİ×ª»»ÎªÁË×Ö·û´®,ÔÚÊä³öÓï¾äÖĞ¿ÉÒÔÊ¡ÂÔµ÷ÓÃtoString·½·¨
+		System.out.println(baos.toString());								//å°†ç¼“å†²åŒºçš„å†…å®¹è½¬æ¢ä¸ºäº†å­—ç¬¦ä¸²,åœ¨è¾“å‡ºè¯­å¥ä¸­å¯ä»¥çœç•¥è°ƒç”¨toStringæ–¹æ³•
 		fis.close();
 	}
 

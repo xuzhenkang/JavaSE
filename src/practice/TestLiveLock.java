@@ -17,7 +17,7 @@ public class TestLiveLock {
 		}
 		
 		public void use() {
-			System.out.println("ÌÀÉ×ÕıÔÚÊ¹ÓÃÖĞ...");
+			System.out.println("æ±¤å‹ºæ­£åœ¨ä½¿ç”¨ä¸­...");
 		}
 		
 	}
@@ -36,7 +36,7 @@ public class TestLiveLock {
 			return name;
 		}
 		
-		// ÄÃ×ÅÌÀÉ×spoonºÍspouseÒ»ÆğºÈÌÀ
+		// æ‹¿ç€æ±¤å‹ºspoonå’Œspouseä¸€èµ·å–æ±¤
 		public void eatWith(Spoon spoon, Diner spouse) {
 			while (isHungry) {
 				if (spoon.owner != this) {
@@ -51,14 +51,14 @@ public class TestLiveLock {
 				
 				if (spouse.isHungry()) {
 					spoon.setOwner(spouse);
-					System.out.println(name + ": ÄãºÈ°É£¡" + spouse.getName() + ".");
+					System.out.println(name + ": ä½ å–å§ï¼" + spouse.getName() + ".");
 					continue;
 				}
 				
 				spoon.use();
 				this.isHungry = false;
 				spoon.setOwner(spouse);
-				System.out.println("ÎÒºÈÍêÁË£¬ÄãºÈ°É" + spouse.getName());
+				System.out.println("æˆ‘å–å®Œäº†ï¼Œä½ å–å§" + spouse.getName());
 				
 			}
 		}

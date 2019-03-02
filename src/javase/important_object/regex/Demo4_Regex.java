@@ -3,13 +3,13 @@ package javase.important_object.regex;
 public class Demo4_Regex {
 
 	/**
-	 * Greedy ÊıÁ¿´Ê 
-		X? X£¬Ò»´Î»òÒ»´ÎÒ²Ã»ÓĞ 
-		X* X£¬Áã´Î»ò¶à´Î 
-		X+ X£¬Ò»´Î»ò¶à´Î 
-		X{n} X£¬Ç¡ºÃ n ´Î 
-		X{n,} X£¬ÖÁÉÙ n ´Î 
-		X{n,m} X£¬ÖÁÉÙ n ´Î£¬µ«ÊÇ²»³¬¹ı m ´Î 
+	 * Greedy æ•°é‡è¯ 
+		X? Xï¼Œä¸€æ¬¡æˆ–ä¸€æ¬¡ä¹Ÿæ²¡æœ‰ 
+		X* Xï¼Œé›¶æ¬¡æˆ–å¤šæ¬¡ 
+		X+ Xï¼Œä¸€æ¬¡æˆ–å¤šæ¬¡ 
+		X{n} Xï¼Œæ°å¥½ n æ¬¡ 
+		X{n,} Xï¼Œè‡³å°‘ n æ¬¡ 
+		X{n,m} Xï¼Œè‡³å°‘ n æ¬¡ï¼Œä½†æ˜¯ä¸è¶…è¿‡ m æ¬¡ 
 	 */
 	public static void main(String[] args) {
 		//demo1();

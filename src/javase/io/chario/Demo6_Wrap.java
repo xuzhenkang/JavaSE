@@ -4,8 +4,8 @@ public class Demo6_Wrap {
 
 	/**
 	 * @param args
-	 * ×°ÊÎÉè¼ÆÄ£Ê½µÄºÃ´¦ÊÇ:
-	 * ñîºÏĞÔ²»Ç¿,±»×°ÊÎµÄÀàµÄ±ä»¯Óë×°ÊÎÀàµÄ±ä»¯ÎŞ¹Ø
+	 * è£…é¥°è®¾è®¡æ¨¡å¼çš„å¥½å¤„æ˜¯:
+	 * è€¦åˆæ€§ä¸å¼º,è¢«è£…é¥°çš„ç±»çš„å˜åŒ–ä¸è£…é¥°ç±»çš„å˜åŒ–æ— å…³
 	 */
 	public static void main(String[] args) {
 		HeiMaStudent hms = new HeiMaStudent(new Student());
@@ -29,21 +29,21 @@ class Student implements Coder {
 }
 
 class HeiMaStudent implements Coder {
-	//1,»ñÈ¡±»×°ÊÎÀàµÄÒıÓÃ
-	private Student s;						//»ñÈ¡Ñ§ÉúÒıÓÃ
+	//1,è·å–è¢«è£…é¥°ç±»çš„å¼•ç”¨
+	private Student s;						//è·å–å­¦ç”Ÿå¼•ç”¨
 	
-	//2,ÔÚ¹¹Ôì·½·¨ÖĞ´«Èë±»×°ÊÎÀàµÄ¶ÔÏó
+	//2,åœ¨æ„é€ æ–¹æ³•ä¸­ä¼ å…¥è¢«è£…é¥°ç±»çš„å¯¹è±¡
 	public HeiMaStudent(Student s) {
 		this.s = s;
 	}
 
-	//3,¶ÔÔ­ÓĞµÄ¹¦ÄÜ½øĞĞÉı¼¶
+	//3,å¯¹åŸæœ‰çš„åŠŸèƒ½è¿›è¡Œå‡çº§
 	@Override
 	public void code() {
 		s.code();
 		System.out.println("ssh");
-		System.out.println("Êı¾İ¿â");
-		System.out.println("´óÊı¾İ");
+		System.out.println("æ•°æ®åº“");
+		System.out.println("å¤§æ•°æ®");
 		System.out.println("...");
 	}
 }

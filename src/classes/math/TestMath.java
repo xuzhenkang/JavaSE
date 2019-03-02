@@ -3,55 +3,55 @@ package classes.math;
 public class TestMath {
 	/**
 	 * @param args
-	 * * A:MathÀà¸ÅÊö
-		* Math Àà°üº¬ÓÃÓÚÖ´ĞĞ»ù±¾ÊıÑ§ÔËËãµÄ·½·¨£¬Èç³õµÈÖ¸Êı¡¢¶ÔÊı¡¢Æ½·½¸ùºÍÈı½Çº¯Êı¡£ 
-	* B:³ÉÔ±·½·¨
+	 * * A:Mathç±»æ¦‚è¿°
+		* Math ç±»åŒ…å«ç”¨äºæ‰§è¡ŒåŸºæœ¬æ•°å­¦è¿ç®—çš„æ–¹æ³•ï¼Œå¦‚åˆç­‰æŒ‡æ•°ã€å¯¹æ•°ã€å¹³æ–¹æ ¹å’Œä¸‰è§’å‡½æ•°ã€‚ 
+	* B:æˆå‘˜æ–¹æ³•
 		* public static int abs(int a)
 		* public static double ceil(double a)
 		* public static double floor(double a)
-		* public static int max(int a,int b) min×ÔÑ§
+		* public static int max(int a,int b) minè‡ªå­¦
 		* public static double pow(double a,double b)
 		* public static double random()
-		* public static int round(float a) ²ÎÊıÎªdoubleµÄ×ÔÑ§
+		* public static int round(float a) å‚æ•°ä¸ºdoubleçš„è‡ªå­¦
 		* public static double sqrt(double a)
 	 */
 	public static void main(String[] args) {
 		System.out.println(Math.PI);
-		System.out.println(Math.abs(-10));  			//È¡¾ø¶ÔÖµ
+		System.out.println(Math.abs(-10));  			//å–ç»å¯¹å€¼
 		
-		//ceilÌì»¨°å
+		//ceilå¤©èŠ±æ¿
 		/*
 		 * 13.0
 		 * 12.3
 		 * 12.0
 		 */
-		System.out.println(Math.ceil(12.3));			//ÏòÉÏÈ¡Õû,µ«ÊÇ½á¹ûÊÇÒ»¸ödouble
+		System.out.println(Math.ceil(12.3));			//å‘ä¸Šå–æ•´,ä½†æ˜¯ç»“æœæ˜¯ä¸€ä¸ªdouble
 		System.out.println(Math.ceil(12.99));
 		
 		System.out.println("-----------");
-		//floorµØ°å
+		//flooråœ°æ¿
 		/*
 		 * 13.0
 		 * 12.3
 		 * 12.0
 		 */
-		System.out.println(Math.floor(12.3));			//ÏòÏÂÈ¡Õû,µ«ÊÇ½á¹ûÊÇÒ»¸ödouble
+		System.out.println(Math.floor(12.3));			//å‘ä¸‹å–æ•´,ä½†æ˜¯ç»“æœæ˜¯ä¸€ä¸ªdouble
 		System.out.println(Math.floor(12.99));
 		
-		//»ñÈ¡Á½¸öÖµÖĞµÄ×î´óÖµ
+		//è·å–ä¸¤ä¸ªå€¼ä¸­çš„æœ€å¤§å€¼
 		System.out.println(Math.max(20, 30));
 		
-		//Ç°ÃæµÄÊıÊÇµ×Êı,ºóÃæµÄÊıÊÇÖ¸Êı
+		//å‰é¢çš„æ•°æ˜¯åº•æ•°,åé¢çš„æ•°æ˜¯æŒ‡æ•°
 		System.out.println(Math.pow(2, 3));				//2.0 ^ 3.0
 		
-		//Éú³É0.0µ½1.0Ö®¼äµÄËùÒÔĞ¡Êı,°üÀ¨0.0,²»°üÀ¨1.0
+		//ç”Ÿæˆ0.0åˆ°1.0ä¹‹é—´çš„æ‰€ä»¥å°æ•°,åŒ…æ‹¬0.0,ä¸åŒ…æ‹¬1.0
 		System.out.println(Math.random());
 		
-		//ËÄÉáÎåÈë
+		//å››èˆäº”å…¥
 		System.out.println(Math.round(12.3f));
 		System.out.println(Math.round(12.9f));
 		
-		//¿ªÆ½·½
+		//å¼€å¹³æ–¹
 		System.out.println(Math.sqrt(4));
 		System.out.println(Math.sqrt(2));
 		System.out.println(Math.sqrt(3));

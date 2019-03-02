@@ -1,34 +1,34 @@
 package javase.base.operator.ternary_operator;
 
 /*
-* a:µ¼°ü
-		* ¸ñÊ½£º
+* a:å¯¼åŒ…
+		* æ ¼å¼ï¼š
 			* import java.util.Scanner; 
-		* Î»ÖÃ£º
-			* ÔÚclassÉÏÃæ¡£
-	* b:´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		* ¸ñÊ½£º
+		* ä½ç½®ï¼š
+			* åœ¨classä¸Šé¢ã€‚
+	* b:åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		* æ ¼å¼ï¼š
 			* Scanner sc = new Scanner(System.in);
-	* c:Í¨¹ı¶ÔÏó»ñÈ¡Êı¾İ	
-		* ¸ñÊ½£º
+	* c:é€šè¿‡å¯¹è±¡è·å–æ•°æ®	
+		* æ ¼å¼ï¼š
 			* int x = sc.nextInt();
 */
 import java.util.Scanner;
 class Demo2_Scanner {
 	public static void main(String[] args) {
-		/*Scanner sc = new Scanner(System.in);			//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı:");
-		int x = sc.nextInt();							//½«¼üÅÌÂ¼ÈëµÄÊı¾İ´æ´¢ÔÚxÖĞ
+		/*Scanner sc = new Scanner(System.in);			//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°:");
+		int x = sc.nextInt();							//å°†é”®ç›˜å½•å…¥çš„æ•°æ®å­˜å‚¨åœ¨xä¸­
 		System.out.println(x);*/
 
-		//Â¼ÈëÁ½¸öÕûÊı
-		Scanner sc = new Scanner(System.in);			//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÕûÊı:");
-		int x = sc.nextInt();							//½«¼üÅÌÂ¼ÈëµÄÊı¾İ´æ´¢ÔÚxÖĞ
+		//å½•å…¥ä¸¤ä¸ªæ•´æ•°
+		Scanner sc = new Scanner(System.in);			//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•´æ•°:");
+		int x = sc.nextInt();							//å°†é”®ç›˜å½•å…¥çš„æ•°æ®å­˜å‚¨åœ¨xä¸­
 		System.out.println(x);
 
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÕûÊı:");
-		int y = sc.nextInt();							//½«¼üÅÌÂ¼ÈëµÄÊı¾İ´æ´¢ÔÚyÖĞ
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•´æ•°:");
+		int y = sc.nextInt();							//å°†é”®ç›˜å½•å…¥çš„æ•°æ®å­˜å‚¨åœ¨yä¸­
 		System.out.println(y);
 	}
 }

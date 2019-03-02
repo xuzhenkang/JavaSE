@@ -30,7 +30,7 @@ public class Person implements Comparable<Person> {
 	}
 	/*@Override
 	public boolean equals(Object obj) {
-		System.out.println("Ö´ĞĞÁËÂğ");
+		System.out.println("æ‰§è¡Œäº†å—");
 		Person p = (Person)obj;
 		return this.name.equals(p.name) && this.age == p.age;
 	}
@@ -41,10 +41,10 @@ public class Person implements Comparable<Person> {
 	}*/
 	
 	/*
-	 * ÎªÊ²Ã´ÊÇ31?
-	 * 1,31ÊÇÒ»¸öÖÊÊı,ÖÊÊıÊÇÄÜ±»1ºÍ×Ô¼º±¾ÉíÕû³ıµÄÊı
-	 * 2,31Õâ¸öÊı¼È²»´óÒ²²»Ğ¡
-	 * 3,31Õâ¸öÊıºÃËã,2µÄÎå´Î·½-1,2Ïò×óÒÆ¶¯5Î»
+	 * ä¸ºä»€ä¹ˆæ˜¯31?
+	 * 1,31æ˜¯ä¸€ä¸ªè´¨æ•°,è´¨æ•°æ˜¯èƒ½è¢«1å’Œè‡ªå·±æœ¬èº«æ•´é™¤çš„æ•°
+	 * 2,31è¿™ä¸ªæ•°æ—¢ä¸å¤§ä¹Ÿä¸å°
+	 * 3,31è¿™ä¸ªæ•°å¥½ç®—,2çš„äº”æ¬¡æ–¹-1,2å‘å·¦ç§»åŠ¨5ä½
 	 */
 	@Override
 	public int hashCode() {
@@ -56,42 +56,42 @@ public class Person implements Comparable<Person> {
 	}
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)						//µ÷ÓÃµÄ¶ÔÏóºÍ´«ÈëµÄ¶ÔÏóÊÇÍ¬Ò»¸ö¶ÔÏó
-			return true;						//Ö±½Ó·µ»Øtrue
-		if (obj == null)						//´«ÈëµÄ¶ÔÏóÎªnull
-			return false;						//·µ»Øfalse
-		if (getClass() != obj.getClass())		//ÅĞ¶ÏÁ½¸ö¶ÔÏó¶ÔÓ¦µÄ×Ö½ÚÂëÎÄ¼şÊÇ·ñÊÇÍ¬Ò»¸ö×Ö½ÚÂë
-			return false;						//Èç¹û²»ÊÇÖ±½Ó·µ»Øfalse
-		Person other = (Person) obj;			//ÏòÏÂ×ªĞÍ
-		if (age != other.age)					//µ÷ÓÃ¶ÔÏóµÄÄêÁä²»µÈÓÚ´«Èë¶ÔÏóµÄÄêÁä
-			return false;						//·µ»Øfalse
-		if (name == null) {						//µ÷ÓÃ¶ÔÏóµÄĞÕÃûÎªnull
-			if (other.name != null)				//´«Èë¶ÔÏóµÄĞÕÃû²»Îªnull
-				return false;					//·µ»Øfalse
-		} else if (!name.equals(other.name))	//µ÷ÓÃ¶ÔÏóµÄĞÕÃû²»µÈÓÚ´«Èë¶ÔÏóµÄĞÕÃû
-			return false;						//·µ»Øfalse
-		return true;							//·µ»Øtrue
+		if (this == obj)						//è°ƒç”¨çš„å¯¹è±¡å’Œä¼ å…¥çš„å¯¹è±¡æ˜¯åŒä¸€ä¸ªå¯¹è±¡
+			return true;						//ç›´æ¥è¿”å›true
+		if (obj == null)						//ä¼ å…¥çš„å¯¹è±¡ä¸ºnull
+			return false;						//è¿”å›false
+		if (getClass() != obj.getClass())		//åˆ¤æ–­ä¸¤ä¸ªå¯¹è±¡å¯¹åº”çš„å­—èŠ‚ç æ–‡ä»¶æ˜¯å¦æ˜¯åŒä¸€ä¸ªå­—èŠ‚ç 
+			return false;						//å¦‚æœä¸æ˜¯ç›´æ¥è¿”å›false
+		Person other = (Person) obj;			//å‘ä¸‹è½¬å‹
+		if (age != other.age)					//è°ƒç”¨å¯¹è±¡çš„å¹´é¾„ä¸ç­‰äºä¼ å…¥å¯¹è±¡çš„å¹´é¾„
+			return false;						//è¿”å›false
+		if (name == null) {						//è°ƒç”¨å¯¹è±¡çš„å§“åä¸ºnull
+			if (other.name != null)				//ä¼ å…¥å¯¹è±¡çš„å§“åä¸ä¸ºnull
+				return false;					//è¿”å›false
+		} else if (!name.equals(other.name))	//è°ƒç”¨å¯¹è±¡çš„å§“åä¸ç­‰äºä¼ å…¥å¯¹è±¡çš„å§“å
+			return false;						//è¿”å›false
+		return true;							//è¿”å›true
 	}
 	/*@Override
-	//°´ÕÕÄêÁäÅÅĞò
+	//æŒ‰ç…§å¹´é¾„æ’åº
 	public int compareTo(Person o) {
-		int num = this.age - o.age;				//ÄêÁäÊÇ±È½ÏµÄÖ÷ÒªÌõ¼ş
-		return num == 0 ? this.name.compareTo(o.name) : num;//ĞÕÃûÊÇ±È½ÏµÄ´ÎÒªÌõ¼ş
+		int num = this.age - o.age;				//å¹´é¾„æ˜¯æ¯”è¾ƒçš„ä¸»è¦æ¡ä»¶
+		return num == 0 ? this.name.compareTo(o.name) : num;//å§“åæ˜¯æ¯”è¾ƒçš„æ¬¡è¦æ¡ä»¶
 	}*/
 	/*@Override
-	//°´ÕÕĞÕÃûÅÅĞò
+	//æŒ‰ç…§å§“åæ’åº
 	public int compareTo(Person o) {
-		int num = this.name.compareTo(o.name);		//ĞÕÃûÊÇÖ÷ÒªÌõ¼ş
-		return num == 0 ? this.age - o.age : num;	//ÄêÁäÊÇ´ÎÒªÌõ¼ş
+		int num = this.name.compareTo(o.name);		//å§“åæ˜¯ä¸»è¦æ¡ä»¶
+		return num == 0 ? this.age - o.age : num;	//å¹´é¾„æ˜¯æ¬¡è¦æ¡ä»¶
 	}*/
 	/*
 	 * aaa
 	 * bbb
 	 */
 	public int compareTo(Person o) {
-		int length = this.name.length() - o.name.length();				//±È½Ï³¤¶ÈÎªÖ÷ÒªÌõ¼ş
-		int num = length == 0 ? this.name.compareTo(o.name) : length;	//±È½ÏÄÚÈİÎª´ÎÒªÌõ¼ş
-		return num == 0 ? this.age - o.age : num;						//±È½ÏÄêÁäÎª´ÎÒªÌõ¼ş
+		int length = this.name.length() - o.name.length();				//æ¯”è¾ƒé•¿åº¦ä¸ºä¸»è¦æ¡ä»¶
+		int num = length == 0 ? this.name.compareTo(o.name) : length;	//æ¯”è¾ƒå†…å®¹ä¸ºæ¬¡è¦æ¡ä»¶
+		return num == 0 ? this.age - o.age : num;						//æ¯”è¾ƒå¹´é¾„ä¸ºæ¬¡è¦æ¡ä»¶
 	}
 	
 }

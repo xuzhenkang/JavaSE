@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.ÌáÈ¡²»ÖØ¸´µÄÕûÊı;
+package oj.practice.nowcoder.huaweijishi.æå–ä¸é‡å¤çš„æ•´æ•°;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Main2 {
 		
 		while (n != 0) {
 			if (a[n % 10] == 0) {
-				a[n % 10]++; //ÕâÒ»²½ÊÇ¸üĞÂ£¬Óöµ½ÏÂ´ÎÏàÍ¬µÄÊı»áÌø¹ı
+				a[n % 10]++; //è¿™ä¸€æ­¥æ˜¯æ›´æ–°ï¼Œé‡åˆ°ä¸‹æ¬¡ç›¸åŒçš„æ•°ä¼šè·³è¿‡
 				num = num * 10 + n % 10;
 			}
 			n /= 10;
@@ -19,4 +19,4 @@ public class Main2 {
 		cin.close();
 	}
 }
-// Õı½â£¡ Ó¦¸ÃÑ§Ï°Ñ§Ï°´ËÌâµÄ½â·¨¡£
+// æ­£è§£ï¼ åº”è¯¥å­¦ä¹ å­¦ä¹ æ­¤é¢˜çš„è§£æ³•ã€‚

@@ -1,8 +1,8 @@
 package practice;
 
 public class TestDeadLock {
-	private static String s1 = "¿ê×Ó×ó";
-	private static String s2 = "¿ê×ÓÓÒ";
+	private static String s1 = "ç­·å­å·¦";
+	private static String s2 = "ç­·å­å³";
 
 	public static void main(String[] args) {
 		new Thread() {
@@ -10,9 +10,9 @@ public class TestDeadLock {
 			public void run() {
 				while (true) {
 					synchronized (s1) {
-						System.out.println(getName() + "»ñÈ¡" + s1 + "µÈ´ı" + s2);
+						System.out.println(getName() + "è·å–" + s1 + "ç­‰å¾…" + s2);
 						synchronized (s2) {
-							System.out.println(getName() + "ÄÃµ½" + s2 + "¿ª³Ô");
+							System.out.println(getName() + "æ‹¿åˆ°" + s2 + "å¼€åƒ");
 						}
 					}
 				}
@@ -23,9 +23,9 @@ public class TestDeadLock {
 			public void run() {
 				while (true) {
 					synchronized (s2) {
-						System.out.println(getName() + "»ñÈ¡" + s2 + "µÈ´ı" + s1);
+						System.out.println(getName() + "è·å–" + s2 + "ç­‰å¾…" + s1);
 						synchronized (s1) {
-							System.out.println(getName() + "ÄÃµ½" + s1 + "¿ª³Ô");
+							System.out.println(getName() + "æ‹¿åˆ°" + s1 + "å¼€åƒ");
 						}
 					}
 				}

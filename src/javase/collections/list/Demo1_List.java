@@ -22,7 +22,7 @@ public class Demo1_List {
 		list.add("c");
 		list.add("d");
 		
-		list.set(1, "z");						//½«Ö¸¶¨Î»ÖÃµÄÔªËØĞŞ¸Ä
+		list.set(1, "z");						//å°†æŒ‡å®šä½ç½®çš„å…ƒç´ ä¿®æ”¹
 		System.out.println(list);
 	}
 
@@ -35,7 +35,7 @@ public class Demo1_List {
 		
 		//Object obj1 = list.get(2);
 		//System.out.println(obj1);
-		//Í¨¹ıË÷Òı±éÀúList¼¯ºÏ
+		//é€šè¿‡ç´¢å¼•éå†Listé›†åˆ
 		for(int i = 0;i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
@@ -47,7 +47,7 @@ public class Demo1_List {
 		list.add(222);
 		list.add(333);
 		
-		list.remove(111);							//É¾³ıµÄÊ±ºò²»»á×Ô¶¯×°Ïä,°Ñ111µ±×÷Ë÷Òı
+		list.remove(111);							//åˆ é™¤çš„æ—¶å€™ä¸ä¼šè‡ªåŠ¨è£…ç®±,æŠŠ111å½“ä½œç´¢å¼•
 		System.out.println(list);
 	}
 
@@ -58,7 +58,7 @@ public class Demo1_List {
 		list.add("c");
 		list.add("d");
 		
-		Object obj = list.remove(1);				//Í¨¹ıË÷ÒıÉ¾³ıÔªËØ,½«±»É¾³ıµÄÔªËØ·µ»Ø
+		Object obj = list.remove(1);				//é€šè¿‡ç´¢å¼•åˆ é™¤å…ƒç´ ,å°†è¢«åˆ é™¤çš„å…ƒç´ è¿”å›
 		System.out.println(obj);
 		System.out.println(list);
 	}
@@ -69,9 +69,9 @@ public class Demo1_List {
 		list.add("b");
 		list.add("c");
 		list.add("d");
-		list.add(4, "f");						//index<=size²¢ÇÒindex>=0¶¼²»»á±¨Òì³£
+		list.add(4, "f");						//index<=sizeå¹¶ä¸”index>=0éƒ½ä¸ä¼šæŠ¥å¼‚å¸¸
 		//list.add(1,"e");
-		//list.add(10, "z");					//java.lang.IndexOutOfBoundsException,µ±´æ´¢Ê±Ê¹ÓÃ²»´æÔÚµÄË÷ÒıÊ±
+		//list.add(10, "z");					//java.lang.IndexOutOfBoundsException,å½“å­˜å‚¨æ—¶ä½¿ç”¨ä¸å­˜åœ¨çš„ç´¢å¼•æ—¶
 		System.out.println(list);
 	}
 

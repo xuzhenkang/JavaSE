@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.明明的随机数;
+package oj.practice.nowcoder.huaweijishi.鏄庢槑鐨勯殢鏈烘暟;
 
 import java.util.Scanner;
 import java.util.TreeMap;

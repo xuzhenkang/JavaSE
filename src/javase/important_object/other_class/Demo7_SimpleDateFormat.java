@@ -8,12 +8,12 @@ import java.util.Date;
 public class Demo7_SimpleDateFormat {
 
 	/**
-	 * * A:DateFormatÀàµÄ¸ÅÊö
-			* DateFormat ÊÇÈÕÆÚ/Ê±¼ä¸ñÊ½»¯×ÓÀàµÄ³éÏóÀà£¬ËüÒÔÓëÓïÑÔÎŞ¹ØµÄ·½Ê½¸ñÊ½»¯²¢½âÎöÈÕÆÚ»òÊ±¼ä¡£ÊÇ³éÏóÀà£¬ËùÒÔÊ¹ÓÃÆä×ÓÀàSimpleDateFormat
-		* B:SimpleDateFormat¹¹Ôì·½·¨
+	 * * A:DateFormatç±»çš„æ¦‚è¿°
+			* DateFormat æ˜¯æ—¥æœŸ/æ—¶é—´æ ¼å¼åŒ–å­ç±»çš„æŠ½è±¡ç±»ï¼Œå®ƒä»¥ä¸è¯­è¨€æ— å…³çš„æ–¹å¼æ ¼å¼åŒ–å¹¶è§£ææ—¥æœŸæˆ–æ—¶é—´ã€‚æ˜¯æŠ½è±¡ç±»ï¼Œæ‰€ä»¥ä½¿ç”¨å…¶å­ç±»SimpleDateFormat
+		* B:SimpleDateFormatæ„é€ æ–¹æ³•
 			* public SimpleDateFormat()
 			* public SimpleDateFormat(String pattern)
-		* C:³ÉÔ±·½·¨
+		* C:æˆå‘˜æ–¹æ³•
 			* public final String format(Date date)
 			* public Date parse(String source)
 	 * @throws ParseException 
@@ -23,29 +23,29 @@ public class Demo7_SimpleDateFormat {
 		//demo2();
 		//demo3();
 		
-		//½«Ê±¼ä×Ö·û´®×ª»»³ÉÈÕÆÚ¶ÔÏó
-		String str = "2000Äê08ÔÂ08ÈÕ 08:08:08";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
-		Date d = sdf.parse(str);						//½«Ê±¼ä×Ö·û´®×ª»»³ÉÈÕÆÚ¶ÔÏó
+		//å°†æ—¶é—´å­—ç¬¦ä¸²è½¬æ¢æˆæ—¥æœŸå¯¹è±¡
+		String str = "2000å¹´08æœˆ08æ—¥ 08:08:08";
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
+		Date d = sdf.parse(str);						//å°†æ—¶é—´å­—ç¬¦ä¸²è½¬æ¢æˆæ—¥æœŸå¯¹è±¡
 		System.out.println(d);
 	}
 
 	public static void demo3() {
-		Date d = new Date();							//»ñÈ¡µ±Ç°Ê±¼ä¶ÔÏó
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//´´½¨ÈÕÆÚ¸ñÊ½»¯Àà¶ÔÏó
-		System.out.println(sdf.format(d));				//½«ÈÕÆÚ¶ÔÏó×ª»»Îª×Ö·û´®
+		Date d = new Date();							//è·å–å½“å‰æ—¶é—´å¯¹è±¡
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//åˆ›å»ºæ—¥æœŸæ ¼å¼åŒ–ç±»å¯¹è±¡
+		System.out.println(sdf.format(d));				//å°†æ—¥æœŸå¯¹è±¡è½¬æ¢ä¸ºå­—ç¬¦ä¸²
 	}
 
 	public static void demo2() {
-		Date d = new Date();							//»ñÈ¡µ±Ç°Ê±¼ä¶ÔÏó
-		SimpleDateFormat sdf = new SimpleDateFormat();	//´´½¨ÈÕÆÚ¸ñÊ½»¯Àà¶ÔÏó
-		System.out.println(sdf.format(d));	 			//88-6-6 ÏÂÎç9:31
+		Date d = new Date();							//è·å–å½“å‰æ—¶é—´å¯¹è±¡
+		SimpleDateFormat sdf = new SimpleDateFormat();	//åˆ›å»ºæ—¥æœŸæ ¼å¼åŒ–ç±»å¯¹è±¡
+		System.out.println(sdf.format(d));	 			//88-6-6 ä¸‹åˆ9:31
 	}
 
 	public static void demo1() {
-		//DateFormat df = new DateFormat();				//DateFormatÊÇ³éÏóÀà,²»ÔÊĞíÊµÀı»¯
+		//DateFormat df = new DateFormat();				//DateFormatæ˜¯æŠ½è±¡ç±»,ä¸å…è®¸å®ä¾‹åŒ–
 		//DateFormat df1 = new SimpleDateFormat();
-		DateFormat df1 = DateFormat.getDateInstance();	//Ïàµ±ÓÚ¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó,ÓÒ±ßµÄ·½·¨·µ»ØÒ»¸ö×ÓÀà¶ÔÏó
+		DateFormat df1 = DateFormat.getDateInstance();	//ç›¸å½“äºçˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡,å³è¾¹çš„æ–¹æ³•è¿”å›ä¸€ä¸ªå­ç±»å¯¹è±¡
 	}
 
 }

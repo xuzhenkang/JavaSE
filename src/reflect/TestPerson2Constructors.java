@@ -17,7 +17,7 @@ public class TestPerson2Constructors {
 		
 		for (int i = 0; i < cons.length; i++) {
 			Class<?>[] p = cons[i].getParameterTypes();
-			System.out.print("构造方法：");
+			System.out.print("鏋勯�犳柟娉曪細");
 			int mo = cons[i].getModifiers();
 			System.out.print(Modifier.toString(mo) + " ");
 			System.out.print(cons[i].getName());

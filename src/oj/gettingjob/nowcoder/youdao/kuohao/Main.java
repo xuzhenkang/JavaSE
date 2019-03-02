@@ -9,16 +9,16 @@ public class Main {
 		int substringLength1 = str1.length;
 		int substringLength2 = str2.length;
 
-		// ¹¹Ôì¶şÎ¬Êı×é¼ÇÂ¼×ÓÎÊÌâA[i]ºÍB[j]µÄLCSµÄ³¤¶È
+		// æ„é€ äºŒç»´æ•°ç»„è®°å½•å­é—®é¢˜A[i]å’ŒB[j]çš„LCSçš„é•¿åº¦
 		int[][] opt = new int[substringLength1 + 1][substringLength2 + 1];
 
-		// ´ÓºóÏòÇ°£¬¶¯Ì¬¹æ»®¼ÆËãËùÓĞ×ÓÎÊÌâ¡£Ò²¿É´ÓÇ°µ½ºó¡£
+		// ä»åå‘å‰ï¼ŒåŠ¨æ€è§„åˆ’è®¡ç®—æ‰€æœ‰å­é—®é¢˜ã€‚ä¹Ÿå¯ä»å‰åˆ°åã€‚
 		for (int i = substringLength1 - 1; i >= 0; i--) {
 			for (int j = substringLength2 - 1; j >= 0; j--) {
 				if (str1[i] == str2[j])
-					opt[i][j] = opt[i + 1][j + 1] + 1;// ×´Ì¬×ªÒÆ·½³Ì
+					opt[i][j] = opt[i + 1][j + 1] + 1;// çŠ¶æ€è½¬ç§»æ–¹ç¨‹
 				else
-					opt[i][j] = Math.max(opt[i + 1][j], opt[i][j + 1]);// ×´Ì¬×ªÒÆ·½³Ì
+					opt[i][j] = Math.max(opt[i + 1][j], opt[i][j + 1]);// çŠ¶æ€è½¬ç§»æ–¹ç¨‹
 			}
 		}
 		return opt[0][0];

@@ -6,34 +6,34 @@ public class Demo1_HashSet {
 
 	/**
 	 * @param args
-	 * Set¼¯ºÏ,ÎŞË÷Òı,²»¿ÉÒÔÖØ¸´,ÎŞĞò(´æÈ¡²»Ò»ÖÂ)
+	 * Seté›†åˆ,æ— ç´¢å¼•,ä¸å¯ä»¥é‡å¤,æ— åº(å­˜å–ä¸ä¸€è‡´)
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		HashSet<Person> hs = new HashSet<>();
-		hs.add(new Person("ÕÅÈı", 23));
-		hs.add(new Person("ÕÅÈı", 23));
-		hs.add(new Person("ÀîËÄ", 24));
-		hs.add(new Person("ÀîËÄ", 24));
-		hs.add(new Person("ÀîËÄ", 24));
-		hs.add(new Person("ÀîËÄ", 24));
+		hs.add(new Person("å¼ ä¸‰", 23));
+		hs.add(new Person("å¼ ä¸‰", 23));
+		hs.add(new Person("æå››", 24));
+		hs.add(new Person("æå››", 24));
+		hs.add(new Person("æå››", 24));
+		hs.add(new Person("æå››", 24));
 		
 		//System.out.println(hs.size());
 		System.out.println(hs);
 	}
 
 	public static void demo1() {
-		HashSet<String> hs = new HashSet<>();					//´´½¨HashSet¶ÔÏó
+		HashSet<String> hs = new HashSet<>();					//åˆ›å»ºHashSetå¯¹è±¡
 		boolean b1 = hs.add("a");
-		boolean b2 = hs.add("a");								//µ±Ïòset¼¯ºÏÖĞ´æ´¢ÖØ¸´ÔªËØµÄÊ±ºò·µ»ØÎªfalse
+		boolean b2 = hs.add("a");								//å½“å‘seté›†åˆä¸­å­˜å‚¨é‡å¤å…ƒç´ çš„æ—¶å€™è¿”å›ä¸ºfalse
 		hs.add("b");
 		hs.add("c");
 		hs.add("d");
-		System.out.println(hs);									//HashSetµÄ¼Ì³ĞÌåÏµÖĞÓĞÖØĞ´toString·½·¨
+		System.out.println(hs);									//HashSetçš„ç»§æ‰¿ä½“ç³»ä¸­æœ‰é‡å†™toStringæ–¹æ³•
 		System.out.println(b1);
 		System.out.println(b2);
 		
-		for (String string : hs) {								//Ö»ÒªÄÜÓÃµü´úÆ÷µü´úµÄ,¾Í¿ÉÒÔÊ¹ÓÃÔöÇ¿forÑ­»·±éÀú
+		for (String string : hs) {								//åªè¦èƒ½ç”¨è¿­ä»£å™¨è¿­ä»£çš„,å°±å¯ä»¥ä½¿ç”¨å¢å¼ºforå¾ªç¯éå†
 			System.out.println(string);
 		}
 	}

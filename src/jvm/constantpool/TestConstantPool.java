@@ -3,21 +3,21 @@ package jvm.constantpool;
 public class TestConstantPool {
 	
 	/**
-	 * ±¾¶Î³ÌÐòÔÚjdk1.7ºÍjdk1.6ÉÏÔËÐÐ½á¹ûÊÇ²»Ò»ÑùµÄ
-	 * jdk1.7ÔËÐÐ½á¹ûÈçÏÂ£º
+	 * æœ¬æ®µç¨‹åºåœ¨jdk1.7å’Œjdk1.6ä¸Šè¿è¡Œç»“æžœæ˜¯ä¸ä¸€æ ·çš„
+	 * jdk1.7è¿è¡Œç»“æžœå¦‚ä¸‹ï¼š
 	 * true
 	 * false
-	 * jdk1.6ÔËÐÐ½á¹ûÈçÏÂ£º
+	 * jdk1.6è¿è¡Œç»“æžœå¦‚ä¸‹ï¼š
 	 * false
 	 * false
-	 * Ô­Òò£º
-	 * ´Ójdk1.7¿ªÊ¼£¬³£Á¿³Ø¾Í·ÅÈëµ½¶Ñ¿Õ¼äÖÐÁË£¬ÒÔÇ°ÊÇÔÚ·½·¨Çø¡£
-	 * jdk1.6ÖÐintern()·½·¨»á°ÑÊ×´ÎÓöµ½µÄ×Ö·û´®ÊµÀý¸´ÖÆµ½³£Á¿³ØÖÐ£¬·µ»ØµÄ½á¹ûÒ²ÊÇ³£Á¿³ØÖÐµÄ×Ö·û´®µÄÒýÓÃ£¬
-	 * ¶øStringBuffer´´½¨µÄ×Ö·û´®ÊÇÔÚ¶ÑÉÏÃæ£¬ËùÒÔ±ØÈ»²»ÊÇÍ¬Ò»¸öÒýÓÃ£¬·µ»Øfalse¡£
-	 * ÔÚjdk1.7ÖÐ£¬intern()·½·¨²»ÔÙ¸´ÖÆÊµÀý£¬³£Á¿³ØÖÐÖ»±£´æÊ×´Î³öÏÖµÄÊµÀýµÄÒýÓÃ£¬
-	 * Òò´Ëintern()·½·¨·µ»ØµÄÒýÓÃºÍÓÉStringBuffer´´½¨µÄ×Ö·û´®ÊµÀýÊÇÍ¬Ò»¸ö¡£
-	 * ÎªÊ²Ã´str2±È½Ï·µ»ØfalseÄØ£¿ÕâÊÇÒòÎªjvmÖÐÄÚ²¿ÔÚ¼ÓÔØÀàµÄÊ±ºò£¬¾ÍÒÑ¾­ÓÐ"class"Õâ¸ö×Ö·û´®ÁË£¬
-	 * ²»·ûºÏ"Ê×´Î³öÏÖ"µÄÔ­Ôò£¬Òò´Ë·µ»Øfalse¡£
+	 * åŽŸå› ï¼š
+	 * ä»Žjdk1.7å¼€å§‹ï¼Œå¸¸é‡æ± å°±æ”¾å…¥åˆ°å †ç©ºé—´ä¸­äº†ï¼Œä»¥å‰æ˜¯åœ¨æ–¹æ³•åŒºã€‚
+	 * jdk1.6ä¸­intern()æ–¹æ³•ä¼šæŠŠé¦–æ¬¡é‡åˆ°çš„å­—ç¬¦ä¸²å®žä¾‹å¤åˆ¶åˆ°å¸¸é‡æ± ä¸­ï¼Œè¿”å›žçš„ç»“æžœä¹Ÿæ˜¯å¸¸é‡æ± ä¸­çš„å­—ç¬¦ä¸²çš„å¼•ç”¨ï¼Œ
+	 * è€ŒStringBufferåˆ›å»ºçš„å­—ç¬¦ä¸²æ˜¯åœ¨å †ä¸Šé¢ï¼Œæ‰€ä»¥å¿…ç„¶ä¸æ˜¯åŒä¸€ä¸ªå¼•ç”¨ï¼Œè¿”å›žfalseã€‚
+	 * åœ¨jdk1.7ä¸­ï¼Œintern()æ–¹æ³•ä¸å†å¤åˆ¶å®žä¾‹ï¼Œå¸¸é‡æ± ä¸­åªä¿å­˜é¦–æ¬¡å‡ºçŽ°çš„å®žä¾‹çš„å¼•ç”¨ï¼Œ
+	 * å› æ­¤intern()æ–¹æ³•è¿”å›žçš„å¼•ç”¨å’Œç”±StringBufferåˆ›å»ºçš„å­—ç¬¦ä¸²å®žä¾‹æ˜¯åŒä¸€ä¸ªã€‚
+	 * ä¸ºä»€ä¹ˆstr2æ¯”è¾ƒè¿”å›žfalseå‘¢ï¼Ÿè¿™æ˜¯å› ä¸ºjvmä¸­å†…éƒ¨åœ¨åŠ è½½ç±»çš„æ—¶å€™ï¼Œå°±å·²ç»æœ‰"class"è¿™ä¸ªå­—ç¬¦ä¸²äº†ï¼Œ
+	 * ä¸ç¬¦åˆ"é¦–æ¬¡å‡ºçŽ°"çš„åŽŸåˆ™ï¼Œå› æ­¤è¿”å›žfalseã€‚
 	 * @param args
 	 */
 	public static void main(String[] args) {

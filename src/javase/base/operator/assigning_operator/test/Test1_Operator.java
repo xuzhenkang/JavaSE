@@ -2,8 +2,8 @@ package javase.base.operator.assigning_operator.test;
 
 class Test1_Operator {
 	public static void main(String[] args) {
-		// ÃæÊÔÌâ:¿´ÏÂÃæµÄ³ÌĞòÊÇ·ñÓĞÎÊÌâ£¬Èç¹ûÓĞÎÊÌâ£¬ÇëÖ¸³ö²¢ËµÃ÷ÀíÓÉ¡£
-		//short s=1;s = s+1;			//µ±shortÓëint½øĞĞÔËËãµÄÊ±ºò,»áÌáÉıÎªintÀàĞÍ,Á½¸öintÀàĞÍÏà¼ÓµÄ½á¹ûÒ²ÊÇintÀàĞÍ
+		// é¢è¯•é¢˜:çœ‹ä¸‹é¢çš„ç¨‹åºæ˜¯å¦æœ‰é—®é¢˜ï¼Œå¦‚æœæœ‰é—®é¢˜ï¼Œè¯·æŒ‡å‡ºå¹¶è¯´æ˜ç†ç”±ã€‚
+		//short s=1;s = s+1;			//å½“shortä¸intè¿›è¡Œè¿ç®—çš„æ—¶å€™,ä¼šæå‡ä¸ºintç±»å‹,ä¸¤ä¸ªintç±»å‹ç›¸åŠ çš„ç»“æœä¹Ÿæ˜¯intç±»å‹
 		short s=1;s+=1;					//s = (short)(s + 1);
 
 		System.out.println(s);

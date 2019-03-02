@@ -3,11 +3,11 @@ package javase.important_object.string.test;
 import java.util.Scanner;
 
 /**
- * - A:°¸ÀıÑİÊ¾
+ * - A:æ¡ˆä¾‹æ¼”ç¤º
  * 
- * - ĞèÇó£ºÄ£ÄâµÇÂ¼£¬¸øÈı´Î»ú»á£¬²¢ÌáÊ¾»¹ÓĞ¼¸´Î¡£
+ * - éœ€æ±‚ï¼šæ¨¡æ‹Ÿç™»å½•ï¼Œç»™ä¸‰æ¬¡æœºä¼šï¼Œå¹¶æç¤ºè¿˜æœ‰å‡ æ¬¡ã€‚
  * 
- * - ÓÃ»§ÃûºÍÃÜÂë¶¼ÊÇadmin
+ * - ç”¨æˆ·åå’Œå¯†ç éƒ½æ˜¯admin
  * 
  * @author Dan
  *
@@ -16,18 +16,18 @@ public class Test1 {
 	public static void main(String[] args) {
 		Scanner cin = new Scanner(System.in);
 		for (int i = 0; i < 3; i++) {
-			System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
+			System.out.println("è¯·è¾“å…¥ç”¨æˆ·åï¼š");
 			String username = cin.nextLine();
-			System.out.println("ÇëÊäÈëÃÜÂë£º");
+			System.out.println("è¯·è¾“å…¥å¯†ç ï¼š");
 			String password = cin.nextLine();
 			if ("admin".equals(username) && "admin".equals(password)) {
-				System.out.println("»¶Ó­" + username + "µÇÂ¼");
+				System.out.println("æ¬¢è¿" + username + "ç™»å½•");
 				break;
 			} else {
 				if (i == 2) {
-					System.out.println("ÄúµÄ´íÎó´ÎÊıÒÑµ½£¬Ã»ÓĞ»ú»áÁË");
+					System.out.println("æ‚¨çš„é”™è¯¯æ¬¡æ•°å·²åˆ°ï¼Œæ²¡æœ‰æœºä¼šäº†");
 				} else {
-					System.out.println("ÓÃ»§Ãû»òÃÜÂë´íÎó£¬Äú»¹ÓĞ" + (2-i) + "´Î»ú»á");
+					System.out.println("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼Œæ‚¨è¿˜æœ‰" + (2-i) + "æ¬¡æœºä¼š");
 				}
 			}
 		}

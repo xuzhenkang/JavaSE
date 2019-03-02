@@ -21,9 +21,9 @@ public class Demo7_TransIO {
 	public static void main(String[] args) throws IOException {
 		//demo1();
 		//demo2();
-		BufferedReader br = 								//¸ü¸ßĞ§µÄ¶Á
+		BufferedReader br = 								//æ›´é«˜æ•ˆçš„è¯»
 				new BufferedReader(new InputStreamReader(new FileInputStream("utf-8.txt"), "utf-8"));
-		BufferedWriter bw = 								//¸ü¸ßĞ§µÄĞ´
+		BufferedWriter bw = 								//æ›´é«˜æ•ˆçš„å†™
 				new BufferedWriter(new OutputStreamWriter(new FileOutputStream("gbk.txt"), "gbk"));
 		int c;
 		while((c = br.read()) != -1) {
@@ -36,8 +36,8 @@ public class Demo7_TransIO {
 
 	public static void demo2() throws UnsupportedEncodingException,
 			FileNotFoundException, IOException {
-		InputStreamReader isr = new InputStreamReader(new FileInputStream("utf-8.txt"), "uTf-8");	//Ö¸¶¨Âë±í¶Á×Ö·û
-		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("gbk.txt"), "gbk");	//Ö¸¶¨Âë±íĞ´×Ö·û
+		InputStreamReader isr = new InputStreamReader(new FileInputStream("utf-8.txt"), "uTf-8");	//æŒ‡å®šç è¡¨è¯»å­—ç¬¦
+		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("gbk.txt"), "gbk");	//æŒ‡å®šç è¡¨å†™å­—ç¬¦
 		
 		int c;
 		while((c = isr.read()) != -1) {
@@ -49,7 +49,7 @@ public class Demo7_TransIO {
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		//ÓÃÄ¬ÈÏ±àÂë±í¶ÁĞ´,³öÏÖÂÒÂë
+		//ç”¨é»˜è®¤ç¼–ç è¡¨è¯»å†™,å‡ºç°ä¹±ç 
 		FileReader fr = new FileReader("utf-8.txt");				
 		FileWriter fw = new FileWriter("gbk.txt");
 		

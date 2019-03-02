@@ -1,30 +1,30 @@
 package javase.oo.inherit.test;
 class Test5_Animal {
 	public static void main(String[] args) {
-		Cat c1 = new Cat("»¨",4);
+		Cat c1 = new Cat("èŠ±",4);
 		System.out.println(c1.getColor() + "..." + c1.getLeg());
 		c1.eat();
 		c1.catchMouse();
 
-		Dog d1 = new Dog("ºÚ",2);
+		Dog d1 = new Dog("é»‘",2);
 		System.out.println(d1.getColor() + "..." + d1.getLeg());
 		d1.eat();
 		d1.lookHome();
 	}
 }
 /*
-* A:Ã¨¹·°¸Àı·ÖÎö
-* B:°¸ÀıÑİÊ¾
-	* Ã¨¹·°¸Àı¼Ì³Ğ°æ
-	* ÊôĞÔ:Ã«µÄÑÕÉ«,ÍÈµÄ¸öÊı
-	* ĞĞÎª:³Ô·¹
-	* Ã¨ÌØÓĞĞĞÎª:×¥ÀÏÊócatchMouse
-	* ¹·ÌØÓĞĞĞÎª:¿´¼ÒlookHome
+* A:çŒ«ç‹—æ¡ˆä¾‹åˆ†æ
+* B:æ¡ˆä¾‹æ¼”ç¤º
+	* çŒ«ç‹—æ¡ˆä¾‹ç»§æ‰¿ç‰ˆ
+	* å±æ€§:æ¯›çš„é¢œè‰²,è…¿çš„ä¸ªæ•°
+	* è¡Œä¸º:åƒé¥­
+	* çŒ«ç‰¹æœ‰è¡Œä¸º:æŠ“è€é¼ catchMouse
+	* ç‹—ç‰¹æœ‰è¡Œä¸º:çœ‹å®¶lookHome
 */
 
 class Animal {
-	private String color;					//Ã«µÄÑÕÉ«
-	private int leg;						//ÍÈµÄ¸öÊı
+	private String color;					//æ¯›çš„é¢œè‰²
+	private int leg;						//è…¿çš„ä¸ªæ•°
 
 	public Animal(){}
 
@@ -33,55 +33,55 @@ class Animal {
 		this.leg = leg;
 	}
 
-	public void setColor(String color) {	//ÉèÖÃÑÕÉ«
+	public void setColor(String color) {	//è®¾ç½®é¢œè‰²
 		this.color = color;
 	}
 
-	public String getColor() {				//»ñÈ¡ÑÕÉ«
+	public String getColor() {				//è·å–é¢œè‰²
 		return color;
 	}
 
-	public void setLeg(int leg) {			//ÉèÖÃÍÈµÄ¸öÊı
+	public void setLeg(int leg) {			//è®¾ç½®è…¿çš„ä¸ªæ•°
 		this.leg = leg;
 	}
 
-	public int getLeg() {					//»ñÈ¡ÍÈµÄ¸öÊı
+	public int getLeg() {					//è·å–è…¿çš„ä¸ªæ•°
 		return leg;
 	}
 
-	public void eat() {						//³Ô·¹
-		System.out.println("³Ô·¹");
+	public void eat() {						//åƒé¥­
+		System.out.println("åƒé¥­");
 	}
 }
 
 class Cat extends Animal {
-	public Cat() {}							//¿Õ²Î¹¹Ôì
+	public Cat() {}							//ç©ºå‚æ„é€ 
 
-	public Cat(String color,int leg) {		//ÓĞ²Î¹¹Ôì
+	public Cat(String color,int leg) {		//æœ‰å‚æ„é€ 
 		super(color,leg);
 	}
 
-	public void eat() {						//³ÔÓã
-		System.out.println("Ã¨³ÔÓã");
+	public void eat() {						//åƒé±¼
+		System.out.println("çŒ«åƒé±¼");
 	}
 
-	public void catchMouse() {				//×¥ÀÏÊó
-		System.out.println("×¥ÀÏÊó");
+	public void catchMouse() {				//æŠ“è€é¼ 
+		System.out.println("æŠ“è€é¼ ");
 	}
 }
 
 class Dog extends Animal {
-	public Dog() {}							//¿Õ²Î¹¹Ôì
+	public Dog() {}							//ç©ºå‚æ„é€ 
 
-	public Dog(String color,int leg) {		//ÓĞ²Î¹¹Ôì
+	public Dog(String color,int leg) {		//æœ‰å‚æ„é€ 
 		super(color,leg);
 	}
 
-	public void eat() {						//³ÔÈâ
-		System.out.println("¹·³ÔÈâ");
+	public void eat() {						//åƒè‚‰
+		System.out.println("ç‹—åƒè‚‰");
 	}
 
-	public void lookHome() {				//¿´¼Ò
-		System.out.println("¿´¼Ò");
+	public void lookHome() {				//çœ‹å®¶
+		System.out.println("çœ‹å®¶");
 	}
 }

@@ -12,17 +12,17 @@ import java.util.Scanner;
 public class Test2 {
 
 	/**
-	 * ÔÚ¿ØÖÆÌ¨Â¼ÈëÎÄ¼şµÄÂ·¾¶,½«ÎÄ¼ş¿½±´µ½µ±Ç°ÏîÄ¿ÏÂ
+	 * åœ¨æ§åˆ¶å°å½•å…¥æ–‡ä»¶çš„è·¯å¾„,å°†æ–‡ä»¶æ‹·è´åˆ°å½“å‰é¡¹ç›®ä¸‹
 	 * 
-	 * ·ÖÎö:
+	 * åˆ†æ:
 	 * 
-	 * 1,¶¨Òå·½·¨¶Ô¼üÅÌÂ¼ÈëµÄÂ·¾¶½øĞĞÅĞ¶Ï,Èç¹ûÊÇÎÄ¼ş¾Í·µ»Ø
-	 * 2,ÔÚÖ÷·½·¨ÖĞ½ÓÊÕ¸ÃÎÄ¼ş
-	 * 3,¶ÁºÍĞ´¸ÃÎÄ¼ş
+	 * 1,å®šä¹‰æ–¹æ³•å¯¹é”®ç›˜å½•å…¥çš„è·¯å¾„è¿›è¡Œåˆ¤æ–­,å¦‚æœæ˜¯æ–‡ä»¶å°±è¿”å›
+	 * 2,åœ¨ä¸»æ–¹æ³•ä¸­æ¥æ”¶è¯¥æ–‡ä»¶
+	 * 3,è¯»å’Œå†™è¯¥æ–‡ä»¶
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		File file = getFile();					//»ñÈ¡ÎÄ¼ş
+		File file = getFile();					//è·å–æ–‡ä»¶
 		BufferedInputStream  bis = new BufferedInputStream(new FileInputStream(file));
 		BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file.getName()));
 		
@@ -36,20 +36,20 @@ public class Test2 {
 	}
 
 	/*
-	 * ¶¨ÒåÒ»¸ö·½·¨»ñÈ¡¼üÅÌÂ¼ÈëµÄÎÄ¼şÂ·¾¶,²¢·â×°³ÉFile¶ÔÏó·µ»Ø
-	 * 1,·µ»ØÖµÀàĞÍFile
-	 * 2,²ÎÊıÁĞ±íÎŞ
+	 * å®šä¹‰ä¸€ä¸ªæ–¹æ³•è·å–é”®ç›˜å½•å…¥çš„æ–‡ä»¶è·¯å¾„,å¹¶å°è£…æˆFileå¯¹è±¡è¿”å›
+	 * 1,è¿”å›å€¼ç±»å‹File
+	 * 2,å‚æ•°åˆ—è¡¨æ— 
 	 */
 	public static File getFile() {
-		Scanner sc = new Scanner(System.in);				//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëÒ»¸öÎÄ¼şµÄÂ·¾¶:");
+		Scanner sc = new Scanner(System.in);				//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ–‡ä»¶çš„è·¯å¾„:");
 		while(true) {
-			String line = sc.nextLine();					//½ÓÊÕ¼üÅÌÂ¼ÈëµÄÂ·¾¶
-			File file = new File(line);						//·â×°³ÉFile¶ÔÏó,²¢¶ÔÆä½øĞĞÅĞ¶Ï
+			String line = sc.nextLine();					//æ¥æ”¶é”®ç›˜å½•å…¥çš„è·¯å¾„
+			File file = new File(line);						//å°è£…æˆFileå¯¹è±¡,å¹¶å¯¹å…¶è¿›è¡Œåˆ¤æ–­
 			if(!file.exists()) {
-				System.out.println("ÄúÂ¼ÈëµÄÎÄ¼şÂ·¾¶²»´æÔÚ,ÇëÖØĞÂÂ¼Èë:");
+				System.out.println("æ‚¨å½•å…¥çš„æ–‡ä»¶è·¯å¾„ä¸å­˜åœ¨,è¯·é‡æ–°å½•å…¥:");
 			}else if(file.isDirectory()) {
-				System.out.println("ÄúÂ¼ÈëµÄÊÇÎÄ¼ş¼ĞÂ·¾¶,ÇëÖØĞÂÂ¼Èë:");
+				System.out.println("æ‚¨å½•å…¥çš„æ˜¯æ–‡ä»¶å¤¹è·¯å¾„,è¯·é‡æ–°å½•å…¥:");
 			}else {
 				return file;
 			}

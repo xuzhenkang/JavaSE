@@ -4,7 +4,7 @@ public class Demo5_Join {
 
 	/**
 	 * @param args
-	 * join(), µ±Ç°Ïß³ÌÔİÍ£, µÈ´ıÖ¸¶¨µÄÏß³ÌÖ´ĞĞ½áÊøºó, µ±Ç°Ïß³ÌÔÙ¼ÌĞø
+	 * join(), å½“å‰çº¿ç¨‹æš‚åœ, ç­‰å¾…æŒ‡å®šçš„çº¿ç¨‹æ‰§è¡Œç»“æŸå, å½“å‰çº¿ç¨‹å†ç»§ç»­
 	 */
 	public static void main(String[] args) {
 		final Thread t1 = new Thread() {
@@ -21,7 +21,7 @@ public class Demo5_Join {
 					if(i == 2) {
 						try {
 							//t1.join();
-							t1.join();					//²å¶ÓÖ¸¶¨µÄÊ±¼ä,¹ıÁËÖ¸¶¨Ê±¼äºó,Á½ÌõÏß³Ì½»ÌæÖ´ĞĞ
+							t1.join();					//æ’é˜ŸæŒ‡å®šçš„æ—¶é—´,è¿‡äº†æŒ‡å®šæ—¶é—´å,ä¸¤æ¡çº¿ç¨‹äº¤æ›¿æ‰§è¡Œ
 						} catch (InterruptedException e) {
 							
 							e.printStackTrace();

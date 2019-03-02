@@ -56,7 +56,7 @@ public class Student1 implements Comparable<Student1> {
 	}
 	@Override
 	public int compareTo(Student1 o) {
-		int num = this.age - o.age;					//以年龄为主要条件
+		int num = this.age - o.age;					//浠ュ勾榫勪负涓昏鏉′欢
 		return num == 0 ? this.name.compareTo(o.name) : num;
 	}
 }

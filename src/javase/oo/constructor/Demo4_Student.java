@@ -2,63 +2,63 @@ package javase.oo.constructor;
 
 class Demo4_Student {
 	public static void main(String[] args) {
-		Student s1 = new Student();					//Ê¹ÓÃ¿Õ²Î¹¹Ôì
-		s1.setName("ÕÅÈı");							//ÉèÖÃĞÕÃû
-		s1.setAge(23);								//ÉèÖÃÄêÁä
+		Student s1 = new Student();					//ä½¿ç”¨ç©ºå‚æ„é€ 
+		s1.setName("å¼ ä¸‰");							//è®¾ç½®å§“å
+		s1.setAge(23);								//è®¾ç½®å¹´é¾„
 
-		System.out.println("ÎÒµÄĞÕÃûÊÇ:" + s1.getName() + ",ÎÒµÄÄêÁäÊÇ:" + s1.getAge());
-		//getXxx()»ñÈ¡ÊôĞÔÖµ,¿ÉÒÔ´òÓ¡,Ò²¿ÉÒÔ¸³Öµ¸øÆäËûµÄ±äÁ¿,×öÆäËûµÄ²Ù×÷
-		Student s2 = new Student("ÀîËÄ",24);
-		s2.show();									//Ö»ÊÇÎªÁËÏÔÊ¾ÊôĞÔÖµ
+		System.out.println("æˆ‘çš„å§“åæ˜¯:" + s1.getName() + ",æˆ‘çš„å¹´é¾„æ˜¯:" + s1.getAge());
+		//getXxx()è·å–å±æ€§å€¼,å¯ä»¥æ‰“å°,ä¹Ÿå¯ä»¥èµ‹å€¼ç»™å…¶ä»–çš„å˜é‡,åšå…¶ä»–çš„æ“ä½œ
+		Student s2 = new Student("æå››",24);
+		s2.show();									//åªæ˜¯ä¸ºäº†æ˜¾ç¤ºå±æ€§å€¼
 	}
 }
 /*
-* A:°¸ÀıÑİÊ¾
-	* Ñ§ÉúÀà£º
-		* ³ÉÔ±±äÁ¿£º
-			* name£¬age
-		* ¹¹Ôì·½·¨£º
-			* ÎŞ²Î£¬´øÁ½¸ö²Î
-		* ³ÉÔ±·½·¨£º
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* å­¦ç”Ÿç±»ï¼š
+		* æˆå‘˜å˜é‡ï¼š
+			* nameï¼Œage
+		* æ„é€ æ–¹æ³•ï¼š
+			* æ— å‚ï¼Œå¸¦ä¸¤ä¸ªå‚
+		* æˆå‘˜æ–¹æ³•ï¼š
 			* getXxx()/setXxx()
-			* show()£ºÊä³ö¸ÃÀàµÄËùÓĞ³ÉÔ±±äÁ¿Öµ
-* B:¸ø³ÉÔ±±äÁ¿¸³Öµ£º
-	* a:setXxx()·½·¨
-	* b:¹¹Ôì·½·¨
+			* show()ï¼šè¾“å‡ºè¯¥ç±»çš„æ‰€æœ‰æˆå‘˜å˜é‡å€¼
+* B:ç»™æˆå‘˜å˜é‡èµ‹å€¼ï¼š
+	* a:setXxx()æ–¹æ³•
+	* b:æ„é€ æ–¹æ³•
 	
-* C:Êä³ö³ÉÔ±±äÁ¿ÖµµÄ·½Ê½£º
-	* a:Í¨¹ıgetXxx()·Ö±ğ»ñÈ¡È»ºóÆ´½Ó
-	* b:Í¨¹ıµ÷ÓÃshow()·½·¨¸ã¶¨
+* C:è¾“å‡ºæˆå‘˜å˜é‡å€¼çš„æ–¹å¼ï¼š
+	* a:é€šè¿‡getXxx()åˆ†åˆ«è·å–ç„¶åæ‹¼æ¥
+	* b:é€šè¿‡è°ƒç”¨show()æ–¹æ³•æå®š
 */
 
 class Student {
-	private String name;							//ĞÕÃû
-	private int age;								//ÄêÁä
+	private String name;							//å§“å
+	private int age;								//å¹´é¾„
 
-	public Student(){}								//¿Õ²Î¹¹Ôì
+	public Student(){}								//ç©ºå‚æ„é€ 
 
-	public Student(String name,int age) {			//ÓĞ²Î¹¹Ôì
+	public Student(String name,int age) {			//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
 	}
 
-	public void setName(String name) {				//ÉèÖÃĞÕÃû
+	public void setName(String name) {				//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {						//»ñÈ¡ĞÕÃû
+	public String getName() {						//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {					//ÉèÖÃÄêÁä
+	public void setAge(int age) {					//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {							//»ñÈ¡ÄêÁä
+	public int getAge() {							//è·å–å¹´é¾„
 		return age;
 	}
 
 	public void show() {
-		System.out.println("ÎÒµÄĞÕÃûÊÇ:" + name +  ",ÎÒµÄÄêÁäÊÇ:" +  age);
+		System.out.println("æˆ‘çš„å§“åæ˜¯:" + name +  ",æˆ‘çš„å¹´é¾„æ˜¯:" +  age);
 	}
 }

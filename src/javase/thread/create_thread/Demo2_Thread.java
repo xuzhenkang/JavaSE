@@ -6,8 +6,8 @@ public class Demo2_Thread {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		MyThread mt = new MyThread();		//4,´´½¨ThreadÀàµÄ×ÓÀà¶ÔÏó
-		mt.start();							//5,¿ªÆôÏß³Ì
+		MyThread mt = new MyThread();		//4,åˆ›å»ºThreadç±»çš„å­ç±»å¯¹è±¡
+		mt.start();							//5,å¼€å¯çº¿ç¨‹
 		
 		for(int i = 0; i < 1000; i++) {
 			System.out.println("bb");
@@ -16,9 +16,9 @@ public class Demo2_Thread {
 
 }
 
-class MyThread extends Thread {				//1,¼Ì³ĞThread
-	public void run() {						//2,ÖØĞ´run·½·¨
-		for(int i = 0; i < 1000; i++) {		//3,½«ÒªÖ´ĞĞµÄ´úÂëĞ´ÔÚrun·½·¨ÖĞ
+class MyThread extends Thread {				//1,ç»§æ‰¿Thread
+	public void run() {						//2,é‡å†™runæ–¹æ³•
+		for(int i = 0; i < 1000; i++) {		//3,å°†è¦æ‰§è¡Œçš„ä»£ç å†™åœ¨runæ–¹æ³•ä¸­
 			System.out.println("aaaaaaaaaaaa");
 		}
 	}

@@ -4,41 +4,41 @@ class Test2_Extends {
 		Zi1 z = new Zi1();
 	}
 	/*
-	1,jvmµ÷ÓÃÁËmain·½·¨,main½øÕ»
-	2,Óöµ½Zi z = new Zi();»áÏÈ½«Fu.classºÍZi.class·Ö±ð¼ÓÔØ½øÄÚ´æ,ÔÙ´´½¨¶ÔÏó,µ±Fu.class¼ÓÔØ½øÄÚ´æ
-	¸¸ÀàµÄ¾²Ì¬´úÂë¿é»áËæ×ÅFu.classÒ»Æð¼ÓÔØ,µ±Zi.class¼ÓÔØ½øÄÚ´æ,×ÓÀàµÄ¾²Ì¬´úÂë¿é»áËæ×ÅZi.classÒ»Æð¼ÓÔØ
-	µÚÒ»¸öÊä³ö,¾²Ì¬´úÂë¿éFu,µÚ¶þ¸öÊä³ö¾²Ì¬´úÂë¿éZi
-	3,×ßZiÀàµÄ¹¹Ôì·½·¨,ÒòÎªjavaÖÐÊÇ·Ö²ã³õÊ¼»¯µÄ,ÏÈ³õÊ¼»¯¸¸Àà,ÔÙ³õÊ¼»¯×ÓÀà,ËùÒÔÏÈ×ßµÄ¸¸Àà¹¹Ôì,µ«ÊÇÔÚÖ´ÐÐ
-	¸¸Àà¹¹ÔìÊ±,·¢ÏÖ¸¸ÀàÓÐ¹¹Ôì´úÂë¿é,¹¹Ôì´úÂë¿éÊÇÓÅÏÈÓÚ¹¹Ôì·½·¨Ö´ÐÐµÄËùÒÔ
-	µÚÈý¸öÊä³ö¹¹Ôì´úÂë¿éFu,µÚËÄ¸öÊä³ö¹¹Ôì·½·¨Fu
-	4,FuÀà³õÊ¼»¯½áÊø,×ÓÀà³õÊ¼»¯,µÚÎå¸öÊä³öµÄÊÇ¹¹Ôì´úÂë¿éZi,¹¹Ôì·½·¨Zi
+	1,jvmè°ƒç”¨äº†mainæ–¹æ³•,mainè¿›æ ˆ
+	2,é‡åˆ°Zi z = new Zi();ä¼šå…ˆå°†Fu.classå’ŒZi.classåˆ†åˆ«åŠ è½½è¿›å†…å­˜,å†åˆ›å»ºå¯¹è±¡,å½“Fu.classåŠ è½½è¿›å†…å­˜
+	çˆ¶ç±»çš„é™æ€ä»£ç å—ä¼šéšç€Fu.classä¸€èµ·åŠ è½½,å½“Zi.classåŠ è½½è¿›å†…å­˜,å­ç±»çš„é™æ€ä»£ç å—ä¼šéšç€Zi.classä¸€èµ·åŠ è½½
+	ç¬¬ä¸€ä¸ªè¾“å‡º,é™æ€ä»£ç å—Fu,ç¬¬äºŒä¸ªè¾“å‡ºé™æ€ä»£ç å—Zi
+	3,èµ°Ziç±»çš„æž„é€ æ–¹æ³•,å› ä¸ºjavaä¸­æ˜¯åˆ†å±‚åˆå§‹åŒ–çš„,å…ˆåˆå§‹åŒ–çˆ¶ç±»,å†åˆå§‹åŒ–å­ç±»,æ‰€ä»¥å…ˆèµ°çš„çˆ¶ç±»æž„é€ ,ä½†æ˜¯åœ¨æ‰§è¡Œ
+	çˆ¶ç±»æž„é€ æ—¶,å‘çŽ°çˆ¶ç±»æœ‰æž„é€ ä»£ç å—,æž„é€ ä»£ç å—æ˜¯ä¼˜å…ˆäºŽæž„é€ æ–¹æ³•æ‰§è¡Œçš„æ‰€ä»¥
+	ç¬¬ä¸‰ä¸ªè¾“å‡ºæž„é€ ä»£ç å—Fu,ç¬¬å››ä¸ªè¾“å‡ºæž„é€ æ–¹æ³•Fu
+	4,Fuç±»åˆå§‹åŒ–ç»“æŸ,å­ç±»åˆå§‹åŒ–,ç¬¬äº”ä¸ªè¾“å‡ºçš„æ˜¯æž„é€ ä»£ç å—Zi,æž„é€ æ–¹æ³•Zi
 	*/
 }
 class Fu1 {
 	static {
-		System.out.println("¾²Ì¬´úÂë¿éFu");
+		System.out.println("é™æ€ä»£ç å—Fu");
 	}
 
 	{
-		System.out.println("¹¹Ôì´úÂë¿éFu");
+		System.out.println("æž„é€ ä»£ç å—Fu");
 	}
 
 	public Fu1() {
-		System.out.println("¹¹Ôì·½·¨Fu");
+		System.out.println("æž„é€ æ–¹æ³•Fu");
 	}
 }
 
 class Zi1 extends Fu1 {
 	static {
-		System.out.println("¾²Ì¬´úÂë¿éZi");
+		System.out.println("é™æ€ä»£ç å—Zi");
 	}
 
 	{
-		System.out.println("¹¹Ôì´úÂë¿éZi");
+		System.out.println("æž„é€ ä»£ç å—Zi");
 	}
 
 	public Zi1() {
-		System.out.println("¹¹Ôì·½·¨Zi");
+		System.out.println("æž„é€ æ–¹æ³•Zi");
 	}
 }
 

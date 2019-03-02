@@ -7,37 +7,37 @@ import java.util.TreeSet;
 public class Demo6_Generic {
 
 	/**
-	 * ·ºĞÍ¹Ì¶¨ÏÂ±ß½ç
+	 * æ³›å‹å›ºå®šä¸‹è¾¹ç•Œ
 	 * ? super E  
 	 * 
-	 * ·ºĞÍ¹Ì¶¨ÉÏ±ß½ç
+	 * æ³›å‹å›ºå®šä¸Šè¾¹ç•Œ
 	 * ? extends E
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		TreeSet<Student1> ts1 = new TreeSet<>(new CompareByAge());
-		ts1.add(new Student1("ÕÅÈı", 33));
-		ts1.add(new Student1("ÀîËÄ", 13));
-		ts1.add(new Student1("ÍõÎå", 23));
-		ts1.add(new Student1("ÕÔÁù", 43));
+		ts1.add(new Student1("å¼ ä¸‰", 33));
+		ts1.add(new Student1("æå››", 13));
+		ts1.add(new Student1("ç‹äº”", 23));
+		ts1.add(new Student1("èµµå…­", 43));
 		
 		TreeSet<BaseStudent> ts2 = new TreeSet<>(new CompareByAge());
-		ts2.add(new BaseStudent("ÕÅÈı", 33));
-		ts2.add(new BaseStudent("ÀîËÄ", 13));
-		ts2.add(new BaseStudent("ÍõÎå", 23));
-		ts2.add(new BaseStudent("ÕÔÁù", 43));
+		ts2.add(new BaseStudent("å¼ ä¸‰", 33));
+		ts2.add(new BaseStudent("æå››", 13));
+		ts2.add(new BaseStudent("ç‹äº”", 23));
+		ts2.add(new BaseStudent("èµµå…­", 43));
 		
 		System.out.println(ts2);
 	}
 
 	public static void demo1() {
 		ArrayList<Student1> list1 = new ArrayList<>();
-		list1.add(new Student1("ÕÅÈı", 23));
-		list1.add(new Student1("ÀîËÄ", 24));
+		list1.add(new Student1("å¼ ä¸‰", 23));
+		list1.add(new Student1("æå››", 24));
 		
 		ArrayList<BaseStudent> list2 = new ArrayList<>();
-		list2.add(new BaseStudent("ÍõÎå", 25));
-		list2.add(new BaseStudent("ÕÔÁù", 26));
+		list2.add(new BaseStudent("ç‹äº”", 25));
+		list2.add(new BaseStudent("èµµå…­", 26));
 		
 		list1.addAll(list2);
 	}

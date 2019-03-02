@@ -9,9 +9,9 @@ public class Demo2_Runtime {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		Runtime r = Runtime.getRuntime();			//»ñÈ¡ÔËĞĞÊ±¶ÔÏó
+		Runtime r = Runtime.getRuntime();			//è·å–è¿è¡Œæ—¶å¯¹è±¡
 		//r.exec("shutdown -s -t 300");
 		r.exec("shutdown -a");
 	}
-	// Runtime¾ÍÊÇ¶öººÊ½µ¥ÀıÄ£Ê½
+	// Runtimeå°±æ˜¯é¥¿æ±‰å¼å•ä¾‹æ¨¡å¼
 }

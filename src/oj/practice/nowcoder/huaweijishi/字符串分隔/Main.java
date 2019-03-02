@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.×Ö·û´®·Ö¸ô;
+package oj.practice.nowcoder.huaweijishi.å­—ç¬¦ä¸²åˆ†éš”;
 
 import java.util.*;
 public class Main{

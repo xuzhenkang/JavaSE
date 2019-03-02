@@ -1,31 +1,31 @@
 package javase.oo.abstractclass;
 
-public class Demo3_¿û»¨±¦µä {
+public class Demo3_è‘µèŠ±å®å…¸ {
 	public static void main(String[] args) {
-		ÔÀ²»Èº Ğ¡ÔÀ×Ó = new ÔÀ²»Èº();
-		Ğ¡ÔÀ×Ó.×Ô¹¬();
+		å²³ä¸ç¾¤ å°å²³å­ = new å²³ä¸ç¾¤();
+		å°å²³å­.è‡ªå®«();
 	}
 }
-abstract class ¿û»¨±¦µä {
-	public abstract void ×Ô¹¬();
+abstract class è‘µèŠ±å®å…¸ {
+	public abstract void è‡ªå®«();
 }
-class ÔÀ²»Èº extends ¿û»¨±¦µä {
-	public void ×Ô¹¬() {
-		System.out.println("ÓÃÑÀÇ©");
-	}
-}
-
-class ÁÖÆ½Ö® extends ¿û»¨±¦µä {
-	public void ×Ô¹¬() {
-		System.out.println("ÓÃÖ¸¼×µ¶");
+class å²³ä¸ç¾¤ extends è‘µèŠ±å®å…¸ {
+	public void è‡ªå®«() {
+		System.out.println("ç”¨ç‰™ç­¾");
 	}
 }
 
-class ¶«·½²»°Ü extends ¿û»¨±¦µä {
+class æ—å¹³ä¹‹ extends è‘µèŠ±å®å…¸ {
+	public void è‡ªå®«() {
+		System.out.println("ç”¨æŒ‡ç”²åˆ€");
+	}
+}
+
+class ä¸œæ–¹ä¸è´¥ extends è‘µèŠ±å®å…¸ {
 
 	@Override
-	public void ×Ô¹¬() {
-		System.out.println("ÓÃ´¸×Ó£¬²»ÈÌÖ±ÊÓ");
+	public void è‡ªå®«() {
+		System.out.println("ç”¨é”¤å­ï¼Œä¸å¿ç›´è§†");
 	}
 	
 }

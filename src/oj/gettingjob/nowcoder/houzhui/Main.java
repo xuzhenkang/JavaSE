@@ -3,7 +3,7 @@ package oj.gettingjob.nowcoder.houzhui;
 import java.util.Scanner;
 import java.util.Stack;
 /**
- * »ªÎª±ÊÊÔÌâ
+ * åä¸ºç¬”è¯•é¢˜
  * @author lenovo
  *
  */
@@ -29,17 +29,17 @@ public class Main {
 		} else if (c == '+') {
 			r = calc(new StringBuilder(sb.substring(0, sb.length()-1)));
 			l = calc(new StringBuilder(sb.substring(0, sb.length()-2)));
-			System.out.println("\nr=" + r + ",l=" + l + ";±í´ïÊ½Îª£º" + l + c + r + "=" + (r+l));
+			System.out.println("\nr=" + r + ",l=" + l + ";è¡¨è¾¾å¼ä¸ºï¼š" + l + c + r + "=" + (r+l));
 			return r+l;
 		} else if (c == '-') {
 			r = calc(new StringBuilder(sb.substring(0, sb.length()-1)));
 			l = calc(new StringBuilder(sb.substring(0, sb.length()-2)));
-			System.out.println("\nr=" + r + ",l=" + l + ";±í´ïÊ½Îª£º" + l + c + r + "=" + (l-r));
+			System.out.println("\nr=" + r + ",l=" + l + ";è¡¨è¾¾å¼ä¸ºï¼š" + l + c + r + "=" + (l-r));
 			return l-r;
 		}  else if (c == '*') {
 			r = calc(new StringBuilder(sb.substring(0, sb.length()-1)));
 			l = calc(new StringBuilder(sb.substring(0, sb.length()-2)));
-			System.out.println("\nr=" + r + ",l=" + l + ";±í´ïÊ½Îª£º" + l + c + r + "=" + (r*l));
+			System.out.println("\nr=" + r + ",l=" + l + ";è¡¨è¾¾å¼ä¸ºï¼š" + l + c + r + "=" + (r*l));
 			return r*l;
 		} else {
 			return Integer.parseInt(c+"");

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-// ²¿·ÖºÍÎÊÌâ
+// éƒ¨åˆ†å’Œé—®é¢˜
 public class Main {
 	public static ArrayList<Integer> result = new ArrayList<>();
 	public static boolean dfs(int[] arr, int i, int sum, int k) {

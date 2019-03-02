@@ -1,12 +1,12 @@
 package javase.base.method;
 /*
-ÖØÔØ:·½·¨ÃûÏàÍ¬,²ÎÊıÁĞ±í²»Í¬,Óë·µ»ØÖµÀàĞÍÎŞ¹Ø
-ÖØÔØµÄ·ÖÀà
-1,²ÎÊı¸öÊı²»Í¬
-2,²ÎÊıÀàĞÍ²»Í¬
-	Ë³Ğò²»Í¬
+é‡è½½:æ–¹æ³•åç›¸åŒ,å‚æ•°åˆ—è¡¨ä¸åŒ,ä¸è¿”å›å€¼ç±»å‹æ— å…³
+é‡è½½çš„åˆ†ç±»
+1,å‚æ•°ä¸ªæ•°ä¸åŒ
+2,å‚æ•°ç±»å‹ä¸åŒ
+	é¡ºåºä¸åŒ
 */
-class Demo4_Overload {						//overloadÖØÔØ
+class Demo4_Overload {						//overloadé‡è½½
 	public static void main(String[] args) {
 		double sum1 = add(10,20.1);
 		System.out.println(sum1);
@@ -19,9 +19,9 @@ class Demo4_Overload {						//overloadÖØÔØ
 	}
 
 	/*
-	ÇóÁ½¸öÕûÊıµÄºÍ
-	1,·µ»ØÖµÀàĞÍint
-	2,²ÎÊıÁĞ±í int a,int b
+	æ±‚ä¸¤ä¸ªæ•´æ•°çš„å’Œ
+	1,è¿”å›å€¼ç±»å‹int
+	2,å‚æ•°åˆ—è¡¨ int a,int b
 	*/
 
 	public static double add(int a,double b) {
@@ -29,9 +29,9 @@ class Demo4_Overload {						//overloadÖØÔØ
 	}
 
 	/*
-	ÇóÈı¸öÕûÊıµÄºÍ
-	1,·µ»ØÖµÀàĞÍint
-	2,²ÎÊıÁĞ±í int a,int b,int c
+	æ±‚ä¸‰ä¸ªæ•´æ•°çš„å’Œ
+	1,è¿”å›å€¼ç±»å‹int
+	2,å‚æ•°åˆ—è¡¨ int a,int b,int c
 	*/
 
 	public static int add(int a,int b,int c) {
@@ -39,9 +39,9 @@ class Demo4_Overload {						//overloadÖØÔØ
 	}
 
 	/*
-	ÇóÁ½¸öĞ¡ÊıµÄºÍ
-	1,·µ»ØÖµÀàĞÍdouble
-	2,²ÎÊıÁĞ±í double a,double b
+	æ±‚ä¸¤ä¸ªå°æ•°çš„å’Œ
+	1,è¿”å›å€¼ç±»å‹double
+	2,å‚æ•°åˆ—è¡¨ double a,double b
 	*/
 
 	public static double add(double a,int b) {

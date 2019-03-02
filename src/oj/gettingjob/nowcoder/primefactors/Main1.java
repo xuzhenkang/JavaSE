@@ -2,7 +2,7 @@ package oj.gettingjob.nowcoder.primefactors;
 
 import java.util.*;
 /**
- * Ã·Ωª ±º‰£∫2016-01-20 ”Ô—‘£∫Java ‘À–– ±º‰£∫ <1 ms ’º”√ƒ⁄¥Ê£∫0K ◊¥Ã¨£∫¥∞∏’˝»∑
+ * Êèê‰∫§Êó∂Èó¥Ôºö2016-01-20 ËØ≠Ë®ÄÔºöJava ËøêË°åÊó∂Èó¥Ôºö <1 ms Âç†Áî®ÂÜÖÂ≠òÔºö0K Áä∂ÊÄÅÔºöÁ≠îÊ°àÊ≠£Á°Æ
  * @author lenovo
  */
 public class Main1 {

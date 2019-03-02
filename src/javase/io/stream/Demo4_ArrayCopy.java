@@ -9,19 +9,19 @@ public class Demo4_ArrayCopy {
 
 	/**
 	 * @param args
-	 * µÚÈıÖÖ¿½±´
-	 * ¶¨ÒåĞ¡Êı×é
+	 * ç¬¬ä¸‰ç§æ‹·è´
+	 * å®šä¹‰å°æ•°ç»„
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
 		//demo2();
-		FileInputStream fis = new FileInputStream("ÖÂÇà´º.mp3");
+		FileInputStream fis = new FileInputStream("è‡´é’æ˜¥.mp3");
 		FileOutputStream fos = new FileOutputStream("copy.mp3");
 		
 		byte[] arr = new byte[1024 * 8];
 		int len;
-		while((len = fis.read(arr)) != -1) {				//Èç¹ûÍü¼Ç¼Óarr,·µ»ØµÄ¾Í²»ÊÇ¶ÁÈ¡µÄ×Ö½Ú¸öÊı,¶øÊÇ×Ö½ÚµÄÂë±íÖµ
+		while((len = fis.read(arr)) != -1) {				//å¦‚æœå¿˜è®°åŠ arr,è¿”å›çš„å°±ä¸æ˜¯è¯»å–çš„å­—èŠ‚ä¸ªæ•°,è€Œæ˜¯å­—èŠ‚çš„ç è¡¨å€¼
 			fos.write(arr,0,len);
 		}
 		
@@ -46,10 +46,10 @@ public class Demo4_ArrayCopy {
 	public static void demo1() throws FileNotFoundException, IOException {
 		FileInputStream fis = new FileInputStream("xxx.txt");
 		byte[] arr = new byte[2];
-		int a = fis.read(arr);						//½«ÎÄ¼şÉÏµÄ×Ö½Ú¶ÁÈ¡µ½×Ö½ÚÊı×éÖĞ
+		int a = fis.read(arr);						//å°†æ–‡ä»¶ä¸Šçš„å­—èŠ‚è¯»å–åˆ°å­—èŠ‚æ•°ç»„ä¸­
 		
-		System.out.println(a);						//¶Áµ½µÄÓĞĞ§×Ö½Ú¸öÊı
-		for (byte b : arr) {						//µÚÒ»´Î»ñÈ¡µ½ÎÄ¼şÉÏµÄaºÍb
+		System.out.println(a);						//è¯»åˆ°çš„æœ‰æ•ˆå­—èŠ‚ä¸ªæ•°
+		for (byte b : arr) {						//ç¬¬ä¸€æ¬¡è·å–åˆ°æ–‡ä»¶ä¸Šçš„aå’Œb
 			System.out.println(b);
 		}
 		System.out.println("-----------------------");

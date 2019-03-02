@@ -1,8 +1,8 @@
 package designpattern.adaptor;
 
 /**
- * ÊÊÅäÆ÷
- * (Ïàµ±ÓÚUSBºÍPS/2µÄ×ª½ÓÆ÷)
+ * é€‚é…å™¨
+ * (ç›¸å½“äºUSBå’ŒPS/2çš„è½¬æ¥å™¨)
  * @author lenovo
  * 
  */

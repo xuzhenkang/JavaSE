@@ -9,27 +9,27 @@ import java.net.SocketException;
 
 public class TestUDPServer {
 	public static void main(String[] args) throws SocketException {
-		// ¶¨ÒåÂëÍ·
+		// å®šä¹‰ç å¤´
 		DatagramSocket ds = new DatagramSocket(5678);
 		
-		//¶¨Òå¿ÉÒÔÓÃÀ´½ÓÊÜÊı¾İµÄ¼¯×°Ïä
+		//å®šä¹‰å¯ä»¥ç”¨æ¥æ¥å—æ•°æ®çš„é›†è£…ç®±
 		byte[] buf = new byte[1024];
 		DatagramPacket dp = new DatagramPacket(buf, buf.length);
 		
 		try {
 			while (true) {
-				//ÔÚÂëÍ·ÉÏÓÃ¼¯×°Ïä½ÓÊÜ¶Ô·½·¢ËÍ¹ıÀ´µÄÊı¾İ
-				ds.receive(dp);//×¢Òâ£º±¾Óï¾äÖ´ĞĞÍê±Ï¾ÍÒâÎ¶×Å£¬dpÊı¾İ°üÖĞ¾ÍÒÑ¾­º¬ÓĞÁË´Ó¿Í»§¶Ë½ÓÊÕ¹ıÀ´µÄÊı¾İ
+				//åœ¨ç å¤´ä¸Šç”¨é›†è£…ç®±æ¥å—å¯¹æ–¹å‘é€è¿‡æ¥çš„æ•°æ®
+				ds.receive(dp);//æ³¨æ„ï¼šæœ¬è¯­å¥æ‰§è¡Œå®Œæ¯•å°±æ„å‘³ç€ï¼Œdpæ•°æ®åŒ…ä¸­å°±å·²ç»å«æœ‰äº†ä»å®¢æˆ·ç«¯æ¥æ”¶è¿‡æ¥çš„æ•°æ®
 				
-				//1¡¢ ByteArrayInputStreamµÄÄÚºË±ØĞëÊÇ¸ö×Ö½ÚÊı×é£¬²¢ÇÒÊÇ´Ó¸Ã×Ö½ÚÊı×éÖĞ¶ÁÈ¡Êı¾İ  
-				//2¡¢dp.getData()±íÊ¾°Ñdp¼¯×°ÏäÖĞµÄÊı¾İ×ª»¯ÎªÒ»¸ö×Ö½ÚÊı×é²¢·µ»Ø¸Ã×Ö½ÚÊı×é
+				//1ã€ ByteArrayInputStreamçš„å†…æ ¸å¿…é¡»æ˜¯ä¸ªå­—èŠ‚æ•°ç»„ï¼Œå¹¶ä¸”æ˜¯ä»è¯¥å­—èŠ‚æ•°ç»„ä¸­è¯»å–æ•°æ®  
+				//2ã€dp.getData()è¡¨ç¤ºæŠŠdpé›†è£…ç®±ä¸­çš„æ•°æ®è½¬åŒ–ä¸ºä¸€ä¸ªå­—èŠ‚æ•°ç»„å¹¶è¿”å›è¯¥å­—èŠ‚æ•°ç»„
 				ByteArrayInputStream bais = new ByteArrayInputStream(dp.getData());
 				DataInputStream dis = new DataInputStream(bais);
 				System.out.println(dis.readLong());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-			// ¹Ø±ÕÂëÍ·
+			// å…³é—­ç å¤´
 			ds.close();
 		}
 	}

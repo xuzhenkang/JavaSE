@@ -3,14 +3,14 @@ package thread;
 
 public class TestJoin {
 	public static void main(String[] args) {
-		final Thread t0 = new Thread("线程0") {
+		final Thread t0 = new Thread("绾跨▼0") {
 			public void run() {
 				for (int i = 0; i < 5; i++) {
-					System.out.println("线程0，i=" + i);
+					System.out.println("绾跨▼0锛宨=" + i);
 				}
 			};
 		};
-		Thread t1 = new Thread("线程1") {
+		Thread t1 = new Thread("绾跨▼1") {
 			public void run() {
 				for (int i = 0; i < 20; i++) {
 					if (i == 3) {
@@ -21,7 +21,7 @@ public class TestJoin {
 							e.printStackTrace();
 						}
 					}
-					System.out.println("线程1，i=" + i);
+					System.out.println("绾跨▼1锛宨=" + i);
 				}
 			};
 		};

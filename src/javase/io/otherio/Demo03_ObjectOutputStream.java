@@ -10,15 +10,15 @@ public class Demo03_ObjectOutputStream {
 
 	/**
 	 * @param args
-	 * ĞòÁĞ»¯:½«¶ÔÏóĞ´µ½ÎÄ¼şÉÏ
+	 * åºåˆ—åŒ–:å°†å¯¹è±¡å†™åˆ°æ–‡ä»¶ä¸Š
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
-		Person p1 = new Person("ÕÅÈı", 23);
-		Person p2 = new Person("ÀîËÄ", 24);
-		Person p3 = new Person("ÍõÎå", 25);
-		Person p4 = new Person("ÕÔÁù", 26);
+		Person p1 = new Person("å¼ ä¸‰", 23);
+		Person p2 = new Person("æå››", 24);
+		Person p3 = new Person("ç‹äº”", 25);
+		Person p4 = new Person("èµµå…­", 26);
 		
 		ArrayList<Person> list = new ArrayList<>();
 		list.add(p1);
@@ -27,13 +27,13 @@ public class Demo03_ObjectOutputStream {
 		list.add(p4);
 		
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("e.txt"));
-		oos.writeObject(list);								//°ÑÕû¸ö¼¯ºÏ¶ÔÏóÒ»´ÎĞ´³ö
+		oos.writeObject(list);								//æŠŠæ•´ä¸ªé›†åˆå¯¹è±¡ä¸€æ¬¡å†™å‡º
 		oos.close();
 	}
 
 	public static void demo1() throws IOException, FileNotFoundException {
-		Person p1 = new Person("ÕÅÈı", 23);
-		Person p2 = new Person("ÀîËÄ", 24);
+		Person p1 = new Person("å¼ ä¸‰", 23);
+		Person p2 = new Person("æå››", 24);
 		
 		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("e.txt"));
 		oos.writeObject(p1);

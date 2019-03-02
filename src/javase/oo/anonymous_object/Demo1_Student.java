@@ -4,28 +4,28 @@ class Demo1_Student {
 	public static void main(String[] args) {
 		print(10);
 
-		Student s = new Student();					//´´½¨¶ÔÏó,²¢½«¶ÔÏóµÄµØÖ·Öµ¸³Öµ¸øs
+		Student s = new Student();					//åˆ›å»ºå¯¹è±¡,å¹¶å°†å¯¹è±¡çš„åœ°å€å€¼èµ‹å€¼ç»™s
 		print(s);
 	}
 
-	public static void print(int x) {				//»ù±¾Êı¾İÀàĞÍµ±×÷ĞÎÊ½²ÎÊı
+	public static void print(int x) {				//åŸºæœ¬æ•°æ®ç±»å‹å½“ä½œå½¢å¼å‚æ•°
 		System.out.println(x);
 	}
 
-	public static void print(Student stu) {			//ÒıÓÃÊı¾İÀàĞÍµ±×÷ĞÎÊ½²ÎÊı
-		stu.name = "ÕÅÈı";
+	public static void print(Student stu) {			//å¼•ç”¨æ•°æ®ç±»å‹å½“ä½œå½¢å¼å‚æ•°
+		stu.name = "å¼ ä¸‰";
 		stu.age = 23;
 		stu.speak();
 	}
 }
 
 /*
-* A:·½·¨µÄ²ÎÊıÊÇÀàÃûpublic void print(Student s){}//print(new Student());
-	* Èç¹ûÄã¿´µ½ÁËÒ»¸ö·½·¨µÄĞÎÊ½²ÎÊıÊÇÒ»¸öÀàÀàĞÍ(ÒıÓÃÀàĞÍ)£¬ÕâÀïÆäÊµĞèÒªµÄÊÇ¸ÃÀàµÄ¶ÔÏó¡£
+* A:æ–¹æ³•çš„å‚æ•°æ˜¯ç±»åpublic void print(Student s){}//print(new Student());
+	* å¦‚æœä½ çœ‹åˆ°äº†ä¸€ä¸ªæ–¹æ³•çš„å½¢å¼å‚æ•°æ˜¯ä¸€ä¸ªç±»ç±»å‹(å¼•ç”¨ç±»å‹)ï¼Œè¿™é‡Œå…¶å®éœ€è¦çš„æ˜¯è¯¥ç±»çš„å¯¹è±¡ã€‚
 */
 class Student {
-	String name;					//ĞÕÃû
-	int age;						//ÄêÁä
+	String name;					//å§“å
+	int age;						//å¹´é¾„
 
 	public void speak() {
 		System.out.println(name + "..." + age);

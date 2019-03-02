@@ -2,15 +2,15 @@ package jvm.arguments;
 
 public class Test5 {
 	public static void main(String[] args) {
-		// ³õÊ¼»¯µÄ¶ÔÏóÔÚedenÇø
-		// ²ÎÊı£º-Xmx64M -Xms64M -XX:+PrintGCDetails
+		// åˆå§‹åŒ–çš„å¯¹è±¡åœ¨edenåŒº
+		// å‚æ•°ï¼š-Xmx64M -Xms64M -XX:+PrintGCDetails
 //		for (int i = 0; i < 5; i++) {
 //			byte[] b = new byte[1024 * 1024];
 //		}
 		
 		
-		// ²âÊÔ½øÈëÀÏÄê´úµÄ¶ÔÏó
-		// ²ÎÊı£º -Xmx1024M -Xms1024M -XX:+UseSerialGC -XX:MaxTenuringThreshold=15 -XX:+PrintGCDetails 
+		// æµ‹è¯•è¿›å…¥è€å¹´ä»£çš„å¯¹è±¡
+		// å‚æ•°ï¼š -Xmx1024M -Xms1024M -XX:+UseSerialGC -XX:MaxTenuringThreshold=15 -XX:+PrintGCDetails 
 		// -XX:+PrintHeapAtGC
 		
 		for (int k = 0; k < 20; k++) {

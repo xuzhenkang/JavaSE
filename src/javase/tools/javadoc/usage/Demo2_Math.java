@@ -5,12 +5,12 @@ class Demo2_Math {
 		//double d = Math.random();
 		//System.out.println(d);
 		
-		//Math.random()»áÉú³É´óÓÚµÈÓÚ0.0²¢ÇÒĞ¡ÓÚ1.0µÄÎ±Ëæ»úÊı
+		//Math.random()ä¼šç”Ÿæˆå¤§äºç­‰äº0.0å¹¶ä¸”å°äº1.0çš„ä¼ªéšæœºæ•°
 		for (int i = 0;i < 10 ;i++ ) {
 			System.out.println(Math.random());
 		}
 
-		//Éú³É1-100µÄËæ»úÊı
+		//ç”Ÿæˆ1-100çš„éšæœºæ•°
 		//Math.random()0.0000000 - 0.999999999
 		//Math.random() * 100 ====> 0.00000 - 99.999999999
 		//(int)(Math.random() * 100) ====> 0 - 99

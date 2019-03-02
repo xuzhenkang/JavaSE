@@ -2,12 +2,12 @@ package javase.oo.abstractclass.test;
 
 public class Test1_Animal {
 	public static void main(String[] args) {
-		Cat c = new Cat("¼Ó·Æ", 8);
+		Cat c = new Cat("åŠ è²", 8);
 		System.out.println(c.getName() + "..." + c.getAge());
 		
 		c.eat();
 		c.catchMouse();
-		Dog d = new Dog("°Ë¹«", 30);
+		Dog d = new Dog("å…«å…¬", 30);
 		System.out.println(d.getName() + "..." + d.getAge());
 		d.eat();
 		d.lookHome();
@@ -50,10 +50,10 @@ class Cat extends Animal {
 	}
 	@Override
 	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
+		System.out.println("çŒ«åƒé±¼");
 	}
 	public void catchMouse() {
-		System.out.println("×¥ÀÏÊó");
+		System.out.println("æŠ“è€é¼ ");
 	}
 }
 class Dog extends Animal {
@@ -64,20 +64,20 @@ class Dog extends Animal {
 	}
 	@Override
 	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
+		System.out.println("çŒ«åƒé±¼");
 	}
 	public void lookHome() {
-		System.out.println("¿´¼Ò");
+		System.out.println("çœ‹å®¶");
 	}
 }
 /*
-- A:°¸ÀıÑİÊ¾
+- A:æ¡ˆä¾‹æ¼”ç¤º
 
-    - ¾ßÌåÊÂÎï£ºÃ¨£¬¹·
+    - å…·ä½“äº‹ç‰©ï¼šçŒ«ï¼Œç‹—
 
-    - ¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬³Ô·¹
+    - å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œåƒé¥­
 
-    - Ã¨µÄÌØĞÔ£º×¥ÀÏÊó
+    - çŒ«çš„ç‰¹æ€§ï¼šæŠ“è€é¼ 
 
-    - ¹·µÄÌØĞÔ£º¿´¼Ò
+    - ç‹—çš„ç‰¹æ€§ï¼šçœ‹å®¶
 */

@@ -2,51 +2,51 @@ package javase.oo.constructor;
 
 class Demo3_Person {
 	public static void main(String[] args) {
-		Person2 p1 = new Person2("ÕÅÈı",23);
-		//p1 = new Person("ÕÅÌìÒ»",23);	//ÕâÖÖ·½Ê½¿´ÔËĞĞ½á¹ûÃ²ËÆÊÇ¸ÄÃûÁË,ÆäÊµÊÇ½«Ô­¶ÔÏó±ä³ÉÀ¬»ø
+		Person2 p1 = new Person2("å¼ ä¸‰",23);
+		//p1 = new Person("å¼ å¤©ä¸€",23);	//è¿™ç§æ–¹å¼çœ‹è¿è¡Œç»“æœè²Œä¼¼æ˜¯æ”¹åäº†,å…¶å®æ˜¯å°†åŸå¯¹è±¡å˜æˆåƒåœ¾
 		System.out.println(p1.getName() + "..." + p1.getAge());
 
 		System.out.println("--------------------");
-		Person2 p2 = new Person2();		//¿Õ²Î¹¹Ôì´´½¨¶ÔÏó
-		p2.setName("ÀîËÄ");
+		Person2 p2 = new Person2();		//ç©ºå‚æ„é€ åˆ›å»ºå¯¹è±¡
+		p2.setName("æå››");
 		p2.setAge(24);
 
-		p2.setName("Àî¹í");
+		p2.setName("æé¬¼");
 		System.out.println(p2.getName() + "..." + p2.getAge());
 	}
 }
 /*
-¹¹Ôì·½·¨
-	¸øÊôĞÔ½øĞĞ³õÊ¼»¯
-setXxx·½·¨
-	ĞŞ¸ÄÊôĞÔÖµ
-	ÕâÁ½ÖÖ·½Ê½,ÔÚ¿ª·¢ÖĞÓÃsetXxx¸ü¶àÒ»Ğ©,ÒòÎª±È½ÏÁé»î
+æ„é€ æ–¹æ³•
+	ç»™å±æ€§è¿›è¡Œåˆå§‹åŒ–
+setXxxæ–¹æ³•
+	ä¿®æ”¹å±æ€§å€¼
+	è¿™ä¸¤ç§æ–¹å¼,åœ¨å¼€å‘ä¸­ç”¨setXxxæ›´å¤šä¸€äº›,å› ä¸ºæ¯”è¾ƒçµæ´»
 */
 class Person2 {
-	private String name;				//ĞÕÃû
-	private int age;					//ÄêÁä
+	private String name;				//å§“å
+	private int age;					//å¹´é¾„
 
-	public Person2() {					//¿Õ²Î¹¹Ôì
+	public Person2() {					//ç©ºå‚æ„é€ 
 	}
 
-	public Person2(String name,int age) {//ÓĞ²Î¹¹Ôì
+	public Person2(String name,int age) {//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
 	}
 	
-	public void setName(String name) {	//ÉèÖÃĞÕÃû
+	public void setName(String name) {	//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {			//»ñÈ¡ĞÕÃû
+	public String getName() {			//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {		//ÉèÖÃÄêÁä
+	public void setAge(int age) {		//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {				//»ñÈ¡ÄêÁä
+	public int getAge() {				//è·å–å¹´é¾„
 		return age;
 	}
 }

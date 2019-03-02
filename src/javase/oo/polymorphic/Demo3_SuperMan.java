@@ -2,35 +2,35 @@ package javase.oo.polymorphic;
 
 public class Demo3_SuperMan {
 	public static void main(String[] args) {
-		Person p = new SuperMan();			// ¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
-											// ¾ÍÊÇÏòÉÏ×ªĞÍ
+		Person p = new SuperMan();			// çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
+											// å°±æ˜¯å‘ä¸Šè½¬å‹
 		System.out.println(p.name);
-		p.Ì¸ÉúÒâ();
-		SuperMan sm = (SuperMan) p;			//ÏòÏÂ×ªĞÍ
+		p.è°ˆç”Ÿæ„();
+		SuperMan sm = (SuperMan) p;			//å‘ä¸‹è½¬å‹
 		//p.fly();
 		
 		/*
-		 * »ù±¾Êı¾İÀàĞÍ×Ô¶¯ÌáÉıºÍÇ¿ÖÆÀàĞÍ×ª»»
+		 * åŸºæœ¬æ•°æ®ç±»å‹è‡ªåŠ¨æå‡å’Œå¼ºåˆ¶ç±»å‹è½¬æ¢
 		 */
 		int i = 10;
 		byte b = 20;
-		// i = b;			//×Ô¶¯ÀàĞÍÌáÉı
-		b = (byte) i;	 	// Ç¿ÖÆÀàĞÍ×ª»»
+		// i = b;			//è‡ªåŠ¨ç±»å‹æå‡
+		b = (byte) i;	 	// å¼ºåˆ¶ç±»å‹è½¬æ¢
 	}
 }
 class Person {
 	String name = "John";
-	public void Ì¸ÉúÒâ() {
-		System.out.println("Ì¸ÉúÒâ");
+	public void è°ˆç”Ÿæ„() {
+		System.out.println("è°ˆç”Ÿæ„");
 	}
 }
 
 class SuperMan extends Person {
 	String name = "superMan";
-	public void Ì¸ÉúÒâ() {
-		System.out.println("Ì¸¼¸¸öÒÚµÄ´óµ¥×Ó");
+	public void è°ˆç”Ÿæ„() {
+		System.out.println("è°ˆå‡ ä¸ªäº¿çš„å¤§å•å­");
 	}
 	public void fly() {
-		System.out.println("·É³öÈ¥¾ÈÈË");
+		System.out.println("é£å‡ºå»æ•‘äºº");
 	}
 }

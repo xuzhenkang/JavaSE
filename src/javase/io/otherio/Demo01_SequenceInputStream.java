@@ -12,9 +12,9 @@ public class Demo01_SequenceInputStream {
 
 	/**
 	 * @param args
-	 * ÕûºÏÁ½¸öÊäÈëÁ÷
+	 * æ•´åˆä¸¤ä¸ªè¾“å…¥æµ
 	 * SequenceInputStream(InputStream s1, InputStream s2)
-	 * ÕûºÏ¶à¸öÊäÈëÁ÷
+	 * æ•´åˆå¤šä¸ªè¾“å…¥æµ
 	 * SequenceInputStream(Enumeration<? extends InputStream> e)
 	 * @throws IOException 
 	 */
@@ -25,13 +25,13 @@ public class Demo01_SequenceInputStream {
 		FileInputStream fis2 = new FileInputStream("b.txt");
 		FileInputStream fis3 = new FileInputStream("c.txt");
 		
-		Vector<FileInputStream> v = new Vector<>();					//´´½¨¼¯ºÏ¶ÔÏó
-		v.add(fis1);												//½«Á÷¶ÔÏó´æ´¢½øÀ´
+		Vector<FileInputStream> v = new Vector<>();					//åˆ›å»ºé›†åˆå¯¹è±¡
+		v.add(fis1);												//å°†æµå¯¹è±¡å­˜å‚¨è¿›æ¥
 		v.add(fis2);
 		v.add(fis3);
 		
 		Enumeration<FileInputStream> en = v.elements();
-		SequenceInputStream sis = new SequenceInputStream(en);		//½«Ã¶¾ÙÖĞµÄÊäÈëÁ÷ÕûºÏ³ÉÒ»¸ö
+		SequenceInputStream sis = new SequenceInputStream(en);		//å°†æšä¸¾ä¸­çš„è¾“å…¥æµæ•´åˆæˆä¸€ä¸ª
 		FileOutputStream fos = new FileOutputStream("d.txt");
 		
 		int b;
@@ -54,19 +54,19 @@ public class Demo01_SequenceInputStream {
 			fos.write(b);
 		}
 		
-		sis.close();					//sisÔÚ¹Ø±ÕµÄÊ±ºò,»á½«¹¹Ôì·½·¨ÖĞ´«ÈëµÄÁ÷¶ÔÏóÒ²¶¼¹Ø±Õ
+		sis.close();					//sisåœ¨å…³é—­çš„æ—¶å€™,ä¼šå°†æ„é€ æ–¹æ³•ä¸­ä¼ å…¥çš„æµå¯¹è±¡ä¹Ÿéƒ½å…³é—­
 		fos.close();
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		FileInputStream fis1 = new FileInputStream("a.txt");		//´´½¨×Ö½ÚÊäÈëÁ÷¹ØÁªa.txt
-		FileOutputStream fos = new FileOutputStream("c.txt");		//´´½¨×Ö½ÚÊä³öÁ÷¹ØÁªc.txt
+		FileInputStream fis1 = new FileInputStream("a.txt");		//åˆ›å»ºå­—èŠ‚è¾“å…¥æµå…³è”a.txt
+		FileOutputStream fos = new FileOutputStream("c.txt");		//åˆ›å»ºå­—èŠ‚è¾“å‡ºæµå…³è”c.txt
 		
 		int b1;
-		while((b1 = fis1.read()) != -1) {							//²»¶ÏµÄÔÚa.txtÉÏ¶ÁÈ¡×Ö½Ú
-			fos.write(b1);											//½«¶Áµ½µÄ×Ö½ÚĞ´µ½c.txtÉÏ
+		while((b1 = fis1.read()) != -1) {							//ä¸æ–­çš„åœ¨a.txtä¸Šè¯»å–å­—èŠ‚
+			fos.write(b1);											//å°†è¯»åˆ°çš„å­—èŠ‚å†™åˆ°c.txtä¸Š
 		}
-		fis1.close();												//¹Ø±Õ×Ö½ÚÊäÈëÁ÷
+		fis1.close();												//å…³é—­å­—èŠ‚è¾“å…¥æµ
 		
 		FileInputStream fis2 = new FileInputStream("b.txt");
 		int b2;

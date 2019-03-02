@@ -48,30 +48,30 @@ public class Demo2_NotifyAll {
 	}
 
 }
-/*1,ÔÚÍ¬²½´úÂë¿éÖĞ,ÓÃÄÄ¸ö¶ÔÏóËø,¾ÍÓÃÄÄ¸ö¶ÔÏóµ÷ÓÃwait·½·¨
- * 2,ÎªÊ²Ã´wait·½·¨ºÍnotify·½·¨¶¨ÒåÔÚObjectÕâÀàÖĞ?
- * 	ÒòÎªËø¶ÔÏó¿ÉÒÔÊÇÈÎÒâ¶ÔÏó,ObjectÊÇËùÓĞµÄÀàµÄ»ùÀà,ËùÒÔwait·½·¨ºÍnotify·½·¨ĞèÒª¶¨ÒåÔÚObjectÕâ¸öÀàÖĞ
- * 3,sleep·½·¨ºÍwait·½·¨µÄÇø±ğ?
- * a,sleep·½·¨±ØĞë´«Èë²ÎÊı,²ÎÊı¾ÍÊÇÊ±¼ä,Ê±¼äµ½ÁË×Ô¶¯ĞÑÀ´
- *   wait·½·¨¿ÉÒÔ´«Èë²ÎÊıÒ²¿ÉÒÔ²»´«Èë²ÎÊı,´«Èë²ÎÊı¾ÍÊÇÔÚ²ÎÊıµÄÊ±¼ä½áÊøºóµÈ´ı,²»´«Èë²ÎÊı¾ÍÊÇÖ±½ÓµÈ´ı
- * b,sleep·½·¨ÔÚÍ¬²½º¯Êı»òÍ¬²½´úÂë¿éÖĞ,²»ÊÍ·ÅËø,Ë¯×ÅÁËÒ²±§×ÅËøË¯
- * 	wait·½·¨ÔÚÍ¬²½º¯Êı»òÕßÍ¬²½´úÂë¿éÖĞ,ÊÍ·ÅËø
+/*1,åœ¨åŒæ­¥ä»£ç å—ä¸­,ç”¨å“ªä¸ªå¯¹è±¡é”,å°±ç”¨å“ªä¸ªå¯¹è±¡è°ƒç”¨waitæ–¹æ³•
+ * 2,ä¸ºä»€ä¹ˆwaitæ–¹æ³•å’Œnotifyæ–¹æ³•å®šä¹‰åœ¨Objectè¿™ç±»ä¸­?
+ * 	å› ä¸ºé”å¯¹è±¡å¯ä»¥æ˜¯ä»»æ„å¯¹è±¡,Objectæ˜¯æ‰€æœ‰çš„ç±»çš„åŸºç±»,æ‰€ä»¥waitæ–¹æ³•å’Œnotifyæ–¹æ³•éœ€è¦å®šä¹‰åœ¨Objectè¿™ä¸ªç±»ä¸­
+ * 3,sleepæ–¹æ³•å’Œwaitæ–¹æ³•çš„åŒºåˆ«?
+ * a,sleepæ–¹æ³•å¿…é¡»ä¼ å…¥å‚æ•°,å‚æ•°å°±æ˜¯æ—¶é—´,æ—¶é—´åˆ°äº†è‡ªåŠ¨é†’æ¥
+ *   waitæ–¹æ³•å¯ä»¥ä¼ å…¥å‚æ•°ä¹Ÿå¯ä»¥ä¸ä¼ å…¥å‚æ•°,ä¼ å…¥å‚æ•°å°±æ˜¯åœ¨å‚æ•°çš„æ—¶é—´ç»“æŸåç­‰å¾…,ä¸ä¼ å…¥å‚æ•°å°±æ˜¯ç›´æ¥ç­‰å¾…
+ * b,sleepæ–¹æ³•åœ¨åŒæ­¥å‡½æ•°æˆ–åŒæ­¥ä»£ç å—ä¸­,ä¸é‡Šæ”¾é”,ç¡ç€äº†ä¹ŸæŠ±ç€é”ç¡
+ * 	waitæ–¹æ³•åœ¨åŒæ­¥å‡½æ•°æˆ–è€…åŒæ­¥ä»£ç å—ä¸­,é‡Šæ”¾é”
  */ 
 class Printer2 {
 	private int flag = 1;
 	public void print1() throws InterruptedException {							
 		synchronized(this) {
 			while(flag != 1) {
-				this.wait();					//µ±Ç°Ïß³ÌµÈ´ı
+				this.wait();					//å½“å‰çº¿ç¨‹ç­‰å¾…
 			}
-			System.out.print("ºÚ");
-			System.out.print("Âí");
-			System.out.print("³Ì");
-			System.out.print("Ğò");
-			System.out.print("Ô±");
+			System.out.print("é»‘");
+			System.out.print("é©¬");
+			System.out.print("ç¨‹");
+			System.out.print("åº");
+			System.out.print("å‘˜");
 			System.out.print("\r\n");
 			flag = 2;
-			//this.notify();						//Ëæ»ú»½ĞÑµ¥¸öµÈ´ıµÄÏß³Ì
+			//this.notify();						//éšæœºå”¤é†’å•ä¸ªç­‰å¾…çš„çº¿ç¨‹
 			this.notifyAll();
 		}
 	}
@@ -79,12 +79,12 @@ class Printer2 {
 	public void print2() throws InterruptedException {
 		synchronized(this) {
 			while(flag != 2) {
-				this.wait();					//Ïß³Ì2ÔÚ´ËµÈ´ı
+				this.wait();					//çº¿ç¨‹2åœ¨æ­¤ç­‰å¾…
 			}
-			System.out.print("´«");
-			System.out.print("ÖÇ");
-			System.out.print("²¥");
-			System.out.print("¿Í");
+			System.out.print("ä¼ ");
+			System.out.print("æ™º");
+			System.out.print("æ’­");
+			System.out.print("å®¢");
 			System.out.print("\r\n");
 			flag = 3;
 			//this.notify();
@@ -95,8 +95,8 @@ class Printer2 {
 	public void print3() throws InterruptedException {
 		synchronized(this) {
 			while(flag != 3) {
-				this.wait();						//Ïß³Ì3ÔÚ´ËµÈ´ı,waitÓï¾äÊÇÔÚÄÄÀïµÈ´ı,¾ÍÔÚÄÄÀïÆğÀ´£¬ÓÃif²»ĞĞ¡£
-													//whileÑ­»·ÊÇÑ­»·ÅĞ¶Ï,Ã¿´Î¶¼»áÅĞ¶Ï±ê¼Ç
+				this.wait();						//çº¿ç¨‹3åœ¨æ­¤ç­‰å¾…,waitè¯­å¥æ˜¯åœ¨å“ªé‡Œç­‰å¾…,å°±åœ¨å“ªé‡Œèµ·æ¥ï¼Œç”¨ifä¸è¡Œã€‚
+													//whileå¾ªç¯æ˜¯å¾ªç¯åˆ¤æ–­,æ¯æ¬¡éƒ½ä¼šåˆ¤æ–­æ ‡è®°
 			}
 			System.out.print("i");
 			System.out.print("t");

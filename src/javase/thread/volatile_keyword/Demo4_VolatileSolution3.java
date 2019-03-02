@@ -5,11 +5,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * <h4>²ÉÓÃAtomicIntegerµÄ·½Ê½</h4>
+ * <h4>é‡‡ç”¨AtomicIntegerçš„æ–¹å¼</h4>
  * <p>
- * ÔÚjava 1.5µÄjava.util.concurrent.atomic°üÏÂÌá¹©ÁËÒ»Ð©Ô­×Ó²Ù×÷Àà£¬¼´¶Ô»ù±¾Êý¾ÝÀàÐÍµÄ
- * ×ÔÔö£¨¼Ó1²Ù×÷£©£¬×Ô¼õ£¨¼õ1²Ù×÷£©¡¢ÒÔ¼°¼Ó·¨²Ù×÷£¨¼ÓÒ»¸öÊý£©£¬¼õ·¨²Ù×÷£¨¼õÒ»¸öÊý£©½øÐÐÁË·â×°£¬±£Ö¤ÕâÐ©²Ù×÷ÊÇÔ­×ÓÐÔ²Ù×÷¡£atomicÊÇÀûÓÃCASÀ´ÊµÏÖÔ­×ÓÐÔ²Ù×÷µÄ£¨Compare
- * And Swap£©£¬CASÊµ¼ÊÉÏÊÇÀûÓÃ´¦ÀíÆ÷Ìá¹©µÄCMPXCHGÖ¸ÁîÊµÏÖµÄ£¬¶ø´¦ÀíÆ÷Ö´ÐÐCMPXCHGÖ¸ÁîÊÇÒ»¸öÔ­×ÓÐÔ²Ù×÷¡£
+ * åœ¨java 1.5çš„java.util.concurrent.atomicåŒ…ä¸‹æä¾›äº†ä¸€äº›åŽŸå­æ“ä½œç±»ï¼Œå³å¯¹åŸºæœ¬æ•°æ®ç±»åž‹çš„
+ * è‡ªå¢žï¼ˆåŠ 1æ“ä½œï¼‰ï¼Œè‡ªå‡ï¼ˆå‡1æ“ä½œï¼‰ã€ä»¥åŠåŠ æ³•æ“ä½œï¼ˆåŠ ä¸€ä¸ªæ•°ï¼‰ï¼Œå‡æ³•æ“ä½œï¼ˆå‡ä¸€ä¸ªæ•°ï¼‰è¿›è¡Œäº†å°è£…ï¼Œä¿è¯è¿™äº›æ“ä½œæ˜¯åŽŸå­æ€§æ“ä½œã€‚atomicæ˜¯åˆ©ç”¨CASæ¥å®žçŽ°åŽŸå­æ€§æ“ä½œçš„ï¼ˆCompare
+ * And Swapï¼‰ï¼ŒCASå®žé™…ä¸Šæ˜¯åˆ©ç”¨å¤„ç†å™¨æä¾›çš„CMPXCHGæŒ‡ä»¤å®žçŽ°çš„ï¼Œè€Œå¤„ç†å™¨æ‰§è¡ŒCMPXCHGæŒ‡ä»¤æ˜¯ä¸€ä¸ªåŽŸå­æ€§æ“ä½œã€‚
  * </p>
  * 
  * @author Kang
@@ -19,10 +19,10 @@ public class Demo4_VolatileSolution3 {
 	public AtomicInteger inc = new AtomicInteger();
 
 	/**
-	 * volatile¹Ø¼ü×ÖÄÜ±£Ö¤¿É¼ûÐÔÃ»ÓÐ´í£¬µ«ÊÇÉÏÃæµÄ³ÌÐò´íÔÚÃ»ÄÜ±£Ö¤Ô­×ÓÐÔ¡£¿É¼ûÐÔÖ»ÄÜ±£Ö¤Ã¿´Î¶ÁÈ¡µÄÊÇ×îÐÂµÄÖµ£¬µ«ÊÇvolatileÃ»°ì·¨±£Ö¤¶Ô±äÁ¿µÄ²Ù×÷µÄÔ­×ÓÐÔ¡£
+	 * volatileå…³é”®å­—èƒ½ä¿è¯å¯è§æ€§æ²¡æœ‰é”™ï¼Œä½†æ˜¯ä¸Šé¢çš„ç¨‹åºé”™åœ¨æ²¡èƒ½ä¿è¯åŽŸå­æ€§ã€‚å¯è§æ€§åªèƒ½ä¿è¯æ¯æ¬¡è¯»å–çš„æ˜¯æœ€æ–°çš„å€¼ï¼Œä½†æ˜¯volatileæ²¡åŠžæ³•ä¿è¯å¯¹å˜é‡çš„æ“ä½œçš„åŽŸå­æ€§ã€‚
 	 */
 	public void increase() {
-		this.inc.getAndIncrement();// ÕâÊÇ¾ßÓÐÔ­×ÓÐÔµÄ×ÔÔö²Ù×÷
+		this.inc.getAndIncrement();// è¿™æ˜¯å…·æœ‰åŽŸå­æ€§çš„è‡ªå¢žæ“ä½œ
 	}
 
 	AtomicInteger a;
@@ -44,7 +44,7 @@ public class Demo4_VolatileSolution3 {
 			}.start();
 		}
 
-		while (Thread.activeCount() > 1) { // ±£Ö¤Ç°ÃæµÄÏß³Ì¶¼Ö´ÐÐÍê
+		while (Thread.activeCount() > 1) { // ä¿è¯å‰é¢çš„çº¿ç¨‹éƒ½æ‰§è¡Œå®Œ
 			Thread.yield();
 		}
 		System.out.println(t.getInc());

@@ -1,44 +1,44 @@
 package algorithms;
 
 /**
- * ÌâÄ¿£º½«Ò»¸öÕýÕûÊý·Ö½âÖÊÒòÊý¡£ÀýÈç£ºÊäÈë90,´òÓ¡³ö90=2*3*3*5¡£
+ * é¢˜ç›®ï¼šå°†ä¸€ä¸ªæ­£æ•´æ•°åˆ†è§£è´¨å› æ•°ã€‚ä¾‹å¦‚ï¼šè¾“å…¥90,æ‰“å°å‡º90=2*3*3*5ã€‚
  * 
- * ·ÖÎö£º¶Ôn½øÐÐ·Ö½âÖÊÒòÊý£¬Ó¦ÏÈÕÒµ½Ò»¸ö×îÐ¡µÄÖÊÊýk£¬È»ºó°´ÏÂÊö²½ÖèÍê³É£º (1)Èç¹ûÕâ¸öÖÊÊýÇ¡µÈÓÚn£¬ÔòËµÃ÷·Ö½âÖÊÒòÊýµÄ¹ý³ÌÒÑ¾­½áÊø£¬´òÓ¡³ö¼´¿É¡£
- * (2)Èç¹ûn>k£¬µ«nÄÜ±»kÕû³ý£¬ÔòÓ¦´òÓ¡³ökµÄÖµ£¬²¢ÓÃn³ýÒÔkµÄÉÌ,×÷ÎªÐÂµÄÕýÕûÊýÄãn,ÖØ¸´Ö´ÐÐµÚÒ»²½¡£
- * (3)Èç¹ûn²»ÄÜ±»kÕû³ý£¬ÔòÓÃk+1×÷ÎªkµÄÖµ,ÖØ¸´Ö´ÐÐµÚÒ»²½¡£
+ * åˆ†æžï¼šå¯¹nè¿›è¡Œåˆ†è§£è´¨å› æ•°ï¼Œåº”å…ˆæ‰¾åˆ°ä¸€ä¸ªæœ€å°çš„è´¨æ•°kï¼Œç„¶åŽæŒ‰ä¸‹è¿°æ­¥éª¤å®Œæˆï¼š (1)å¦‚æžœè¿™ä¸ªè´¨æ•°æ°ç­‰äºŽnï¼Œåˆ™è¯´æ˜Žåˆ†è§£è´¨å› æ•°çš„è¿‡ç¨‹å·²ç»ç»“æŸï¼Œæ‰“å°å‡ºå³å¯ã€‚
+ * (2)å¦‚æžœn>kï¼Œä½†nèƒ½è¢«kæ•´é™¤ï¼Œåˆ™åº”æ‰“å°å‡ºkçš„å€¼ï¼Œå¹¶ç”¨né™¤ä»¥kçš„å•†,ä½œä¸ºæ–°çš„æ­£æ•´æ•°ä½ n,é‡å¤æ‰§è¡Œç¬¬ä¸€æ­¥ã€‚
+ * (3)å¦‚æžœnä¸èƒ½è¢«kæ•´é™¤ï¼Œåˆ™ç”¨k+1ä½œä¸ºkçš„å€¼,é‡å¤æ‰§è¡Œç¬¬ä¸€æ­¥ã€‚
  * 
  * @author Dan
  *
  */
 public class ResolvePrime {
 	/**
-	 * ·Ö½âÖÊÒòÊý
+	 * åˆ†è§£è´¨å› æ•°
 	 * 
 	 * @param num
-	 *            ´ý·Ö½âµÄÊý×Ö
-	 * @return ·Ö½âºóµÄÊý×Ö½á¹û
+	 *            å¾…åˆ†è§£çš„æ•°å­—
+	 * @return åˆ†è§£åŽçš„æ•°å­—ç»“æžœ
 	 */
 	public static String resolvePrime(int num) {
-		// ¶¨Òå½á¹û×Ö·û´®»º´æ¶ÔÏó£¬ÓÃÀ´±£´æ½á¹û×Ö·û
+		// å®šä¹‰ç»“æžœå­—ç¬¦ä¸²ç¼“å­˜å¯¹è±¡ï¼Œç”¨æ¥ä¿å­˜ç»“æžœå­—ç¬¦
 		StringBuffer sb = new StringBuffer(num + "=");
-		// ¶¨Òå×îÐ¡ËØÊý
+		// å®šä¹‰æœ€å°ç´ æ•°
 		int i = 2;
-		// ½øÐÐÕ·×ªÏà³ý·¨
+		// è¿›è¡Œè¾—è½¬ç›¸é™¤æ³•
 		while (i <= num) {
-			// Èônum ÄÜÕû³ý i £¬Ôòi ÊÇnum µÄÒ»¸öÒòÊý
+			// è‹¥num èƒ½æ•´é™¤ i ï¼Œåˆ™i æ˜¯num çš„ä¸€ä¸ªå› æ•°
 			if (num % i == 0) {
-				// ½«i ±£´æ½øsb ÇÒ ºóÃæ½ÓÉÏ *
+				// å°†i ä¿å­˜è¿›sb ä¸” åŽé¢æŽ¥ä¸Š *
 				sb.append(i + "*");
-				// Í¬Ê±½« num³ýÒÔi µÄÖµ¸³¸ø num
+				// åŒæ—¶å°† numé™¤ä»¥i çš„å€¼èµ‹ç»™ num
 				num = num / i;
-				// ½«iÖØÐÂÖÃÎª2
+				// å°†ié‡æ–°ç½®ä¸º2
 				i = 2;
 			} else {
-				// ÈôÎÞ·¨Õû³ý£¬Ôòi ×ÔÔö
+				// è‹¥æ— æ³•æ•´é™¤ï¼Œåˆ™i è‡ªå¢ž
 				i++;
 			}
 		}
-		// È¥³ý×Ö·û´®»º´æ¶ÔÏó×îºóµÄÒ»¸ö*£¬½«½á¹û·µ»Ø
+		// åŽ»é™¤å­—ç¬¦ä¸²ç¼“å­˜å¯¹è±¡æœ€åŽçš„ä¸€ä¸ª*ï¼Œå°†ç»“æžœè¿”å›ž
 		return sb.toString().substring(0, sb.toString().length() - 1);
 	}
 

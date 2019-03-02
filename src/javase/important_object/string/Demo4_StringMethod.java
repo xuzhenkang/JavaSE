@@ -1,12 +1,12 @@
 package javase.important_object.string;
 /**
- * - A:StringÀàµÄÅĞ¶Ï¹¦ÄÜ
-    - boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬£¬Çø·Ö´óĞ¡Ğ´
-    - boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈİÊÇ·ñÏàÍ¬£¬ºöÂÔ´óĞ¡Ğ´
-    - boolean contains(String str):ÅĞ¶Ï´óĞ´×Ö·û´®ÖĞÊÇ·ñ°üº¬Ğ¡Ğ´×Ö·û´®
-    - boolean startsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
-    - boolean endsWith(String str):ÅĞ¶Ï×Ö·û´®ÊÇ·ñÒÔÄ³¸öÖ¸¶¨µÄ×Ö·û´®½áÎ²
-    - boolean isEmpty():ÅĞ¶Ï×Ö·û´®ÊÇ·ñÎª¿Õ¡£
+ * - A:Stringç±»çš„åˆ¤æ–­åŠŸèƒ½
+    - boolean equals(Object obj):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒï¼ŒåŒºåˆ†å¤§å°å†™
+    - boolean equalsIgnoreCase(String str):æ¯”è¾ƒå­—ç¬¦ä¸²çš„å†…å®¹æ˜¯å¦ç›¸åŒï¼Œå¿½ç•¥å¤§å°å†™
+    - boolean contains(String str):åˆ¤æ–­å¤§å†™å­—ç¬¦ä¸²ä¸­æ˜¯å¦åŒ…å«å°å†™å­—ç¬¦ä¸²
+    - boolean startsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²å¼€å¤´
+    - boolean endsWith(String str):åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŸä¸ªæŒ‡å®šçš„å­—ç¬¦ä¸²ç»“å°¾
+    - boolean isEmpty():åˆ¤æ–­å­—ç¬¦ä¸²æ˜¯å¦ä¸ºç©ºã€‚
  * @author Dan
  *
  */

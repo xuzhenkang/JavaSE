@@ -4,7 +4,7 @@ public class Demo4_Ticket {
 
 	/**
 	 * @param args
-	 * »ğ³µÕ¾ÂôÆ±µÄÀı×ÓÓÃÊµÏÖRunnable½Ó¿Ú
+	 * ç«è½¦ç«™å–ç¥¨çš„ä¾‹å­ç”¨å®ç°Runnableæ¥å£
 	 */
 	public static void main(String[] args) {
 		MyTicket mt = new MyTicket();
@@ -13,7 +13,7 @@ public class Demo4_Ticket {
 		new Thread(mt).start();
 		new Thread(mt).start();
 		
-		/*Thread t1 = new Thread(mt);				//¶à´ÎÆô¶¯Ò»¸öÏß³ÌÊÇ·Ç·¨µÄ
+		/*Thread t1 = new Thread(mt);				//å¤šæ¬¡å¯åŠ¨ä¸€ä¸ªçº¿ç¨‹æ˜¯éæ³•çš„
 		t1.start();
 		t1.start();
 		t1.start();
@@ -32,12 +32,12 @@ class MyTicket implements Runnable {
 					break;
 				}
 				try {
-					Thread.sleep(10);				//Ïß³Ì1Ë¯,Ïß³Ì2Ë¯,Ïß³Ì3Ë¯,Ïß³Ì4Ë¯
+					Thread.sleep(10);				//çº¿ç¨‹1ç¡,çº¿ç¨‹2ç¡,çº¿ç¨‹3ç¡,çº¿ç¨‹4ç¡
 				} catch (InterruptedException e) {
 					
 					e.printStackTrace();
 				}
-				System.out.println(Thread.currentThread().getName() + "...ÕâÊÇµÚ" + tickets-- + "ºÅÆ±");
+				System.out.println(Thread.currentThread().getName() + "...è¿™æ˜¯ç¬¬" + tickets-- + "å·ç¥¨");
 			}
 		}
 	}

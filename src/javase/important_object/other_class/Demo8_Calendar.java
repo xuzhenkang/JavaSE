@@ -5,16 +5,16 @@ import java.util.Calendar;
 public class Demo8_Calendar {
 
 	/**
-	 * * A:CalendarÀàµÄ¸ÅÊö
-			* Calendar ÀàÊÇÒ»¸ö³éÏóÀà£¬ËüÎªÌØ¶¨Ë²¼äÓëÒ»×éÖîÈç YEAR¡¢MONTH¡¢DAY_OF_MONTH¡¢HOUR µÈÈÕÀú×Ö¶ÎÖ®¼äµÄ×ª»»Ìá¹©ÁËÒ»Ğ©·½·¨£¬²¢Îª²Ù×÷ÈÕÀú×Ö¶Î£¨ÀıÈç»ñµÃÏÂĞÇÆÚµÄÈÕÆÚ£©Ìá¹©ÁËÒ»Ğ©·½·¨¡£
-		* B:³ÉÔ±·½·¨
+	 * * A:Calendarç±»çš„æ¦‚è¿°
+			* Calendar ç±»æ˜¯ä¸€ä¸ªæŠ½è±¡ç±»ï¼Œå®ƒä¸ºç‰¹å®šç¬é—´ä¸ä¸€ç»„è¯¸å¦‚ YEARã€MONTHã€DAY_OF_MONTHã€HOUR ç­‰æ—¥å†å­—æ®µä¹‹é—´çš„è½¬æ¢æä¾›äº†ä¸€äº›æ–¹æ³•ï¼Œå¹¶ä¸ºæ“ä½œæ—¥å†å­—æ®µï¼ˆä¾‹å¦‚è·å¾—ä¸‹æ˜ŸæœŸçš„æ—¥æœŸï¼‰æä¾›äº†ä¸€äº›æ–¹æ³•ã€‚
+		* B:æˆå‘˜æ–¹æ³•
 			* public static Calendar getInstance()
 			* public int get(int field)
 	 */
 	public static void main(String[] args) {
-		Calendar c = Calendar.getInstance();		//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
-		//System.out.println(c);					//Ö¤Ã÷ÖØĞ´ÁËtoString·½·¨´òÓ¡ÁË¶ÔÏóÖĞËùÓĞµÄÊôĞÔ
-		System.out.println(c.get(Calendar.YEAR));  	//Í¨¹ı×Ö¶Î»ñÈ¡¶ÔÓ¦µÄÖµ
+		Calendar c = Calendar.getInstance();		//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
+		//System.out.println(c);					//è¯æ˜é‡å†™äº†toStringæ–¹æ³•æ‰“å°äº†å¯¹è±¡ä¸­æ‰€æœ‰çš„å±æ€§
+		System.out.println(c.get(Calendar.YEAR));  	//é€šè¿‡å­—æ®µè·å–å¯¹åº”çš„å€¼
 		System.out.println(c.get(Calendar.MONTH));
 	}
 

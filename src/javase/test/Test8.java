@@ -6,32 +6,32 @@ public class Test8 {
 
 	/**
 	 * @param args
-	 * Ô¼Éª·ò»·
-	 * * ĞÒÔËÊı×Ö
+	 * çº¦ç‘Ÿå¤«ç¯
+	 * * å¹¸è¿æ•°å­—
 	 */
 	public static void main(String[] args) {
 		System.out.println(getLucklyNum(8));
 	}
 
 	/*
-	 * »ñÈ¡ĞÒÔËÊı×Ö
-	 * 1,·µ»ØÖµÀàĞÍint
-	 * 2,²ÎÊıÁĞ±íint num
+	 * è·å–å¹¸è¿æ•°å­—
+	 * 1,è¿”å›å€¼ç±»å‹int
+	 * 2,å‚æ•°åˆ—è¡¨int num
 	 */
 	public static int getLucklyNum(int num) {
-		ArrayList<Integer> list = new ArrayList<>();		//´´½¨¼¯ºÏ´æ´¢1µ½numµÄ¶ÔÏó
+		ArrayList<Integer> list = new ArrayList<>();		//åˆ›å»ºé›†åˆå­˜å‚¨1åˆ°numçš„å¯¹è±¡
 		for(int i = 1; i <= num; i++) {
-			list.add(i);									//½«1µ½num´æ´¢ÔÚ¼¯ºÏÖĞ
+			list.add(i);									//å°†1åˆ°numå­˜å‚¨åœ¨é›†åˆä¸­
 		}
 		
-		int count = 1;										//ÓÃÀ´ÊıÊıµÄ,Ö»ÒªÊÇ3µÄ±¶Êı¾ÍÉ±ÈË
-		for(int i = 0; list.size() != 1; i++) {				//Ö»Òª¼¯ºÏÖĞÈËÊı³¬¹ı1,¾ÍÒª²»¶ÏµÄÉ±
-			if(i == list.size()) {							//Èç¹ûiÔö³¤µ½¼¯ºÏ×î´óµÄË÷Òı+1Ê±
-				i = 0;										//ÖØĞÂ¹éÁã
+		int count = 1;										//ç”¨æ¥æ•°æ•°çš„,åªè¦æ˜¯3çš„å€æ•°å°±æ€äºº
+		for(int i = 0; list.size() != 1; i++) {				//åªè¦é›†åˆä¸­äººæ•°è¶…è¿‡1,å°±è¦ä¸æ–­çš„æ€
+			if(i == list.size()) {							//å¦‚æœiå¢é•¿åˆ°é›†åˆæœ€å¤§çš„ç´¢å¼•+1æ—¶
+				i = 0;										//é‡æ–°å½’é›¶
 			}
 			
-			if(count % 3 == 0) {							//Èç¹ûÊÇ3µÄ±¶Êı
-				list.remove(i--);								//¾ÍÉ±ÈË
+			if(count % 3 == 0) {							//å¦‚æœæ˜¯3çš„å€æ•°
+				list.remove(i--);								//å°±æ€äºº
 			}
 			count++;
 		}

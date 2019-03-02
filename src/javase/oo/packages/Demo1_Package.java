@@ -1,27 +1,27 @@
 package javase.oo.packages;
 
 /*
-* A:¶¨Òå°üµÄ¸ñÊ½
-	* package °üÃû;
-	* ¶à¼¶°üÓÃ.·Ö¿ª¼´¿É
-* B:¶¨Òå°üµÄ×¢ÒâÊÂÏî
-	* A:packageÓï¾ä±ØĞëÊÇ³ÌĞòµÄµÚÒ»Ìõ¿ÉÖ´ĞĞµÄ´úÂë
-	* B:packageÓï¾äÔÚÒ»¸öjavaÎÄ¼şÖĞÖ»ÄÜÓĞÒ»¸ö
-	* C:Èç¹ûÃ»ÓĞpackage£¬Ä¬ÈÏ±íÊ¾ÎŞ°üÃû
+* A:å®šä¹‰åŒ…çš„æ ¼å¼
+	* package åŒ…å;
+	* å¤šçº§åŒ…ç”¨.åˆ†å¼€å³å¯
+* B:å®šä¹‰åŒ…çš„æ³¨æ„äº‹é¡¹
+	* A:packageè¯­å¥å¿…é¡»æ˜¯ç¨‹åºçš„ç¬¬ä¸€æ¡å¯æ‰§è¡Œçš„ä»£ç 
+	* B:packageè¯­å¥åœ¨ä¸€ä¸ªjavaæ–‡ä»¶ä¸­åªèƒ½æœ‰ä¸€ä¸ª
+	* C:å¦‚æœæ²¡æœ‰packageï¼Œé»˜è®¤è¡¨ç¤ºæ— åŒ…å
 */
-//import java.util.Scanner;		//ÔÚ¿ª·¢ÖĞÎÒÃÇÓÃµÄ¶¼ÊÇµ¼Èë¾ßÌåµÄÀà
-import java.util.*;				//*´ú±íÍ¨Åä·û,Ëû»áµ½¸Ã°üÏÂ°¤¸öÆ¥Åä,Æ¥ÅäÉÏ¾Íµ¼Èë
+//import java.util.Scanner;		//åœ¨å¼€å‘ä¸­æˆ‘ä»¬ç”¨çš„éƒ½æ˜¯å¯¼å…¥å…·ä½“çš„ç±»
+import java.util.*;				//*ä»£è¡¨é€šé…ç¬¦,ä»–ä¼šåˆ°è¯¥åŒ…ä¸‹æŒ¨ä¸ªåŒ¹é…,åŒ¹é…ä¸Šå°±å¯¼å…¥
 class Demo1_Package {
 	public static void main(String[] args) {
-		Person p = new Person("ÕÅÈı",23);
+		Person p = new Person("å¼ ä¸‰",23);
 		System.out.println(p.getName() + "..." + p.getAge());
-		//p.print();			//ÔÚ²»Í¬°üÏÂµÄÎŞ¹ØÀà,²»ÔÊĞí·ÃÎÊ,ÒòÎªÊÇprotectedĞŞÊÎµÄ
+		//p.print();			//åœ¨ä¸åŒåŒ…ä¸‹çš„æ— å…³ç±»,ä¸å…è®¸è®¿é—®,å› ä¸ºæ˜¯protectedä¿®é¥°çš„
 
 		/*Scanner sc = new Scanner(System.in);
 		int x = sc.nextInt();
 		System.out.println(x);*/
 		
-		Student s = new Student("ÀîËÄ",24);
+		Student s = new Student("æå››",24);
 		System.out.println(s.getName() + "..." + s.getAge());
 		s.method();
 	}

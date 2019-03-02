@@ -1,22 +1,22 @@
 package javase.oo.abstractclass.test;
 
 /**
- * - A:°¸ÀıÑİÊ¾
+ * - A:æ¡ˆä¾‹æ¼”ç¤º
  * 
- * - ¾ßÌåÊÂÎï£º»ù´¡°àÀÏÊ¦£¬¾ÍÒµ°àÀÏÊ¦
+ * - å…·ä½“äº‹ç‰©ï¼šåŸºç¡€ç­è€å¸ˆï¼Œå°±ä¸šç­è€å¸ˆ
  * 
- * - ¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬½²¿Î¡£
+ * - å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œè®²è¯¾ã€‚
  * 
- * - ¾ßÌåÊÂÎï£º»ù´¡°àÑ§Éú£¬¾ÍÒµ°àÑ§Éú
+ * - å…·ä½“äº‹ç‰©ï¼šåŸºç¡€ç­å­¦ç”Ÿï¼Œå°±ä¸šç­å­¦ç”Ÿ
  * 
- * - ¹²ĞÔ£ºĞÕÃû£¬ÄêÁä£¬Ñ§Ï°
+ * - å…±æ€§ï¼šå§“åï¼Œå¹´é¾„ï¼Œå­¦ä¹ 
  * 
  * @author Dan
  *
  */
 public class Test2_Teacher {
 	public static void main(String[] args) {
-		BaseTeacher baseTeacher = new BaseTeacher("·ë¼Ñ", 18);
+		BaseTeacher baseTeacher = new BaseTeacher("å†¯ä½³", 18);
 		baseTeacher.teach();
 	}
 }
@@ -59,7 +59,7 @@ class BaseTeacher extends Teacher {
 	
 	@Override
 	public void teach() {
-		System.out.println("ÎÒµÄÃû×ÖÊÇ£º" + this.getName() + "ÎÒµÄÄêÁäÊÇ£º" + this.getAge());
+		System.out.println("æˆ‘çš„åå­—æ˜¯ï¼š" + this.getName() + "æˆ‘çš„å¹´é¾„æ˜¯ï¼š" + this.getAge());
 	}
 	
 }

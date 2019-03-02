@@ -5,7 +5,7 @@ public class Audi implements Car {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("Audi ‘Ÿ≈‹");
+		System.out.println("Audi Âú®Ë∑ë");
 	}
 
 }

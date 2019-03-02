@@ -2,9 +2,9 @@ package javase.test;
 
 public class Test9 {
 
-	// ÈÃifºÍelseÖĞµÄÓï¾ä¶¼Ö´ĞĞ
+	// è®©ifå’Œelseä¸­çš„è¯­å¥éƒ½æ‰§è¡Œ
 	/*
-	ÌâÄ¿ÈçÏÂ£º
+	é¢˜ç›®å¦‚ä¸‹ï¼š
 	public class Test9 {
 	
 		public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Test9 {
 		}
 	
 	}
-	Ö´ĞĞ½á¹ûÎª£º
+	æ‰§è¡Œç»“æœä¸ºï¼š
 	ab
 	 */
 	public static void main(String[] args) {

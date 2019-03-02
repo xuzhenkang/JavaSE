@@ -1,40 +1,40 @@
 package javase.base.method;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º¸ù¾İ¼üÅÌÂ¼ÈëµÄĞĞÊıºÍÁĞÊı£¬ÔÚ¿ØÖÆÌ¨Êä³öĞÇĞÎ
-* B:·½·¨µ÷ÓÃ£º
-	* µ¥¶Àµ÷ÓÃ
-	* Êä³öµ÷ÓÃ(´íÎó)
-	* ¸³Öµµ÷ÓÃ(´íÎó)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šæ ¹æ®é”®ç›˜å½•å…¥çš„è¡Œæ•°å’Œåˆ—æ•°ï¼Œåœ¨æ§åˆ¶å°è¾“å‡ºæ˜Ÿå½¢
+* B:æ–¹æ³•è°ƒç”¨ï¼š
+	* å•ç‹¬è°ƒç”¨
+	* è¾“å‡ºè°ƒç”¨(é”™è¯¯)
+	* èµ‹å€¼è°ƒç”¨(é”™è¯¯)
 */
 import java.util.Scanner;
 class Demo3_Method {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);			//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëĞĞÊı:");
-		int row = sc.nextInt();							//½«¼üÅÌÂ¼ÈëµÄĞĞÊı´æ´¢ÔÚrowÖĞ
-		System.out.println("ÇëÊäÈëÁĞÊı:");
-		int column = sc.nextInt();						//½«¼üÅÌÂ¼ÈëµÄÁĞÊı´æ´¢ÔÚcolumnÖĞ
+		Scanner sc = new Scanner(System.in);			//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥è¡Œæ•°:");
+		int row = sc.nextInt();							//å°†é”®ç›˜å½•å…¥çš„è¡Œæ•°å­˜å‚¨åœ¨rowä¸­
+		System.out.println("è¯·è¾“å…¥åˆ—æ•°:");
+		int column = sc.nextInt();						//å°†é”®ç›˜å½•å…¥çš„åˆ—æ•°å­˜å‚¨åœ¨columnä¸­
 		
-		//System.out.println(print(row,column));		//´íÎó: ´Ë´¦²»ÔÊĞíÊ¹ÓÃ '¿Õ' ÀàĞÍ,·µ»ØÖµÊÇvoidµÄ·½·¨²»ÄÜÊä³öµ÷ÓÃ
-		//·µ»ØÖµÊÇvoidµÄ·½·¨Ö»ÄÜµ¥¶Àµ÷ÓÃ
+		//System.out.println(print(row,column));		//é”™è¯¯: æ­¤å¤„ä¸å…è®¸ä½¿ç”¨ 'ç©º' ç±»å‹,è¿”å›å€¼æ˜¯voidçš„æ–¹æ³•ä¸èƒ½è¾“å‡ºè°ƒç”¨
+		//è¿”å›å€¼æ˜¯voidçš„æ–¹æ³•åªèƒ½å•ç‹¬è°ƒç”¨
 		print(row,column);
 	}
 
 	/*
-	ÔÚ¿ØÖÆÌ¨Êä³ö¾ØĞÎĞÇĞÎ
-	1,Ã÷È··µ»ØÖµÀàĞÍ,¾­·ÖÎöÃ»ÓĞ¾ßÌåµÄ·µ»ØÖµÀàĞÍ,void
-	2,Ã÷È·²ÎÊıÁĞ±íint a,int b
+	åœ¨æ§åˆ¶å°è¾“å‡ºçŸ©å½¢æ˜Ÿå½¢
+	1,æ˜ç¡®è¿”å›å€¼ç±»å‹,ç»åˆ†ææ²¡æœ‰å…·ä½“çš„è¿”å›å€¼ç±»å‹,void
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨int a,int b
 	*/
 
 	public static void print(int a,int b) {
-		for (int i = 1;i <= a ;i++ ) {					//ĞĞÊı
-			for (int j = 1;j <= b ;j++ ) {				//ÁĞÊı
+		for (int i = 1;i <= a ;i++ ) {					//è¡Œæ•°
+			for (int j = 1;j <= b ;j++ ) {				//åˆ—æ•°
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 
-		//return ;										//Èç¹û·µ»ØÖµÀàĞÍÊÇvoid,return¿ÉÒÔÊ¡ÂÔ,¼´Ê¹Ê¡ÂÔÏµÍ³Ò²»áÄ¬ÈÏ¸ø¼ÓÉÏ,ĞÎÊ½ÊÇreturn;
+		//return ;										//å¦‚æœè¿”å›å€¼ç±»å‹æ˜¯void,returnå¯ä»¥çœç•¥,å³ä½¿çœç•¥ç³»ç»Ÿä¹Ÿä¼šé»˜è®¤ç»™åŠ ä¸Š,å½¢å¼æ˜¯return;
 	}
 }

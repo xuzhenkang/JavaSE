@@ -3,23 +3,23 @@ package javase.exception;
 public class Demo5_Throwable {
 
 	/**
-	 * * A:ThrowableµÄ¼¸¸ö³£¼û·½·¨
+	 * * A:Throwableçš„å‡ ä¸ªå¸¸è§æ–¹æ³•
 			* a:getMessage()
-				* »ñÈ¡Òì³£ĞÅÏ¢£¬·µ»Ø×Ö·û´®¡£
+				* è·å–å¼‚å¸¸ä¿¡æ¯ï¼Œè¿”å›å­—ç¬¦ä¸²ã€‚
 			* b:toString()
-				* »ñÈ¡Òì³£ÀàÃûºÍÒì³£ĞÅÏ¢£¬·µ»Ø×Ö·û´®¡£
+				* è·å–å¼‚å¸¸ç±»åå’Œå¼‚å¸¸ä¿¡æ¯ï¼Œè¿”å›å­—ç¬¦ä¸²ã€‚
 			* c:printStackTrace()
-				* »ñÈ¡Òì³£ÀàÃûºÍÒì³£ĞÅÏ¢£¬ÒÔ¼°Òì³£³öÏÖÔÚ³ÌĞòÖĞµÄÎ»ÖÃ¡£·µ»ØÖµvoid¡£
-		* B:°¸ÀıÑİÊ¾
-			* ThrowableµÄ¼¸¸ö³£¼û·½·¨µÄ»ù±¾Ê¹ÓÃ
+				* è·å–å¼‚å¸¸ç±»åå’Œå¼‚å¸¸ä¿¡æ¯ï¼Œä»¥åŠå¼‚å¸¸å‡ºç°åœ¨ç¨‹åºä¸­çš„ä½ç½®ã€‚è¿”å›å€¼voidã€‚
+		* B:æ¡ˆä¾‹æ¼”ç¤º
+			* Throwableçš„å‡ ä¸ªå¸¸è§æ–¹æ³•çš„åŸºæœ¬ä½¿ç”¨
 	 */
 	public static void main(String[] args) {
 		try {
 			System.out.println(1/0);
 		} catch (Exception e) {			//Exception e = new ArithmeticException("/ by zero");
-			//System.out.println(e.getMessage());		//»ñÈ¡Òì³£ĞÅÏ¢
-			//System.out.println(e); 		//µ÷ÓÃtoString·½·¨,´òÓ¡Òì³£ÀàÃûºÍÒì³£ĞÅÏ¢
-			e.printStackTrace();		//jvmÄ¬ÈÏ¾ÍÓÃÕâÖÖ·½Ê½´¦ÀíÒì³£
+			//System.out.println(e.getMessage());		//è·å–å¼‚å¸¸ä¿¡æ¯
+			//System.out.println(e); 		//è°ƒç”¨toStringæ–¹æ³•,æ‰“å°å¼‚å¸¸ç±»åå’Œå¼‚å¸¸ä¿¡æ¯
+			e.printStackTrace();		//jvmé»˜è®¤å°±ç”¨è¿™ç§æ–¹å¼å¤„ç†å¼‚å¸¸
 		}
 	}
 

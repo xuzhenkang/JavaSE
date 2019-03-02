@@ -9,31 +9,31 @@ import java.net.InetSocketAddress;
 
 public class TestUDPClient {
 	public static void main(String[] args) throws IOException {
-		// ¶¨ÒåÂëÍ·
+		// å®šä¹‰ç å¤´
 		DatagramSocket ds = new DatagramSocket();
 
-		//¶¨Òå¿ÉÒÔ·¢ËÍÊı¾İµÄ¼¯×°Ïädp
+		//å®šä¹‰å¯ä»¥å‘é€æ•°æ®çš„é›†è£…ç®±dp
 		long n = 10000L;
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		DataOutputStream dos = new DataOutputStream(baos);
-		dos.writeLong(n);//°Ñn±äÁ¿Ëù´ú±íµÄ10000LĞ´ÈëdosËùÒÀ¸½µÄbaos¹ÜµÀËùÁ¬½Óµ½µÄÄÚ´æÖĞµÄ´óĞ¡Îª32×Ö½ÚµÄbyteÊı×éÖĞ
-		byte[] buf = baos.toByteArray();//DataOutputStream Á÷ÖĞ²¢Ã»ÓĞtoByteArray()·½·¨£¬µ«ÊÇByteArrayOutputStream Á÷ÖĞÈ´ÓĞtoByteArray()·½·¨, ËùÒÔ²»¿ÉÒÔ°Ñbaos ¸ÄÎªdos£¬·ñÔò±àÒëÊ±»á³ö´í! ByteArrayOutputStreamÁ÷ÖĞtoByteArray()·½·¨µÄº¬Òå£¬Õª×ÔAPI¡°´´½¨Ò»¸öĞÂ·ÖÅäµÄ byte Êı×é¡£Æä´óĞ¡ÊÇ´ËÊä³öÁ÷µÄµ±Ç°´óĞ¡£¬²¢ÇÒ»º³åÇøµÄÓĞĞ§ÄÚÈİÒÑ¸´ÖÆµ½¸ÃÊı×éÖĞ¡±
+		dos.writeLong(n);//æŠŠnå˜é‡æ‰€ä»£è¡¨çš„10000Lå†™å…¥dosæ‰€ä¾é™„çš„baosç®¡é“æ‰€è¿æ¥åˆ°çš„å†…å­˜ä¸­çš„å¤§å°ä¸º32å­—èŠ‚çš„byteæ•°ç»„ä¸­
+		byte[] buf = baos.toByteArray();//DataOutputStream æµä¸­å¹¶æ²¡æœ‰toByteArray()æ–¹æ³•ï¼Œä½†æ˜¯ByteArrayOutputStream æµä¸­å´æœ‰toByteArray()æ–¹æ³•, æ‰€ä»¥ä¸å¯ä»¥æŠŠbaos æ”¹ä¸ºdosï¼Œå¦åˆ™ç¼–è¯‘æ—¶ä¼šå‡ºé”™! ByteArrayOutputStreamæµä¸­toByteArray()æ–¹æ³•çš„å«ä¹‰ï¼Œæ‘˜è‡ªAPIâ€œåˆ›å»ºä¸€ä¸ªæ–°åˆ†é…çš„ byte æ•°ç»„ã€‚å…¶å¤§å°æ˜¯æ­¤è¾“å‡ºæµçš„å½“å‰å¤§å°ï¼Œå¹¶ä¸”ç¼“å†²åŒºçš„æœ‰æ•ˆå†…å®¹å·²å¤åˆ¶åˆ°è¯¥æ•°ç»„ä¸­â€
 		DatagramPacket dp = new DatagramPacket(buf, buf.length, new InetSocketAddress("127.0.0.1", 5678));
 		
-		// ÔÚÂëÍ·ÉÏ°Ñ¼¯×°ÏäÖĞµÄÊı¾İ·¢ËÍ¸ø¶Ô·½
+		// åœ¨ç å¤´ä¸ŠæŠŠé›†è£…ç®±ä¸­çš„æ•°æ®å‘é€ç»™å¯¹æ–¹
 		ds.send(dp);
-		// ¹Ø±ÕÂëÍ·
+		// å…³é—­ç å¤´
 		ds.close();
 	}
 }
 /*
- * ×¢ÒâByteArrayOutputStreamµÄËùÓĞ¹¹Ôìº¯Êı¶¼Ã»ÓĞbyte[] bufÕâÑùµÄĞÎ²Î£¬¼´¶¨ÒåByteArrayOutputStreamÁ÷¶ÔÏóÊ±ÊÇ²»ÄÜÖ¸¶¨byteÊı×éµÄ£¬
- * ÒòÎªÕâ¸öÁ¬½Óµ½µÄbyteÊı×éÊÇÓÉByteArrayOutputStream×Ô¶¯Éú³ÉµÄ 9ĞĞ API:"public ByteArrayOutputStream(): 
- * ´´½¨Ò»¸öĞÂµÄ byte Êı×éÊä³öÁ÷¡£»º³åÇøµÄÈİÁ¿×î³õÊÇ 32 ×Ö½Ú£¬ÈçÓĞ±ØÒª¿ÉÔö¼ÓÆä´óĞ¡¡£ "
- * 9ĞĞ´úÂëÒ»µ©Ö´ĞĞÍê±Ï£¬ÒâÎ¶×ÅÁ½µã: 1¡¢ÔÚÄÚ´æÖĞÉú³ÉÁËÒ»¸ö´óĞ¡Îª32¸ö×Ö½ÚµÄbyteÊı×é
- * 2¡¢ÓĞÒ»¸ù½Ğ×öbaosµÄ¹ÜµÀÒÑÁ´½Óµ½ÁË¸ÃbyteÊı×éÖĞ£¬²¢ÇÒ¿ÉÒÔÍ¨¹ıÕâ¸ö¹ÜµÀÏò¸ÃÊı×éÖĞĞ´ÈëÊı¾İ
- * ËäÈ»´ËÊ±¿ÉÒÔÍ¨¹ıbaosÏòbaosËùÁ¬½Óµ½µÄÔÚÄÚ´æÖĞ·ÖÅäºÃµÄbyteÊı×éÖĞĞ´ÈëÊı¾İ£¬
- * µ«ÊÇByteArrayOutputStreamÁ÷²¢Ã»ÓĞÌá¹©¿ÉÒÔÖ±½Ó°ÑlongÀàĞÍÊı¾İÖ±½ÓĞ´ÈëByteArrayOutputStreamÁ÷ËùÁ¬½Óµ½µÄbyteÊı×éÖĞµÄ·½·¨,
- * ¼òµ¥ËµÎÒÃÇÃ»·¨Í¨¹ıbaosÏòbaosËùÁ¬½Óµ½µÄbyteÊı×éÖĞĞ´ÈëlongÀàĞÍµÄÊı¾İ, ²éAPIÎÄµµ¿ÉÒÔ·¢ÏÖ:
- * ByteArrayOutputStreamÁ÷ÖĞ²¢Ã»ÓĞÀàËÆwriteLong()ÕâÑùµÄ·½·¨£¬µ«ÊÇDataOutputStreamÁ÷ÖĞÈ´ÓĞwriteLong() writeFloat()µÈ·½·¨
+ * æ³¨æ„ByteArrayOutputStreamçš„æ‰€æœ‰æ„é€ å‡½æ•°éƒ½æ²¡æœ‰byte[] bufè¿™æ ·çš„å½¢å‚ï¼Œå³å®šä¹‰ByteArrayOutputStreamæµå¯¹è±¡æ—¶æ˜¯ä¸èƒ½æŒ‡å®šbyteæ•°ç»„çš„ï¼Œ
+ * å› ä¸ºè¿™ä¸ªè¿æ¥åˆ°çš„byteæ•°ç»„æ˜¯ç”±ByteArrayOutputStreamè‡ªåŠ¨ç”Ÿæˆçš„ 9è¡Œ API:"public ByteArrayOutputStream(): 
+ * åˆ›å»ºä¸€ä¸ªæ–°çš„ byte æ•°ç»„è¾“å‡ºæµã€‚ç¼“å†²åŒºçš„å®¹é‡æœ€åˆæ˜¯ 32 å­—èŠ‚ï¼Œå¦‚æœ‰å¿…è¦å¯å¢åŠ å…¶å¤§å°ã€‚ "
+ * 9è¡Œä»£ç ä¸€æ—¦æ‰§è¡Œå®Œæ¯•ï¼Œæ„å‘³ç€ä¸¤ç‚¹: 1ã€åœ¨å†…å­˜ä¸­ç”Ÿæˆäº†ä¸€ä¸ªå¤§å°ä¸º32ä¸ªå­—èŠ‚çš„byteæ•°ç»„
+ * 2ã€æœ‰ä¸€æ ¹å«åšbaosçš„ç®¡é“å·²é“¾æ¥åˆ°äº†è¯¥byteæ•°ç»„ä¸­ï¼Œå¹¶ä¸”å¯ä»¥é€šè¿‡è¿™ä¸ªç®¡é“å‘è¯¥æ•°ç»„ä¸­å†™å…¥æ•°æ®
+ * è™½ç„¶æ­¤æ—¶å¯ä»¥é€šè¿‡baoså‘baosæ‰€è¿æ¥åˆ°çš„åœ¨å†…å­˜ä¸­åˆ†é…å¥½çš„byteæ•°ç»„ä¸­å†™å…¥æ•°æ®ï¼Œ
+ * ä½†æ˜¯ByteArrayOutputStreamæµå¹¶æ²¡æœ‰æä¾›å¯ä»¥ç›´æ¥æŠŠlongç±»å‹æ•°æ®ç›´æ¥å†™å…¥ByteArrayOutputStreamæµæ‰€è¿æ¥åˆ°çš„byteæ•°ç»„ä¸­çš„æ–¹æ³•,
+ * ç®€å•è¯´æˆ‘ä»¬æ²¡æ³•é€šè¿‡baoså‘baosæ‰€è¿æ¥åˆ°çš„byteæ•°ç»„ä¸­å†™å…¥longç±»å‹çš„æ•°æ®, æŸ¥APIæ–‡æ¡£å¯ä»¥å‘ç°:
+ * ByteArrayOutputStreamæµä¸­å¹¶æ²¡æœ‰ç±»ä¼¼writeLong()è¿™æ ·çš„æ–¹æ³•ï¼Œä½†æ˜¯DataOutputStreamæµä¸­å´æœ‰writeLong() writeFloat()ç­‰æ–¹æ³•
  */

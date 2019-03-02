@@ -7,12 +7,12 @@ public class Test1 {
 		System.out.println("totalMemory:" + Runtime.getRuntime().totalMemory());
 		System.out.println("maxMemory:" + Runtime.getRuntime().maxMemory());
 		byte[] a = new byte[1*1024*1024];
-		System.out.println("----´´½¨ÁË1MµÄ¶ÔÏó------");
+		System.out.println("----åˆ›å»ºäº†1Mçš„å¯¹è±¡------");
 		System.out.println("freeMemory:" + Runtime.getRuntime().freeMemory());
 		System.out.println("totalMemory:" + Runtime.getRuntime().totalMemory());
 		System.out.println("maxMemory:" + Runtime.getRuntime().maxMemory());
 		byte[] b = new byte[4*1024*1024];
-		System.out.println("----´´½¨ÁË4MµÄ¶ÔÏó------");
+		System.out.println("----åˆ›å»ºäº†4Mçš„å¯¹è±¡------");
 		System.out.println("freeMemory:" + Runtime.getRuntime().freeMemory());
 		System.out.println("totalMemory:" + Runtime.getRuntime().totalMemory());
 		System.out.println("maxMemory:" + Runtime.getRuntime().maxMemory());

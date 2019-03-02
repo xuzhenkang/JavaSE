@@ -3,29 +3,29 @@ package oj.gettingjob.acmcoder.ctrip.pintu;
 import java.util.Scanner;
 
 public class Test2 {
-	// ·Ö±ğ´ú±í×ó¡¢ÉÏ¡¢ÓÒ¡¢ÏÂËÄ¸öÒÆ¶¯·½ÏòµÄ²Ù×÷Êı
+	// åˆ†åˆ«ä»£è¡¨å·¦ã€ä¸Šã€å³ã€ä¸‹å››ä¸ªç§»åŠ¨æ–¹å‘çš„æ“ä½œæ•°
 	private int[] up = { -1, 0 };
 	private int[] down = { 1, 0 };
 	private int[] left = { 0, -1 };
 	private int[] right = { 0, 1 };
 
 	/**
-	 * ×¢Òâ£¬ÕâÀïUPºÍDOWN£¬LEFTºÍRIGHT±ØĞëÊÇÁ½Á½Ïà¶ÔµÄ£¬ÒòÎªºóÃæ´úÂëÖĞÊ¹ÓÃ ((dPrev != dCurr) && (dPrev%2
-	 * == dCurr%2)) À´ÅĞ¶ÏÇ°ºóÁ½¸öÒÆ¶¯·½ÏòÊÇ·ñÏà·´
+	 * æ³¨æ„ï¼Œè¿™é‡ŒUPå’ŒDOWNï¼ŒLEFTå’ŒRIGHTå¿…é¡»æ˜¯ä¸¤ä¸¤ç›¸å¯¹çš„ï¼Œå› ä¸ºåé¢ä»£ç ä¸­ä½¿ç”¨ ((dPrev != dCurr) && (dPrev%2
+	 * == dCurr%2)) æ¥åˆ¤æ–­å‰åä¸¤ä¸ªç§»åŠ¨æ–¹å‘æ˜¯å¦ç›¸å
 	 */
 	private final int UP = 0;
 	private final int DOWN = 2;
 	private final int LEFT = 1;
 	private final int RIGHT = 3;
 	private int SIZE;
-	// ¸÷¸öÄ¿±êµã×ø±ê
+	// å„ä¸ªç›®æ ‡ç‚¹åæ ‡
 	private int[][] targetPoints;
 
-	// ÓÃÓÚ¼ÇÂ¼ÒÆ¶¯²½Öè£¬´æ´¢0,1,2,3,¶ÔÓ¦ÉÏ£¬ÏÂ£¬×ó£¬ÓÒ
+	// ç”¨äºè®°å½•ç§»åŠ¨æ­¥éª¤ï¼Œå­˜å‚¨0,1,2,3,å¯¹åº”ä¸Šï¼Œä¸‹ï¼Œå·¦ï¼Œå³
 	private static int[] moves = new int[100000];
-	private static long ans = 0;; // µ±Ç°µü´úµÄ"ÉèÏë´ú¼Û"
+	private static long ans = 0;; // å½“å‰è¿­ä»£çš„"è®¾æƒ³ä»£ä»·"
 
-	// Ä¿±ê×´Ì¬
+	// ç›®æ ‡çŠ¶æ€
 	private static int[][] tState = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 0 } };
 	private static int[][] sState = { { 0, 1, 3 }, { 4, 2, 5 }, { 7, 8, 6 } };
 
@@ -37,7 +37,7 @@ public class Test2 {
 		targetPoints = new int[SIZE * SIZE][2];
 
 		this.sState = state;
-		// µÃµ½¿Õ¸ñ×ø±ê
+		// å¾—åˆ°ç©ºæ ¼åæ ‡
 		for (int i = 0; i < state.length; i++) {
 			for (int j = 0; j < state[i].length; j++) {
 				if (state[i][j] == 0) {
@@ -48,29 +48,29 @@ public class Test2 {
 			}
 		}
 
-		// µÃµ½Ä¿±êµã×ø±êÊı×é
+		// å¾—åˆ°ç›®æ ‡ç‚¹åæ ‡æ•°ç»„
 		for (int i = 0; i < state.length; i++) {
 			for (int j = 0; j < state.length; j++) {
-				targetPoints[tState[i][j]][0] = i; // ĞĞĞÅÏ¢
+				targetPoints[tState[i][j]][0] = i; // è¡Œä¿¡æ¯
 
-				targetPoints[tState[i][j]][1] = j; // ÁĞĞÅÏ¢
+				targetPoints[tState[i][j]][1] = j; // åˆ—ä¿¡æ¯
 			}
 		}
 	}
 
 	/**
-	 * ÌÖÂÛÎÊÌâµÄ¿É½âĞÔ
+	 * è®¨è®ºé—®é¢˜çš„å¯è§£æ€§
 	 * 
 	 * @param state
-	 *            ×´Ì¬
+	 *            çŠ¶æ€
 	 */
 	private boolean canSolve(int[][] state) {
-		if (state.length % 2 == 1) { // ÎÊÌâ¿í¶ÈÎªÆæÊı
+		if (state.length % 2 == 1) { // é—®é¢˜å®½åº¦ä¸ºå¥‡æ•°
 			return (getInversions(state) % 2 == 0);
-		} else { // ÎÊÌâ¿í¶ÈÎªÅ¼Êı
-			if ((state.length - blank_row) % 2 == 1) { // ´Óµ×ÍùÉÏÊı,¿Õ¸ñÎ»ÓÚÆæÊıĞĞ
+		} else { // é—®é¢˜å®½åº¦ä¸ºå¶æ•°
+			if ((state.length - blank_row) % 2 == 1) { // ä»åº•å¾€ä¸Šæ•°,ç©ºæ ¼ä½äºå¥‡æ•°è¡Œ
 				return (getInversions(state) % 2 == 0);
-			} else { // ´Óµ×ÍùÉÏÊı,¿ÕÎ»Î»ÓÚÅ¼ÊıĞĞ
+			} else { // ä»åº•å¾€ä¸Šæ•°,ç©ºä½ä½äºå¶æ•°è¡Œ
 				return (getInversions(state) % 2 == 1);
 			}
 		}
@@ -109,26 +109,26 @@ public class Test2 {
 	}
 
 	/**
-	 * Çó½â·½·¨
+	 * æ±‚è§£æ–¹æ³•
 	 * 
 	 * @param state
-	 *            µ±Ç°×´Ì¬
+	 *            å½“å‰çŠ¶æ€
 	 * @param blank_row
-	 *            ¿ÕÎ»µÄĞĞ×ø±ê
+	 *            ç©ºä½çš„è¡Œåæ ‡
 	 * @param blank_column
-	 *            ¿Õ¸ñµÄÁĞ×ø±ê
+	 *            ç©ºæ ¼çš„åˆ—åæ ‡
 	 * @param dep
-	 *            µ±Ç°Éî¶È
+	 *            å½“å‰æ·±åº¦
 	 * @param d
-	 *            ÉÏÒ»´ÎÒÆ¶¯µÄ·½Ïò
+	 *            ä¸Šä¸€æ¬¡ç§»åŠ¨çš„æ–¹å‘
 	 * @param h
-	 *            µ±Ç°×´Ì¬¹À¼Ûº¯Êı
+	 *            å½“å‰çŠ¶æ€ä¼°ä»·å‡½æ•°
 	 * @return
 	 */
 	public boolean solve(int[][] state, int blank_row, int blank_column, int dep, long d, long h) {
 
 		long h1;
-		// ºÍÄ¿±ê¾ØÕó±È½Ï£¬¿´ÊÇ·ñÏàÍ¬£¬Èç¹ûÏàÍ¬Ôò±íÊ¾ÎÊÌâÒÑ½â
+		// å’Œç›®æ ‡çŸ©é˜µæ¯”è¾ƒï¼Œçœ‹æ˜¯å¦ç›¸åŒï¼Œå¦‚æœç›¸åŒåˆ™è¡¨ç¤ºé—®é¢˜å·²è§£
 		boolean isSolved = true;
 		for (int i = 0; i < SIZE; i++) {
 			for (int j = 0; j < SIZE; j++) {
@@ -143,7 +143,7 @@ public class Test2 {
 		if (dep == ans) {
 			return false;
 		}
-		// ÓÃÓÚ±íÊ¾"¿Õ¸ñ"ÒÆ¶¯ºóµÄ×ø±êÎ»ÖÃ
+		// ç”¨äºè¡¨ç¤º"ç©ºæ ¼"ç§»åŠ¨åçš„åæ ‡ä½ç½®
 		int blank_row1 = blank_row;
 		int blank_column1 = blank_column;
 		int[][] state2 = new int[SIZE][SIZE];
@@ -154,7 +154,7 @@ public class Test2 {
 					state2[i][j] = state[i][j];
 				}
 			}
-			// ±¾µØÒÆ¶¯·½ÏòºÍÉÏ´ÎÒÆ¶¯·½Ïò¸ÕºÃÏà·´£¬Ìø¹ıÕâÖÖÇé¿öµÄÌÖÂÛ
+			// æœ¬åœ°ç§»åŠ¨æ–¹å‘å’Œä¸Šæ¬¡ç§»åŠ¨æ–¹å‘åˆšå¥½ç›¸åï¼Œè·³è¿‡è¿™ç§æƒ…å†µçš„è®¨è®º
 			if (direction != d && (d % 2 == direction % 2)) {
 				continue;
 			}
@@ -172,15 +172,15 @@ public class Test2 {
 				blank_row1 = blank_row + right[0];
 				blank_column1 = blank_column + right[1];
 			}
-			// ±ß½ç¼ì²é
+			// è¾¹ç•Œæ£€æŸ¥
 			if (blank_column1 < 0 || blank_column1 == SIZE || blank_row1 < 0 || blank_row1 == SIZE) {
 				continue;
 			}
-			// ½»»»¿Õ¸ñÎ»ÖÃºÍµ±Ç°ÒÆ¶¯Î»ÖÃ¶ÔÓ¦µÄµ¥Ôª¸ñ
+			// äº¤æ¢ç©ºæ ¼ä½ç½®å’Œå½“å‰ç§»åŠ¨ä½ç½®å¯¹åº”çš„å•å…ƒæ ¼
 			state2[blank_row][blank_column] = state2[blank_row1][blank_column1];
 			state2[blank_row1][blank_column1] = 0;
 
-			// ²é¿´µ±Ç°¿Õ¸ñÊÇ·ñÕıÔÚ¿¿½üÄ¿±êµã
+			// æŸ¥çœ‹å½“å‰ç©ºæ ¼æ˜¯å¦æ­£åœ¨é è¿‘ç›®æ ‡ç‚¹
 			if (direction == DOWN && blank_row1 > targetPoints[state[blank_row1][blank_column1]][0]) {
 				h1 = h - 1;
 			} else if (direction == UP && blank_row1 < targetPoints[state[blank_row1][blank_column1]][0]) {
@@ -190,14 +190,14 @@ public class Test2 {
 			} else if (direction == LEFT && blank_column1 < targetPoints[state[blank_row1][blank_column1]][1]) {
 				h1 = h - 1;
 			} else {
-				// ÕâÖÖÇé¿ö·¢ÉúÔÚÈÎÒâ¿ÉÄÜµÄÒÆ¶¯·½Ïò¶¼»áÊ¹µÃ¹À¼Ûº¯ÊıÖµ±ä´ó
+				// è¿™ç§æƒ…å†µå‘ç”Ÿåœ¨ä»»æ„å¯èƒ½çš„ç§»åŠ¨æ–¹å‘éƒ½ä¼šä½¿å¾—ä¼°ä»·å‡½æ•°å€¼å˜å¤§
 				h1 = h + 1;
 			}
-			if (h1 + dep + 1 > ans) { // ¼ôÖ¦
+			if (h1 + dep + 1 > ans) { // å‰ªæ
 				continue;
 			}
 			moves[dep] = direction;
-			// µü´úÉî¶ÈÇó½â
+			// è¿­ä»£æ·±åº¦æ±‚è§£
 			if (solve(state2, blank_row1, blank_column1, dep + 1, direction, h1)) {
 				return true;
 			}
@@ -206,7 +206,7 @@ public class Test2 {
 	}
 
 	/**
-	 * µÃµ½¹À¼Ûº¯ÊıÖµ
+	 * å¾—åˆ°ä¼°ä»·å‡½æ•°å€¼
 	 */
 	public int getHeuristic(int[][] state) {
 		int heuristic = 0;
@@ -222,7 +222,7 @@ public class Test2 {
 	}
 
 	/**
-	 * ¼ÆËãÎÊÌâµÄ"µ¹ÖÃ±äÁ¿ºÍ"
+	 * è®¡ç®—é—®é¢˜çš„"å€’ç½®å˜é‡å’Œ"
 	 * 
 	 * @param state
 	 */

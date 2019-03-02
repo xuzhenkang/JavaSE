@@ -5,7 +5,7 @@ public class Singleton {
 }
 
 /*
-// ¶öººÊ½
+// é¥¿æ±‰å¼
 private static Singleton instance = new Singleton();
 private Singleton() {}
 public static Singleton getInstance() {
@@ -13,7 +13,7 @@ public static Singleton getInstance() {
 }
 */
 /*
-// ÀÁººÊ½
+// æ‡’æ±‰å¼
 private static Singleton instance = null;
 private Singleton() {}
 public static synchronized Singleton getInstance() {

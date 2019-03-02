@@ -3,11 +3,11 @@ package javase.oo.static_keyword;
 class Demo3_Main {
 	public static void main(String[] args) {			
 		/*
-		public : ±»jvmµ÷ÓÃ,ËùÒÔÈ¨ÏŞÒª×ã¹»´ó
-		static : ±»jvmµ÷ÓÃ,²»ĞèÒª´´½¨¶ÔÏó,Ö±½ÓÀàÃû.µ÷ÓÃ¼´¿É
-		void   : ±»jvmµ÷ÓÃ,²»ĞèÒªÓĞÈÎºÎµÄ·µ»ØÖµ
-		main   : Ö»ÓĞÕâÑùĞ´²ÅÄÜ±»jvmÊ¶±ğ,main²»ÊÇ¹Ø¼ü×Ö
-		String[] args : ÒÔÇ°ÊÇÓÃÀ´½ÓÊÕ¼üÅÌÂ¼ÈëµÄ
+		public : è¢«jvmè°ƒç”¨,æ‰€ä»¥æƒé™è¦è¶³å¤Ÿå¤§
+		static : è¢«jvmè°ƒç”¨,ä¸éœ€è¦åˆ›å»ºå¯¹è±¡,ç›´æ¥ç±»å.è°ƒç”¨å³å¯
+		void   : è¢«jvmè°ƒç”¨,ä¸éœ€è¦æœ‰ä»»ä½•çš„è¿”å›å€¼
+		main   : åªæœ‰è¿™æ ·å†™æ‰èƒ½è¢«jvmè¯†åˆ«,mainä¸æ˜¯å…³é”®å­—
+		String[] args : ä»¥å‰æ˜¯ç”¨æ¥æ¥æ”¶é”®ç›˜å½•å…¥çš„
 		*/
 
 		System.out.println(args.length);

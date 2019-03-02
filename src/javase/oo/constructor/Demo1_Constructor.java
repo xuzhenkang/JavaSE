@@ -1,35 +1,35 @@
 package javase.oo.constructor;
 
-class Demo1_Constructor {						//Constructor¹¹Ôì
+class Demo1_Constructor {						//Constructoræ„é€ 
 	public static void main(String[] args) {
-		Person p = new Person();				//ÔÚÒ»´´½¨¶ÔÏóµÄÊ±ºò,ÏµÍ³¾Í°ïÎÒµ÷ÓÃÁË¹¹Ôì·½·¨
-		//p.Person();							//¹¹Ôì·½·¨²»ÄÜÓÃ¶ÔÏóµ÷ÓÃ
+		Person p = new Person();				//åœ¨ä¸€åˆ›å»ºå¯¹è±¡çš„æ—¶å€™,ç³»ç»Ÿå°±å¸®æˆ‘è°ƒç”¨äº†æ„é€ æ–¹æ³•
+		//p.Person();							//æ„é€ æ–¹æ³•ä¸èƒ½ç”¨å¯¹è±¡è°ƒç”¨
 		p.show();
 
-		Person p2 = new Person();				//ÔÙ´Î´´½¨¶ÔÏó
+		Person p2 = new Person();				//å†æ¬¡åˆ›å»ºå¯¹è±¡
 	
 		p2.show();
 	}
 }
 
 /*
-* A:¹¹Ôì·½·¨¸ÅÊöºÍ×÷ÓÃ
-	* ¸ø¶ÔÏóµÄÊı¾İ(ÊôĞÔ)½øĞĞ³õÊ¼»¯
-* B:¹¹Ôì·½·¨¸ñÊ½ÌØµã
-	* a:·½·¨ÃûÓëÀàÃûÏàÍ¬(´óĞ¡Ò²ÒªÓëÀàÃûÒ»ÖÂ)
-	* b:Ã»ÓĞ·µ»ØÖµÀàĞÍ£¬Á¬void¶¼Ã»ÓĞ
-	* c:Ã»ÓĞ¾ßÌåµÄ·µ»ØÖµreturn;
+* A:æ„é€ æ–¹æ³•æ¦‚è¿°å’Œä½œç”¨
+	* ç»™å¯¹è±¡çš„æ•°æ®(å±æ€§)è¿›è¡Œåˆå§‹åŒ–
+* B:æ„é€ æ–¹æ³•æ ¼å¼ç‰¹ç‚¹
+	* a:æ–¹æ³•åä¸ç±»åç›¸åŒ(å¤§å°ä¹Ÿè¦ä¸ç±»åä¸€è‡´)
+	* b:æ²¡æœ‰è¿”å›å€¼ç±»å‹ï¼Œè¿voidéƒ½æ²¡æœ‰
+	* c:æ²¡æœ‰å…·ä½“çš„è¿”å›å€¼return;
 */
 
 class Person {
 	private String name;
 	private int age;
 
-	//¹¹Ôì·½·¨
+	//æ„é€ æ–¹æ³•
 	public Person() {
 		//System.out.println("Hello World!");
-		//return;								//¹¹Ôì·½·¨Ò²ÊÇÓĞreturnÓï¾äµÄ,¸ñÊ½ÊÇreturn;
-		name = "ÕÅÈı";
+		//return;								//æ„é€ æ–¹æ³•ä¹Ÿæ˜¯æœ‰returnè¯­å¥çš„,æ ¼å¼æ˜¯return;
+		name = "å¼ ä¸‰";
 		age = 23;
 	}
 

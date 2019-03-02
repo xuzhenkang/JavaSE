@@ -3,7 +3,7 @@ package reflect;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 /**
- * µ÷ÓÃÆäËûÀàµÄsetºÍget·½·¨
+ * è°ƒç”¨å…¶ä»–ç±»çš„setå’Œgetæ–¹æ³•
  * @author kang
  *
  */
@@ -27,7 +27,7 @@ public class TestPerson4GetterSetter {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		setter(obj, "Sex", "ÄÐ", String.class);
+		setter(obj, "Sex", "ç”·", String.class);
 		String sex = (String) getter(obj, "Sex");
 		System.out.println(sex);
 	}

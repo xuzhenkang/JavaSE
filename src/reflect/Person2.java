@@ -1,8 +1,8 @@
 package reflect;
 
 /**
- * Person2ÀàÓëPerson1Àà²»Í¬µÄµØ·½ÔÚÓÚ£º
- * Person2ÀàÃ»ÓĞÎŞ²ÎµÄ¹¹ÔìÆ÷
+ * Person2ç±»ä¸Person1ç±»ä¸åŒçš„åœ°æ–¹åœ¨äºï¼š
+ * Person2ç±»æ²¡æœ‰æ— å‚çš„æ„é€ å™¨
  * @author lenovo
  *
  */
@@ -10,7 +10,7 @@ public class Person2 {
 	private String name;
 	private int age;
 	/**
-	 * ¸Ã¹¹ÔìÆ÷ÊÇÓëPerson1ÀàµÄÇø±ğ
+	 * è¯¥æ„é€ å™¨æ˜¯ä¸Person1ç±»çš„åŒºåˆ«
 	 * @param name
 	 * @param age
 	 */

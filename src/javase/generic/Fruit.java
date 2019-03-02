@@ -1,6 +1,6 @@
 package javase.generic;
 /**
- * ¼Ì³ÐÁ´
+ * ç»§æ‰¿é“¾
  *   Object
  *     |
  *    Fruit

@@ -3,9 +3,9 @@ package javase.collections.generic;
 public class Demo3_Generic {
 
 	/**
-	 * A:°¸ÀıÑİÊ¾
-	 * ·ºĞÍµÄÓÉÀ´:Í¨¹ıObject×ªĞÍÎÊÌâÒıÈë
-	 * ÔçÆÚµÄObjectÀàĞÍ¿ÉÒÔ½ÓÊÕÈÎÒâµÄ¶ÔÏóÀàĞÍ£¬µ«ÊÇÔÚÊµ¼ÊµÄÊ¹ÓÃÖĞ£¬»áÓĞÀàĞÍ×ª»»µÄÎÊÌâ¡£Ò²¾Í´æÔÚÕâÒş»¼£¬ËùÒÔJavaÌá¹©ÁË·ºĞÍÀ´½â¾öÕâ¸ö°²È«ÎÊÌâ¡£
+	 * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * æ³›å‹çš„ç”±æ¥:é€šè¿‡Objectè½¬å‹é—®é¢˜å¼•å…¥
+	 * æ—©æœŸçš„Objectç±»å‹å¯ä»¥æ¥æ”¶ä»»æ„çš„å¯¹è±¡ç±»å‹ï¼Œä½†æ˜¯åœ¨å®é™…çš„ä½¿ç”¨ä¸­ï¼Œä¼šæœ‰ç±»å‹è½¬æ¢çš„é—®é¢˜ã€‚ä¹Ÿå°±å­˜åœ¨è¿™éšæ‚£ï¼Œæ‰€ä»¥Javaæä¾›äº†æ³›å‹æ¥è§£å†³è¿™ä¸ªå®‰å…¨é—®é¢˜ã€‚
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -15,10 +15,10 @@ public class Demo3_Generic {
 	}
 
 	public static void demo1() {
-		Tool<Student> t = new Tool<>();					//´´½¨¹¤¾ßÀà¶ÔÏó
-		t.setObj(new Student("ÕÅÈı",23));
+		Tool<Student> t = new Tool<>();					//åˆ›å»ºå·¥å…·ç±»å¯¹è±¡
+		t.setObj(new Student("å¼ ä¸‰",23));
 		
-		//Worker w = (Worker) t.getObj();			//ÏòÏÂ×ªĞÍ
+		//Worker w = (Worker) t.getObj();			//å‘ä¸‹è½¬å‹
 		//System.out.println(w);
 	}
 

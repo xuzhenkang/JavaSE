@@ -6,30 +6,30 @@ public class Test1 {
 
 	/**
 	 * @param args
-	 * * A:°¸ÀýÑÝÊ¾
-	 * ÐèÇó£ºÎÒÓÐÈçÏÂÒ»¸ö×Ö·û´®:¡±91 27 46 38 50¡±£¬ÇëÐ´´úÂëÊµÏÖ×îÖÕÊä³ö½á¹ûÊÇ£º¡±27 38 46 50 91¡±
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šæˆ‘æœ‰å¦‚ä¸‹ä¸€ä¸ªå­—ç¬¦ä¸²:â€91 27 46 38 50â€ï¼Œè¯·å†™ä»£ç å®žçŽ°æœ€ç»ˆè¾“å‡ºç»“æžœæ˜¯ï¼šâ€27 38 46 50 91â€
 	 * 100
 	 * 80
-	 * ·ÖÎö:
-	 * 1,½«×Ö·û´®ÇÐ¸î³É×Ö·û´®Êý×é
-	 * 2,½«×Ö·û´®×ª»»³ÉÊý×Ö²¢½«Æä´æ´¢ÔÚÒ»¸öµÈ³¤¶ÈµÄintÊý×éÖÐ
-	 * 3,ÅÅÐò
-	 * 4,½«ÅÅÐòºóµÄ½á¹û±éÀú²¢Æ´½Ó³ÉÒ»¸ö×Ö·û´®
+	 * åˆ†æž:
+	 * 1,å°†å­—ç¬¦ä¸²åˆ‡å‰²æˆå­—ç¬¦ä¸²æ•°ç»„
+	 * 2,å°†å­—ç¬¦ä¸²è½¬æ¢æˆæ•°å­—å¹¶å°†å…¶å­˜å‚¨åœ¨ä¸€ä¸ªç­‰é•¿åº¦çš„intæ•°ç»„ä¸­
+	 * 3,æŽ’åº
+	 * 4,å°†æŽ’åºåŽçš„ç»“æžœéåŽ†å¹¶æ‹¼æŽ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²
 	 */
 	public static void main(String[] args) {
 		String s = "91 27 46 38 50";
-		//1,½«×Ö·û´®ÇÐ¸î³É×Ö·û´®Êý×é
+		//1,å°†å­—ç¬¦ä¸²åˆ‡å‰²æˆå­—ç¬¦ä¸²æ•°ç»„
 		String[] sArr = s.split(" ");
-		//2,½«×Ö·û´®×ª»»³ÉÊý×Ö²¢½«Æä´æ´¢ÔÚÒ»¸öµÈ³¤¶ÈµÄintÊý×éÖÐ
+		//2,å°†å­—ç¬¦ä¸²è½¬æ¢æˆæ•°å­—å¹¶å°†å…¶å­˜å‚¨åœ¨ä¸€ä¸ªç­‰é•¿åº¦çš„intæ•°ç»„ä¸­
 		int[] arr = new int[sArr.length];
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = Integer.parseInt(sArr[i]); 	//½«Êý×Ö×Ö·û´®×ª»»³ÉÊý×Ö
+			arr[i] = Integer.parseInt(sArr[i]); 	//å°†æ•°å­—å­—ç¬¦ä¸²è½¬æ¢æˆæ•°å­—
 		}
 		
-		//3,ÅÅÐò
+		//3,æŽ’åº
 		Arrays.sort(arr);
 		
-		//4,½«ÅÅÐòºóµÄ½á¹û±éÀú²¢Æ´½Ó³ÉÒ»¸ö×Ö·û´®27 38 46 50 91
+		//4,å°†æŽ’åºåŽçš„ç»“æžœéåŽ†å¹¶æ‹¼æŽ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²27 38 46 50 91
 		/*String str = "";
 		for (int i = 0; i < arr.length; i++) {
 			if(i == arr.length - 1) {

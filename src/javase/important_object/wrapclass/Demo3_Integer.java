@@ -4,14 +4,14 @@ public class Demo3_Integer {
 
 	/**
 	 * * A:int -- String
-			* a:ºÍ""½øĞĞÆ´½Ó
+			* a:å’Œ""è¿›è¡Œæ‹¼æ¥
 			* b:public static String valueOf(int i)
-			* c:int -- Integer -- String(IntegerÀàµÄtoString·½·¨())
-			* d:public static String toString(int i)(IntegerÀàµÄ¾²Ì¬·½·¨)
+			* c:int -- Integer -- String(Integerç±»çš„toStringæ–¹æ³•())
+			* d:public static String toString(int i)(Integerç±»çš„é™æ€æ–¹æ³•)
 		* B:String -- int
 			* a:String -- Integer -- int
 				* public static int parseInt(String s)
-		»ù±¾Êı¾İÀàĞÍ°ü×°ÀàÓĞ°ËÖÖ,ÆäÖĞÆßÖÖ¶¼ÓĞparseXxxµÄ·½·¨,¿ÉÒÔ½«ÕâÆßÖÖµÄ×Ö·û´®±íÏÖĞÎÊ½×ª»»³É»ù±¾Êı¾İÀàĞÍ
+		åŸºæœ¬æ•°æ®ç±»å‹åŒ…è£…ç±»æœ‰å…«ç§,å…¶ä¸­ä¸ƒç§éƒ½æœ‰parseXxxçš„æ–¹æ³•,å¯ä»¥å°†è¿™ä¸ƒç§çš„å­—ç¬¦ä¸²è¡¨ç°å½¢å¼è½¬æ¢æˆåŸºæœ¬æ•°æ®ç±»å‹
 	 */
 	public static void main(String[] args) {
 		
@@ -21,15 +21,15 @@ public class Demo3_Integer {
 		System.out.println(b);
 		
 		//String s2 = "abc";
-		//char c = Character.p		//charµÄ°ü×°ÀàCharacterÖĞÃ»ÓĞpareseXxxµÄ·½·¨
-									//×Ö·û´®µ½×Ö·ûµÄ×ª»»Í¨¹ıtoCharArray()¾Í¿ÉÒÔ°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
+		//char c = Character.p		//charçš„åŒ…è£…ç±»Characterä¸­æ²¡æœ‰pareseXxxçš„æ–¹æ³•
+									//å­—ç¬¦ä¸²åˆ°å­—ç¬¦çš„è½¬æ¢é€šè¿‡toCharArray()å°±å¯ä»¥æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
 	}
 
 	private static void demo1() {
-		//int ----> String int×ª»»³ÉString
+		//int ----> String intè½¬æ¢æˆString
 		int i = 100;
-		String s1 = i + "";						//ÍÆ¼öÓÃ
-		String s2 = String.valueOf(i);			//ÍÆ¼öÓÃ
+		String s1 = i + "";						//æ¨èç”¨
+		String s2 = String.valueOf(i);			//æ¨èç”¨
 		
 		Integer i2 = new Integer(i);
 		String s3 = i2.toString();
@@ -37,12 +37,12 @@ public class Demo3_Integer {
 		String s4 = Integer.toString(i);
 		System.out.println(s1);
 		
-		//String----> int String ×ª»»int
+		//String----> int String è½¬æ¢int
 		String s = "200";
 		Integer i3 = new Integer(s);
-		int i4 = i3.intValue();					//½«Integer×ª»»³ÉÁËintÊı
+		int i4 = i3.intValue();					//å°†Integerè½¬æ¢æˆäº†intæ•°
 		
-		int i5 = Integer.parseInt(s);			//½«String×ª»»Îªint,ÍÆ¼öÓÃÕâÖÖ
+		int i5 = Integer.parseInt(s);			//å°†Stringè½¬æ¢ä¸ºint,æ¨èç”¨è¿™ç§
 	}
 
 }

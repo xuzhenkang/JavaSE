@@ -9,12 +9,12 @@ public class Demo2_FileOutputStream {
 	/**
 	 * @param args
 	 * @throws IOException 
-	 * FileOutputStreamÔÚ´´½¨¶ÔÏóµÄÊ±ºòÊÇÈç¹ûÃ»ÓĞÕâ¸öÎÄ¼ş»á°ïÎÒ´´½¨³öÀ´
-	 * Èç¹ûÓĞÕâ¸öÎÄ¼ş¾Í»áÏÈ½«ÎÄ¼şÇå¿Õ
+	 * FileOutputStreamåœ¨åˆ›å»ºå¯¹è±¡çš„æ—¶å€™æ˜¯å¦‚æœæ²¡æœ‰è¿™ä¸ªæ–‡ä»¶ä¼šå¸®æˆ‘åˆ›å»ºå‡ºæ¥
+	 * å¦‚æœæœ‰è¿™ä¸ªæ–‡ä»¶å°±ä¼šå…ˆå°†æ–‡ä»¶æ¸…ç©º
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
-		FileOutputStream fos = new FileOutputStream("yyy.txt",true);	//Èç¹ûÏëĞøĞ´¾ÍÔÚµÚ¶ş¸ö²ÎÊı´«true
+		FileOutputStream fos = new FileOutputStream("yyy.txt",true);	//å¦‚æœæƒ³ç»­å†™å°±åœ¨ç¬¬äºŒä¸ªå‚æ•°ä¼ true
 		fos.write(97);
 		fos.write(98);
 		
@@ -22,8 +22,8 @@ public class Demo2_FileOutputStream {
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		FileOutputStream fos = new FileOutputStream("yyy.txt");		//´´½¨×Ö½ÚÊä³öÁ÷¶ÔÏó,Èç¹ûÃ»ÓĞ¾Í×Ô¶¯´´½¨Ò»¸ö
-		//fos.write(97);				//ËäÈ»Ğ´³öµÄÊÇÒ»¸öintÊı,µ«ÊÇµ½ÎÄ¼şÉÏµÄÊÇÒ»¸ö×Ö½Ú,»á×Ô¶¯È¥³ıÇ°Èı¸ö8Î»
+		FileOutputStream fos = new FileOutputStream("yyy.txt");		//åˆ›å»ºå­—èŠ‚è¾“å‡ºæµå¯¹è±¡,å¦‚æœæ²¡æœ‰å°±è‡ªåŠ¨åˆ›å»ºä¸€ä¸ª
+		//fos.write(97);				//è™½ç„¶å†™å‡ºçš„æ˜¯ä¸€ä¸ªintæ•°,ä½†æ˜¯åˆ°æ–‡ä»¶ä¸Šçš„æ˜¯ä¸€ä¸ªå­—èŠ‚,ä¼šè‡ªåŠ¨å»é™¤å‰ä¸‰ä¸ª8ä½
 		//fos.write(98);
 		//fos.write(99);
 		fos.write(100);

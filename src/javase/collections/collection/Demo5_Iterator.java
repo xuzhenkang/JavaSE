@@ -7,23 +7,23 @@ import java.util.Iterator;
 public class Demo5_Iterator {
 
 	/**
-	 * µü´ú
-	 * * A:µü´úÆ÷¸ÅÊö
-	 * ¼¯ºÏÊÇÓÃÀ´´æ´¢ÔªËØ,´æ´¢µÄÔªËØĞèÒª²é¿´,ÄÇÃ´¾ÍĞèÒªµü´ú(±éÀú) 
+	 * è¿­ä»£
+	 * * A:è¿­ä»£å™¨æ¦‚è¿°
+	 * é›†åˆæ˜¯ç”¨æ¥å­˜å‚¨å…ƒç´ ,å­˜å‚¨çš„å…ƒç´ éœ€è¦æŸ¥çœ‹,é‚£ä¹ˆå°±éœ€è¦è¿­ä»£(éå†) 
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		Collection c = new ArrayList();
-		c.add(new Student("ÕÅÈı", 23));				//Object obj = new Student("ÕÅÈı",23);
-		c.add(new Student("ÀîËÄ", 24));
-		c.add(new Student("ÍõÎå", 25));
-		c.add(new Student("ÕÔÁù", 26));
+		c.add(new Student("å¼ ä¸‰", 23));				//Object obj = new Student("å¼ ä¸‰",23);
+		c.add(new Student("æå››", 24));
+		c.add(new Student("ç‹äº”", 25));
+		c.add(new Student("èµµå…­", 26));
 		
-		//»ñÈ¡µü´úÆ÷
+		//è·å–è¿­ä»£å™¨
 		Iterator it = c.iterator();
 		while(it.hasNext()) {
 			//System.out.println(it.next());
-			Student s = (Student)it.next();			//ÏòÏÂ×ªĞÍ
+			Student s = (Student)it.next();			//å‘ä¸‹è½¬å‹
 			System.out.println(s.getName() + "..." + s.getAge());
 		}
 	
@@ -36,14 +36,14 @@ public class Demo5_Iterator {
 		c.add("c");
 		c.add("d");
 		
-		//¶Ô¼¯ºÏÖĞµÄÔªËØµü´ú(±éÀú)
-		Iterator it = c.iterator();					//»ñÈ¡µü´úÆ÷
-		/*boolean b1 = it.hasNext();					//ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ,ÓĞ¾Í·µ»Øtrue
+		//å¯¹é›†åˆä¸­çš„å…ƒç´ è¿­ä»£(éå†)
+		Iterator it = c.iterator();					//è·å–è¿­ä»£å™¨
+		/*boolean b1 = it.hasNext();					//åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ ,æœ‰å°±è¿”å›true
 		Object obj1 = it.next();
 		System.out.println(b1);
 		System.out.println(obj1);
 		
-		boolean b2 = it.hasNext();					//ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ,ÓĞ¾Í·µ»Øtrue
+		boolean b2 = it.hasNext();					//åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ ,æœ‰å°±è¿”å›true
 		Object obj2 = it.next();
 		System.out.println(b2);
 		System.out.println(obj2);*/

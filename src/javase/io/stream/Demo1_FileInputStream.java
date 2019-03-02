@@ -9,19 +9,19 @@ public class Demo1_FileInputStream {
 	/**
 	 * @param args
 	 * @throws IOException  
-	 * read()·½·¨¶ÁÈ¡µÄÊÇÒ»¸ö×Ö½Ú,ÎªÊ²Ã´·µ»ØÊÇint,¶ø²»ÊÇbyte
+	 * read()æ–¹æ³•è¯»å–çš„æ˜¯ä¸€ä¸ªå­—èŠ‚,ä¸ºä»€ä¹ˆè¿”å›æ˜¯int,è€Œä¸æ˜¯byte
 	 * 
 	 * 00010100 00100100 01000001 11111111 0000000
 	 * 
-	 * 10000001    byteÀàĞÍ-1µÄÔ­Âë
-	 * 11111110	   -1µÄ·´Âë
-	 * 11111111    -1µÄ²¹Âë
+	 * 10000001    byteç±»å‹-1çš„åŸç 
+	 * 11111110	   -1çš„åç 
+	 * 11111111    -1çš„è¡¥ç 
 	 * 
 	 * 00000000 00000000 00000000 11111111
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
-		FileInputStream fis = new FileInputStream("xxx.txt");	//´´½¨Á÷¶ÔÏó
+		FileInputStream fis = new FileInputStream("xxx.txt");	//åˆ›å»ºæµå¯¹è±¡
 		int b;
 		while((b = fis.read()) != -1) {
 			System.out.println(b);
@@ -31,8 +31,8 @@ public class Demo1_FileInputStream {
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		FileInputStream fis = new FileInputStream("xxx.txt");	//´´½¨Á÷¶ÔÏó
-		int x = fis.read();										//´ÓÓ²ÅÌÉÏ¶ÁÈ¡Ò»¸ö×Ö½Ú
+		FileInputStream fis = new FileInputStream("xxx.txt");	//åˆ›å»ºæµå¯¹è±¡
+		int x = fis.read();										//ä»ç¡¬ç›˜ä¸Šè¯»å–ä¸€ä¸ªå­—èŠ‚
 		System.out.println(x);
 		int y = fis.read();
 		System.out.println(y);
@@ -42,7 +42,7 @@ public class Demo1_FileInputStream {
 		System.out.println(a);
 		int b = fis.read();
 		System.out.println(b);
-		fis.close();											//¹ØÁ÷ÊÍ·Å×ÊÔ´
+		fis.close();											//å…³æµé‡Šæ”¾èµ„æº
 	}
 
 }

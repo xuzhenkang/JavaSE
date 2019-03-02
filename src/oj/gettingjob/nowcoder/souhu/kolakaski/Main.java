@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
-ÊäÈë
+è¾“å…¥
 6 2
 1 2
 
@@ -14,10 +14,10 @@ import java.util.Scanner;
 
 
 
-ÊäÈë£º
+è¾“å…¥ï¼š
 30 4
 2 1 3 1
-Êä³ö£º
+è¾“å‡ºï¼š
  2 2  1 1  3  1  2 2 2
 [2,2][1,1][3][1][2,2,2]
 

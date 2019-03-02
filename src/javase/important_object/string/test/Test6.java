@@ -3,20 +3,20 @@ package javase.important_object.string.test;
 import java.util.Scanner;
 
 /**
- * - ĞèÇó£º°Ñ×Ö·û´®·´×ª
+ * - éœ€æ±‚ï¼šæŠŠå­—ç¬¦ä¸²åè½¬
 
-    - ¾ÙÀı£º¼üÅÌÂ¼Èë"abc"
+    - ä¸¾ä¾‹ï¼šé”®ç›˜å½•å…¥"abc"
 
-    - Êä³ö½á¹û£º"cba"
+    - è¾“å‡ºç»“æœï¼š"cba"
  * @author Dan
  *
  */
 public class Test6 {
 	public static void main(String[] args) {
 		Scanner cin = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë×Ö·û´®");
+		System.out.println("è¯·è¾“å…¥å­—ç¬¦ä¸²");
 		String line = cin.nextLine();
-		char[] arr = line.toCharArray(); // ½«×Ö·û´®×ª»»³É×Ö·ûÊı×é
+		char[] arr = line.toCharArray(); // å°†å­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„
 		String s = "";
 		for (int i = arr.length - 1; i >= 0; i--) {
 			s += arr[i];

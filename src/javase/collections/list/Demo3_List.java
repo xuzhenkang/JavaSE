@@ -8,8 +8,8 @@ import java.util.ListIterator;
 public class Demo3_List {
 
 	/**
-	 ** A:°¸ÀıÑİÊ¾
-	 * ĞèÇó£ºÎÒÓĞÒ»¸ö¼¯ºÏ£¬ÇëÎÊ£¬ÎÒÏëÅĞ¶ÏÀïÃæÓĞÃ»ÓĞ"world"Õâ¸öÔªËØ£¬Èç¹ûÓĞ£¬ÎÒ¾ÍÌí¼ÓÒ»¸ö"javaee"ÔªËØ£¬ÇëĞ´´úÂëÊµÏÖ¡£
+	 ** A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šæˆ‘æœ‰ä¸€ä¸ªé›†åˆï¼Œè¯·é—®ï¼Œæˆ‘æƒ³åˆ¤æ–­é‡Œé¢æœ‰æ²¡æœ‰"world"è¿™ä¸ªå…ƒç´ ï¼Œå¦‚æœæœ‰ï¼Œæˆ‘å°±æ·»åŠ ä¸€ä¸ª"javaee"å…ƒç´ ï¼Œè¯·å†™ä»£ç å®ç°ã€‚
 	 */
 	public static void main(String[] args) {
 		List list = new ArrayList();
@@ -20,19 +20,19 @@ public class Demo3_List {
 		list.add("d");
 		list.add("e");
 		
-		/*Iterator it = list.iterator();					//»ñÈ¡µü´úÆ÷
-		while(it.hasNext()) {							//ÅĞ¶Ï¼¯ºÏÖĞÊÇ·ñÓĞÔªËØ
-			String str = (String)it.next();				//ÏòÏÂ×ªĞÍ
+		/*Iterator it = list.iterator();					//è·å–è¿­ä»£å™¨
+		while(it.hasNext()) {							//åˆ¤æ–­é›†åˆä¸­æ˜¯å¦æœ‰å…ƒç´ 
+			String str = (String)it.next();				//å‘ä¸‹è½¬å‹
 			if("world".equals(str)) {
-				list.add("javaee");						//±éÀúµÄÍ¬Ê±ÔÚÔö¼ÓÔªËØ,²¢·¢ĞŞ¸ÄConcurrentModificationException
+				list.add("javaee");						//éå†çš„åŒæ—¶åœ¨å¢åŠ å…ƒç´ ,å¹¶å‘ä¿®æ”¹ConcurrentModificationException
 			}
 		}*/
 		
-		ListIterator lit = list.listIterator();			//»ñÈ¡µü´úÆ÷(List¼¯ºÏÌØÓĞµÄ)
+		ListIterator lit = list.listIterator();			//è·å–è¿­ä»£å™¨(Listé›†åˆç‰¹æœ‰çš„)
 		while(lit.hasNext()) {
-			String str = (String)lit.next();			//ÏòÏÂ×ªĞÍ
+			String str = (String)lit.next();			//å‘ä¸‹è½¬å‹
 			if("world".equals(str)) {
-				//list.add("javaee");						//±éÀúµÄÍ¬Ê±ÔÚÔö¼ÓÔªËØ,²¢·¢ĞŞ¸ÄConcurrentModificationException
+				//list.add("javaee");						//éå†çš„åŒæ—¶åœ¨å¢åŠ å…ƒç´ ,å¹¶å‘ä¿®æ”¹ConcurrentModificationException
 				lit.add("javaee");
 			}
 		}

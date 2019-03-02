@@ -1,6 +1,7 @@
-package oj.practice.nowcoder.huaweijishi.质数因子;
+package oj.practice.nowcoder.huaweijishi.璐ㄦ暟鍥犲瓙;
 
 import java.util.Scanner;
+
 public class Main {
     public static boolean divided(long num, long divider) {
         return num % divider == 0 ? true : false;

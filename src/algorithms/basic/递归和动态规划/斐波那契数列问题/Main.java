@@ -1,4 +1,4 @@
-package algorithms.basic.µİ¹éºÍ¶¯Ì¬¹æ»®.ì³²¨ÄÇÆõÊıÁĞÎÊÌâ;
+package algorithms.basic.é€’å½’å’ŒåŠ¨æ€è§„åˆ’.æ–æ³¢é‚£å¥‘æ•°åˆ—é—®é¢˜;
 
 public class Main {
 	public static void main(String[] args) {
@@ -10,8 +10,8 @@ public class Main {
 
 	/**
 	 * 
-	 * ì³²¨ÄÇÆõÊıÁĞÎÊÌâ
-	 * ±©Á¦µİ¹é½â·¨ O(2^n)
+	 * æ–æ³¢é‚£å¥‘æ•°åˆ—é—®é¢˜
+	 * æš´åŠ›é€’å½’è§£æ³• O(2^n)
 	 * @param n
 	 * @return
 	 */
@@ -22,8 +22,8 @@ public class Main {
 	}
 	
 	/**
-	 * ì³²¨ÄÇÆõÊıÁĞÎÊÌâ
-	 * ±©Á¦µİ¹é½â·¨ O(n)
+	 * æ–æ³¢é‚£å¥‘æ•°åˆ—é—®é¢˜
+	 * æš´åŠ›é€’å½’è§£æ³• O(n)
 	 * @param n
 	 * @return
 	 */

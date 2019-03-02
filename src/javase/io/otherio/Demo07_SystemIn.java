@@ -12,7 +12,7 @@ public class Demo07_SystemIn {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		/*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		//InputStreamReader×ª»»Á÷
+		/*BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		//InputStreamReaderè½¬æ¢æµ
 		String line = br.readLine();
 		System.out.println(line);
 		br.close();*/

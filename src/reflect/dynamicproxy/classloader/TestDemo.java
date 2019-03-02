@@ -3,21 +3,21 @@ package reflect.dynamicproxy.classloader;
 public class TestDemo {
 	public static void main(String[] args) {
 		Demo d = new Demo();
-		System.out.println("Àà¼ÓÔØÆ÷£º" + d.getClass().getClassLoader().getClass().getName());
+		System.out.println("ç±»åŠ è½½å™¨ï¼š" + d.getClass().getClassLoader().getClass().getName());
 	}
 }
 /**
 
-Àà¼ÓÔØÆ÷£ºsun.misc.Launcher$AppClassLoader
+ç±»åŠ è½½å™¨ï¼šsun.misc.Launcher$AppClassLoader
 */
 /***
-ÆäÊµÔÚjavaÖĞÓĞÈıÖÖÀàÀà¼ÓÔØÆ÷¡£
+å…¶å®åœ¨javaä¸­æœ‰ä¸‰ç§ç±»ç±»åŠ è½½å™¨ã€‚
 
-1£©Bootstrap ClassLoader ´Ë¼ÓÔØÆ÷²ÉÓÃc++±àĞ´£¬Ò»°ã¿ª·¢ÖĞºÜÉÙ¼û¡£
+1ï¼‰Bootstrap ClassLoader æ­¤åŠ è½½å™¨é‡‡ç”¨c++ç¼–å†™ï¼Œä¸€èˆ¬å¼€å‘ä¸­å¾ˆå°‘è§ã€‚
 
-2£©Extension ClassLoader ÓÃÀ´½øĞĞÀ©Õ¹ÀàµÄ¼ÓÔØ£¬Ò»°ã¶ÔÓ¦µÄÊÇjre\lib\extÄ¿Â¼ÖĞµÄÀà
+2ï¼‰Extension ClassLoader ç”¨æ¥è¿›è¡Œæ‰©å±•ç±»çš„åŠ è½½ï¼Œä¸€èˆ¬å¯¹åº”çš„æ˜¯jre\lib\extç›®å½•ä¸­çš„ç±»
 
-3£©AppClassLoader ¼ÓÔØclasspathÖ¸¶¨µÄÀà£¬ÊÇ×î³£ÓÃµÄ¼ÓÔØÆ÷¡£Í¬Ê±Ò²ÊÇjavaÖĞÄ¬ÈÏµÄ¼ÓÔØÆ÷¡£
+3ï¼‰AppClassLoader åŠ è½½classpathæŒ‡å®šçš„ç±»ï¼Œæ˜¯æœ€å¸¸ç”¨çš„åŠ è½½å™¨ã€‚åŒæ—¶ä¹Ÿæ˜¯javaä¸­é»˜è®¤çš„åŠ è½½å™¨ã€‚
 
-Èç¹ûÏëÒªÍê³É¶¯Ì¬´úÀí£¬Ê×ÏÈĞèÒª¶¨ÒåÒ»¸öInvocationHandler½Ó¿ÚµÄ×ÓÀà£¬ÒÑÍê³É´úÀíµÄ¾ßÌå²Ù×÷¡£
+å¦‚æœæƒ³è¦å®ŒæˆåŠ¨æ€ä»£ç†ï¼Œé¦–å…ˆéœ€è¦å®šä¹‰ä¸€ä¸ªInvocationHandleræ¥å£çš„å­ç±»ï¼Œå·²å®Œæˆä»£ç†çš„å…·ä½“æ“ä½œã€‚
 */

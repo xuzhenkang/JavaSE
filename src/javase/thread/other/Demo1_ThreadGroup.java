@@ -8,13 +8,13 @@ public class Demo1_ThreadGroup {
 	 */
 	public static void main(String[] args) {
 		//demo1();
-		ThreadGroup tg = new ThreadGroup("ÎÒÊÇÒ»¸öĞÂµÄÏß³Ì×é");		//´´½¨ĞÂµÄÏß³Ì×é
-		MyRunnable mr = new MyRunnable();						//´´½¨RunnableµÄ×ÓÀà¶ÔÏó
+		ThreadGroup tg = new ThreadGroup("æˆ‘æ˜¯ä¸€ä¸ªæ–°çš„çº¿ç¨‹ç»„");		//åˆ›å»ºæ–°çš„çº¿ç¨‹ç»„
+		MyRunnable mr = new MyRunnable();						//åˆ›å»ºRunnableçš„å­ç±»å¯¹è±¡
 		
-		Thread t1 = new Thread(tg, mr, "ÕÅÈı");					//½«Ïß³Ìt1·ÅÔÚ×éÖĞ
-		Thread t2 = new Thread(tg, mr, "ÀîËÄ");					//½«Ïß³Ìt2·ÅÔÚ×éÖĞ
+		Thread t1 = new Thread(tg, mr, "å¼ ä¸‰");					//å°†çº¿ç¨‹t1æ”¾åœ¨ç»„ä¸­
+		Thread t2 = new Thread(tg, mr, "æå››");					//å°†çº¿ç¨‹t2æ”¾åœ¨ç»„ä¸­
 		
-		System.out.println(t1.getThreadGroup().getName());		//»ñÈ¡×éÃû
+		System.out.println(t1.getThreadGroup().getName());		//è·å–ç»„å
 		System.out.println(t2.getThreadGroup().getName());
 		
 		tg.setDaemon(true);
@@ -22,13 +22,13 @@ public class Demo1_ThreadGroup {
 
 	public static void demo1() {
 		MyRunnable mr = new MyRunnable();
-		Thread t1 = new Thread(mr, "ÕÅÈı");
-		Thread t2 = new Thread(mr, "ÀîËÄ");
+		Thread t1 = new Thread(mr, "å¼ ä¸‰");
+		Thread t2 = new Thread(mr, "æå››");
 		
 		ThreadGroup tg1 = t1.getThreadGroup();
 		ThreadGroup tg2 = t2.getThreadGroup();
 		
-		System.out.println(tg1.getName());				//Ä¬ÈÏµÄÊÇÖ÷Ïß³Ì
+		System.out.println(tg1.getName());				//é»˜è®¤çš„æ˜¯ä¸»çº¿ç¨‹
 		System.out.println(tg2.getName());
 	}
 

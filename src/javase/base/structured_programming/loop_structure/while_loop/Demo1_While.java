@@ -1,29 +1,29 @@
 package javase.base.structured_programming.loop_structure.while_loop;
 /*
-* A:Ñ­»·½á¹¹whileÓï¾äµÄ¸ñÊ½£º
+* A:å¾ªçŽ¯ç»“æž„whileè¯­å¥çš„æ ¼å¼ï¼š
 * 		
-		whileÑ­»·µÄ»ù±¾¸ñÊ½£º
-		while(ÅÐ¶ÏÌõ¼þÓï¾ä) {
-			Ñ­»·ÌåÓï¾ä;
+		whileå¾ªçŽ¯çš„åŸºæœ¬æ ¼å¼ï¼š
+		while(åˆ¤æ–­æ¡ä»¶è¯­å¥) {
+			å¾ªçŽ¯ä½“è¯­å¥;
 		}
 		
-		ÍêÕû¸ñÊ½£º
+		å®Œæ•´æ ¼å¼ï¼š
 		
-		³õÊ¼»¯Óï¾ä;
-	    while(ÅÐ¶ÏÌõ¼þÓï¾ä) {
-			 Ñ­»·ÌåÓï¾ä;
-			 ¿ØÖÆÌõ¼þÓï¾ä;
+		åˆå§‹åŒ–è¯­å¥;
+	    while(åˆ¤æ–­æ¡ä»¶è¯­å¥) {
+			 å¾ªçŽ¯ä½“è¯­å¥;
+			 æŽ§åˆ¶æ¡ä»¶è¯­å¥;
 		}
-* B:Ö´ÐÐÁ÷³Ì£º
-	* a:Ö´ÐÐ³õÊ¼»¯Óï¾ä
-	* b:Ö´ÐÐÅÐ¶ÏÌõ¼þÓï¾ä,¿´Æä·µ»ØÖµÊÇtrue»¹ÊÇfalse
-		* Èç¹ûÊÇtrue£¬¾Í¼ÌÐøÖ´ÐÐ
-		* Èç¹ûÊÇfalse£¬¾Í½áÊøÑ­»·
-	* c:Ö´ÐÐÑ­»·ÌåÓï¾ä;
-	* d:Ö´ÐÐ¿ØÖÆÌõ¼þÓï¾ä
-	* e:»Øµ½B¼ÌÐø¡£
-* C:°¸ÀýÑÝÊ¾
-	* ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÊý¾Ý1-10
+* B:æ‰§è¡Œæµç¨‹ï¼š
+	* a:æ‰§è¡Œåˆå§‹åŒ–è¯­å¥
+	* b:æ‰§è¡Œåˆ¤æ–­æ¡ä»¶è¯­å¥,çœ‹å…¶è¿”å›žå€¼æ˜¯trueè¿˜æ˜¯false
+		* å¦‚æžœæ˜¯trueï¼Œå°±ç»§ç»­æ‰§è¡Œ
+		* å¦‚æžœæ˜¯falseï¼Œå°±ç»“æŸå¾ªçŽ¯
+	* c:æ‰§è¡Œå¾ªçŽ¯ä½“è¯­å¥;
+	* d:æ‰§è¡ŒæŽ§åˆ¶æ¡ä»¶è¯­å¥
+	* e:å›žåˆ°Bç»§ç»­ã€‚
+* C:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šè¯·åœ¨æŽ§åˆ¶å°è¾“å‡ºæ•°æ®1-10
 */
 class Demo1_While {
 	public static void main(String[] args) {

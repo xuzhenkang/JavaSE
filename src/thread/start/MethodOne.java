@@ -1,7 +1,7 @@
 package thread.start;
 
 /**
- * 启动线程的三种方式，其一
+ * 鍚姩绾跨▼鐨勪笁绉嶆柟寮忥紝鍏朵竴
  * @author kang
  *
  */

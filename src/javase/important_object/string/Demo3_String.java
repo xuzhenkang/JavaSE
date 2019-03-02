@@ -2,24 +2,24 @@ package javase.important_object.string;
 
 public class Demo3_String {
 	public static void main(String[] args) {
-		//1.ÅĞ¶Ï¶¨ÒåÎªStringÀàĞÍµÄs1ºÍs2ÊÇ·ñÏàµÈ
+		//1.åˆ¤æ–­å®šä¹‰ä¸ºStringç±»å‹çš„s1å’Œs2æ˜¯å¦ç›¸ç­‰
 /*	     String s1 = "abc";
 	     String s2 = "abc";
 	     System.out.println(s1 == s2);
 	     System.out.println(s2.equals(s2));*/
-	     // 2.ÏÂÃæÕâ¾ä»°ÔÚÄÚ´æÖĞ´´½¨ÁË¼¸¸ö¶ÔÏó£¿
+	     // 2.ä¸‹é¢è¿™å¥è¯åœ¨å†…å­˜ä¸­åˆ›å»ºäº†å‡ ä¸ªå¯¹è±¡ï¼Ÿ
 //	     String s1 = new String("abc");
-	     //3.ÅĞ¶Ï¶¨ÒåÎªStringÀàĞÍµÄs1ºÍs2ÊÇ·ñÏàµÈ
+	     //3.åˆ¤æ–­å®šä¹‰ä¸ºStringç±»å‹çš„s1å’Œs2æ˜¯å¦ç›¸ç­‰
 /*	     String s1 = new String("abc");
 	     String s2 = "abc";
 	     System.out.println(s1 == s2); 
 	     System.out.println(s1.equals(s2)); */
-	    //4.ÅĞ¶Ï¶¨ÒåÎªStringÀàĞÍµÄs1ºÍs2ÊÇ·ñÏàµÈ
+	    //4.åˆ¤æ–­å®šä¹‰ä¸ºStringç±»å‹çš„s1å’Œs2æ˜¯å¦ç›¸ç­‰
 /*	     String s1 = "a" + "b" + "c";
 	     String s2 = "abc";
 	     System.out.println(s1 == s2); 
 	     System.out.println(s1.equals(s2)); */
-	    //5.ÅĞ¶Ï¶¨ÒåÎªStringÀàĞÍµÄs1ºÍs2ÊÇ·ñÏàµÈ
+	    //5.åˆ¤æ–­å®šä¹‰ä¸ºStringç±»å‹çš„s1å’Œs2æ˜¯å¦ç›¸ç­‰
 	     String s1 = "ab";
 	     String s2 = "abc";
 	     String s3 = s1 + "c";

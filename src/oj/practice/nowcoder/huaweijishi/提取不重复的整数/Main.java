@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.ÌáÈ¡²»ÖØ¸´µÄÕûÊı;
+package oj.practice.nowcoder.huaweijishi.æå–ä¸é‡å¤çš„æ•´æ•°;
 
 import java.util.LinkedHashSet;
 import java.util.Scanner;
@@ -18,4 +18,4 @@ public class Main {
 		cin.close();
 	}
 }
-// ×¢£ºÕâÖÖ·½·¨ÓĞÎÊÌâ£¬Èç¹û²âÊÔÓÃÀı90,ÔòÊä³ö09.È»¶ø09·ÇÕûÊı£¬Ó¦¸ÃÊä³ö9²Å¶Ô¡£µ«ÊÇÕâÖÖ·½·¨ÔÚnowcoderÉÏÒ²¿ÉÒÔ²âÊÔÍ¨¹ı¡£
+// æ³¨ï¼šè¿™ç§æ–¹æ³•æœ‰é—®é¢˜ï¼Œå¦‚æœæµ‹è¯•ç”¨ä¾‹90,åˆ™è¾“å‡º09.ç„¶è€Œ09éæ•´æ•°ï¼Œåº”è¯¥è¾“å‡º9æ‰å¯¹ã€‚ä½†æ˜¯è¿™ç§æ–¹æ³•åœ¨nowcoderä¸Šä¹Ÿå¯ä»¥æµ‹è¯•é€šè¿‡ã€‚

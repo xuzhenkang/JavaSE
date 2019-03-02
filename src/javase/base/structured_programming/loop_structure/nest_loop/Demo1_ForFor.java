@@ -1,30 +1,30 @@
 package javase.base.structured_programming.loop_structure.nest_loop;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£ºÇëÊä³öÒ»¸ö4ĞĞ5ÁĞµÄĞÇĞÇ(*)Í¼°¸¡£
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šè¯·è¾“å‡ºä¸€ä¸ª4è¡Œ5åˆ—çš„æ˜Ÿæ˜Ÿ(*)å›¾æ¡ˆã€‚
 	* 
-			ÈçÍ¼£º
+			å¦‚å›¾ï¼š
 				*****
 				*****
 				*****
 				*****
 				
-			×¢Òâ£º
-				System.out.println("*");ºÍSystem.out.print("*");µÄÇø±ğ
-* B:½áÂÛ£º
-	* ÍâÑ­»·¿ØÖÆĞĞÊı£¬ÄÚÑ­»·¿ØÖÆÁĞÊı
+			æ³¨æ„ï¼š
+				System.out.println("*");å’ŒSystem.out.print("*");çš„åŒºåˆ«
+* B:ç»“è®ºï¼š
+	* å¤–å¾ªç¯æ§åˆ¶è¡Œæ•°ï¼Œå†…å¾ªç¯æ§åˆ¶åˆ—æ•°
 */
 class Demo1_ForFor {
 	public static void main(String[] args) {
-		/*for (int i = 1;i <= 3 ;i++ ) {					//ÍâÑ­»·
+		/*for (int i = 1;i <= 3 ;i++ ) {					//å¤–å¾ªç¯
 			System.out.println("i = " + i);
-			for (int j = 1;j <= 3 ;j++ ) {				//ÄÚÑ­»·
+			for (int j = 1;j <= 3 ;j++ ) {				//å†…å¾ªç¯
 				System.out.println("j = " + j);
 			}
 		}*/
 
-		for (int i = 1;i <= 4 ;i++ ) {					//ÍâÑ­»·¾ö¶¨µÄÊÇĞĞÊı
-			for (int j = 1;j <= 5 ;j++ ) {				//ÄÚÑ­»·¾ö¶¨µÄÊÇÁĞÊı
+		for (int i = 1;i <= 4 ;i++ ) {					//å¤–å¾ªç¯å†³å®šçš„æ˜¯è¡Œæ•°
+			for (int j = 1;j <= 5 ;j++ ) {				//å†…å¾ªç¯å†³å®šçš„æ˜¯åˆ—æ•°
 				System.out.print("*");
 			}
 			System.out.println();

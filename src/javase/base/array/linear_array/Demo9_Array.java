@@ -1,7 +1,7 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* Êı×é»ñÈ¡×îÖµ(»ñÈ¡Êı×éÖĞµÄ×î´óÖµ×îĞ¡Öµ)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„è·å–æœ€å€¼(è·å–æ•°ç»„ä¸­çš„æœ€å¤§å€¼æœ€å°å€¼)
 */
 class Demo9_Array {
 	public static void main(String[] args) {
@@ -11,16 +11,16 @@ class Demo9_Array {
 	}
 
 	/*
-	»ñÈ¡Êı×éÖĞ×î´óÖµ
-	1,·µ»ØÖµÀàĞÍint
-	2,²ÎÊıÁĞ±íint[] arr
+	è·å–æ•°ç»„ä¸­æœ€å¤§å€¼
+	1,è¿”å›å€¼ç±»å‹int
+	2,å‚æ•°åˆ—è¡¨int[] arr
 	*/
 
 	public static int getMax(int[] arr) {
 		int max = arr[0];
-		for (int i = 1;i < arr.length ;i++ ) {			//´ÓÊı×éµÄµÚ¶ş¸öÔªËØ¿ªÊ¼±éÀú
-			if (max < arr[i]) {							//Èç¹ûmax¼ÇÂ¼µÄÖµĞ¡ÓÚµÄÊı×éÖĞµÄÔªËØ
-				max = arr[i];							//max¼ÇÂ¼×¡½Ï´óµÄ
+		for (int i = 1;i < arr.length ;i++ ) {			//ä»æ•°ç»„çš„ç¬¬äºŒä¸ªå…ƒç´ å¼€å§‹éå†
+			if (max < arr[i]) {							//å¦‚æœmaxè®°å½•çš„å€¼å°äºçš„æ•°ç»„ä¸­çš„å…ƒç´ 
+				max = arr[i];							//maxè®°å½•ä½è¾ƒå¤§çš„
 			}
 		}
 

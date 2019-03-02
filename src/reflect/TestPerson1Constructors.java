@@ -2,7 +2,7 @@ package reflect;
 
 import java.lang.reflect.Constructor;
 /**
- * »ñµÃÆäËûÀàÖĞµÄÈ«²¿¹¹Ôìº¯Êı
+ * è·å¾—å…¶ä»–ç±»ä¸­çš„å…¨éƒ¨æ„é€ å‡½æ•°
  * @author kang
  *
  */
@@ -17,7 +17,7 @@ public class TestPerson1Constructors {
 		}
 		Constructor<?>[] cons = demo.getConstructors();
 		for (int i = 0; i < cons.length; i++) {
-			System.out.println("¹¹Ôì·½·¨£º" + cons[i]);
+			System.out.println("æ„é€ æ–¹æ³•ï¼š" + cons[i]);
 		}
 	}
 }

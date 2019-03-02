@@ -12,23 +12,23 @@ public class Test2 {
 
 	/**
 	 * @param args
-	 * »ñÈ¡Ò»¸öÎÄ±¾ÉÏÃ¿¸ö×Ö·û³öÏÖµÄ´ÎÊý,½«½á¹ûÐ´ÔÚtimes.txtÉÏ
+	 * èŽ·å–ä¸€ä¸ªæ–‡æœ¬ä¸Šæ¯ä¸ªå­—ç¬¦å‡ºçŽ°çš„æ¬¡æ•°,å°†ç»“æžœå†™åœ¨times.txtä¸Š
 	 * 
-	 * 1,´´½¨´ø»º³åÇøµÄÊäÈëÁ÷¶ÔÏó
-	 * 2,´´½¨Ë«ÁÐ¼¯ºÏ¶ÔÏó,Ä¿µÄÊÇ°Ñ×Ö·ûµ±×÷¼ü,°Ñ×Ö·û³öÏÖµÄ´ÎÊýµ±×÷Öµ
-	 * 3,Í¨¹ý¶ÁÈ¡²»¶ÏÏò¼¯ºÏÖÐ´æ´¢,´æ´¢µÄÊ±ºòÒªÅÐ¶Ï,Èç¹û²»°üº¬Õâ¸ö¼ü¾Í½«¼üºÍÖµÎª1´æ´¢,Èç¹û°üº¬¾Í½«¼üºÍÖµ¼Ó1´æ´¢
-	 * 4,¹Ø±ÕÊäÈëÁ÷
-	 * 5,´´½¨Êä³öÁ÷¶ÔÏó
-	 * 6,½«½á¹ûÐ´³ö
-	 * 7,¹Ø±ÕÊä³öÁ÷
+	 * 1,åˆ›å»ºå¸¦ç¼“å†²åŒºçš„è¾“å…¥æµå¯¹è±¡
+	 * 2,åˆ›å»ºåŒåˆ—é›†åˆå¯¹è±¡,ç›®çš„æ˜¯æŠŠå­—ç¬¦å½“ä½œé”®,æŠŠå­—ç¬¦å‡ºçŽ°çš„æ¬¡æ•°å½“ä½œå€¼
+	 * 3,é€šè¿‡è¯»å–ä¸æ–­å‘é›†åˆä¸­å­˜å‚¨,å­˜å‚¨çš„æ—¶å€™è¦åˆ¤æ–­,å¦‚æžœä¸åŒ…å«è¿™ä¸ªé”®å°±å°†é”®å’Œå€¼ä¸º1å­˜å‚¨,å¦‚æžœåŒ…å«å°±å°†é”®å’Œå€¼åŠ 1å­˜å‚¨
+	 * 4,å…³é—­è¾“å…¥æµ
+	 * 5,åˆ›å»ºè¾“å‡ºæµå¯¹è±¡
+	 * 6,å°†ç»“æžœå†™å‡º
+	 * 7,å…³é—­è¾“å‡ºæµ
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		//1,´´½¨´ø»º³åÇøµÄÊäÈëÁ÷¶ÔÏó
+		//1,åˆ›å»ºå¸¦ç¼“å†²åŒºçš„è¾“å…¥æµå¯¹è±¡
 		BufferedReader br = new BufferedReader(new FileReader("zzz.txt"));
-		//2,´´½¨Ë«ÁÐ¼¯ºÏ¶ÔÏó,Ä¿µÄÊÇ°Ñ×Ö·ûµ±×÷¼ü,°Ñ×Ö·û³öÏÖµÄ´ÎÊýµ±×÷Öµ
+		//2,åˆ›å»ºåŒåˆ—é›†åˆå¯¹è±¡,ç›®çš„æ˜¯æŠŠå­—ç¬¦å½“ä½œé”®,æŠŠå­—ç¬¦å‡ºçŽ°çš„æ¬¡æ•°å½“ä½œå€¼
 		HashMap<Character, Integer> hm = new HashMap<>();
-		//3,Í¨¹ý¶ÁÈ¡²»¶ÏÏò¼¯ºÏÖÐ´æ´¢,´æ´¢µÄÊ±ºòÒªÅÐ¶Ï,Èç¹û²»°üº¬Õâ¸ö¼ü¾Í½«¼üºÍÖµÎª1´æ´¢,Èç¹û°üº¬¾Í½«¼üºÍÖµ¼Ó1´æ´¢
+		//3,é€šè¿‡è¯»å–ä¸æ–­å‘é›†åˆä¸­å­˜å‚¨,å­˜å‚¨çš„æ—¶å€™è¦åˆ¤æ–­,å¦‚æžœä¸åŒ…å«è¿™ä¸ªé”®å°±å°†é”®å’Œå€¼ä¸º1å­˜å‚¨,å¦‚æžœåŒ…å«å°±å°†é”®å’Œå€¼åŠ 1å­˜å‚¨
 		int c;
 		while((c = br.read()) != -1) {
 			char ch = (char)c;
@@ -40,11 +40,11 @@ public class Test2 {
 			
 			hm.put(ch, !hm.containsKey(ch)? 1 : hm.get(ch) + 1);
 		}
-		//4,¹Ø±ÕÊäÈëÁ÷
+		//4,å…³é—­è¾“å…¥æµ
 		br.close();
-		//5,´´½¨Êä³öÁ÷¶ÔÏó
+		//5,åˆ›å»ºè¾“å‡ºæµå¯¹è±¡
 		BufferedWriter bw = new BufferedWriter(new FileWriter("times.txt"));
-		//6,½«½á¹ûÐ´³ö
+		//6,å°†ç»“æžœå†™å‡º
 		
 		for (Character key : hm.keySet()) {
 			bw.write(key + "=" + hm.get(key));

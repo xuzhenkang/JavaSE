@@ -7,9 +7,9 @@ import java.util.Collection;
 public class Demo2_Collection {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾	
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º	
 		* 
-				»ù±¾¹¦ÄÜÑİÊ¾
+				åŸºæœ¬åŠŸèƒ½æ¼”ç¤º
 				
 				boolean add(E e)
 				boolean remove(Object o)
@@ -18,16 +18,16 @@ public class Demo2_Collection {
 				boolean isEmpty()
 				int size()
 		
-		* B:×¢Òâ:
+		* B:æ³¨æ„:
 		* 
-				collectionXxx.javaÊ¹ÓÃÁËÎ´¾­¼ì²é»ò²»°²È«µÄ²Ù×÷.
-				×¢Òâ:ÒªÁË½âÏêÏ¸ĞÅÏ¢,ÇëÊ¹ÓÃ -Xlint:uncheckedÖØĞÂ±àÒë.
-				java±àÒëÆ÷ÈÏÎª¸Ã³ÌĞò´æÔÚ°²È«Òş»¼
-				ÎÂÜ°ÌáÊ¾:Õâ²»ÊÇ±àÒëÊ§°Ü,ËùÒÔÏÈ²»ÓÃÀí»á,µÈÑ§ÁË·ºĞÍÄã¾ÍÖªµÀÁË
-		add·½·¨Èç¹ûÊÇList¼¯ºÏÒ»Ö±¶¼·µ»Øtrue,ÒòÎªList¼¯ºÏÖĞÊÇ¿ÉÒÔ´æ´¢ÖØ¸´ÔªËØµÄ
-		Èç¹ûÊÇSet¼¯ºÏµ±´æ´¢ÖØ¸´ÔªËØµÄÊ±ºò,¾Í»á·µ»Øfalse
+				collectionXxx.javaä½¿ç”¨äº†æœªç»æ£€æŸ¥æˆ–ä¸å®‰å…¨çš„æ“ä½œ.
+				æ³¨æ„:è¦äº†è§£è¯¦ç»†ä¿¡æ¯,è¯·ä½¿ç”¨ -Xlint:uncheckedé‡æ–°ç¼–è¯‘.
+				javaç¼–è¯‘å™¨è®¤ä¸ºè¯¥ç¨‹åºå­˜åœ¨å®‰å…¨éšæ‚£
+				æ¸©é¦¨æç¤º:è¿™ä¸æ˜¯ç¼–è¯‘å¤±è´¥,æ‰€ä»¥å…ˆä¸ç”¨ç†ä¼š,ç­‰å­¦äº†æ³›å‹ä½ å°±çŸ¥é“äº†
+		addæ–¹æ³•å¦‚æœæ˜¯Listé›†åˆä¸€ç›´éƒ½è¿”å›true,å› ä¸ºListé›†åˆä¸­æ˜¯å¯ä»¥å­˜å‚¨é‡å¤å…ƒç´ çš„
+		å¦‚æœæ˜¯Seté›†åˆå½“å­˜å‚¨é‡å¤å…ƒç´ çš„æ—¶å€™,å°±ä¼šè¿”å›false
 		
-		ArrayListµÄ¸¸ÀàµÄ¸¸ÀàÖØĞ´toString·½·¨,ËùÒÔÔÚ´òÓ¡¶ÔÏóµÄÒıÓÃµÄÊ±ºò,Êä³öµÄ½á¹û²»ÊÇObjectÀàÖĞtoStringµÄ½á¹û
+		ArrayListçš„çˆ¶ç±»çš„çˆ¶ç±»é‡å†™toStringæ–¹æ³•,æ‰€ä»¥åœ¨æ‰“å°å¯¹è±¡çš„å¼•ç”¨çš„æ—¶å€™,è¾“å‡ºçš„ç»“æœä¸æ˜¯Objectç±»ä¸­toStringçš„ç»“æœ
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -37,20 +37,20 @@ public class Demo2_Collection {
 		c.add("c");
 		c.add("d");
 		
-		//c.remove("b");										//É¾³ıÖ¸¶¨ÔªËØ
-		//c.clear();											//Çå¿Õ¼¯ºÏ
-		//System.out.println(c.contains("b"));					//ÅĞ¶ÏÊÇ·ñ°üº¬
+		//c.remove("b");										//åˆ é™¤æŒ‡å®šå…ƒç´ 
+		//c.clear();											//æ¸…ç©ºé›†åˆ
+		//System.out.println(c.contains("b"));					//åˆ¤æ–­æ˜¯å¦åŒ…å«
 		//System.out.println(c.isEmpty());
-		System.out.println(c.size()); 							//»ñÈ¡ÔªËØµÄ¸öÊı
+		System.out.println(c.size()); 							//è·å–å…ƒç´ çš„ä¸ªæ•°
 		System.out.println(c);
 	}
 
 	public static void demo1() {
-		Collection c = new ArrayList();						//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+		Collection c = new ArrayList();						//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
 		boolean b1 = c.add("abc");
-		boolean b2 = c.add(true);							//×Ô¶¯×°Ïänew Boolean(true);
+		boolean b2 = c.add(true);							//è‡ªåŠ¨è£…ç®±new Boolean(true);
 		boolean b3 = c.add(100);
-		boolean b4 = c.add(new Student("ÕÅÈı",23));			
+		boolean b4 = c.add(new Student("å¼ ä¸‰",23));			
 		boolean b5 = c.add("abc");
 		
 		System.out.println(b1);

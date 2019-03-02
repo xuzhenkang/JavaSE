@@ -1,62 +1,62 @@
 package javase.oo.ootest;
 
-class Test2_Employee {						//employeeÔ±¹¤
+class Test2_Employee {						//employeeå‘˜å·¥
 	public static void main(String[] args) {
-		Employee e = new Employee("Áîºü³å","9527",20000);
+		Employee e = new Employee("ä»¤ç‹å†²","9527",20000);
 		e.work();
 	}
 }
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º¶¨ÒåÒ»¸öÔ±¹¤ÀàEmployee
-	* ×Ô¼º·ÖÎö³ö¼¸¸ö³ÉÔ±£¬È»ºó¸ø³ö³ÉÔ±±äÁ¿
-		* ĞÕÃûname,¹¤ºÅid,¹¤×Êsalary 
-	* ¹¹Ôì·½·¨£¬
-		* ¿Õ²ÎºÍÓĞ²ÎµÄ
-	* getXxx()setXxx()·½·¨£¬
-	* ÒÔ¼°Ò»¸öÏÔÊ¾ËùÓĞ³ÉÔ±ĞÅÏ¢µÄ·½·¨¡£²¢²âÊÔ¡£
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šå®šä¹‰ä¸€ä¸ªå‘˜å·¥ç±»Employee
+	* è‡ªå·±åˆ†æå‡ºå‡ ä¸ªæˆå‘˜ï¼Œç„¶åç»™å‡ºæˆå‘˜å˜é‡
+		* å§“åname,å·¥å·id,å·¥èµ„salary 
+	* æ„é€ æ–¹æ³•ï¼Œ
+		* ç©ºå‚å’Œæœ‰å‚çš„
+	* getXxx()setXxx()æ–¹æ³•ï¼Œ
+	* ä»¥åŠä¸€ä¸ªæ˜¾ç¤ºæ‰€æœ‰æˆå‘˜ä¿¡æ¯çš„æ–¹æ³•ã€‚å¹¶æµ‹è¯•ã€‚
 		* work 
 */
 class Employee {
-	private String name;					//ĞÕÃû
-	private String id;						//¹¤ºÅ
-	private double salary;					//¹¤×Ê
+	private String name;					//å§“å
+	private String id;						//å·¥å·
+	private double salary;					//å·¥èµ„
 
-	public Employee() {}					//¿Õ²Î¹¹Ôì
+	public Employee() {}					//ç©ºå‚æ„é€ 
 
-	public Employee(String name, String id, double salary) {//ÓĞ²Î¹¹Ôì
+	public Employee(String name, String id, double salary) {//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.id = id;
 		this.salary = salary;
 	}
 
-	public void setName(String name) {		//ÉèÖÃĞÕÃû
+	public void setName(String name) {		//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {				//»ñÈ¡ĞÕÃû
+	public String getName() {				//è·å–å§“å
 		return name;
 	}
 
-	public void setId(String id) {			//ÉèÖÃid
+	public void setId(String id) {			//è®¾ç½®id
 		this.id = id;
 	}
 
-	public String getId() {					//»ñÈ¡id
+	public String getId() {					//è·å–id
 		return id;
 	}
 
-	public void setSalary(double salary) {	//ÉèÖÃ¹¤×Ê
+	public void setSalary(double salary) {	//è®¾ç½®å·¥èµ„
 		this.salary = salary;
 	}
 	
-	public double getSalary() {				//»ñÈ¡¹¤×Ê
+	public double getSalary() {				//è·å–å·¥èµ„
 		return salary;
 	}
 
 	public void work() {
-		System.out.println("ÎÒµÄĞÕÃûÊÇ:" + name + ",ÎÒµÄ¹¤ºÅÊÇ:" + id + ",ÎÒµÄ¹¤×ÊÊÇ:" + salary 
-			+ ",ÎÒµÄ¹¤×÷ÄÚÈİÊÇÇÃ´úÂë");
+		System.out.println("æˆ‘çš„å§“åæ˜¯:" + name + ",æˆ‘çš„å·¥å·æ˜¯:" + id + ",æˆ‘çš„å·¥èµ„æ˜¯:" + salary 
+			+ ",æˆ‘çš„å·¥ä½œå†…å®¹æ˜¯æ•²ä»£ç ");
 	}
 }
 	

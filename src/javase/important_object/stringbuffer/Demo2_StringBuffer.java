@@ -3,18 +3,18 @@ package javase.important_object.stringbuffer;
 public class Demo2_StringBuffer {
 
 	/**
-	 * * A:StringBufferµÄÌí¼Ó¹¦ÄÜ
+	 * * A:StringBufferçš„æ·»åŠ åŠŸèƒ½
 		* public StringBuffer append(String str):
-			* ¿ÉÒÔ°ÑÈÎÒâÀàĞÍÊı¾İÌí¼Óµ½×Ö·û´®»º³åÇøÀïÃæ,²¢·µ»Ø×Ö·û´®»º³åÇø±¾Éí
+			* å¯ä»¥æŠŠä»»æ„ç±»å‹æ•°æ®æ·»åŠ åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºé‡Œé¢,å¹¶è¿”å›å­—ç¬¦ä¸²ç¼“å†²åŒºæœ¬èº«
 		* public StringBuffer insert(int offset,String str):
-			* ÔÚÖ¸¶¨Î»ÖÃ°ÑÈÎÒâÀàĞÍµÄÊı¾İ²åÈëµ½×Ö·û´®»º³åÇøÀïÃæ,²¢·µ»Ø×Ö·û´®»º³åÇø±¾Éí
-		StringBufferÊÇ×Ö·û´®»º³åÇø,µ±newµÄÊ±ºòÊÇÔÚ¶ÑÄÚ´æ´´½¨ÁËÒ»¸ö¶ÔÏó,µ×²ãÊÇÒ»¸ö³¤¶ÈÎª16µÄ×Ö·ûÊı×é
-		µ±µ÷ÓÃÌí¼ÓµÄ·½·¨Ê±,²»»áÔÙÖØĞÂ´´½¨¶ÔÏó,ÔÚ²»¶ÏÏòÔ­»º³åÇøÌí¼Ó×Ö·û
+			* åœ¨æŒ‡å®šä½ç½®æŠŠä»»æ„ç±»å‹çš„æ•°æ®æ’å…¥åˆ°å­—ç¬¦ä¸²ç¼“å†²åŒºé‡Œé¢,å¹¶è¿”å›å­—ç¬¦ä¸²ç¼“å†²åŒºæœ¬èº«
+		StringBufferæ˜¯å­—ç¬¦ä¸²ç¼“å†²åŒº,å½“newçš„æ—¶å€™æ˜¯åœ¨å †å†…å­˜åˆ›å»ºäº†ä¸€ä¸ªå¯¹è±¡,åº•å±‚æ˜¯ä¸€ä¸ªé•¿åº¦ä¸º16çš„å­—ç¬¦æ•°ç»„
+		å½“è°ƒç”¨æ·»åŠ çš„æ–¹æ³•æ—¶,ä¸ä¼šå†é‡æ–°åˆ›å»ºå¯¹è±¡,åœ¨ä¸æ–­å‘åŸç¼“å†²åŒºæ·»åŠ å­—ç¬¦
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		StringBuffer sb = new StringBuffer("1234");
-		sb.insert(3, "heima");						//ÔÚÖ¸¶¨Î»ÖÃÌí¼ÓÔªËØ,Èç¹ûÃ»ÓĞÖ¸¶¨Î»ÖÃµÄË÷Òı¾Í»á±¨Ë÷ÒıÔ½½çÒì³£
+		sb.insert(3, "heima");						//åœ¨æŒ‡å®šä½ç½®æ·»åŠ å…ƒç´ ,å¦‚æœæ²¡æœ‰æŒ‡å®šä½ç½®çš„ç´¢å¼•å°±ä¼šæŠ¥ç´¢å¼•è¶Šç•Œå¼‚å¸¸
 		
 		System.out.println(sb);
 	}
@@ -26,7 +26,7 @@ public class Demo2_StringBuffer {
 		StringBuffer sb4 = sb.append(100);
 		
 		
-		System.out.println(sb.toString());			//StringBufferÀàÖĞÖØĞ´ÁËtoString·½·¨,ÏÔÊ¾µÄÊÇ¶ÔÏóÖĞµÄÊôĞÔÖµ
+		System.out.println(sb.toString());			//StringBufferç±»ä¸­é‡å†™äº†toStringæ–¹æ³•,æ˜¾ç¤ºçš„æ˜¯å¯¹è±¡ä¸­çš„å±æ€§å€¼
 		System.out.println(sb2.toString());
 		System.out.println(sb3.toString());
 		System.out.println(sb4.toString());

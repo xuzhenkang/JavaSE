@@ -5,59 +5,59 @@ class Demo6_Extends {
 		Son3 s1 = new Son3();
 		System.out.println(s1.getName() + "..." + s1.getAge());
 		System.out.println("--------------------");
-		Son3 s2 = new Son3("ÕÅÈı",23);
+		Son3 s2 = new Son3("å¼ ä¸‰",23);
 		System.out.println(s2.getName() + "..." + s2.getAge());
 	}
 }
 /*
-* A:°¸ÀıÑİÊ¾
-	* ¸¸ÀàÃ»ÓĞÎŞ²Î¹¹Ôì·½·¨,×ÓÀàÔõÃ´°ì?
-	* super½â¾ö
-	* this½â¾ö
-* B:×¢ÒâÊÂÏî
-	* super(¡­)»òÕßthis(¡­.)±ØĞë³öÏÖÔÚ¹¹Ôì·½·¨µÄµÚÒ»ÌõÓï¾äÉÏ
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* çˆ¶ç±»æ²¡æœ‰æ— å‚æ„é€ æ–¹æ³•,å­ç±»æ€ä¹ˆåŠ?
+	* superè§£å†³
+	* thisè§£å†³
+* B:æ³¨æ„äº‹é¡¹
+	* super(â€¦)æˆ–è€…this(â€¦.)å¿…é¡»å‡ºç°åœ¨æ„é€ æ–¹æ³•çš„ç¬¬ä¸€æ¡è¯­å¥ä¸Š
 */
 class Father3 {
-	private String name;			//ĞÕÃû
-	private int age;				//ÄêÁä
+	private String name;			//å§“å
+	private int age;				//å¹´é¾„
 
-	public Father3() {				//¿Õ²Î¹¹Ôì
-		System.out.println("Father ¿Õ²Î¹¹Ôì");
+	public Father3() {				//ç©ºå‚æ„é€ 
+		System.out.println("Father ç©ºå‚æ„é€ ");
 	}
 
-	public Father3(String name,int age) {	//ÓĞ²Î¹¹Ôì
+	public Father3(String name,int age) {	//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
-		System.out.println("Father ÓĞ²Î¹¹Ôì");
+		System.out.println("Father æœ‰å‚æ„é€ ");
 	}
 
-	public void setName(String name) {	//ÉèÖÃĞÕÃû
+	public void setName(String name) {	//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {			//»ñÈ¡ĞÕÃû
+	public String getName() {			//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {		//ÉèÖÃÄêÁä
+	public void setAge(int age) {		//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {				//»ñÈ¡ÄêÁä
+	public int getAge() {				//è·å–å¹´é¾„
 		return age;
 	}
 }
 
 class Son3 extends Father3 {
-	public Son3() {						//¿Õ²Î¹¹Ôì
-		this("ÍõÎå",25);				//±¾ÀàÖĞµÄ¹¹Ôì·½·¨
-		//super("ÀîËÄ",24);				//µ÷ÓÃ¸¸ÀàÖĞµÄ¹¹Ôì·½·¨
+	public Son3() {						//ç©ºå‚æ„é€ 
+		this("ç‹äº”",25);				//æœ¬ç±»ä¸­çš„æ„é€ æ–¹æ³•
+		//super("æå››",24);				//è°ƒç”¨çˆ¶ç±»ä¸­çš„æ„é€ æ–¹æ³•
 		
-		System.out.println("Son ¿Õ²Î¹¹Ôì");
+		System.out.println("Son ç©ºå‚æ„é€ ");
 	}
 
-	public Son3(String name,int age) {	//ÓĞ²Î¹¹Ôì
+	public Son3(String name,int age) {	//æœ‰å‚æ„é€ 
 		super(name,age);
-		System.out.println("Son ÓĞ²Î¹¹Ôì");
+		System.out.println("Son æœ‰å‚æ„é€ ");
 	}
 }

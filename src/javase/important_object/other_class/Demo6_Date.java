@@ -5,12 +5,12 @@ import java.util.Date;
 public class Demo6_Date {
 
 	/**
-	 * * A:DateÀàµÄ¸ÅÊöÊÇutil°üÏÂµÄ,²»ÄÜµ¼Èësql°üµÄ
-			* Àà Date ±íÊ¾ÌØ¶¨µÄË²¼ä£¬¾«È·µ½ºÁÃë¡£ 
-		* B:¹¹Ôì·½·¨
+	 * * A:Dateç±»çš„æ¦‚è¿°æ˜¯utilåŒ…ä¸‹çš„,ä¸èƒ½å¯¼å…¥sqlåŒ…çš„
+			* ç±» Date è¡¨ç¤ºç‰¹å®šçš„ç¬é—´ï¼Œç²¾ç¡®åˆ°æ¯«ç§’ã€‚ 
+		* B:æ„é€ æ–¹æ³•
 			* public Date()
 			* public Date(long date)
-		* C:³ÉÔ±·½·¨
+		* C:æˆå‘˜æ–¹æ³•
 			* public long getTime()
 			* public void setTime(long time)
 	 */
@@ -18,22 +18,22 @@ public class Demo6_Date {
 		//demo1();
 		//demo2();
 		Date d1 = new Date();	
-		d1.setTime(1000);								//ÉèÖÃºÁÃëÖµ,¸Ä±äÊ±¼ä¶ÔÏó
+		d1.setTime(1000);								//è®¾ç½®æ¯«ç§’å€¼,æ”¹å˜æ—¶é—´å¯¹è±¡
 		System.out.println(d1);
 	}
 
 	public static void demo2() {
 		Date d1 = new Date();	
-		System.out.println(d1.getTime());				//Í¨¹ıÊ±¼ä¶ÔÏó»ñÈ¡ºÁÃëÖµ
-		System.out.println(System.currentTimeMillis());	//Í¨¹ıÏµÍ³ÀàµÄ·½·¨»ñÈ¡µ±Ç°Ê±¼äºÁÃëÖµ
+		System.out.println(d1.getTime());				//é€šè¿‡æ—¶é—´å¯¹è±¡è·å–æ¯«ç§’å€¼
+		System.out.println(System.currentTimeMillis());	//é€šè¿‡ç³»ç»Ÿç±»çš„æ–¹æ³•è·å–å½“å‰æ—¶é—´æ¯«ç§’å€¼
 	}
 
 	public static void demo1() {
-		Date d1 = new Date();					//Èç¹ûÃ»ÓĞ´«²ÎÊı´ú±íµÄÊÇµ±Ç°Ê±¼ä
+		Date d1 = new Date();					//å¦‚æœæ²¡æœ‰ä¼ å‚æ•°ä»£è¡¨çš„æ˜¯å½“å‰æ—¶é—´
 		System.out.println(d1);
 		
-		Date d2 = new Date(0);					//Èç¹û¹¹Ôì·½·¨ÖĞ²ÎÊı´«Îª0´ú±íµÄÊÇ1970Äê1ÔÂ1ÈÕ
-		System.out.println(d2);					//Í¨¹ıºÁÃëÖµ´´½¨Ê±¼ä¶ÔÏó
+		Date d2 = new Date(0);					//å¦‚æœæ„é€ æ–¹æ³•ä¸­å‚æ•°ä¼ ä¸º0ä»£è¡¨çš„æ˜¯1970å¹´1æœˆ1æ—¥
+		System.out.println(d2);					//é€šè¿‡æ¯«ç§’å€¼åˆ›å»ºæ—¶é—´å¯¹è±¡
 	}
 
 }

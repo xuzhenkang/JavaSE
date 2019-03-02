@@ -4,15 +4,15 @@ import java.util.Random;
 
 public class TestRandom {
 	/**
-	 * * A:RandomÀàµÄ¸ÅÊö
-			* ´ËÀàÓÃÓÚ²úÉúËæ»úÊıÈç¹ûÓÃÏàÍ¬µÄÖÖ×Ó´´½¨Á½¸ö Random ÊµÀı£¬
-			* Ôò¶ÔÃ¿¸öÊµÀı½øĞĞÏàÍ¬µÄ·½·¨µ÷ÓÃĞòÁĞ£¬ËüÃÇ½«Éú³É²¢·µ»ØÏàÍ¬µÄÊı×ÖĞòÁĞ¡£
-		* B:¹¹Ôì·½·¨
+	 * * A:Randomç±»çš„æ¦‚è¿°
+			* æ­¤ç±»ç”¨äºäº§ç”Ÿéšæœºæ•°å¦‚æœç”¨ç›¸åŒçš„ç§å­åˆ›å»ºä¸¤ä¸ª Random å®ä¾‹ï¼Œ
+			* åˆ™å¯¹æ¯ä¸ªå®ä¾‹è¿›è¡Œç›¸åŒçš„æ–¹æ³•è°ƒç”¨åºåˆ—ï¼Œå®ƒä»¬å°†ç”Ÿæˆå¹¶è¿”å›ç›¸åŒçš„æ•°å­—åºåˆ—ã€‚
+		* B:æ„é€ æ–¹æ³•
 			* public Random()
 			* public Random(long seed)
-		* C:³ÉÔ±·½·¨
+		* C:æˆå‘˜æ–¹æ³•
 			* public int nextInt()
-			* public int nextInt(int n)(ÖØµãÕÆÎÕ)
+			* public int nextInt(int n)(é‡ç‚¹æŒæ¡)
 	 */
 	public static void main(String[] args) {
 		Random r = new Random();
@@ -22,7 +22,7 @@ public class TestRandom {
 		
 		for(int i = 0; i < 10; i++) {
 			//System.out.println(r.nextInt());
-			System.out.println(r.nextInt(100));			//ÒªÇóÕÆÎÕ,Éú³ÉÔÚ0µ½n·¶Î§ÄÚµÄËæ»úÊı,°üº¬0²»°üº¬n
+			System.out.println(r.nextInt(100));			//è¦æ±‚æŒæ¡,ç”Ÿæˆåœ¨0åˆ°nèŒƒå›´å†…çš„éšæœºæ•°,åŒ…å«0ä¸åŒ…å«n
 		}
 		
 		/*

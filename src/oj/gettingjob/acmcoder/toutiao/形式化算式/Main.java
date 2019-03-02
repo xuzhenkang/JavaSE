@@ -1,4 +1,4 @@
-package oj.gettingjob.acmcoder.toutiao.ĞÎÊ½»¯ËãÊ½;
+package oj.gettingjob.acmcoder.toutiao.å½¢å¼åŒ–ç®—å¼;
 
 import java.util.Scanner;
 

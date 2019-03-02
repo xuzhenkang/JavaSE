@@ -1,23 +1,23 @@
 package javase.test.game;
 
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º²ÂÊı×ÖĞ¡ÓÎÏ·(Êı¾İÔÚ1-100Ö®¼ä)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šçŒœæ•°å­—å°æ¸¸æˆ(æ•°æ®åœ¨1-100ä¹‹é—´)
 */
 import java.util.Scanner;
 class Test1_GuessNum {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);				//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı,·¶Î§ÔÚ1-100Ö®¼ä");
-		int guessNum = (int)(Math.random() * 100) + 1;		//ĞÄÀïÏëµÄËæ»úÊı
-		while (true) {										//ÒòÎªĞèÒª²ÂºÜ¶à´Î,ËùÒÔÓÃÎŞÏŞÑ­»·
-			int result = sc.nextInt();						//´ó¼Ò²ÂµÄÊı
-			if (result > guessNum) {						//Èç¹ûÄãÃÇ²ÂµÄÊı´óÓÚÁËÎÒĞÄÀïÏëµÄÊı
-				System.out.println("´óÁË");					//ÌáÊ¾´óÁË
-			} else if (result < guessNum) {					//Èç¹ûÄãÃÇ²ÂµÄÊıĞ¡ÓÚÁËÎÒĞÄÀïÏëµÄÊı
-				System.out.println("Ğ¡ÁË");					//ÌáÊ¾Ğ¡ÁË
-			} else {										//Èç¹û¼È²»´óÒ²²»Ğ¡
-				System.out.println("ÖĞÁË");					//ÖĞÁË
+		Scanner sc = new Scanner(System.in);				//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°,èŒƒå›´åœ¨1-100ä¹‹é—´");
+		int guessNum = (int)(Math.random() * 100) + 1;		//å¿ƒé‡Œæƒ³çš„éšæœºæ•°
+		while (true) {										//å› ä¸ºéœ€è¦çŒœå¾ˆå¤šæ¬¡,æ‰€ä»¥ç”¨æ— é™å¾ªç¯
+			int result = sc.nextInt();						//å¤§å®¶çŒœçš„æ•°
+			if (result > guessNum) {						//å¦‚æœä½ ä»¬çŒœçš„æ•°å¤§äºäº†æˆ‘å¿ƒé‡Œæƒ³çš„æ•°
+				System.out.println("å¤§äº†");					//æç¤ºå¤§äº†
+			} else if (result < guessNum) {					//å¦‚æœä½ ä»¬çŒœçš„æ•°å°äºäº†æˆ‘å¿ƒé‡Œæƒ³çš„æ•°
+				System.out.println("å°äº†");					//æç¤ºå°äº†
+			} else {										//å¦‚æœæ—¢ä¸å¤§ä¹Ÿä¸å°
+				System.out.println("ä¸­äº†");					//ä¸­äº†
 				break;
 			}
 		}

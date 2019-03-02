@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 /**
 </div>
-<h2 class="subject-item-title">ÌâÄ¿ÃèÊö</h2>
+<h2 class="subject-item-title">é¢˜ç›®æè¿°</h2>
 <div class="subject-describe">
-<p>  ¹¦ÄÜ:ÊäÈëÒ»¸öÕýÕûÊý£¬°´ÕÕ´ÓÐ¡µ½´óµÄË³ÐòÊä³öËüµÄËùÓÐÖÊÊýµÄÒò×Ó£¨Èç180µÄÖÊÊýÒò×ÓÎª2 2 3 3 5 £© </p>
+<p>  åŠŸèƒ½:è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼ŒæŒ‰ç…§ä»Žå°åˆ°å¤§çš„é¡ºåºè¾“å‡ºå®ƒçš„æ‰€æœ‰è´¨æ•°çš„å› å­ï¼ˆå¦‚180çš„è´¨æ•°å› å­ä¸º2 2 3 3 5 ï¼‰ </p>
 <div>
-  <span>×îºóÒ»¸öÊýºóÃæÒ²ÒªÓÐ¿Õ¸ñ</span>
+  <span>æœ€åŽä¸€ä¸ªæ•°åŽé¢ä¹Ÿè¦æœ‰ç©ºæ ¼</span>
 </div>
 <div>
   <span>
     <br>
   </span>
 </div>
-<p>  ÏêÏ¸ÃèÊö£º </p>
+<p>  è¯¦ç»†æè¿°ï¼š </p>
 <p>
-  <br> º¯Êý½Ó¿ÚËµÃ÷£º </p>
+  <br> å‡½æ•°æŽ¥å£è¯´æ˜Žï¼š </p>
 <p>  public String getResult(long ulDataInput) </p>
-<p>  ÊäÈë²ÎÊý£º </p>
-<p>  long ulDataInput£ºÊäÈëµÄÕýÕûÊý </p>
-<p>  ·µ»ØÖµ£º </p>
+<p>  è¾“å…¥å‚æ•°ï¼š </p>
+<p>  long ulDataInputï¼šè¾“å…¥çš„æ­£æ•´æ•° </p>
+<p>  è¿”å›žå€¼ï¼š </p>
 <p>  String </p>
 <p>
   <br>
@@ -30,23 +30,23 @@ import java.util.Scanner;
   <br>
 </p>
 <br/>
-<h5><b>ÊäÈëÃèÊö:</b></h5>
-<pre><p>ÊäÈëÒ»¸ölongÐÍÕûÊý</p></pre>
+<h5><b>è¾“å…¥æè¿°:</b></h5>
+<pre><p>è¾“å…¥ä¸€ä¸ªlongåž‹æ•´æ•°</p></pre>
 <br/>
 <br/>
-<h5><b>Êä³öÃèÊö:</b></h5>
-<pre><p>°´ÕÕ´ÓÐ¡µ½´óµÄË³ÐòÊä³öËüµÄËùÓÐÖÊÊýµÄÒò×Ó£¬ÒÔ¿Õ¸ñ¸ô¿ª¡£×îºóÒ»¸öÊýºóÃæÒ²ÒªÓÐ¿Õ¸ñ¡£</p></pre>
+<h5><b>è¾“å‡ºæè¿°:</b></h5>
+<pre><p>æŒ‰ç…§ä»Žå°åˆ°å¤§çš„é¡ºåºè¾“å‡ºå®ƒçš„æ‰€æœ‰è´¨æ•°çš„å› å­ï¼Œä»¥ç©ºæ ¼éš”å¼€ã€‚æœ€åŽä¸€ä¸ªæ•°åŽé¢ä¹Ÿè¦æœ‰ç©ºæ ¼ã€‚</p></pre>
 <br/>
-<h5><b>ÊäÈëÀý×Ó:</b></h5>
+<h5><b>è¾“å…¥ä¾‹å­:</b></h5>
 <pre>180
 </pre>
 <br/>
-<h5><b>Êä³öÀý×Ó:</b></h5>
+<h5><b>è¾“å‡ºä¾‹å­:</b></h5>
 <pre>2 2 3 3 5
 </pre>
 </div>
  * @author kang
- *ÔËÐÐÊ±¼ä£º37ms Õ¼ÓÃÄÚ´æ£º251k
+ *è¿è¡Œæ—¶é—´ï¼š37ms å ç”¨å†…å­˜ï¼š251k
  */
 public class Main {
 	public static boolean divided(long num, long divider) {

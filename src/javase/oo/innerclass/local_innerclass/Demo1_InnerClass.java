@@ -6,7 +6,7 @@ class Demo1_InnerClass {
 		o.method();
 	}
 }
-//¾Ö²¿ÄÚ²¿Àà
+//å±€éƒ¨å†…éƒ¨ç±»
 class Outer {
 	public void method() {
 		final int num = 10;
@@ -21,7 +21,7 @@ class Outer {
 	}
 
 	/*public void run() {
-		Inner i = new Inner();				//¾Ö²¿ÄÚ²¿Àà,Ö»ÄÜÔÚÆäËùÔÚµÄ·½·¨ÖĞ·ÃÎÊ
+		Inner i = new Inner();				//å±€éƒ¨å†…éƒ¨ç±»,åªèƒ½åœ¨å…¶æ‰€åœ¨çš„æ–¹æ³•ä¸­è®¿é—®
 		i.print();
 	}*/
 }

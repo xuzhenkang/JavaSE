@@ -4,15 +4,15 @@ class Demo1_ArrayTool {
 	public static void main(String[] args) {
 		int[] arr = {33,11,22,66,55,44};
 		/*ArrayTool at = new ArrayTool();
-		int max = at.getMax(arr);				//»ñÈ¡×îÖµ
+		int max = at.getMax(arr);				//è·å–æœ€å€¼
 		System.out.println(max);
 		
 		System.out.println("---------------");
-		at.print(arr);							//´òÓ¡
+		at.print(arr);							//æ‰“å°
 		System.out.println();
 		System.out.println("---------------");
-		System.out.println("·´×ªºó:");
-		at.revArray(arr);						//·´×ª
+		System.out.println("åè½¬å:");
+		at.revArray(arr);						//åè½¬
 		at.print(arr);	*/
 
 		ArrayTool.print(arr);

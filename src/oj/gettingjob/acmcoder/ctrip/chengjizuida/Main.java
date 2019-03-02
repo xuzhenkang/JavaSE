@@ -3,10 +3,10 @@ package oj.gettingjob.acmcoder.ctrip.chengjizuida;
 import java.util.Scanner;
 
 /**
- * ³Ë»ý×î´ó Ê±¼äÏÞÖÆ£ºC/C++ÓïÑÔ 3MS£»ÆäËûÓïÑÔ 2003MS ÄÚ´æÏÞÖÆ£ºC/C++ÓïÑÔ 65536KB£»ÆäËûÓïÑÔ 589824KB ÌâÄ¿ÃèÊö£º
- * ÓÐÒ»¸öÕûÊýn£¬½«n·Ö½â³ÉÈô¸É¸ö²»Í¬×ÔÈ»ÊýÖ®ºÍ£¬ÎÊÈçºÎ·Ö½âÄÜÊ¹ÕâÐ©ÊýµÄ³Ë»ý×î´ó£¬Êä³öÕâ¸ö³Ë»ým ÊäÈë Ò»¸öÕûÊý£¬²»³¬¹ý50 Êä³ö Ò»¸öÕûÊý
+ * ä¹˜ç§¯æœ€å¤§ æ—¶é—´é™åˆ¶ï¼šC/C++è¯­è¨€ 3MSï¼›å…¶ä»–è¯­è¨€ 2003MS å†…å­˜é™åˆ¶ï¼šC/C++è¯­è¨€ 65536KBï¼›å…¶ä»–è¯­è¨€ 589824KB é¢˜ç›®æè¿°ï¼š
+ * æœ‰ä¸€ä¸ªæ•´æ•°nï¼Œå°†nåˆ†è§£æˆè‹¥å¹²ä¸ªä¸åŒè‡ªç„¶æ•°ä¹‹å’Œï¼Œé—®å¦‚ä½•åˆ†è§£èƒ½ä½¿è¿™äº›æ•°çš„ä¹˜ç§¯æœ€å¤§ï¼Œè¾“å‡ºè¿™ä¸ªä¹˜ç§¯m è¾“å…¥ ä¸€ä¸ªæ•´æ•°ï¼Œä¸è¶…è¿‡50 è¾“å‡º ä¸€ä¸ªæ•´æ•°
  * 
- * ÑùÀýÊäÈë 15 ÑùÀýÊä³ö 144
+ * æ ·ä¾‹è¾“å…¥ 15 æ ·ä¾‹è¾“å‡º 144
  * 
  * @author lenovo
  *

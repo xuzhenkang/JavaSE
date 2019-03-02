@@ -2,18 +2,18 @@ package javase.oo.innerclass.anonymous_innerclass.test;
 
 class Test2_NoNameInnerClass {
 	public static void main(String[] args) {
-		//Outer.method().show();			//Á´Ê½±à³Ì,Ã¿´Îµ÷ÓÃ·½·¨ºó»¹ÄÜ¼ÌĞøµ÷ÓÃ·½·¨,Ö¤Ã÷µ÷ÓÃ·½·¨·µ»ØµÄÊÇ¶ÔÏó
+		//Outer.method().show();			//é“¾å¼ç¼–ç¨‹,æ¯æ¬¡è°ƒç”¨æ–¹æ³•åè¿˜èƒ½ç»§ç»­è°ƒç”¨æ–¹æ³•,è¯æ˜è°ƒç”¨æ–¹æ³•è¿”å›çš„æ˜¯å¯¹è±¡
 		Inter2 i = Outer2.method();
 		i.show();
 	}
 }
-//°´ÕÕÒªÇó£¬²¹Æë´úÂë
+//æŒ‰ç…§è¦æ±‚ï¼Œè¡¥é½ä»£ç 
 interface Inter2 { 
 	void show(); 
 }
 
 class Outer2 { 
-	//²¹Æë´úÂë 
+	//è¡¥é½ä»£ç  
 	public static Inter2 method() {
 		return new Inter2() {
 			public void show() {
@@ -23,4 +23,4 @@ class Outer2 {
 	}
 }
 
-//ÒªÇóÔÚ¿ØÖÆÌ¨Êä³ö¡±HelloWorld¡±
+//è¦æ±‚åœ¨æ§åˆ¶å°è¾“å‡ºâ€HelloWorldâ€orldï¿½ï¿½

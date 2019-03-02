@@ -2,7 +2,7 @@ package javase.base.operator.ternary_operator;
 
 class Demo1_Operator {
 	public static void main(String[] args) {
-		//(¹ØÏµ±í´ïÊ½) ? ±í´ïÊ½1 : ±í´ïÊ½2;
+		//(å…³ç³»è¡¨è¾¾å¼) ? è¡¨è¾¾å¼1 : è¡¨è¾¾å¼2;
 		int x = 10;
 		int y = 5;
 		int z;

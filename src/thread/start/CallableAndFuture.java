@@ -6,10 +6,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * CallableºÍFuture£¬ËüÁ©ºÜÓĞÒâË¼µÄ£¬Ò»¸ö²úÉú½á¹û£¬Ò»¸öÄÃµ½½á¹û¡£
- * Callable½Ó¿ÚÀàËÆÓÚRunnable£¬´ÓÃû×Ö¾Í¿ÉÒÔ¿´³öÀ´ÁË£¬µ«ÊÇRunnable²»»á·µ»Ø½á¹û£¬
- * ²¢ÇÒÎŞ·¨Å×³ö·µ»Ø½á¹ûµÄÒì³££¬¶øCallable¹¦ÄÜ¸üÇ¿´óÒ»Ğ©£¬±»Ïß³ÌÖ´ĞĞºó£¬¿ÉÒÔ·µ»ØÖµ£¬
- * Õâ¸ö·µ»ØÖµ¿ÉÒÔ±»FutureÄÃµ½£¬Ò²¾ÍÊÇËµ£¬Future¿ÉÒÔÄÃµ½Òì²½Ö´ĞĞÈÎÎñµÄ·µ»ØÖµ£¬ ÏÂÃæÀ´¿´Ò»¸ö¼òµ¥µÄÀı×Ó£º
+ * Callableå’ŒFutureï¼Œå®ƒä¿©å¾ˆæœ‰æ„æ€çš„ï¼Œä¸€ä¸ªäº§ç”Ÿç»“æœï¼Œä¸€ä¸ªæ‹¿åˆ°ç»“æœã€‚
+ * Callableæ¥å£ç±»ä¼¼äºRunnableï¼Œä»åå­—å°±å¯ä»¥çœ‹å‡ºæ¥äº†ï¼Œä½†æ˜¯Runnableä¸ä¼šè¿”å›ç»“æœï¼Œ
+ * å¹¶ä¸”æ— æ³•æŠ›å‡ºè¿”å›ç»“æœçš„å¼‚å¸¸ï¼Œè€ŒCallableåŠŸèƒ½æ›´å¼ºå¤§ä¸€äº›ï¼Œè¢«çº¿ç¨‹æ‰§è¡Œåï¼Œå¯ä»¥è¿”å›å€¼ï¼Œ
+ * è¿™ä¸ªè¿”å›å€¼å¯ä»¥è¢«Futureæ‹¿åˆ°ï¼Œä¹Ÿå°±æ˜¯è¯´ï¼ŒFutureå¯ä»¥æ‹¿åˆ°å¼‚æ­¥æ‰§è¡Œä»»åŠ¡çš„è¿”å›å€¼ï¼Œ ä¸‹é¢æ¥çœ‹ä¸€ä¸ªç®€å•çš„ä¾‹å­ï¼š
  * 
  * @author kang
  *
@@ -25,7 +25,7 @@ public class CallableAndFuture {
 		FutureTask<Integer> future = new FutureTask<Integer>(callable);
 		new Thread(future).start();
 		try {
-			Thread.sleep(5000);// ¿ÉÄÜ×öÒ»Ğ©ÊÂÇé
+			Thread.sleep(5000);// å¯èƒ½åšä¸€äº›äº‹æƒ…
 			System.out.println(future.get());
 		} catch (InterruptedException e) {
 			e.printStackTrace();

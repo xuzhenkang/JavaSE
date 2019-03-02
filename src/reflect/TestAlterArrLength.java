@@ -2,7 +2,7 @@ package reflect;
 
 import java.lang.reflect.Array;
 /**
- * 通过反射修改数组大小
+ * 閫氳繃鍙嶅皠淇敼鏁扮粍澶у皬
  * @author kang
  *
  */
@@ -18,7 +18,7 @@ public class TestAlterArrLength {
 	}
 	
 	/**
-	 * 修改数组大小
+	 * 淇敼鏁扮粍澶у皬
 	 * @param obj
 	 * @param len
 	 * @return
@@ -32,7 +32,7 @@ public class TestAlterArrLength {
 	}
 	
 	/**
-	 * 打印
+	 * 鎵撳嵃
 	 * @param obj
 	 */
 	public static void print(Object obj) {
@@ -40,7 +40,7 @@ public class TestAlterArrLength {
 		if (!c.isArray()) {
 			return;
 		}
-		System.out.println("数组长度为：" + Array.getLength(obj));
+		System.out.println("鏁扮粍闀垮害涓猴細" + Array.getLength(obj));
 		for (int i = 0; i < Array.getLength(obj); i++) {
 			System.out.println(Array.get(obj,  i) + " ");
 		}

@@ -3,11 +3,11 @@ class Demo4_Return {
 	public static void main(String[] args) {
 		for (int i = 1;i <= 10 ;i++ ) {
 			if (i == 4) {				
-				//break;						//Í£Ö¹Ñ­»·
-				return;							//·µ»ØµÄÒâË¼,ÓÃÀ´·µ»Ø·½·¨
+				//break;						//åœæ­¢å¾ªçŽ¯
+				return;							//è¿”å›žçš„æ„æ€,ç”¨æ¥è¿”å›žæ–¹æ³•
 			}
 		}
 
-		System.out.println("Ñ­»·½áÊøÁË");
+		System.out.println("å¾ªçŽ¯ç»“æŸäº†");
 	}
 }

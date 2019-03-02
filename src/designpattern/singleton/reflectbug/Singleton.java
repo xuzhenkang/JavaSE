@@ -4,7 +4,7 @@ public class Singleton {
 	private static Singleton instance = new Singleton();
 
 	private Singleton() {
-		/*ÎªÁË·ÀÖ¹Í¨¹ı·´ÉäÆÆ½âµ¥ÀıÄ£Ê½£¬ÔÚ´Ë´¦¼ÓÈçÏÂ´úÂë*/
+		/*ä¸ºäº†é˜²æ­¢é€šè¿‡åå°„ç ´è§£å•ä¾‹æ¨¡å¼ï¼Œåœ¨æ­¤å¤„åŠ å¦‚ä¸‹ä»£ç */
 		if (instance != null)
 			throw new RuntimeException();
 	}

@@ -11,7 +11,7 @@ public class Demo2_FileWriter {
 	 */
 	public static void main(String[] args) throws IOException {
 		FileWriter fw = new FileWriter("yyy.txt");
-		fw.write("´ó¼ÒºÃ,»ù´¡°à¿ì½Ó½üÎ²ÉùÁË,´ó¼ÒÒªÅ¬Á¦,Òª¼á³Ö!!!");
+		fw.write("å¤§å®¶å¥½,åŸºç¡€ç­å¿«æ¥è¿‘å°¾å£°äº†,å¤§å®¶è¦åŠªåŠ›,è¦åšæŒ!!!");
 		fw.write(97);
 		fw.close();
 	}

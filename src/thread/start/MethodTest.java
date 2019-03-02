@@ -4,17 +4,17 @@ import java.util.concurrent.FutureTask;
 
 public class MethodTest {
 	public static void main(String[] args) {
-		// ·½·¨1£¬¼Ì³ĞThread£¬ÖØĞ´run·½·¨£¬Ê¹ÓÃstart()·½·¨Æô¶¯
-		new MethodOne("´´½¨·½·¨1").start();
+		// æ–¹æ³•1ï¼Œç»§æ‰¿Threadï¼Œé‡å†™runæ–¹æ³•ï¼Œä½¿ç”¨start()æ–¹æ³•å¯åŠ¨
+		new MethodOne("åˆ›å»ºæ–¹æ³•1").start();
 		
 		
-		// ·½·¨2£¬ÊµÏÖRunnable½Ó¿Ú£¬ÖØĞ´run·½·¨£¬½«¶ÔÏó·ÅÈëThread¶ÔÏóÖĞÈ¥£¬µ÷ÓÃThread¶ÔÏóµÄstart·½·¨Æô¶¯Ïß³Ì
-		new Thread(new MethodTwo(), "´´½¨·½·¨2").start();
+		// æ–¹æ³•2ï¼Œå®ç°Runnableæ¥å£ï¼Œé‡å†™runæ–¹æ³•ï¼Œå°†å¯¹è±¡æ”¾å…¥Threadå¯¹è±¡ä¸­å»ï¼Œè°ƒç”¨Threadå¯¹è±¡çš„startæ–¹æ³•å¯åŠ¨çº¿ç¨‹
+		new Thread(new MethodTwo(), "åˆ›å»ºæ–¹æ³•2").start();
 		
 		
-		// ·½·¨3£ºÊµÏÖCallable½Ó¿Ú£¬¶¨Òå·µ»ØÖµÀàĞÍ£¬ÖØĞ´call·½·¨£»
-		// Æô¶¯·½·¨Îª£¬½«ÊµÀı·ÅÈëFutureTaskÊµÀıÖĞÈ¥£¬ÔÙ½«FutureTaskÊµÀı·ÅÈëÒ»¸öThread¶ÔÏóÖĞÈ¥£¬Ê¹ÓÃThreadµÄstart·½·¨Æô¶¯¡£
-		// ºÃ´¦£º¾ßÓĞ·µ»ØÖµ
-		new Thread(new FutureTask<Integer>(new MethodThree()), "´´½¨·½·¨3 ").start();
+		// æ–¹æ³•3ï¼šå®ç°Callableæ¥å£ï¼Œå®šä¹‰è¿”å›å€¼ç±»å‹ï¼Œé‡å†™callæ–¹æ³•ï¼›
+		// å¯åŠ¨æ–¹æ³•ä¸ºï¼Œå°†å®ä¾‹æ”¾å…¥FutureTaskå®ä¾‹ä¸­å»ï¼Œå†å°†FutureTaskå®ä¾‹æ”¾å…¥ä¸€ä¸ªThreadå¯¹è±¡ä¸­å»ï¼Œä½¿ç”¨Threadçš„startæ–¹æ³•å¯åŠ¨ã€‚
+		// å¥½å¤„ï¼šå…·æœ‰è¿”å›å€¼
+		new Thread(new FutureTask<Integer>(new MethodThree()), "åˆ›å»ºæ–¹æ³•3 ").start();
 	}
 }

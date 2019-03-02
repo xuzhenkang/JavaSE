@@ -4,53 +4,53 @@ class Test3_SwitchIf {
 	public static void main(String[] args) {
 		/*
 
-		* ¼üÅÌÂ¼ÈëÔÂ·Ý£¬Êä³ö¶ÔÓ¦µÄ¼¾½Ú
-		Ò»ÄêÓÐËÄ¼¾
-		3,4,5´º¼¾
-		6,7,8ÏÄ¼¾
-		9,10,11Çï¼¾
-		12,1,2¶¬¼¾
+		* é”®ç›˜å½•å…¥æœˆä»½ï¼Œè¾“å‡ºå¯¹åº”çš„å­£èŠ‚
+		ä¸€å¹´æœ‰å››å­£
+		3,4,5æ˜¥å­£
+		6,7,8å¤å­£
+		9,10,11ç§‹å­£
+		12,1,2å†¬å­£
 		*/
-		Scanner sc = new Scanner(System.in);	//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëÔÂ·Ý");
-		int month = sc.nextInt();				//½«¼üÅÌÂ¼ÈëµÄ½á¹û´æ´¢ÔÚmonth
+		Scanner sc = new Scanner(System.in);	//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥æœˆä»½");
+		int month = sc.nextInt();				//å°†é”®ç›˜å½•å…¥çš„ç»“æžœå­˜å‚¨åœ¨month
 		/*switch (month) {
 		case 3:
 		case 4:
 		case 5:
-			System.out.println(month + "ÔÂÊÇ´º¼¾");
+			System.out.println(month + "æœˆæ˜¯æ˜¥å­£");
 		break;
 		case 6:
 		case 7:
 		case 8:
-			System.out.println(month + "ÔÂÊÇÏÄ¼¾");
+			System.out.println(month + "æœˆæ˜¯å¤å­£");
 		break;
 		case 9:
 		case 10:
 		case 11:
-			System.out.println(month + "ÔÂÊÇÇï¼¾");
+			System.out.println(month + "æœˆæ˜¯ç§‹å­£");
 		break;
 		case 12:
 		case 1:
 		case 2:
-			System.out.println(month + "ÔÂÊÇ¶¬¼¾");
+			System.out.println(month + "æœˆæ˜¯å†¬å­£");
 		break;
 		default:
-			System.out.println("¶Ô²»ÆðÃ»ÓÐ¶ÔÓ¦µÄ¼¾½Ú");
+			System.out.println("å¯¹ä¸èµ·æ²¡æœ‰å¯¹åº”çš„å­£èŠ‚");
 		break;
 		}*/
 
-		//ÓÃifÓï¾äÀ´Íê³ÉÔÂ·Ý¶ÔÓ¦¼¾½Ú
+		//ç”¨ifè¯­å¥æ¥å®Œæˆæœˆä»½å¯¹åº”å­£èŠ‚
 		if (month > 12 || month < 1) {
-			System.out.println("¶Ô²»ÆðÃ»ÓÐ¶ÔÓ¦µÄ¼¾½Ú");
+			System.out.println("å¯¹ä¸èµ·æ²¡æœ‰å¯¹åº”çš„å­£èŠ‚");
 		}else if (month >= 3 && month <= 5) {
-			System.out.println(month + "ÔÂÊÇ´º¼¾");
+			System.out.println(month + "æœˆæ˜¯æ˜¥å­£");
 		}else if (month >= 6 && month <= 8) {
-			System.out.println(month + "ÔÂÊÇÏÄ¼¾");
+			System.out.println(month + "æœˆæ˜¯å¤å­£");
 		}else if (month >= 9 && month <= 11) {
-			System.out.println(month + "ÔÂÊÇÇï¼¾");
+			System.out.println(month + "æœˆæ˜¯ç§‹å­£");
 		}else {
-			System.out.println(month + "ÔÂÊÇ¶¬¼¾");
+			System.out.println(month + "æœˆæ˜¯å†¬å­£");
 		}
 	}
 }

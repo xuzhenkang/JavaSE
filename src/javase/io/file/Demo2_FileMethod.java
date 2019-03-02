@@ -6,15 +6,15 @@ import java.io.IOException;
 public class Demo2_FileMethod {
 
 	/**
-	 * * A:´´½¨¹¦ÄÜ
-			* public boolean createNewFile():´´½¨ÎÄ¼ş Èç¹û´æÔÚÕâÑùµÄÎÄ¼ş£¬¾Í²»´´½¨ÁË
-			* public boolean mkdir():´´½¨ÎÄ¼ş¼Ğ Èç¹û´æÔÚÕâÑùµÄÎÄ¼ş¼Ğ£¬¾Í²»´´½¨ÁË
-			* public boolean mkdirs():´´½¨ÎÄ¼ş¼Ğ,Èç¹û¸¸ÎÄ¼ş¼Ğ²»´æÔÚ£¬»á°ïÄã´´½¨³öÀ´
-		* B:°¸ÀıÑİÊ¾
-			* FileÀàµÄ´´½¨¹¦ÄÜ
+	 * * A:åˆ›å»ºåŠŸèƒ½
+			* public boolean createNewFile():åˆ›å»ºæ–‡ä»¶ å¦‚æœå­˜åœ¨è¿™æ ·çš„æ–‡ä»¶ï¼Œå°±ä¸åˆ›å»ºäº†
+			* public boolean mkdir():åˆ›å»ºæ–‡ä»¶å¤¹ å¦‚æœå­˜åœ¨è¿™æ ·çš„æ–‡ä»¶å¤¹ï¼Œå°±ä¸åˆ›å»ºäº†
+			* public boolean mkdirs():åˆ›å»ºæ–‡ä»¶å¤¹,å¦‚æœçˆ¶æ–‡ä»¶å¤¹ä¸å­˜åœ¨ï¼Œä¼šå¸®ä½ åˆ›å»ºå‡ºæ¥
+		* B:æ¡ˆä¾‹æ¼”ç¤º
+			* Fileç±»çš„åˆ›å»ºåŠŸèƒ½
 		
-			* ×¢ÒâÊÂÏî£º
-				* Èç¹ûÄã´´½¨ÎÄ¼ş»òÕßÎÄ¼ş¼ĞÍüÁËĞ´ÅÌ·ûÂ·¾¶£¬ÄÇÃ´£¬Ä¬ÈÏÔÚÏîÄ¿Â·¾¶ÏÂ¡£
+			* æ³¨æ„äº‹é¡¹ï¼š
+				* å¦‚æœä½ åˆ›å»ºæ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹å¿˜äº†å†™ç›˜ç¬¦è·¯å¾„ï¼Œé‚£ä¹ˆï¼Œé»˜è®¤åœ¨é¡¹ç›®è·¯å¾„ä¸‹ã€‚
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
@@ -22,16 +22,16 @@ public class Demo2_FileMethod {
 		File dir1 = new File("aaa");
 		System.out.println(dir1.mkdir());
 		
-		File dir2 = new File("bbb.txt");				//ÕâÑùĞ´ÊÇ¿ÉÒÔµÄ,ÎÄ¼ş¼ĞÒ²ÊÇ¿ÉÒÔÓĞºó×ºµÄ
+		File dir2 = new File("bbb.txt");				//è¿™æ ·å†™æ˜¯å¯ä»¥çš„,æ–‡ä»¶å¤¹ä¹Ÿæ˜¯å¯ä»¥æœ‰åç¼€çš„
 		System.out.println(dir2.mkdir());
 		
 		File dir3 = new File("ccc\\ddd");
-		System.out.println(dir3.mkdirs()); 				//´´½¨¶à¼¶Ä¿Â¼
+		System.out.println(dir3.mkdirs()); 				//åˆ›å»ºå¤šçº§ç›®å½•
 	}
 
 	public static void demo1() throws IOException {
 		File file = new File("yyy.txt");
-		System.out.println(file.createNewFile());			//Èç¹ûÃ»ÓĞ¾Í´´½¨,·µ»Øtrue
+		System.out.println(file.createNewFile());			//å¦‚æœæ²¡æœ‰å°±åˆ›å»º,è¿”å›true
 		
 		File file2 = new File("zzz");
 		System.out.println(file2.createNewFile());

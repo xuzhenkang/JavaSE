@@ -4,19 +4,19 @@ public class Person3 {
 	private String name;
 	private int age;
 	/**
-	 * �޲ι�����
+	 * 无参构造器
 	 */
 	public Person3() {}
 	
 	/**
-	 * �вι�����
+	 * 有参构造器
 	 * @param name
 	 */
 	public Person3(String name) {
 		this.name = name;
 	}
 	/**
-	 * �вι�����
+	 * 有参构造器
 	 * @param age
 	 */
 	public Person3(int age) {
@@ -24,7 +24,7 @@ public class Person3 {
 	}
 
 	/**
-	 * �вι�����
+	 * 有参构造器
 	 * @param name
 	 * @param age
 	 */

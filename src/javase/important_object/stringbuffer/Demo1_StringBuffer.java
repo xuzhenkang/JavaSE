@@ -3,28 +3,28 @@ package javase.important_object.stringbuffer;
 public class Demo1_StringBuffer {
 
 	/**
-	 * * A:StringBufferµÄ¹¹Ôì·½·¨£º
-			* public StringBuffer():ÎŞ²Î¹¹Ôì·½·¨
-			* public StringBuffer(int capacity):Ö¸¶¨ÈİÁ¿µÄ×Ö·û´®»º³åÇø¶ÔÏó
-			* public StringBuffer(String str):Ö¸¶¨×Ö·û´®ÄÚÈİµÄ×Ö·û´®»º³åÇø¶ÔÏó
-		* B:StringBufferµÄ·½·¨£º
-			* public int capacity()£º·µ»Øµ±Ç°ÈİÁ¿¡£	ÀíÂÛÖµ(²»ÕÆÎÕ)
-			* public int length():·µ»Ø³¤¶È£¨×Ö·ûÊı£©¡£ Êµ¼ÊÖµ
-		* C:°¸ÀıÑİÊ¾
-			* ¹¹Ôì·½·¨ºÍ³¤¶È·½·¨µÄÊ¹ÓÃ
+	 * * A:StringBufferçš„æ„é€ æ–¹æ³•ï¼š
+			* public StringBuffer():æ— å‚æ„é€ æ–¹æ³•
+			* public StringBuffer(int capacity):æŒ‡å®šå®¹é‡çš„å­—ç¬¦ä¸²ç¼“å†²åŒºå¯¹è±¡
+			* public StringBuffer(String str):æŒ‡å®šå­—ç¬¦ä¸²å†…å®¹çš„å­—ç¬¦ä¸²ç¼“å†²åŒºå¯¹è±¡
+		* B:StringBufferçš„æ–¹æ³•ï¼š
+			* public int capacity()ï¼šè¿”å›å½“å‰å®¹é‡ã€‚	ç†è®ºå€¼(ä¸æŒæ¡)
+			* public int length():è¿”å›é•¿åº¦ï¼ˆå­—ç¬¦æ•°ï¼‰ã€‚ å®é™…å€¼
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* æ„é€ æ–¹æ³•å’Œé•¿åº¦æ–¹æ³•çš„ä½¿ç”¨
 	 */
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer();
-		System.out.println(sb.length());			//ÈİÆ÷ÖĞµÄ×Ö·û¸öÊı,Êµ¼ÊÖµ
-		System.out.println(sb.capacity());			//ÈİÆ÷µÄ³õÊ¼ÈİÁ¿,ÀíÂÛÖµ
+		System.out.println(sb.length());			//å®¹å™¨ä¸­çš„å­—ç¬¦ä¸ªæ•°,å®é™…å€¼
+		System.out.println(sb.capacity());			//å®¹å™¨çš„åˆå§‹å®¹é‡,ç†è®ºå€¼
 		
 		StringBuffer sb2 = new StringBuffer(10);
 		System.out.println(sb2.length());
 		System.out.println(sb2.capacity());
 		
 		StringBuffer sb3 = new StringBuffer("heima");
-		System.out.println(sb3.length());			//Êµ¼Ê×Ö·ûµÄ¸öÊı
-		System.out.println(sb3.capacity());			//×Ö·û´®µÄlength + ³õÊ¼ÈİÁ¿
+		System.out.println(sb3.length());			//å®é™…å­—ç¬¦çš„ä¸ªæ•°
+		System.out.println(sb3.capacity());			//å­—ç¬¦ä¸²çš„length + åˆå§‹å®¹é‡
 		
 	}
 

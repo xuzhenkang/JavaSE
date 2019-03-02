@@ -2,6 +2,6 @@ package javase.helloworld;
 
 class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("´ó¼ÒºÃ");
+		System.out.println("å¤§å®¶å¥½");
 	}
 }

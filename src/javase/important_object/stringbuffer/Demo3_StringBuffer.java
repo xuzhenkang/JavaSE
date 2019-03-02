@@ -3,23 +3,23 @@ package javase.important_object.stringbuffer;
 public class Demo3_StringBuffer {
 
 	/**
-	 * * A:StringBufferµÄÉ¾³ı¹¦ÄÜ
+	 * * A:StringBufferçš„åˆ é™¤åŠŸèƒ½
 		* public StringBuffer deleteCharAt(int index):
-			* É¾³ıÖ¸¶¨Î»ÖÃµÄ×Ö·û£¬²¢·µ»Ø±¾Éí
+			* åˆ é™¤æŒ‡å®šä½ç½®çš„å­—ç¬¦ï¼Œå¹¶è¿”å›æœ¬èº«
 		* public StringBuffer delete(int start,int end):
-			* É¾³ı´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈİ£¬²¢·µ»Ø±¾Éí
+			* åˆ é™¤ä»æŒ‡å®šä½ç½®å¼€å§‹æŒ‡å®šä½ç½®ç»“æŸçš„å†…å®¹ï¼Œå¹¶è¿”å›æœ¬èº«
 	 */
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer();
-		//sb.deleteCharAt(5);					//µ±»º³åÇøÖĞÕâ¸öË÷ÒıÉÏÃ»ÓĞÔªËØµÄÊ±ºò¾Í»á±¨StringIndexOutOfBoundsException
+		//sb.deleteCharAt(5);					//å½“ç¼“å†²åŒºä¸­è¿™ä¸ªç´¢å¼•ä¸Šæ²¡æœ‰å…ƒç´ çš„æ—¶å€™å°±ä¼šæŠ¥StringIndexOutOfBoundsException
 		sb.append("heima");
-		//sb.deleteCharAt(4);					//¸ù¾İË÷ÒıÉ¾³ıµôË÷ÒıÎ»ÖÃÉÏ¶ÔÓ¦µÄ×Ö·û
-		//sb.delete(0, 2);						//É¾³ıµÄÊ±ºòÊÇ°üº¬Í·,²»°üº¬Î²
+		//sb.deleteCharAt(4);					//æ ¹æ®ç´¢å¼•åˆ é™¤æ‰ç´¢å¼•ä½ç½®ä¸Šå¯¹åº”çš„å­—ç¬¦
+		//sb.delete(0, 2);						//åˆ é™¤çš„æ—¶å€™æ˜¯åŒ…å«å¤´,ä¸åŒ…å«å°¾
 		//System.out.println(sb);
-		//sb.delete(0, sb.length());				//Çå¿Õ»º³åÇø
+		//sb.delete(0, sb.length());				//æ¸…ç©ºç¼“å†²åŒº
 		//System.out.println(sb);
 		
-		sb = new StringBuffer();				//²»ÒªÓÃÕâÖÖ·½Ê½Çå¿Õ»º³åÇø,Ô­À´µÄ»á±ä³ÉÀ¬»ø,ÀË·ÑÄÚ´æ
+		sb = new StringBuffer();				//ä¸è¦ç”¨è¿™ç§æ–¹å¼æ¸…ç©ºç¼“å†²åŒº,åŸæ¥çš„ä¼šå˜æˆåƒåœ¾,æµªè´¹å†…å­˜
 		System.out.println(sb);
 	}
 

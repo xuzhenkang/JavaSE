@@ -7,28 +7,28 @@ import java.util.Date;
 public class Test2 {
 
 	/**
-	 * * A:°¸ÀýÑÝÊ¾
-	 * ÐèÇó£ºËãÒ»ÏÂÄãÀ´µ½Õâ¸öÊÀ½ç¶àÉÙÌì?
-	 * ·ÖÎö:
-	 * 1,½«ÉúÈÕ×Ö·û´®ºÍ½ñÌì×Ö·û´®´æÔÚStringÀàÐÍµÄ±äÁ¿ÖÐ
-	 * 2,¶¨ÒåÈÕÆÚ¸ñÊ½»¯¶ÔÏó
-	 * 3,½«ÈÕÆÚ×Ö·û´®×ª»»³ÉÈÕÆÚ¶ÔÏó
-	 * 4,Í¨¹ýÈÕÆÚ¶ÔÏóºóÆÚÊ±¼äºÁÃëÖµ
-	 * 5,½«Á½¸öÊ±¼äºÁÃëÖµÏà¼õ³ýÒÔ1000,ÔÙ³ýÒÔ60,ÔÙ³ýÒÔ60,ÔÙ³ýÒÔ24µÃµ½Ìì
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šç®—ä¸€ä¸‹ä½ æ¥åˆ°è¿™ä¸ªä¸–ç•Œå¤šå°‘å¤©?
+	 * åˆ†æž:
+	 * 1,å°†ç”Ÿæ—¥å­—ç¬¦ä¸²å’Œä»Šå¤©å­—ç¬¦ä¸²å­˜åœ¨Stringç±»åž‹çš„å˜é‡ä¸­
+	 * 2,å®šä¹‰æ—¥æœŸæ ¼å¼åŒ–å¯¹è±¡
+	 * 3,å°†æ—¥æœŸå­—ç¬¦ä¸²è½¬æ¢æˆæ—¥æœŸå¯¹è±¡
+	 * 4,é€šè¿‡æ—¥æœŸå¯¹è±¡åŽæœŸæ—¶é—´æ¯«ç§’å€¼
+	 * 5,å°†ä¸¤ä¸ªæ—¶é—´æ¯«ç§’å€¼ç›¸å‡é™¤ä»¥1000,å†é™¤ä»¥60,å†é™¤ä»¥60,å†é™¤ä»¥24å¾—åˆ°å¤©
 	 * @throws ParseException 
 	 */
 	public static void main(String[] args) throws ParseException {
-		//1,½«ÉúÈÕ×Ö·û´®ºÍ½ñÌì×Ö·û´®´æÔÚStringÀàÐÍµÄ±äÁ¿ÖÐ
-		String birthday = "1983Äê07ÔÂ08ÈÕ";
-		String today = "2088Äê6ÔÂ6ÈÕ";
-		//2,¶¨ÒåÈÕÆÚ¸ñÊ½»¯¶ÔÏó
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
-		//3,½«ÈÕÆÚ×Ö·û´®×ª»»³ÉÈÕÆÚ¶ÔÏó
+		//1,å°†ç”Ÿæ—¥å­—ç¬¦ä¸²å’Œä»Šå¤©å­—ç¬¦ä¸²å­˜åœ¨Stringç±»åž‹çš„å˜é‡ä¸­
+		String birthday = "1983å¹´07æœˆ08æ—¥";
+		String today = "2088å¹´6æœˆ6æ—¥";
+		//2,å®šä¹‰æ—¥æœŸæ ¼å¼åŒ–å¯¹è±¡
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥");
+		//3,å°†æ—¥æœŸå­—ç¬¦ä¸²è½¬æ¢æˆæ—¥æœŸå¯¹è±¡
 		Date d1 = sdf.parse(birthday);
 		Date d2 = sdf.parse(today);
-		//4,Í¨¹ýÈÕÆÚ¶ÔÏóºóÆÚÊ±¼äºÁÃëÖµ
+		//4,é€šè¿‡æ—¥æœŸå¯¹è±¡åŽæœŸæ—¶é—´æ¯«ç§’å€¼
 		long time = d2.getTime() - d1.getTime();
-		//5,½«Á½¸öÊ±¼äºÁÃëÖµÏà¼õ³ýÒÔ1000,ÔÙ³ýÒÔ60,ÔÙ³ýÒÔ60,ÔÙ³ýÒÔ24µÃµ½Ìì
+		//5,å°†ä¸¤ä¸ªæ—¶é—´æ¯«ç§’å€¼ç›¸å‡é™¤ä»¥1000,å†é™¤ä»¥60,å†é™¤ä»¥60,å†é™¤ä»¥24å¾—åˆ°å¤©
 		System.out.println(time / 1000 / 60 / 60 / 24 );
 	}
 

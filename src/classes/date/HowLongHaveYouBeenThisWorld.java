@@ -11,30 +11,30 @@ public class HowLongHaveYouBeenThisWorld {
 	}
 
 	private static void method2() throws ParseException {
-		String birthday = "1992Äê5ÔÂ13ÈÕ";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMÔÂddÈÕ");
+		String birthday = "1992å¹´5æœˆ13æ—¥";
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´Mæœˆddæ—¥");
 		Date myBirthday = sdf.parse(birthday);
 		Date today = new Date();
 		long myBirthdayTime = myBirthday.getTime();
 		long thisDayTime = today.getTime();
-		System.out.println((thisDayTime - myBirthdayTime) / (1000*60*60*24) + "Ìì");
+		System.out.println((thisDayTime - myBirthdayTime) / (1000*60*60*24) + "å¤©");
 	}
 
 	@SuppressWarnings("unused")
 	private static void method1() throws ParseException {
-		// ÉúÈÕ×Ö·û´®ºÍ½ñÌì×Ö·û´®´æÔÚStringÀàĞÍ±äÁ¿ÖĞ
-		String birthday = "1992Äê5ÔÂ13ÈÕ";
-		String today = "2017Äê3ÔÂ18ÈÕ";
-		// ¶¨ÒåÈÕÆÚ×ª»¯¶ÔÏó
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMÔÂddÈÕ");
-		// ½«ÈÕÆÚ×Ö·û´®×ª»¯ÎªÈÕÆÚ¶ÔÏó
+		// ç”Ÿæ—¥å­—ç¬¦ä¸²å’Œä»Šå¤©å­—ç¬¦ä¸²å­˜åœ¨Stringç±»å‹å˜é‡ä¸­
+		String birthday = "1992å¹´5æœˆ13æ—¥";
+		String today = "2017å¹´3æœˆ18æ—¥";
+		// å®šä¹‰æ—¥æœŸè½¬åŒ–å¯¹è±¡
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´Mæœˆddæ—¥");
+		// å°†æ—¥æœŸå­—ç¬¦ä¸²è½¬åŒ–ä¸ºæ—¥æœŸå¯¹è±¡
 		Date myBirthday = sdf.parse(birthday);
 		Date thisDay = sdf.parse(today);
-		// Í¨¹ıÈÕÆÚ¶ÔÏó»ñÈ¡Ê±¼äºÁÃëÖµ
+		// é€šè¿‡æ—¥æœŸå¯¹è±¡è·å–æ—¶é—´æ¯«ç§’å€¼
 		long myBirthdayTime = myBirthday.getTime();
 		long thisDayTime = thisDay.getTime();
-		// ½«Á½¸öÊ±¼äºÁÃëÖµÏà¼õÔÙ³ıÒÔ(1000*60*60*24)
-		System.out.println((thisDayTime - myBirthdayTime) / (1000*60*60*24) + "Ìì");
+		// å°†ä¸¤ä¸ªæ—¶é—´æ¯«ç§’å€¼ç›¸å‡å†é™¤ä»¥(1000*60*60*24)
+		System.out.println((thisDayTime - myBirthdayTime) / (1000*60*60*24) + "å¤©");
 	}
 	
 }

@@ -5,81 +5,81 @@ class Test3_Person {
 	}
 }
 /*
-* Ê¹ÓÃ¼Ì³ĞÇ°µÄÑ§ÉúºÍÀÏÊ¦°¸Àı
-	* ÊôĞÔ:ĞÕÃû,ÄêÁä
-	* ĞĞÎª:³Ô·¹
-	* ÀÏÊ¦ÓĞÌØÓĞµÄ·½·¨:½²¿Î
-	* Ñ§ÉúÓĞÌØÓĞµÄ·½·¨:Ñ§Ï°
+* ä½¿ç”¨ç»§æ‰¿å‰çš„å­¦ç”Ÿå’Œè€å¸ˆæ¡ˆä¾‹
+	* å±æ€§:å§“å,å¹´é¾„
+	* è¡Œä¸º:åƒé¥­
+	* è€å¸ˆæœ‰ç‰¹æœ‰çš„æ–¹æ³•:è®²è¯¾
+	* å­¦ç”Ÿæœ‰ç‰¹æœ‰çš„æ–¹æ³•:å­¦ä¹ 
 */
 
 class Student {
-	private String name;					//ĞÕÃû
-	private int age;						//ÄêÁä
+	private String name;					//å§“å
+	private int age;						//å¹´é¾„
 
-	public Student() {}						//¿Õ²Î¹¹Ôì
+	public Student() {}						//ç©ºå‚æ„é€ 
 
-	public Student(String name,int age) {	//ÓĞ²Î¹¹Ôì
+	public Student(String name,int age) {	//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
 	}
 
-	public void setName(String name) {		//ÉèÖÃĞÕÃû
+	public void setName(String name) {		//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {				//»ñÈ¡ĞÕÃû
+	public String getName() {				//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {			//ÉèÖÃÄêÁä
+	public void setAge(int age) {			//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {					//»ñÈ¡ÄêÁä
+	public int getAge() {					//è·å–å¹´é¾„
 		return age;
 	}
 
-	public void eat() {						//³Ô·¹
-		System.out.println("Ñ§Éú³Ô·¹");
+	public void eat() {						//åƒé¥­
+		System.out.println("å­¦ç”Ÿåƒé¥­");
 	}
 
-	public void study() {					//Ñ§Ï°
-		System.out.println("Ñ§ÉúÑ§Ï°");
+	public void study() {					//å­¦ä¹ 
+		System.out.println("å­¦ç”Ÿå­¦ä¹ ");
 	}
 }
 
 class Teacher {
-	private String name;					//ĞÕÃû
-	private int age;						//ÄêÁä
+	private String name;					//å§“å
+	private int age;						//å¹´é¾„
 
-	public Teacher() {}						//¿Õ²Î¹¹Ôì
+	public Teacher() {}						//ç©ºå‚æ„é€ 
 
-	public Teacher(String name,int age) {	//ÓĞ²Î¹¹Ôì
+	public Teacher(String name,int age) {	//æœ‰å‚æ„é€ 
 		this.name = name;
 		this.age = age;
 	}
 
-	public void setName(String name) {		//ÉèÖÃĞÕÃû
+	public void setName(String name) {		//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {				//»ñÈ¡ĞÕÃû
+	public String getName() {				//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {			//ÉèÖÃÄêÁä
+	public void setAge(int age) {			//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {					//»ñÈ¡ÄêÁä
+	public int getAge() {					//è·å–å¹´é¾„
 		return age;
 	}
 
-	public void eat() {						//³Ô·¹
-		System.out.println("ÀÏÊ¦³Ô·¹");
+	public void eat() {						//åƒé¥­
+		System.out.println("è€å¸ˆåƒé¥­");
 	}
 
-	public void teach() {					//Ñ§Ï°
-		System.out.println("ÀÏÊ¦½²¿Î");
+	public void teach() {					//å­¦ä¹ 
+		System.out.println("è€å¸ˆè®²è¯¾");
 	}
 }

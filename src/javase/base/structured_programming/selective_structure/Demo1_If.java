@@ -1,23 +1,23 @@
 package javase.base.structured_programming.selective_structure;
 /*
-* C:ifÓï¾äµÄ¸ñÊ½1
+* C:ifè¯­å¥çš„æ ¼å¼1
 * 
-		if(±È½Ï±í´ïÊ½) {
-			Óï¾äÌå;
+		if(æ¯”è¾ƒè¡¨è¾¾å¼) {
+			è¯­å¥ä½“;
 		}
-* D:Ö´ĞĞÁ÷³Ì£º
-	* ÏÈ¼ÆËã±È½Ï±í´ïÊ½µÄÖµ£¬¿´Æä·µ»ØÖµÊÇtrue»¹ÊÇfalse¡£
-	* Èç¹ûÊÇtrue£¬¾ÍÖ´ĞĞÓï¾äÌå£»
-	* Èç¹ûÊÇfalse£¬¾Í²»Ö´ĞĞÓï¾äÌå£»
+* D:æ‰§è¡Œæµç¨‹ï¼š
+	* å…ˆè®¡ç®—æ¯”è¾ƒè¡¨è¾¾å¼çš„å€¼ï¼Œçœ‹å…¶è¿”å›å€¼æ˜¯trueè¿˜æ˜¯falseã€‚
+	* å¦‚æœæ˜¯trueï¼Œå°±æ‰§è¡Œè¯­å¥ä½“ï¼›
+	* å¦‚æœæ˜¯falseï¼Œå°±ä¸æ‰§è¡Œè¯­å¥ä½“ï¼›
 */
 class Demo1_If {
 	public static void main(String[] args) {
 		int age = 17;
 
 		if (age >= 18) {
-			System.out.println("¿ÉÒÔä¯ÀÀ±¾ÍøÕ¾");
+			System.out.println("å¯ä»¥æµè§ˆæœ¬ç½‘ç«™");
 		}
 
-		System.out.println("ÍêÁË");
+		System.out.println("å®Œäº†");
 	}
 }

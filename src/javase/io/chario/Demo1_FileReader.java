@@ -15,7 +15,7 @@ public class Demo1_FileReader {
 		FileReader fr = new FileReader("xxx.txt");
 		int c;
 		
-		while((c = fr.read()) != -1) {					//Í¨¹ıÏîÄ¿Ä¬ÈÏµÄÂë±íÒ»´Î¶ÁÈ¡Ò»¸ö×Ö·û
+		while((c = fr.read()) != -1) {					//é€šè¿‡é¡¹ç›®é»˜è®¤çš„ç è¡¨ä¸€æ¬¡è¯»å–ä¸€ä¸ªå­—ç¬¦
 			System.out.print((char)c);
 		}
 		

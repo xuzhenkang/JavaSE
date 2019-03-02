@@ -14,27 +14,27 @@ public class Test {
         return new String(c);  
     }  
     public static int f(String s){  
-        ArrayList<String> lis = new ArrayList<String>();    // ¼ÇÂ¼È«²¿½»»»½á¹û(¼ì²éÖØ¸´ÓÃ)  
-        Queue<String> queue = new LinkedList<String>();     // ¶ÓÁĞ(ÓÃÀ´²âÊÔËùÓĞ¿ÉÄÜ)  
+        ArrayList<String> lis = new ArrayList<String>();    // è®°å½•å…¨éƒ¨äº¤æ¢ç»“æœ(æ£€æŸ¥é‡å¤ç”¨)  
+        Queue<String> queue = new LinkedList<String>();     // é˜Ÿåˆ—(ç”¨æ¥æµ‹è¯•æ‰€æœ‰å¯èƒ½)  
         int count = 0;
-        int[] d = {-1,-3,1,3};  // ¶¨Òå·½Ïò(×ó,ÉÏ,ÓÒ,ÏÂ)  
-        queue.offer(s); // Èë¶Ó  
-        lis.add(s);     // ¼ÓÈë¼ÇÂ¼  
+        int[] d = {-1,-3,1,3};  // å®šä¹‰æ–¹å‘(å·¦,ä¸Š,å³,ä¸‹)  
+        queue.offer(s); // å…¥é˜Ÿ  
+        lis.add(s);     // åŠ å…¥è®°å½•  
         while(queue.size()>0){  
-            String firstStr = queue.poll(); // ³ö¶Ó  
+            String firstStr = queue.poll(); // å‡ºé˜Ÿ  
             if(firstStr.equals("123456780")){
             	System.out.println(count);
             	
-            	return 1;// <span style="white-space:pre">   </span>// ÕÒµ½½á¹û,ÍË³ö  
+            	return 1;// <span style="white-space:pre">   </span>// æ‰¾åˆ°ç»“æœ,é€€å‡º  
             }
-            int k = firstStr.indexOf("0");  // ÕÒµ½ "0"ºÅµÄÎ»ÖÃ  
-            for(int i=0;i<4;i++){    // ×ó,ÉÏ,ÓÒ,ÏÂ ËÄ¸ö·½Ïò¶¼Ì½²â  
+            int k = firstStr.indexOf("0");  // æ‰¾åˆ° "0"å·çš„ä½ç½®  
+            for(int i=0;i<4;i++){    // å·¦,ä¸Š,å³,ä¸‹ å››ä¸ªæ–¹å‘éƒ½æ¢æµ‹  
                 int j = k+d[i];  
-                if(j>=0&&j<=8){   // µ±Ç°·½Ïò²»Ô½½ç  
-                    String t = swap(firstStr,k,j);  // ½»»»ÔªËØ  
-                    if(!lis.contains(t)){   // lis ²»°üº¬ t  
-                        queue.offer(t); // Èë¶Ó  
-                        lis.add(t);     // Ìí¼Ó¼ÇÂ¼  
+                if(j>=0&&j<=8){   // å½“å‰æ–¹å‘ä¸è¶Šç•Œ  
+                    String t = swap(firstStr,k,j);  // äº¤æ¢å…ƒç´   
+                    if(!lis.contains(t)){   // lis ä¸åŒ…å« t  
+                        queue.offer(t); // å…¥é˜Ÿ  
+                        lis.add(t);     // æ·»åŠ è®°å½•  
                         count++;
                     }  
                 }  
@@ -44,15 +44,15 @@ public class Test {
     }  
     public static void main(String[] args) {  
         Scanner scan = new Scanner(System.in);  
-        System.out.println("ÊäÈëÕûÊın");  
+        System.out.println("è¾“å…¥æ•´æ•°n");  
         int n = scan.nextInt();  
         scan.nextLine();  
         String[] s = new String[n];  
         for(int i=0;i<n;i++){  
-            s[i] = scan.nextLine(); // ³õÊ¼Êı¾İ  
+            s[i] = scan.nextLine(); // åˆå§‹æ•°æ®  
         }  
         for(int i=0;i<n;i++){  
-            System.out.println(f(s[i]));    // µÃµ½½á¹û  
+            System.out.println(f(s[i]));    // å¾—åˆ°ç»“æœ  
         }  
     } 
 }

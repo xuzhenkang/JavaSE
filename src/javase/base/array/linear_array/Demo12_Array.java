@@ -1,7 +1,7 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* Êı×éÔªËØ²éÕÒ(²éÕÒÖ¸¶¨ÔªËØµÚÒ»´ÎÔÚÊı×éÖĞ³öÏÖµÄË÷Òı)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„å…ƒç´ æŸ¥æ‰¾(æŸ¥æ‰¾æŒ‡å®šå…ƒç´ ç¬¬ä¸€æ¬¡åœ¨æ•°ç»„ä¸­å‡ºç°çš„ç´¢å¼•)
 */
 class Demo12_Array {
 	public static void main(String[] args) {
@@ -11,14 +11,14 @@ class Demo12_Array {
 	}
 
 	/*
-	²éÕÒÔªËØË÷Òı
-	1,·µ»ØÖµÀàĞÍint
-	2,Ã÷È·²ÎÊıÁĞ±í,int[] arr,int value
+	æŸ¥æ‰¾å…ƒç´ ç´¢å¼•
+	1,è¿”å›å€¼ç±»å‹int
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨,int[] arr,int value
 	*/
 
 	public static int getIndex(int[] arr,int value) {
-		for (int i = 0;i < arr.length ;i++ ) {				//Êı×éµÄ±éÀú
-			if (arr[i] == value) {							//Èç¹ûÊı×éÖĞµÄÔªËØÓë²éÕÒµÄÔªËØÆ¥Åä
+		for (int i = 0;i < arr.length ;i++ ) {				//æ•°ç»„çš„éå†
+			if (arr[i] == value) {							//å¦‚æœæ•°ç»„ä¸­çš„å…ƒç´ ä¸æŸ¥æ‰¾çš„å…ƒç´ åŒ¹é…
 				return i;
 			}
 

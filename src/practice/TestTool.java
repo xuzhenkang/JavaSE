@@ -3,7 +3,7 @@ package practice;
 public class TestTool {
 	public static boolean isIPAddr(String str) {
 		if (str != null && !str.isEmpty()) {
-			// ¶¨ÒåÕıÔò±í´ïÊ½
+			// å®šä¹‰æ­£åˆ™è¡¨è¾¾å¼
 			String regex = "^(1\\d{2}|2[0-4]\\d|25[0-5]|[1-9]\\d|[1-9])\\."
 					+ "(1\\d{2}|2[0-4]\\d|25[0-5]|[1-9]\\d|\\d)\\."
 					+ "(1\\d{2}|2[0-4]\\d|25[0-5]|[1-9]\\d|\\d)\\."

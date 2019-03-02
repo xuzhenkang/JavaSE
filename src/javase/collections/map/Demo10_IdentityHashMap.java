@@ -3,12 +3,12 @@ package javase.collections.map;
 import java.util.IdentityHashMap;
 
 // IdentityHashMap
-// ¼üÖ»ÒÔµØÖ·È¥ÖØ£¬¶ø²»ÊÇ±È½ÏhashcodeÓëequals
-// ×¢Òâ£º¼üÊÇ³£Á¿³ØÖĞµÄ×Ö·û´®
+// é”®åªä»¥åœ°å€å»é‡ï¼Œè€Œä¸æ˜¯æ¯”è¾ƒhashcodeä¸equals
+// æ³¨æ„ï¼šé”®æ˜¯å¸¸é‡æ± ä¸­çš„å­—ç¬¦ä¸²
 public class Demo10_IdentityHashMap {
 	public static void main(String[] args) {
 		IdentityHashMap<String, String> map = new IdentityHashMap<String, String>();
-		// ³£Á¿³ØÖĞµÄ"a"
+		// å¸¸é‡æ± ä¸­çš„"a"
 		map.put("a", "a1");
 		map.put("a", "a2");
 		System.out.println(map.size());

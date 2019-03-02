@@ -1,58 +1,58 @@
 package javase.oo.ootest;
 
-class Test1_Rectangle {							//Rectangle¾ØĞÎ
+class Test1_Rectangle {							//RectangleçŸ©å½¢
 	public static void main(String[] args) {
 		Rectangle r = new Rectangle(10,20);
-		System.out.println(r.getLength());		//ÖÜ³¤
-		System.out.println(r.getArea());		//Ãæ»ı
+		System.out.println(r.getLength());		//å‘¨é•¿
+		System.out.println(r.getArea());		//é¢ç§¯
 	}
 }
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º
-		* ¶¨ÒåÒ»¸ö³¤·½ĞÎÀà,¶¨Òå ÇóÖÜ³¤ºÍÃæ»ıµÄ·½·¨£¬
-		* È»ºó¶¨ÒåÒ»¸ö²âÊÔÀà½øĞĞ²âÊÔ¡£
-	·ÖÎö:
-		³ÉÔ±±äÁ¿:
-			¿íwidth,¸ßhigh
-		¿Õ²ÎÓĞ²Î¹¹Ôì
-		³ÉÔ±·½·¨:
-			setXxxºÍgetXxx
-			ÇóÖÜ³¤:getLength()
-			ÇóÃæ»ı:getArea()
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼š
+		* å®šä¹‰ä¸€ä¸ªé•¿æ–¹å½¢ç±»,å®šä¹‰ æ±‚å‘¨é•¿å’Œé¢ç§¯çš„æ–¹æ³•ï¼Œ
+		* ç„¶åå®šä¹‰ä¸€ä¸ªæµ‹è¯•ç±»è¿›è¡Œæµ‹è¯•ã€‚
+	åˆ†æ:
+		æˆå‘˜å˜é‡:
+			å®½width,é«˜high
+		ç©ºå‚æœ‰å‚æ„é€ 
+		æˆå‘˜æ–¹æ³•:
+			setXxxå’ŒgetXxx
+			æ±‚å‘¨é•¿:getLength()
+			æ±‚é¢ç§¯:getArea()
 */
 class Rectangle {
-	private int width;				//¿í
-	private int high;				//¸ß
+	private int width;				//å®½
+	private int high;				//é«˜
 
-	public Rectangle(){}			//¿Õ²Î¹¹Ôì
+	public Rectangle(){}			//ç©ºå‚æ„é€ 
 
 	public Rectangle(int width,int high) {
-		this.width = width;			//ÓĞ²Î¹¹Ôì
+		this.width = width;			//æœ‰å‚æ„é€ 
 		this.high = high;
 	}
 
-	public void setWidth(int width) {//ÉèÖÃ¿í
+	public void setWidth(int width) {//è®¾ç½®å®½
 		this.width = width;
 	}
 
-	public int getWidth() {			//»ñÈ¡¿í
+	public int getWidth() {			//è·å–å®½
 		return width;
 	}
 
-	public void setHigh(int high) {	//ÉèÖÃ¸ß
+	public void setHigh(int high) {	//è®¾ç½®é«˜
 		this.high = high;
 	}
 
-	public int getHigh() {			//»ñÈ¡¸ß
+	public int getHigh() {			//è·å–é«˜
 		return high;
 	}
 
-	public int getLength() {		//»ñÈ¡ÖÜ³¤
+	public int getLength() {		//è·å–å‘¨é•¿
 		return 2 * (width + high);
 	}
 
-	public int getArea() {			//»ñÈ¡Ãæ»ı
+	public int getArea() {			//è·å–é¢ç§¯
 		return width * high;
 	}
 }

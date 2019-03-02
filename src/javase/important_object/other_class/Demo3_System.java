@@ -3,15 +3,15 @@ package javase.important_object.other_class;
 public class Demo3_System {
 
 	/**
-	 * * A:SystemÀàµÄ¸ÅÊö
-			* System Àà°üº¬Ò»Ğ©ÓĞÓÃµÄÀà×Ö¶ÎºÍ·½·¨¡£Ëü²»ÄÜ±»ÊµÀı»¯¡£ 
-		* B:³ÉÔ±·½·¨
+	 * * A:Systemç±»çš„æ¦‚è¿°
+			* System ç±»åŒ…å«ä¸€äº›æœ‰ç”¨çš„ç±»å­—æ®µå’Œæ–¹æ³•ã€‚å®ƒä¸èƒ½è¢«å®ä¾‹åŒ–ã€‚ 
+		* B:æˆå‘˜æ–¹æ³•
 			* public static void gc()
 			* public static void exit(int status)
 			* public static long currentTimeMillis()
 			* pubiic static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length) 
-		* C:°¸ÀıÑİÊ¾
-			* SystemÀàµÄ³ÉÔ±·½·¨Ê¹ÓÃ
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* Systemç±»çš„æˆå‘˜æ–¹æ³•ä½¿ç”¨
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -25,7 +25,7 @@ public class Demo3_System {
 		}
 		
 		System.out.println("--------------------------");
-		System.arraycopy(src, 0, dest, 0, src.length);		//½«Êı×éÄÚÈİ¿½±´
+		System.arraycopy(src, 0, dest, 0, src.length);		//å°†æ•°ç»„å†…å®¹æ‹·è´
 		
 		for (int i = 0; i < dest.length; i++) {
 			System.out.println(dest[i]);
@@ -33,34 +33,34 @@ public class Demo3_System {
 	}
 
 	public static void demo3() {
-		long start = System.currentTimeMillis();		//1ÃëµÈÓÚ1000ºÁÃë
+		long start = System.currentTimeMillis();		//1ç§’ç­‰äº1000æ¯«ç§’
 		for(int i = 0; i < 1000; i++) {
 			System.out.println("*");
 		}
-		long end = System.currentTimeMillis();			//»ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
+		long end = System.currentTimeMillis();			//è·å–å½“å‰æ—¶é—´çš„æ¯«ç§’å€¼
 		
 		System.out.println(end - start);
 	}
 
 	public static void demo2() {
-		System.exit(1);							//·Ç0×´Ì¬ÊÇÒì³£ÖÕÖ¹,ÍË³öjvm
+		System.exit(1);							//é0çŠ¶æ€æ˜¯å¼‚å¸¸ç»ˆæ­¢,é€€å‡ºjvm
 		System.out.println("11111111111");
 	}
 
 	public static void demo1() {
 		for(int i = 0; i < 100; i++) {
 			new Demo();
-			System.gc();						//ÔËĞĞÀ¬»ø»ØÊÕÆ÷,Ïàµ±ÓÚºôº°±£½à°¢ÒÌ
+			System.gc();						//è¿è¡Œåƒåœ¾å›æ”¶å™¨,ç›¸å½“äºå‘¼å–Šä¿æ´é˜¿å§¨
 		}
 	}
 
 }
 
-class Demo {									//ÔÚÒ»¸öÔ´ÎÄ¼şÖĞ²»ÔÊĞí¶¨ÒåÁ½¸öÓÃpublicĞŞÊÎµÄÀà
+class Demo {									//åœ¨ä¸€ä¸ªæºæ–‡ä»¶ä¸­ä¸å…è®¸å®šä¹‰ä¸¤ä¸ªç”¨publicä¿®é¥°çš„ç±»
 
 	@Override
 	public void finalize() {
-		System.out.println("À¬»ø±»ÇåÉ¨ÁË");
+		System.out.println("åƒåœ¾è¢«æ¸…æ‰«äº†");
 	}							
 	
 }

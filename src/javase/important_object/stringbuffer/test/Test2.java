@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Test2 {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
 	* 
-			ĞèÇó£º°Ñ×Ö·û´®·´×ª
-				¾ÙÀı£º¼üÅÌÂ¼Èë"abc"		
-				Êä³ö½á¹û£º"cba"
+			éœ€æ±‚ï¼šæŠŠå­—ç¬¦ä¸²åè½¬
+				ä¸¾ä¾‹ï¼šé”®ç›˜å½•å…¥"abc"		
+				è¾“å‡ºç»“æœï¼š"cba"
 				
-			ÓÃStringBufferµÄ¹¦ÄÜÊµÏÖ	
+			ç”¨StringBufferçš„åŠŸèƒ½å®ç°	
 	 */
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);				//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		String line = sc.nextLine();						//½«¼üÅÌÂ¼ÈëµÄ×Ö·û´®´æ´¢ÔÚlineÖĞ
+		Scanner sc = new Scanner(System.in);				//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		String line = sc.nextLine();						//å°†é”®ç›˜å½•å…¥çš„å­—ç¬¦ä¸²å­˜å‚¨åœ¨lineä¸­
 		
-		/*StringBuffer sb = new StringBuffer(line);			//½«×Ö·û´®×ª»»ÎªStringBuffer¶ÔÏó
-		sb.reverse();										//½«»º³åÇøµÄÄÚÈİ·´×ª
+		/*StringBuffer sb = new StringBuffer(line);			//å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºStringBufferå¯¹è±¡
+		sb.reverse();										//å°†ç¼“å†²åŒºçš„å†…å®¹åè½¬
 		
 		System.out.println(sb.toString());*/
 		
@@ -26,14 +26,14 @@ public class Test2 {
 	}
 
 	/*
-	 * ½«×Ö·û´®·´×ª
-	 * 1,·µ»ØÖµÀàĞÍString
-	 * 2,²ÎÊıÁĞ±íString line
+	 * å°†å­—ç¬¦ä¸²åè½¬
+	 * 1,è¿”å›å€¼ç±»å‹String
+	 * 2,å‚æ•°åˆ—è¡¨String line
 	 */
 	
 	public static String revString(String line) {
-		StringBuffer sb = new StringBuffer(line);			//½«×Ö·û´®×ª»»ÎªStringBuffer¶ÔÏó
-		sb.reverse();										//½«»º³åÇøµÄÄÚÈİ·´×ª
+		StringBuffer sb = new StringBuffer(line);			//å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºStringBufferå¯¹è±¡
+		sb.reverse();										//å°†ç¼“å†²åŒºçš„å†…å®¹åè½¬
 		
 		return sb.toString();
 	}

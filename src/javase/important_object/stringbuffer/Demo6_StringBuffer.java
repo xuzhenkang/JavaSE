@@ -4,34 +4,34 @@ public class Demo6_StringBuffer {
 
 	/**
 	 * * A:String -- StringBuffer
-		* a:Í¨¹ı¹¹Ôì·½·¨
-		* b:Í¨¹ıappend()·½·¨
+		* a:é€šè¿‡æ„é€ æ–¹æ³•
+		* b:é€šè¿‡append()æ–¹æ³•
 	* B:StringBuffer -- String
-		* a:Í¨¹ı¹¹Ôì·½·¨
-		* b:Í¨¹ıtoString()·½·¨
-		* c:Í¨¹ısubString(0,length);
+		* a:é€šè¿‡æ„é€ æ–¹æ³•
+		* b:é€šè¿‡toString()æ–¹æ³•
+		* c:é€šè¿‡subString(0,length);
 
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		StringBuffer sb = new StringBuffer("heima");
 		
-		String s1 = new String(sb);						//Í¨¹ı¹¹Ôì½«StringBuffer×ª»»ÎªString
+		String s1 = new String(sb);						//é€šè¿‡æ„é€ å°†StringBufferè½¬æ¢ä¸ºString
 		System.out.println(s1);
 		
-		String s2 = sb.toString();						//Í¨¹ıtoString·½·¨½«StringBuffer×ª»»ÎªString
+		String s2 = sb.toString();						//é€šè¿‡toStringæ–¹æ³•å°†StringBufferè½¬æ¢ä¸ºString
 		System.out.println(s2);
 		
-		String s3 = sb.substring(0, sb.length());		//Í¨¹ı½ØÈ¡×Ó×Ö·û´®½«StringBuffer×ª»»ÎªString
+		String s3 = sb.substring(0, sb.length());		//é€šè¿‡æˆªå–å­å­—ç¬¦ä¸²å°†StringBufferè½¬æ¢ä¸ºString
 		System.out.println(s3);
 	}
 
 	private static void demo1() {
-		StringBuffer sb1 = new StringBuffer("heima");			//Í¨¹ı¹¹Ôì·½·¨½«×Ö·û´®×ª»»ÎªStringBuffer¶ÔÏó
+		StringBuffer sb1 = new StringBuffer("heima");			//é€šè¿‡æ„é€ æ–¹æ³•å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºStringBufferå¯¹è±¡
 		System.out.println(sb1);
 		
 		StringBuffer sb2 = new StringBuffer();
-		sb2.append("heima");									//Í¨¹ıappend·½·¨½«×Ö·û´®×ª»»ÎªStringBuffer¶ÔÏó
+		sb2.append("heima");									//é€šè¿‡appendæ–¹æ³•å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºStringBufferå¯¹è±¡
 		System.out.println(sb2);
 	}
 

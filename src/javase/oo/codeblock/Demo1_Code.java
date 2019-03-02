@@ -3,18 +3,18 @@ package javase.oo.codeblock;
 class Demo1_Code {
 	public static void main(String[] args) {
 		{
-			int x = 10;						//ÏŞ¶¨±äÁ¿µÄÉùÃ÷ÖÜÆÚ
+			int x = 10;						//é™å®šå˜é‡çš„å£°æ˜å‘¨æœŸ
 			System.out.println(x);
 		}
 		
 		Student s1 = new Student();
 		System.out.println("---------------");
-		Student s2 = new Student("ÕÅÈı",23);
+		Student s2 = new Student("å¼ ä¸‰",23);
 	
 	}
 
 	static {
-		System.out.println("ÎÒÊÇÔÚÖ÷·½·¨ÀàÖĞµÄ¾²Ì¬´úÂë¿é");
+		System.out.println("æˆ‘æ˜¯åœ¨ä¸»æ–¹æ³•ç±»ä¸­çš„é™æ€ä»£ç å—");
 	}
 }
 
@@ -24,14 +24,14 @@ class Student {
 
 	public Student(){
 		//study();
-		System.out.println("¿Õ²Î¹¹Ôì");
-	}					//¿Õ²Î¹¹Ôì
+		System.out.println("ç©ºå‚æ„é€ ");
+	}					//ç©ºå‚æ„é€ 
 
-	public Student(String name,int age) {//ÓĞ²Î¹¹Ôì
+	public Student(String name,int age) {//æœ‰å‚æ„é€ 
 		//study();
 		this.name = name;
 		this.age = age;
-		System.out.println("ÓĞ²Î¹¹Ôì");
+		System.out.println("æœ‰å‚æ„é€ ");
 	}
 
 	public void setName(String name) {
@@ -50,16 +50,16 @@ class Student {
 		return age;
 	}
 
-	{											//¹¹Ôì´úÂë¿é:Ã¿´´½¨Ò»´Î¶ÔÏó¾Í»áÖ´ĞĞÒ»´Î,ÓÅÏÈÓÚ¹¹Ôìº¯ÊıÖ´ĞĞ
-		//System.out.println("¹¹Ôì´úÂë¿é");
+	{											//æ„é€ ä»£ç å—:æ¯åˆ›å»ºä¸€æ¬¡å¯¹è±¡å°±ä¼šæ‰§è¡Œä¸€æ¬¡,ä¼˜å…ˆäºæ„é€ å‡½æ•°æ‰§è¡Œ
+		//System.out.println("æ„é€ ä»£ç å—");
 		study();
 	}
 
 	public void study() {
-		System.out.println("Ñ§ÉúÑ§Ï°");
+		System.out.println("å­¦ç”Ÿå­¦ä¹ ");
 	}
 
-	static {									//Ëæ×ÅÀà¼ÓÔØ¶ø¼ÓÔØ,ÇÒÖ»Ö´ĞĞÒ»´Î
-		System.out.println("ÎÒÊÇ¾²Ì¬´úÂë¿é");	//×÷ÓÃ:ÓÃÀ´¸øÀà½øĞĞ³õÊ¼»¯,Ò»°ãÓÃÀ´¼ÓÔØÇı¶¯
-	}											//¾²Ì¬´úÂë¿éÊÇÓÅÏÈÓÚÖ÷·½·¨Ö´ĞĞ
+	static {									//éšç€ç±»åŠ è½½è€ŒåŠ è½½,ä¸”åªæ‰§è¡Œä¸€æ¬¡
+		System.out.println("æˆ‘æ˜¯é™æ€ä»£ç å—");	//ä½œç”¨:ç”¨æ¥ç»™ç±»è¿›è¡Œåˆå§‹åŒ–,ä¸€èˆ¬ç”¨æ¥åŠ è½½é©±åŠ¨
+	}											//é™æ€ä»£ç å—æ˜¯ä¼˜å…ˆäºä¸»æ–¹æ³•æ‰§è¡Œ
 }

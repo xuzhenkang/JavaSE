@@ -3,11 +3,11 @@ package practice;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-// ÊµÏÖÔÚÎÄ±¾ÖĞ²éÕÒµÄ¹¦ÄÜ
+// å®ç°åœ¨æ–‡æœ¬ä¸­æŸ¥æ‰¾çš„åŠŸèƒ½
 public class TestString {
 	public static void main(String[] args) {
-		String s = "asdfasdfddÖĞ¹úsdfafedfÖĞ¹úawgvcvaÖĞ¹údfasfd";
-		String p = "ÖĞ¹ú";
+		String s = "asdfasdfddä¸­å›½sdfafedfä¸­å›½awgvcvaä¸­å›½dfasfd";
+		String p = "ä¸­å›½";
 		Pattern pattern = Pattern.compile(p);
 		Matcher matcher = pattern.matcher(s);
 		while (matcher.find()) {

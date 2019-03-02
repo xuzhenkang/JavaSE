@@ -1,3 +1,4 @@
+
 package javase.collections.list;
 
 import java.util.ArrayList;

@@ -5,17 +5,17 @@ import java.util.HashMap;
 
 public class Demo5_HashMap {
 	/*
-	 * * A:°¸ÀıÑİÊ¾
-	 * HashMap¼¯ºÏ¼üÊÇStudentÖµÊÇStringµÄ°¸Àı
-	 * ¼üÊÇÑ§Éú¶ÔÏó,´ú±íÃ¿Ò»¸öÑ§Éú
-	 * ÖµÊÇ×Ö·û´®¶ÔÏó,´ú±íÑ§Éú¹éÊôµØ
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * HashMapé›†åˆé”®æ˜¯Studentå€¼æ˜¯Stringçš„æ¡ˆä¾‹
+	 * é”®æ˜¯å­¦ç”Ÿå¯¹è±¡,ä»£è¡¨æ¯ä¸€ä¸ªå­¦ç”Ÿ
+	 * å€¼æ˜¯å­—ç¬¦ä¸²å¯¹è±¡,ä»£è¡¨å­¦ç”Ÿå½’å±åœ°
 	 */
 	public static void main(String[] args) {
 		HashMap<Student, String> hm = new HashMap<>();
-		hm.put(new Student("ÕÅÈı", 23), "±±¾©");
-		hm.put(new Student("ÕÅÈı", 23), "ÉÏº£");
-		hm.put(new Student("ÀîËÄ", 24), "¹ãÖİ");
-		hm.put(new Student("ÍõÎå", 25), "ÉîÛÚ");
+		hm.put(new Student("å¼ ä¸‰", 23), "åŒ—äº¬");
+		hm.put(new Student("å¼ ä¸‰", 23), "ä¸Šæµ·");
+		hm.put(new Student("æå››", 24), "å¹¿å·");
+		hm.put(new Student("ç‹äº”", 25), "æ·±åœ³");
 		
 		System.out.println(hm);
 	}

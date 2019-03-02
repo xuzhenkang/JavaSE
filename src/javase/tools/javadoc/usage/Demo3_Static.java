@@ -2,9 +2,9 @@ package javase.tools.javadoc.usage;
 
 class Demo3_Static {
 	public static void main(String[] args) {
-		//method();								//´íÎó: ÎŞ·¨´Ó¾²Ì¬ÉÏÏÂÎÄÖĞÒıÓÃ·Ç¾²Ì¬ ·½·¨ method()
-		Demo3_Static.print();					//ÔÚÖ÷·½·¨ÖĞµ÷ÓÃ±¾ÀàµÄ¾²Ì¬·½·¨,¿ÉÒÔÊ¡ÂÔÀàÃû.,ÏµÍ³»áÄ¬ÈÏ¼ÓÉÏ
-		Demo3_Static d = new Demo3_Static();	//·Ç¾²Ì¬·½·¨ÔÚµ÷ÓÃµÄÊ±ºò±ØĞë´´½¨¶ÔÏóµ÷ÓÃ
+		//method();								//é”™è¯¯: æ— æ³•ä»é™æ€ä¸Šä¸‹æ–‡ä¸­å¼•ç”¨éé™æ€ æ–¹æ³• method()
+		Demo3_Static.print();					//åœ¨ä¸»æ–¹æ³•ä¸­è°ƒç”¨æœ¬ç±»çš„é™æ€æ–¹æ³•,å¯ä»¥çœç•¥ç±»å.,ç³»ç»Ÿä¼šé»˜è®¤åŠ ä¸Š
+		Demo3_Static d = new Demo3_Static();	//éé™æ€æ–¹æ³•åœ¨è°ƒç”¨çš„æ—¶å€™å¿…é¡»åˆ›å»ºå¯¹è±¡è°ƒç”¨
 		d.method();
 	}
 

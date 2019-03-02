@@ -1,8 +1,8 @@
 package javase.base.method.test;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º±È½ÏÁ½¸öÊı¾İÊÇ·ñÏàµÈ¡£
-	* ²ÎÊıÀàĞÍ·Ö±ğÎªÁ½¸öintÀàĞÍ£¬Á½¸ödoubleÀàĞÍ£¬²¢ÔÚmain·½·¨ÖĞ½øĞĞ²âÊÔ
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šæ¯”è¾ƒä¸¤ä¸ªæ•°æ®æ˜¯å¦ç›¸ç­‰ã€‚
+	* å‚æ•°ç±»å‹åˆ†åˆ«ä¸ºä¸¤ä¸ªintç±»å‹ï¼Œä¸¤ä¸ªdoubleç±»å‹ï¼Œå¹¶åœ¨mainæ–¹æ³•ä¸­è¿›è¡Œæµ‹è¯•
 
 */
 class Test3_Overload {
@@ -15,9 +15,9 @@ class Test3_Overload {
 	}
 
 	/*
-	±È½ÏÁ½¸öÊı¾İÊÇ·ñÏàµÈ
-	1,·µ»ØÖµÀàĞÍboolean
-	2,²ÎÊıÁĞ±íint a,int b
+	æ¯”è¾ƒä¸¤ä¸ªæ•°æ®æ˜¯å¦ç›¸ç­‰
+	1,è¿”å›å€¼ç±»å‹boolean
+	2,å‚æ•°åˆ—è¡¨int a,int b
 	*/
 
 	public static boolean isEquals(int a,int b) {
@@ -25,9 +25,9 @@ class Test3_Overload {
 	}
 
 	/*
-	±È½ÏÁ½¸öÊı¾İÊÇ·ñÏàµÈ
-	1,·µ»ØÖµÀàĞÍboolean
-	2,²ÎÊıÁĞ±ídouble a,double b
+	æ¯”è¾ƒä¸¤ä¸ªæ•°æ®æ˜¯å¦ç›¸ç­‰
+	1,è¿”å›å€¼ç±»å‹boolean
+	2,å‚æ•°åˆ—è¡¨double a,double b
 	*/
 
 	public static boolean isEquals(double a,double b) {

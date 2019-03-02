@@ -6,8 +6,8 @@ import java.util.TreeMap;
 public class Demo7_TreeMap {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * TreeMap¼¯ºÏ¼üÊÇStudentÖµÊÇStringµÄ°¸Àı
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * TreeMapé›†åˆé”®æ˜¯Studentå€¼æ˜¯Stringçš„æ¡ˆä¾‹
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -15,24 +15,24 @@ public class Demo7_TreeMap {
 
 			@Override
 			public int compare(Student s1, Student s2) {
-				int num = s1.getName().compareTo(s2.getName());		//°´ÕÕĞÕÃû±È½Ï
+				int num = s1.getName().compareTo(s2.getName());		//æŒ‰ç…§å§“åæ¯”è¾ƒ
 				return num == 0 ? s1.getAge() - s2.getAge() : num;
 			}
 		});
-		tm.put(new Student("ÕÅÈı", 23), "±±¾©");
-		tm.put(new Student("ÀîËÄ", 13), "ÉÏº£");
-		tm.put(new Student("ÕÔÁù", 43), "ÉîÛÚ");
-		tm.put(new Student("ÍõÎå", 33), "¹ãÖİ");
+		tm.put(new Student("å¼ ä¸‰", 23), "åŒ—äº¬");
+		tm.put(new Student("æå››", 13), "ä¸Šæµ·");
+		tm.put(new Student("èµµå…­", 43), "æ·±åœ³");
+		tm.put(new Student("ç‹äº”", 33), "å¹¿å·");
 		
 		System.out.println(tm);
 	}
 
 	public static void demo1() {
 		TreeMap<Student, String> tm = new TreeMap<>();
-		tm.put(new Student("ÕÅÈı", 23), "±±¾©");
-		tm.put(new Student("ÀîËÄ", 13), "ÉÏº£");
-		tm.put(new Student("ÍõÎå", 33), "¹ãÖİ");
-		tm.put(new Student("ÕÔÁù", 43), "ÉîÛÚ");
+		tm.put(new Student("å¼ ä¸‰", 23), "åŒ—äº¬");
+		tm.put(new Student("æå››", 13), "ä¸Šæµ·");
+		tm.put(new Student("ç‹äº”", 33), "å¹¿å·");
+		tm.put(new Student("èµµå…­", 43), "æ·±åœ³");
 		
 		System.out.println(tm);
 	}

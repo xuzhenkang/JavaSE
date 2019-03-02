@@ -3,22 +3,22 @@ package oj.gettingjob.nowcoder.splitstring;
 import java.util.Scanner;
 
 /**
-<h2 class="subject-item-title">ÌâÄ¿ÃèÊö</h2>
+<h2 class="subject-item-title">é¢˜ç›®æè¿°</h2>
 <div class="subject-describe">
-<p><span style="white-space:normal">Á¬ÐøÊäÈë×Ö·û´®£¬Çë°´³¤¶ÈÎª8²ð·ÖÃ¿¸ö×Ö·û´®ºóÊä³öµ½ÐÂµÄ×Ö·û´®Êý×é£»</span><br style="white-space:normal"/><span style="white-space:normal">³¤¶È²»ÊÇ8ÕûÊý±¶µÄ×Ö·û´®ÇëÔÚºóÃæ²¹Êý×Ö0£¬¿Õ×Ö·û´®²»´¦Àí¡£</span><br/></p>
+<p><span style="white-space:normal">è¿žç»­è¾“å…¥å­—ç¬¦ä¸²ï¼Œè¯·æŒ‰é•¿åº¦ä¸º8æ‹†åˆ†æ¯ä¸ªå­—ç¬¦ä¸²åŽè¾“å‡ºåˆ°æ–°çš„å­—ç¬¦ä¸²æ•°ç»„ï¼›</span><br style="white-space:normal"/><span style="white-space:normal">é•¿åº¦ä¸æ˜¯8æ•´æ•°å€çš„å­—ç¬¦ä¸²è¯·åœ¨åŽé¢è¡¥æ•°å­—0ï¼Œç©ºå­—ç¬¦ä¸²ä¸å¤„ç†ã€‚</span><br/></p>
 <br/>
-<h5><b>ÊäÈëÃèÊö:</b></h5>
-<pre><p><span style="white-space:normal">Á¬ÐøÊäÈë×Ö·û´®(ÊäÈë2´Î,Ã¿¸ö×Ö·û´®³¤¶ÈÐ¡ÓÚ100)</span><br/></p></pre>
+<h5><b>è¾“å…¥æè¿°:</b></h5>
+<pre><p><span style="white-space:normal">è¿žç»­è¾“å…¥å­—ç¬¦ä¸²(è¾“å…¥2æ¬¡,æ¯ä¸ªå­—ç¬¦ä¸²é•¿åº¦å°äºŽ100)</span><br/></p></pre>
 <br/>
 <br/>
-<h5><b>Êä³öÃèÊö:</b></h5>
-<pre><p><span style="white-space:normal">Êä³öµ½³¤¶ÈÎª8µÄÐÂ×Ö·û´®Êý×é</span><br/></p></pre>
+<h5><b>è¾“å‡ºæè¿°:</b></h5>
+<pre><p><span style="white-space:normal">è¾“å‡ºåˆ°é•¿åº¦ä¸º8çš„æ–°å­—ç¬¦ä¸²æ•°ç»„</span><br/></p></pre>
 <br/>
-<h5><b>ÊäÈëÀý×Ó:</b></h5>
+<h5><b>è¾“å…¥ä¾‹å­:</b></h5>
 <pre>abc
 123456789</pre>
 <br/>
-<h5><b>Êä³öÀý×Ó:</b></h5>
+<h5><b>è¾“å‡ºä¾‹å­:</b></h5>
 <pre>abc00000
 12345678
 90000000</pre>

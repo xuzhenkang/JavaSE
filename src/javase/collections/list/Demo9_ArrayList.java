@@ -5,31 +5,31 @@ import java.util.ArrayList;
 public class Demo9_ArrayList {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * ¼¯ºÏÇ¶Ì×Ö®ArrayListÇ¶Ì×ArrayList
-	 * °¸Àı:
-	 * ÎÒÃÇÑ§¿Æ,Ñ§¿ÆÓÖ·ÖÎªÈô¸ö°à¼¶
-	 * Õû¸öÑ§¿ÆÒ»¸ö´ó¼¯ºÏ
-	 * Èô¸É¸ö°à¼¶·ÖÎªÃ¿Ò»¸öĞ¡¼¯ºÏ
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * é›†åˆåµŒå¥—ä¹‹ArrayListåµŒå¥—ArrayList
+	 * æ¡ˆä¾‹:
+	 * æˆ‘ä»¬å­¦ç§‘,å­¦ç§‘åˆåˆ†ä¸ºè‹¥ä¸ªç­çº§
+	 * æ•´ä¸ªå­¦ç§‘ä¸€ä¸ªå¤§é›†åˆ
+	 * è‹¥å¹²ä¸ªç­çº§åˆ†ä¸ºæ¯ä¸€ä¸ªå°é›†åˆ
 	 */
 	public static void main(String[] args) {
 		ArrayList<ArrayList<Person>> list = new ArrayList<>();
 		
-		ArrayList<Person> first = new ArrayList<>();				//´´½¨µÚÒ»¸ö°à¼¶
-		first.add(new Person("ÑîÃİ", 30));
-		first.add(new Person("Àî±ù±ù", 33));
-		first.add(new Person("·¶±ù±ù", 20));
+		ArrayList<Person> first = new ArrayList<>();				//åˆ›å»ºç¬¬ä¸€ä¸ªç­çº§
+		first.add(new Person("æ¨å¹‚", 30));
+		first.add(new Person("æå†°å†°", 33));
+		first.add(new Person("èŒƒå†°å†°", 20));
 		
 		ArrayList<Person> second = new ArrayList<>();
-		second.add(new Person("»ÆÏşÃ÷", 31));
-		second.add(new Person("ÕÔŞ±", 33));
-		second.add(new Person("³ÂÀ¤", 32));
+		second.add(new Person("é»„æ™“æ˜", 31));
+		second.add(new Person("èµµè–‡", 33));
+		second.add(new Person("é™ˆå¤", 32));
 		
-		//½«°à¼¶Ìí¼Óµ½Ñ§¿Æ¼¯ºÏÖĞ
+		//å°†ç­çº§æ·»åŠ åˆ°å­¦ç§‘é›†åˆä¸­
 		list.add(first);
 		list.add(second);
 		
-		//±éÀúÑ§¿Æ¼¯ºÏ
+		//éå†å­¦ç§‘é›†åˆ
 		for(ArrayList<Person> a : list) {
 			for(Person p : a) {
 				System.out.println(p);

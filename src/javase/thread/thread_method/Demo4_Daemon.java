@@ -4,7 +4,7 @@ public class Demo4_Daemon {
 
 	/**
 	 * @param args
-	 * ÊØ»¤Ïß³Ì
+	 * å®ˆæŠ¤çº¿ç¨‹
 	 */
 	public static void main(String[] args) {
 		Thread t1 = new Thread() {
@@ -23,7 +23,7 @@ public class Demo4_Daemon {
 			}
 		};
 		
-		t2.setDaemon(true);							//ÉèÖÃÎªÊØ»¤Ïß³Ì
+		t2.setDaemon(true);							//è®¾ç½®ä¸ºå®ˆæŠ¤çº¿ç¨‹
 		
 		t1.start();
 		t2.start();

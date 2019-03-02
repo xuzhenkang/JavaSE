@@ -1,12 +1,12 @@
 package javase.base.structured_programming.loop_structure.test;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£ºÇó³ö1-10Ö®¼äÊı¾İÖ®ºÍ
-* B:Ñ§ÉúÁ·Ï°
-	* ĞèÇó£ºÇó³ö1-100Ö®¼äÅ¼ÊıºÍ
-	* ĞèÇó£ºÇó³ö1-100Ö®¼äÆæÊıºÍ
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šæ±‚å‡º1-10ä¹‹é—´æ•°æ®ä¹‹å’Œ
+* B:å­¦ç”Ÿç»ƒä¹ 
+	* éœ€æ±‚ï¼šæ±‚å‡º1-100ä¹‹é—´å¶æ•°å’Œ
+	* éœ€æ±‚ï¼šæ±‚å‡º1-100ä¹‹é—´å¥‡æ•°å’Œ
 
-	·ÖÎö:1-10Êı¾İµÄºÍ
+	åˆ†æ:1-10æ•°æ®çš„å’Œ
 	0 + 1
 		1 + 2
 			3 + 3
@@ -15,7 +15,7 @@ package javase.base.structured_programming.loop_structure.test;
 */
 class Test2_For {
 	public static void main(String[] args) {
-		//1-10µÄºÍ
+		//1-10çš„å’Œ
 		/*int sum = 0;
 		for (int i = 1;i <= 10 ;i++ ) {
 			sum = sum + i;
@@ -23,7 +23,7 @@ class Test2_For {
 
 		System.out.println("sum = " + sum);*/
 
-		//1-100µÄÅ¼ÊıºÍ
+		//1-100çš„å¶æ•°å’Œ
 		/*int sum = 0;
 		for (int i = 1;i <= 100 ;i++ ) {
 			if (i % 2 == 0) {
@@ -33,7 +33,7 @@ class Test2_For {
 
 		System.out.println("sum = " + sum);*/
 
-		//1-100µÄÆæÊıºÍ
+		//1-100çš„å¥‡æ•°å’Œ
 		int sum = 0;
 		for (int i = 1;i <= 100 ;i+=2 ) {
 			/*if (i % 2 != 0) {

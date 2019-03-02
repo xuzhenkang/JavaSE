@@ -1,18 +1,18 @@
 package javase.base.method.test;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬·µ»ØÁ½¸öÊıÖĞµÄ½Ï´óÖµ
-* B:°¸ÀıÑİÊ¾
-	* ĞèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬±È½ÏÁ½¸öÊıÊÇ·ñÏàµÈ     
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œè¿”å›ä¸¤ä¸ªæ•°ä¸­çš„è¾ƒå¤§å€¼
+* B:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸¤ä¸ªæ•°æ®ï¼Œæ¯”è¾ƒä¸¤ä¸ªæ•°æ˜¯å¦ç›¸ç­‰     
 */
 import java.util.Scanner;
 class Test1_Method {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);				//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÕûÊı:");
-		int x = sc.nextInt();								//½«¼üÅÌÂ¼ÈëµÄÕûÊı´æ´¢ÔÚxÖĞ
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÕûÊı:");
-		int y = sc.nextInt();								//½«¼üÅÌÂ¼ÈëµÄÕûÊı´æ´¢ÔÚyÖĞ
+		Scanner sc = new Scanner(System.in);				//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªæ•´æ•°:");
+		int x = sc.nextInt();								//å°†é”®ç›˜å½•å…¥çš„æ•´æ•°å­˜å‚¨åœ¨xä¸­
+		System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªæ•´æ•°:");
+		int y = sc.nextInt();								//å°†é”®ç›˜å½•å…¥çš„æ•´æ•°å­˜å‚¨åœ¨yä¸­
 
 		//int max = getMax(x,y);
 		//System.out.println(max);
@@ -22,20 +22,20 @@ class Test1_Method {
 	}
 
 	/*
-	·µ»ØÁ¬¸öÕûÊıµÄ½Ï´óÖµ
-	1,Ã÷È··µ»ØÖµÀàĞÍ int
-	2,Ã÷È·²ÎÊıÁĞ±í int a,int b
+	è¿”å›è¿ä¸ªæ•´æ•°çš„è¾ƒå¤§å€¼
+	1,æ˜ç¡®è¿”å›å€¼ç±»å‹ int
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨ int a,int b
 	*/
 	public static int getMax(int a,int b) {
 		return a > b ? a : b;
 	}
 
 	/*
-	ÅĞ¶ÏÁ½¸öÕûÊıÊÇ·ñÏàµÈ
-	1,Ã÷È··µ»ØÖµÀàĞÍ boolean
-	2,Ã÷È·²ÎÊıÁĞ±í int a,int b
+	åˆ¤æ–­ä¸¤ä¸ªæ•´æ•°æ˜¯å¦ç›¸ç­‰
+	1,æ˜ç¡®è¿”å›å€¼ç±»å‹ boolean
+	2,æ˜ç¡®å‚æ•°åˆ—è¡¨ int a,int b
 	*/
-	public static boolean isEquals(int a,int b) {		//isEquals ÊÇ·ñÏàµÈ
+	public static boolean isEquals(int a,int b) {		//isEquals æ˜¯å¦ç›¸ç­‰
 		return a == b;
 	}
 }

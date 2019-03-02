@@ -7,26 +7,26 @@ import java.util.Iterator;
 public class Demo2_Generic {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * ArrayList´æ´¢×Ö·û´®²¢±éÀú·ºĞÍ°æ
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * ArrayListå­˜å‚¨å­—ç¬¦ä¸²å¹¶éå†æ³›å‹ç‰ˆ
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		ArrayList<Person> list = new ArrayList<>();
-		list.add(new Person("ÕÅÈı", 23));
-		list.add(new Person("ÀîËÄ", 24));
-		list.add(new Person("ÍõÎå", 25));
-		list.add(new Person("ÕÔÁù", 26));
+		list.add(new Person("å¼ ä¸‰", 23));
+		list.add(new Person("æå››", 24));
+		list.add(new Person("ç‹äº”", 25));
+		list.add(new Person("èµµå…­", 26));
 		
 		Iterator<Person> it = list.iterator();
 		while(it.hasNext()) {
-			Person p = it.next();							//½«¼¯ºÏÖĞµÄÃ¿Ò»¸öÔªËØÓÃPerson¼ÇÂ¼
+			Person p = it.next();							//å°†é›†åˆä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ ç”¨Personè®°å½•
 			System.out.println(p.getName() + "..." + p.getAge());
 		}
 	}
 
 	public static void demo1() {
-		ArrayList<String> list = new ArrayList<>();			//´´½¨¼¯ºÏ¶ÔÏó
+		ArrayList<String> list = new ArrayList<>();			//åˆ›å»ºé›†åˆå¯¹è±¡
 		list.add("a");
 		list.add("b");
 		list.add("c");

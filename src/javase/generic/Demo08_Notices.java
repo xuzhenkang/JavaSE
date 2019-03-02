@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ×¢Òâ£º·ºĞÍÃ»ÓĞ¶àÌ¬£¬Ò²Ã»ÓĞ·ºĞÍÊı×éµÄ¸ÅÄî
+ * æ³¨æ„ï¼šæ³›å‹æ²¡æœ‰å¤šæ€ï¼Œä¹Ÿæ²¡æœ‰æ³›å‹æ•°ç»„çš„æ¦‚å¿µ
  * @author lenovo
  *
  */
 public class Demo08_Notices {
 	public static void main(String[] args) {
-		Fruit f = new Apple();// ¶àÌ¬
-//		List<Fruit> list = new ArrayList<Apple>();// ±¨´í£¬ ·ºĞÍÃ»ÓĞ¶àÌ¬
+		Fruit f = new Apple();// å¤šæ€
+//		List<Fruit> list = new ArrayList<Apple>();// æŠ¥é”™ï¼Œ æ³›å‹æ²¡æœ‰å¤šæ€
 		List<? extends Fruit> list = new ArrayList<Apple>();
 		
-		// ·ºĞÍÃ»ÓĞÊı×é
+		// æ³›å‹æ²¡æœ‰æ•°ç»„
 		Fruit[] arr = new Fruit[10];
-//		Fruit<String>[] arr2 = new Fruit<String>[10];// ±¨´í£¬Ã»ÓĞ·ºĞÍÊı×éµÄ¸ÅÄî
+//		Fruit<String>[] arr2 = new Fruit<String>[10];// æŠ¥é”™ï¼Œæ²¡æœ‰æ³›å‹æ•°ç»„çš„æ¦‚å¿µ
 		
-		// JDK1.7Õë¶Ô·ºĞÍµÄ¼ò»¯
+		// JDK1.7é’ˆå¯¹æ³›å‹çš„ç®€åŒ–
 		List<Fruit> list2 = new ArrayList<>();
 		
 	}

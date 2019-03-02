@@ -5,11 +5,11 @@ import java.math.BigInteger;
 public class Demo4_BigInteger {
 
 	/**
-	 ** A:BigIntegerµÄ¸ÅÊö
-			* ¿ÉÒÔÈÃ³¬¹ıInteger·¶Î§ÄÚµÄÊı¾İ½øĞĞÔËËã
-		* B:¹¹Ôì·½·¨
+	 ** A:BigIntegerçš„æ¦‚è¿°
+			* å¯ä»¥è®©è¶…è¿‡IntegerèŒƒå›´å†…çš„æ•°æ®è¿›è¡Œè¿ç®—
+		* B:æ„é€ æ–¹æ³•
 			* public BigInteger(String val)
-		* C:³ÉÔ±·½·¨
+		* C:æˆå‘˜æ–¹æ³•
 			* public BigInteger add(BigInteger val)
 			* public BigInteger subtract(BigInteger val)
 			* public BigInteger multiply(BigInteger val)
@@ -26,9 +26,9 @@ public class Demo4_BigInteger {
 		System.out.println(bi1.add(bi2)); 				//+
 		System.out.println(bi1.subtract(bi2));			//-
 		System.out.println(bi1.multiply(bi2)); 			//*
-		System.out.println(bi1.divide(bi2));    		///(³ı)
+		System.out.println(bi1.divide(bi2));    		///(é™¤)
 		
-		BigInteger[] arr = bi1.divideAndRemainder(bi2);	//È¡³ıÊıºÍÓàÊı
+		BigInteger[] arr = bi1.divideAndRemainder(bi2);	//å–é™¤æ•°å’Œä½™æ•°
 		
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);

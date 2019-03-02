@@ -6,21 +6,21 @@ public class Demo4_Thread {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		new Thread() {										//1,ºÃ≥–Thread¿‡
-			public void run() {								//2,÷ÿ–¥run∑Ω∑®
-				for(int i = 0; i < 1000; i++) {				//3,Ω´“™÷¥––µƒ¥˙¬Î–¥‘⁄run∑Ω∑®÷–
+		new Thread() {										//1,ÁªßÊâøThreadÁ±ª
+			public void run() {								//2,ÈáçÂÜôrunÊñπÊ≥ï
+				for(int i = 0; i < 1000; i++) {				//3,Â∞ÜË¶ÅÊâßË°åÁöÑ‰ª£Á†ÅÂÜôÂú®runÊñπÊ≥ï‰∏≠
 					System.out.println("aaaaaaaaaaaaaa");
 				}
 			}
-		}.start();											//4,ø™∆Ùœﬂ≥Ã
+		}.start();											//4,ÂºÄÂêØÁ∫øÁ®ã
 		
-		new Thread(new Runnable() {							//1,Ω´Runnableµƒ◊”¿‡∂‘œÛ¥´µ›∏¯Threadµƒππ‘Ï∑Ω∑®
-			public void run() {								//2,÷ÿ–¥run∑Ω∑®
-				for(int i = 0; i < 1000; i++) {				//3,Ω´“™÷¥––µƒ¥˙¬Î–¥‘⁄run∑Ω∑®÷–
+		new Thread(new Runnable() {							//1,Â∞ÜRunnableÁöÑÂ≠êÁ±ªÂØπË±°‰º†ÈÄíÁªôThreadÁöÑÊûÑÈÄ†ÊñπÊ≥ï
+			public void run() {								//2,ÈáçÂÜôrunÊñπÊ≥ï
+				for(int i = 0; i < 1000; i++) {				//3,Â∞ÜË¶ÅÊâßË°åÁöÑ‰ª£Á†ÅÂÜôÂú®runÊñπÊ≥ï‰∏≠
 					System.out.println("bb");
 				}
 			}
-		}).start();											//4,ø™∆Ùœﬂ≥Ã
+		}).start();											//4,ÂºÄÂêØÁ∫øÁ®ã
 	}
 
 }

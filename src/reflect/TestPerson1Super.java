@@ -1,6 +1,6 @@
 package reflect;
 /**
- * È¡µÃÆäËûÀàÖĞµÄ¸¸Àà
+ * å–å¾—å…¶ä»–ç±»ä¸­çš„çˆ¶ç±»
  * @author lenovo
  *
  */
@@ -14,6 +14,6 @@ public class TestPerson1Super {
 			e.printStackTrace();
 		}
 		Class<?> temp = demo.getSuperclass();
-		System.out.println("¼Ì³ĞµÄ¸¸ÀàÎª£º" + temp.getName());
+		System.out.println("ç»§æ‰¿çš„çˆ¶ç±»ä¸ºï¼š" + temp.getName());
 	}
 }

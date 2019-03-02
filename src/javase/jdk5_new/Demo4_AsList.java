@@ -7,21 +7,21 @@ import java.util.List;
 public class Demo4_AsList {
 
 	/**
-	 * Êı×é×ª»»³É¼¯ºÏ
-	 * Êı×é×ª»»³É¼¯ºÏËäÈ»²»ÄÜÔö¼Ó»ò¼õÉÙÔªËØ,µ«ÊÇ¿ÉÒÔÓÃ¼¯ºÏµÄË¼Ïë²Ù×÷Êı×é,Ò²¾ÍÊÇËµ¿ÉÒÔÊ¹ÓÃÆäËû¼¯ºÏÖĞµÄ·½·¨
+	 * æ•°ç»„è½¬æ¢æˆé›†åˆ
+	 * æ•°ç»„è½¬æ¢æˆé›†åˆè™½ç„¶ä¸èƒ½å¢åŠ æˆ–å‡å°‘å…ƒç´ ,ä½†æ˜¯å¯ä»¥ç”¨é›†åˆçš„æ€æƒ³æ“ä½œæ•°ç»„,ä¹Ÿå°±æ˜¯è¯´å¯ä»¥ä½¿ç”¨å…¶ä»–é›†åˆä¸­çš„æ–¹æ³•
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		//demo2();
-		//¼¯ºÏ×ªÊı×é,¼Ó·ºĞÍµÄ
+		//é›†åˆè½¬æ•°ç»„,åŠ æ³›å‹çš„
 		ArrayList<String> list = new ArrayList<>();
 		list.add("a");
 		list.add("b");
 		list.add("c");
 		list.add("d");
 		
-		String[] arr = list.toArray(new String[10]);		//µ±¼¯ºÏ×ª»»Êı×éÊ±,Êı×é³¤¶ÈÈç¹ûÊÇĞ¡ÓÚµÈÓÚ¼¯ºÏµÄsizeÊ±,×ª»»ºóµÄÊı×é³¤¶ÈµÈÓÚ¼¯ºÏµÄsize
-															//Èç¹ûÊı×éµÄ³¤¶È´óÓÚÁËsize,·ÖÅäµÄÊı×é³¤¶È¾ÍºÍÄãÖ¸¶¨µÄ³¤¶ÈÒ»Ñù
+		String[] arr = list.toArray(new String[10]);		//å½“é›†åˆè½¬æ¢æ•°ç»„æ—¶,æ•°ç»„é•¿åº¦å¦‚æœæ˜¯å°äºç­‰äºé›†åˆçš„sizeæ—¶,è½¬æ¢åçš„æ•°ç»„é•¿åº¦ç­‰äºé›†åˆçš„size
+															//å¦‚æœæ•°ç»„çš„é•¿åº¦å¤§äºäº†size,åˆ†é…çš„æ•°ç»„é•¿åº¦å°±å’Œä½ æŒ‡å®šçš„é•¿åº¦ä¸€æ ·
 		for (String string : arr) {
 			System.out.println(string);
 		}
@@ -29,17 +29,17 @@ public class Demo4_AsList {
 
 	public static void demo2() {
 		//int[] arr = {11,22,33,44,55};			
-		//List<int[]> list = Arrays.asList(arr);			»ù±¾Êı¾İÀàĞÍµÄÊı×é×ª»»³É¼¯ºÏ,»á½«Õû¸öÊı×éµ±×÷Ò»¸ö¶ÔÏó×ª»»
+		//List<int[]> list = Arrays.asList(arr);			åŸºæœ¬æ•°æ®ç±»å‹çš„æ•°ç»„è½¬æ¢æˆé›†åˆ,ä¼šå°†æ•´ä¸ªæ•°ç»„å½“ä½œä¸€ä¸ªå¯¹è±¡è½¬æ¢
 		//System.out.println(list);
-		Integer[] arr = {11,22,33,44,55};					//½«Êı×é×ª»»³É¼¯ºÏ,Êı×é±ØĞëÊÇÒıÓÃÊı¾İÀàĞÍ
+		Integer[] arr = {11,22,33,44,55};					//å°†æ•°ç»„è½¬æ¢æˆé›†åˆ,æ•°ç»„å¿…é¡»æ˜¯å¼•ç”¨æ•°æ®ç±»å‹
 		List<Integer> list = Arrays.asList(arr);
 		System.out.println(list);
 	}
 
 	public static void demo1() {
 		String[] arr = {"a","b","c"};
-		List<String> list = Arrays.asList(arr);				//½«Êı×é×ª»»³É¼¯ºÏ
-		//list.add("d");									//²»ÄÜÌí¼Ó
+		List<String> list = Arrays.asList(arr);				//å°†æ•°ç»„è½¬æ¢æˆé›†åˆ
+		//list.add("d");									//ä¸èƒ½æ·»åŠ 
 		System.out.println(list);
 	}
 

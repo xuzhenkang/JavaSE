@@ -1,17 +1,17 @@
 package javase.generic;
 /*
- * ·ºĞÍ½Ó¿ÚÓë·ºĞÍÀà Í¬Àí
+ * æ³›å‹æ¥å£ä¸æ³›å‹ç±» åŒç†
  * 
  */
 public interface Demo02_Comparator<T> {
 	public static final int MAX_VALUE = 100;
-//	public static final T MAX_VALUE = 100; ´íÎó·ºĞÍ²»ÄÜÓÃÔÚ¾²Ì¬ÊôĞÔÉÏ
-//	public static T get(); ´íÎó£¬ ·ºĞÍ²»ÄÜÓÃÔÚ¾²Ì¬·½·¨ÉÏ
+//	public static final T MAX_VALUE = 100; é”™è¯¯æ³›å‹ä¸èƒ½ç”¨åœ¨é™æ€å±æ€§ä¸Š
+//	public static T get(); é”™è¯¯ï¼Œ æ³›å‹ä¸èƒ½ç”¨åœ¨é™æ€æ–¹æ³•ä¸Š
 	public abstract void test();
 }
 
 
-// ÊµÏÖ
+// å®ç°
 class InterC1 implements Demo02_Comparator {
 
 	@Override

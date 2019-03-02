@@ -3,15 +3,15 @@ package javase.exception;
 public class Demo3_Exception {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * try...catchµÄ·½Ê½´¦Àí¶à¸öÒì³£
-	 * JDK7ÒÔºó´¦Àí¶à¸öÒì³£µÄ·½Ê½¼°×¢ÒâÊÂÏî
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * try...catchçš„æ–¹å¼å¤„ç†å¤šä¸ªå¼‚å¸¸
+	 * JDK7ä»¥åå¤„ç†å¤šä¸ªå¼‚å¸¸çš„æ–¹å¼åŠæ³¨æ„äº‹é¡¹
 	 * 
-	 * °²×¿,¿Í»§¶Ë¿ª·¢,ÈçºÎ´¦ÀíÒì³£?try{}catch(Exception e){}
-	 * ee,·şÎñ¶Ë¿ª·¢,Ò»°ã¶¼ÊÇµ×²ã¿ª·¢,´Óµ×²ãÏòÉÏÅ×
+	 * å®‰å“,å®¢æˆ·ç«¯å¼€å‘,å¦‚ä½•å¤„ç†å¼‚å¸¸?try{}catch(Exception e){}
+	 * ee,æœåŠ¡ç«¯å¼€å‘,ä¸€èˆ¬éƒ½æ˜¯åº•å±‚å¼€å‘,ä»åº•å±‚å‘ä¸ŠæŠ›
 	 * 
-	 * tryºóÃæÈç¹û¸ú¶à¸öcatch,ÄÇÃ´Ğ¡µÄÒì³£·ÅÇ°Ãæ,´óµÄÒì³£·ÅºóÃæ,¸ù¾İ¶àÌ¬µÄÔ­Àí,Èç¹û´óµÄ·ÅÇ°Ãæ,¾Í»á½«ËùÓĞµÄ×ÓÀà¶ÔÏó½ÓÊÕ
-	 * ºóÃæµÄcatch¾ÍÃ»ÓĞÒâÒåÁË
+	 * tryåé¢å¦‚æœè·Ÿå¤šä¸ªcatch,é‚£ä¹ˆå°çš„å¼‚å¸¸æ”¾å‰é¢,å¤§çš„å¼‚å¸¸æ”¾åé¢,æ ¹æ®å¤šæ€çš„åŸç†,å¦‚æœå¤§çš„æ”¾å‰é¢,å°±ä¼šå°†æ‰€æœ‰çš„å­ç±»å¯¹è±¡æ¥æ”¶
+	 * åé¢çš„catchå°±æ²¡æœ‰æ„ä¹‰äº†
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -19,12 +19,12 @@ public class Demo3_Exception {
 		int b = 0;
 		int[] arr = {11,22,33,44,55};
 		
-		//JDK7ÈçºÎ´¦Àí¶à¸öÒì³£
+		//JDK7å¦‚ä½•å¤„ç†å¤šä¸ªå¼‚å¸¸
 		try {
 			System.out.println(a / b);
 			System.out.println(arr[10]);
 		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
-			System.out.println("³ö´íÁË");
+			System.out.println("å‡ºé”™äº†");
 		} 
 	}
 
@@ -39,11 +39,11 @@ public class Demo3_Exception {
 			arr = null;
 			System.out.println(arr[0]);
 		} catch (ArithmeticException e) {
-			System.out.println("³ıÊı²»ÄÜÎªÁã");
+			System.out.println("é™¤æ•°ä¸èƒ½ä¸ºé›¶");
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Ë÷ÒıÔ½½çÁË");
+			System.out.println("ç´¢å¼•è¶Šç•Œäº†");
 		} catch (Exception e) {				//Exception e = new NullPointerException();
-			System.out.println("³ö´íÁË");
+			System.out.println("å‡ºé”™äº†");
 		}
 		
 		System.out.println("over");

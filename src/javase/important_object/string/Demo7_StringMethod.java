@@ -1,13 +1,13 @@
 package javase.important_object.string;
 /**
- * - A:StringµÄÌæ»»¹¦ÄÜ¼°°¸ÀıÑİÊ¾
+ * - A:Stringçš„æ›¿æ¢åŠŸèƒ½åŠæ¡ˆä¾‹æ¼”ç¤º
     - String replace(char old, char new)
     - String replace(String old, String new)
-- B:StringµÄÈ¥³ı×Ö·û´®Á½¶Ë¿Õ¸ñ¼°°¸ÀıÑİÊ¾
+- B:Stringçš„å»é™¤å­—ç¬¦ä¸²ä¸¤ç«¯ç©ºæ ¼åŠæ¡ˆä¾‹æ¼”ç¤º
     - String trim()
-- C:StringµÄ°´×ÖµäË³Ğò±È½ÏÁ½¸ö×Ö·û´®¼°°¸ÀıÑİÊ¾
-    - int compareTo(String str)(ÔİÊ±²»ÓÃÕÆÎÕ)
-    - int compareToIgnoreCase(String str)(ÁË½â)
+- C:Stringçš„æŒ‰å­—å…¸é¡ºåºæ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²åŠæ¡ˆä¾‹æ¼”ç¤º
+    - int compareTo(String str)(æš‚æ—¶ä¸ç”¨æŒæ¡)
+    - int compareToIgnoreCase(String str)(äº†è§£)
  * @author Dan
  *
  */

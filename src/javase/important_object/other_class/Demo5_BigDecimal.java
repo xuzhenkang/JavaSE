@@ -5,36 +5,36 @@ import java.math.BigDecimal;
 public class Demo5_BigDecimal {
 
 	/**
-	 * * A:BigDecimalµÄ¸ÅÊö
-			* ÓÉÓÚÔÚÔËËãµÄÊ±ºò£¬floatÀàĞÍºÍdoubleºÜÈİÒ×¶ªÊ§¾«¶È£¬ÑİÊ¾°¸Àı¡£
-			* ËùÒÔ£¬ÎªÁËÄÜ¾«È·µÄ±íÊ¾¡¢¼ÆËã¸¡µãÊı£¬JavaÌá¹©ÁËBigDecimal
+	 * * A:BigDecimalçš„æ¦‚è¿°
+			* ç”±äºåœ¨è¿ç®—çš„æ—¶å€™ï¼Œfloatç±»å‹å’Œdoubleå¾ˆå®¹æ˜“ä¸¢å¤±ç²¾åº¦ï¼Œæ¼”ç¤ºæ¡ˆä¾‹ã€‚
+			* æ‰€ä»¥ï¼Œä¸ºäº†èƒ½ç²¾ç¡®çš„è¡¨ç¤ºã€è®¡ç®—æµ®ç‚¹æ•°ï¼ŒJavaæä¾›äº†BigDecimal
 		
-			* ²»¿É±äµÄ¡¢ÈÎÒâ¾«¶ÈµÄÓĞ·ûºÅÊ®½øÖÆÊı¡£
-		* B:¹¹Ôì·½·¨
+			* ä¸å¯å˜çš„ã€ä»»æ„ç²¾åº¦çš„æœ‰ç¬¦å·åè¿›åˆ¶æ•°ã€‚
+		* B:æ„é€ æ–¹æ³•
 			* public BigDecimal(String val)
-		* C:³ÉÔ±·½·¨
+		* C:æˆå‘˜æ–¹æ³•
 			* public BigDecimal add(BigDecimal augend)
 			* public BigDecimal subtract(BigDecimal subtrahend)
 			* public BigDecimal multiply(BigDecimal multiplicand)
 			* public BigDecimal divide(BigDecimal divisor)
-		* D:°¸ÀıÑİÊ¾
-			* BigDecimalÀàµÄ¹¹Ôì·½·¨ºÍ³ÉÔ±·½·¨Ê¹ÓÃ
-		Ê®½øÖÆ±íÊ¾1/3
+		* D:æ¡ˆä¾‹æ¼”ç¤º
+			* BigDecimalç±»çš„æ„é€ æ–¹æ³•å’Œæˆå‘˜æ–¹æ³•ä½¿ç”¨
+		åè¿›åˆ¶è¡¨ç¤º1/3
 		0.3333333333333333333333333333333333333333 
 			 */
 	public static void main(String[] args) {
 		//System.out.println(2.0 - 1.1);
-		/*BigDecimal bd1 = new BigDecimal(2.0);		//ÕâÖÖ·½Ê½ÔÚ¿ª·¢ÖĞ²»ÍÆ¼ö,ÒòÎª²»¹»¾«È·
+		/*BigDecimal bd1 = new BigDecimal(2.0);		//è¿™ç§æ–¹å¼åœ¨å¼€å‘ä¸­ä¸æ¨è,å› ä¸ºä¸å¤Ÿç²¾ç¡®
 		BigDecimal bd2 = new BigDecimal(1.1);
 		
 		System.out.println(bd1.subtract(bd2));*/
 		
-		/*BigDecimal bd1 = new BigDecimal("2.0");		//Í¨¹ı¹¹ÔìÖĞ´«Èë×Ö·û´®µÄ·½Ê½,¿ª·¢Ê±ÍÆ¼ö
+		/*BigDecimal bd1 = new BigDecimal("2.0");		//é€šè¿‡æ„é€ ä¸­ä¼ å…¥å­—ç¬¦ä¸²çš„æ–¹å¼,å¼€å‘æ—¶æ¨è
 		BigDecimal bd2 = new BigDecimal("1.1");
 		
 		System.out.println(bd1.subtract(bd2));*/
 		
-		BigDecimal bd1 = BigDecimal.valueOf(2.0);	//ÕâÖÖ·½Ê½ÔÚ¿ª·¢ÖĞÒ²ÊÇÍÆ¼öµÄ
+		BigDecimal bd1 = BigDecimal.valueOf(2.0);	//è¿™ç§æ–¹å¼åœ¨å¼€å‘ä¸­ä¹Ÿæ˜¯æ¨èçš„
 		BigDecimal bd2 = BigDecimal.valueOf(1.1);
 		
 		System.out.println(bd1.subtract(bd2));

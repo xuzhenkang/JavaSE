@@ -30,21 +30,21 @@ class Printer1 {
 	private int flag = 1;
 	public synchronized void print1() throws InterruptedException {
 		if (flag != 1) this.wait();
-		System.out.print("ºÚ");
-		System.out.print("Âí");
-		System.out.print("³Ì");
-		System.out.print("Ğò");
-		System.out.println("Ô±");
+		System.out.print("é»‘");
+		System.out.print("é©¬");
+		System.out.print("ç¨‹");
+		System.out.print("åº");
+		System.out.println("å‘˜");
 		flag = 2;
 		this.notify();
 	}
 
 	public synchronized void print2() throws InterruptedException {
 		if (flag != 2) this.wait();
-		System.out.print("´«");
-		System.out.print("ÖÇ");
-		System.out.print("²¥");
-		System.out.println("¿Í");
+		System.out.print("ä¼ ");
+		System.out.print("æ™º");
+		System.out.print("æ’­");
+		System.out.println("å®¢");
 		flag = 1;
 		this.notify();
 	}

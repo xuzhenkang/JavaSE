@@ -19,23 +19,23 @@ public class Demo1_Lambda {
 
 	public static void main(String[] args) {
 		/*
-		 * Àý1 ÓÃlambda±í´ïÊ½ÊµÏÖRunnable
+		 * ä¾‹1 ç”¨lambdaè¡¨è¾¾å¼å®žçŽ°Runnable
 		 */
-		System.out.println("Àý1 ÓÃlambda±í´ïÊ½ÊµÏÖRunnable");
-		// Java8 Ö®Ç°
+		System.out.println("ä¾‹1 ç”¨lambdaè¡¨è¾¾å¼å®žçŽ°Runnable");
+		// Java8 ä¹‹å‰
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				System.out.println("Before Java8, too much code for too little to do!");
 			}
 		}).start();
-		// Java8·½Ê½
+		// Java8æ–¹å¼
 		new Thread(() -> System.out.println("In Java8, Lambda expression rocks!")).start();
 		/*
-		 * Àý2 Ê¹ÓÃJava8 lambda±í´ïÊ½½øÐÐÊÂ¼þ´¦Àí
+		 * ä¾‹2 ä½¿ç”¨Java8 lambdaè¡¨è¾¾å¼è¿›è¡Œäº‹ä»¶å¤„ç†
 		 */
-		System.out.println("Àý2 Ê¹ÓÃJava8 lambda±í´ïÊ½½øÐÐÊÂ¼þ´¦Àí");
-		JFrame jf = new JFrame("Àý2");
+		System.out.println("ä¾‹2 ä½¿ç”¨Java8 lambdaè¡¨è¾¾å¼è¿›è¡Œäº‹ä»¶å¤„ç†");
+		JFrame jf = new JFrame("ä¾‹2");
 		JButton show1 = new JButton("Show1");
 		JButton show2 = new JButton("Show2");
 		jf.setLayout(new FlowLayout());
@@ -45,29 +45,29 @@ public class Demo1_Lambda {
 		jf.setVisible(true);
 		jf.setLocationRelativeTo(null);
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		// Java8Ö®Ç°
+		// Java8ä¹‹å‰
 		show1.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Event handing lambda expression is boring.");
 			}
 		});
-		// Java8·½Ê½
+		// Java8æ–¹å¼
 		show2.addActionListener((e) -> {
 			System.out.println("Light, Camera, Action!! Lambda expression Rocks.");
 		});
 
 		/**
-		 * Àý3 Ê¹ÓÃJava8 lambda±í´ïÊ½´¦ÀíComparatorÄäÃûÀà
+		 * ä¾‹3 ä½¿ç”¨Java8 lambdaè¡¨è¾¾å¼å¤„ç†ComparatoråŒ¿åç±»
 		 */
-		System.out.println("Àý3 Ê¹ÓÃJava8 lambda±í´ïÊ½´¦ÀíComparatorÄäÃûÀà");
+		System.out.println("ä¾‹3 ä½¿ç”¨Java8 lambdaè¡¨è¾¾å¼å¤„ç†ComparatoråŒ¿åç±»");
 		List<A> list = new ArrayList<>();
 		list.add(new A("xuzhenkang"));
 		list.add(new A("lixiaodan"));
 		list.add(new A("xuxiaokang"));
 		list.add(new A("xuxiaodan"));
 		/*
-		 * Java8Ö®Ç°
+		 * Java8ä¹‹å‰
 		 */
 		Collections.sort(list, new Comparator<A>() {
 			@Override
@@ -75,33 +75,33 @@ public class Demo1_Lambda {
 				return o1.name.compareTo(o2.name);
 			}
 		});
-		/* Java8µÄ·½Ê½ */
+		/* Java8çš„æ–¹å¼ */
 		Collections.sort(list, (o1, o2) -> o1.name.compareTo(o2.name));
 
 		list.forEach(a -> System.out.println(a.name));
 
 		/**
-		 * Àý4¡¢Ê¹ÓÃlambda±í´ïÊ½¶ÔÁÐ±í½øÐÐµü´ú
+		 * ä¾‹4ã€ä½¿ç”¨lambdaè¡¨è¾¾å¼å¯¹åˆ—è¡¨è¿›è¡Œè¿­ä»£
 		 */
-		System.out.println("Àý4 Ê¹ÓÃlambda±í´ïÊ½¶ÔÁÐ±í½øÐÐµü´ú");
+		System.out.println("ä¾‹4 ä½¿ç”¨lambdaè¡¨è¾¾å¼å¯¹åˆ—è¡¨è¿›è¡Œè¿­ä»£");
 		List<String> features = Arrays.asList("Lambdas", "Default Method", "Stream API", "Date and Time API");
-		// Java8Ö®Ç°
+		// Java8ä¹‹å‰
 		for (String feature : features) {
 			System.out.println(feature);
 		}
-		// Java8µÄ·½Ê½
+		// Java8çš„æ–¹å¼
 		features.forEach(n -> System.out.println(n));
-		// ¸üË¬µÄ·½·¨£º·½·¨ÒýÓÃ
+		// æ›´çˆ½çš„æ–¹æ³•ï¼šæ–¹æ³•å¼•ç”¨
 		features.forEach(System.out::println);
 
 		/**
-		 * Àý5 Ê¹ÓÃlambda±í´ïÊ½ºÍº¯ÊýÊ½½Ó¿ÚPredicate 
-		 * ³ýÁËÔÚÓïÑÔ²ãÃæÖ§³Öº¯ÊýÊ½±à³Ì·ç¸ñ£¬Java 8Ò²Ìí¼ÓÁËÒ»¸ö°ü£¬½Ð×öjava.util.function¡£
-		 * Ëü°üº¬ÁËºÜ¶àÀà£¬ÓÃÀ´Ö§³ÖJavaµÄº¯ÊýÊ½±à³Ì¡£ÆäÖÐÒ»¸ö±ãÊÇPredicate£¬Ê¹ÓÃjava.util.function.Predicate
-		 * º¯ÊýÊ½½Ó¿ÚÒÔ¼°lambda±í´ïÊ½£¬¿ÉÒÔÏòAPI·½·¨Ìí¼ÓÂß¼­£¬ÓÃ¸üÉÙµÄ´úÂëÖ§³Ö¸ü¶àµÄ¶¯Ì¬ÐÐÎª¡£
-		 * ÏÂÃæÊÇJava 8 PredicateµÄÀý×Ó£¬Õ¹Ê¾ÁË¹ýÂË¼¯ºÏÊý¾ÝµÄ¶àÖÖ³£ÓÃ·½·¨¡£Predicate½Ó¿Ú·Ç³£ÊÊÓÃÓÚ×ö¹ýÂË¡£
+		 * ä¾‹5 ä½¿ç”¨lambdaè¡¨è¾¾å¼å’Œå‡½æ•°å¼æŽ¥å£Predicate 
+		 * é™¤äº†åœ¨è¯­è¨€å±‚é¢æ”¯æŒå‡½æ•°å¼ç¼–ç¨‹é£Žæ ¼ï¼ŒJava 8ä¹Ÿæ·»åŠ äº†ä¸€ä¸ªåŒ…ï¼Œå«åšjava.util.functionã€‚
+		 * å®ƒåŒ…å«äº†å¾ˆå¤šç±»ï¼Œç”¨æ¥æ”¯æŒJavaçš„å‡½æ•°å¼ç¼–ç¨‹ã€‚å…¶ä¸­ä¸€ä¸ªä¾¿æ˜¯Predicateï¼Œä½¿ç”¨java.util.function.Predicate
+		 * å‡½æ•°å¼æŽ¥å£ä»¥åŠlambdaè¡¨è¾¾å¼ï¼Œå¯ä»¥å‘APIæ–¹æ³•æ·»åŠ é€»è¾‘ï¼Œç”¨æ›´å°‘çš„ä»£ç æ”¯æŒæ›´å¤šçš„åŠ¨æ€è¡Œä¸ºã€‚
+		 * ä¸‹é¢æ˜¯Java 8 Predicateçš„ä¾‹å­ï¼Œå±•ç¤ºäº†è¿‡æ»¤é›†åˆæ•°æ®çš„å¤šç§å¸¸ç”¨æ–¹æ³•ã€‚PredicateæŽ¥å£éžå¸¸é€‚ç”¨äºŽåšè¿‡æ»¤ã€‚
 		 */
-		System.out.println("Àý5 Ê¹ÓÃlambda±í´ïÊ½ºÍº¯ÊýÊ½½Ó¿ÚPredicate");
+		System.out.println("ä¾‹5 ä½¿ç”¨lambdaè¡¨è¾¾å¼å’Œå‡½æ•°å¼æŽ¥å£Predicate");
 		List<String> languages = Arrays.asList("Java", "Scala", "C++", "Haskell", "Lisp");
 		System.out.println("Languages which starts with J :");
 	    filter(languages, (str)->str.startsWith("J"));
@@ -118,63 +118,63 @@ public class Demo1_Lambda {
 	    System.out.println("Print language whose length greater than 4:");
 	    filter(languages, (str)->str.length() > 4);
 	    /*
-	     * ¿ÉÒÔ¿´µ½£¬Stream APIµÄ¹ýÂË·½·¨Ò²½ÓÊÜÒ»¸öPredicate£¬ÕâÒâÎ¶×Å¿ÉÒÔ½«ÎÒÃÇ¶¨ÖÆµÄ filter() ·½·¨Ìæ»»³ÉÐ´ÔÚÀïÃæµÄÄÚÁª´úÂë£¬Õâ¾ÍÊÇlambda±í´ïÊ½µÄÄ§Á¦¡£
-	     * ÁíÍâ£¬Predicate½Ó¿ÚÒ²ÔÊÐí½øÐÐ¶àÖØÌõ¼þµÄ²âÊÔ£¬ÏÂ¸öÀý×Ó½«Òª½²µ½¡£
+	     * å¯ä»¥çœ‹åˆ°ï¼ŒStream APIçš„è¿‡æ»¤æ–¹æ³•ä¹ŸæŽ¥å—ä¸€ä¸ªPredicateï¼Œè¿™æ„å‘³ç€å¯ä»¥å°†æˆ‘ä»¬å®šåˆ¶çš„ filter() æ–¹æ³•æ›¿æ¢æˆå†™åœ¨é‡Œé¢çš„å†…è”ä»£ç ï¼Œè¿™å°±æ˜¯lambdaè¡¨è¾¾å¼çš„é­”åŠ›ã€‚
+	     * å¦å¤–ï¼ŒPredicateæŽ¥å£ä¹Ÿå…è®¸è¿›è¡Œå¤šé‡æ¡ä»¶çš„æµ‹è¯•ï¼Œä¸‹ä¸ªä¾‹å­å°†è¦è®²åˆ°ã€‚
 	     */
 	    /**
-	     * Àý6¡¢ÈçºÎÔÚlambda±í´ïÊ½ÖÐ¼ÓÈëPredicate
-	     * ÉÏ¸öÀý×ÓËµµ½£¬java.util.function.Predicate ÔÊÐí½«Á½¸ö»ò¸ü¶àµÄ Predicate ºÏ³ÉÒ»¸ö¡£
-	     * ËüÌá¹©ÀàËÆÓÚÂß¼­²Ù×÷·ûANDºÍORµÄ·½·¨£¬Ãû×Ö½Ð×öand()¡¢or()ºÍxor()£¬ÓÃÓÚ½«´«Èë filter() ·½·¨µÄÌõ¼þºÏ²¢ÆðÀ´¡£
-	     * ÀýÈç£¬ÒªµÃµ½ËùÓÐÒÔJ¿ªÊ¼£¬³¤¶ÈÎªËÄ¸ö×ÖÄ¸µÄÓïÑÔ£¬¿ÉÒÔ¶¨ÒåÁ½¸ö¶ÀÁ¢µÄ Predicate Ê¾Àý·Ö±ð±íÊ¾Ã¿Ò»¸öÌõ¼þ£¬
-	     * È»ºóÓÃ Predicate.and() ·½·¨½«ËüÃÇºÏ²¢ÆðÀ´£¬ÈçÏÂËùÊ¾
+	     * ä¾‹6ã€å¦‚ä½•åœ¨lambdaè¡¨è¾¾å¼ä¸­åŠ å…¥Predicate
+	     * ä¸Šä¸ªä¾‹å­è¯´åˆ°ï¼Œjava.util.function.Predicate å…è®¸å°†ä¸¤ä¸ªæˆ–æ›´å¤šçš„ Predicate åˆæˆä¸€ä¸ªã€‚
+	     * å®ƒæä¾›ç±»ä¼¼äºŽé€»è¾‘æ“ä½œç¬¦ANDå’ŒORçš„æ–¹æ³•ï¼Œåå­—å«åšand()ã€or()å’Œxor()ï¼Œç”¨äºŽå°†ä¼ å…¥ filter() æ–¹æ³•çš„æ¡ä»¶åˆå¹¶èµ·æ¥ã€‚
+	     * ä¾‹å¦‚ï¼Œè¦å¾—åˆ°æ‰€æœ‰ä»¥Jå¼€å§‹ï¼Œé•¿åº¦ä¸ºå››ä¸ªå­—æ¯çš„è¯­è¨€ï¼Œå¯ä»¥å®šä¹‰ä¸¤ä¸ªç‹¬ç«‹çš„ Predicate ç¤ºä¾‹åˆ†åˆ«è¡¨ç¤ºæ¯ä¸€ä¸ªæ¡ä»¶ï¼Œ
+	     * ç„¶åŽç”¨ Predicate.and() æ–¹æ³•å°†å®ƒä»¬åˆå¹¶èµ·æ¥ï¼Œå¦‚ä¸‹æ‰€ç¤º
 	     */
-	    System.out.println("Àý6 ÈçºÎÔÚlambda±í´ïÊ½ÖÐ¼ÓÈëPredicate");
-	    // ÉõÖÁ¿ÉÒÔÓÃand()¡¢or()ºÍxor()Âß¼­º¯ÊýÀ´ºÏ²¢Predicate£¬
-	    // ÀýÈçÒªÕÒµ½ËùÓÐÒÔJ¿ªÊ¼£¬³¤¶ÈÎªËÄ¸ö×ÖÄ¸µÄÃû×Ö£¬Äã¿ÉÒÔºÏ²¢Á½¸öPredicate²¢´«Èë
+	    System.out.println("ä¾‹6 å¦‚ä½•åœ¨lambdaè¡¨è¾¾å¼ä¸­åŠ å…¥Predicate");
+	    // ç”šè‡³å¯ä»¥ç”¨and()ã€or()å’Œxor()é€»è¾‘å‡½æ•°æ¥åˆå¹¶Predicateï¼Œ
+	    // ä¾‹å¦‚è¦æ‰¾åˆ°æ‰€æœ‰ä»¥Jå¼€å§‹ï¼Œé•¿åº¦ä¸ºå››ä¸ªå­—æ¯çš„åå­—ï¼Œä½ å¯ä»¥åˆå¹¶ä¸¤ä¸ªPredicateå¹¶ä¼ å…¥
 	    Predicate<String> startsWithJ = (n) -> n.startsWith("J");
 	    Predicate<String> fourLetterLong = (n) -> n.length() == 4;
 	    languages.stream()
 	    	.filter(startsWithJ.and(fourLetterLong))
 	    	.forEach((n) -> System.out.print("nName, which starts with 'J' and four letter long is : " + n));
 	    /*
-	     * ÀàËÆµØ£¬Ò²¿ÉÒÔÊ¹ÓÃ or() ºÍ xor() ·½·¨¡£±¾Àý×ÅÖØ½éÉÜÁËÈçÏÂÒªµã£º¿É°´ÐèÒª½« Predicate ×÷Îªµ¥¶ÀÌõ¼þÈ»ºó½«ÆäºÏ²¢ÆðÀ´Ê¹ÓÃ¡£
-	     * ¼ò¶øÑÔÖ®£¬Äã¿ÉÒÔÒÔ´«Í³JavaÃüÁî·½Ê½Ê¹ÓÃ Predicate ½Ó¿Ú£¬Ò²¿ÉÒÔ³ä·ÖÀûÓÃlambda±í´ïÊ½´ïµ½ÊÂ°ë¹¦±¶µÄÐ§¹û¡£
+	     * ç±»ä¼¼åœ°ï¼Œä¹Ÿå¯ä»¥ä½¿ç”¨ or() å’Œ xor() æ–¹æ³•ã€‚æœ¬ä¾‹ç€é‡ä»‹ç»äº†å¦‚ä¸‹è¦ç‚¹ï¼šå¯æŒ‰éœ€è¦å°† Predicate ä½œä¸ºå•ç‹¬æ¡ä»¶ç„¶åŽå°†å…¶åˆå¹¶èµ·æ¥ä½¿ç”¨ã€‚
+	     * ç®€è€Œè¨€ä¹‹ï¼Œä½ å¯ä»¥ä»¥ä¼ ç»ŸJavaå‘½ä»¤æ–¹å¼ä½¿ç”¨ Predicate æŽ¥å£ï¼Œä¹Ÿå¯ä»¥å……åˆ†åˆ©ç”¨lambdaè¡¨è¾¾å¼è¾¾åˆ°äº‹åŠåŠŸå€çš„æ•ˆæžœã€‚
 	     */
 	    /**
-	     * Àý7.1¡¢Java 8ÖÐÊ¹ÓÃlambda±í´ïÊ½µÄMapºÍReduceÊ¾Àý
-	     * ±¾Àý½éÉÜ×î¹ãÎªÈËÖªµÄº¯ÊýÊ½±à³Ì¸ÅÄîmap¡£ËüÔÊÐíÄã½«¶ÔÏó½øÐÐ×ª»»¡£
-	     * ÀýÈçÔÚ±¾ÀýÖÐ£¬ÎÒÃÇ½« costBeforeTax ÁÐ±íµÄÃ¿¸öÔªËØ×ª»»³ÉÎªË°ºóµÄÖµ¡£
-	     * ÎÒÃÇ½« x -> x*x lambda±í´ïÊ½´«µ½ map() ·½·¨£¬ºóÕß½«ÆäÓ¦ÓÃµ½Á÷ÖÐµÄÃ¿Ò»¸öÔªËØ¡£
-	     * È»ºóÓÃ forEach() ½«ÁÐ±íÔªËØ´òÓ¡³öÀ´¡£Ê¹ÓÃÁ÷APIµÄÊÕ¼¯Æ÷Àà£¬¿ÉÒÔµÃµ½ËùÓÐº¬Ë°µÄ¿ªÏú¡£
-	     * ÓÐ toList() ÕâÑùµÄ·½·¨½« map »òÈÎºÎÆäËû²Ù×÷µÄ½á¹ûºÏ²¢ÆðÀ´¡£
-	     * ÓÉÓÚÊÕ¼¯Æ÷ÔÚÁ÷ÉÏ×öÖÕ¶Ë²Ù×÷£¬Òò´ËÖ®ºó±ã²»ÄÜÖØÓÃÁ÷ÁË¡£ÄãÉõÖÁ¿ÉÒÔÓÃÁ÷APIµÄ reduce() ·½·¨½«ËùÓÐÊý×ÖºÏ³ÉÒ»¸ö£¬ÏÂÒ»¸öÀý×Ó½«»á½²µ½¡£
+	     * ä¾‹7.1ã€Java 8ä¸­ä½¿ç”¨lambdaè¡¨è¾¾å¼çš„Mapå’ŒReduceç¤ºä¾‹
+	     * æœ¬ä¾‹ä»‹ç»æœ€å¹¿ä¸ºäººçŸ¥çš„å‡½æ•°å¼ç¼–ç¨‹æ¦‚å¿µmapã€‚å®ƒå…è®¸ä½ å°†å¯¹è±¡è¿›è¡Œè½¬æ¢ã€‚
+	     * ä¾‹å¦‚åœ¨æœ¬ä¾‹ä¸­ï¼Œæˆ‘ä»¬å°† costBeforeTax åˆ—è¡¨çš„æ¯ä¸ªå…ƒç´ è½¬æ¢æˆä¸ºç¨ŽåŽçš„å€¼ã€‚
+	     * æˆ‘ä»¬å°† x -> x*x lambdaè¡¨è¾¾å¼ä¼ åˆ° map() æ–¹æ³•ï¼ŒåŽè€…å°†å…¶åº”ç”¨åˆ°æµä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ ã€‚
+	     * ç„¶åŽç”¨ forEach() å°†åˆ—è¡¨å…ƒç´ æ‰“å°å‡ºæ¥ã€‚ä½¿ç”¨æµAPIçš„æ”¶é›†å™¨ç±»ï¼Œå¯ä»¥å¾—åˆ°æ‰€æœ‰å«ç¨Žçš„å¼€é”€ã€‚
+	     * æœ‰ toList() è¿™æ ·çš„æ–¹æ³•å°† map æˆ–ä»»ä½•å…¶ä»–æ“ä½œçš„ç»“æžœåˆå¹¶èµ·æ¥ã€‚
+	     * ç”±äºŽæ”¶é›†å™¨åœ¨æµä¸Šåšç»ˆç«¯æ“ä½œï¼Œå› æ­¤ä¹‹åŽä¾¿ä¸èƒ½é‡ç”¨æµäº†ã€‚ä½ ç”šè‡³å¯ä»¥ç”¨æµAPIçš„ reduce() æ–¹æ³•å°†æ‰€æœ‰æ•°å­—åˆæˆä¸€ä¸ªï¼Œä¸‹ä¸€ä¸ªä¾‹å­å°†ä¼šè®²åˆ°ã€‚
 	     */
-	    System.out.println("Àý7.1 Java 8ÖÐÊ¹ÓÃlambda±í´ïÊ½µÄMapºÍReduceÊ¾Àý");
-	    // ²»Ê¹ÓÃlambda±í´ïÊ½ÎªÃ¿¸ö¶©µ¥¼ÓÉÏ12%µÄË°
+	    System.out.println("ä¾‹7.1 Java 8ä¸­ä½¿ç”¨lambdaè¡¨è¾¾å¼çš„Mapå’ŒReduceç¤ºä¾‹");
+	    // ä¸ä½¿ç”¨lambdaè¡¨è¾¾å¼ä¸ºæ¯ä¸ªè®¢å•åŠ ä¸Š12%çš„ç¨Ž
 	    List<Integer> costBeforeTax1 = Arrays.asList(100, 200, 300, 400, 500);
 	    for (Integer cost : costBeforeTax1) {
 	        double price = cost + .12*cost;
 	        System.out.println(price);
 	    }
-	    // Ê¹ÓÃlambda±í´ïÊ½ÎªÃ¿¸ö¶©µ¥¼ÓÉÏ12%µÄË°
+	    // ä½¿ç”¨lambdaè¡¨è¾¾å¼ä¸ºæ¯ä¸ªè®¢å•åŠ ä¸Š12%çš„ç¨Ž
 	    List<Integer> costBeforeTax2 = Arrays.asList(100, 200, 300, 400, 500);
 	    costBeforeTax2.stream().map((cost) -> cost + .12*cost).forEach(System.out::println);
 	    
 	    /**
-	     * Àý7.2¡¢Java 8ÖÐÊ¹ÓÃlambda±í´ïÊ½µÄMapºÍReduceÊ¾Àý
-	     * ÔÚÉÏ¸öÀý×ÓÖÐ£¬¿ÉÒÔ¿´µ½map½«¼¯ºÏÀà£¨ÀýÈçÁÐ±í£©ÔªËØ½øÐÐ×ª»»µÄ¡£
-	     * »¹ÓÐÒ»¸ö reduce() º¯Êý¿ÉÒÔ½«ËùÓÐÖµºÏ²¢³ÉÒ»¸ö¡£
-	     * MapºÍReduce²Ù×÷ÊÇº¯ÊýÊ½±à³ÌµÄºËÐÄ²Ù×÷£¬ÒòÎªÆä¹¦ÄÜ£¬reduce ÓÖ±»³ÆÎªÕÛµþ²Ù×÷¡£
-	     * ÁíÍâ£¬reduce ²¢²»ÊÇÒ»¸öÐÂµÄ²Ù×÷£¬ÄãÓÐ¿ÉÄÜÒÑ¾­ÔÚÊ¹ÓÃËü¡£
-	     * SQLÖÐÀàËÆ sum()¡¢avg() »òÕß count() µÄ¾Û¼¯º¯Êý£¬Êµ¼ÊÉÏ¾ÍÊÇ reduce ²Ù×÷£¬ÒòÎªËüÃÇ½ÓÊÕ¶à¸öÖµ²¢·µ»ØÒ»¸öÖµ¡£
-	     * Á÷API¶¨ÒåµÄ reduce() º¯Êý¿ÉÒÔ½ÓÊÜlambda±í´ïÊ½£¬²¢¶ÔËùÓÐÖµ½øÐÐºÏ²¢¡£
-	     * IntStreamÕâÑùµÄÀàÓÐÀàËÆ average()¡¢count()¡¢sum() µÄÄÚ½¨·½·¨À´×ö reduce ²Ù×÷£¬Ò²ÓÐmapToLong()¡¢mapToDouble() ·½·¨À´×ö×ª»»¡£
-	     * Õâ²¢²»»áÏÞÖÆÄã£¬Äã¿ÉÒÔÓÃÄÚ½¨·½·¨£¬Ò²¿ÉÒÔ×Ô¼º¶¨Òå¡£
-	     * ÔÚÕâ¸öJava 8µÄMap ReduceÊ¾ÀýÀï£¬ÎÒÃÇÊ×ÏÈ¶ÔËùÓÐ¼Û¸ñÓ¦ÓÃ 12% µÄVAT£¬È»ºóÓÃ reduce() ·½·¨¼ÆËã×ÜºÍ¡£
+	     * ä¾‹7.2ã€Java 8ä¸­ä½¿ç”¨lambdaè¡¨è¾¾å¼çš„Mapå’ŒReduceç¤ºä¾‹
+	     * åœ¨ä¸Šä¸ªä¾‹å­ä¸­ï¼Œå¯ä»¥çœ‹åˆ°mapå°†é›†åˆç±»ï¼ˆä¾‹å¦‚åˆ—è¡¨ï¼‰å…ƒç´ è¿›è¡Œè½¬æ¢çš„ã€‚
+	     * è¿˜æœ‰ä¸€ä¸ª reduce() å‡½æ•°å¯ä»¥å°†æ‰€æœ‰å€¼åˆå¹¶æˆä¸€ä¸ªã€‚
+	     * Mapå’ŒReduceæ“ä½œæ˜¯å‡½æ•°å¼ç¼–ç¨‹çš„æ ¸å¿ƒæ“ä½œï¼Œå› ä¸ºå…¶åŠŸèƒ½ï¼Œreduce åˆè¢«ç§°ä¸ºæŠ˜å æ“ä½œã€‚
+	     * å¦å¤–ï¼Œreduce å¹¶ä¸æ˜¯ä¸€ä¸ªæ–°çš„æ“ä½œï¼Œä½ æœ‰å¯èƒ½å·²ç»åœ¨ä½¿ç”¨å®ƒã€‚
+	     * SQLä¸­ç±»ä¼¼ sum()ã€avg() æˆ–è€… count() çš„èšé›†å‡½æ•°ï¼Œå®žé™…ä¸Šå°±æ˜¯ reduce æ“ä½œï¼Œå› ä¸ºå®ƒä»¬æŽ¥æ”¶å¤šä¸ªå€¼å¹¶è¿”å›žä¸€ä¸ªå€¼ã€‚
+	     * æµAPIå®šä¹‰çš„ reduce() å‡½æ•°å¯ä»¥æŽ¥å—lambdaè¡¨è¾¾å¼ï¼Œå¹¶å¯¹æ‰€æœ‰å€¼è¿›è¡Œåˆå¹¶ã€‚
+	     * IntStreamè¿™æ ·çš„ç±»æœ‰ç±»ä¼¼ average()ã€count()ã€sum() çš„å†…å»ºæ–¹æ³•æ¥åš reduce æ“ä½œï¼Œä¹Ÿæœ‰mapToLong()ã€mapToDouble() æ–¹æ³•æ¥åšè½¬æ¢ã€‚
+	     * è¿™å¹¶ä¸ä¼šé™åˆ¶ä½ ï¼Œä½ å¯ä»¥ç”¨å†…å»ºæ–¹æ³•ï¼Œä¹Ÿå¯ä»¥è‡ªå·±å®šä¹‰ã€‚
+	     * åœ¨è¿™ä¸ªJava 8çš„Map Reduceç¤ºä¾‹é‡Œï¼Œæˆ‘ä»¬é¦–å…ˆå¯¹æ‰€æœ‰ä»·æ ¼åº”ç”¨ 12% çš„VATï¼Œç„¶åŽç”¨ reduce() æ–¹æ³•è®¡ç®—æ€»å’Œã€‚
 	     */
-	    System.out.println("Àý7.2 Java 8ÖÐÊ¹ÓÃlambda±í´ïÊ½µÄMapºÍReduceÊ¾Àý");
-		 // ÎªÃ¿¸ö¶©µ¥¼ÓÉÏ12%µÄË°
-		 // ÀÏ·½·¨£º
+	    System.out.println("ä¾‹7.2 Java 8ä¸­ä½¿ç”¨lambdaè¡¨è¾¾å¼çš„Mapå’ŒReduceç¤ºä¾‹");
+		 // ä¸ºæ¯ä¸ªè®¢å•åŠ ä¸Š12%çš„ç¨Ž
+		 // è€æ–¹æ³•ï¼š
 		 List<Integer> costBeforeTax3 = Arrays.asList(100, 200, 300, 400, 500);
 		 double total = 0;
 		 for (Integer cost : costBeforeTax3) {
@@ -183,19 +183,19 @@ public class Demo1_Lambda {
 		 }
 		 System.out.println("Total : " + total);
 	    
-		 // ÐÂ·½·¨£º
+		 // æ–°æ–¹æ³•ï¼š
 		 List<Integer> costBeforeTax4 = Arrays.asList(100, 200, 300, 400, 500);
 		 double bill = costBeforeTax4.stream().map((cost) -> cost + .12*cost).reduce((sum, cost) -> sum + cost).get();
 		 System.out.println("Total : " + bill);
 	    /**
-	     * Àý8 Í¨¹ý¹ýÂË´´½¨Ò»¸öStringÁÐ±í
-	     * ¹ýÂËÊÇJava¿ª·¢ÕßÔÚ´ó¹æÄ£¼¯ºÏÉÏµÄÒ»¸ö³£ÓÃ²Ù×÷£¬¶øÏÖÔÚÊ¹ÓÃlambda±í´ïÊ½ºÍÁ÷API¹ýÂË´ó¹æÄ£Êý¾Ý¼¯ºÏÊÇ¾ªÈËµÄ¼òµ¥¡£
-	     * Á÷Ìá¹©ÁËÒ»¸ö filter() ·½·¨£¬½ÓÊÜÒ»¸ö Predicate ¶ÔÏó£¬¼´¿ÉÒÔ´«ÈëÒ»¸ölambda±í´ïÊ½×÷Îª¹ýÂËÂß¼­¡£
-	     * ÏÂÃæµÄÀý×ÓÊÇÓÃlambda±í´ïÊ½¹ýÂËJava¼¯ºÏ£¬½«°ïÖúÀí½â¡£
-	     * ÁíÍâ£¬¹ØÓÚ filter() ·½·¨ÓÐ¸ö³£¼ûÎó½â¡£ÔÚÏÖÊµÉú»îÖÐ£¬×ö¹ýÂËµÄÊ±ºò£¬Í¨³£»á¶ªÆú²¿·Ö£¬µ«Ê¹ÓÃfilter()·½·¨ÔòÊÇ»ñµÃÒ»¸öÐÂµÄÁÐ±í£¬ÇÒÆäÃ¿¸öÔªËØ·ûºÏ¹ýÂËÔ­Ôò¡£
+	     * ä¾‹8 é€šè¿‡è¿‡æ»¤åˆ›å»ºä¸€ä¸ªStringåˆ—è¡¨
+	     * è¿‡æ»¤æ˜¯Javaå¼€å‘è€…åœ¨å¤§è§„æ¨¡é›†åˆä¸Šçš„ä¸€ä¸ªå¸¸ç”¨æ“ä½œï¼Œè€ŒçŽ°åœ¨ä½¿ç”¨lambdaè¡¨è¾¾å¼å’ŒæµAPIè¿‡æ»¤å¤§è§„æ¨¡æ•°æ®é›†åˆæ˜¯æƒŠäººçš„ç®€å•ã€‚
+	     * æµæä¾›äº†ä¸€ä¸ª filter() æ–¹æ³•ï¼ŒæŽ¥å—ä¸€ä¸ª Predicate å¯¹è±¡ï¼Œå³å¯ä»¥ä¼ å…¥ä¸€ä¸ªlambdaè¡¨è¾¾å¼ä½œä¸ºè¿‡æ»¤é€»è¾‘ã€‚
+	     * ä¸‹é¢çš„ä¾‹å­æ˜¯ç”¨lambdaè¡¨è¾¾å¼è¿‡æ»¤Javaé›†åˆï¼Œå°†å¸®åŠ©ç†è§£ã€‚
+	     * å¦å¤–ï¼Œå…³äºŽ filter() æ–¹æ³•æœ‰ä¸ªå¸¸è§è¯¯è§£ã€‚åœ¨çŽ°å®žç”Ÿæ´»ä¸­ï¼Œåšè¿‡æ»¤çš„æ—¶å€™ï¼Œé€šå¸¸ä¼šä¸¢å¼ƒéƒ¨åˆ†ï¼Œä½†ä½¿ç”¨filter()æ–¹æ³•åˆ™æ˜¯èŽ·å¾—ä¸€ä¸ªæ–°çš„åˆ—è¡¨ï¼Œä¸”å…¶æ¯ä¸ªå…ƒç´ ç¬¦åˆè¿‡æ»¤åŽŸåˆ™ã€‚
 	     */
-		// ´´½¨Ò»¸ö×Ö·û´®ÁÐ±í£¬Ã¿¸ö×Ö·û´®³¤¶È´óÓÚ2
-		 System.out.println("Àý8 Í¨¹ý¹ýÂË´´½¨Ò»¸öStringÁÐ±í");
+		// åˆ›å»ºä¸€ä¸ªå­—ç¬¦ä¸²åˆ—è¡¨ï¼Œæ¯ä¸ªå­—ç¬¦ä¸²é•¿åº¦å¤§äºŽ2
+		 System.out.println("ä¾‹8 é€šè¿‡è¿‡æ»¤åˆ›å»ºä¸€ä¸ªStringåˆ—è¡¨");
 		 List<String> strList = new ArrayList<String>();
 		 strList.add("asdadfs");
 		 strList.add("das");
@@ -205,33 +205,33 @@ public class Demo1_Lambda {
 		 System.out.printf("Original List : %s, filtered list : %s %n", strList, filtered);
 		 
 		 /**
-		  * Àý9 ¶ÔÁÐ±íµÄÃ¿¸öÔªËØÓ¦ÓÃº¯Êý
-		  * ÎÒÃÇÍ¨³£ÐèÒª¶ÔÁÐ±íµÄÃ¿¸öÔªËØÊ¹ÓÃÄ³¸öº¯Êý£¬ÀýÈçÖðÒ»³ËÒÔÄ³¸öÊý¡¢³ýÒÔÄ³¸öÊý»òÕß×öÆäËü²Ù×÷¡£
-		  * ÕâÐ©²Ù×÷¶¼ºÜÊÊºÏÓÃ map() ·½·¨£¬¿ÉÒÔ½«×ª»»Âß¼­ÒÔlambda±í´ïÊ½µÄÐÎÊ½·ÅÔÚ map() ·½·¨Àï£¬¾Í¿ÉÒÔ¶Ô¼¯ºÏµÄ¸÷¸öÔªËØ½øÐÐ×ª»»ÁË£¬ÈçÏÂËùÊ¾¡£
+		  * ä¾‹9 å¯¹åˆ—è¡¨çš„æ¯ä¸ªå…ƒç´ åº”ç”¨å‡½æ•°
+		  * æˆ‘ä»¬é€šå¸¸éœ€è¦å¯¹åˆ—è¡¨çš„æ¯ä¸ªå…ƒç´ ä½¿ç”¨æŸä¸ªå‡½æ•°ï¼Œä¾‹å¦‚é€ä¸€ä¹˜ä»¥æŸä¸ªæ•°ã€é™¤ä»¥æŸä¸ªæ•°æˆ–è€…åšå…¶å®ƒæ“ä½œã€‚
+		  * è¿™äº›æ“ä½œéƒ½å¾ˆé€‚åˆç”¨ map() æ–¹æ³•ï¼Œå¯ä»¥å°†è½¬æ¢é€»è¾‘ä»¥lambdaè¡¨è¾¾å¼çš„å½¢å¼æ”¾åœ¨ map() æ–¹æ³•é‡Œï¼Œå°±å¯ä»¥å¯¹é›†åˆçš„å„ä¸ªå…ƒç´ è¿›è¡Œè½¬æ¢äº†ï¼Œå¦‚ä¸‹æ‰€ç¤ºã€‚
 		  */
-		 System.out.println("Àý9 ¶ÔÁÐ±íµÄÃ¿¸öÔªËØÓ¦ÓÃº¯Êý");
-		// ½«×Ö·û´®»»³É´óÐ´²¢ÓÃ¶ººÅÁ´½ÓÆðÀ´
+		 System.out.println("ä¾‹9 å¯¹åˆ—è¡¨çš„æ¯ä¸ªå…ƒç´ åº”ç”¨å‡½æ•°");
+		// å°†å­—ç¬¦ä¸²æ¢æˆå¤§å†™å¹¶ç”¨é€—å·é“¾æŽ¥èµ·æ¥
 		 List<String> G7 = Arrays.asList("USA", "Japan", "France", "Germany", "Italy", "U.K.","Canada");
 		 String G7Countries = G7.stream().map(x -> x.toUpperCase()).collect(Collectors.joining(", "));
 		 System.out.println(G7Countries);
 		 
 		 /**
-		  * Àý10 ¸´ÖÆ²»Í¬µÄÖµ£¬´´½¨Ò»¸ö×ÓÁÐ±í
-		  * ±¾ÀýÕ¹Ê¾ÁËÈçºÎÀûÓÃÁ÷µÄ distinct() ·½·¨À´¶Ô¼¯ºÏ½øÐÐÈ¥ÖØ¡£
+		  * ä¾‹10 å¤åˆ¶ä¸åŒçš„å€¼ï¼Œåˆ›å»ºä¸€ä¸ªå­åˆ—è¡¨
+		  * æœ¬ä¾‹å±•ç¤ºäº†å¦‚ä½•åˆ©ç”¨æµçš„ distinct() æ–¹æ³•æ¥å¯¹é›†åˆè¿›è¡ŒåŽ»é‡ã€‚
 		  */
-		 System.out.println("Àý10 ¸´ÖÆ²»Í¬µÄÖµ£¬´´½¨Ò»¸ö×ÓÁÐ±í");
-		// ÓÃËùÓÐ²»Í¬µÄÊý×Ö´´½¨Ò»¸öÕý·½ÐÎÁÐ±í
+		 System.out.println("ä¾‹10 å¤åˆ¶ä¸åŒçš„å€¼ï¼Œåˆ›å»ºä¸€ä¸ªå­åˆ—è¡¨");
+		// ç”¨æ‰€æœ‰ä¸åŒçš„æ•°å­—åˆ›å»ºä¸€ä¸ªæ­£æ–¹å½¢åˆ—è¡¨
 		 List<Integer> numbers = Arrays.asList(9, 10, 3, 4, 7, 3, 4);
 		 List<Integer> distinct = numbers.stream().map( i -> i*i).distinct().collect(Collectors.toList());
 		 System.out.printf("Original List : %s,  Square Without duplicates : %s %n", numbers, distinct);
 		 /**
-		  * Àý11 ¼ÆËã¼¯ºÏÔªËØµÄ×î´óÖµ¡¢×îÐ¡Öµ¡¢×ÜºÍÒÔ¼°Æ½¾ùÖµ
-		  * IntStream¡¢LongStream ºÍ DoubleStream µÈÁ÷µÄÀàÖÐ£¬ÓÐ¸ö·Ç³£ÓÐÓÃµÄ·½·¨½Ð×ö summaryStatistics() ¡£
-		  * ¿ÉÒÔ·µ»Ø IntSummaryStatistics¡¢LongSummaryStatistics »òÕß DoubleSummaryStatistic s£¬ÃèÊöÁ÷ÖÐÔªËØµÄ¸÷ÖÖÕªÒªÊý¾Ý¡£
-		  * ÔÚ±¾ÀýÖÐ£¬ÎÒÃÇÓÃÕâ¸ö·½·¨À´¼ÆËãÁÐ±íµÄ×î´óÖµºÍ×îÐ¡Öµ¡£ËüÒ²ÓÐ getSum() ºÍ getAverage() ·½·¨À´»ñµÃÁÐ±íµÄËùÓÐÔªËØµÄ×ÜºÍ¼°Æ½¾ùÖµ¡£
+		  * ä¾‹11 è®¡ç®—é›†åˆå…ƒç´ çš„æœ€å¤§å€¼ã€æœ€å°å€¼ã€æ€»å’Œä»¥åŠå¹³å‡å€¼
+		  * IntStreamã€LongStream å’Œ DoubleStream ç­‰æµçš„ç±»ä¸­ï¼Œæœ‰ä¸ªéžå¸¸æœ‰ç”¨çš„æ–¹æ³•å«åš summaryStatistics() ã€‚
+		  * å¯ä»¥è¿”å›ž IntSummaryStatisticsã€LongSummaryStatistics æˆ–è€… DoubleSummaryStatistic sï¼Œæè¿°æµä¸­å…ƒç´ çš„å„ç§æ‘˜è¦æ•°æ®ã€‚
+		  * åœ¨æœ¬ä¾‹ä¸­ï¼Œæˆ‘ä»¬ç”¨è¿™ä¸ªæ–¹æ³•æ¥è®¡ç®—åˆ—è¡¨çš„æœ€å¤§å€¼å’Œæœ€å°å€¼ã€‚å®ƒä¹Ÿæœ‰ getSum() å’Œ getAverage() æ–¹æ³•æ¥èŽ·å¾—åˆ—è¡¨çš„æ‰€æœ‰å…ƒç´ çš„æ€»å’ŒåŠå¹³å‡å€¼ã€‚
 		  */
-		 System.out.println("Àý11 ¼ÆËã¼¯ºÏÔªËØµÄ×î´óÖµ¡¢×îÐ¡Öµ¡¢×ÜºÍÒÔ¼°Æ½¾ùÖµ");
-		//»ñÈ¡Êý×ÖµÄ¸öÊý¡¢×îÐ¡Öµ¡¢×î´óÖµ¡¢×ÜºÍÒÔ¼°Æ½¾ùÖµ
+		 System.out.println("ä¾‹11 è®¡ç®—é›†åˆå…ƒç´ çš„æœ€å¤§å€¼ã€æœ€å°å€¼ã€æ€»å’Œä»¥åŠå¹³å‡å€¼");
+		//èŽ·å–æ•°å­—çš„ä¸ªæ•°ã€æœ€å°å€¼ã€æœ€å¤§å€¼ã€æ€»å’Œä»¥åŠå¹³å‡å€¼
 		 List<Integer> primes = Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19, 23, 29);
 		 IntSummaryStatistics stats = primes.stream().mapToInt((x) -> x).summaryStatistics();
 		 System.out.println("Highest prime number in List : " + stats.getMax());
@@ -248,7 +248,7 @@ public class Demo1_Lambda {
 	        }
 	    }
 	}
-	// ¸üºÃµÄ°ì·¨
+	// æ›´å¥½çš„åŠžæ³•
 	public static void filter1(List<String> names, Predicate<String> condition) {
 	    names.stream().filter((name) -> (condition.test(name))).forEach((name) -> {
 	        System.out.println(name + " ");
@@ -266,51 +266,51 @@ class A {
 }
 
 /**
- * Lambda±í´ïÊ½ vs ÄäÃûÀà
- * ¼ÈÈ»lambda±í´ïÊ½¼´½«ÕýÊ½È¡´úJava´úÂëÖÐµÄÄäÃûÄÚ²¿Àà£¬ÄÇÃ´ÓÐ±ØÒª¶Ô¶þÕß×öÒ»¸ö±È½Ï·ÖÎö¡£
- * Ò»¸ö¹Ø¼üµÄ²»Í¬µã¾ÍÊÇ¹Ø¼ü×Ö this¡£ÄäÃûÀàµÄ this ¹Ø¼ü×ÖÖ¸ÏòÄäÃûÀà£¬¶ølambda±í´ïÊ½µÄ this ¹Ø¼ü×ÖÖ¸Ïò°üÎ§lambda±í´ïÊ½µÄÀà¡£
- * ÁíÒ»¸ö²»Í¬µãÊÇ¶þÕßµÄ±àÒë·½Ê½¡£Java±àÒëÆ÷½«lambda±í´ïÊ½±àÒë³ÉÀàµÄË½ÓÐ·½·¨¡£Ê¹ÓÃÁËJava 7µÄ invokedynamic ×Ö½ÚÂëÖ¸ÁîÀ´¶¯Ì¬°ó¶¨Õâ¸ö·½·¨¡£
+ * Lambdaè¡¨è¾¾å¼ vs åŒ¿åç±»
+ * æ—¢ç„¶lambdaè¡¨è¾¾å¼å³å°†æ­£å¼å–ä»£Javaä»£ç ä¸­çš„åŒ¿åå†…éƒ¨ç±»ï¼Œé‚£ä¹ˆæœ‰å¿…è¦å¯¹äºŒè€…åšä¸€ä¸ªæ¯”è¾ƒåˆ†æžã€‚
+ * ä¸€ä¸ªå…³é”®çš„ä¸åŒç‚¹å°±æ˜¯å…³é”®å­— thisã€‚åŒ¿åç±»çš„ this å…³é”®å­—æŒ‡å‘åŒ¿åç±»ï¼Œè€Œlambdaè¡¨è¾¾å¼çš„ this å…³é”®å­—æŒ‡å‘åŒ…å›´lambdaè¡¨è¾¾å¼çš„ç±»ã€‚
+ * å¦ä¸€ä¸ªä¸åŒç‚¹æ˜¯äºŒè€…çš„ç¼–è¯‘æ–¹å¼ã€‚Javaç¼–è¯‘å™¨å°†lambdaè¡¨è¾¾å¼ç¼–è¯‘æˆç±»çš„ç§æœ‰æ–¹æ³•ã€‚ä½¿ç”¨äº†Java 7çš„ invokedynamic å­—èŠ‚ç æŒ‡ä»¤æ¥åŠ¨æ€ç»‘å®šè¿™ä¸ªæ–¹æ³•ã€‚
  */
 
-/*Java 8 Lambda±í´ïÊ½Òªµã*/
+/*Java 8 Lambdaè¡¨è¾¾å¼è¦ç‚¹*/
 /**
- * 1£©lambda±í´ïÊ½½öÄÜ·ÅÈëÈçÏÂ´úÂë£ºÔ¤¶¨ÒåÊ¹ÓÃÁË @Functional ×¢ÊÍµÄº¯ÊýÊ½½Ó¿Ú£¬×Ô´øÒ»¸ö³éÏóº¯ÊýµÄ·½·¨£¬»òÕßSAM£¨Single Abstract Method µ¥¸ö³éÏó·½·¨£©ÀàÐÍ¡£
- * ÕâÐ©³ÆÎªlambda±í´ïÊ½µÄÄ¿±êÀàÐÍ£¬¿ÉÒÔÓÃ×÷·µ»ØÀàÐÍ£¬»òlambdaÄ¿±ê´úÂëµÄ²ÎÊý¡£
- * ÀýÈç£¬ÈôÒ»¸ö·½·¨½ÓÊÕRunnable¡¢Comparable»òÕß Callable ½Ó¿Ú£¬¶¼ÓÐµ¥¸ö³éÏó·½·¨£¬¿ÉÒÔ´«Èëlambda±í´ïÊ½¡£
- * ÀàËÆµÄ£¬Èç¹ûÒ»¸ö·½·¨½ÓÊÜÉùÃ÷ÓÚ java.util.function °üÄÚµÄ½Ó¿Ú£¬ÀýÈç Predicate¡¢Function¡¢Consumer »ò Supplier£¬ÄÇÃ´¿ÉÒÔÏòÆä´«lambda±í´ïÊ½¡£
- * 2£©lambda±í´ïÊ½ÄÚ¿ÉÒÔÊ¹ÓÃ·½·¨ÒýÓÃ£¬½öµ±¸Ã·½·¨²»ÐÞ¸Älambda±í´ïÊ½Ìá¹©µÄ²ÎÊý¡£±¾ÀýÖÐµÄlambda±í´ïÊ½¿ÉÒÔ»»Îª·½·¨ÒýÓÃ£¬ÒòÎªÕâ½öÊÇÒ»¸ö²ÎÊýÏàÍ¬µÄ¼òµ¥·½·¨µ÷ÓÃ¡£
+ * 1ï¼‰lambdaè¡¨è¾¾å¼ä»…èƒ½æ”¾å…¥å¦‚ä¸‹ä»£ç ï¼šé¢„å®šä¹‰ä½¿ç”¨äº† @Functional æ³¨é‡Šçš„å‡½æ•°å¼æŽ¥å£ï¼Œè‡ªå¸¦ä¸€ä¸ªæŠ½è±¡å‡½æ•°çš„æ–¹æ³•ï¼Œæˆ–è€…SAMï¼ˆSingle Abstract Method å•ä¸ªæŠ½è±¡æ–¹æ³•ï¼‰ç±»åž‹ã€‚
+ * è¿™äº›ç§°ä¸ºlambdaè¡¨è¾¾å¼çš„ç›®æ ‡ç±»åž‹ï¼Œå¯ä»¥ç”¨ä½œè¿”å›žç±»åž‹ï¼Œæˆ–lambdaç›®æ ‡ä»£ç çš„å‚æ•°ã€‚
+ * ä¾‹å¦‚ï¼Œè‹¥ä¸€ä¸ªæ–¹æ³•æŽ¥æ”¶Runnableã€Comparableæˆ–è€… Callable æŽ¥å£ï¼Œéƒ½æœ‰å•ä¸ªæŠ½è±¡æ–¹æ³•ï¼Œå¯ä»¥ä¼ å…¥lambdaè¡¨è¾¾å¼ã€‚
+ * ç±»ä¼¼çš„ï¼Œå¦‚æžœä¸€ä¸ªæ–¹æ³•æŽ¥å—å£°æ˜ŽäºŽ java.util.function åŒ…å†…çš„æŽ¥å£ï¼Œä¾‹å¦‚ Predicateã€Functionã€Consumer æˆ– Supplierï¼Œé‚£ä¹ˆå¯ä»¥å‘å…¶ä¼ lambdaè¡¨è¾¾å¼ã€‚
+ * 2ï¼‰lambdaè¡¨è¾¾å¼å†…å¯ä»¥ä½¿ç”¨æ–¹æ³•å¼•ç”¨ï¼Œä»…å½“è¯¥æ–¹æ³•ä¸ä¿®æ”¹lambdaè¡¨è¾¾å¼æä¾›çš„å‚æ•°ã€‚æœ¬ä¾‹ä¸­çš„lambdaè¡¨è¾¾å¼å¯ä»¥æ¢ä¸ºæ–¹æ³•å¼•ç”¨ï¼Œå› ä¸ºè¿™ä»…æ˜¯ä¸€ä¸ªå‚æ•°ç›¸åŒçš„ç®€å•æ–¹æ³•è°ƒç”¨ã€‚
  * list.forEach(n -> System.out.println(n));
- * list.forEach(System.out::println);  // Ê¹ÓÃ·½·¨ÒýÓÃ
- * È»¶ø£¬Èô¶Ô²ÎÊýÓÐÈÎºÎÐÞ¸Ä£¬Ôò²»ÄÜÊ¹ÓÃ·½·¨ÒýÓÃ£¬¶øÐè¼üÈëÍêÕûµØlambda±í´ïÊ½£¬ÈçÏÂËùÊ¾£º
+ * list.forEach(System.out::println);  // ä½¿ç”¨æ–¹æ³•å¼•ç”¨
+ * ç„¶è€Œï¼Œè‹¥å¯¹å‚æ•°æœ‰ä»»ä½•ä¿®æ”¹ï¼Œåˆ™ä¸èƒ½ä½¿ç”¨æ–¹æ³•å¼•ç”¨ï¼Œè€Œéœ€é”®å…¥å®Œæ•´åœ°lambdaè¡¨è¾¾å¼ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
  * list.forEach((String s) -> System.out.println("*" + s + "*"));
- * ÊÂÊµÉÏ£¬¿ÉÒÔÊ¡ÂÔÕâÀïµÄlambda²ÎÊýµÄÀàÐÍÉùÃ÷£¬±àÒëÆ÷¿ÉÒÔ´ÓÁÐ±íµÄÀàÊôÐÔÍÆ²â³öÀ´¡£
- * 3£©lambdaÄÚ²¿¿ÉÒÔÊ¹ÓÃ¾²Ì¬¡¢·Ç¾²Ì¬ºÍ¾Ö²¿±äÁ¿£¬Õâ³ÆÎªlambdaÄÚµÄ±äÁ¿²¶»ñ¡£
- * 4£©Lambda±í´ïÊ½ÔÚJavaÖÐÓÖ³ÆÎª±Õ°ü»òÄäÃûº¯Êý£¬ËùÒÔÈç¹ûÓÐÍ¬ÊÂ°ÑËü½Ð±Õ°üµÄÊ±ºò£¬²»ÓÃ¾ªÑÈ¡£
- * 5£©Lambda·½·¨ÔÚ±àÒëÆ÷ÄÚ²¿±»·­Òë³ÉË½ÓÐ·½·¨£¬²¢ÅÉ·¢ invokedynamic ×Ö½ÚÂëÖ¸ÁîÀ´½øÐÐµ÷ÓÃ¡£¿ÉÒÔÊ¹ÓÃJDKÖÐµÄ javap ¹¤¾ßÀ´·´±àÒëclassÎÄ¼þ¡£
- * Ê¹ÓÃ javap -p »ò javap -c -v ÃüÁîÀ´¿´Ò»¿´lambda±í´ïÊ½Éú³ÉµÄ×Ö½ÚÂë¡£´óÖÂÓ¦¸Ã³¤ÕâÑù£º
+ * äº‹å®žä¸Šï¼Œå¯ä»¥çœç•¥è¿™é‡Œçš„lambdaå‚æ•°çš„ç±»åž‹å£°æ˜Žï¼Œç¼–è¯‘å™¨å¯ä»¥ä»Žåˆ—è¡¨çš„ç±»å±žæ€§æŽ¨æµ‹å‡ºæ¥ã€‚
+ * 3ï¼‰lambdaå†…éƒ¨å¯ä»¥ä½¿ç”¨é™æ€ã€éžé™æ€å’Œå±€éƒ¨å˜é‡ï¼Œè¿™ç§°ä¸ºlambdaå†…çš„å˜é‡æ•èŽ·ã€‚
+ * 4ï¼‰Lambdaè¡¨è¾¾å¼åœ¨Javaä¸­åˆç§°ä¸ºé—­åŒ…æˆ–åŒ¿åå‡½æ•°ï¼Œæ‰€ä»¥å¦‚æžœæœ‰åŒäº‹æŠŠå®ƒå«é—­åŒ…çš„æ—¶å€™ï¼Œä¸ç”¨æƒŠè®¶ã€‚
+ * 5ï¼‰Lambdaæ–¹æ³•åœ¨ç¼–è¯‘å™¨å†…éƒ¨è¢«ç¿»è¯‘æˆç§æœ‰æ–¹æ³•ï¼Œå¹¶æ´¾å‘ invokedynamic å­—èŠ‚ç æŒ‡ä»¤æ¥è¿›è¡Œè°ƒç”¨ã€‚å¯ä»¥ä½¿ç”¨JDKä¸­çš„ javap å·¥å…·æ¥åç¼–è¯‘classæ–‡ä»¶ã€‚
+ * ä½¿ç”¨ javap -p æˆ– javap -c -v å‘½ä»¤æ¥çœ‹ä¸€çœ‹lambdaè¡¨è¾¾å¼ç”Ÿæˆçš„å­—èŠ‚ç ã€‚å¤§è‡´åº”è¯¥é•¿è¿™æ ·ï¼š
  * private static java.lang.Object lambda$0(java.lang.String);
- * 6£©lambda±í´ïÊ½ÓÐ¸öÏÞÖÆ£¬ÄÇ¾ÍÊÇÖ»ÄÜÒýÓÃ final »ò final ¾Ö²¿±äÁ¿£¬Õâ¾ÍÊÇËµ²»ÄÜÔÚlambdaÄÚ²¿ÐÞ¸Ä¶¨ÒåÔÚÓòÍâµÄ±äÁ¿¡£
+ * 6ï¼‰lambdaè¡¨è¾¾å¼æœ‰ä¸ªé™åˆ¶ï¼Œé‚£å°±æ˜¯åªèƒ½å¼•ç”¨ final æˆ– final å±€éƒ¨å˜é‡ï¼Œè¿™å°±æ˜¯è¯´ä¸èƒ½åœ¨lambdaå†…éƒ¨ä¿®æ”¹å®šä¹‰åœ¨åŸŸå¤–çš„å˜é‡ã€‚
  * List<Integer> primes = Arrays.asList(new Integer[]{2, 3,5,7});
  * int factor = 2;
  * primes.forEach(element -> { factor++; });
  * Compile time error : "local variables referenced from a lambda expression must be final or effectively final"
- * ÁíÍâ£¬Ö»ÊÇ·ÃÎÊËü¶ø²»×÷ÐÞ¸ÄÊÇ¿ÉÒÔµÄ£¬ÈçÏÂËùÊ¾£º
+ * å¦å¤–ï¼Œåªæ˜¯è®¿é—®å®ƒè€Œä¸ä½œä¿®æ”¹æ˜¯å¯ä»¥çš„ï¼Œå¦‚ä¸‹æ‰€ç¤ºï¼š
  * List<Integer> primes = Arrays.asList(new Integer[]{2, 3,5,7});
  * int factor = 2;
  * primes.forEach(element -> { System.out.println(factor*element); });
- * Êä³ö£º
+ * è¾“å‡ºï¼š
  * 4
  * 6
  * 10
  * 14
- * Òò´Ë£¬Ëü¿´ÆðÀ´¸üÏñ²»¿É±ä±Õ°ü£¬ÀàËÆÓÚPython¡£
+ * å› æ­¤ï¼Œå®ƒçœ‹èµ·æ¥æ›´åƒä¸å¯å˜é—­åŒ…ï¼Œç±»ä¼¼äºŽPythonã€‚
  * 
  */
 /**
- *ÒÔÉÏ¾ÍÊÇJava 8µÄlambda±í´ïÊ½µÄÈ«²¿11¸öÀý×Ó¡£´Ë´ÎÐÞ¸Ä½«³ÉÎªJavaÊ·ÉÏ×î´óµÄÒ»´Î£¬½«ÉîÔ¶Ó°ÏìÎ´À´Java¿ª·¢ÕßÊ¹ÓÃ¼¯ºÏ¿ò¼ÜµÄ·½Ê½¡£
- *ÎÒÏë¹æÄ£×îÏàËÆµÄÒ»´ÎÐÞ¸Ä¾ÍÊÇJava 5µÄ·¢²¼ÁË£¬Ëü´øÀ´ÁËºÜ¶àÓÅµã£¬ÌáÉýÁË´úÂëÖÊÁ¿£¬ÀýÈç£º·ºÐÍ¡¢Ã¶¾Ù¡¢×Ô¶¯×°Ïä£¨Autoboxing£©¡¢¾²Ì¬µ¼Èë¡¢²¢·¢APIºÍ±äÁ¿²ÎÊý¡£
- *ÉÏÊöÌØÐÔÊ¹µÃJava´úÂë¸ü¼ÓÇåÎú£¬ÎÒÏëlambda±í´ïÊ½Ò²½«½øÒ»²½¸Ä½øËü¡£ÎÒÔÚÆÚ´ý×Å¿ª·¢²¢ÐÐµÚÈý·½¿â£¬Õâ¿ÉÒÔÊ¹¸ßÐÔÄÜÓ¦ÓÃ±äµÃ¸üÈÝÒ×Ð´¡£ 
- *Ô­ÎÄÁ´½Ó£ºhttp://javarevisited.blogspot.com/2014/02/10-example-of-lambda-expressions-in-java8.html#ixzz3gCMp6Vhc
- *ÕâÀïÉÔ×÷ÐÞ¸Ä
+ *ä»¥ä¸Šå°±æ˜¯Java 8çš„lambdaè¡¨è¾¾å¼çš„å…¨éƒ¨11ä¸ªä¾‹å­ã€‚æ­¤æ¬¡ä¿®æ”¹å°†æˆä¸ºJavaå²ä¸Šæœ€å¤§çš„ä¸€æ¬¡ï¼Œå°†æ·±è¿œå½±å“æœªæ¥Javaå¼€å‘è€…ä½¿ç”¨é›†åˆæ¡†æž¶çš„æ–¹å¼ã€‚
+ *æˆ‘æƒ³è§„æ¨¡æœ€ç›¸ä¼¼çš„ä¸€æ¬¡ä¿®æ”¹å°±æ˜¯Java 5çš„å‘å¸ƒäº†ï¼Œå®ƒå¸¦æ¥äº†å¾ˆå¤šä¼˜ç‚¹ï¼Œæå‡äº†ä»£ç è´¨é‡ï¼Œä¾‹å¦‚ï¼šæ³›åž‹ã€æžšä¸¾ã€è‡ªåŠ¨è£…ç®±ï¼ˆAutoboxingï¼‰ã€é™æ€å¯¼å…¥ã€å¹¶å‘APIå’Œå˜é‡å‚æ•°ã€‚
+ *ä¸Šè¿°ç‰¹æ€§ä½¿å¾—Javaä»£ç æ›´åŠ æ¸…æ™°ï¼Œæˆ‘æƒ³lambdaè¡¨è¾¾å¼ä¹Ÿå°†è¿›ä¸€æ­¥æ”¹è¿›å®ƒã€‚æˆ‘åœ¨æœŸå¾…ç€å¼€å‘å¹¶è¡Œç¬¬ä¸‰æ–¹åº“ï¼Œè¿™å¯ä»¥ä½¿é«˜æ€§èƒ½åº”ç”¨å˜å¾—æ›´å®¹æ˜“å†™ã€‚ 
+ *åŽŸæ–‡é“¾æŽ¥ï¼šhttp://javarevisited.blogspot.com/2014/02/10-example-of-lambda-expressions-in-java8.html#ixzz3gCMp6Vhc
+ *è¿™é‡Œç¨ä½œä¿®æ”¹
  */
 

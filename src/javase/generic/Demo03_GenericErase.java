@@ -1,20 +1,20 @@
 package javase.generic;
 /**
- * ·ºĞÍµÄ²Á³ı£ºÊ¹ÓÃÊ±£¨ÊµÏÖ»ò¼Ì³Ğ£©Ã»ÓĞÖ¸¶¨ÀàĞÍ
- * ÀàËÆÓÚObject£¬²»µÈÍ¬ÓÚObject
+ * æ³›å‹çš„æ“¦é™¤ï¼šä½¿ç”¨æ—¶ï¼ˆå®ç°æˆ–ç»§æ‰¿ï¼‰æ²¡æœ‰æŒ‡å®šç±»å‹
+ * ç±»ä¼¼äºObjectï¼Œä¸ç­‰åŒäºObject
  * @author lenovo
  *
  */
 public class Demo03_GenericErase {
 	public static void main(String[] args) {
-		// ´Ë´¦¾ÍÊÇÒ»¸ö·ºĞÍ²Á³ı£¬Ã»ÓĞÖ¸¶¨·ºĞÍµÄ¾ßÌåÀàĞÍ
+		// æ­¤å¤„å°±æ˜¯ä¸€ä¸ªæ³›å‹æ“¦é™¤ï¼Œæ²¡æœ‰æŒ‡å®šæ³›å‹çš„å…·ä½“ç±»å‹
 		MyStudent student = new MyStudent();
 		student.setJavase(100); // int -> Integer -> Object
-		Object javase = student.getJavase(); // ²»°²È«ÁË
+		Object javase = student.getJavase(); // ä¸å®‰å…¨äº†
 		
 		test(student);
 		MyStudent<Object> studentObj = new MyStudent<>();
-//		test(studentObj); ²»µÈÍ¬ÓÚObject
+//		test(studentObj); ä¸ç­‰åŒäºObject
 	}
 	public static void test(MyStudent<Integer> stu) {
 	}

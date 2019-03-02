@@ -1,15 +1,15 @@
 package javase.important_object.string;
 /**
- * - A:StringÀàµÄ»ñÈ¡¹¦ÄÜ
-    - int length():»ñÈ¡×Ö·û´®µÄ³¤¶È¡£
-    - char charAt(int index):»ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄ×Ö·û
-    - int indexOf(int ch):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
-    - int indexOf(String str):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
-    - int indexOf(int ch, int fromIndex):·µ»ØÖ¸¶¨×Ö·ûÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
-    - int indexOf(String str, int fromIndex):·µ»ØÖ¸¶¨×Ö·û´®ÔÚ´Ë×Ö·û´®ÖĞ´ÓÖ¸¶¨Î»ÖÃºóµÚÒ»´Î³öÏÖ´¦µÄË÷Òı¡£
+ * - A:Stringç±»çš„è·å–åŠŸèƒ½
+    - int length():è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ã€‚
+    - char charAt(int index):è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å­—ç¬¦
+    - int indexOf(int ch):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
+    - int indexOf(String str):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
+    - int indexOf(int ch, int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
+    - int indexOf(String str, int fromIndex):è¿”å›æŒ‡å®šå­—ç¬¦ä¸²åœ¨æ­¤å­—ç¬¦ä¸²ä¸­ä»æŒ‡å®šä½ç½®åç¬¬ä¸€æ¬¡å‡ºç°å¤„çš„ç´¢å¼•ã€‚
     - lastIndexOf
-    - String subString(int start):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼½ØÈ¡×Ö·û´®£¬Ä¬ÈÏµ½Ä©Î²¡£
-    - String subString(int start, int end):´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊø½ØÈ¡×Ö·û´®¡£
+    - String subString(int start):ä»æŒ‡å®šä½ç½®å¼€å§‹æˆªå–å­—ç¬¦ä¸²ï¼Œé»˜è®¤åˆ°æœ«å°¾ã€‚
+    - String subString(int start, int end):ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°æŒ‡å®šä½ç½®ç»“æŸæˆªå–å­—ç¬¦ä¸²ã€‚
  * @author Dan
  *
  */

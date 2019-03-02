@@ -22,14 +22,14 @@ public class TestRecursionPrint {
 
 	private static File getFile() {
 		Scanner cin = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸öÂ·¾¶£º");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªè·¯å¾„ï¼š");
 		while (true) {
 			String line = cin.nextLine();
 			File dir = new File(line);
 			if (!dir.exists()) {
-				System.out.println("ÎÄ¼ş¼ĞÂ·¾¶²»´æÔÚ£¬ÇëÖØĞÂÂ¼Èë£º");
+				System.out.println("æ–‡ä»¶å¤¹è·¯å¾„ä¸å­˜åœ¨ï¼Œè¯·é‡æ–°å½•å…¥ï¼š");
 			} else if (dir.isFile()) {
-				System.out.println("¸ÃÂ·¾¶ÎªÎÄ¼ş£¬ÇëÖØĞÂÂ¼Èë£º");
+				System.out.println("è¯¥è·¯å¾„ä¸ºæ–‡ä»¶ï¼Œè¯·é‡æ–°å½•å…¥ï¼š");
 			} else {
 				cin.close();
 				return dir;

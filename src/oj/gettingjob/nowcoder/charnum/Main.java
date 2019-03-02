@@ -3,22 +3,22 @@ package oj.gettingjob.nowcoder.charnum;
 import java.util.Scanner;
 
 /**
-<h2 class="subject-item-title">ÌâÄ¿ÃèÊö</h2>
+<h2 class="subject-item-title">é¢˜ç›®æè¿°</h2>
 <div class="subject-describe">
-<p>Ð´³öÒ»¸ö³ÌÐò£¬½ÓÊÜÒ»¸öÓÐ×ÖÄ¸ºÍÊý×ÖÒÔ¼°¿Õ¸ñ×é³ÉµÄ×Ö·û´®£¬ºÍÒ»¸ö×Ö·û£¬È»ºóÊä³öÊäÈë×Ö·û´®ÖÐº¬ÓÐ¸Ã×Ö·ûµÄ¸öÊý¡£²»Çø·Ö´óÐ¡Ð´¡£</p>
+<p>å†™å‡ºä¸€ä¸ªç¨‹åºï¼ŒæŽ¥å—ä¸€ä¸ªæœ‰å­—æ¯å’Œæ•°å­—ä»¥åŠç©ºæ ¼ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œå’Œä¸€ä¸ªå­—ç¬¦ï¼Œç„¶åŽè¾“å‡ºè¾“å…¥å­—ç¬¦ä¸²ä¸­å«æœ‰è¯¥å­—ç¬¦çš„ä¸ªæ•°ã€‚ä¸åŒºåˆ†å¤§å°å†™ã€‚</p>
 <br/>
-<h5><b>ÊäÈëÃèÊö:</b></h5>
-<pre><p>ÊäÈëÒ»¸öÓÐ×ÖÄ¸ºÍÊý×ÖÒÔ¼°¿Õ¸ñ×é³ÉµÄ×Ö·û´®£¬ºÍÒ»¸ö×Ö·û¡£</p></pre>
+<h5><b>è¾“å…¥æè¿°:</b></h5>
+<pre><p>è¾“å…¥ä¸€ä¸ªæœ‰å­—æ¯å’Œæ•°å­—ä»¥åŠç©ºæ ¼ç»„æˆçš„å­—ç¬¦ä¸²ï¼Œå’Œä¸€ä¸ªå­—ç¬¦ã€‚</p></pre>
 <br/>
 <br/>
-<h5><b>Êä³öÃèÊö:</b></h5>
-<pre><p>Êä³öÊäÈë×Ö·û´®ÖÐº¬ÓÐ¸Ã×Ö·ûµÄ¸öÊý¡£</p></pre>
+<h5><b>è¾“å‡ºæè¿°:</b></h5>
+<pre><p>è¾“å‡ºè¾“å…¥å­—ç¬¦ä¸²ä¸­å«æœ‰è¯¥å­—ç¬¦çš„ä¸ªæ•°ã€‚</p></pre>
 <br/>
-<h5><b>ÊäÈëÀý×Ó:</b></h5>
+<h5><b>è¾“å…¥ä¾‹å­:</b></h5>
 <pre>ABCDEF
 A</pre>
 <br/>
-<h5><b>Êä³öÀý×Ó:</b></h5>
+<h5><b>è¾“å‡ºä¾‹å­:</b></h5>
 <pre>1</pre>
 </div>
  * @author lenovo

@@ -1,13 +1,13 @@
 package javase.base.structured_programming.loop_structure.control_statement;
 /*
-* A:continueµÄÊ¹ÓÃ³¡¾°
-	* Ö»ÄÜÔÚÑ­»·ÖĞ 
+* A:continueçš„ä½¿ç”¨åœºæ™¯
+	* åªèƒ½åœ¨å¾ªç¯ä¸­ 
 */
 class Demo2_Continue {
 	public static void main(String[] args) {
 		for (int x = 1;x <= 10 ;x++ ) {
 			if (x == 4) {
-				continue;							//ÖÕÖ¹±¾´ÎÑ­»·,¼ÌĞøÏÂ´ÎÑ­»·
+				continue;							//ç»ˆæ­¢æœ¬æ¬¡å¾ªç¯,ç»§ç»­ä¸‹æ¬¡å¾ªç¯
 			}
 
 			System.out.println("x = " + x);

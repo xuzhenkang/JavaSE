@@ -12,6 +12,6 @@ public class TestAop {
 	}
 }
 /*
- * ÕâÊÇaopµÄÒ»¸öÔ­Àí
- * ¶¯Ì¬´úÀíÄ£Ê½µÄÒ»¸öÀý×Ó
+ * è¿™æ˜¯aopçš„ä¸€ä¸ªåŽŸç†
+ * åŠ¨æ€ä»£ç†æ¨¡å¼çš„ä¸€ä¸ªä¾‹å­
  */

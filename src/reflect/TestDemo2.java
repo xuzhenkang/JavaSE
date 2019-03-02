@@ -1,10 +1,10 @@
 package reflect;
 /**
-ÊµÀı»¯ClassÀà¶ÔÏó
-ÔËĞĞ½á¹û£º
-ÀàÃû³Æ£ºreflect.Demo
-ÀàÃû³Æ£ºreflect.Demo
-ÀàÃû³Æ£ºreflect.Demo
+å®ä¾‹åŒ–Classç±»å¯¹è±¡
+è¿è¡Œç»“æœï¼š
+ç±»åç§°ï¼šreflect.Demo
+ç±»åç§°ï¼šreflect.Demo
+ç±»åç§°ï¼šreflect.Demo
 */
 public class TestDemo2 {
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TestDemo2 {
 		Class<?> demo3 = null;
 		
 		try {
-			// Ò»°ã²ÉÓÃÕâÖÖ·½Ê½
+			// ä¸€èˆ¬é‡‡ç”¨è¿™ç§æ–¹å¼
 			demo1 = Class.forName("reflect.Demo");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -22,8 +22,8 @@ public class TestDemo2 {
 		demo2 = new Demo().getClass();
 		demo3 = Demo.class;
 		
-		System.out.println("ÀàÃû³Æ£º" + demo1.getName());
-		System.out.println("ÀàÃû³Æ£º" + demo2.getName());
-		System.out.println("ÀàÃû³Æ£º" + demo3.getName());
+		System.out.println("ç±»åç§°ï¼š" + demo1.getName());
+		System.out.println("ç±»åç§°ï¼š" + demo2.getName());
+		System.out.println("ç±»åç§°ï¼š" + demo3.getName());
 	}
 }

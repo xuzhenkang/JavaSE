@@ -3,17 +3,17 @@ package javase.important_object.wrapclass;
 public class Demo2_Integer {
 
 	/**
-	 * * A:IntegerÀà¸ÅÊö
-			* Í¨¹ıJDKÌá¹©µÄAPI£¬²é¿´IntegerÀàµÄËµÃ÷
+	 * * A:Integerç±»æ¦‚è¿°
+			* é€šè¿‡JDKæä¾›çš„APIï¼ŒæŸ¥çœ‹Integerç±»çš„è¯´æ˜
 		
-			* Integer ÀàÔÚ¶ÔÏóÖĞ°ü×°ÁËÒ»¸ö»ù±¾ÀàĞÍ int µÄÖµ,
-			* ¸ÃÀàÌá¹©ÁË¶à¸ö·½·¨£¬ÄÜÔÚ int ÀàĞÍºÍ String ÀàĞÍÖ®¼ä»¥Ïà×ª»»£¬
-			* »¹Ìá¹©ÁË´¦Àí int ÀàĞÍÊ±·Ç³£ÓĞÓÃµÄÆäËûÒ»Ğ©³£Á¿ºÍ·½·¨
-		* B:¹¹Ôì·½·¨
+			* Integer ç±»åœ¨å¯¹è±¡ä¸­åŒ…è£…äº†ä¸€ä¸ªåŸºæœ¬ç±»å‹ int çš„å€¼,
+			* è¯¥ç±»æä¾›äº†å¤šä¸ªæ–¹æ³•ï¼Œèƒ½åœ¨ int ç±»å‹å’Œ String ç±»å‹ä¹‹é—´äº’ç›¸è½¬æ¢ï¼Œ
+			* è¿˜æä¾›äº†å¤„ç† int ç±»å‹æ—¶éå¸¸æœ‰ç”¨çš„å…¶ä»–ä¸€äº›å¸¸é‡å’Œæ–¹æ³•
+		* B:æ„é€ æ–¹æ³•
 			* public Integer(int value)
 			* public Integer(String s)
-		* C:°¸ÀıÑİÊ¾
-			* Ê¹ÓÃ¹¹Ôì·½·¨´´½¨¶ÔÏó
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* ä½¿ç”¨æ„é€ æ–¹æ³•åˆ›å»ºå¯¹è±¡
 	 */
 	public static void main(String[] args) {
 		System.out.println(Integer.MAX_VALUE);
@@ -22,8 +22,8 @@ public class Demo2_Integer {
 		Integer i1 = new Integer(100);
 		System.out.println(i1);
 		
-		//Integer i2 = new Integer("abc");			//java.lang.NumberFormatExceptionÊı×Ö¸ñÊ½Òì³£
-		//System.out.println(i2);						//ÒòÎªabc²»ÊÇÊı×Ö×Ö·û´®,ËùÒÔ×ª»»»á±¨´í
+		//Integer i2 = new Integer("abc");			//java.lang.NumberFormatExceptionæ•°å­—æ ¼å¼å¼‚å¸¸
+		//System.out.println(i2);						//å› ä¸ºabcä¸æ˜¯æ•°å­—å­—ç¬¦ä¸²,æ‰€ä»¥è½¬æ¢ä¼šæŠ¥é”™
 		
 		Integer i3 = new Integer("100");
 		System.out.println(i3);

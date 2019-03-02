@@ -8,35 +8,35 @@ import java.util.Scanner;
 public class Test3 {
 
 	/**
-	 * ½«¼üÅÌÂ¼ÈëµÄÊı¾İ¿½±´µ½µ±Ç°ÏîÄ¿ÏÂµÄtext.txtÎÄ¼şÖĞ,¼üÅÌÂ¼ÈëÊı¾İµ±Óöµ½quitÊ±¾ÍÍË³ö
+	 * å°†é”®ç›˜å½•å…¥çš„æ•°æ®æ‹·è´åˆ°å½“å‰é¡¹ç›®ä¸‹çš„text.txtæ–‡ä»¶ä¸­,é”®ç›˜å½•å…¥æ•°æ®å½“é‡åˆ°quitæ—¶å°±é€€å‡º
 	 * 
-	 * ·ÖÎö:
-	 * 1,´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-	 * 2,´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªtext.txtÎÄ¼ş
-	 * 3,¶¨ÒåÎŞÏŞÑ­»·
-	 * 4,Óöµ½quitÍË³öÑ­»·
-	 * 5,Èç¹û²»quit,¾Í½«ÄÚÈİĞ´³ö
-	 * 6,¹Ø±ÕÁ÷
+	 * åˆ†æ:
+	 * 1,åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+	 * 2,åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”text.txtæ–‡ä»¶
+	 * 3,å®šä¹‰æ— é™å¾ªç¯
+	 * 4,é‡åˆ°quité€€å‡ºå¾ªç¯
+	 * 5,å¦‚æœä¸quit,å°±å°†å†…å®¹å†™å‡º
+	 * 6,å…³é—­æµ
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		//1,´´½¨¼üÅÌÂ¼Èë¶ÔÏó
+		//1,åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
 		Scanner sc = new Scanner(System.in);
-		//2,´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªtext.txtÎÄ¼ş
+		//2,åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”text.txtæ–‡ä»¶
 		FileOutputStream fos = new FileOutputStream("text.txt");
-		System.out.println("ÇëÊäÈëÊı¾İ:");
-		//3,¶¨ÒåÎŞÏŞÑ­»·
+		System.out.println("è¯·è¾“å…¥æ•°æ®:");
+		//3,å®šä¹‰æ— é™å¾ªç¯
 		while(true) {
-			String line = sc.nextLine();					//½«¼üÅÌÂ¼ÈëµÄÊı¾İ´æ´¢ÔÚlineÖĞ
-			//4,Óöµ½quitÍË³öÑ­»·
+			String line = sc.nextLine();					//å°†é”®ç›˜å½•å…¥çš„æ•°æ®å­˜å‚¨åœ¨lineä¸­
+			//4,é‡åˆ°quité€€å‡ºå¾ªç¯
 			if("quit".equals(line)) {
 				break;
 			}
-			//5,Èç¹û²»quit,¾Í½«ÄÚÈİĞ´³ö
-			fos.write(line.getBytes());						//×Ö·û´®Ğ´³ö±ØĞë×ª»»³É×Ö½ÚÊı×é
+			//5,å¦‚æœä¸quit,å°±å°†å†…å®¹å†™å‡º
+			fos.write(line.getBytes());						//å­—ç¬¦ä¸²å†™å‡ºå¿…é¡»è½¬æ¢æˆå­—èŠ‚æ•°ç»„
 			fos.write("\r\n".getBytes());
 		}
-		//6,¹Ø±ÕÁ÷
+		//6,å…³é—­æµ
 		fos.close();
 	}
 

@@ -4,7 +4,7 @@ public class SourceBean implements Sourceable {
 
 	@Override
 	public void method() {
-		System.out.println("ÎÒÊÇSourceBeanµÄmethod·½·¨£¡");
+		System.out.println("æˆ‘æ˜¯SourceBeançš„methodæ–¹æ³•ï¼");
 	}
 
 }

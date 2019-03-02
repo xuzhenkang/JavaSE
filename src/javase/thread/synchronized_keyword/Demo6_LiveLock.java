@@ -1,6 +1,6 @@
 package javase.thread.synchronized_keyword;
 
-// »îËøµÄÀı×Ó£ºÕÉ·òºÍÆŞ×ÓÊÔÍ¼ºÈÌÀ£¬µ«ÊÇÖ»ÓĞÒ»¸öÉ××Ó£¬ËûÃÇ»¥ÏàÌ«ÀñÃ²£¬»¥ÏàÇ«ÈÃ£¬ Ò»Ö±ÈÃÏÂÈ¥¡£
+// æ´»é”çš„ä¾‹å­ï¼šä¸ˆå¤«å’Œå¦»å­è¯•å›¾å–æ±¤ï¼Œä½†æ˜¯åªæœ‰ä¸€ä¸ªå‹ºå­ï¼Œä»–ä»¬äº’ç›¸å¤ªç¤¼è²Œï¼Œäº’ç›¸è°¦è®©ï¼Œ ä¸€ç›´è®©ä¸‹å»ã€‚
 public class Demo6_LiveLock {
 	static class Spoon {
 		private Diner owner;
@@ -35,7 +35,7 @@ public class Demo6_LiveLock {
 		public void eatWith(Spoon spoon, Diner spouse) {
 			while (isHungry) {
 				// Don't have the spoon, so wait patiently for spouse.
-				if (spoon.owner != this) { // ÈôÌÀÉ×µÄ³ÖÓĞÕß²»ÊÇµ±Ç°¶ÔÏó£¬ÔòµÈ´ı
+				if (spoon.owner != this) { // è‹¥æ±¤å‹ºçš„æŒæœ‰è€…ä¸æ˜¯å½“å‰å¯¹è±¡ï¼Œåˆ™ç­‰å¾…
 					try {
 						Thread.sleep(1000);
 					} catch (InterruptedException e) {
@@ -47,13 +47,13 @@ public class Demo6_LiveLock {
 				}
 				
 				// If spouse is hungry, insist upon passing the spoon.
-				if (spouse.isHungry()) { // Èô¶Ô·½ºÜ¶ö£¬ÔòÈÃ¶Ô·½³Ô£¬½«ÌÀÉ×¸øÓÚ¶Ô·½¡£
+				if (spouse.isHungry()) { // è‹¥å¯¹æ–¹å¾ˆé¥¿ï¼Œåˆ™è®©å¯¹æ–¹åƒï¼Œå°†æ±¤å‹ºç»™äºå¯¹æ–¹ã€‚
 					System.out.println(name + ": You eat first my darling " + spouse.getName());
 					spoon.setOwner(spouse);
 					continue;
 				}
 				
-				// Spouse wasn't hungry, so finally eat. ¶Ô·½²»¶öµÄ»°£¬Ôòµ±Ç°¶ÔÏó³Ô£¬³Ôºó£¬µ±Ç°¶ÔÏó²»¶öÁË£¬È»ºó½«ÌÀÉ×½»¸ø¶Ô·½¡£
+				// Spouse wasn't hungry, so finally eat. å¯¹æ–¹ä¸é¥¿çš„è¯ï¼Œåˆ™å½“å‰å¯¹è±¡åƒï¼Œåƒåï¼Œå½“å‰å¯¹è±¡ä¸é¥¿äº†ï¼Œç„¶åå°†æ±¤å‹ºäº¤ç»™å¯¹æ–¹ã€‚
 				spoon.use();
 				isHungry = false;
 				System.out.println(name + ": I am stuffed, my darling " + spouse.getName());
@@ -64,7 +64,7 @@ public class Demo6_LiveLock {
 		public static void main(String[] args) {
 			final Diner husband = new Diner("Bob");
 			final Diner wife = new Diner("Alice");
-			final Spoon s = new Spoon(husband); // Ö»ÓĞÒ»°ÑÉ××Ó£¬ Ê×ÏÈÉ××ÓÔÚÕÉ·òÊÖÖĞ
+			final Spoon s = new Spoon(husband); // åªæœ‰ä¸€æŠŠå‹ºå­ï¼Œ é¦–å…ˆå‹ºå­åœ¨ä¸ˆå¤«æ‰‹ä¸­
 			
 			new Thread(new Runnable() {
 				public void run() {

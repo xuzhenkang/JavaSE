@@ -15,9 +15,9 @@ public class Demo5_Vector {
 		v.addElement("c");
 		v.addElement("d");
 		
-		Enumeration en = v.elements();					//获取枚举
-		while(en.hasMoreElements()) {					//判断集合中是否有元素
-			System.out.println(en.nextElement());		//获取集合中的元素
+		Enumeration en = v.elements();					//鑾峰彇鏋氫妇
+		while(en.hasMoreElements()) {					//鍒ゆ柇闆嗗悎涓槸鍚︽湁鍏冪礌
+			System.out.println(en.nextElement());		//鑾峰彇闆嗗悎涓殑鍏冪礌
 		}
 	}
 

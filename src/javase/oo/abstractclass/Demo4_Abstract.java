@@ -6,7 +6,7 @@ public class Demo4_Abstract {
 	}
 }
 abstract class Demo1 {
-	/*´íÎó£º·Ç·¨µÄĞŞÊÎ·û×éºÏ£ºThe abstract method print in type Demo1 can only set a visibility modifier, one of  public or protected*/
+	/*é”™è¯¯ï¼šéæ³•çš„ä¿®é¥°ç¬¦ç»„åˆï¼šThe abstract method print in type Demo1 can only set a visibility modifier, one of  public or protected*/
 	//public static abstract void print();
 	/*The abstract method print in type Demo1 can only set a visibility modifier, one of 
  public or protected */
@@ -14,22 +14,22 @@ abstract class Demo1 {
 	//private abstract void print();
 }
 /*
-- A:ÃæÊÔÌâ1
+- A:é¢è¯•é¢˜1
 
-    - Ò»¸ö³éÏóÀàÈç¹ûÃ»ÓĞ³éÏó·½·¨£¬¿É²»¿ÉÒÔ¶¨ÒåÎª³éÏóÀà£¿Èç¹û¿ÉÒÔ£¬ÓĞÊ²Ã´ÒâÒå£¿
+    - ä¸€ä¸ªæŠ½è±¡ç±»å¦‚æœæ²¡æœ‰æŠ½è±¡æ–¹æ³•ï¼Œå¯ä¸å¯ä»¥å®šä¹‰ä¸ºæŠ½è±¡ç±»ï¼Ÿå¦‚æœå¯ä»¥ï¼Œæœ‰ä»€ä¹ˆæ„ä¹‰ï¼Ÿ
 
-    - ¿ÉÒÔ
+    - å¯ä»¥
 
-    - ÕâÃ´×öÄ¿µÄÖ»ÓĞÒ»¸ö£¬¾ÍÊÇ²»ÈÃÆäËûÀà´´½¨±¾Àà¶ÔÏó£¬½»¸ø×ÓÀàÍê³É
-- B:ÃæÊÔÌâ2
-    - abstract²»ÄÜºÍÄÄĞ©¹Ø¼ü×Ö¹²´æ
-    abstract ºÍ static
-    - ±»abstractĞŞÊÎµÄ·½·¨Ã»ÓĞ·½·¨Ìå
-    - ±»staticĞŞÊÎµÄ¿ÉÒÔÓÃÀàÃû.·½·¨Ãû£¬µ«ÊÇÀàÃû.·½·¨Ãûµ÷ÓÃ³éÏó·½·¨£¬ÊÇÃ»ÓĞÒâÒåµÄ¡£
-    abstractºÍfinal 
-    - ±»abstractĞŞÊÎµÄ·½·¨Ç¿ÖÆ×ÓÀàÖØĞ´
-    - ±»finalĞŞÊÎµÄ²»ÈÃ×ÓÀàÖØĞ´£¬ËùÒÔËûÁ©Ã¬¶Ü
-    abstract ºÍ private
-    - ±»abstractĞŞÊÎµÄ·½·¨ÊÇÎªÁËÈÃ×ÓÀà¿´µ½ÃûÇ¿ÖÆÖØĞ´
-    - ±»private ĞŞÊÎ²»ÈÃ×ÓÀà·ÃÎÊ£¬ËùÒÔËûÁ©ÊÇÃ¬¶ÜµÄ
+    - è¿™ä¹ˆåšç›®çš„åªæœ‰ä¸€ä¸ªï¼Œå°±æ˜¯ä¸è®©å…¶ä»–ç±»åˆ›å»ºæœ¬ç±»å¯¹è±¡ï¼Œäº¤ç»™å­ç±»å®Œæˆ
+- B:é¢è¯•é¢˜2
+    - abstractä¸èƒ½å’Œå“ªäº›å…³é”®å­—å…±å­˜
+    abstract å’Œ static
+    - è¢«abstractä¿®é¥°çš„æ–¹æ³•æ²¡æœ‰æ–¹æ³•ä½“
+    - è¢«staticä¿®é¥°çš„å¯ä»¥ç”¨ç±»å.æ–¹æ³•åï¼Œä½†æ˜¯ç±»å.æ–¹æ³•åè°ƒç”¨æŠ½è±¡æ–¹æ³•ï¼Œæ˜¯æ²¡æœ‰æ„ä¹‰çš„ã€‚
+    abstractå’Œfinal 
+    - è¢«abstractä¿®é¥°çš„æ–¹æ³•å¼ºåˆ¶å­ç±»é‡å†™
+    - è¢«finalä¿®é¥°çš„ä¸è®©å­ç±»é‡å†™ï¼Œæ‰€ä»¥ä»–ä¿©çŸ›ç›¾
+    abstract å’Œ private
+    - è¢«abstractä¿®é¥°çš„æ–¹æ³•æ˜¯ä¸ºäº†è®©å­ç±»çœ‹åˆ°åå¼ºåˆ¶é‡å†™
+    - è¢«private ä¿®é¥°ä¸è®©å­ç±»è®¿é—®ï¼Œæ‰€ä»¥ä»–ä¿©æ˜¯çŸ›ç›¾çš„
 */

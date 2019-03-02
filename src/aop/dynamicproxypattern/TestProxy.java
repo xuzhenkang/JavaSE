@@ -2,11 +2,11 @@ package aop.dynamicproxypattern;
 
 public class TestProxy {
 	public static void main(String[] args) {
-        // °ó¶¨´úÀí£¬ÕâÖÖ·½Ê½»áÔÚËùÓĞµÄ·½·¨¶¼¼ÓÉÏÇĞÃæ·½·¨
-        ITalk iTalk = (ITalk) new DynamicProxy().bind(new PeopleTalk("Proxy Test", "´úÀí"));
-        iTalk.talk("ÒµÎñËµÃ÷");
+        // ç»‘å®šä»£ç†ï¼Œè¿™ç§æ–¹å¼ä¼šåœ¨æ‰€æœ‰çš„æ–¹æ³•éƒ½åŠ ä¸Šåˆ‡é¢æ–¹æ³•
+        ITalk iTalk = (ITalk) new DynamicProxy().bind(new PeopleTalk("Proxy Test", "ä»£ç†"));
+        iTalk.talk("ä¸šåŠ¡è¯´æ˜");
     }
 }
 /**
-	¶¯Ì¬´úÀíÄ£Ê½ÔÚÉè¼ÆÄ£Ê½ÖĞÓĞÏà¹Ø½éÉÜ¡£ÔÚdesignpattern.proxy°üÏÂ¡£
+	åŠ¨æ€ä»£ç†æ¨¡å¼åœ¨è®¾è®¡æ¨¡å¼ä¸­æœ‰ç›¸å…³ä»‹ç»ã€‚åœ¨designpattern.proxyåŒ…ä¸‹ã€‚
 */

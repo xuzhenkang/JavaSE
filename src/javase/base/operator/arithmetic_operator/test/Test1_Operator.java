@@ -1,7 +1,7 @@
 package javase.base.operator.arithmetic_operator.test;
 class Test1_Operator {
 	public static void main(String[] args) {
-		//µÚÒ»Ìâ
+		//ç¬¬ä¸€é¢˜
 		/*int a = 10;
 		int b = 10;
 		int c = 10;
@@ -13,17 +13,17 @@ class Test1_Operator {
 		
 		System.out.println("a = " + a + ",b = " + b + ",c = " + c);*/
 
-		//µÚ¶şÌâ
+		//ç¬¬äºŒé¢˜
 		/*int x = 4;
 		//		4	+	6+	60
 		int y = (x++)+(++x)+(x*10);
 
 		System.out.println("x = " + x + ",y = " +  y);*/
 
-		//µÚÈıÌâÎÊÄÄ¾ä»á±¨´í,ÎªÊ²Ã´ 
+		//ç¬¬ä¸‰é¢˜é—®å“ªå¥ä¼šæŠ¥é”™,ä¸ºä»€ä¹ˆ 
 		byte b = 10;
 		//b++;					//b = (byte)(b + 1)
-		//b = b + 1;				//µ±byteÓëint½øĞĞ»ìºÏÔËËãµÄÊ±ºò,»áÌáÉıÎªintÀàĞÍ,Á½¸öintÏà¼ÓµÄ½á¹û»¹ÊÇint,¸³Öµ¸øbyte»áËğÊ§¾«¶È
+		//b = b + 1;				//å½“byteä¸intè¿›è¡Œæ··åˆè¿ç®—çš„æ—¶å€™,ä¼šæå‡ä¸ºintç±»å‹,ä¸¤ä¸ªintç›¸åŠ çš„ç»“æœè¿˜æ˜¯int,èµ‹å€¼ç»™byteä¼šæŸå¤±ç²¾åº¦
 		System.out.println("b = " + b);
 		
 	}

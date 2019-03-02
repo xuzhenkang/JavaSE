@@ -6,14 +6,14 @@ public class Demo6_LinkedHashMap {
 
 	/**
 	 * @param args
-	 * LinkedHashMap¿ÉÒÔ±£Ö¤ÔõÃ´´æ¾ÍÔõÃ´È¡
+	 * LinkedHashMapå¯ä»¥ä¿è¯æ€ä¹ˆå­˜å°±æ€ä¹ˆå–
 	 */
 	public static void main(String[] args) {
 		LinkedHashMap<String, Integer> lhm = new LinkedHashMap<>();
-		lhm.put("ÕÅÈı", 23);
-		lhm.put("ÀîËÄ", 24);
-		lhm.put("ÕÔÁù", 26);
-		lhm.put("ÍõÎå", 25);
+		lhm.put("å¼ ä¸‰", 23);
+		lhm.put("æå››", 24);
+		lhm.put("èµµå…­", 26);
+		lhm.put("ç‹äº”", 25);
 		
 		System.out.println(lhm);
 	}

@@ -2,8 +2,8 @@ package javase.base.operator.assigning_operator;
 
 class Demo1_Operator {
 	public static void main(String[] args) {
-		//¸³ÖµÔËËã·û
-		int a = 3;							//°ÑÓÒ±ßµÄ³£Á¿Öµ¸³Öµ¸ø×ó±ßµÄ±äÁ¿,×ó±ß±ØĞëÊÇ±äÁ¿
+		//èµ‹å€¼è¿ç®—ç¬¦
+		int a = 3;							//æŠŠå³è¾¹çš„å¸¸é‡å€¼èµ‹å€¼ç»™å·¦è¾¹çš„å˜é‡,å·¦è¾¹å¿…é¡»æ˜¯å˜é‡
 
 		//a += 4;								//a = a + 4;
 		a = a + 4;

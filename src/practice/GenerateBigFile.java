@@ -6,12 +6,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Random;
-// Éú³É5.84MBµÄÊı¾İ
+// ç”Ÿæˆ5.84MBçš„æ•°æ®
 public class GenerateBigFile {
 	public static void main(String[] args) throws IOException {
 		File file = new File("numfile.txt");
 		if (!file.exists()) {
-			System.out.println("²»´æÔÚ");
+			System.out.println("ä¸å­˜åœ¨");
 			file.createNewFile();
 		}
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));

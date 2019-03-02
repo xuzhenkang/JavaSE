@@ -1,7 +1,7 @@
 package javase.base.structured_programming.loop_structure.nest_loop;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£ºÔÚ¿ØÖÆÌ¨Êä³ö¾Å¾Å³Ë·¨±í¡£
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šåœ¨æ§åˆ¶å°è¾“å‡ºä¹ä¹ä¹˜æ³•è¡¨ã€‚
 
 1 * 1 = 1
 1 * 2 = 2 2 * 2 = 4
@@ -14,14 +14,14 @@ package javase.base.structured_programming.loop_structure.nest_loop;
 */
 class Demo3_For99 {
 	public static void main(String[] args) {
-		/*for (int i = 1;i <= 9 ;i++ ) {					//ĞĞÊı
-			for (int j = 1;j <= i ;j++ ) {				//ÁĞÊı
+		/*for (int i = 1;i <= 9 ;i++ ) {					//è¡Œæ•°
+			for (int j = 1;j <= i ;j++ ) {				//åˆ—æ•°
 				System.out.print(j + "*" + i + "=" + (i * j) + "\t" );
 			}
 			System.out.println();
 		}*/
 
-		//System.out.println("\"");				×ªÒåË«ÒıºÅ
-		System.out.println('\'');				//×ªÒåµ¥ÒıºÅ
+		//System.out.println("\"");				è½¬ä¹‰åŒå¼•å·
+		System.out.println('\'');				//è½¬ä¹‰å•å¼•å·
 	}
 }

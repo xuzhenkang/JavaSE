@@ -2,7 +2,7 @@ package javase.oo.innerclass.anonymous_innerclass.test;
 
 class Test1_NoNameInnerClass {
 	public static void main(String[] args) {
-		//ÈçºÎµ÷ÓÃPersonDemoÖĞµÄmethod·½·¨ÄØ?
+		//å¦‚ä½•è°ƒç”¨PersonDemoä¸­çš„methodæ–¹æ³•å‘¢?
 		PersonDemo pd = new PersonDemo ();
 		//pd.method(new Student());
 		pd.method(new Person2() {
@@ -12,14 +12,14 @@ class Test1_NoNameInnerClass {
 		});
 	}
 }
-//ÕâÀïĞ´³éÏóÀà£¬½Ó¿Ú¶¼ĞĞ
+//è¿™é‡Œå†™æŠ½è±¡ç±»ï¼Œæ¥å£éƒ½è¡Œ
 abstract class Person2 {
 	public abstract void show();
 }
 
 class PersonDemo {
 	
-	//public void method(Person p) {		//Person p = new Student();		//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+	//public void method(Person p) {		//Person p = new Student();		//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
 	/*
 	Person p = new Person(){
 		public void show() {

@@ -1,5 +1,5 @@
 package javase.important_object.string.test;
-// ±éÀú×Ö·û´®
+// éå†å­—ç¬¦ä¸²
 public class Test2 {
 	public static void main(String[] args) {
 		String s = "heima";

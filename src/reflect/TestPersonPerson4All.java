@@ -3,7 +3,7 @@ package reflect;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 /**
- * È¡µÃÆäËûÀàµÄÈ«²¿ÊôĞÔ£¬½«ÕâĞ©ÕûÀíÔÚÒ»Æğ£¬Ò²¾ÍÊÇÍ¨¹ıclassÈ¡µÃÒ»¸öÀàµÄÈ«²¿¿ò¼Ü
+ * å–å¾—å…¶ä»–ç±»çš„å…¨éƒ¨å±æ€§ï¼Œå°†è¿™äº›æ•´ç†åœ¨ä¸€èµ·ï¼Œä¹Ÿå°±æ˜¯é€šè¿‡classå–å¾—ä¸€ä¸ªç±»çš„å…¨éƒ¨æ¡†æ¶
  * @author kang
  *
  */
@@ -16,7 +16,7 @@ public class TestPersonPerson4All {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("============±¾ÀàÊôĞÔ============");
+		System.out.println("============æœ¬ç±»å±æ€§============");
 		Field[] field = demo.getDeclaredFields();
 		for (int i = 0; i < field.length; i++) {
 			int mo = field[i].getModifiers();
@@ -25,7 +25,7 @@ public class TestPersonPerson4All {
 			System.out.println(priv + " " + type.getName() + " " + field[i].getName() + ";");
 		}
 		
-		System.out.println("=============ÊµÏÖµÄ½Ó¿Ú»òÕß¸¸ÀàÊôĞÔ============");
+		System.out.println("=============å®ç°çš„æ¥å£æˆ–è€…çˆ¶ç±»å±æ€§============");
 		Field[] field1 = demo.getFields();
 		for (int j = 0; j < field1.length; j++) {
 			int mo = field1[j].getModifiers();

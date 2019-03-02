@@ -6,27 +6,27 @@ import java.util.Random;
 public class Test1 {
 
 	/**
-	 * * A:°¸ÀýÑÝÊ¾
-	 * ÐèÇó£º±àÐ´Ò»¸ö³ÌÐò£¬»ñÈ¡10¸ö1ÖÁ20µÄËæ»úÊý£¬ÒªÇóËæ»úÊý²»ÄÜÖØ¸´¡£²¢°Ñ×îÖÕµÄËæ»úÊýÊä³öµ½¿ØÖÆÌ¨¡£
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šç¼–å†™ä¸€ä¸ªç¨‹åºï¼ŒèŽ·å–10ä¸ª1è‡³20çš„éšæœºæ•°ï¼Œè¦æ±‚éšæœºæ•°ä¸èƒ½é‡å¤ã€‚å¹¶æŠŠæœ€ç»ˆçš„éšæœºæ•°è¾“å‡ºåˆ°æŽ§åˆ¶å°ã€‚
 	 * 
-	 * ·ÖÎö:
-	 * 1,ÓÐRandomÀà´´½¨Ëæ»úÊý¶ÔÏó
-	 * 2,ÐèÒª´æ´¢10¸öËæ»úÊý,¶øÇÒ²»ÄÜÖØ¸´,ËùÒÔÎÒÃÇÓÃHashSet¼¯ºÏ
-	 * 3,Èç¹ûHashSetµÄsizeÊÇÐ¡ÓÚ10¾Í¿ÉÒÔ²»¶ÏµÄ´æ´¢,Èç¹û´óÓÚµÈÓÚ10¾ÍÍ£Ö¹´æ´¢
-	 * 4,Í¨¹ýRandomÀàÖÐµÄnextInt(n)·½·¨»ñÈ¡1µ½20Ö®¼äµÄËæ»úÊý,²¢½«ÕâÐ©Ëæ»úÊý´æ´¢ÔÚHashSet¼¯ºÏÖÐ
-	 * 5,±éÀúHashSet
+	 * åˆ†æž:
+	 * 1,æœ‰Randomç±»åˆ›å»ºéšæœºæ•°å¯¹è±¡
+	 * 2,éœ€è¦å­˜å‚¨10ä¸ªéšæœºæ•°,è€Œä¸”ä¸èƒ½é‡å¤,æ‰€ä»¥æˆ‘ä»¬ç”¨HashSeté›†åˆ
+	 * 3,å¦‚æžœHashSetçš„sizeæ˜¯å°äºŽ10å°±å¯ä»¥ä¸æ–­çš„å­˜å‚¨,å¦‚æžœå¤§äºŽç­‰äºŽ10å°±åœæ­¢å­˜å‚¨
+	 * 4,é€šè¿‡Randomç±»ä¸­çš„nextInt(n)æ–¹æ³•èŽ·å–1åˆ°20ä¹‹é—´çš„éšæœºæ•°,å¹¶å°†è¿™äº›éšæœºæ•°å­˜å‚¨åœ¨HashSeté›†åˆä¸­
+	 * 5,éåŽ†HashSet
 	 */
 	public static void main(String[] args) {
-		//1,ÓÐRandomÀà´´½¨Ëæ»úÊý¶ÔÏó
+		//1,æœ‰Randomç±»åˆ›å»ºéšæœºæ•°å¯¹è±¡
 		Random r = new Random();
-		//2,ÐèÒª´æ´¢10¸öËæ»úÊý,¶øÇÒ²»ÄÜÖØ¸´,ËùÒÔÎÒÃÇÓÃHashSet¼¯ºÏ
+		//2,éœ€è¦å­˜å‚¨10ä¸ªéšæœºæ•°,è€Œä¸”ä¸èƒ½é‡å¤,æ‰€ä»¥æˆ‘ä»¬ç”¨HashSeté›†åˆ
 		HashSet<Integer> hs = new HashSet<>();
-		//3,Èç¹ûHashSetµÄsizeÊÇÐ¡ÓÚ10¾Í¿ÉÒÔ²»¶ÏµÄ´æ´¢,Èç¹û´óÓÚµÈÓÚ10¾ÍÍ£Ö¹´æ´¢
+		//3,å¦‚æžœHashSetçš„sizeæ˜¯å°äºŽ10å°±å¯ä»¥ä¸æ–­çš„å­˜å‚¨,å¦‚æžœå¤§äºŽç­‰äºŽ10å°±åœæ­¢å­˜å‚¨
 		while(hs.size() < 10) {
-			//4,Í¨¹ýRandomÀàÖÐµÄnextInt(n)·½·¨»ñÈ¡1µ½20Ö®¼äµÄËæ»úÊý,²¢½«ÕâÐ©Ëæ»úÊý´æ´¢ÔÚHashSet¼¯ºÏÖÐ
+			//4,é€šè¿‡Randomç±»ä¸­çš„nextInt(n)æ–¹æ³•èŽ·å–1åˆ°20ä¹‹é—´çš„éšæœºæ•°,å¹¶å°†è¿™äº›éšæœºæ•°å­˜å‚¨åœ¨HashSeté›†åˆä¸­
 			hs.add(r.nextInt(20) + 1);
 		}
-		// 5,±éÀúHashSet
+		// 5,éåŽ†HashSet
 		for (Integer integer : hs) {
 			System.out.println(integer);
 		}

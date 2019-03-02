@@ -6,36 +6,36 @@ import java.util.Scanner;
 public class Test3 {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-	 * ĞèÇó£º¼üÅÌÂ¼ÈëÈÎÒâÒ»¸öÄê·İ£¬ÅĞ¶Ï¸ÃÄêÊÇÈòÄê»¹ÊÇÆ½Äê
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä»»æ„ä¸€ä¸ªå¹´ä»½ï¼Œåˆ¤æ–­è¯¥å¹´æ˜¯é—°å¹´è¿˜æ˜¯å¹³å¹´
 	 * Calendar c = Calendar.getInstance();
 	 * 
-	 * ·ÖÎö:
-	 * 1,¼üÅÌÂ¼ÈëÄêScanner
-	 * 2,´´½¨Calendar c = Calendar.getInstance();
-	 * 3,Í¨¹ıset·½·¨ÉèÖÃÎªÄÇÒ»ÄêµÄ3ÔÂ1ÈÕ
-	 * 4,½«ÈÕÏòÇ°¼õÈ¥1
-	 * 5,ÅĞ¶ÏÈÕÊÇ¶àÉÙÌì,Èç¹ûÊÇ29Ìì·µ»Øtrue·ñÔò·µ»Øfalse
+	 * åˆ†æ:
+	 * 1,é”®ç›˜å½•å…¥å¹´Scanner
+	 * 2,åˆ›å»ºCalendar c = Calendar.getInstance();
+	 * 3,é€šè¿‡setæ–¹æ³•è®¾ç½®ä¸ºé‚£ä¸€å¹´çš„3æœˆ1æ—¥
+	 * 4,å°†æ—¥å‘å‰å‡å»1
+	 * 5,åˆ¤æ–­æ—¥æ˜¯å¤šå°‘å¤©,å¦‚æœæ˜¯29å¤©è¿”å›trueå¦åˆ™è¿”å›false
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄê·İ,ÅĞ¶Ï¸ÃÄê·İÊÇÈòÄê»¹ÊÇÆ½Äê:");
+		System.out.println("è¯·è¾“å…¥å¹´ä»½,åˆ¤æ–­è¯¥å¹´ä»½æ˜¯é—°å¹´è¿˜æ˜¯å¹³å¹´:");
 		//int year = sc.nextInt();
 		
-		String line = sc.nextLine();				//Â¼ÈëÊı×Ö×Ö·û´®
-		int year = Integer.parseInt(line);			//½«Êı×Ö×Ö·û´®×ª»»³ÉÊı×Ö
+		String line = sc.nextLine();				//å½•å…¥æ•°å­—å­—ç¬¦ä¸²
+		int year = Integer.parseInt(line);			//å°†æ•°å­—å­—ç¬¦ä¸²è½¬æ¢æˆæ•°å­—
 		boolean b = getYear(year);
 		System.out.println(b);
 	}
 
 	private static boolean getYear(int year) {
-		//2,´´½¨Calendar c = Calendar.getInstance();
+		//2,åˆ›å»ºCalendar c = Calendar.getInstance();
 		Calendar c = Calendar.getInstance();
-		//ÉèÖÃÎªÄÇÒ»ÄêµÄ3ÔÂ1ÈÕ
+		//è®¾ç½®ä¸ºé‚£ä¸€å¹´çš„3æœˆ1æ—¥
 		c.set(year, 2, 1);
-		//½«ÈÕÏòÇ°¼õÈ¥1
+		//å°†æ—¥å‘å‰å‡å»1
 		c.add(Calendar.DAY_OF_MONTH, -1);
-		//ÅĞ¶ÏÊÇ·ñÊÇ29Ìì
+		//åˆ¤æ–­æ˜¯å¦æ˜¯29å¤©
 		return c.get(Calendar.DAY_OF_MONTH) == 29;
 	}
 

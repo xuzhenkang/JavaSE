@@ -14,7 +14,7 @@ class A {
         show2();
     }
     public void show2() {
-        System.out.println("ÎÒ");
+        System.out.println("æˆ‘");
     }
 }
 class B extends A {
@@ -22,7 +22,7 @@ class B extends A {
         show2();
     }
     public void show2() {
-        System.out.println("°®");
+        System.out.println("çˆ±");
     }
 }
 class C extends B {
@@ -30,6 +30,6 @@ class C extends B {
         super.show();
     }
     public void show2() {
-        System.out.println("Äã");
+        System.out.println("ä½ ");
     }
 }

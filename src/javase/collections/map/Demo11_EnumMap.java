@@ -3,8 +3,8 @@ package javase.collections.map;
 import java.util.EnumMap;
 
 // EnumMap
-// ¼ü±ØÐëÎªÃ¶¾ÙµÄÖµ
-// ¹¹ÔìÆ÷£ºpublic EnumMap(Ö¸¶¨Ã¶¾Ùclass¶ÔÏó)
+// é”®å¿…é¡»ä¸ºæžšä¸¾çš„å€¼
+// æž„é€ å™¨ï¼špublic EnumMap(æŒ‡å®šæžšä¸¾classå¯¹è±¡)
 public class Demo11_EnumMap {
 	public static void main(String[] args) {
 		EnumMap<Season, String> map  = new EnumMap<Season, String>(Season.class);
@@ -15,7 +15,7 @@ public class Demo11_EnumMap {
 		System.out.println(map.size());
 	}
 }
-// ¼¾½Ú
+// å­£èŠ‚
 enum Season {
 	SPRING, SUMMER, AUTUMN, WINTER
 }

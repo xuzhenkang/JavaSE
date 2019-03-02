@@ -4,7 +4,7 @@ public class Test4 {
 	// -Xss1m
 	// -Xss5m
 	
-	// Õ»µ÷ÓÃÉî¶È
+	// æ ˆè°ƒç”¨æ·±åº¦
 	private static int count;
 	
 	public static void recursion() {
@@ -15,7 +15,7 @@ public class Test4 {
 		try {
 			recursion();
 		} catch (Throwable e) {
-			System.out.println("µ÷ÓÃ×î´óÉî¶È:" + count);
+			System.out.println("è°ƒç”¨æœ€å¤§æ·±åº¦:" + count);
 			e.printStackTrace();
 		}
 	}

@@ -11,7 +11,7 @@ public class Demo10_Properties {
 
 	/**
 	 * @param args
-	 * PropertiesÊÇHashtableµÄ×ÓÀà
+	 * Propertiesæ˜¯Hashtableçš„å­ç±»
 	 * @throws IOException 
 	 * @throws FileNotFoundException 
 	 */
@@ -19,22 +19,22 @@ public class Demo10_Properties {
 		//demo1();
 		//demo2();
 		Properties prop = new Properties();
-		prop.load(new FileInputStream("config.properties"));		//½«ÎÄ¼şÉÏµÄ¼üÖµ¶Ô¶ÁÈ¡µ½¼¯ºÏÖĞ
+		prop.load(new FileInputStream("config.properties"));		//å°†æ–‡ä»¶ä¸Šçš„é”®å€¼å¯¹è¯»å–åˆ°é›†åˆä¸­
 		prop.setProperty("tel", "18912345678");
-		prop.store(new FileOutputStream("config.properties"), null);//µÚ¶ş¸ö²ÎÊıÊÇ¶ÔÁĞ±í²ÎÊıµÄÃèÊö,¿ÉÒÔ¸øÖµ,Ò²¿ÉÒÔ¸ønull
+		prop.store(new FileOutputStream("config.properties"), null);//ç¬¬äºŒä¸ªå‚æ•°æ˜¯å¯¹åˆ—è¡¨å‚æ•°çš„æè¿°,å¯ä»¥ç»™å€¼,ä¹Ÿå¯ä»¥ç»™null
 		System.out.println(prop);
 	}
 
 	public static void demo2() {
 		Properties prop = new Properties();
-		prop.setProperty("name", "ÕÅÈı");
+		prop.setProperty("name", "å¼ ä¸‰");
 		prop.setProperty("tel", "18912345678");
 		
 		//System.out.println(prop);
 		Enumeration<String> en = (Enumeration<String>) prop.propertyNames();
 		while(en.hasMoreElements()) {
-			String key = en.nextElement();				//»ñÈ¡PropertiesÖĞµÄÃ¿Ò»¸ö¼ü
-			String value = prop.getProperty(key);		//¸ù¾İ¼ü»ñÈ¡Öµ
+			String key = en.nextElement();				//è·å–Propertiesä¸­çš„æ¯ä¸€ä¸ªé”®
+			String value = prop.getProperty(key);		//æ ¹æ®é”®è·å–å€¼
 			System.out.println(key + "="+ value);
 		}
 	}

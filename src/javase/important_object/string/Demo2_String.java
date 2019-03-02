@@ -1,11 +1,11 @@
 package javase.important_object.string;
 /**
- * - public String():¿Õ¹¹Ôì
-- public String(byte[] bytes):°Ñ×Ö½ÚÊı×é×ª³É×Ö·û´®
-- public String(byte[] bytes, int index, int length):°Ñ×Ö½ÚÊı×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
-- public String(char[] value):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®
-- public String(char[] value, int index, int count):°Ñ×Ö·ûÊı×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
-- public String(String original):°Ñ×Ö·û´®³£Á¿Öµ×ª³É×Ö·û´®
+ * - public String():ç©ºæ„é€ 
+- public String(byte[] bytes):æŠŠå­—èŠ‚æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+- public String(byte[] bytes, int index, int length):æŠŠå­—èŠ‚æ•°ç»„çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+- public String(char[] value):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²
+- public String(char[] value, int index, int count):æŠŠå­—ç¬¦æ•°ç»„çš„ä¸€éƒ¨åˆ†è½¬æˆå­—ç¬¦ä¸²
+- public String(String original):æŠŠå­—ç¬¦ä¸²å¸¸é‡å€¼è½¬æˆå­—ç¬¦ä¸²
  * @author Dan
  *
  */

@@ -2,28 +2,28 @@ package javase.oo.static_keyword;
 
 class Demo1_Static {
 	public static void main(String[] args) {
-		/*Person p1 = new Person();	//´´½¨¶ÔÏó
-		p1.name = "²ÔÀÏÊ¦";			//µ÷ÓÃĞÕÃûÊôĞÔ²¢¸³Öµ
-		p1.country = "ÈÕ±¾";		//µ÷ÓÃ¹ú¼®ÊôĞÔ²¢¸³Öµ
+		/*Person p1 = new Person();	//åˆ›å»ºå¯¹è±¡
+		p1.name = "è‹è€å¸ˆ";			//è°ƒç”¨å§“åå±æ€§å¹¶èµ‹å€¼
+		p1.country = "æ—¥æœ¬";		//è°ƒç”¨å›½ç±å±æ€§å¹¶èµ‹å€¼
 		
 
 		Person p2 = new Person();
-		p2.name = "Ğ¡ÔóÀÏÊ¦";		//µ÷ÓÃĞÕÃûÊôĞÔ²¢¸³Öµ
-		//p2.country = "ÈÕ±¾";		//µ÷ÓÃ¹ú¼®ÊôĞÔ²¢¸³Öµ
+		p2.name = "å°æ³½è€å¸ˆ";		//è°ƒç”¨å§“åå±æ€§å¹¶èµ‹å€¼
+		//p2.country = "æ—¥æœ¬";		//è°ƒç”¨å›½ç±å±æ€§å¹¶èµ‹å€¼
 
 		p1.speak();
 		p2.speak();*/
 
-		Person.country = "ÈÕ±¾";	//¾²Ì¬¶àÁËÒ»ÖÖµ÷ÓÃ·½Ê½,¿ÉÒÔÍ¨¹ıÀàÃû.
+		Person.country = "æ—¥æœ¬";	//é™æ€å¤šäº†ä¸€ç§è°ƒç”¨æ–¹å¼,å¯ä»¥é€šè¿‡ç±»å.
 		System.out.println(Person.country);
 	}
 }
 
 class Person {
-	String name;					//ĞÕÃû
-	static String country;					//¹ú¼®
+	String name;					//å§“å
+	static String country;					//å›½ç±
 
-	public void speak() {			//Ëµ»°µÄ·½·¨
+	public void speak() {			//è¯´è¯çš„æ–¹æ³•
 		System.out.println(name + "..." + country);
 	}
 }

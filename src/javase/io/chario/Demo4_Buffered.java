@@ -11,13 +11,13 @@ public class Demo4_Buffered {
 
 	/**
 	 * @param args
-	 * ´ø»º³åÇøµÄÁ÷ÖĞµÄÌØÊâ·½·¨
+	 * å¸¦ç¼“å†²åŒºçš„æµä¸­çš„ç‰¹æ®Šæ–¹æ³•
 	 * readLine()
 	 * newLine();
 	 * 
-	 * newLine()Óë\r\nµÄÇø±ğ
-	 * newLine()ÊÇ¿çÆ½Ì¨µÄ·½·¨
-	 * \r\nÖ»Ö§³ÖµÄÊÇwindowsÏµÍ³
+	 * newLine()ä¸\r\nçš„åŒºåˆ«
+	 * newLine()æ˜¯è·¨å¹³å°çš„æ–¹æ³•
+	 * \r\nåªæ”¯æŒçš„æ˜¯windowsç³»ç»Ÿ
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
@@ -28,7 +28,7 @@ public class Demo4_Buffered {
 		String line;
 		while((line = br.readLine()) != null) {
 			bw.write(line);
-			//bw.newLine();							//Ğ´³ö»Ø³µ»»ĞĞ·û
+			//bw.newLine();							//å†™å‡ºå›è½¦æ¢è¡Œç¬¦
 			//bw.write("\r\n");
 		}
 		

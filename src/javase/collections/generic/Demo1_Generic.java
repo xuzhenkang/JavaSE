@@ -8,22 +8,22 @@ import java.util.Iterator;
 public class Demo1_Generic {
 
 	/**
-	 	* A:·ºĞÍ¸ÅÊö
-		* B:·ºĞÍºÃ´¦
-			* Ìá¸ß°²È«ĞÔ(½«ÔËĞĞÆÚµÄ´íÎó×ª»»µ½±àÒëÆÚ) 
-			* Ê¡È¥Ç¿×ªµÄÂé·³
-		* C:·ºĞÍ»ù±¾Ê¹ÓÃ
-			* <>ÖĞ·ÅµÄ±ØĞëÊÇÒıÓÃÊı¾İÀàĞÍ 
-		* D:·ºĞÍÊ¹ÓÃ×¢ÒâÊÂÏî
-			* Ç°ºóµÄ·ºĞÍ±ØĞëÒ»ÖÂ,»òÕßºóÃæµÄ·ºĞÍ¿ÉÒÔÊ¡ÂÔ²»Ğ´(1.7µÄĞÂÌØĞÔÁâĞÎ·ºĞÍ)  
+	 	* A:æ³›å‹æ¦‚è¿°
+		* B:æ³›å‹å¥½å¤„
+			* æé«˜å®‰å…¨æ€§(å°†è¿è¡ŒæœŸçš„é”™è¯¯è½¬æ¢åˆ°ç¼–è¯‘æœŸ) 
+			* çœå»å¼ºè½¬çš„éº»çƒ¦
+		* C:æ³›å‹åŸºæœ¬ä½¿ç”¨
+			* <>ä¸­æ”¾çš„å¿…é¡»æ˜¯å¼•ç”¨æ•°æ®ç±»å‹ 
+		* D:æ³›å‹ä½¿ç”¨æ³¨æ„äº‹é¡¹
+			* å‰åçš„æ³›å‹å¿…é¡»ä¸€è‡´,æˆ–è€…åé¢çš„æ³›å‹å¯ä»¥çœç•¥ä¸å†™(1.7çš„æ–°ç‰¹æ€§è±å½¢æ³›å‹)  
 
 	 */
 	public static void main(String[] args) {
 		//demo1();
-		//int[] arr = new byte[5];							//Êı×éÒª±£Ö¤Ç°ºóµÄÊı¾İÀàĞÍÒ»ÖÂ
-		//ArrayList<Object> list = new ArrayList<Person>();	//¼¯ºÏµÄ·ºĞÍÒª±£Ö¤Ç°ºóµÄÊı¾İÀàĞÍÒ»ÖÂ
-		//ArrayList<Object> list = new ArrayList<>();		//1.7°æ±¾µÄĞÂÌØĞÔ,ÁâĞÎ·ºĞÍ
-		ArrayList<Object> list = new ArrayList<>();			//·ºĞÍ×îºÃ²»Òª¶¨Òå³ÉObject,Ã»ÓĞÒâÒå
+		//int[] arr = new byte[5];							//æ•°ç»„è¦ä¿è¯å‰åçš„æ•°æ®ç±»å‹ä¸€è‡´
+		//ArrayList<Object> list = new ArrayList<Person>();	//é›†åˆçš„æ³›å‹è¦ä¿è¯å‰åçš„æ•°æ®ç±»å‹ä¸€è‡´
+		//ArrayList<Object> list = new ArrayList<>();		//1.7ç‰ˆæœ¬çš„æ–°ç‰¹æ€§,è±å½¢æ³›å‹
+		ArrayList<Object> list = new ArrayList<>();			//æ³›å‹æœ€å¥½ä¸è¦å®šä¹‰æˆObject,æ²¡æœ‰æ„ä¹‰
 		list.add("aaa");
 		list.add(true);
 	}
@@ -32,14 +32,14 @@ public class Demo1_Generic {
 		ArrayList<Person> list = new ArrayList<Person>();
 	//	list.add(110);
 	//	list.add(true);
-		list.add(new Person("ÕÅÈı", 23));
-		list.add(new Person("ÀîËÄ", 24));
+		list.add(new Person("å¼ ä¸‰", 23));
+		list.add(new Person("æå››", 24));
 		
 		Iterator<Person> it = list.iterator();
 		while(it.hasNext()) {
 			//System.out.println(it.next());
 			
-			//System.out.println(it.next().getName() + "..." + it.next().getAge());//next·½·¨Ö»ÄÜµ÷ÓÃÒ»´Î,Èç¹ûµ÷ÓÃ¶à´Î»á½«Ö¸ÕëÏòºóÒÆ¶¯¶à´Î
+			//System.out.println(it.next().getName() + "..." + it.next().getAge());//nextæ–¹æ³•åªèƒ½è°ƒç”¨ä¸€æ¬¡,å¦‚æœè°ƒç”¨å¤šæ¬¡ä¼šå°†æŒ‡é’ˆå‘åç§»åŠ¨å¤šæ¬¡
 			Person p = it.next();			
 			System.out.println(p.getName() + "..." + p.getAge());
 		}

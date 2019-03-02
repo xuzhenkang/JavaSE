@@ -3,48 +3,48 @@ package javase.oo.constructor;
 class Demo5_Phone {
 	public static void main(String[] args) {
 		Phone p1 = new Phone();
-		p1.setBrand("Æ»¹û");
+		p1.setBrand("è‹¹æœ");
 		p1.setPrice(1500);
 		System.out.println(p1.getBrand() + "..." + p1.getPrice());
 
-		Phone p2 = new Phone("Ğ¡Ã×",98);
+		Phone p2 = new Phone("å°ç±³",98);
 		p2.show();
 	}
 }
 /*
-ÊÖ»úÀà:
-	³ÉÔ±±äÁ¿:
-		Æ·ÅÆbrand,¼Û¸ñprice
-	¹¹Ôì·½·¨
-		ÎŞ²Î,ÓĞ²Î
-	³ÉÔ±·½·¨
-		setXxxºÍgetXxx
+æ‰‹æœºç±»:
+	æˆå‘˜å˜é‡:
+		å“ç‰Œbrand,ä»·æ ¼price
+	æ„é€ æ–¹æ³•
+		æ— å‚,æœ‰å‚
+	æˆå‘˜æ–¹æ³•
+		setXxxå’ŒgetXxx
 		show
 */
 class Phone {
-	private String brand;						//Æ·ÅÆ
-	private int price;							//¼Û¸ñ
+	private String brand;						//å“ç‰Œ
+	private int price;							//ä»·æ ¼
 
-	public Phone(){}							//¿Õ²Î¹¹Ôì
+	public Phone(){}							//ç©ºå‚æ„é€ 
 
-	public Phone(String brand,int price) {		//ÓĞ²Î¹¹Ôì
+	public Phone(String brand,int price) {		//æœ‰å‚æ„é€ 
 		this.brand = brand;
 		this.price = price;
 	}
 
-	public void setBrand(String brand) {		//ÉèÖÃÆ·ÅÆ
+	public void setBrand(String brand) {		//è®¾ç½®å“ç‰Œ
 		this.brand = brand;
 	}
 
-	public String getBrand() {					//»ñÈ¡Æ·ÅÆ
+	public String getBrand() {					//è·å–å“ç‰Œ
 		return brand;
 	}
 
-	public void setPrice(int price) {			//ÉèÖÃ¼Û¸ñ
+	public void setPrice(int price) {			//è®¾ç½®ä»·æ ¼
 		this.price = price;
 	}
 
-	public int getPrice() {						//»ñÈ¡¼Û¸ñ
+	public int getPrice() {						//è·å–ä»·æ ¼
 		return price;
 	}
 

@@ -6,13 +6,13 @@ import java.util.concurrent.Future;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * ¼ÆËã1+2+3+4µÄ½á¹û
+ * è®¡ç®—1+2+3+4çš„ç»“æœ
  * @author lenovo
  *
  */
 public class Demo01_ForkJoin extends RecursiveTask<Integer> {
 	private static final long serialVersionUID = 1L;
-	private static final int THRESHOLD = 2; // ãĞÖµ
+	private static final int THRESHOLD = 2; // é˜ˆå€¼
 	private int start;
 	private int end;
 	
@@ -25,7 +25,7 @@ public class Demo01_ForkJoin extends RecursiveTask<Integer> {
 	protected Integer compute() {
 		int sum = 0;
 		
-		// Èç¹ûÈÎÎñ×ã¹»Ğ¡¾Í¼ÆËãÈÎÎñ
+		// å¦‚æœä»»åŠ¡è¶³å¤Ÿå°å°±è®¡ç®—ä»»åŠ¡
 		boolean canCompute = (end - start) <= THRESHOLD;
 		
 		if (canCompute) {
@@ -33,28 +33,28 @@ public class Demo01_ForkJoin extends RecursiveTask<Integer> {
 				sum += i;
 			}
 		} else {
-			// Èç¹ûÈÎÎñ´óÓÚãĞÖµ£¬¾Í·ÖÁÑ³ÉÁ½¸ö×ÓÈÎÎñ¼ÆËã
+			// å¦‚æœä»»åŠ¡å¤§äºé˜ˆå€¼ï¼Œå°±åˆ†è£‚æˆä¸¤ä¸ªå­ä»»åŠ¡è®¡ç®—
 			int middle = (start + end) / 2;
 			Demo01_ForkJoin leftTask = new Demo01_ForkJoin(start, middle);
 			Demo01_ForkJoin rightTask = new Demo01_ForkJoin(middle + 1, end);
-			// Ö´ĞĞ×ÓÈÎÎñ
+			// æ‰§è¡Œå­ä»»åŠ¡
 			leftTask.fork();
 			rightTask.fork();
 			
-			// µÈ´ı×ÓÈÎÎñÖ´ĞĞÍê£¬²¢µÃµ½Æä½á¹û
+			// ç­‰å¾…å­ä»»åŠ¡æ‰§è¡Œå®Œï¼Œå¹¶å¾—åˆ°å…¶ç»“æœ
 			int leftResult = leftTask.join();
 			int rightResult = rightTask.join();
 			
-			// ºÏ²¢×ÓÈÎÎñ
+			// åˆå¹¶å­ä»»åŠ¡
 			sum = leftResult + rightResult;
 		}
 		return sum;
 	}
 	public static void main(String[] args) {
 		ForkJoinPool forkJoinPool = new ForkJoinPool();
-		// Éú³ÉÒ»¸ö¼ÆËãÈÎÎñ£¬¸ºÔğ¼ÆËã1+2+3+4+...+100
+		// ç”Ÿæˆä¸€ä¸ªè®¡ç®—ä»»åŠ¡ï¼Œè´Ÿè´£è®¡ç®—1+2+3+4+...+100
 		Demo01_ForkJoin task = new Demo01_ForkJoin(1, 100);
-		// Ö´ĞĞÒ»¸öÈÎÎñ
+		// æ‰§è¡Œä¸€ä¸ªä»»åŠ¡
 		Future<Integer> result = forkJoinPool.submit(task);
 		try {
 			System.out.println(result.get());
@@ -64,5 +64,5 @@ public class Demo01_ForkJoin extends RecursiveTask<Integer> {
 	}
 }
 /*
-Í¨¹ıÕâ¸öÀı×ÓÈÃÎÒÃÇÔÙÀ´½øÒ»²½ÁË½âForkJoinTask£¬ForkJoinTaskÓëÒ»°ãµÄÈÎÎñµÄÖ÷ÒªÇø±ğÔÚÓÚËüĞèÒªÊµÏÖcompute·½·¨£¬ÔÚÕâ¸ö·½·¨Àï£¬Ê×ÏÈĞèÒªÅĞ¶ÏÈÎÎñÊÇ·ñ×ã¹»Ğ¡£¬Èç¹û×ã¹»Ğ¡¾ÍÖ±½ÓÖ´ĞĞÈÎÎñ¡£Èç¹û²»×ã¹»Ğ¡£¬¾Í±ØĞë·Ö¸î³ÉÁ½¸ö×ÓÈÎÎñ£¬Ã¿¸ö×ÓÈÎÎñÔÚµ÷ÓÃfork·½·¨Ê±£¬ÓÖ»á½øÈëcompute·½·¨£¬¿´¿´µ±Ç°×ÓÈÎÎñÊÇ·ñĞèÒª¼ÌĞø·Ö¸î³ÉËïÈÎÎñ£¬Èç¹û²»ĞèÒª¼ÌĞø·Ö¸î£¬ÔòÖ´ĞĞµ±Ç°×ÓÈÎÎñ²¢·µ»Ø½á¹û¡£Ê¹ÓÃjoin·½·¨»áµÈ´ı×ÓÈÎÎñÖ´ĞĞÍê²¢µÃµ½Æä½á¹û¡£
+é€šè¿‡è¿™ä¸ªä¾‹å­è®©æˆ‘ä»¬å†æ¥è¿›ä¸€æ­¥äº†è§£ForkJoinTaskï¼ŒForkJoinTaskä¸ä¸€èˆ¬çš„ä»»åŠ¡çš„ä¸»è¦åŒºåˆ«åœ¨äºå®ƒéœ€è¦å®ç°computeæ–¹æ³•ï¼Œåœ¨è¿™ä¸ªæ–¹æ³•é‡Œï¼Œé¦–å…ˆéœ€è¦åˆ¤æ–­ä»»åŠ¡æ˜¯å¦è¶³å¤Ÿå°ï¼Œå¦‚æœè¶³å¤Ÿå°å°±ç›´æ¥æ‰§è¡Œä»»åŠ¡ã€‚å¦‚æœä¸è¶³å¤Ÿå°ï¼Œå°±å¿…é¡»åˆ†å‰²æˆä¸¤ä¸ªå­ä»»åŠ¡ï¼Œæ¯ä¸ªå­ä»»åŠ¡åœ¨è°ƒç”¨forkæ–¹æ³•æ—¶ï¼Œåˆä¼šè¿›å…¥computeæ–¹æ³•ï¼Œçœ‹çœ‹å½“å‰å­ä»»åŠ¡æ˜¯å¦éœ€è¦ç»§ç»­åˆ†å‰²æˆå­™ä»»åŠ¡ï¼Œå¦‚æœä¸éœ€è¦ç»§ç»­åˆ†å‰²ï¼Œåˆ™æ‰§è¡Œå½“å‰å­ä»»åŠ¡å¹¶è¿”å›ç»“æœã€‚ä½¿ç”¨joinæ–¹æ³•ä¼šç­‰å¾…å­ä»»åŠ¡æ‰§è¡Œå®Œå¹¶å¾—åˆ°å…¶ç»“æœã€‚
  */

@@ -1,4 +1,4 @@
-package oj.gettingjob.nowcoder.jianzhioffer.t003.从尾到头打印链表;
+package oj.gettingjob.nowcoder.jianzhioffer.t003.浠庡熬鍒板ご鎵撳嵃閾捐〃;
 
 import java.util.ArrayList;
 

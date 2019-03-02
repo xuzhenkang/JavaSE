@@ -3,7 +3,7 @@ package javase.thread.synchronized_keyword;
 public class Demo3_Ticket {
 
 	/**
-	 * ĞèÇó:ÌúÂ·ÊÛÆ±,Ò»¹²100ÕÅ,Í¨¹ıËÄ¸ö´°¿ÚÂôÍê.
+	 * éœ€æ±‚:é“è·¯å”®ç¥¨,ä¸€å…±100å¼ ,é€šè¿‡å››ä¸ªçª—å£å–å®Œ.
 	 */
 	public static void main(String[] args) {
 		new Ticket().start();
@@ -16,7 +16,7 @@ public class Demo3_Ticket {
 
 class Ticket extends Thread {
 	private static int ticket = 100;
-	//private static Object obj = new Object();		//Èç¹ûÓÃÒıÓÃÊı¾İÀàĞÍ³ÉÔ±±äÁ¿µ±×÷Ëø¶ÔÏó,±ØĞëÊÇ¾²Ì¬µÄ
+	//private static Object obj = new Object();		//å¦‚æœç”¨å¼•ç”¨æ•°æ®ç±»å‹æˆå‘˜å˜é‡å½“ä½œé”å¯¹è±¡,å¿…é¡»æ˜¯é™æ€çš„
 	public void run() {
 		while(true) {
 			synchronized(Ticket.class) {
@@ -24,12 +24,12 @@ class Ticket extends Thread {
 					break;
 				}
 				try {
-					Thread.sleep(10);				//Ïß³Ì1Ë¯,Ïß³Ì2Ë¯,Ïß³Ì3Ë¯,Ïß³Ì4Ë¯
+					Thread.sleep(10);				//çº¿ç¨‹1ç¡,çº¿ç¨‹2ç¡,çº¿ç¨‹3ç¡,çº¿ç¨‹4ç¡
 				} catch (InterruptedException e) {
 					
 					e.printStackTrace();
 				}
-				System.out.println(getName() + "...ÕâÊÇµÚ" + ticket-- + "ºÅÆ±");
+				System.out.println(getName() + "...è¿™æ˜¯ç¬¬" + ticket-- + "å·ç¥¨");
 			}
 		}
 	}

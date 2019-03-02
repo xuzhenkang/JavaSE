@@ -13,17 +13,17 @@ public class Demo06_SystemInOut {
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
-		System.setIn(new FileInputStream("a.txt"));			//¸Ä±ä±ê×¼ÊäÈëÁ÷
-		System.setOut(new PrintStream("b.txt"));			//¸Ä±ä±ê×¢Êä³öÁ÷
+		System.setIn(new FileInputStream("a.txt"));			//æ”¹å˜æ ‡å‡†è¾“å…¥æµ
+		System.setOut(new PrintStream("b.txt"));			//æ”¹å˜æ ‡æ³¨è¾“å‡ºæµ
 		
-		InputStream is = System.in;							//»ñÈ¡±ê×¼µÄ¼üÅÌÊäÈëÁ÷,Ä¬ÈÏÖ¸Ïò¼üÅÌ,¸Ä±äºóÖ¸ÏòÎÄ¼ş
-		PrintStream ps = System.out;						//»ñÈ¡±ê×¼Êä³öÁ÷,Ä¬ÈÏÖ¸ÏòµÄÊÇ¿ØÖÆÌ¨,¸Ä±äºó¾ÍÖ¸ÏòÎÄ¼ş
+		InputStream is = System.in;							//è·å–æ ‡å‡†çš„é”®ç›˜è¾“å…¥æµ,é»˜è®¤æŒ‡å‘é”®ç›˜,æ”¹å˜åæŒ‡å‘æ–‡ä»¶
+		PrintStream ps = System.out;						//è·å–æ ‡å‡†è¾“å‡ºæµ,é»˜è®¤æŒ‡å‘çš„æ˜¯æ§åˆ¶å°,æ”¹å˜åå°±æŒ‡å‘æ–‡ä»¶
 		
 		int b;
 		while((b = is.read()) != -1) {
 			ps.write(b);
 		}
-		//System.out.println();								//Ò²ÊÇÒ»¸öÊä³öÁ÷,²»ÓÃ¹Ø,ÒòÎªÃ»ÓĞºÍÓ²ÅÌÉÏµÄÎÄ¼ş²úÉú¹ØÁªµÄ¹ÜµÀ
+		//System.out.println();								//ä¹Ÿæ˜¯ä¸€ä¸ªè¾“å‡ºæµ,ä¸ç”¨å…³,å› ä¸ºæ²¡æœ‰å’Œç¡¬ç›˜ä¸Šçš„æ–‡ä»¶äº§ç”Ÿå…³è”çš„ç®¡é“
 		is.close();
 		ps.close();
 		

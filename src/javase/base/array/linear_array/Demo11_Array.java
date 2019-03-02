@@ -1,26 +1,26 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* Êı×é²é±í·¨(¸ù¾İ¼üÅÌÂ¼ÈëË÷Òı,²éÕÒ¶ÔÓ¦ĞÇÆÚ)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„æŸ¥è¡¨æ³•(æ ¹æ®é”®ç›˜å½•å…¥ç´¢å¼•,æŸ¥æ‰¾å¯¹åº”æ˜ŸæœŸ)
 */
 import java.util.Scanner;
 class Demo11_Array {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¶ÔÓ¦µÄĞÇÆÚ·¶Î§ÔÚ1-7");
+		System.out.println("è¯·è¾“å…¥å¯¹åº”çš„æ˜ŸæœŸèŒƒå›´åœ¨1-7");
 		int week = sc.nextInt();
 
-		System.out.println("ĞÇÆÚ" + getWeek(week));
+		System.out.println("æ˜ŸæœŸ" + getWeek(week));
 	}
 
 	/*
-	¸ù¾İË÷Òı·µ»Ø¶ÔÓ¦µÄĞÇÆÚ
-	1,·µ»ØÖµÀàĞÍchar
-	2,²ÎÊıÁĞ±íint week
+	æ ¹æ®ç´¢å¼•è¿”å›å¯¹åº”çš„æ˜ŸæœŸ
+	1,è¿”å›å€¼ç±»å‹char
+	2,å‚æ•°åˆ—è¡¨int week
 	*/
 
 	public static char getWeek(int week) {
-		char[] arr = {' ','Ò»','¶ş','Èı','ËÄ','Îå','Áù','ÈÕ'};		//¶¨ÒåÁËÒ»ÕÅĞÇÆÚ±í
-		return arr[week];											//Í¨¹ıË÷Òı»ñÈ¡±íÖĞµÄÔªËØ
+		char[] arr = {' ','ä¸€','äºŒ','ä¸‰','å››','äº”','å…­','æ—¥'};		//å®šä¹‰äº†ä¸€å¼ æ˜ŸæœŸè¡¨
+		return arr[week];											//é€šè¿‡ç´¢å¼•è·å–è¡¨ä¸­çš„å…ƒç´ 
 	}
 }

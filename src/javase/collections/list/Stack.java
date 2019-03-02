@@ -6,21 +6,21 @@ public class Stack {
 	private LinkedList list = new LinkedList();
 	
 	/*
-	 * Ä£Äâ½øÕ»·½·¨
+	 * æ¨¡æ‹Ÿè¿›æ ˆæ–¹æ³•
 	 */
 	public void in(Object obj) {
 		list.addLast(obj);
 	}
 	
 	/*
-	 * Ä£Äâ³öÕ»
+	 * æ¨¡æ‹Ÿå‡ºæ ˆ
 	 */
 	public Object out() {
 		return list.removeLast();
 	}
 	
 	/*
-	 * Ä£ÄâÕ»½á¹¹ÊÇ·ñÎª¿Õ
+	 * æ¨¡æ‹Ÿæ ˆç»“æ„æ˜¯å¦ä¸ºç©º
 	 */
 	
 	public boolean isEmpty() {

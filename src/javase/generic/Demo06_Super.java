@@ -3,7 +3,7 @@ package javase.generic;
 import java.util.ArrayList;
 import java.util.List;
 
-//*super: superºóÃæÊÇ·ºĞÍµÄÏÂÏŞ£¬Ò²¾ÍÊÇËµ£¬´«ÈëµÄÀàĞÍÒ»¶¨ÒªÊÇ¸ø¶¨µÄÀàµÄÖ±½Ó»ò¼ä½Ó¸¸Àà£¨º¬¸ø¶¨Àà£©
+//*super: superåé¢æ˜¯æ³›å‹çš„ä¸‹é™ï¼Œä¹Ÿå°±æ˜¯è¯´ï¼Œä¼ å…¥çš„ç±»å‹ä¸€å®šè¦æ˜¯ç»™å®šçš„ç±»çš„ç›´æ¥æˆ–é—´æ¥çˆ¶ç±»ï¼ˆå«ç»™å®šç±»ï¼‰
 public class Demo06_Super {
 
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class Demo06_Super {
 		List<Object> list3 = new ArrayList<Object>();
 		test(list3);
 		
-		// ¹æÔò
+		// è§„åˆ™
 		List<? super Apple> list4 = new ArrayList<Apple>();
 		test(list4);
 		List<? super Fruit> list5 = new ArrayList<Object>();
@@ -22,19 +22,19 @@ public class Demo06_Super {
 		List<? super FujiApple> list6 = new ArrayList<Object>();
 //		test(list6);
 		List<?> list7 = new ArrayList<Object>();
-//		test(list7); ? Ïàµ±ÓÚ ? extends Object,ËùÒÔ²»ÄÜ·Å½øÀ´
+//		test(list7); ? ç›¸å½“äº ? extends Object,æ‰€ä»¥ä¸èƒ½æ”¾è¿›æ¥
 		
 		test(new ArrayList<Apple>());
 	}
 	
 	public static void test(List<? super Apple> list) {
-		// ²»ÄÜÌí¼Ó¸¸Àà¶ÔÏó
+		// ä¸èƒ½æ·»åŠ çˆ¶ç±»å¯¹è±¡
 		list.add(new Apple());
 		list.add(new FujiApple());
 //		list.add(new Fruit());
 	}
 
-//	// super²»ÄÜÊ¹ÓÃÔÚÀàÉÏ£¬ÏÂÃæ»á±¨´í
+//	// superä¸èƒ½ä½¿ç”¨åœ¨ç±»ä¸Šï¼Œä¸‹é¢ä¼šæŠ¥é”™
 //	static class Test<T super Fruit> {
 //	}
 }

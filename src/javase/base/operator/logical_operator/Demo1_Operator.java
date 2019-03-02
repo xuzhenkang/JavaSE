@@ -6,7 +6,7 @@ class Demo1_Operator {
 		//int x = 10;
 		//5 < x < 15
 		//x > 5 & x < 15
-		//Âß¼­Óë & ²¢ÇÒand ÓöfalseÔòfalse
+		//é€»è¾‘ä¸ & å¹¶ä¸”and é‡falseåˆ™false
 		int a = 10;
 		int b = 20;
 		int c = 30;
@@ -15,19 +15,19 @@ class Demo1_Operator {
 		System.out.println(a > b & b < c);				//false & true = false
 		System.out.println(a > b & b > c);				//false & false = false*/
 
-		//Âß¼­»ò »òor ÓötrueÔòtrue
+		//é€»è¾‘æˆ– æˆ–or é‡trueåˆ™true
 		/*System.out.println(a < b | b < c);				//true | true = true
 		System.out.println(a < b | b > c);				//true | false = true
 		System.out.println(a > b | b < c);				//false | true = true
 		System.out.println(a > b | b > c);				//false | flase = false*/
 
-		//Âß¼­Òì»ò ^ Á½±ßÏàÍ¬Îªfalse,Á½±ß²»Í¬Îªtrue
+		//é€»è¾‘å¼‚æˆ– ^ ä¸¤è¾¹ç›¸åŒä¸ºfalse,ä¸¤è¾¹ä¸åŒä¸ºtrue
 		/*System.out.println(a < b ^ b < c);				//true | true = false
 		System.out.println(a < b ^ b > c);				//true | false = true
 		System.out.println(a > b ^ b < c);				//false | true = true
 		System.out.println(a > b ^ b > c);				//false | flase = false*/
 
-		//Âß¼­·Ç!
+		//é€»è¾‘é!
 		System.out.println(!true);
 		System.out.println(!!true);
 	}

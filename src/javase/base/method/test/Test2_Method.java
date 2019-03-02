@@ -1,26 +1,26 @@
 package javase.base.method.test;
 /*
-* A:°¸ÀıÑİÊ¾
-	* ĞèÇó£º¸ù¾İ¼üÅÌÂ¼ÈëµÄÊı¾İÊä³ö¶ÔÓ¦µÄ³Ë·¨±í
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šæ ¹æ®é”®ç›˜å½•å…¥çš„æ•°æ®è¾“å‡ºå¯¹åº”çš„ä¹˜æ³•è¡¨
 */
 import java.util.Scanner;
 class Test2_Method {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		System.out.println("ÇëÂ¼ÈëÒ»¸öÕûÊı,·¶Î§ÔÚ1-9Ö®¼ä");
-		int num = sc.nextInt();						//½«¼üÅÌÂ¼ÈëµÄÕûÊı´æ´¢ÔÚnumÖĞ
+		Scanner sc = new Scanner(System.in);		//åˆ›å»ºé”®ç›˜å½•å…¥å¯¹è±¡
+		System.out.println("è¯·å½•å…¥ä¸€ä¸ªæ•´æ•°,èŒƒå›´åœ¨1-9ä¹‹é—´");
+		int num = sc.nextInt();						//å°†é”®ç›˜å½•å…¥çš„æ•´æ•°å­˜å‚¨åœ¨numä¸­
 		print99(num);
 	}
 
 	/*
-	´òÓ¡99³Ë·¨±í
-	1,·µ»ØÖµÀàĞÍvoid
-	2,²ÎÊıÁĞ±í,int a
+	æ‰“å°99ä¹˜æ³•è¡¨
+	1,è¿”å›å€¼ç±»å‹void
+	2,å‚æ•°åˆ—è¡¨,int a
 	*/
 
 	public static void print99(int a) {
-		for (int i = 1;i <= a ;i++ ) {					//ĞĞÊı
-			for (int j = 1;j <= i ;j++ ) {				//ÁĞÊı
+		for (int i = 1;i <= a ;i++ ) {					//è¡Œæ•°
+			for (int j = 1;j <= i ;j++ ) {				//åˆ—æ•°
 				System.out.print(j + "*" + i + "=" + (i * j) + "\t" );
 			}
 			System.out.println();

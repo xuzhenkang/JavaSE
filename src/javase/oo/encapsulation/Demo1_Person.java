@@ -1,23 +1,23 @@
 package javase.oo.encapsulation;
 
 /*
-* A:ÈËÀà¸³ÖµÄêÁäµÄÎÊÌâ
-* B:private¹Ø¼ü×ÖÌØµã
-	* a:ÊÇÒ»¸öÈ¨ÏÞÐÞÊÎ·û
-	* b:¿ÉÒÔÐÞÊÎ³ÉÔ±±äÁ¿ºÍ³ÉÔ±·½·¨
-	* c:±»ÆäÐÞÊÎµÄ³ÉÔ±Ö»ÄÜÔÚ±¾ÀàÖÐ±»·ÃÎÊ
-* C:°¸ÀýÑÝÊ¾
-	* ·â×°ºÍprivateµÄÓ¦ÓÃ£º
-	* A:°Ñ³ÉÔ±±äÁ¿ÓÃprivateÐÞÊÎ
-	* B:Ìá¹©¶ÔÓ¦µÄgetXxx()ºÍsetXxx()·½·¨
-	* private½ö½öÊÇ·â×°µÄÒ»ÖÖÌåÏÖÐÎÊ½,²»ÄÜËµ·â×°¾ÍÊÇË½ÓÐ
+* A:äººç±»èµ‹å€¼å¹´é¾„çš„é—®é¢˜
+* B:privateå…³é”®å­—ç‰¹ç‚¹
+	* a:æ˜¯ä¸€ä¸ªæƒé™ä¿®é¥°ç¬¦
+	* b:å¯ä»¥ä¿®é¥°æˆå‘˜å˜é‡å’Œæˆå‘˜æ–¹æ³•
+	* c:è¢«å…¶ä¿®é¥°çš„æˆå‘˜åªèƒ½åœ¨æœ¬ç±»ä¸­è¢«è®¿é—®
+* C:æ¡ˆä¾‹æ¼”ç¤º
+	* å°è£…å’Œprivateçš„åº”ç”¨ï¼š
+	* A:æŠŠæˆå‘˜å˜é‡ç”¨privateä¿®é¥°
+	* B:æä¾›å¯¹åº”çš„getXxx()å’ŒsetXxx()æ–¹æ³•
+	* privateä»…ä»…æ˜¯å°è£…çš„ä¸€ç§ä½“çŽ°å½¢å¼,ä¸èƒ½è¯´å°è£…å°±æ˜¯ç§æœ‰
 */
 class Demo1_Person {
 	public static void main(String[] args) {
 		Person p1 = new Person();
-		p1.name = "ÕÅÈý";			//µ÷ÓÃÐÕÃûÊôÐÔ²¢¸³Öµ
-		//p1.age = -17;				//µ÷ÓÃÄêÁäÊôÐÔ²¢¸³Öµ
-		//p1.speak();					//µ÷ÓÃÐÐÎª
+		p1.name = "å¼ ä¸‰";			//è°ƒç”¨å§“åå±žæ€§å¹¶èµ‹å€¼
+		//p1.age = -17;				//è°ƒç”¨å¹´é¾„å±žæ€§å¹¶èµ‹å€¼
+		//p1.speak();					//è°ƒç”¨è¡Œä¸º
 
 		p1.setAge(-17);
 
@@ -26,19 +26,19 @@ class Demo1_Person {
 }
 
 class Person {
-	String name;					//ÐÕÃû
-	private int age;				//ÄêÁä
+	String name;					//å§“å
+	private int age;				//å¹´é¾„
 	
-	public void setAge(int a) {		//ÉèÖÃÄêÁä
+	public void setAge(int a) {		//è®¾ç½®å¹´é¾„
 		if (a > 0 && a < 200) {
 			age = a;
 		}else {
-			System.out.println("Çë»Ø»ðÐÇ°É,µØÇò²»ÊÊºÏÄã");
+			System.out.println("è¯·å›žç«æ˜Ÿå§,åœ°çƒä¸é€‚åˆä½ ");
 		}
 		
 	}
 
-	public int getAge() {			//»ñÈ¡ÄêÁä
+	public int getAge() {			//èŽ·å–å¹´é¾„
 		return age;
 	}
 

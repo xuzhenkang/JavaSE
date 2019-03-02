@@ -13,8 +13,8 @@ public class Test2 {
 	 * @throws IOException 
 	 */
 	public static void main(String[] args) throws IOException {
-		System.setIn(new FileInputStream("Ë«Ôª.jpg"));			//¸Ä±ä±ê×¼ÊäÈëÁ÷
-		System.setOut(new PrintStream("copy.jpg")); 			//¸Ä±ä±ê×¼Êä³öÁ÷
+		System.setIn(new FileInputStream("åŒå…ƒ.jpg"));			//æ”¹å˜æ ‡å‡†è¾“å…¥æµ
+		System.setOut(new PrintStream("copy.jpg")); 			//æ”¹å˜æ ‡å‡†è¾“å‡ºæµ
 		
 		InputStream is = System.in;
 		PrintStream ps = System.out;

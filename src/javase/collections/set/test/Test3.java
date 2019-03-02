@@ -7,15 +7,15 @@ import java.util.List;
 public class Test3 {
 
 	/**
-	 *  ĞèÇó:½«¼¯ºÏÖĞµÄÖØ¸´ÔªËØÈ¥µô
+	 *  éœ€æ±‚:å°†é›†åˆä¸­çš„é‡å¤å…ƒç´ å»æ‰
 	 *  
-	 *  ·ÖÎö:
-	 *  1,´´½¨List¼¯ºÏ´æ´¢Èô¸É¸öÖØ¸´ÔªËØ
-	 *  2,µ¥¶À¶¨Òå·½·¨È¥³ıÖØ¸´
-	 *  3,´òÓ¡Ò»ÏÂList¼¯ºÏ
+	 *  åˆ†æ:
+	 *  1,åˆ›å»ºListé›†åˆå­˜å‚¨è‹¥å¹²ä¸ªé‡å¤å…ƒç´ 
+	 *  2,å•ç‹¬å®šä¹‰æ–¹æ³•å»é™¤é‡å¤
+	 *  3,æ‰“å°ä¸€ä¸‹Listé›†åˆ
 	 */
 	public static void main(String[] args) {
-		//1,´´½¨List¼¯ºÏ´æ´¢Èô¸É¸öÖØ¸´ÔªËØ
+		//1,åˆ›å»ºListé›†åˆå­˜å‚¨è‹¥å¹²ä¸ªé‡å¤å…ƒç´ 
 		ArrayList<String> list = new ArrayList<>();
 		list.add("a");
 		list.add("a");
@@ -28,28 +28,28 @@ public class Test3 {
 		list.add("c");
 		list.add("c");
 		
-		//2,µ¥¶À¶¨Òå·½·¨È¥³ıÖØ¸´
+		//2,å•ç‹¬å®šä¹‰æ–¹æ³•å»é™¤é‡å¤
 		getSingle(list);
 		
-		//3,´òÓ¡Ò»ÏÂList¼¯ºÏ
+		//3,æ‰“å°ä¸€ä¸‹Listé›†åˆ
 		System.out.println(list);
 	}
 	/*
-	 * ·ÖÎö
-	 * È¥³ıList¼¯ºÏÖĞµÄÖØ¸´ÔªËØ
-	 * 1,´´½¨Ò»¸öLinkedHashSet¼¯ºÏ
-	 * 2,½«List¼¯ºÏÖĞËùÓĞµÄÔªËØÌí¼Óµ½LinkedHashSet¼¯ºÏ
-	 * 3,½«list¼¯ºÏÖĞµÄÔªËØÇå³ı
-	 * 4,½«LinkedHashSet¼¯ºÏÖĞµÄÔªËØÌí¼Ó»ØList¼¯ºÏÖĞ
+	 * åˆ†æ
+	 * å»é™¤Listé›†åˆä¸­çš„é‡å¤å…ƒç´ 
+	 * 1,åˆ›å»ºä¸€ä¸ªLinkedHashSeté›†åˆ
+	 * 2,å°†Listé›†åˆä¸­æ‰€æœ‰çš„å…ƒç´ æ·»åŠ åˆ°LinkedHashSeté›†åˆ
+	 * 3,å°†listé›†åˆä¸­çš„å…ƒç´ æ¸…é™¤
+	 * 4,å°†LinkedHashSeté›†åˆä¸­çš„å…ƒç´ æ·»åŠ å›Listé›†åˆä¸­
 	 */
 	public static void getSingle(List<String> list) {
-		//1,´´½¨Ò»¸öLinkedHashSet¼¯ºÏ
+		//1,åˆ›å»ºä¸€ä¸ªLinkedHashSeté›†åˆ
 		LinkedHashSet<String> lhs = new LinkedHashSet<>();
-		//2,½«List¼¯ºÏÖĞËùÓĞµÄÔªËØÌí¼Óµ½LinkedHashSet¼¯ºÏ
+		//2,å°†Listé›†åˆä¸­æ‰€æœ‰çš„å…ƒç´ æ·»åŠ åˆ°LinkedHashSeté›†åˆ
 		lhs.addAll(list);
-		//3,½«list¼¯ºÏÖĞµÄÔªËØÇå³ı
+		//3,å°†listé›†åˆä¸­çš„å…ƒç´ æ¸…é™¤
 		list.clear();
-		//4,½«LinkedHashSet¼¯ºÏÖĞµÄÔªËØÌí¼Ó»ØList¼¯ºÏÖĞ
+		//4,å°†LinkedHashSeté›†åˆä¸­çš„å…ƒç´ æ·»åŠ å›Listé›†åˆä¸­
 		list.addAll(lhs);
 	}
 

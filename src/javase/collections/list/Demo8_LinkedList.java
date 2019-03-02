@@ -5,23 +5,23 @@ import java.util.LinkedList;
 public class Demo8_LinkedList {
 
 	/**
-	 * ÓÃLinkedListÄ£ÄâÕ»½á¹¹
+	 * ç”¨LinkedListæ¨¡æ‹Ÿæ ˆç»“æ„
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		Stack s = new Stack();
-		s.in("a");								//½øÕ»
+		s.in("a");								//è¿›æ ˆ
 		s.in("b");
 		s.in("c");
 		s.in("d");
 		
-		while(!s.isEmpty()) {					//ÅĞ¶ÏÕ»½á¹¹ÊÇ·ñÎª¿Õ
-			System.out.println(s.out());		//µ¯Õ»
+		while(!s.isEmpty()) {					//åˆ¤æ–­æ ˆç»“æ„æ˜¯å¦ä¸ºç©º
+			System.out.println(s.out());		//å¼¹æ ˆ
 		}
 	}
 
 	public static void demo1() {
-		LinkedList list = new LinkedList();					//´´½¨¼¯ºÏ¶ÔÏó
+		LinkedList list = new LinkedList();					//åˆ›å»ºé›†åˆå¯¹è±¡
 		list.addLast("a");
 		list.addLast("b");
 		list.addLast("c");

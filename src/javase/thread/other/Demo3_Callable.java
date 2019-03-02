@@ -14,16 +14,16 @@ public class Demo3_Callable {
 	 * @throws InterruptedException 
 	 */
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
-		ExecutorService pool = Executors.newFixedThreadPool(2);//´´½¨Ïß³Ì³Ø
-		Future<Integer> f1 = pool.submit(new MyCallable(100));				//½«Ïß³Ì·Å½ø³Ø×ÓÀï²¢Ö´ĞĞ
+		ExecutorService pool = Executors.newFixedThreadPool(2);//åˆ›å»ºçº¿ç¨‹æ± 
+		Future<Integer> f1 = pool.submit(new MyCallable(100));				//å°†çº¿ç¨‹æ”¾è¿›æ± å­é‡Œå¹¶æ‰§è¡Œ
 		Future<Integer> f2 = pool.submit(new MyCallable(50));
 		
 		System.out.println(f1.get());
 		System.out.println(f2.get());
 		
-		pool.shutdown();							//¹Ø±ÕÏß³Ì³Ø
+		pool.shutdown();							//å…³é—­çº¿ç¨‹æ± 
 		
-/*		// ÁíÒ»ÖÖ·½Ê½
+/*		// å¦ä¸€ç§æ–¹å¼
  		FutureTask<Integer> ft1 = new FutureTask<>(new MyCallable(100));
 		FutureTask<Integer> ft2 = new FutureTask<>(new MyCallable(50));
 		new Thread(ft1, "myThread1").start();

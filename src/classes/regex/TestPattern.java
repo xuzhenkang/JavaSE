@@ -4,9 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TestPattern {
-	//°ÑÒ»¸ö×Ö·û´®ÖĞµÄÊÖ»úºÅÂë»ñÈ¡³öÀ´£¬·Ç³£ÓĞÓÃµÄ
+	//æŠŠä¸€ä¸ªå­—ç¬¦ä¸²ä¸­çš„æ‰‹æœºå·ç è·å–å‡ºæ¥ï¼Œéå¸¸æœ‰ç”¨çš„
 	public static void main(String[] args) {
-		String s = "ÎÒµÄÊÖ»úºÅÂëÎª£º18912345678£¬Ôø¾­ÓÃ¹ı18987654321£¬»¹ÓÃ¹ı18812345678";
+		String s = "æˆ‘çš„æ‰‹æœºå·ç ä¸ºï¼š18912345678ï¼Œæ›¾ç»ç”¨è¿‡18987654321ï¼Œè¿˜ç”¨è¿‡18812345678";
 		Pattern p = Pattern.compile("1[3578]\\d{9}");
 		Matcher m = p.matcher(s);
 		while (m.find()) {
@@ -14,7 +14,7 @@ public class TestPattern {
 		}
 	}
 
-	// Pattern µÄÊµÓÃ·½·¨£¬ÓëÒµÎñÎŞ¹Ø
+	// Pattern çš„å®ç”¨æ–¹æ³•ï¼Œä¸ä¸šåŠ¡æ— å…³
 	@SuppressWarnings("unused")
 	private static void howToUsePattern() {
 		Pattern p = Pattern.compile("x*y");

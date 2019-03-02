@@ -12,7 +12,7 @@ public class Test1 {
 	/**
 	 * @param args
 	 * @throws IOException 
-	 * ½«Ğ´³öµÄ×Ö½ÚÒì»òÉÏÒ»¸öÊı,Õâ¸öÊı¾ÍÊÇÃÜÔ¿,½âÃÜµÄÊ±ºòÔÙ´ÎÒì»ò¾Í¿ÉÒÔÁË
+	 * å°†å†™å‡ºçš„å­—èŠ‚å¼‚æˆ–ä¸Šä¸€ä¸ªæ•°,è¿™ä¸ªæ•°å°±æ˜¯å¯†é’¥,è§£å¯†çš„æ—¶å€™å†æ¬¡å¼‚æˆ–å°±å¯ä»¥äº†
 	 */
 	public static void main(String[] args) throws IOException {
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("copy.jpg"));

@@ -20,7 +20,7 @@ class Ticket extends Thread {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println(getName() + "...ÕâÊÇµÚ" + ticket-- + "ºÅÆ±");
+				System.out.println(getName() + "...è¿™æ˜¯ç¬¬" + ticket-- + "å·ç¥¨");
 			}
 		}
 	}

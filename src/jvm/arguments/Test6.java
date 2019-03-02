@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Test6 {
 	public static void main(String[] args) {
-		// ²ÎÊı£º -Xmx30M -Xms30M -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1024000
+		// å‚æ•°ï¼š -Xmx30M -Xms30M -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1024000
 //		Map<Integer, byte[]> m = new HashMap<>();
 //		for (int i = 0; i < 5; i++) {
 //			byte[] b = new byte[1024 * 1024]; // 1M
@@ -13,8 +13,8 @@ public class Test6 {
 //		}
 		
 		
-		// Ôì³ÉÕâÖÖÏÖÏóµÄÔ­ÒòÎª£ºĞéÄâ»ú¶ÔÓÚÌå»ı²»´óµÄ¶ÔÏó»áÓÅÏÈ°ÑÊı¾İ·ÖÅäµ½TLABÇøÓòÖĞ£¬Òò´Ë¾ÍÊ§È¥ÁËÔÚÀÏÄê´ú·ÖÅäµÄ»ú»á,ÔÚ²ÎÊıÖĞÌí¼Ó-XX:-UseTLAB¼´¿ÉÈ¡ÏûTLABÇøÓò
-		// ²ÎÊı£º-Xmx30M -Xms30M -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1000 
+		// é€ æˆè¿™ç§ç°è±¡çš„åŸå› ä¸ºï¼šè™šæ‹Ÿæœºå¯¹äºä½“ç§¯ä¸å¤§çš„å¯¹è±¡ä¼šä¼˜å…ˆæŠŠæ•°æ®åˆ†é…åˆ°TLABåŒºåŸŸä¸­ï¼Œå› æ­¤å°±å¤±å»äº†åœ¨è€å¹´ä»£åˆ†é…çš„æœºä¼š,åœ¨å‚æ•°ä¸­æ·»åŠ -XX:-UseTLABå³å¯å–æ¶ˆTLABåŒºåŸŸ
+		// å‚æ•°ï¼š-Xmx30M -Xms30M -XX:+UseSerialGC -XX:+PrintGCDetails -XX:PretenureSizeThreshold=1000 
 		// -XX:-UseTLAB
 		Map<Integer, byte[]> m = new HashMap<>();
 		for (int i = 0; i < 5 * 1024; i++) {

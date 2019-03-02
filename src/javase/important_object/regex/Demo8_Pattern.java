@@ -10,14 +10,14 @@ public class Demo8_Pattern {
 		 Matcher m = p.matcher("aaaaab");
 		 boolean b = m.matches();
 		 
-		* A:ÕıÔò±í´ïÊ½µÄ»ñÈ¡¹¦ÄÜ
-			* PatternºÍMatcherµÄ½áºÏÊ¹ÓÃ
-		* B:°¸ÀıÑİÊ¾
-			* ĞèÇó£º°ÑÒ»¸ö×Ö·û´®ÖĞµÄÊÖ»úºÅÂë»ñÈ¡³öÀ´
+		* A:æ­£åˆ™è¡¨è¾¾å¼çš„è·å–åŠŸèƒ½
+			* Patternå’ŒMatcherçš„ç»“åˆä½¿ç”¨
+		* B:æ¡ˆä¾‹æ¼”ç¤º
+			* éœ€æ±‚ï¼šæŠŠä¸€ä¸ªå­—ç¬¦ä¸²ä¸­çš„æ‰‹æœºå·ç è·å–å‡ºæ¥
 	 */
 	public static void main(String[] args) {
 		//demo1();
-		String s = "ÎÒµÄÊÖ»úÊÇ18988888888,ÎÒÔøÓÃ¹ı18987654321,»¹ÓÃ¹ı18812345678";
+		String s = "æˆ‘çš„æ‰‹æœºæ˜¯18988888888,æˆ‘æ›¾ç”¨è¿‡18987654321,è¿˜ç”¨è¿‡18812345678";
 		String regex = "1[3578]\\d{9}";
 		
 		
@@ -37,13 +37,13 @@ public class Demo8_Pattern {
 	}
 
 	public static void demo1() {
-		Pattern p = Pattern.compile("a*b");					//»ñÈ¡µ½ÕıÔò±í´ïÊ½
-		Matcher m = p.matcher("aaaaab");					//»ñÈ¡Æ¥ÅäÆ÷
-		boolean b = m.matches();							//¿´ÊÇ·ñÄÜÆ¥Åä,Æ¥Åä¾Í·µ»Øtrue
+		Pattern p = Pattern.compile("a*b");					//è·å–åˆ°æ­£åˆ™è¡¨è¾¾å¼
+		Matcher m = p.matcher("aaaaab");					//è·å–åŒ¹é…å™¨
+		boolean b = m.matches();							//çœ‹æ˜¯å¦èƒ½åŒ¹é…,åŒ¹é…å°±è¿”å›true
 		
 		System.out.println(b);
 		
-		System.out.println("aaaaab".matches("a*b"));  		//ÓëÉÏÃæµÄ½á¹ûÒ»Ñù
+		System.out.println("aaaaab".matches("a*b"));  		//ä¸ä¸Šé¢çš„ç»“æœä¸€æ ·
 	}
 
 }

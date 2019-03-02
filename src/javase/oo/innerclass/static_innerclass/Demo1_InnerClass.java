@@ -2,7 +2,7 @@ package javase.oo.innerclass.static_innerclass;
 
 class Demo1_InnerClass {
 	public static void main(String[] args) {
-		//Íâ²¿ÀàÃû.ÄÚ²¿ÀàÃû ¶ÔÏóÃû = Íâ²¿ÀàÃû.ÄÚ²¿Àà¶ÔÏó;
+		//å¤–éƒ¨ç±»å.å†…éƒ¨ç±»å å¯¹è±¡å = å¤–éƒ¨ç±»å.å†…éƒ¨ç±»å¯¹è±¡;
 		Outer.Inner oi = new Outer.Inner();
 		oi.method();
 

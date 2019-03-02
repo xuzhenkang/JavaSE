@@ -3,17 +3,17 @@ package javase.exception.test;
 public class Test1 {
 
 	/**
-	 * * A:ÃæÊÔÌâ1
-			* final,finallyºÍfinalizeµÄÇø±ð
-			* final¿ÉÒÔÐÞÊÎÀà,²»ÄÜ±»¼Ì³Ð
-			* ÐÞÊÎ·½·¨,²»ÄÜ±»ÖØÐ´
-			* ÐÞÊÎ±äÁ¿,Ö»ÄÜ¸³ÖµÒ»´Î
+	 * * A:é¢è¯•é¢˜1
+			* final,finallyå’Œfinalizeçš„åŒºåˆ«
+			* finalå¯ä»¥ä¿®é¥°ç±»,ä¸èƒ½è¢«ç»§æ‰¿
+			* ä¿®é¥°æ–¹æ³•,ä¸èƒ½è¢«é‡å†™
+			* ä¿®é¥°å˜é‡,åªèƒ½èµ‹å€¼ä¸€æ¬¡
 			* 
-			* finallyÊÇtryÓï¾äÖÐµÄÒ»¸öÓï¾äÌå,²»ÄÜµ¥¶ÀÊ¹ÓÃ,ÓÃÀ´ÊÍ·Å×ÊÔ´
+			* finallyæ˜¯tryè¯­å¥ä¸­çš„ä¸€ä¸ªè¯­å¥ä½“,ä¸èƒ½å•ç‹¬ä½¿ç”¨,ç”¨æ¥é‡Šæ”¾èµ„æº
 			* 
-			* finalizeÊÇÒ»¸ö·½·¨,µ±À¬»ø»ØÊÕÆ÷È·¶¨²»´æÔÚ¶Ô¸Ã¶ÔÏóµÄ¸ü¶àÒýÓÃÊ±£¬ÓÉ¶ÔÏóµÄÀ¬»ø»ØÊÕÆ÷µ÷ÓÃ´Ë·½·¨¡£
-		* B:ÃæÊÔÌâ2
-			* Èç¹ûcatchÀïÃæÓÐreturnÓï¾ä£¬ÇëÎÊfinallyµÄ´úÂë»¹»áÖ´ÐÐÂð?Èç¹û»á£¬ÇëÎÊÊÇÔÚreturnÇ°»¹ÊÇreturnºó¡£
+			* finalizeæ˜¯ä¸€ä¸ªæ–¹æ³•,å½“åžƒåœ¾å›žæ”¶å™¨ç¡®å®šä¸å­˜åœ¨å¯¹è¯¥å¯¹è±¡çš„æ›´å¤šå¼•ç”¨æ—¶ï¼Œç”±å¯¹è±¡çš„åžƒåœ¾å›žæ”¶å™¨è°ƒç”¨æ­¤æ–¹æ³•ã€‚
+		* B:é¢è¯•é¢˜2
+			* å¦‚æžœcatché‡Œé¢æœ‰returnè¯­å¥ï¼Œè¯·é—®finallyçš„ä»£ç è¿˜ä¼šæ‰§è¡Œå—?å¦‚æžœä¼šï¼Œè¯·é—®æ˜¯åœ¨returnå‰è¿˜æ˜¯returnåŽã€‚
 	 */
 	public static void main(String[] args) {
 		Demo d = new Demo();
@@ -34,8 +34,8 @@ class Demo {
 			return x;
 		} finally {
 			x = 40;
-			//return x;					Ç§Íò²»ÒªÔÚfinallyÀïÃæÐ´·µ»ØÓï¾ä,ÒòÎªfinallyµÄ×÷ÓÃÊÇÎªÁËÊÍ·Å×ÊÔ´,ÊÇ¿Ï¶¨»áÖ´ÐÐµÄ
-										//Èç¹ûÔÚÕâÀïÃæÐ´·µ»ØÓï¾ä,ÄÇÃ´tryºÍcatchµÄ½á¹û¶¼»á±»¸Ä±ä,ËùÒÔÕâÃ´Ð´¾ÍÊÇ·¸×ï
+			//return x;					åƒä¸‡ä¸è¦åœ¨finallyé‡Œé¢å†™è¿”å›žè¯­å¥,å› ä¸ºfinallyçš„ä½œç”¨æ˜¯ä¸ºäº†é‡Šæ”¾èµ„æº,æ˜¯è‚¯å®šä¼šæ‰§è¡Œçš„
+										//å¦‚æžœåœ¨è¿™é‡Œé¢å†™è¿”å›žè¯­å¥,é‚£ä¹ˆtryå’Œcatchçš„ç»“æžœéƒ½ä¼šè¢«æ”¹å˜,æ‰€ä»¥è¿™ä¹ˆå†™å°±æ˜¯çŠ¯ç½ª
 		}
 	}
 }

@@ -7,34 +7,34 @@ import java.util.Map;
 public class Demo1_Map {
 
 	/**
-	 * * A:Map¼¯ºÏµÄ¹¦ÄÜ¸ÅÊö
-		* a:Ìí¼Ó¹¦ÄÜ
-			* V put(K key,V value):Ìí¼ÓÔªËØ¡£
-				* Èç¹û¼üÊÇµÚÒ»´Î´æ´¢£¬¾ÍÖ±½Ó´æ´¢ÔªËØ£¬·µ»Ønull
-				* Èç¹û¼ü²»ÊÇµÚÒ»´Î´æÔÚ£¬¾ÍÓÃÖµ°ÑÒÔÇ°µÄÖµÌæ»»µô£¬·µ»ØÒÔÇ°µÄÖµ
-		* b:É¾³ı¹¦ÄÜ
-			* void clear():ÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
-			* V remove(Object key)£º¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ£¬²¢°ÑÖµ·µ»Ø
-		* c:ÅĞ¶Ï¹¦ÄÜ
-			* boolean containsKey(Object key)£ºÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
-			* boolean containsValue(Object value):ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄÖµ
-			* boolean isEmpty()£ºÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
-		* d:»ñÈ¡¹¦ÄÜ
+	 * * A:Mapé›†åˆçš„åŠŸèƒ½æ¦‚è¿°
+		* a:æ·»åŠ åŠŸèƒ½
+			* V put(K key,V value):æ·»åŠ å…ƒç´ ã€‚
+				* å¦‚æœé”®æ˜¯ç¬¬ä¸€æ¬¡å­˜å‚¨ï¼Œå°±ç›´æ¥å­˜å‚¨å…ƒç´ ï¼Œè¿”å›null
+				* å¦‚æœé”®ä¸æ˜¯ç¬¬ä¸€æ¬¡å­˜åœ¨ï¼Œå°±ç”¨å€¼æŠŠä»¥å‰çš„å€¼æ›¿æ¢æ‰ï¼Œè¿”å›ä»¥å‰çš„å€¼
+		* b:åˆ é™¤åŠŸèƒ½
+			* void clear():ç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
+			* V remove(Object key)ï¼šæ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ ï¼Œå¹¶æŠŠå€¼è¿”å›
+		* c:åˆ¤æ–­åŠŸèƒ½
+			* boolean containsKey(Object key)ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
+			* boolean containsValue(Object value):åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„å€¼
+			* boolean isEmpty()ï¼šåˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
+		* d:è·å–åŠŸèƒ½
 			* Set<Map.Entry<K,V>> entrySet():
-			* V get(Object key):¸ù¾İ¼ü»ñÈ¡Öµ
-			* Set<K> keySet():»ñÈ¡¼¯ºÏÖĞËùÓĞ¼üµÄ¼¯ºÏ
-			* Collection<V> values():»ñÈ¡¼¯ºÏÖĞËùÓĞÖµµÄ¼¯ºÏ
-		* e:³¤¶È¹¦ÄÜ
-			* int size()£º·µ»Ø¼¯ºÏÖĞµÄ¼üÖµ¶ÔµÄ¸öÊı
+			* V get(Object key):æ ¹æ®é”®è·å–å€¼
+			* Set<K> keySet():è·å–é›†åˆä¸­æ‰€æœ‰é”®çš„é›†åˆ
+			* Collection<V> values():è·å–é›†åˆä¸­æ‰€æœ‰å€¼çš„é›†åˆ
+		* e:é•¿åº¦åŠŸèƒ½
+			* int size()ï¼šè¿”å›é›†åˆä¸­çš„é”®å€¼å¯¹çš„ä¸ªæ•°
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		//demo2();
 		Map<String, Integer> map = new HashMap<>();
-		map.put("ÕÅÈı", 23);
-		map.put("ÀîËÄ", 24);
-		map.put("ÍõÎå", 25);
-		map.put("ÕÔÁù", 26);
+		map.put("å¼ ä¸‰", 23);
+		map.put("æå››", 24);
+		map.put("ç‹äº”", 25);
+		map.put("èµµå…­", 26);
 		
 		Collection<Integer> c = map.values();
 		System.out.println(c);
@@ -43,25 +43,25 @@ public class Demo1_Map {
 
 	public static void demo2() {
 		Map<String, Integer> map = new HashMap<>();
-		map.put("ÕÅÈı", 23);
-		map.put("ÀîËÄ", 24);
-		map.put("ÍõÎå", 25);
-		map.put("ÕÔÁù", 26);
+		map.put("å¼ ä¸‰", 23);
+		map.put("æå››", 24);
+		map.put("ç‹äº”", 25);
+		map.put("èµµå…­", 26);
 		
-		//Integer value = map.remove("ÕÅÈı");				//¸ù¾İ¼üÉ¾³ıÔªËØ,·µ»Ø¼ü¶ÔÓ¦µÄÖµ
+		//Integer value = map.remove("å¼ ä¸‰");				//æ ¹æ®é”®åˆ é™¤å…ƒç´ ,è¿”å›é”®å¯¹åº”çš„å€¼
 		//System.out.println(value);
-		System.out.println(map.containsKey("ÕÅÈı"));		//ÅĞ¶ÏÊÇ·ñ°üº¬´«ÈëµÄ¼ü
-		System.out.println(map.containsValue(100));		//ÅĞ¶ÏÊÇ·ñ°üº¬´«ÈëµÄÖµ
+		System.out.println(map.containsKey("å¼ ä¸‰"));		//åˆ¤æ–­æ˜¯å¦åŒ…å«ä¼ å…¥çš„é”®
+		System.out.println(map.containsValue(100));		//åˆ¤æ–­æ˜¯å¦åŒ…å«ä¼ å…¥çš„å€¼
 		System.out.println(map);
 	}
 
 	public static void demo1() {
 		Map<String, Integer> map = new HashMap<>();
-		Integer i1 = map.put("ÕÅÈı", 23);
-		Integer i2= map.put("ÀîËÄ", 24);
-		Integer i3 = map.put("ÍõÎå", 25);
-		Integer i4 = map.put("ÕÔÁù", 26);
-		Integer i5 = map.put("ÕÅÈı", 26);					//ÏàÍ¬µÄ¼ü²»´æ´¢,Öµ¸²¸Ç,°Ñ±»¸²¸ÇµÄÖµ·µ»Ø
+		Integer i1 = map.put("å¼ ä¸‰", 23);
+		Integer i2= map.put("æå››", 24);
+		Integer i3 = map.put("ç‹äº”", 25);
+		Integer i4 = map.put("èµµå…­", 26);
+		Integer i5 = map.put("å¼ ä¸‰", 26);					//ç›¸åŒçš„é”®ä¸å­˜å‚¨,å€¼è¦†ç›–,æŠŠè¢«è¦†ç›–çš„å€¼è¿”å›
 		
 		System.out.println(map);
 		

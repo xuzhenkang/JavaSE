@@ -7,13 +7,13 @@ class Demo3_Final {
 	}
 }
 /*
-* A:final���α����ĳ�ʼ��ʱ��
-	* ��ʾ��ʼ�� 
-	* �ڶ��������ǰ����
+* A:final修饰变量的初始化时机
+	* 显示初始化 
+	* 在对象构造完毕前即可
 */
 
 class Demo {
-	final int num;						//��Ա������Ĭ�ϳ�ʼ��ֵ����Чֵ
+	final int num;						//成员变量的默认初始化值是无效值
 	
 	public Demo() {
 		num = 10;

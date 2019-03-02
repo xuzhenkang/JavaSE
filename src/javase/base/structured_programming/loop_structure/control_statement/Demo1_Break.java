@@ -1,13 +1,13 @@
 package javase.base.structured_programming.loop_structure.control_statement;
 /*
-* A:breakµÄÊ¹ÓÃ³¡¾°
-	* Ö»ÄÜÔÚswitchºÍÑ­»·ÖĞ 
+* A:breakçš„ä½¿ç”¨åœºæ™¯
+	* åªèƒ½åœ¨switchå’Œå¾ªç¯ä¸­ 
 */
 class Demo1_Break {
 	public static void main(String[] args) {
 		for (int x = 1;x <= 10 ;x++ ) {
 			if (x == 4) {
-				break;							//Ìø³öÑ­»·
+				break;							//è·³å‡ºå¾ªç¯
 			}
 
 			System.out.println("x = " + x);

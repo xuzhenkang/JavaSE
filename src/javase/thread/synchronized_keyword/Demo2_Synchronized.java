@@ -4,7 +4,7 @@ public class Demo2_Synchronized {
 
 	/**
 	 * @param args
-	 * Í¬²½´úÂë¿é
+	 * åŒæ­¥ä»£ç å—
 	 */
 	public static void main(String[] args) {
 		final Printer2 p = new Printer2();
@@ -30,26 +30,26 @@ public class Demo2_Synchronized {
 
 class Printer2 {
 	Demo d = new Demo();
-	//·Ç¾²Ì¬µÄÍ¬²½·½·¨µÄËø¶ÔÏóÊÇÉñÂí?
-	//´ğ:·Ç¾²Ì¬µÄÍ¬²½·½·¨µÄËø¶ÔÏóÊÇthis
-	//¾²Ì¬µÄÍ¬²½·½·¨µÄËø¶ÔÏóÊÇÊ²Ã´?
-	//ÊÇ¸ÃÀàµÄ×Ö½ÚÂë¶ÔÏó
-	public static synchronized void print1() {							//Í¬²½·½·¨Ö»ĞèÒªÔÚ·½·¨ÉÏ¼Ósynchronized¹Ø¼ü×Ö¼´¿É
-		System.out.print("ºÚ");
-		System.out.print("Âí");
-		System.out.print("³Ì");
-		System.out.print("Ğò");
-		System.out.print("Ô±");
+	//éé™æ€çš„åŒæ­¥æ–¹æ³•çš„é”å¯¹è±¡æ˜¯ç¥é©¬?
+	//ç­”:éé™æ€çš„åŒæ­¥æ–¹æ³•çš„é”å¯¹è±¡æ˜¯this
+	//é™æ€çš„åŒæ­¥æ–¹æ³•çš„é”å¯¹è±¡æ˜¯ä»€ä¹ˆ?
+	//æ˜¯è¯¥ç±»çš„å­—èŠ‚ç å¯¹è±¡
+	public static synchronized void print1() {							//åŒæ­¥æ–¹æ³•åªéœ€è¦åœ¨æ–¹æ³•ä¸ŠåŠ synchronizedå…³é”®å­—å³å¯
+		System.out.print("é»‘");
+		System.out.print("é©¬");
+		System.out.print("ç¨‹");
+		System.out.print("åº");
+		System.out.print("å‘˜");
 		System.out.print("\r\n");
 	}
 	
 	public static void print2() {
-		//synchronized(new Demo()) {							//Ëø¶ÔÏó²»ÄÜÓÃÄäÃû¶ÔÏó,ÒòÎªÄäÃû¶ÔÏó²»ÊÇÍ¬Ò»¸ö¶ÔÏó
+		//synchronized(new Demo()) {							//é”å¯¹è±¡ä¸èƒ½ç”¨åŒ¿åå¯¹è±¡,å› ä¸ºåŒ¿åå¯¹è±¡ä¸æ˜¯åŒä¸€ä¸ªå¯¹è±¡
 		synchronized(Printer2.class) {		
-			System.out.print("´«");
-			System.out.print("ÖÇ");
-			System.out.print("²¥");
-			System.out.print("¿Í");
+			System.out.print("ä¼ ");
+			System.out.print("æ™º");
+			System.out.print("æ’­");
+			System.out.print("å®¢");
 			System.out.print("\r\n");
 		}
 	}

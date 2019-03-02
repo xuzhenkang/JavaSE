@@ -3,18 +3,18 @@ import java.util.Scanner;
 class Test1_If {
 	public static void main(String[] args) {
 		/*
-		* A:Á·Ï°1
+		* A:ç»ƒä¹ 1
 		* 
-				ÐèÇó£º¼üÅÌÂ¼ÈëÒ»¸ö³É¼¨£¬ÅÐ¶Ï²¢Êä³ö³É¼¨µÄµÈ¼¶¡£
-				90-100 ÓÅ
-				80-89  Á¼
-				70-79  ÖÐ
-				60-69  ¼°
-				0-59   ²î
+				éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸€ä¸ªæˆç»©ï¼Œåˆ¤æ–­å¹¶è¾“å‡ºæˆç»©çš„ç­‰çº§ã€‚
+				90-100 ä¼˜
+				80-89  è‰¯
+				70-79  ä¸­
+				60-69  åŠ
+				0-59   å·®
 				
-		* B:Á·Ï°2
-			* ÐèÇó£º
-				* ¼üÅÌÂ¼ÈëxµÄÖµ£¬¼ÆËã³öyµÄ²¢Êä³ö¡£
+		* B:ç»ƒä¹ 2
+			* éœ€æ±‚ï¼š
+				* é”®ç›˜å½•å…¥xçš„å€¼ï¼Œè®¡ç®—å‡ºyçš„å¹¶è¾“å‡ºã€‚
 				
 				* x>=3	y = 2 * x + 1;
 				* -1<x<3	y = 2 * x;
@@ -22,26 +22,26 @@ class Test1_If {
 		*/
 		Scanner sc = new Scanner(System.in);
 
-		//ÐèÇó£º¼üÅÌÂ¼ÈëÒ»¸ö³É¼¨£¬ÅÐ¶Ï²¢Êä³ö³É¼¨µÄµÈ¼¶¡£
-		/*System.out.println("ÇëÊäÈëÑ§Éú³É¼¨·¶Î§ÔÚ1µ½100Ö®¼ä");
+		//éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸€ä¸ªæˆç»©ï¼Œåˆ¤æ–­å¹¶è¾“å‡ºæˆç»©çš„ç­‰çº§ã€‚
+		/*System.out.println("è¯·è¾“å…¥å­¦ç”Ÿæˆç»©èŒƒå›´åœ¨1åˆ°100ä¹‹é—´");
 		int x = sc.nextInt();
 
 		if (x >= 90 && x <= 100) {
-			System.out.println("ÓÅ");
+			System.out.println("ä¼˜");
 		}else if (x >= 80 && x <= 89 ) {
-			System.out.println("Á¼");
+			System.out.println("è‰¯");
 		}else if (x >= 70 && x <= 79 ) {
-			System.out.println("ÖÐ");
+			System.out.println("ä¸­");
 		}else if (x >= 60 && x <= 69 ) {
-			System.out.println("¼°");
+			System.out.println("åŠ");
 		}else if (x >= 0 && x <= 59 ) {
-			System.out.println("²î");
+			System.out.println("å·®");
 		}else {
-			System.out.println("³É¼¨Â¼Èë´íÎó");
+			System.out.println("æˆç»©å½•å…¥é”™è¯¯");
 		}*/
 
-		//ÐèÇó£º ¼üÅÌÂ¼ÈëxµÄÖµ£¬¼ÆËã³öyµÄ²¢Êä³ö
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊý:");
+		//éœ€æ±‚ï¼š é”®ç›˜å½•å…¥xçš„å€¼ï¼Œè®¡ç®—å‡ºyçš„å¹¶è¾“å‡º
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°:");
 		int x = sc.nextInt();
 		int y = 0;
 		if (x >= 3) {

@@ -5,30 +5,30 @@ public class Demo1_Polymorphic {
 		Cat c = new Cat();
 		c.eat();
 		
-		Animal a = new Cat();				//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+		Animal a = new Cat();				//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
 		a.eat();
 	}
 }
 /*
-- A:¶àÌ¬(polymorphic)¸ÅÊö
+- A:å¤šæ€(polymorphic)æ¦‚è¿°
 
-- ÊÂÎï´æÔÚµÄ¶àÖÖĞÎÌ¬
-- B:¶àÌ¬Ç°Ìá
-- a:ÒªÓĞ¼Ì³Ğ¹ØÏµ¡£
-- b:ÒªÓĞ·½·¨ÖØĞ´¡£
-- c:ÒªÓĞ¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó¡£
-- C:°¸ÀıÑİÊ¾
+- äº‹ç‰©å­˜åœ¨çš„å¤šç§å½¢æ€
+- B:å¤šæ€å‰æ
+- a:è¦æœ‰ç»§æ‰¿å…³ç³»ã€‚
+- b:è¦æœ‰æ–¹æ³•é‡å†™ã€‚
+- c:è¦æœ‰çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡ã€‚
+- C:æ¡ˆä¾‹æ¼”ç¤º
 
-- ´úÂëÌåÏÖ¶àÌ¬
+- ä»£ç ä½“ç°å¤šæ€
 */
 
 class Animal {
 	public void eat() {
-		System.out.println("¶¯Îï³Ô·¹");
+		System.out.println("åŠ¨ç‰©åƒé¥­");
 	}
 }
 class Cat extends Animal {
 	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
+		System.out.println("çŒ«åƒé±¼");
 	}
 }

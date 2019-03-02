@@ -3,25 +3,25 @@ package javase.exception;
 public class Demo7_Finally {
 
 	/**
-	 * * A:finallyµÄÌØµã
-			* ±»finally¿ØÖÆµÄÓï¾äÌåÒ»¶¨»áÖ´ĞĞ
-			* ÌØÊâÇé¿ö£ºÔÚÖ´ĞĞµ½finallyÖ®Ç°jvmÍË³öÁË(±ÈÈçSystem.exit(0))
-		* B:finallyµÄ×÷ÓÃ
-			* ÓÃÓÚÊÍ·Å×ÊÔ´£¬ÔÚIOÁ÷²Ù×÷ºÍÊı¾İ¿â²Ù×÷ÖĞ»á¼ûµ½
-		* C:°¸ÀıÑİÊ¾
-			* finally¹Ø¼ü×ÖµÄÌØµã¼°×÷ÓÃ
-		*returnÓï¾äÏàµ±ÓÚÊÇ·½·¨µÄ×îºóÒ»¿ÚÆø,ÄÇÃ´ÔÚËû½«ËÀÖ®Ç°»á¿´Ò»¿´ÓĞÃ»ÓĞfinally°ïÆäÍê³ÉÒÅÔ¸,Èç¹ûÓĞ¾Í½«finallyÖ´ĞĞ
-		*ºóÔÚ³¹µ×·µ»Ø
+	 * * A:finallyçš„ç‰¹ç‚¹
+			* è¢«finallyæ§åˆ¶çš„è¯­å¥ä½“ä¸€å®šä¼šæ‰§è¡Œ
+			* ç‰¹æ®Šæƒ…å†µï¼šåœ¨æ‰§è¡Œåˆ°finallyä¹‹å‰jvmé€€å‡ºäº†(æ¯”å¦‚System.exit(0))
+		* B:finallyçš„ä½œç”¨
+			* ç”¨äºé‡Šæ”¾èµ„æºï¼Œåœ¨IOæµæ“ä½œå’Œæ•°æ®åº“æ“ä½œä¸­ä¼šè§åˆ°
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* finallyå…³é”®å­—çš„ç‰¹ç‚¹åŠä½œç”¨
+		*returnè¯­å¥ç›¸å½“äºæ˜¯æ–¹æ³•çš„æœ€åä¸€å£æ°”,é‚£ä¹ˆåœ¨ä»–å°†æ­»ä¹‹å‰ä¼šçœ‹ä¸€çœ‹æœ‰æ²¡æœ‰finallyå¸®å…¶å®Œæˆé—æ„¿,å¦‚æœæœ‰å°±å°†finallyæ‰§è¡Œ
+		*ååœ¨å½»åº•è¿”å›
 	 */
 	public static void main(String[] args) {
 		try {
 			System.out.println(10/0);
 		} catch (Exception e) {
-			System.out.println("³ıÊıÎªÁãÁË");
-			System.exit(0);								//ÍË³öjvmĞéÄâ»ú
+			System.out.println("é™¤æ•°ä¸ºé›¶äº†");
+			System.exit(0);								//é€€å‡ºjvmè™šæ‹Ÿæœº
 			return;
 		} finally {
-			System.out.println("¿´¿´ÎÒÖ´ĞĞÁËÂğ");
+			System.out.println("çœ‹çœ‹æˆ‘æ‰§è¡Œäº†å—");
 		}
 	}
 

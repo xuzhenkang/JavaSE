@@ -6,10 +6,10 @@ public class Demo3_Thread {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		MyRunnable mr = new MyRunnable();	//4,´´½¨RunnableµÄ×ÓÀà¶ÔÏó
+		MyRunnable mr = new MyRunnable();	//4,åˆ›å»ºRunnableçš„å­ç±»å¯¹è±¡
 		//Runnable target = mr;	mr = 0x0011
-		Thread t = new Thread(mr);			//5,½«Æäµ±×÷²ÎÊı´«µİ¸øThreadµÄ¹¹Ôìº¯Êı
-		t.start();							//6,¿ªÆôÏß³Ì
+		Thread t = new Thread(mr);			//5,å°†å…¶å½“ä½œå‚æ•°ä¼ é€’ç»™Threadçš„æ„é€ å‡½æ•°
+		t.start();							//6,å¼€å¯çº¿ç¨‹
 		
 		for(int i = 0; i < 1000; i++) {
 			System.out.println("bb");
@@ -18,11 +18,11 @@ public class Demo3_Thread {
 
 }
 
-class MyRunnable implements Runnable {		//1,¶¨ÒåÒ»¸öÀàÊµÏÖRunnable
+class MyRunnable implements Runnable {		//1,å®šä¹‰ä¸€ä¸ªç±»å®ç°Runnable
 
 	@Override
-	public void run() {						//2,ÖØĞ´run·½·¨
-		for(int i = 0; i < 1000; i++) {		//3,½«ÒªÖ´ĞĞµÄ´úÂëĞ´ÔÚrun·½·¨ÖĞ
+	public void run() {						//2,é‡å†™runæ–¹æ³•
+		for(int i = 0; i < 1000; i++) {		//3,å°†è¦æ‰§è¡Œçš„ä»£ç å†™åœ¨runæ–¹æ³•ä¸­
 			System.out.println("aaaaaaaaaaaa");
 		}
 	}

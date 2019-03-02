@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * 未通过
+ * 鏈�氳繃
  * @author window
  */
 public class Main {
@@ -21,7 +21,7 @@ public class Main {
     data.add('G');  
     data.add('H');  
       
-    //输出A(n,n)的全排列  
+    //杈撳嚭A(n,n)鐨勫叏鎺掑垪  
     for(int i = 1; i <= data.size(); i++)  
         arrange.arrangeSelect(data,new ArrayList<Character>(),i);  
 
@@ -36,7 +36,7 @@ public class Main {
 }  
   
 /** 
- * 计算A(n,k) 
+ * 璁＄畻A(n,k) 
  *  
  * @param data 
  * @param target 

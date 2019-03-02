@@ -6,29 +6,29 @@ import java.io.File;
 public class Demo1_File {
 
 	/**
-	 * File(String pathname)£º¸ù¾ÝÒ»¸öÂ·¾¶µÃµ½File¶ÔÏó
-	 * File(String parent, String child):¸ù¾ÝÒ»¸öÄ¿Â¼ºÍÒ»¸ö×ÓÎÄ¼þ/Ä¿Â¼µÃµ½File¶ÔÏó
-	 * File(File parent, String child):¸ù¾ÝÒ»¸ö¸¸File¶ÔÏóºÍÒ»¸ö×ÓÎÄ¼þ/Ä¿Â¼µÃµ½File¶ÔÏó
+	 * File(String pathname)ï¼šæ ¹æ®ä¸€ä¸ªè·¯å¾„å¾—åˆ°Fileå¯¹è±¡
+	 * File(String parent, String child):æ ¹æ®ä¸€ä¸ªç›®å½•å’Œä¸€ä¸ªå­æ–‡ä»¶/ç›®å½•å¾—åˆ°Fileå¯¹è±¡
+	 * File(File parent, String child):æ ¹æ®ä¸€ä¸ªçˆ¶Fileå¯¹è±¡å’Œä¸€ä¸ªå­æ–‡ä»¶/ç›®å½•å¾—åˆ°Fileå¯¹è±¡
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		//demo2();
-		File parent = new File("F:\\Ë«Ôª¿ÎÌÃ\\day19\\video");
-		String child = "001_½ñÈÕÄÚÈÝ.avi";
+		File parent = new File("F:\\åŒå…ƒè¯¾å ‚\\day19\\video");
+		String child = "001_ä»Šæ—¥å†…å®¹.avi";
 		File file = new File(parent, child);
 		System.out.println(file.exists());
 		System.out.println(parent.exists());
 	}
 
 	public static void demo2() {
-		String parent = "F:\\Ë«Ôª¿ÎÌÃ\\day19\\video";
-		String child = "001_½ñÈÕÄÚÈÝ.avi";
+		String parent = "F:\\åŒå…ƒè¯¾å ‚\\day19\\video";
+		String child = "001_ä»Šæ—¥å†…å®¹.avi";
 		File file = new File(parent,child);
 		System.out.println(file.exists());
 	}
 
 	public static void demo1() {
-		File file = new File("F:\\Ë«Ôª¿ÎÌÃ\\day19\\video\\001_½ñÈÕÄÚÈÝ.avi");
+		File file = new File("F:\\åŒå…ƒè¯¾å ‚\\day19\\video\\001_ä»Šæ—¥å†…å®¹.avi");
 		System.out.println(file.exists());
 		
 		File file2 = new File("xxx.txt");

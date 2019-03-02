@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ÕâÊÇÁíÒ»ÖÖÊµÏÖ·½·¨¡£ÂÔÎ¢¸´ÔÓ¡£
+ * è¿™æ˜¯å¦ä¸€ç§å®ç°æ–¹æ³•ã€‚ç•¥å¾®å¤æ‚ã€‚
  * @author lenovo
  *
  */
 public class LRUCache2 {
-	/*Ë«ÏòÁ´±í*/
+	/*åŒå‘é“¾è¡¨*/
 	class Node {
 		Node pre;
 		Node next;
@@ -22,8 +22,8 @@ public class LRUCache2 {
 	}
 	
 	Map<Integer, Node> map = new HashMap<>();
-	Node head; // headÊÇÁ´±íµÄ×îÄêÀÏµÄ½Úµã
-	Node tail; // tailÊÇÁ´±íµÄ×îÄêÇáµÄ½Úµã
+	Node head; // headæ˜¯é“¾è¡¨çš„æœ€å¹´è€çš„èŠ‚ç‚¹
+	Node tail; // tailæ˜¯é“¾è¡¨çš„æœ€å¹´è½»çš„èŠ‚ç‚¹
 	int cap;
 	public LRUCache2(int capacity) {
 		cap = capacity;
@@ -35,10 +35,10 @@ public class LRUCache2 {
 	public int get(int key) {
 		Node n = map.get(key);
 		if (n != null) {
-			// °Ñn´ÓÁ´±íÖĞÕªÏÂÀ´
+			// æŠŠnä»é“¾è¡¨ä¸­æ‘˜ä¸‹æ¥
 			n.pre.next = n.next;
 			n.next.pre = n.pre;
-			// °Ñn·Åµ½Á´±íµÄÎ²²¿
+			// æŠŠnæ”¾åˆ°é“¾è¡¨çš„å°¾éƒ¨
 			appendTail(n);
 			return n.val;
 		}
@@ -50,22 +50,22 @@ public class LRUCache2 {
 		if (n != null) {
 			n.val = value;
 			map.put(key, n);
-			// °Ñn´ÓÁ´±íÖĞÕªÏÂÀ´
+			// æŠŠnä»é“¾è¡¨ä¸­æ‘˜ä¸‹æ¥
 			n.pre.next = n.next;
 			n.next.pre = n.pre;
-			// °Ñn·Åµ½Á´±íµÄÎ²²¿
+			// æŠŠnæ”¾åˆ°é“¾è¡¨çš„å°¾éƒ¨
 			appendTail(n);
 			return;
 		} 
 		if (map.size() == cap) {
 			Node tmp = head.next;
-			// °Ñtmp´ÓÁ´±íÉÏÕªÏÂÀ´
+			// æŠŠtmpä»é“¾è¡¨ä¸Šæ‘˜ä¸‹æ¥
 			head.next = head.next.next;
 			head.next.pre = head;
-			// °ÑtmpÉ¾µô
+			// æŠŠtmpåˆ æ‰
 			map.remove(tmp.key);
 		}
-		// nÎª¿ÕµÄÊ±ºò
+		// nä¸ºç©ºçš„æ—¶å€™
 		n = new Node(key, value);
 		appendTail(n);
 		map.put(key, n);

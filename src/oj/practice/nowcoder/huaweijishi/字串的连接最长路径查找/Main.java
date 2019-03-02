@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.×Ö´®µÄÁ¬½Ó×î³¤Â·¾¶²éÕÒ;
+package oj.practice.nowcoder.huaweijishi.å­—ä¸²çš„è¿æ¥æœ€é•¿è·¯å¾„æŸ¥æ‰¾;
 
 import java.util.Arrays;
 import java.util.Scanner;

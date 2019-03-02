@@ -7,7 +7,7 @@ import java.net.InetAddress;
 import java.util.Scanner;
 
 public class TestUdpA {
-	private static String data = "Test Data ÖÐÎÄ";
+	private static String data = "Test Data ä¸­æ–‡";
 	public static void main(String[] args) throws IOException {
 		Scanner cin = new Scanner(System.in);
 		

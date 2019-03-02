@@ -2,21 +2,21 @@ package javase.collections.map;
 
 import java.util.WeakHashMap;
 
-// WeakHashMapµÄ¼üÎªÈõÀàĞÍ£¬gcÔËĞĞ»áÁ¢¼´»ØÊÕ£¬Ïà¹ØÇë²Î¼ûjvm.gc.RefDemo
-// ÆäËûµÄHashMap¶¼Ã»°ì·¨´ïµ½ÕâÒ»µã¡£
+// WeakHashMapçš„é”®ä¸ºå¼±ç±»å‹ï¼Œgcè¿è¡Œä¼šç«‹å³å›æ”¶ï¼Œç›¸å…³è¯·å‚è§jvm.gc.RefDemo
+// å…¶ä»–çš„HashMapéƒ½æ²¡åŠæ³•è¾¾åˆ°è¿™ä¸€ç‚¹ã€‚
 public class Demo9_WeakHashMap {
 	public static void main(String[] args) {
 		WeakHashMap<String, String> map = new WeakHashMap<String, String>();
-		// Ìí¼ÓÊı¾İ
-		// ³£Á¿¶ÔÏó£¬ ²»»á±»»ØÊÕ
+		// æ·»åŠ æ•°æ®
+		// å¸¸é‡å¯¹è±¡ï¼Œ ä¸ä¼šè¢«å›æ”¶
 		map.put("abc", "a");
 		map.put("d", "test");
 		
-		// gc»ØÊÕÁËÈõÒıÓÃ¶ÔÏó
+		// gcå›æ”¶äº†å¼±å¼•ç”¨å¯¹è±¡
 		map.put(new String("kang"), "c");
 		map.put(new String("dsf"), "d");
 		
-		// Í¨Öª»ØÊÕ
+		// é€šçŸ¥å›æ”¶
 		System.gc();
 		System.runFinalization();
 		System.out.println(map.size());

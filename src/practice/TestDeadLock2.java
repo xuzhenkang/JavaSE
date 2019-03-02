@@ -9,18 +9,18 @@ public class TestDeadLock2 {
 		new Thread(() -> {
 			while (true)
 				synchronized (lock1) {
-					System.out.println(Thread.currentThread().getName() + "³ÖÓĞÁË" + lock1 + "¶ÔÏó.");
+					System.out.println(Thread.currentThread().getName() + "æŒæœ‰äº†" + lock1 + "å¯¹è±¡.");
 					synchronized (lock2) {
-						System.out.println(Thread.currentThread().getName() + "³ÖÓĞÁË" + lock2 + "¶ÔÏó.");
+						System.out.println(Thread.currentThread().getName() + "æŒæœ‰äº†" + lock2 + "å¯¹è±¡.");
 					}
 				}
 		}).start();
 		new Thread(() -> {
 			while (true)
 				synchronized (lock2) {
-					System.out.println(Thread.currentThread().getName() + "³ÖÓĞÁË" + lock2 + "¶ÔÏó.");
+					System.out.println(Thread.currentThread().getName() + "æŒæœ‰äº†" + lock2 + "å¯¹è±¡.");
 					synchronized (lock1) {
-						System.out.println(Thread.currentThread().getName() + "³ÖÓĞÁË" + lock1 + "¶ÔÏó.");
+						System.out.println(Thread.currentThread().getName() + "æŒæœ‰äº†" + lock1 + "å¯¹è±¡.");
 					}
 				}
 		}).start();

@@ -8,7 +8,7 @@ class Demo3_Con {
 }
 
 class Person {
-	//public void Person() {						//²»ÊÇ¹¹Ôì·½·¨,ÊÇÒ»¸öÆÕÍ¨·½·¨
+	//public void Person() {						//ä¸æ˜¯æ„é€ æ–¹æ³•,æ˜¯ä¸€ä¸ªæ™®é€šæ–¹æ³•
 	public Person() {
 		System.out.println("Hello World!");
 	}

@@ -12,15 +12,15 @@ public class Demo5_BufferCopy {
 	/**
 	 * @param args
 	 * @throws IOException 
-	 * close·½·¨
-	 * ¾ß±¸Ë¢ĞÂµÄ¹¦ÄÜ,ÔÚ¹Ø±ÕÁ÷Ö®Ç°,¾Í»áÏÈË¢ĞÂÒ»´Î»º³åÇø,½«»º³åÇøµÄ×Ö½ÚÈ«¶¼Ë¢ĞÂµ½ÎÄ¼şÉÏ,ÔÙ¹Ø±Õ,close·½·¨Ë¢ÍêÖ®ºó¾ÍÄÜĞ´ÁË
-	 * flush·½·¨?
-	 * ¾ß±¸Ë¢ĞÂµÄ¹¦ÄÜ,Ë¢ÍêÖ®ºó»¹¿ÉÒÔ¼ÌĞøĞ´
+	 * closeæ–¹æ³•
+	 * å…·å¤‡åˆ·æ–°çš„åŠŸèƒ½,åœ¨å…³é—­æµä¹‹å‰,å°±ä¼šå…ˆåˆ·æ–°ä¸€æ¬¡ç¼“å†²åŒº,å°†ç¼“å†²åŒºçš„å­—èŠ‚å…¨éƒ½åˆ·æ–°åˆ°æ–‡ä»¶ä¸Š,å†å…³é—­,closeæ–¹æ³•åˆ·å®Œä¹‹åå°±èƒ½å†™äº†
+	 * flushæ–¹æ³•?
+	 * å…·å¤‡åˆ·æ–°çš„åŠŸèƒ½,åˆ·å®Œä¹‹åè¿˜å¯ä»¥ç»§ç»­å†™
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
-		//flushºÍclose·½·¨µÄÇø±ğ
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("ÖÂÇà´º.mp3"));
+		//flushå’Œcloseæ–¹æ³•çš„åŒºåˆ«
+		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("è‡´é’æ˜¥.mp3"));
 		BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("copy.mp3"));
 		
 		int b;
@@ -32,9 +32,9 @@ public class Demo5_BufferCopy {
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		FileInputStream fis = new FileInputStream("ÖÂÇà´º.mp3");				//´´½¨ÊäÈëÁ÷¶ÔÏó,¹ØÁªÖÂÇà´º.mp3
-		FileOutputStream fos = new FileOutputStream("copy.mp3");			//´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªcopy.mp3
-		BufferedInputStream bis = new BufferedInputStream(fis);				//´´½¨»º³åÇø¶ÔÏó,¶ÔÊäÈëÁ÷½øĞĞ°ü×°ÈÃÆä±äµÃ¸ü¼ÓÇ¿´ó
+		FileInputStream fis = new FileInputStream("è‡´é’æ˜¥.mp3");				//åˆ›å»ºè¾“å…¥æµå¯¹è±¡,å…³è”è‡´é’æ˜¥.mp3
+		FileOutputStream fos = new FileOutputStream("copy.mp3");			//åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”copy.mp3
+		BufferedInputStream bis = new BufferedInputStream(fis);				//åˆ›å»ºç¼“å†²åŒºå¯¹è±¡,å¯¹è¾“å…¥æµè¿›è¡ŒåŒ…è£…è®©å…¶å˜å¾—æ›´åŠ å¼ºå¤§
 		BufferedOutputStream bos = new BufferedOutputStream(fos);
 		
 		int b;

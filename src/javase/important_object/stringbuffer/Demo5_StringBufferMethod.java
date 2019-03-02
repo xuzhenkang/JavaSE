@@ -3,13 +3,13 @@ package javase.important_object.stringbuffer;
 public class Demo5_StringBufferMethod {
 
 	/**
-	 * * A:StringBufferµÄ½ØÈ¡¹¦ÄÜ
+	 * * A:StringBufferçš„æˆªå–åŠŸèƒ½
 		* public String substring(int start):
-			* ´ÓÖ¸¶¨Î»ÖÃ½ØÈ¡µ½Ä©Î²
+			* ä»æŒ‡å®šä½ç½®æˆªå–åˆ°æœ«å°¾
 		* public String substring(int start,int end):
-			* ½ØÈ¡´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½½áÊøÎ»ÖÃ£¬°üÀ¨¿ªÊ¼Î»ÖÃ£¬²»°üÀ¨½áÊøÎ»ÖÃ
-	* B:×¢ÒâÊÂÏî
-		* ×¢Òâ:·µ»ØÖµÀàĞÍ²»ÔÙÊÇStringBuffer±¾Éí
+			* æˆªå–ä»æŒ‡å®šä½ç½®å¼€å§‹åˆ°ç»“æŸä½ç½®ï¼ŒåŒ…æ‹¬å¼€å§‹ä½ç½®ï¼Œä¸åŒ…æ‹¬ç»“æŸä½ç½®
+	* B:æ³¨æ„äº‹é¡¹
+		* æ³¨æ„:è¿”å›å€¼ç±»å‹ä¸å†æ˜¯StringBufferæœ¬èº«
 	 */
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("woaiheima");

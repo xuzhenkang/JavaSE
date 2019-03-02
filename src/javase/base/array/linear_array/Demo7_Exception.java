@@ -1,10 +1,10 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* a:ArrayIndexOutOfBoundsException:Êı×éË÷ÒıÔ½½çÒì³£
-		* Ô­Òò£ºÄã·ÃÎÊÁË²»´æÔÚµÄË÷Òı¡£
-	* b:NullPointerException:¿ÕÖ¸ÕëÒì³£
-		* Ô­Òò£ºÊı×éÒÑ¾­²»ÔÚÖ¸Ïò¶ÑÄÚ´æÁË¡£¶øÄã»¹ÓÃÊı×éÃûÈ¥·ÃÎÊÔªËØ¡£
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* a:ArrayIndexOutOfBoundsException:æ•°ç»„ç´¢å¼•è¶Šç•Œå¼‚å¸¸
+		* åŸå› ï¼šä½ è®¿é—®äº†ä¸å­˜åœ¨çš„ç´¢å¼•ã€‚
+	* b:NullPointerException:ç©ºæŒ‡é’ˆå¼‚å¸¸
+		* åŸå› ï¼šæ•°ç»„å·²ç»ä¸åœ¨æŒ‡å‘å †å†…å­˜äº†ã€‚è€Œä½ è¿˜ç”¨æ•°ç»„åå»è®¿é—®å…ƒç´ ã€‚
 		* int[] arr = {1,2,3};
 		* arr = null;
 		* System.out.println(arr[0]);
@@ -12,9 +12,9 @@ package javase.base.array.linear_array;
 class Demo7_Exception {
 	public static void main(String[] args) {
 		int[] arr = new int[5];						//0x0011
-		//System.out.println(arr[-1]);				//µ±·ÃÎÊÊı×éÖĞ²»´æÔÚµÄË÷Òı,»á³öÏÖË÷ÒıÔ½½çÒì³£
+		//System.out.println(arr[-1]);				//å½“è®¿é—®æ•°ç»„ä¸­ä¸å­˜åœ¨çš„ç´¢å¼•,ä¼šå‡ºç°ç´¢å¼•è¶Šç•Œå¼‚å¸¸
 
 		arr = null;
-		System.out.println(arr[0]);					//µ±Êı×éÒıÓÃ¸³ÖµÎªnull,ÔÙÈ¥µ÷ÓÃÊı×éÖĞµÄÔªËØ¾Í»á³öÏÖ¿ÕÖ¸ÕëÒì³£
+		System.out.println(arr[0]);					//å½“æ•°ç»„å¼•ç”¨èµ‹å€¼ä¸ºnull,å†å»è°ƒç”¨æ•°ç»„ä¸­çš„å…ƒç´ å°±ä¼šå‡ºç°ç©ºæŒ‡é’ˆå¼‚å¸¸
 	}
 }

@@ -7,19 +7,19 @@ import java.util.Date;
 public class Demo5_FileMethod {
 
 	/**
-	 * * A:»ñÈ¡¹¦ÄÜ
-		* public String getAbsolutePath()£º»ñÈ¡¾ø¶ÔÂ·¾¶
-		* public String getPath():»ñÈ¡Â·¾¶
-		* public String getName():»ñÈ¡Ãû³Æ
-		* public long length():»ñÈ¡³¤¶È¡£×Ö½ÚÊı
-		* public long lastModified():»ñÈ¡×îºóÒ»´ÎµÄĞŞ¸ÄÊ±¼ä£¬ºÁÃëÖµ
-		* public String[] list():»ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄÃû³ÆÊı×é
-		* public File[] listFiles():»ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓĞÎÄ¼ş»òÕßÎÄ¼ş¼ĞµÄFileÊı×é 
+	 * * A:è·å–åŠŸèƒ½
+		* public String getAbsolutePath()ï¼šè·å–ç»å¯¹è·¯å¾„
+		* public String getPath():è·å–è·¯å¾„
+		* public String getName():è·å–åç§°
+		* public long length():è·å–é•¿åº¦ã€‚å­—èŠ‚æ•°
+		* public long lastModified():è·å–æœ€åä¸€æ¬¡çš„ä¿®æ”¹æ—¶é—´ï¼Œæ¯«ç§’å€¼
+		* public String[] list():è·å–æŒ‡å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„åç§°æ•°ç»„
+		* public File[] listFiles():è·å–æŒ‡å®šç›®å½•ä¸‹çš„æ‰€æœ‰æ–‡ä»¶æˆ–è€…æ–‡ä»¶å¤¹çš„Fileæ•°ç»„ 
 	 */
 	public static void main(String[] args) {
 		//demo1();
-		File dir = new File("F:/Ë«Ôª¿ÎÌÃ/day19/video");
-		String[] arr = dir.list();						//½öÎªÁË»ñÈ¡ÎÄ¼şÃû
+		File dir = new File("F:/åŒå…ƒè¯¾å ‚/day19/video");
+		String[] arr = dir.list();						//ä»…ä¸ºäº†è·å–æ–‡ä»¶å
 		
 		for (String string : arr) {
 			System.out.println(string);
@@ -27,27 +27,27 @@ public class Demo5_FileMethod {
 		
 		File[] subFiles = dir.listFiles();
 		
-		for (File file : subFiles) {					//»ñÈ¡ÎÄ¼ş¶ÔÏó
+		for (File file : subFiles) {					//è·å–æ–‡ä»¶å¯¹è±¡
 			System.out.println(file);
 		}
  	}
 
 	public static void demo1() {
 		File file1 = new File("ccc.txt");
-		File file2 = new File("D:\\Ë«Ôª¿ÎÌÃ\\day19\\ccc.txt");
-		//System.out.println(file1.getAbsolutePath());			//»ñÈ¡¾ø¶ÔÂ·¾¶
+		File file2 = new File("D:\\åŒå…ƒè¯¾å ‚\\day19\\ccc.txt");
+		//System.out.println(file1.getAbsolutePath());			//è·å–ç»å¯¹è·¯å¾„
 		//System.out.println(file2.getAbsolutePath());
 		
-		//System.out.println(file1.getPath());					//»ñÈ¡¹¹Ôì·½·¨ÖĞ´«ÈëÂ·¾¶
+		//System.out.println(file1.getPath());					//è·å–æ„é€ æ–¹æ³•ä¸­ä¼ å…¥è·¯å¾„
 		//System.out.println(file2.getPath());
 		
-//		System.out.println(file1.getName());					//»ñÈ¡ÎÄ¼ş»òÕßÎÄ¼şµÄÃû×Ö
+//		System.out.println(file1.getName());					//è·å–æ–‡ä»¶æˆ–è€…æ–‡ä»¶çš„åå­—
 //		System.out.println(file2.getName());
 //		
 //		System.out.println(file1.length());
 		
-		Date d = new Date(file1.lastModified());				//ÎÄ¼şµÄ×îºóĞŞ¸ÄÊ±¼ä
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
+		Date d = new Date(file1.lastModified());				//æ–‡ä»¶çš„æœ€åä¿®æ”¹æ—¶é—´
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥ HH:mm:ss");
 		System.out.println(sdf.format(d));
 	}
 

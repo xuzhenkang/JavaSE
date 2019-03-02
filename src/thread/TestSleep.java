@@ -39,7 +39,7 @@ public class TestSleep {
 	public static void demo1() throws InterruptedException {
 		for(int i = 20; i >= 0; i--) {
 			Thread.sleep(1000);
-			System.out.println("µ¹¼ÆÊ±µÚ" +i + "Ãë");
+			System.out.println("å€’è®¡æ—¶ç¬¬" +i + "ç§’");
 		}
 	}
 

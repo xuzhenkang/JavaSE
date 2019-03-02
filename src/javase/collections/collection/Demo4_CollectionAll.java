@@ -7,9 +7,9 @@ import java.util.Collection;
 public class Demo4_CollectionAll {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
 		* 
-				´øAllµÄ¹¦ÄÜÑİÊ¾
+				å¸¦Allçš„åŠŸèƒ½æ¼”ç¤º
 				boolean addAll(Collection c)
 				boolean removeAll(Collection c)
 				boolean containsAll(Collection c)
@@ -33,8 +33,8 @@ public class Demo4_CollectionAll {
 		c2.add("e");
 		c2.add("f");
 		
-		//È¡½»¼¯,Èç¹ûµ÷ÓÃµÄ¼¯ºÏ¸Ä±ä¾Í·µ»Øtrue,Èç¹ûµ÷ÓÃµÄ¼¯ºÏ²»±ä¾Í·µ»Øfalse
-		boolean b = c1.retainAll(c2);					//È¡½»¼¯
+		//å–äº¤é›†,å¦‚æœè°ƒç”¨çš„é›†åˆæ”¹å˜å°±è¿”å›true,å¦‚æœè°ƒç”¨çš„é›†åˆä¸å˜å°±è¿”å›false
+		boolean b = c1.retainAll(c2);					//å–äº¤é›†
 		System.out.println(b);
 		System.out.println(c1);
 	}
@@ -51,7 +51,7 @@ public class Demo4_CollectionAll {
 		c2.add("b");
 		c2.add("z");
 		
-		boolean b = c1.containsAll(c2);				//ÅĞ¶Ïµ÷ÓÃµÄ¼¯ºÏÊÇ·ñ°üº¬´«ÈëµÄ¼¯ºÏ
+		boolean b = c1.containsAll(c2);				//åˆ¤æ–­è°ƒç”¨çš„é›†åˆæ˜¯å¦åŒ…å«ä¼ å…¥çš„é›†åˆ
 		System.out.println(b);
 	}
 
@@ -67,7 +67,7 @@ public class Demo4_CollectionAll {
 		c2.add("b");
 		c2.add("z");
 		
-		boolean b = c1.removeAll(c2);					//É¾³ıµÄÊÇ½»¼¯
+		boolean b = c1.removeAll(c2);					//åˆ é™¤çš„æ˜¯äº¤é›†
 		System.out.println(b);
 		System.out.println(c1);
 	}
@@ -79,14 +79,14 @@ public class Demo4_CollectionAll {
 		c1.add("c");
 		c1.add("d");
 		
-		Collection c2 = new ArrayList();			//alt + shift + r¸ÄÃû
+		Collection c2 = new ArrayList();			//alt + shift + ræ”¹å
 		c2.add("a");
 		c2.add("b");
 		c2.add("c");
 		c2.add("d");
 		
-		//c1.addAll(c2);							//½«c2ÖĞµÄÃ¿Ò»¸öÔªËØÌí¼Óµ½c1ÖĞ
-		c1.add(c2);									//½«c2¿´³ÉÒ»¸ö¶ÔÏóÌí¼Óµ½c1ÖĞ
+		//c1.addAll(c2);							//å°†c2ä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ æ·»åŠ åˆ°c1ä¸­
+		c1.add(c2);									//å°†c2çœ‹æˆä¸€ä¸ªå¯¹è±¡æ·»åŠ åˆ°c1ä¸­
 		System.out.println(c1);
 	}
 

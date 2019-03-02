@@ -6,11 +6,11 @@ import java.lang.reflect.Proxy;
 
 public class DynamicProxy implements InvocationHandler {
 	
-	/** ĞèÒª´úÀíµÄÄ¿±êÀà */
+	/** éœ€è¦ä»£ç†çš„ç›®æ ‡ç±» */
 	private Object target;
 	
 	/**
-	 * Ğ´·¨¹Ì¶¨£¬aop×¨ÓÃ:°ó¶¨Î¯ÍĞ¶ÔÏó²¢·µ»ØÒ»¸ö´úÀíÀà
+	 * å†™æ³•å›ºå®šï¼Œaopä¸“ç”¨:ç»‘å®šå§”æ‰˜å¯¹è±¡å¹¶è¿”å›ä¸€ä¸ªä»£ç†ç±»
 	 * @param target
 	 * @return
 	 */
@@ -21,12 +21,12 @@ public class DynamicProxy implements InvocationHandler {
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 		Object result = null;
-        // ÇĞÃæÖ®Ç°Ö´ĞĞ
-        System.out.println("ÇĞÃæÖ®Ç°Ö´ĞĞ");
-        // Ö´ĞĞÒµÎñ
+        // åˆ‡é¢ä¹‹å‰æ‰§è¡Œ
+        System.out.println("åˆ‡é¢ä¹‹å‰æ‰§è¡Œ");
+        // æ‰§è¡Œä¸šåŠ¡
         result = method.invoke(target, args);
-        // ÇĞÃæÖ®ºóÖ´ĞĞ
-        System.out.println("ÇĞÃæÖ®ºóÖ´ĞĞ");
+        // åˆ‡é¢ä¹‹åæ‰§è¡Œ
+        System.out.println("åˆ‡é¢ä¹‹åæ‰§è¡Œ");
         return result;
 	}
 

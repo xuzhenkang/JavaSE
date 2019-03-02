@@ -14,6 +14,6 @@ public class Test {
 	}
 }
 /**
-	iocҲ��spring�ĺ���֮һ��
-	ioc��ʵ�������ڷ������
+	ioc也是spring的核心之一。
+	ioc的实现依赖于反射机制
 */

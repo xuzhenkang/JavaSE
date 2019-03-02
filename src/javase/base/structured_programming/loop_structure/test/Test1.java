@@ -2,24 +2,24 @@ package javase.base.structured_programming.loop_structure.test;
 /*
 		for(int x=1; x<=10; x++) {
 			if(x%3==0) {
-				//ÔÚ´Ë´¦ÌîĞ´´úÂë
+				//åœ¨æ­¤å¤„å¡«å†™ä»£ç 
 			}
-			System.out.println(¡°Java»ù´¡°à¡±);
+			System.out.println(â€œJavaåŸºç¡€ç­â€);
 		}
 		
-		ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö2´Î:¡°Java»ù´¡°à¡°
-		ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö7´Î:¡°Java»ù´¡°à¡°
-		ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö13´Î:¡°Java»ù´¡°à¡°	
+		æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º2æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+		æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º7æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+		æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º13æ¬¡:â€œJavaåŸºç¡€ç­â€œ	
 */
 class Test1 {
 	public static void main(String[] args) {
 		for(int x=1; x<=10; x++) {
 			if(x%3==0) {
-				//break;						//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö2´Î:¡°Java»ù´¡°à¡°
-				//continue;						//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö7´Î:¡°Java»ù´¡°à¡°
-				System.out.println("Java»ù´¡°à");//ÎÒÏëÔÚ¿ØÖÆÌ¨Êä³ö13´Î:¡°Java»ù´¡°à¡°	
+				//break;						//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º2æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+				//continue;						//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º7æ¬¡:â€œJavaåŸºç¡€ç­â€œ
+				System.out.println("JavaåŸºç¡€ç­");//æˆ‘æƒ³åœ¨æ§åˆ¶å°è¾“å‡º13æ¬¡:â€œJavaåŸºç¡€ç­â€œ	
 			}
-			System.out.println("Java»ù´¡°à");
+			System.out.println("JavaåŸºç¡€ç­");
 		}
 	}
 }

@@ -3,11 +3,11 @@ package jvm.arguments;
 public class Test2 {
 	public static void main(String[] args) {
 		
-		// µÚÒ»´ÎÅäÖÃ:
+		// ç¬¬ä¸€æ¬¡é…ç½®:
 		// -Xms20m -Xmx20m -Xmn1m -XX:SurvivorRatio=2 -XX:+PrintGCDetails -XX:+UseSerialGC -XX:+PrintCommandLineFlags
-		// µÚ¶ş´ÎÅäÖÃ:
+		// ç¬¬äºŒæ¬¡é…ç½®:
 		// -Xms20m -Xmx20m -Xmn7m -XX:SurvivorRatio=2 -XX:+PrintGCDetails -XX:+UseSerialGC -XX:+PrintCommandLineFlags
-		// µÚÈı´ÎÅäÖÃ:
+		// ç¬¬ä¸‰æ¬¡é…ç½®:
 		// -Xms20m -Xmx20m -XX:NewRatio=2 -XX:+PrintGCDetails -XX:+UseSerialGC -XX:+PrintCommandLineFlags
 		
 		byte[] b = null;

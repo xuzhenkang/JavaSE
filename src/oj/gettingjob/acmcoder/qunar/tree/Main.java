@@ -3,40 +3,40 @@ package oj.gettingjob.acmcoder.qunar.tree;
 import java.util.LinkedList;
 import java.util.Scanner;
 /**
-È¥ÄÄ¶ù2017Ð£Ô°ÕÐÆ¸ Èí¼þ¿ª·¢¹¤³ÌÊ¦ ÔÚÏß¿¼ÊÔ
-±à³ÌÌâ | 30·Ö 1/3
-°´²ã´òÓ¡¶þ²æÊ÷    
-Ê±¼äÏÞÖÆ£ºC/C++ÓïÑÔ 2000MS£»ÆäËûÓïÑÔ 4000MS
-ÄÚ´æÏÞÖÆ£ºC/C++ÓïÑÔ 65536KB£»ÆäËûÓïÑÔ 589824KB
-ÌâÄ¿ÃèÊö£º
-¸ø¶¨Ò»¿Ã¶þ²æÊ÷µÄÇ°Ðò£¨¸ù¡¢×ó¡¢ÓÒ£©ºÍÖÐÐò£¨×ó¡¢¸ù¡¢ÓÒ£©µÄ´òÓ¡½á¹û£¬Êä³ö´Ë¶þ²æÊ÷°´²ã£¨´Ó×óÍùÓÒ£©´òÓ¡½á¹û¡£
-ÀýÈçÒ»¿Ã¶þ²æÊ÷Ç°Ðò£º1 2 4 5 3£»ÖÐÐò£º4 2 5 1 3¡£¿ÉÒÔ¹¹½¨³öÏÂÍ¼ËùÊ¾¶þ²æÊ÷£º
+åŽ»å“ªå„¿2017æ ¡å›­æ‹›è˜ è½¯ä»¶å¼€å‘å·¥ç¨‹å¸ˆ åœ¨çº¿è€ƒè¯•
+ç¼–ç¨‹é¢˜ | 30åˆ† 1/3
+æŒ‰å±‚æ‰“å°äºŒå‰æ ‘    
+æ—¶é—´é™åˆ¶ï¼šC/C++è¯­è¨€ 2000MSï¼›å…¶ä»–è¯­è¨€ 4000MS
+å†…å­˜é™åˆ¶ï¼šC/C++è¯­è¨€ 65536KBï¼›å…¶ä»–è¯­è¨€ 589824KB
+é¢˜ç›®æè¿°ï¼š
+ç»™å®šä¸€æ£µäºŒå‰æ ‘çš„å‰åºï¼ˆæ ¹ã€å·¦ã€å³ï¼‰å’Œä¸­åºï¼ˆå·¦ã€æ ¹ã€å³ï¼‰çš„æ‰“å°ç»“æžœï¼Œè¾“å‡ºæ­¤äºŒå‰æ ‘æŒ‰å±‚ï¼ˆä»Žå·¦å¾€å³ï¼‰æ‰“å°ç»“æžœã€‚
+ä¾‹å¦‚ä¸€æ£µäºŒå‰æ ‘å‰åºï¼š1 2 4 5 3ï¼›ä¸­åºï¼š4 2 5 1 3ã€‚å¯ä»¥æž„å»ºå‡ºä¸‹å›¾æ‰€ç¤ºäºŒå‰æ ‘ï¼š
 
 
-°´²ã´òÓ¡µÄ½á¹ûÔòÎª£º1 2 3 4 5¡£
+æŒ‰å±‚æ‰“å°çš„ç»“æžœåˆ™ä¸ºï¼š1 2 3 4 5ã€‚
 
-ÊäÈë
-µÚÒ»ÐÐÖ»ÓÐÒ»¸öÊý×Ö£¬±íÊ¾¶þ²æÊ÷µÄ½ÚµãÊýn£¨1<=n<=1000£©;
-µÚ¶þÐÐÓÉa1,a2,...,an(1<=ai<=1000)×é³ÉµÄÕûÊýÐòÁÐ£¨ÓÃ¿Õ¸ñ·Ö¸ô£©¡ª±íÊ¾Ç°Ðò´òÓ¡½á¹û£»
-µÚÈýÐÐÓÉb1,b2,...,bn(1<=bi<=1000)×é³ÉµÄÕûÊýÐòÁÐ£¨ÓÃ¿Õ¸ñ·Ö¸ô£©¡ª±íÊ¾ÖÐÐò´òÓ¡½á¹û¡£
+è¾“å…¥
+ç¬¬ä¸€è¡Œåªæœ‰ä¸€ä¸ªæ•°å­—ï¼Œè¡¨ç¤ºäºŒå‰æ ‘çš„èŠ‚ç‚¹æ•°nï¼ˆ1<=n<=1000ï¼‰;
+ç¬¬äºŒè¡Œç”±a1,a2,...,an(1<=ai<=1000)ç»„æˆçš„æ•´æ•°åºåˆ—ï¼ˆç”¨ç©ºæ ¼åˆ†éš”ï¼‰â€”è¡¨ç¤ºå‰åºæ‰“å°ç»“æžœï¼›
+ç¬¬ä¸‰è¡Œç”±b1,b2,...,bn(1<=bi<=1000)ç»„æˆçš„æ•´æ•°åºåˆ—ï¼ˆç”¨ç©ºæ ¼åˆ†éš”ï¼‰â€”è¡¨ç¤ºä¸­åºæ‰“å°ç»“æžœã€‚
 
-Êä³ö
-c1,c2,...,cn£¬ÓÃ¿Õ¸ñ·Ö¸ô¡ª±íÊ¾°´²ã´òÓ¡µÄ½á¹û¡£
+è¾“å‡º
+c1,c2,...,cnï¼Œç”¨ç©ºæ ¼åˆ†éš”â€”è¡¨ç¤ºæŒ‰å±‚æ‰“å°çš„ç»“æžœã€‚
 
 
-ÑùÀýÊäÈë
+æ ·ä¾‹è¾“å…¥
 5
 1 2 4 5 3
 4 2 5 1 3
 
-ÑùÀýÊä³ö
+æ ·ä¾‹è¾“å‡º
 1 2 3 4 5
 
 
-ÎÂÜ°ÌáÊ¾
-Çë¾¡Á¿ÔÚÈ«³¡¿¼ÊÔ½áÊø10·ÖÖÓÇ°µ÷ÊÔ³ÌÐò£¬·ñÔòÓÉÓÚÃÜ¼¯ÅÅ¶ÓÌá½»£¬¿ÉÄÜ²éÑ¯²»µ½±àÒë½á¹û 
-µã»÷¡°µ÷ÊÔ¡±Òà¿É±£´æ´úÂë
-±à³ÌÌâ¿ÉÒÔÊ¹ÓÃ±¾µØ±àÒëÆ÷£¬´ËÒ³Ãæ²»¼ÇÂ¼Ìø³ö´ÎÊý
+æ¸©é¦¨æç¤º
+è¯·å°½é‡åœ¨å…¨åœºè€ƒè¯•ç»“æŸ10åˆ†é’Ÿå‰è°ƒè¯•ç¨‹åºï¼Œå¦åˆ™ç”±äºŽå¯†é›†æŽ’é˜Ÿæäº¤ï¼Œå¯èƒ½æŸ¥è¯¢ä¸åˆ°ç¼–è¯‘ç»“æžœ 
+ç‚¹å‡»â€œè°ƒè¯•â€äº¦å¯ä¿å­˜ä»£ç 
+ç¼–ç¨‹é¢˜å¯ä»¥ä½¿ç”¨æœ¬åœ°ç¼–è¯‘å™¨ï¼Œæ­¤é¡µé¢ä¸è®°å½•è·³å‡ºæ¬¡æ•°
  * @author Dan
  *
  */
@@ -105,7 +105,7 @@ public class Main {
         }
         return index;
     }
-/*    //ºóÐò±éÀú
+/*    //åŽåºéåŽ†
     public void postOrderTraverse(DataNode node){
         if (node==null) {
             return;
@@ -114,7 +114,7 @@ public class Main {
         postOrderTraverse(node.rightChild);
         System.out.print(node.data);
     }
-    //Ç°Ðò±éÀú
+    //å‰åºéåŽ†
     public void preOrderTraverse(DataNode node){
         if (node==null) {
             return;
@@ -123,7 +123,7 @@ public class Main {
         preOrderTraverse(node.leftChild);
         preOrderTraverse(node.rightChild);
     }
-    //ÖÐÐò±éÀú
+    //ä¸­åºéåŽ†
     public void inOrderTraverse(DataNode node){
         if (node==null) {
             return;
@@ -138,15 +138,15 @@ public class Main {
 		}
 		LinkedList<DataNode> queue = new LinkedList<DataNode>();
 		DataNode current = null;
-		queue.offer(root);// ½«¸ù½ÚµãÈë¶Ó
+		queue.offer(root);// å°†æ ¹èŠ‚ç‚¹å…¥é˜Ÿ
 		while (!queue.isEmpty()) {
-			current = queue.poll();// ³ö¶Ó¶ÓÍ·ÔªËØ²¢·ÃÎÊ
+			current = queue.poll();// å‡ºé˜Ÿé˜Ÿå¤´å…ƒç´ å¹¶è®¿é—®
 			System.out.print(current.data + " ");
-			if (current.leftChild != null)// Èç¹ûµ±Ç°½ÚµãµÄ×ó½Úµã²»Îª¿ÕÈë¶Ó
+			if (current.leftChild != null)// å¦‚æžœå½“å‰èŠ‚ç‚¹çš„å·¦èŠ‚ç‚¹ä¸ä¸ºç©ºå…¥é˜Ÿ
 			{
 				queue.offer(current.leftChild);
 			}
-			if (current.rightChild != null)// Èç¹ûµ±Ç°½ÚµãµÄÓÒ½Úµã²»Îª¿Õ£¬°ÑÓÒ½ÚµãÈë¶Ó
+			if (current.rightChild != null)// å¦‚æžœå½“å‰èŠ‚ç‚¹çš„å³èŠ‚ç‚¹ä¸ä¸ºç©ºï¼ŒæŠŠå³èŠ‚ç‚¹å…¥é˜Ÿ
 			{
 				queue.offer(current.rightChild);
 			}

@@ -6,7 +6,7 @@ import javase.oo.inherit.Cat;
 class Demo1_Extends {
 	public static void main(String[] args) {
 		Cat c = new Cat();
-		c.color = "»¨";
+		c.color = "èŠ±";
 		c.leg = 4;
 		c.eat();
 		c.sleep();
@@ -15,26 +15,26 @@ class Demo1_Extends {
 	}
 }
 /*
-* A:¼Ì³Ğ(extends)
-	* ÈÃÀàÓëÀàÖ®¼ä²úÉú¹ØÏµ,×Ó¸¸Àà¹ØÏµ 
-* B:¼Ì³Ğ°¸ÀıÑİÊ¾£º
-	* ¶¯ÎïÀà,Ã¨Àà,¹·Àà
-	* ¶¨ÒåÁ½¸öÊôĞÔ(ÑÕÉ«,ÍÈµÄ¸öÊı)Á½¸ö¹¦ÄÜ(³Ô·¹£¬Ë¯¾õ)
-* C:°¸ÀıÑİÊ¾
-	* Ê¹ÓÃ¼Ì³ĞÇ°
-* D:°¸ÀıÑİÊ¾
-	* Ê¹ÓÃ¼Ì³Ğºó
+* A:ç»§æ‰¿(extends)
+	* è®©ç±»ä¸ç±»ä¹‹é—´äº§ç”Ÿå…³ç³»,å­çˆ¶ç±»å…³ç³» 
+* B:ç»§æ‰¿æ¡ˆä¾‹æ¼”ç¤ºï¼š
+	* åŠ¨ç‰©ç±»,çŒ«ç±»,ç‹—ç±»
+	* å®šä¹‰ä¸¤ä¸ªå±æ€§(é¢œè‰²,è…¿çš„ä¸ªæ•°)ä¸¤ä¸ªåŠŸèƒ½(åƒé¥­ï¼Œç¡è§‰)
+* C:æ¡ˆä¾‹æ¼”ç¤º
+	* ä½¿ç”¨ç»§æ‰¿å‰
+* D:æ¡ˆä¾‹æ¼”ç¤º
+	* ä½¿ç”¨ç»§æ‰¿å
 */
 class Animal {
-	String color;					//¶¯ÎïµÄÑÕÉ«
-	int leg;						//¶¯ÎïÍÈµÄ¸öÊı
+	String color;					//åŠ¨ç‰©çš„é¢œè‰²
+	int leg;						//åŠ¨ç‰©è…¿çš„ä¸ªæ•°
 
-	public void eat() {				//³Ô·¹µÄ¹¦ÄÜ
-		System.out.println("³Ô·¹");
+	public void eat() {				//åƒé¥­çš„åŠŸèƒ½
+		System.out.println("åƒé¥­");
 	}
 
-	public void sleep() {			//Ë¯¾õµÄ¹¦ÄÜ
-		System.out.println("Ë¯¾õ");
+	public void sleep() {			//ç¡è§‰çš„åŠŸèƒ½
+		System.out.println("ç¡è§‰");
 	}
 }
 
@@ -47,7 +47,7 @@ class Dog extends Animal {
 }
 
 /*
-extendsÊÇ¼Ì³ĞµÄÒâË¼
-AnimalÊÇ¸¸Àà
-CatºÍDog¶¼ÊÇ×ÓÀà
+extendsæ˜¯ç»§æ‰¿çš„æ„æ€
+Animalæ˜¯çˆ¶ç±»
+Catå’ŒDogéƒ½æ˜¯å­ç±»
 */

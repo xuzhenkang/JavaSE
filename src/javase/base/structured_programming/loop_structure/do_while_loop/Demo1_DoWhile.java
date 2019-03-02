@@ -1,31 +1,31 @@
 package javase.base.structured_programming.loop_structure.do_while_loop;
 /*
-* A:Ñ­»·½á¹¹do...whileÓï¾äµÄ¸ñÊ½£º
+* A:å¾ªç¯ç»“æ„do...whileè¯­å¥çš„æ ¼å¼ï¼š
 * 
 		do {
-			Ñ­»·ÌåÓï¾ä;
-		}while(ÅĞ¶ÏÌõ¼şÓï¾ä);
+			å¾ªç¯ä½“è¯­å¥;
+		}while(åˆ¤æ–­æ¡ä»¶è¯­å¥);
 		
-		ÍêÕû¸ñÊ½£»
-		³õÊ¼»¯Óï¾ä;
+		å®Œæ•´æ ¼å¼ï¼›
+		åˆå§‹åŒ–è¯­å¥;
 		do {
-			Ñ­»·ÌåÓï¾ä;
-			¿ØÖÆÌõ¼şÓï¾ä;
-		}while(ÅĞ¶ÏÌõ¼şÓï¾ä);
-* B:Ö´ĞĞÁ÷³Ì£º
-	* a:Ö´ĞĞ³õÊ¼»¯Óï¾ä
-	* b:Ö´ĞĞÑ­»·ÌåÓï¾ä;
-	* c:Ö´ĞĞ¿ØÖÆÌõ¼şÓï¾ä
-	* d:Ö´ĞĞÅĞ¶ÏÌõ¼şÓï¾ä,¿´Æä·µ»ØÖµÊÇtrue»¹ÊÇfalse
-		* Èç¹ûÊÇtrue£¬¾Í¼ÌĞøÖ´ĞĞ
-		* Èç¹ûÊÇfalse£¬¾Í½áÊøÑ­»·
-	* e:»Øµ½b¼ÌĞø¡£
-* C:°¸ÀıÑİÊ¾
-	* ĞèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÊı¾İ1-10
+			å¾ªç¯ä½“è¯­å¥;
+			æ§åˆ¶æ¡ä»¶è¯­å¥;
+		}while(åˆ¤æ–­æ¡ä»¶è¯­å¥);
+* B:æ‰§è¡Œæµç¨‹ï¼š
+	* a:æ‰§è¡Œåˆå§‹åŒ–è¯­å¥
+	* b:æ‰§è¡Œå¾ªç¯ä½“è¯­å¥;
+	* c:æ‰§è¡Œæ§åˆ¶æ¡ä»¶è¯­å¥
+	* d:æ‰§è¡Œåˆ¤æ–­æ¡ä»¶è¯­å¥,çœ‹å…¶è¿”å›å€¼æ˜¯trueè¿˜æ˜¯false
+		* å¦‚æœæ˜¯trueï¼Œå°±ç»§ç»­æ‰§è¡Œ
+		* å¦‚æœæ˜¯falseï¼Œå°±ç»“æŸå¾ªç¯
+	* e:å›åˆ°bç»§ç»­ã€‚
+* C:æ¡ˆä¾‹æ¼”ç¤º
+	* éœ€æ±‚ï¼šè¯·åœ¨æ§åˆ¶å°è¾“å‡ºæ•°æ®1-10
 */
 class Demo1_DoWhile {
 	public static void main(String[] args) {
-		//while ºÍdo whileµÄÇø±ğ
+		//while å’Œdo whileçš„åŒºåˆ«
 		/*int i = 11;
 		do {
 			System.out.println("i = " + i);
@@ -45,7 +45,7 @@ class Demo1_DoWhile {
 			System.out.println("i = " + i);
 		}
 
-		//System.out.println("i = " + i);			forÓï¾äÖ´ĞĞºó±äÁ¿»á±»ÊÍ·Å,²»ÄÜÔÙÊ¹ÓÃ
+		//System.out.println("i = " + i);			forè¯­å¥æ‰§è¡Œåå˜é‡ä¼šè¢«é‡Šæ”¾,ä¸èƒ½å†ä½¿ç”¨
 		System.out.println("-------------------");
 		int i = 1;
 		while (i <= 10) {
@@ -53,15 +53,15 @@ class Demo1_DoWhile {
 			i++;
 		}
 		System.out.println("-------------------");
-		System.out.println("i = " + i);				//whileÓï¾äÖ´ĞĞºó,³õÊ¼»¯±äÁ¿»¹¿ÉÒÔ¼ÌĞøÊ¹ÓÃ*/
+		System.out.println("i = " + i);				//whileè¯­å¥æ‰§è¡Œå,åˆå§‹åŒ–å˜é‡è¿˜å¯ä»¥ç»§ç»­ä½¿ç”¨*/
 
-		//whileÓï¾äµÄÎŞÏŞÑ­»·
+		//whileè¯­å¥çš„æ— é™å¾ªç¯
 		/*while (true) {
 			System.out.println("hello world");
 		}*/
 
 		//System.out.println("hello world");
-		//forÓï¾äµÄÎŞÏŞÑ­»·
+		//forè¯­å¥çš„æ— é™å¾ªç¯
 		for (; ; ) {
 			System.out.println("hello world");
 		}

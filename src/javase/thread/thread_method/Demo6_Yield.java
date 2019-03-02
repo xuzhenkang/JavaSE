@@ -3,7 +3,7 @@ package javase.thread.thread_method;
 public class Demo6_Yield {
 
 	/**
-	 * yieldÈÃ³öcpuÀñÈÃÏß³Ì
+	 * yieldè®©å‡ºcpuç¤¼è®©çº¿ç¨‹
 	 */
 	public static void main(String[] args) {
 		new MyThread().start();
@@ -16,7 +16,7 @@ class MyThread extends Thread {
 	public void run() {
 		for(int i = 1; i <= 1000; i++) {
 			if(i % 10 == 0) {
-				Thread.yield();						//ÈÃ³öCPU
+				Thread.yield();						//è®©å‡ºCPU
 			}
 			System.out.println(getName() + "..." + i);
 		}

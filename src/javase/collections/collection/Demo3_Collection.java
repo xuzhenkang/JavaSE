@@ -7,24 +7,24 @@ import java.util.Collection;
 public class Demo3_Collection {
 
 	/**
-	 * * A:¼¯ºÏµÄ±éÀú
-			* ÆäÊµ¾ÍÊÇÒÀ´Î»ñÈ¡¼¯ºÏÖĞµÄÃ¿Ò»¸öÔªËØ¡£
-		* B:°¸ÀıÑİÊ¾
-			* °Ñ¼¯ºÏ×ª³ÉÊı×é£¬¿ÉÒÔÊµÏÖ¼¯ºÏµÄ±éÀú
+	 * * A:é›†åˆçš„éå†
+			* å…¶å®å°±æ˜¯ä¾æ¬¡è·å–é›†åˆä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ ã€‚
+		* B:æ¡ˆä¾‹æ¼”ç¤º
+			* æŠŠé›†åˆè½¬æˆæ•°ç»„ï¼Œå¯ä»¥å®ç°é›†åˆçš„éå†
 			* toArray()
 	 */
 	public static void main(String[] args) {
 		//demo1();
 		Collection c = new ArrayList();
-		c.add(new Student("ÕÅÈı", 23));				//Object obj = new Student("ÕÅÈı",23);
-		c.add(new Student("ÀîËÄ", 24));
-		c.add(new Student("ÍõÎå", 25));
-		c.add(new Student("ÕÔÁù", 26));
+		c.add(new Student("å¼ ä¸‰", 23));				//Object obj = new Student("å¼ ä¸‰",23);
+		c.add(new Student("æå››", 24));
+		c.add(new Student("ç‹äº”", 25));
+		c.add(new Student("èµµå…­", 26));
 		
-		Object[] arr = c.toArray();					//½«¼¯ºÏ×ª»»³ÉÊı×é
+		Object[] arr = c.toArray();					//å°†é›†åˆè½¬æ¢æˆæ•°ç»„
 		for (int i = 0; i < arr.length; i++) {
 			//System.out.println(arr[i]);
-			Student s = (Student)arr[i];			//ÏòÏÂ×ªĞÍ
+			Student s = (Student)arr[i];			//å‘ä¸‹è½¬å‹
 			System.out.println(s.getName() + "..." + s.getAge());
 		}
 	}
@@ -36,7 +36,7 @@ public class Demo3_Collection {
 		c.add("c");
 		c.add("d");
 		
-		Object[] arr = c.toArray();						//½«¼¯ºÏ×ª»»³ÉÊı×é
+		Object[] arr = c.toArray();						//å°†é›†åˆè½¬æ¢æˆæ•°ç»„
 		for(int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}

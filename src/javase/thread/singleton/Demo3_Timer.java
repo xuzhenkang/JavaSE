@@ -12,8 +12,8 @@ public class Demo3_Timer {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		Timer t = new Timer();
-		//ÔÚÖ¸¶¨Ê±¼ä°²ÅÅÖ¸¶¨ÈÎÎñ
-		//µÚÒ»¸ö²ÎÊı,ÊÇ°²ÅÅµÄÈÎÎñ,µÚ¶ş¸ö²ÎÊıÊÇÖ´ĞĞµÄÊ±¼ä,µÚÈı¸ö²ÎÊıÊÇ¹ı¶à³¤Ê±¼äÔÙÖØ¸´Ö´ĞĞ
+		//åœ¨æŒ‡å®šæ—¶é—´å®‰æ’æŒ‡å®šä»»åŠ¡
+		//ç¬¬ä¸€ä¸ªå‚æ•°,æ˜¯å®‰æ’çš„ä»»åŠ¡,ç¬¬äºŒä¸ªå‚æ•°æ˜¯æ‰§è¡Œçš„æ—¶é—´,ç¬¬ä¸‰ä¸ªå‚æ•°æ˜¯è¿‡å¤šé•¿æ—¶é—´å†é‡å¤æ‰§è¡Œ
 		t.schedule(new MyTimerTask(), new Date(117, 3, 2, 11, 14, 50),3000);	
 		
 		while(true) {
@@ -28,6 +28,6 @@ class MyTimerTask extends TimerTask {
 
 	@Override
 	public void run() {
-		System.out.println("Æğ´²±³Ó¢Óïµ¥´Ê");
+		System.out.println("èµ·åºŠèƒŒè‹±è¯­å•è¯");
 	}
 }

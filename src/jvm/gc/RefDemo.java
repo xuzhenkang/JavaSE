@@ -2,35 +2,35 @@ package jvm.gc;
 
 import java.lang.ref.WeakReference;
 
-// ÒıÓÃµÄ·ÖÀà£ºÇ¿¡¢Èí¡¢Èõ¡¢Ğé
-// Ç¿ÒıÓÃ²»ÄÜ±»gc»ØÊÕ
-// ÈõÒıÓÃµ÷ÓÃgc¾Í»á±»gc»ØÊÕ
+// å¼•ç”¨çš„åˆ†ç±»ï¼šå¼ºã€è½¯ã€å¼±ã€è™š
+// å¼ºå¼•ç”¨ä¸èƒ½è¢«gcå›æ”¶
+// å¼±å¼•ç”¨è°ƒç”¨gcå°±ä¼šè¢«gcå›æ”¶
 public class RefDemo {
 	public static void main(String[] args) {
-		String str = new String("kangkang");// ¸Ã¶ÔÏóÎ»ÓÚ¶Ñ¿Õ¼ä
+		String str = new String("kangkang");// è¯¥å¯¹è±¡ä½äºå †ç©ºé—´
 		WeakReference<String> wrf = new WeakReference<String>(str);
-		System.out.println("gcÔËĞĞÇ°" + wrf.get());
-		str = null; // ¶Ï¿ªÒıÓÃ
-		System.gc(); // Í¨Öª»ØÊÕ
+		System.out.println("gcè¿è¡Œå‰" + wrf.get());
+		str = null; // æ–­å¼€å¼•ç”¨
+		System.gc(); // é€šçŸ¥å›æ”¶
 		System.runFinalization();
-		System.out.println("gcÔËĞĞºó" + wrf.get()); // ÔËĞĞ·¢ÏÖ£º¶ÔÏóÈÔÈ»´æÔÚ£¬ ²»ÄÜ»ØÊÕ
+		System.out.println("gcè¿è¡Œå" + wrf.get()); // è¿è¡Œå‘ç°ï¼šå¯¹è±¡ä»ç„¶å­˜åœ¨ï¼Œ ä¸èƒ½å›æ”¶
 	}
 	@SuppressWarnings("unused")
 	private void testStrongRef() {
-		String str = "kangkang";// ×Ö·û´®Î»ÓÚ³£Á¿³Ø£¬¹²Ïí£¨²»ÄÜ»ØÊÕ£©£¬ËüÊÇÇ¿ÒıÓÃ
+		String str = "kangkang";// å­—ç¬¦ä¸²ä½äºå¸¸é‡æ± ï¼Œå…±äº«ï¼ˆä¸èƒ½å›æ”¶ï¼‰ï¼Œå®ƒæ˜¯å¼ºå¼•ç”¨
 		WeakReference<String> wrf = new WeakReference<String>(str);
-		System.out.println("gcÔËĞĞÇ°" + wrf.get());
-		str = null; // ¶Ï¿ªÒıÓÃ
-		System.gc(); // Í¨Öª»ØÊÕ
+		System.out.println("gcè¿è¡Œå‰" + wrf.get());
+		str = null; // æ–­å¼€å¼•ç”¨
+		System.gc(); // é€šçŸ¥å›æ”¶
 		System.runFinalization();
-		System.out.println("gcÔËĞĞºó" + wrf.get()); // ÔËĞĞ·¢ÏÖ£º¶ÔÏóÈÔÈ»´æÔÚ£¬ ²»ÄÜ»ØÊÕ
+		System.out.println("gcè¿è¡Œå" + wrf.get()); // è¿è¡Œå‘ç°ï¼šå¯¹è±¡ä»ç„¶å­˜åœ¨ï¼Œ ä¸èƒ½å›æ”¶
 	}
 }
 
 /**
- * Ç¿ÒıÓÃ£¨StringReference£©£ºÒıÓÃÖ¸Ïò¶ÔÏó£¬GCÔËĞĞÊ±²»»ØÊÕ
- * ÈíÒıÓÃ£¨SoftReference£©£ºGCÔËĞĞÊ±¿ÉÄÜ»ØÊÕ£¨JVMÄÚ´æ²»×ãÊ±£©
- * ÈõÒıÓÃ£¨WeakReference£©£ºGCÔËĞĞÊ±Á¢¼´»ØÊÕ
- * ĞéÒıÓÃ£¨PhantomReference£©£ºÀàËÆÓÚÎŞÒıÓÃ£¬Ö÷Òª¸ú×Ù¶ÔÏó±»»ØÊÕµÄ×´Ì¬£¬²»ÄÜµ¥¶ÀÊ¹ÓÃ£¬±ØĞëÓëÒıÓÃ¶ÓÁĞ£¨ReferenceQueue£©ÁªºÏÊ¹ÓÃ¡£
+ * å¼ºå¼•ç”¨ï¼ˆStringReferenceï¼‰ï¼šå¼•ç”¨æŒ‡å‘å¯¹è±¡ï¼ŒGCè¿è¡Œæ—¶ä¸å›æ”¶
+ * è½¯å¼•ç”¨ï¼ˆSoftReferenceï¼‰ï¼šGCè¿è¡Œæ—¶å¯èƒ½å›æ”¶ï¼ˆJVMå†…å­˜ä¸è¶³æ—¶ï¼‰
+ * å¼±å¼•ç”¨ï¼ˆWeakReferenceï¼‰ï¼šGCè¿è¡Œæ—¶ç«‹å³å›æ”¶
+ * è™šå¼•ç”¨ï¼ˆPhantomReferenceï¼‰ï¼šç±»ä¼¼äºæ— å¼•ç”¨ï¼Œä¸»è¦è·Ÿè¸ªå¯¹è±¡è¢«å›æ”¶çš„çŠ¶æ€ï¼Œä¸èƒ½å•ç‹¬ä½¿ç”¨ï¼Œå¿…é¡»ä¸å¼•ç”¨é˜Ÿåˆ—ï¼ˆReferenceQueueï¼‰è”åˆä½¿ç”¨ã€‚
  */
 

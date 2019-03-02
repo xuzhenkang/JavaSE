@@ -20,7 +20,7 @@ public class MyArrayList<E> implements Iterable<E> {
 
 	public boolean add(E o) {
 		if (this.size + 1 > elem.length)
-			Arrays.copyOf(elem, elem.length + elem.length >> 1); // À©Èİ
+			Arrays.copyOf(elem, elem.length + elem.length >> 1); // æ‰©å®¹
 		System.out.println(size);
 		elem[size++] = o;
 		return true;
@@ -76,7 +76,7 @@ public class MyArrayList<E> implements Iterable<E> {
 		}
 		ml.remove("d");
 		System.out.println("----------------------");
-		for (Object s : ml) { // ÊµÏÖÁËIterable½Ó¿Ú¾Í¿ÉÒÔÊ¹ÓÃÔöÇ¿forÑ­»·ÁË
+		for (Object s : ml) { // å®ç°äº†Iterableæ¥å£å°±å¯ä»¥ä½¿ç”¨å¢å¼ºforå¾ªç¯äº†
 			System.out.println(s);
 		}
 	}

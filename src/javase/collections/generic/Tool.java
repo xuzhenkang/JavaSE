@@ -11,11 +11,11 @@ public class Tool<Q> {
 		this.q = q;
 	}
 	
-	public<T> void show(T t) {				//·½·¨·ºĞÍ×îºÃÓëÀàµÄ·ºĞÍÒ»ÖÂ
-		System.out.println(t);				//Èç¹û²»Ò»ÖÂ,ĞèÒªÔÚ·½·¨ÉÏÉùÃ÷¸Ã·ºĞÍ
+	public<T> void show(T t) {				//æ–¹æ³•æ³›å‹æœ€å¥½ä¸ç±»çš„æ³›å‹ä¸€è‡´
+		System.out.println(t);				//å¦‚æœä¸ä¸€è‡´,éœ€è¦åœ¨æ–¹æ³•ä¸Šå£°æ˜è¯¥æ³›å‹
 	}
 	
-	public static<W> void print(W w) {		//¾²Ì¬·½·¨±ØĞëÉùÃ÷×Ô¼ºµÄ·ºĞÍ
+	public static<W> void print(W w) {		//é™æ€æ–¹æ³•å¿…é¡»å£°æ˜è‡ªå·±çš„æ³›å‹
 		System.out.println(w);
 	}
 	

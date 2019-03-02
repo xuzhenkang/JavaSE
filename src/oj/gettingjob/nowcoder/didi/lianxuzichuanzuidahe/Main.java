@@ -2,19 +2,19 @@ package oj.gettingjob.nowcoder.didi.lianxuzichuanzuidahe;
 
 import java.util.Scanner;
 /**
- * Á¬Ðø×Ó´®×î´óºÍ
+ * è¿žç»­å­ä¸²æœ€å¤§å’Œ
  * @author lenovo
- * Ö»ÐèÒªO£¨N£©µÄÊ±¼ä¡£ÒòÎª×î´ó Á¬Ðø×ÓÐòÁÐºÍÖ»¿ÉÄÜÊÇÒÔÎ»ÖÃ0¡«n-1ÖÐÄ³¸öÎ»ÖÃ½áÎ²¡£
- * µ±±éÀúµ½µÚi¸öÔªËØÊ±£¬ÅÐ¶ÏÔÚËüÇ°ÃæµÄÁ¬Ðø×ÓÐòÁÐºÍÊÇ·ñ´óÓÚ0£¬
- * Èç¹û´óÓÚ0£¬ÔòÒÔÎ»ÖÃi½áÎ²µÄ×î´óÁ¬Ðø×ÓÐòÁÐºÍÎªÔªËØiºÍÇ°ÃæµÄÁ¬Ðø×ÓÐòÁÐºÍÏà¼Ó£»
- * ·ñÔò£¬ÔòÒÔÎ»ÖÃi½áÎ²µÄ×î´óÁ¬Ðø×ÓÐòÁÐºÍÎªÔªËØi¡£
+ * åªéœ€è¦Oï¼ˆNï¼‰çš„æ—¶é—´ã€‚å› ä¸ºæœ€å¤§ è¿žç»­å­åºåˆ—å’Œåªå¯èƒ½æ˜¯ä»¥ä½ç½®0ï½žn-1ä¸­æŸä¸ªä½ç½®ç»“å°¾ã€‚
+ * å½“éåŽ†åˆ°ç¬¬iä¸ªå…ƒç´ æ—¶ï¼Œåˆ¤æ–­åœ¨å®ƒå‰é¢çš„è¿žç»­å­åºåˆ—å’Œæ˜¯å¦å¤§äºŽ0ï¼Œ
+ * å¦‚æžœå¤§äºŽ0ï¼Œåˆ™ä»¥ä½ç½®iç»“å°¾çš„æœ€å¤§è¿žç»­å­åºåˆ—å’Œä¸ºå…ƒç´ iå’Œå‰é¢çš„è¿žç»­å­åºåˆ—å’Œç›¸åŠ ï¼›
+ * å¦åˆ™ï¼Œåˆ™ä»¥ä½ç½®iç»“å°¾çš„æœ€å¤§è¿žç»­å­åºåˆ—å’Œä¸ºå…ƒç´ iã€‚
  */
 public class Main {
 	public static int maxSubSequence(int a[]) {
-		int maxSum = a[0], maxCurrent = a[0];//³õÊ¼»¯×î´óºÍÎªa[0]
+		int maxSum = a[0], maxCurrent = a[0];//åˆå§‹åŒ–æœ€å¤§å’Œä¸ºa[0]
 		for (int i = 1; i < a.length; i++) {
-			maxCurrent = maxCurrent <= 0 ? a[i] : maxCurrent + a[i]; //Èç¹ûÇ°ÃæÎ»ÖÃ×î´óÁ¬Ðø×ÓÐòÁÐºÍÐ¡ÓÚµÈÓÚ0£¬ÔòÒÔµ±Ç°Î»ÖÃi½áÎ²µÄ×î´óÁ¬Ðø×ÓÐòÁÐºÍÎªa[i]£¬·ñÔòÒÔµ±Ç°Î»ÖÃi½áÎ²µÄ×î´óÁ¬Ðø×ÓÐòÁÐºÍÎªËüÃÇÁ½ÕßÖ®ºÍ
-			maxSum = maxCurrent > maxSum ? maxCurrent : maxSum; // ¸üÐÂ×î´óÁ¬Ðø×ÓÐòÁÐºÍ 
+			maxCurrent = maxCurrent <= 0 ? a[i] : maxCurrent + a[i]; //å¦‚æžœå‰é¢ä½ç½®æœ€å¤§è¿žç»­å­åºåˆ—å’Œå°äºŽç­‰äºŽ0ï¼Œåˆ™ä»¥å½“å‰ä½ç½®iç»“å°¾çš„æœ€å¤§è¿žç»­å­åºåˆ—å’Œä¸ºa[i]ï¼Œå¦åˆ™ä»¥å½“å‰ä½ç½®iç»“å°¾çš„æœ€å¤§è¿žç»­å­åºåˆ—å’Œä¸ºå®ƒä»¬ä¸¤è€…ä¹‹å’Œ
+			maxSum = maxCurrent > maxSum ? maxCurrent : maxSum; // æ›´æ–°æœ€å¤§è¿žç»­å­åºåˆ—å’Œ 
 		}
 		return maxSum;
 	}

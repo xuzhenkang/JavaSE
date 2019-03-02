@@ -18,43 +18,43 @@ public class Demo3_Copy {
 	}
 
 	public static void demo3() throws FileNotFoundException, IOException {
-		//µÚ¶şÖÖ¿½±´,²»ÍÆ¼öÊ¹ÓÃ,ÒòÎªÓĞ¿ÉÄÜ»áµ¼ÖÂÄÚ´æÒç³ö
-		FileInputStream fis = new FileInputStream("ÖÂÇà´º.mp3");		//´´½¨ÊäÈëÁ÷¶ÔÏó,¹ØÁªÖÂÇà´º.mp3
-		FileOutputStream fos = new FileOutputStream("copy.mp3");	//´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªcopy.mp3
+		//ç¬¬äºŒç§æ‹·è´,ä¸æ¨èä½¿ç”¨,å› ä¸ºæœ‰å¯èƒ½ä¼šå¯¼è‡´å†…å­˜æº¢å‡º
+		FileInputStream fis = new FileInputStream("è‡´é’æ˜¥.mp3");		//åˆ›å»ºè¾“å…¥æµå¯¹è±¡,å…³è”è‡´é’æ˜¥.mp3
+		FileOutputStream fos = new FileOutputStream("copy.mp3");	//åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”copy.mp3
 		//int len = fis.available();
 		//System.out.println(len);
 		
-		byte[] arr = new byte[fis.available()];						//´´½¨ÓëÎÄ¼şÒ»Ñù´óĞ¡µÄ×Ö½ÚÊı×é
-		fis.read(arr);												//½«ÎÄ¼şÉÏµÄ×Ö½Ú¶ÁÈ¡µ½ÄÚ´æÖĞ
-		fos.write(arr);												//½«×Ö½ÚÊı×éÖĞµÄ×Ö½ÚÊı¾İĞ´µ½ÎÄ¼şÉÏ
+		byte[] arr = new byte[fis.available()];						//åˆ›å»ºä¸æ–‡ä»¶ä¸€æ ·å¤§å°çš„å­—èŠ‚æ•°ç»„
+		fis.read(arr);												//å°†æ–‡ä»¶ä¸Šçš„å­—èŠ‚è¯»å–åˆ°å†…å­˜ä¸­
+		fos.write(arr);												//å°†å­—èŠ‚æ•°ç»„ä¸­çš„å­—èŠ‚æ•°æ®å†™åˆ°æ–‡ä»¶ä¸Š
 		
 		fis.close();
 		fos.close();
 	}
 
 	public static void demo2() throws FileNotFoundException, IOException {
-		FileInputStream fis = new FileInputStream("ÖÂÇà´º.mp3");		//´´½¨ÊäÈëÁ÷¶ÔÏó,¹ØÁªÖÂÇà´º.mp3
-		FileOutputStream fos = new FileOutputStream("copy.mp3");	//´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªcopy.mp3
+		FileInputStream fis = new FileInputStream("è‡´é’æ˜¥.mp3");		//åˆ›å»ºè¾“å…¥æµå¯¹è±¡,å…³è”è‡´é’æ˜¥.mp3
+		FileOutputStream fos = new FileOutputStream("copy.mp3");	//åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”copy.mp3
 		
 		int b;
-		while((b = fis.read()) != -1) {								//ÔÚ²»¶ÏµÄ¶ÁÈ¡Ã¿Ò»¸ö×Ö½Ú
-			fos.write(b);											//½«Ã¿Ò»¸ö×Ö½ÚĞ´³ö
+		while((b = fis.read()) != -1) {								//åœ¨ä¸æ–­çš„è¯»å–æ¯ä¸€ä¸ªå­—èŠ‚
+			fos.write(b);											//å°†æ¯ä¸€ä¸ªå­—èŠ‚å†™å‡º
 		}
 		
-		fis.close();												//¹ØÁ÷ÊÍ·Å×ÊÔ´
+		fis.close();												//å…³æµé‡Šæ”¾èµ„æº
 		fos.close();
 	}
 
 	public static void demo1() throws FileNotFoundException, IOException {
-		FileInputStream fis = new FileInputStream("Ë«Ôª.jpg");		//´´½¨ÊäÈëÁ÷¶ÔÏó,¹ØÁªË«Ôª.jpg
-		FileOutputStream fos = new FileOutputStream("copy.jpg");	//´´½¨Êä³öÁ÷¶ÔÏó,¹ØÁªcopy.jpg
+		FileInputStream fis = new FileInputStream("åŒå…ƒ.jpg");		//åˆ›å»ºè¾“å…¥æµå¯¹è±¡,å…³è”åŒå…ƒ.jpg
+		FileOutputStream fos = new FileOutputStream("copy.jpg");	//åˆ›å»ºè¾“å‡ºæµå¯¹è±¡,å…³è”copy.jpg
 		
 		int b;
-		while((b = fis.read()) != -1) {								//ÔÚ²»¶ÏµÄ¶ÁÈ¡Ã¿Ò»¸ö×Ö½Ú
-			fos.write(b);											//½«Ã¿Ò»¸ö×Ö½ÚĞ´³ö
+		while((b = fis.read()) != -1) {								//åœ¨ä¸æ–­çš„è¯»å–æ¯ä¸€ä¸ªå­—èŠ‚
+			fos.write(b);											//å°†æ¯ä¸€ä¸ªå­—èŠ‚å†™å‡º
 		}
 		
-		fis.close();												//¹ØÁ÷ÊÍ·Å×ÊÔ´
+		fis.close();												//å…³æµé‡Šæ”¾èµ„æº
 		fos.close();
 	}
 

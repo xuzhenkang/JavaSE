@@ -3,14 +3,14 @@ package javase.important_object.stringbuffer.test;
 public class Test1 {
 
 	/**
-	 * * ĞèÇó£º°ÑÊı×éÖĞµÄÊı¾İ°´ÕÕÖ¸¶¨¸ö¸ñÊ½Æ´½Ó³ÉÒ»¸ö×Ö·û´®
+	 * * éœ€æ±‚ï¼šæŠŠæ•°ç»„ä¸­çš„æ•°æ®æŒ‰ç…§æŒ‡å®šä¸ªæ ¼å¼æ‹¼æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²
 	* 
-			¾ÙÀı£º
+			ä¸¾ä¾‹ï¼š
 				int[] arr = {1,2,3};	
-			Êä³ö½á¹û£º
+			è¾“å‡ºç»“æœï¼š
 				"[1, 2, 3]"
 				
-			ÓÃStringBufferµÄ¹¦ÄÜÊµÏÖ
+			ç”¨StringBufferçš„åŠŸèƒ½å®ç°
 	 */
 	public static void main(String[] args) {
 		int[] arr = {1,2,3};
@@ -18,23 +18,23 @@ public class Test1 {
 	}
 
 	/*
-	 * ½«Êı×é×ª»»Îª×Ö·û´®
-	 * 1,·µ»ØÖµÀàĞÍString
-	 * 2,²ÎÊıÁĞ±íint[]
+	 * å°†æ•°ç»„è½¬æ¢ä¸ºå­—ç¬¦ä¸²
+	 * 1,è¿”å›å€¼ç±»å‹String
+	 * 2,å‚æ•°åˆ—è¡¨int[]
 	 * 
-	 * arrayToString ½«Êı×é×ª»»Îª×Ö·û´®
-	 * array2String		2ÓëtoµÄ·¢ÒôÒ»Ñù¾ÍÓÃ2Ìæ»»ÁËto,ºóÀ´Ñİ±ä³ÉÁËÒ»ÖÖÊéĞ´Ï°¹ß
+	 * arrayToString å°†æ•°ç»„è½¬æ¢ä¸ºå­—ç¬¦ä¸²
+	 * array2String		2ä¸toçš„å‘éŸ³ä¸€æ ·å°±ç”¨2æ›¿æ¢äº†to,åæ¥æ¼”å˜æˆäº†ä¸€ç§ä¹¦å†™ä¹ æƒ¯
 	 * dom4j  domForJ
 	 */
 	
 	public static String arrayToString(int[] arr) {
-		StringBuffer sb = new StringBuffer();				//´´½¨×Ö·û´®»º³åÇø¶ÔÏó
-		sb.append("[");										//½«[Ìí¼Óµ½»º³åÇø
+		StringBuffer sb = new StringBuffer();				//åˆ›å»ºå­—ç¬¦ä¸²ç¼“å†²åŒºå¯¹è±¡
+		sb.append("[");										//å°†[æ·»åŠ åˆ°ç¼“å†²åŒº
 		
 		
 		//{1,2,3}
-		for (int i = 0; i < arr.length; i++) {				//±éÀúÊı×é
-			//sb.append(arr[i] + ", ");						//ÕâÑù×öÃ»ÓĞ]
+		for (int i = 0; i < arr.length; i++) {				//éå†æ•°ç»„
+			//sb.append(arr[i] + ", ");						//è¿™æ ·åšæ²¡æœ‰]
 			if(i == arr.length - 1) {
 				sb.append(arr[i]).append("]");				//[1, 2, 3]
 			}else {

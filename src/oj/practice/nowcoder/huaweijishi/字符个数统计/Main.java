@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.×Ö·û¸öÊıÍ³¼Æ;
+package oj.practice.nowcoder.huaweijishi.å­—ç¬¦ä¸ªæ•°ç»Ÿè®¡;
 
 import java.util.Scanner;
 
@@ -18,4 +18,4 @@ public class Main {
 		cin.close();
 	}
 }
-// Óë ¡°ÌáÈ¡²»ÖØ¸´µÄÕûÊı¡±Ò»ÌâµÄË¼Â·Ò»ÖÂ£¬Ê¹ÓÃÒ»¸ö¸¨ÖúÊı×é£¬ÓÃÀ´Ìî¿Ó¡£
+// ä¸ â€œæå–ä¸é‡å¤çš„æ•´æ•°â€ä¸€é¢˜çš„æ€è·¯ä¸€è‡´ï¼Œä½¿ç”¨ä¸€ä¸ªè¾…åŠ©æ•°ç»„ï¼Œç”¨æ¥å¡«å‘ã€‚

@@ -35,8 +35,8 @@ public class Demo3_Copy {
 		
 		char[] arr = new char[1024];
 		int len;
-		while((len = fr.read(arr)) != -1) {			//½«ÎÄ¼şÉÏµÄÊı¾İ¶ÁÈ¡µ½×Ö·ûÊı×éÖĞ
-			fw.write(arr,0,len);					//½«×Ö·ûÊı×éÖĞµÄÊı¾İĞ´µ½ÎÄ¼şÉÏ
+		while((len = fr.read(arr)) != -1) {			//å°†æ–‡ä»¶ä¸Šçš„æ•°æ®è¯»å–åˆ°å­—ç¬¦æ•°ç»„ä¸­
+			fw.write(arr,0,len);					//å°†å­—ç¬¦æ•°ç»„ä¸­çš„æ•°æ®å†™åˆ°æ–‡ä»¶ä¸Š
 		}
 		
 		fr.close();
@@ -44,8 +44,8 @@ public class Demo3_Copy {
 	}
 
 	public static void demo2() throws FileNotFoundException, IOException {
-		//×Ö·ûÁ÷²»ÄÜ¿½±´´¿ÎÄ±¾µÄÎÄ¼ş
-		FileReader fr = new FileReader("Ë«Ôª.jpg");
+		//å­—ç¬¦æµä¸èƒ½æ‹·è´çº¯æ–‡æœ¬çš„æ–‡ä»¶
+		FileReader fr = new FileReader("åŒå…ƒ.jpg");
 		FileWriter fw = new FileWriter("copy.jpg");
 		
 		int c;
@@ -67,7 +67,7 @@ public class Demo3_Copy {
 		}
 		
 		fr.close();
-		fw.close();				//WriterÀàÖĞÓĞÒ»¸ö2kµÄĞ¡»º³åÇø,Èç¹û²»¹ØÁ÷,¾Í»á½«ÄÚÈİĞ´µ½»º³åÇøÀï,¹ØÁ÷»á½«»º³åÇøÄÚÈİË¢ĞÂ,ÔÙ¹Ø±Õ
+		fw.close();				//Writerç±»ä¸­æœ‰ä¸€ä¸ª2kçš„å°ç¼“å†²åŒº,å¦‚æœä¸å…³æµ,å°±ä¼šå°†å†…å®¹å†™åˆ°ç¼“å†²åŒºé‡Œ,å…³æµä¼šå°†ç¼“å†²åŒºå†…å®¹åˆ·æ–°,å†å…³é—­
 	}
 
 }

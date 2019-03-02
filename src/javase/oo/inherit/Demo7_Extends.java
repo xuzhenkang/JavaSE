@@ -8,8 +8,8 @@ class Demo7_Extends {
 	}
 }
 /*
-* a:²»Í¬ÃûµÄ·½·¨
-* b:Í¬ÃûµÄ·½·¨
+* a:ä¸åŒåçš„æ–¹æ³•
+* b:åŒåçš„æ–¹æ³•
 */
 
 class Father4 {
@@ -24,7 +24,7 @@ class Son4 extends Father4 {
 	}
 
 	public void print() {
-		super.print();							//super¿ÉÒÔµ÷ÓÃ¸¸ÀàµÄ³ÉÔ±·½·¨
+		super.print();							//superå¯ä»¥è°ƒç”¨çˆ¶ç±»çš„æˆå‘˜æ–¹æ³•
 		System.out.println("Zi print");
 	}
 }

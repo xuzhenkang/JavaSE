@@ -1,26 +1,26 @@
 package javase.base.structured_programming.loop_structure.for_loop;
 /*
-* A:Ñ­»·½á¹¹µÄ·ÖÀà
+* A:å¾ªçŽ¯ç»“æž„çš„åˆ†ç±»
 	* for,while,do...while 
-* B:Ñ­»·½á¹¹forÓï¾äµÄ¸ñÊ½£º
+* B:å¾ªçŽ¯ç»“æž„forè¯­å¥çš„æ ¼å¼ï¼š
 * 
-		for(³õÊ¼»¯±í´ïÊ½;Ìõ¼þ±í´ïÊ½;Ñ­»·ºóµÄ²Ù×÷±í´ïÊ½) {
-			Ñ­»·Ìå;
+		for(åˆå§‹åŒ–è¡¨è¾¾å¼;æ¡ä»¶è¡¨è¾¾å¼;å¾ªçŽ¯åŽçš„æ“ä½œè¡¨è¾¾å¼) {
+			å¾ªçŽ¯ä½“;
 		}
-* CÖ´ÐÐÁ÷³Ì£º
-	* a:Ö´ÐÐ³õÊ¼»¯Óï¾ä
-	* b:Ö´ÐÐÅÐ¶ÏÌõ¼þÓï¾ä,¿´Æä·µ»ØÖµÊÇtrue»¹ÊÇfalse
-		* Èç¹ûÊÇtrue£¬¾Í¼ÌÐøÖ´ÐÐ
-		* Èç¹ûÊÇfalse£¬¾Í½áÊøÑ­»·
-	* c:Ö´ÐÐÑ­»·ÌåÓï¾ä;
-	* d:Ö´ÐÐÑ­»·ºóµÄ²Ù×÷±í´ïÊ½
-	* e:»Øµ½B¼ÌÐø¡£
-* D:°¸ÀýÑÝÊ¾
-	* ÔÚ¿ØÖÆÌ¨Êä³ö10´Î"helloworld"
+* Cæ‰§è¡Œæµç¨‹ï¼š
+	* a:æ‰§è¡Œåˆå§‹åŒ–è¯­å¥
+	* b:æ‰§è¡Œåˆ¤æ–­æ¡ä»¶è¯­å¥,çœ‹å…¶è¿”å›žå€¼æ˜¯trueè¿˜æ˜¯false
+		* å¦‚æžœæ˜¯trueï¼Œå°±ç»§ç»­æ‰§è¡Œ
+		* å¦‚æžœæ˜¯falseï¼Œå°±ç»“æŸå¾ªçŽ¯
+	* c:æ‰§è¡Œå¾ªçŽ¯ä½“è¯­å¥;
+	* d:æ‰§è¡Œå¾ªçŽ¯åŽçš„æ“ä½œè¡¨è¾¾å¼
+	* e:å›žåˆ°Bç»§ç»­ã€‚
+* D:æ¡ˆä¾‹æ¼”ç¤º
+	* åœ¨æŽ§åˆ¶å°è¾“å‡º10æ¬¡"helloworld"
 */
 class Demo1_For {
 	public static void main(String[] args) {
-		//ÔÚ¿ØÖÆÊä³ö10´Îhelloworld,ÕâÑù×ö²»ÍÆ¼ö,ÒòÎª¸´ÓÃÐÔÌ«²î
+		//åœ¨æŽ§åˆ¶è¾“å‡º10æ¬¡helloworld,è¿™æ ·åšä¸æŽ¨è,å› ä¸ºå¤ç”¨æ€§å¤ªå·®
 		/*System.out.println("helloworld");
 		System.out.println("helloworld");
 		System.out.println("helloworld");

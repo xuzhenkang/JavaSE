@@ -6,18 +6,18 @@ import java.util.Iterator;
 public class Demo1_Foreach {
 
 	/**
-	 * * A:ÔöÇ¿for¸ÅÊö
-			* ¼ò»¯Êı×éºÍCollection¼¯ºÏµÄ±éÀú
-		* B:¸ñÊ½£º
+	 * * A:å¢å¼ºforæ¦‚è¿°
+			* ç®€åŒ–æ•°ç»„å’ŒCollectioné›†åˆçš„éå†
+		* B:æ ¼å¼ï¼š
 		* 
-				for(ÔªËØÊı¾İÀàĞÍ ±äÁ¿ : Êı×é»òÕßCollection¼¯ºÏ) {
-					Ê¹ÓÃ±äÁ¿¼´¿É£¬¸Ã±äÁ¿¾ÍÊÇÔªËØ
+				for(å…ƒç´ æ•°æ®ç±»å‹ å˜é‡ : æ•°ç»„æˆ–è€…Collectioné›†åˆ) {
+					ä½¿ç”¨å˜é‡å³å¯ï¼Œè¯¥å˜é‡å°±æ˜¯å…ƒç´ 
 				}
-		* C:°¸ÀıÑİÊ¾
-			* Êı×é£¬¼¯ºÏ´æ´¢ÔªËØÓÃÔöÇ¿for±éÀú
-		* D:ºÃ´¦
-			* ¼ò»¯±éÀú
-		ÔöÇ¿forÑ­»·µ×²ãÒÀÀµµÄÊÇµü´úÆ÷(Iterator)
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* æ•°ç»„ï¼Œé›†åˆå­˜å‚¨å…ƒç´ ç”¨å¢å¼ºforéå†
+		* D:å¥½å¤„
+			* ç®€åŒ–éå†
+		å¢å¼ºforå¾ªç¯åº•å±‚ä¾èµ–çš„æ˜¯è¿­ä»£å™¨(Iterator)
 	 */
 	public static void main(String[] args) {
 		//demo1();
@@ -29,29 +29,29 @@ public class Demo1_Foreach {
 		list.add("c");
 		list.add("d");
 		
-		//1,ÆÕÍ¨forÑ­»·É¾³ı,Ë÷ÒıÒª--
+		//1,æ™®é€šforå¾ªç¯åˆ é™¤,ç´¢å¼•è¦--
 		/*for(int i = 0; i < list.size(); i++) {
 			if("b".equals(list.get(i))) {
-				list.remove(i--);							//Í¨¹ıË÷ÒıÉ¾³ıÔªËØ
+				list.remove(i--);							//é€šè¿‡ç´¢å¼•åˆ é™¤å…ƒç´ 
 			}
 		}*/
 		
-		//2,µü´úÆ÷É¾³ı
+		//2,è¿­ä»£å™¨åˆ é™¤
 		/*Iterator<String> it = list.iterator();
 		while(it.hasNext()) {
 			if("b".equals(it.next())) {
-				//list.remove("b");							//²»ÄÜÓÃ¼¯ºÏµÄÉ¾³ı·½·¨,ÒòÎªµü´ú¹ı³ÌÖĞÈç¹û¼¯ºÏĞŞ¸Ä»á³öÏÖ²¢·¢ĞŞ¸ÄÒì³£
+				//list.remove("b");							//ä¸èƒ½ç”¨é›†åˆçš„åˆ é™¤æ–¹æ³•,å› ä¸ºè¿­ä»£è¿‡ç¨‹ä¸­å¦‚æœé›†åˆä¿®æ”¹ä¼šå‡ºç°å¹¶å‘ä¿®æ”¹å¼‚å¸¸
 				it.remove();
 			}
 		}*/
 		
 		/*for(Iterator<String> it2 = list.iterator(); it2.hasNext();) {
 			if("b".equals(it2.next())) {
-				//list.remove("b");							//²»ÄÜÓÃ¼¯ºÏµÄÉ¾³ı·½·¨,ÒòÎªµü´ú¹ı³ÌÖĞÈç¹û¼¯ºÏĞŞ¸Ä»á³öÏÖ²¢·¢ĞŞ¸ÄÒì³£
+				//list.remove("b");							//ä¸èƒ½ç”¨é›†åˆçš„åˆ é™¤æ–¹æ³•,å› ä¸ºè¿­ä»£è¿‡ç¨‹ä¸­å¦‚æœé›†åˆä¿®æ”¹ä¼šå‡ºç°å¹¶å‘ä¿®æ”¹å¼‚å¸¸
 				it2.remove();
 			}
 		}*/
-		//3,ÔöÇ¿forÑ­»·,ÔöÇ¿forÑ­»·²»ÄÜÉ¾³ı,Ö»ÄÜ±éÀú
+		//3,å¢å¼ºforå¾ªç¯,å¢å¼ºforå¾ªç¯ä¸èƒ½åˆ é™¤,åªèƒ½éå†
 		for (String string : list) {
 			if("b".equals(string)) {
 				list.remove("b");
@@ -62,10 +62,10 @@ public class Demo1_Foreach {
 
 	public static void demo2() {
 		ArrayList<Person> list = new ArrayList<>();
-		list.add(new Person("ÕÅÈı", 23));
-		list.add(new Person("ÀîËÄ", 24));
-		list.add(new Person("ÍõÎå", 25));
-		list.add(new Person("ÕÔÁù", 26));
+		list.add(new Person("å¼ ä¸‰", 23));
+		list.add(new Person("æå››", 24));
+		list.add(new Person("ç‹äº”", 25));
+		list.add(new Person("èµµå…­", 26));
 		
 		for (Person person : list) {
 			System.out.println(person);

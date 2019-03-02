@@ -1,4 +1,4 @@
-package oj.gettingjob.acmcoder.meitu.Ðý×ª¾ØÕó;
+package oj.gettingjob.acmcoder.meitu.æ—‹è½¬çŸ©é˜µ;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author window
  */
 public class Main {
-	static void spiral_all(int arr[][], int m, int n)// mÐÐ nÁÐ
+	static void spiral_all(int arr[][], int m, int n)// mè¡Œ nåˆ—
 	{
 		int i = 1;
 		int u = 0, d = m - 1;
@@ -45,8 +45,8 @@ public class Main {
 		int[][] a;
 		int m, n;
 		while (cin.hasNext()) {
-			m = cin.nextInt();// ÐÐÊý
-			n = cin.nextInt();// ÁÐÊý
+			m = cin.nextInt();// è¡Œæ•°
+			n = cin.nextInt();// åˆ—æ•°
 			a = new int[m][n];
 			spiral_all(a, m, n);
 			for (int i = 0; i < m; i++) {

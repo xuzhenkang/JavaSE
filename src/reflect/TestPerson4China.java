@@ -1,7 +1,7 @@
 package reflect;
 
 /**
- * ����һ����ʵ�ֵĽӿ�
+ * 返回一个类实现的接口
  * @author kang
  *
  */
@@ -16,7 +16,7 @@ public class TestPerson4China {
 		}
 		Class<?>[] intes = demo.getInterfaces();
 		for (int i = 0; i < intes.length; i++) {
-			System.out.println("ʵ�ֵĽӿڣ�" + intes[i].getName());
+			System.out.println("实现的接口：" + intes[i].getName());
 		}
 	}
 }

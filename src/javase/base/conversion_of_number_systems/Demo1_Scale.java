@@ -1,6 +1,6 @@
 package javase.base.conversion_of_number_systems;
 
-class Demo1_Scale {								//scale ½øÖÆ
+class Demo1_Scale {								//scale è¿›åˆ¶
 	public static void main(String[] args) {
 		/*
 		* 0b100
@@ -8,9 +8,9 @@ class Demo1_Scale {								//scale ½øÖÆ
 		* 100
 		* 0x100
 		*/
-		System.out.println(0b100);				//4?	¶ş½øÖÆ±íÊ¾ĞÎÊ½Ç°Ãæ¼Ó0b(b¿ÉÒÔ´óĞ´Ò²¿ÉÒÔĞ¡Ğ´)
-		System.out.println(0100);				//64?	°Ë½øÖÆ±íÊ¾ĞÎÊ½Ç°Ãæ¼Ó0
+		System.out.println(0b100);				//4?	äºŒè¿›åˆ¶è¡¨ç¤ºå½¢å¼å‰é¢åŠ 0b(bå¯ä»¥å¤§å†™ä¹Ÿå¯ä»¥å°å†™)
+		System.out.println(0100);				//64?	å…«è¿›åˆ¶è¡¨ç¤ºå½¢å¼å‰é¢åŠ 0
 		System.out.println(100);
-		System.out.println(0x100);				//256?	Ê®Áù½øÖÆ±íÊ¾ĞÎÊ½Ç°Ãæ¼Ó0x(¿ÉÒÔ´óĞ´Ò²¿ÉÒÔĞ¡Ğ´)
+		System.out.println(0x100);				//256?	åå…­è¿›åˆ¶è¡¨ç¤ºå½¢å¼å‰é¢åŠ 0x(å¯ä»¥å¤§å†™ä¹Ÿå¯ä»¥å°å†™)
 	}
 }

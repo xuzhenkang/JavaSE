@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.½øÖÆ×ª»»;
+package oj.practice.nowcoder.huaweijishi.è¿›åˆ¶è½¬æ¢;
 
 import java.util.Scanner;
 public class Main {
@@ -34,7 +34,7 @@ public class Main {
 
 /*
  * 
- * C++µÄ·½·¨
+ * C++çš„æ–¹æ³•
 #include <iostream>
 using namespace std;
  

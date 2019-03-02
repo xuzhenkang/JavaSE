@@ -3,7 +3,7 @@ package reflect;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 /**
- * Í¨¹ı·´Éäµ÷ÓÃÆäËûÀàÖĞµÄ·½·¨
+ * é€šè¿‡åå°„è°ƒç”¨å…¶ä»–ç±»ä¸­çš„æ–¹æ³•
  * @author kang
  *
  */

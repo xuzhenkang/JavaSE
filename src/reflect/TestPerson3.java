@@ -3,7 +3,7 @@ package reflect;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 /**
- * Í¨¹ýClassµ÷ÓÃÆäËûÀàÖÐµÄ¹¹Ôìº¯Êý £¨Ò²¿ÉÒÔÍ¨¹ýÕâÖÖ·½Ê½Í¨¹ýClass´´½¨ÆäËûÀàµÄ¶ÔÏó£©
+ * é€šè¿‡Classè°ƒç”¨å…¶ä»–ç±»ä¸­çš„æž„é€ å‡½æ•° ï¼ˆä¹Ÿå¯ä»¥é€šè¿‡è¿™ç§æ–¹å¼é€šè¿‡Classåˆ›å»ºå…¶ä»–ç±»çš„å¯¹è±¡ï¼‰
  * @author lenovo
  *
  */
@@ -21,11 +21,11 @@ public class TestPerson3 {
 		Person3 per3 = null;
 		Person3 per4 = null;
 		
-		// È¡µÃÈ«²¿µÄ¹¹ÔìÆ÷
-		Constructor<?>[] cons = demo.getConstructors();// ×¢ÒâÕâ¸ö·½·¨²úÉúµÄ¹¹ÔìÆ÷Êý×éË³Ðò¿ÉÄÜÓÐµãÎÊÌâ¡£
+		// å–å¾—å…¨éƒ¨çš„æž„é€ å™¨
+		Constructor<?>[] cons = demo.getConstructors();// æ³¨æ„è¿™ä¸ªæ–¹æ³•äº§ç”Ÿçš„æž„é€ å™¨æ•°ç»„é¡ºåºå¯èƒ½æœ‰ç‚¹é—®é¢˜ã€‚
 		
 		/***
-		 * ¾¡Á¿Ê¹ÓÃÕâ¸ö·½·¨£º
+		 * å°½é‡ä½¿ç”¨è¿™ä¸ªæ–¹æ³•ï¼š
 		    Constructor cons0 = demo.getConstructor();
             Constructor cons1 = demo.getConstructor(String.class);
             Constructor cons2 = demo.getConstructor(int.class);
@@ -34,13 +34,13 @@ public class TestPerson3 {
 		
 		try {
 			/**
-			 * ÕâÀïÓöµ½ÁËÒ»¸öÎÊÌâ£¬ÏÂ±êÓë¶ÔÓ¦µÄ¹¹ÔìÆ÷µÄË³ÐòÊÇ·ñÒ»ÖÂ£¬¾­¹ýÊÔÑéµÃ³ö½áÂÛ£¬²»Ò»ÖÂ¡£
-			 * ÎªÉ¶ÄØ£¿ÍøÉÏÓÐ¸öÌû×Ó¸ø³öÕâÑùµÄ´ð°¸£º
-			 * javac°´JavaÔ´ÂëÉùÃ÷µÄË³Ðò°Ñ¹¹ÔìÆ÷ÉùÃ÷Öð¸öÐ´µ½ClassÎÄ¼þÀï£¬È»ºóJVMÒ²°´Ë³Ðò°ÑÕâÐ©ÉùÃ÷¼ÓÔØ½øÀ´£¬
-			 * ×îºó·´ÉäÔÚgetConstructors() / getMethods()Ò²°´ÕÕÕâ¸öË³Ðò°Ñ½á¹û·µ»Ø³öÀ´¡£
+			 * è¿™é‡Œé‡åˆ°äº†ä¸€ä¸ªé—®é¢˜ï¼Œä¸‹æ ‡ä¸Žå¯¹åº”çš„æž„é€ å™¨çš„é¡ºåºæ˜¯å¦ä¸€è‡´ï¼Œç»è¿‡è¯•éªŒå¾—å‡ºç»“è®ºï¼Œä¸ä¸€è‡´ã€‚
+			 * ä¸ºå•¥å‘¢ï¼Ÿç½‘ä¸Šæœ‰ä¸ªå¸–å­ç»™å‡ºè¿™æ ·çš„ç­”æ¡ˆï¼š
+			 * javacæŒ‰Javaæºç å£°æ˜Žçš„é¡ºåºæŠŠæž„é€ å™¨å£°æ˜Žé€ä¸ªå†™åˆ°Classæ–‡ä»¶é‡Œï¼Œç„¶åŽJVMä¹ŸæŒ‰é¡ºåºæŠŠè¿™äº›å£°æ˜ŽåŠ è½½è¿›æ¥ï¼Œ
+			 * æœ€åŽåå°„åœ¨getConstructors() / getMethods()ä¹ŸæŒ‰ç…§è¿™ä¸ªé¡ºåºæŠŠç»“æžœè¿”å›žå‡ºæ¥ã€‚
 			 * 
-			 * Ò²ÓÐÈËËµÊÇjdk°æ±¾µÄÎÊÌâ¡£¡°·µ»ØµÄ¹¹ÔìÆ÷Êý×éÊÇ²»ÒÀÀµÓÚÉùÃ÷Ë³ÐòµÄ£¬ÕâÊÇjdk±¾Éí¾ö¶¨µÄ£¬Ëû¾ÍÃ»ÓÐ±£Ö¤Ë³Ðò¡±
-			 * ×ÜÖ®£¬Õâ¸öË³Ðò²»ÊÇÒª¹Ø×¢µÄÖØµã
+			 * ä¹Ÿæœ‰äººè¯´æ˜¯jdkç‰ˆæœ¬çš„é—®é¢˜ã€‚â€œè¿”å›žçš„æž„é€ å™¨æ•°ç»„æ˜¯ä¸ä¾èµ–äºŽå£°æ˜Žé¡ºåºçš„ï¼Œè¿™æ˜¯jdkæœ¬èº«å†³å®šçš„ï¼Œä»–å°±æ²¡æœ‰ä¿è¯é¡ºåºâ€
+			 * æ€»ä¹‹ï¼Œè¿™ä¸ªé¡ºåºä¸æ˜¯è¦å…³æ³¨çš„é‡ç‚¹
 			 */
 			per1 = (Person3) cons[0].newInstance("Rollen", 20);
 			per2 = (Person3) cons[1].newInstance(20);

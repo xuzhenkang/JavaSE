@@ -7,20 +7,20 @@ public class Test1 {
 
 	/**
 	 * @param args
-	 * * A:°¸ÀýÑÝÊ¾
-	 * ÐèÇó£ºÅÐ¶ÏEÅÌÄ¿Â¼ÏÂÊÇ·ñÓÐºó×ºÃûÎª.jpgµÄÎÄ¼þ£¬Èç¹ûÓÐ£¬¾ÍÊä³ö¸ÃÎÄ¼þÃû³Æ
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+	 * éœ€æ±‚ï¼šåˆ¤æ–­Eç›˜ç›®å½•ä¸‹æ˜¯å¦æœ‰åŽç¼€åä¸º.jpgçš„æ–‡ä»¶ï¼Œå¦‚æžœæœ‰ï¼Œå°±è¾“å‡ºè¯¥æ–‡ä»¶åç§°
 	 */
 	public static void main(String[] args) {
 		File dir = new File("E:\\");
 		
-//		String[] arr = dir.list();					//»ñÈ¡eÅÌÏÂËùÓÐµÄÎÄ¼þ»òÎÄ¼þ¼Ð
+//		String[] arr = dir.list();					//èŽ·å–eç›˜ä¸‹æ‰€æœ‰çš„æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹
 //		for (String string : arr) {
 //			if(string.endsWith(".jpg")) {
 //				System.out.println(string);
 //			}
 //		}
 		
-		/*File[] subFiles = dir.listFiles();			//»ñÈ¡eÅÌÏÂËùÓÐµÄÎÄ¼þ»òÎÄ¼þ¼Ð¶ÔÏó
+		/*File[] subFiles = dir.listFiles();			//èŽ·å–eç›˜ä¸‹æ‰€æœ‰çš„æ–‡ä»¶æˆ–æ–‡ä»¶å¤¹å¯¹è±¡
 		
 		for (File subFile : subFiles) {
 			if(subFile.isFile() && subFile.getName().endsWith(".jpg")) {

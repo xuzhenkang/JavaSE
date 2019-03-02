@@ -1,8 +1,8 @@
 package javase.base.data_type_conversion;
 
-class Demo3_DataTypeConversion {					//Conversion×ª»»
+class Demo3_DataTypeConversion {					//Conversionè½¬æ¢
 	public static void main(String[] args) {
-		//Êı¾İÀàĞÍ×ª»»Ö®ÒşÊ½×ª»»
+		//æ•°æ®ç±»å‹è½¬æ¢ä¹‹éšå¼è½¬æ¢
 
 		/*int x = 3;
 		byte b = 4;
@@ -11,21 +11,21 @@ class Demo3_DataTypeConversion {					//Conversion×ª»»
 
 		System.out.println(x);*/
 
-		//Êı¾İÀàĞÍ×ª»»Ö®Ç¿ÖÆ×ª»»
+		//æ•°æ®ç±»å‹è½¬æ¢ä¹‹å¼ºåˆ¶è½¬æ¢
 		/*int x = 3;
 		byte b = 4;
 
 		b = (byte)(x + b);
 		System.out.println(b);*/
 
-		//00000000 00000000 00000000 10000010			130µÄ¶ş½øÖÆ
-		//10000010										-126²¹Âë
-		//00000001										-1Çó·´Âë
-		//10000001										-126·´Âë
-		//11111110										-126Ô­Âë
+		//00000000 00000000 00000000 10000010			130çš„äºŒè¿›åˆ¶
+		//10000010										-126è¡¥ç 
+		//00000001										-1æ±‚åç 
+		//10000001										-126åç 
+		//11111110										-126åŸç 
 		byte b = (byte)(126 + 4);
 		System.out.println(b);
-		//00000000 00000000 00000001 00101100			300µÄ¶ş½øÖÆ
+		//00000000 00000000 00000001 00101100			300çš„äºŒè¿›åˆ¶
 		//00101100
 		byte b2 = (byte)300;
 		System.out.println(b2);

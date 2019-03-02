@@ -15,12 +15,12 @@ public class Demo2_CurrentThread {
 		
 		new Thread(new Runnable() {
 			public void run() {
-				//Thread.currentThread()»ñÈ¡µ±Ç°ÕıÔÚÖ´ĞĞµÄÏß³Ì
+				//Thread.currentThread()è·å–å½“å‰æ­£åœ¨æ‰§è¡Œçš„çº¿ç¨‹
 				System.out.println(Thread.currentThread().getName() + "...bb");
 			}
 		}).start();
 		
-		Thread.currentThread().setName("ÎÒÊÇÖ÷Ïß³Ì");
+		Thread.currentThread().setName("æˆ‘æ˜¯ä¸»çº¿ç¨‹");
 		System.out.println(Thread.currentThread().getName());
 	}
 

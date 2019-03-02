@@ -11,13 +11,13 @@ public class Demo05_PrintStream {
 	/**
 	 * @param args
 	 * @throws IOException 
-	 * PrintStreamºÍPrintWriter·Ö±ğÊÇ´òÓ¡µÄ×Ö½ÚÁ÷ºÍ×Ö·ûÁ÷
-	 * Ö»²Ù×÷Êı¾İÄ¿µÄµÄ
+	 * PrintStreamå’ŒPrintWriteråˆ†åˆ«æ˜¯æ‰“å°çš„å­—èŠ‚æµå’Œå­—ç¬¦æµ
+	 * åªæ“ä½œæ•°æ®ç›®çš„çš„
 	 */
 	public static void main(String[] args) throws IOException {
 		//demo1();
 		PrintWriter pw = new PrintWriter(new FileOutputStream("f.txt"),true);
-		//pw.println(97);							//×Ô¶¯Ë¢³ö¹¦ÄÜÖ»Õë¶ÔµÄÊÇprintln·½·¨
+		//pw.println(97);							//è‡ªåŠ¨åˆ·å‡ºåŠŸèƒ½åªé’ˆå¯¹çš„æ˜¯printlnæ–¹æ³•
 		//pw.write(97);
 		pw.print(97);
 		pw.println(97);
@@ -26,14 +26,14 @@ public class Demo05_PrintStream {
 
 	public static void demo1() {
 		System.out.println("aaa");
-		PrintStream ps = System.out;			//»ñÈ¡±ê×¢Êä³öÁ÷
-		ps.println(97);							//µ×²ãÍ¨¹ıInteger.toString()½«97×ª»»³É×Ö·û´®²¢´òÓ¡
-		ps.write(97);							//²éÕÒÂë±í,ÕÒµ½¶ÔÓ¦µÄa²¢´òÓ¡
+		PrintStream ps = System.out;			//è·å–æ ‡æ³¨è¾“å‡ºæµ
+		ps.println(97);							//åº•å±‚é€šè¿‡Integer.toString()å°†97è½¬æ¢æˆå­—ç¬¦ä¸²å¹¶æ‰“å°
+		ps.write(97);							//æŸ¥æ‰¾ç è¡¨,æ‰¾åˆ°å¯¹åº”çš„aå¹¶æ‰“å°
 		
-		Person p1 = new Person("ÕÅÈı", 23);
-		ps.println(p1);							//Ä¬ÈÏµ÷ÓÃp1µÄtoString·½·¨
+		Person p1 = new Person("å¼ ä¸‰", 23);
+		ps.println(p1);							//é»˜è®¤è°ƒç”¨p1çš„toStringæ–¹æ³•
 		
-		Person p2 = null;						//´òÓ¡ÒıÓÃÊı¾İÀàĞÍ,Èç¹ûÊÇnull,¾Í´òÓ¡null,Èç¹û²»ÊÇnull¾Í´òÓ¡¶ÔÏóµÄtoString·½·¨
+		Person p2 = null;						//æ‰“å°å¼•ç”¨æ•°æ®ç±»å‹,å¦‚æœæ˜¯null,å°±æ‰“å°null,å¦‚æœä¸æ˜¯nullå°±æ‰“å°å¯¹è±¡çš„toStringæ–¹æ³•
 		ps.println(p2);
 		ps.close();
 	}

@@ -3,20 +3,20 @@ package javase.oo.interfaces;
 public class Demo4_Interface {
 
 }
-interface Ä³¸Éµù {
-	public abstract void ¹ØÏµ();
-	public abstract void Ç±¹æÔò();
+interface æŸå¹²çˆ¹ {
+	public abstract void å…³ç³»();
+	public abstract void æ½œè§„åˆ™();
 }
-class Ä³Å®ĞÇ implements Ä³¸Éµù {
+class æŸå¥³æ˜Ÿ implements æŸå¹²çˆ¹ {
 
 	@Override
-	public void ¹ØÏµ() {
-		System.out.println("½èÖú¸Éµù¹ØÏµÉÏÎ»");
+	public void å…³ç³»() {
+		System.out.println("å€ŸåŠ©å¹²çˆ¹å…³ç³»ä¸Šä½");
 	}
 
 	@Override
-	public void Ç±¹æÔò() {
-		System.out.println("ÄãÃÇ¶®µÃ");
+	public void æ½œè§„åˆ™() {
+		System.out.println("ä½ ä»¬æ‡‚å¾—");
 	}
 	
 }

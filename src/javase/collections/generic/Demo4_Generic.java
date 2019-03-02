@@ -3,12 +3,12 @@ package javase.collections.generic;
 public class Demo4_Generic {
 
 	/**
-	 * * A:·ºĞÍ½Ó¿Ú¸ÅÊö
-			* °Ñ·ºĞÍ¶¨ÒåÔÚ½Ó¿ÚÉÏ
-		* B:¶¨Òå¸ñÊ½	
-			* public interface ½Ó¿ÚÃû<·ºĞÍÀàĞÍ>
-		* C:°¸ÀıÑİÊ¾
-			* ·ºĞÍ½Ó¿ÚµÄÊ¹ÓÃ
+	 * * A:æ³›å‹æ¥å£æ¦‚è¿°
+			* æŠŠæ³›å‹å®šä¹‰åœ¨æ¥å£ä¸Š
+		* B:å®šä¹‰æ ¼å¼	
+			* public interface æ¥å£å<æ³›å‹ç±»å‹>
+		* C:æ¡ˆä¾‹æ¼”ç¤º
+			* æ³›å‹æ¥å£çš„ä½¿ç”¨
 	 */
 	public static void main(String[] args) {
 
@@ -19,7 +19,7 @@ interface Inter<T> {
 	public void show(T t);
 }
 
-/*class Demo implements Inter<String> {		//ÍÆ¼öÓÃÕâÖÖ
+/*class Demo implements Inter<String> {		//æ¨èç”¨è¿™ç§
 
 	@Override
 	public void show(String t) {
@@ -28,7 +28,7 @@ interface Inter<T> {
 	
 }*/
 
-class Demo<T> implements Inter<T> {			//Ã»ÓĞ±ØÒªÔÚÊµÏÖ½Ó¿ÚµÄÊ±ºò¸ø×Ô¼ºÀà¼Ó·ºĞÍ
+class Demo<T> implements Inter<T> {			//æ²¡æœ‰å¿…è¦åœ¨å®ç°æ¥å£çš„æ—¶å€™ç»™è‡ªå·±ç±»åŠ æ³›å‹
 
 	@Override
 	public void show(T t) {

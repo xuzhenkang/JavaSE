@@ -2,7 +2,7 @@ package oj.gettingjob.nowcoder.fuka;
 
 import java.util.Scanner;
 /**
- * »ªÎª±ÊÊÔÌâ
+ * åä¸ºç¬”è¯•é¢˜
  * @author lenovo
  *
  */

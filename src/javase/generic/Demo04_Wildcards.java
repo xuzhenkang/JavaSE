@@ -3,10 +3,10 @@ package javase.generic;
 import java.util.ArrayList;
 import java.util.List;
 /*
- * ? Í¨Åä·û£¬ ±íÊ¾ÀàĞÍ²»È·¶¨£¬¿ÉÒÔ·ÅÔÚĞÎ²Î|ÉùÃ÷±äÁ¿|·µ»ØÖµÉÏ¡£
- * ²»ÄÜÓÃÔÚ
- * 1¡¢´´½¨¶ÔÏó
- * 2¡¢´´½¨·ºĞÍÀà¡¢·ºĞÍ·½·¨¡¢·ºĞÍ½Ó¿Ú¡¢
+ * ? é€šé…ç¬¦ï¼Œ è¡¨ç¤ºç±»å‹ä¸ç¡®å®šï¼Œå¯ä»¥æ”¾åœ¨å½¢å‚|å£°æ˜å˜é‡|è¿”å›å€¼ä¸Šã€‚
+ * ä¸èƒ½ç”¨åœ¨
+ * 1ã€åˆ›å»ºå¯¹è±¡
+ * 2ã€åˆ›å»ºæ³›å‹ç±»ã€æ³›å‹æ–¹æ³•ã€æ³›å‹æ¥å£ã€
  */
 public class Demo04_Wildcards {
 	public static void main(String[] args) {
@@ -15,18 +15,18 @@ public class Demo04_Wildcards {
 		list = new ArrayList<Object>();
 		test(list);
 		
-//		list = new ArrayList<?>(); ±àÒë´íÎó£¬
+//		list = new ArrayList<?>(); ç¼–è¯‘é”™è¯¯ï¼Œ
 	}
 	public static void test(List<?> list) {
 	}
 	public static List<?> test1() {
 		return null;
 	}
-//	public static <?> void test2(List<?> list) { ²»ÄÜÓÃÔÚ·ºĞÍ·½·¨ÉÏ
+//	public static <?> void test2(List<?> list) { ä¸èƒ½ç”¨åœ¨æ³›å‹æ–¹æ³•ä¸Š
 //	}
 	class Test<T> {
 	}
-//	class Test2<?> { // ²»ÄÜ´´½¨·ºĞÍÀà
+//	class Test2<?> { // ä¸èƒ½åˆ›å»ºæ³›å‹ç±»
 //	}
 	
 }

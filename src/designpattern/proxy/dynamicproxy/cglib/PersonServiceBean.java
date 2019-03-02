@@ -1,8 +1,8 @@
 package designpattern.proxy.dynamicproxy.cglib;
 
 public class PersonServiceBean {
-	// ÒµÎñĞèÇó£¬À¹½Ø¸ÃÒµÎñbeanÀïÃæµÄËùÓĞ·½·¨£¬ ÅĞ¶Ï
-	// Èç¹ûÓÃ»§userÊÇ·ñÎªnull£¬Èç¹ûÊÇnull£¬ÔòÎŞÈ¨ÏŞµ÷ÓÃ¸ÃÒµÎñbeanÀïÃæµÄ·½·¨£¬Èç¹ûuser²»ÊÇnull£¬ÔòÓĞÈ¨ÏŞµ÷ÓÃ¡£
+	// ä¸šåŠ¡éœ€æ±‚ï¼Œæ‹¦æˆªè¯¥ä¸šåŠ¡beané‡Œé¢çš„æ‰€æœ‰æ–¹æ³•ï¼Œ åˆ¤æ–­
+	// å¦‚æœç”¨æˆ·useræ˜¯å¦ä¸ºnullï¼Œå¦‚æœæ˜¯nullï¼Œåˆ™æ— æƒé™è°ƒç”¨è¯¥ä¸šåŠ¡beané‡Œé¢çš„æ–¹æ³•ï¼Œå¦‚æœuserä¸æ˜¯nullï¼Œåˆ™æœ‰æƒé™è°ƒç”¨ã€‚
 	private String user = null;
 
 	public PersonServiceBean() {
@@ -17,15 +17,15 @@ public class PersonServiceBean {
 	}
 
 	public void save(String name) {
-		System.out.println("ÎÒÊÇsave()·½·¨");
+		System.out.println("æˆ‘æ˜¯save()æ–¹æ³•");
 	}
 
 	public void update(String name, Integer personid) {
-		System.out.println("ÎÒÊÇupdate()·½·¨");
+		System.out.println("æˆ‘æ˜¯update()æ–¹æ³•");
 	}
 
 	public String getPersonName(Integer personid) {
-		System.out.println("ÎÒÊÇgetPersonName()·½·¨");
+		System.out.println("æˆ‘æ˜¯getPersonName()æ–¹æ³•");
 		return "xxx";
 	}
 

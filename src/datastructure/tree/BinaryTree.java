@@ -22,7 +22,7 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ÀûÓÃÏÈĞòĞòÁĞ£¨´øÓĞ¿Õº¢×ÓĞÅÏ¢£©´´½¨¶ş²æÊ÷
+	 * åˆ©ç”¨å…ˆåºåºåˆ—ï¼ˆå¸¦æœ‰ç©ºå­©å­ä¿¡æ¯ï¼‰åˆ›å»ºäºŒå‰æ ‘
 	 * 
 	 * @param datas
 	 * @return
@@ -41,18 +41,18 @@ public class BinaryTree {
 	}
 
 	/**
-	 * Ö»ÀûÓÃÖĞĞòĞòÁĞ£¨´øÓĞ¿Õº¢×ÓĞÅÏ¢£©ÎŞ·¨Î¨Ò»È·¶¨Ò»¿Å¶ş²æÊ÷£¬Òò´Ë¸Ãº¯ÊıÎŞ·¨ÊµÏÖ
+	 * åªåˆ©ç”¨ä¸­åºåºåˆ—ï¼ˆå¸¦æœ‰ç©ºå­©å­ä¿¡æ¯ï¼‰æ— æ³•å”¯ä¸€ç¡®å®šä¸€é¢—äºŒå‰æ ‘ï¼Œå› æ­¤è¯¥å‡½æ•°æ— æ³•å®ç°
 	 * 
 	 * @param datas
 	 * @return
 	 */
 	public TreeNode inCreate(String datas) {
-		// Ö»¸ø³ö´ø¿Õº¢×ÓµÄÖĞĞò±éÀúĞòÁĞÎŞ·¨È·¶¨Ò»¿Å¶ş²æÊ÷
+		// åªç»™å‡ºå¸¦ç©ºå­©å­çš„ä¸­åºéå†åºåˆ—æ— æ³•ç¡®å®šä¸€é¢—äºŒå‰æ ‘
 		return null;
 	}
 
 	/**
-	 * ÀûÓÃºóĞøĞòÁĞ£¨´øÓĞ¿Õº¢×ÓĞÅÏ¢£©´´½¨¶ş²æÊ÷
+	 * åˆ©ç”¨åç»­åºåˆ—ï¼ˆå¸¦æœ‰ç©ºå­©å­ä¿¡æ¯ï¼‰åˆ›å»ºäºŒå‰æ ‘
 	 * 
 	 * @param datas
 	 * @return
@@ -71,7 +71,7 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ´´½¨¶ş²æÊ÷
+	 * åˆ›å»ºäºŒå‰æ ‘
 	 * 
 	 * @param datas
 	 * @param msg
@@ -82,7 +82,7 @@ public class BinaryTree {
 			this.pointer = 0;
 			return this.preCreate(datas);
 		} else if (msg.equals("in")) {
-			System.out.println("Ö»¸ø³ö´ø¿Õº¢×ÓĞÅÏ¢µÄÖĞĞò±éÀúĞòÁĞÎŞ·¨Î¨Ò»È·¶¨Ò»¿Å¶ş²æÊ÷£¡");
+			System.out.println("åªç»™å‡ºå¸¦ç©ºå­©å­ä¿¡æ¯çš„ä¸­åºéå†åºåˆ—æ— æ³•å”¯ä¸€ç¡®å®šä¸€é¢—äºŒå‰æ ‘ï¼");
 			return null;
 		} else if (msg.equals("post")) {
 			this.pointer = datas.length() - 1;
@@ -95,13 +95,13 @@ public class BinaryTree {
 	}
 
 	/**
-	 * µİ¹éÏÈĞò±éÀú
+	 * é€’å½’å…ˆåºéå†
 	 * 
 	 * @param root
 	 */
 	public void preOrderTravel(TreeNode root) {
 		if (root == null) {
-			System.out.println("¶ş²æÊ÷Îª¿Õ£¬ÎŞ·¨±éÀú£¡");
+			System.out.println("äºŒå‰æ ‘ä¸ºç©ºï¼Œæ— æ³•éå†ï¼");
 			return;
 		}
 		System.out.print(root.val);
@@ -116,13 +116,13 @@ public class BinaryTree {
 	}
 
 	/**
-	 * µİ¹éÖĞĞò±éÀú
+	 * é€’å½’ä¸­åºéå†
 	 * 
 	 * @param root
 	 */
 	public void inOrderTravel(TreeNode root) {
 		if (root == null) {
-			System.out.println("¶ş²æÊ÷Îª¿Õ£¬ÎŞ·¨±éÀú£¡");
+			System.out.println("äºŒå‰æ ‘ä¸ºç©ºï¼Œæ— æ³•éå†ï¼");
 			return;
 		}
 		if (root.left != null) {
@@ -137,13 +137,13 @@ public class BinaryTree {
 	}
 
 	/**
-	 * µİ¹éºóĞò±éÀú
+	 * é€’å½’ååºéå†
 	 * 
 	 * @param root
 	 */
 	public void postOrderTravel(TreeNode root) {
 		if (root == null) {
-			System.out.println("¶ş²æÊ÷Îª¿Õ£¬ÎŞ·¨±éÀú£¡");
+			System.out.println("äºŒå‰æ ‘ä¸ºç©ºï¼Œæ— æ³•éå†ï¼");
 			return;
 		}
 		if (root.left != null) {
@@ -158,28 +158,28 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ²ã´Î±éÀú
+	 * å±‚æ¬¡éå†
 	 * 
 	 * @param root
 	 */
 	public void levelTravel(TreeNode root) {
 		LinkedList<TreeNode> queue = new LinkedList<TreeNode>();
 		TreeNode current;
-		queue.offer(root);// ½«¸ù½ÚµãÈë¶Ó
+		queue.offer(root);// å°†æ ¹èŠ‚ç‚¹å…¥é˜Ÿ
 		while (!queue.isEmpty()) {
-			current = queue.poll();// ³ö¶Ó¶ÓÍ·ÔªËØ²¢·ÃÎÊ
+			current = queue.poll();// å‡ºé˜Ÿé˜Ÿå¤´å…ƒç´ å¹¶è®¿é—®
 			System.out.print(current.val);
-			if (current.left != null) { // Èç¹ûµ±Ç°½ÚµãµÄ×ó½Úµã²»Îª¿ÕÈë¶Ó
+			if (current.left != null) { // å¦‚æœå½“å‰èŠ‚ç‚¹çš„å·¦èŠ‚ç‚¹ä¸ä¸ºç©ºå…¥é˜Ÿ
 				queue.offer(current.left);
 			}
-			if (current.right != null) {// Èç¹ûµ±Ç°½ÚµãµÄÓÒ½Úµã²»Îª¿ÕÈë¶Ó
+			if (current.right != null) {// å¦‚æœå½“å‰èŠ‚ç‚¹çš„å³èŠ‚ç‚¹ä¸ä¸ºç©ºå…¥é˜Ÿ
 				queue.offer(current.right);
 			}
 		}
 	}
 
 	/**
-	 * ·Çµİ¹éÏÈĞò±éÀú¶ş²æÊ÷·½·¨1
+	 * éé€’å½’å…ˆåºéå†äºŒå‰æ ‘æ–¹æ³•1
 	 */
 	public void preOrderTravelNonRecurI(TreeNode root) {
 		Stack<TreeNode> s = new Stack<TreeNode>();
@@ -199,7 +199,7 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ·Çµİ¹éÏÈĞò±éÀú¶ş²æÊ÷·½·¨2
+	 * éé€’å½’å…ˆåºéå†äºŒå‰æ ‘æ–¹æ³•2
 	 * 
 	 * @param root
 	 */
@@ -221,7 +221,7 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ·Çµİ¹éÖĞĞò±éÀú
+	 * éé€’å½’ä¸­åºéå†
 	 * 
 	 * @param root
 	 */
@@ -229,13 +229,13 @@ public class BinaryTree {
 		LinkedList<TreeNode> stack = new LinkedList<>();
 		TreeNode currentNode = root, tmp;
 		while (currentNode != null || !stack.isEmpty()) {
-			while (currentNode != null) {// ÏÈ"×ßÍê"×óº¢×Ó
+			while (currentNode != null) {// å…ˆ"èµ°å®Œ"å·¦å­©å­
 				stack.push(currentNode);
 				currentNode = currentNode.left;
 			}
 			if (currentNode == null)
 				System.out.print("#");
-			if (!stack.isEmpty()) {// ½áµãÃ»ÓĞ×óº¢×ÓÁË,³öÕ»,·ÃÎÊ½áµã
+			if (!stack.isEmpty()) {// ç»“ç‚¹æ²¡æœ‰å·¦å­©å­äº†,å‡ºæ ˆ,è®¿é—®ç»“ç‚¹
 				tmp = stack.pop();
 				System.out.print(tmp.val);// visit
 				currentNode = tmp.right;
@@ -246,8 +246,8 @@ public class BinaryTree {
 	}
 
 	/**
-	 * ·Çµİ¹éºóĞò±éÀú·½·¨1
-	 * ÒòÎªºóĞòĞòÁĞÊÇ¶Ô³ÆÊ÷µÄÏÈĞòĞòÁĞ£¬Òò´ËÓĞÈçÏÂ·½·¨
+	 * éé€’å½’ååºéå†æ–¹æ³•1
+	 * å› ä¸ºååºåºåˆ—æ˜¯å¯¹ç§°æ ‘çš„å…ˆåºåºåˆ—ï¼Œå› æ­¤æœ‰å¦‚ä¸‹æ–¹æ³•
 	 * @param n
 	 */
 	public void postOrderTravelNonRecurI(TreeNode n) {
@@ -267,7 +267,7 @@ public class BinaryTree {
 		}
 	}
 	/**
-	 * ·Çµİ¹éºóĞò±éÀú·½·¨2
+	 * éé€’å½’ååºéå†æ–¹æ³•2
 	 * @param n
 	 */
 	public void postOrderTravelNonRecurII(TreeNode n) {
@@ -301,23 +301,23 @@ public class BinaryTree {
 		String inStr = "#4#2#5#1#6#3#7#";
 		String postStr = "##4##52##6##731";
 		TreeNode root = bt.create(preStr, "pre");
-		System.out.println("µİ¹éÏÈĞò±éÀú");
+		System.out.println("é€’å½’å…ˆåºéå†");
 		bt.preOrderTravel(root);
-		System.out.println("\nµİ¹éÖĞĞò±éÀú");
+		System.out.println("\né€’å½’ä¸­åºéå†");
 		bt.inOrderTravel(root);
-		System.out.println("\nµİ¹éºóĞò±éÀú");
+		System.out.println("\né€’å½’ååºéå†");
 		bt.postOrderTravel(root);
-		System.out.println("\n²ã´Î±éÀú");
+		System.out.println("\nå±‚æ¬¡éå†");
 		bt.levelTravel(root);
-		System.out.println("\n·Çµİ¹éÏÈĞò±éÀú·½·¨I");
+		System.out.println("\néé€’å½’å…ˆåºéå†æ–¹æ³•I");
 		bt.preOrderTravelNonRecurI(root);
-		System.out.println("\n·Çµİ¹éÏÈĞò±éÀú·½·¨II");
+		System.out.println("\néé€’å½’å…ˆåºéå†æ–¹æ³•II");
 		bt.preOrderTravelNonRecurII(root);
-		System.out.println("\n·Çµİ¹éÖĞĞò±éÀú");
+		System.out.println("\néé€’å½’ä¸­åºéå†");
 		bt.inOrderTravelNonRecur(root);
-		System.out.println("\n·Çµİ¹éºóĞò±éÀú·½·¨I");
+		System.out.println("\néé€’å½’ååºéå†æ–¹æ³•I");
 		bt.postOrderTravelNonRecurI(root);
-		System.out.println("\n·Çµİ¹éºóĞò±éÀú·½·¨II");
+		System.out.println("\néé€’å½’ååºéå†æ–¹æ³•II");
 		bt.postOrderTravelNonRecurII(root);
 	}
 }

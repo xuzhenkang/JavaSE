@@ -12,10 +12,10 @@ class Demo3_Car {
 
 		//Car c2 = new Car();
 		//method(c2);
-		method(new Car());				//ÄäÃû¶ÔÏó¿ÉÒÔµ±×÷²ÎÊı´«µİ
+		method(new Car());				//åŒ¿åå¯¹è±¡å¯ä»¥å½“ä½œå‚æ•°ä¼ é€’
 	}
 
-	//³éÈ¡·½·¨Ìá¸ß´úÂëµÄ¸´ÓÃĞÔ
+	//æŠ½å–æ–¹æ³•æé«˜ä»£ç çš„å¤ç”¨æ€§
 	public static void method(Car cc) {	//Car cc = new Car();
 		cc.color = "red";
 		cc.num = 8;
@@ -24,8 +24,8 @@ class Demo3_Car {
 }
 
 class Car1 {
-	String color;			//ÑÕÉ«
-	int num;				//ÂÖÌ¥Êı
+	String color;			//é¢œè‰²
+	int num;				//è½®èƒæ•°
 
 	public void run() {
 		System.out.println(color + "..." + num);

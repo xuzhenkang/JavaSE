@@ -1,4 +1,4 @@
-package oj.practice.nowcoder.huaweijishi.Êı×Öµßµ¹;
+package oj.practice.nowcoder.huaweijishi.æ•°å­—é¢ å€’;
 
 import java.util.Scanner;
 
@@ -16,6 +16,6 @@ public class Main {
 }
 
 /*
- * ÀûÓÃpython Ö»ĞèÒ»ĞĞ´úÂë£º
+ * åˆ©ç”¨python åªéœ€ä¸€è¡Œä»£ç ï¼š
  * print raw_input()[::-1]
  */

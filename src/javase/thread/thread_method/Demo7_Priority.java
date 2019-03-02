@@ -22,11 +22,11 @@ public class Demo7_Priority {
 			}
 		};
 		
-		//t1.setPriority(10);					ÉèÖÃ×î´óÓÅÏÈ¼¶
+		//t1.setPriority(10);					è®¾ç½®æœ€å¤§ä¼˜å…ˆçº§
 		//t2.setPriority(1);
 		
-		t1.setPriority(Thread.MIN_PRIORITY);		//ÉèÖÃ×îĞ¡µÄÏß³ÌÓÅÏÈ¼¶
-		t2.setPriority(Thread.MAX_PRIORITY);		//ÉèÖÃ×î´óµÄÏß³ÌÓÅÏÈ¼¶
+		t1.setPriority(Thread.MIN_PRIORITY);		//è®¾ç½®æœ€å°çš„çº¿ç¨‹ä¼˜å…ˆçº§
+		t2.setPriority(Thread.MAX_PRIORITY);		//è®¾ç½®æœ€å¤§çš„çº¿ç¨‹ä¼˜å…ˆçº§
 		
 		t1.start();
 		t2.start();

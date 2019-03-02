@@ -6,9 +6,9 @@ class Demo2_Final {
 		//num = 20;
 		System.out.println(num);
 
-		final Person p = new Person("ÕÅÈı",23);
-		//p = new Person("ÀîËÄ",24);
-		p.setName("ÀîËÄ");
+		final Person p = new Person("å¼ ä¸‰",23);
+		//p = new Person("æå››",24);
+		p.setName("æå››");
 		p.setAge(24);
 
 		System.out.println(p.getName() + "..." + p.getAge());
@@ -22,37 +22,37 @@ class Demo2_Final {
 	}
 }
 /*
-* A:°¸ÀıÑİÊ¾
-	* ·½·¨ÄÚ²¿»òÕß·½·¨ÉùÃ÷ÉÏ¶¼ÑİÊ¾Ò»ÏÂ(ÁË½â)
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ–¹æ³•å†…éƒ¨æˆ–è€…æ–¹æ³•å£°æ˜ä¸Šéƒ½æ¼”ç¤ºä¸€ä¸‹(äº†è§£)
 
-	* »ù±¾ÀàĞÍ£¬ÊÇÖµ²»ÄÜ±»¸Ä±ä
-	* ÒıÓÃÀàĞÍ£¬ÊÇµØÖ·Öµ²»ÄÜ±»¸Ä±ä,¶ÔÏóÖĞµÄÊôĞÔ¿ÉÒÔ¸Ä±ä
+	* åŸºæœ¬ç±»å‹ï¼Œæ˜¯å€¼ä¸èƒ½è¢«æ”¹å˜
+	* å¼•ç”¨ç±»å‹ï¼Œæ˜¯åœ°å€å€¼ä¸èƒ½è¢«æ”¹å˜,å¯¹è±¡ä¸­çš„å±æ€§å¯ä»¥æ”¹å˜
 */
 
 class Person {
-	private String name;			//ĞÕÃû
-	private int age;				//ÄêÁä
+	private String name;			//å§“å
+	private int age;				//å¹´é¾„
 
-	public Person(){}				//¿Õ²Î¹¹Ôì
+	public Person(){}				//ç©ºå‚æ„é€ 
 
 	public Person(String name,int age) {
 		this.name = name;
 		this.age = age;
 	}
 
-	public void setName(String name) {	//ÉèÖÃĞÕÃû
+	public void setName(String name) {	//è®¾ç½®å§“å
 		this.name = name;
 	}
 
-	public String getName() {		//»ñÈ¡ĞÕÃû
+	public String getName() {		//è·å–å§“å
 		return name;
 	}
 
-	public void setAge(int age) {	//ÉèÖÃÄêÁä
+	public void setAge(int age) {	//è®¾ç½®å¹´é¾„
 		this.age = age;
 	}
 
-	public int getAge() {			//»ñÈ¡ÄêÁä
+	public int getAge() {			//è·å–å¹´é¾„
 		return age;
 	}
 }

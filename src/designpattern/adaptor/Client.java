@@ -1,8 +1,8 @@
 package designpattern.adaptor;
 
 /**
- * 客户端类
- * (相当于例子中的笔记本，只有USB接口)
+ * 瀹㈡埛绔被
+ * (鐩稿綋浜庝緥瀛愪腑鐨勭瑪璁版湰锛屽彧鏈塙SB鎺ュ彛)
  * @author lenovo
  *
  */
@@ -17,7 +17,7 @@ public class Client {
 		Target t = new Adapter();
 		c.test1(t);
 		
-		Target t2 = new Adapter2(a); // 未继承的
+		Target t2 = new Adapter2(a); // 鏈户鎵跨殑
 		t2.handleReq();
 		
 	}

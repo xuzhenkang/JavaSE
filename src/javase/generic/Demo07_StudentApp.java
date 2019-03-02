@@ -1,9 +1,9 @@
 package javase.generic;
-// ·ºÐÍÇ¶Ì×
+// æ³›åž‹åµŒå¥—
 public class Demo07_StudentApp<T> {
 	public static void main(String[] args) {
 		Student<String> stu = new Student<String>();
-		stu.setScore("ÓÅÐã");
+		stu.setScore("ä¼˜ç§€");
 		System.out.println(stu.getScore());
 		ClazzName<Student<String>> clz = new ClazzName<Student<String>>();
 		clz.setStu(stu);

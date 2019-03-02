@@ -6,15 +6,15 @@ public class Test7 {
 	}
 	public static void main(String[] args) {
 		
-		// TLAB∑÷≈‰
-		// ≤Œ ˝£∫ -XX:+UseTLAB -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=102400 -XX:TLABRefillWasteFraction=100 -XX:-DoEscapeAnalysis
-		// ∂‘±»≤Œ ˝£∫-XX:-UseTLAB -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=102400 -XX:TLABRefillWasteFraction=100 -XX:-DoEscapeAnalysis
+		// TLABÂàÜÈÖç
+		// ÂèÇÊï∞Ôºö -XX:+UseTLAB -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=102400 -XX:TLABRefillWasteFraction=100 -XX:-DoEscapeAnalysis
+		// ÂØπÊØîÂèÇÊï∞Ôºö-XX:-UseTLAB -XX:+PrintTLAB -XX:+PrintGC -XX:TLABSize=102400 -XX:TLABRefillWasteFraction=100 -XX:-DoEscapeAnalysis
 		long start = System.currentTimeMillis();
 		for (int i = 0; i < 10000000; i++) {
 			alloc();
 		}
 		long end = System.currentTimeMillis();
 		System.out.println(end - start);
-		// µ±Ω˚”√¡ÀTLABµƒ ±∫Ú£¨ –‘ƒ‹œ¬Ωµ
+		// ÂΩìÁ¶ÅÁî®‰∫ÜTLABÁöÑÊó∂ÂÄôÔºå ÊÄßËÉΩ‰∏ãÈôç
 	}
 }

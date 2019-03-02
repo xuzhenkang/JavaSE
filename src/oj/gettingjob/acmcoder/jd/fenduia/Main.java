@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class Main {
-	// ¹Ù·½µÄ´ð°¸
+	// å®˜æ–¹çš„ç­”æ¡ˆ
 	public static void main(String[] args) {
 		int n, k, ans;
 		Scanner cin = new Scanner(System.in);

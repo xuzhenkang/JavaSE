@@ -1,9 +1,9 @@
 package javase.base.array.linear_array;
 /*
-* A:°¸ÀıÑİÊ¾
-	* Êı×é±éÀú£º¾ÍÊÇÒÀ´ÎÊä³öÊı×éÖĞµÄÃ¿Ò»¸öÔªËØ¡£
-	* Êı×éµÄÊôĞÔ:arr.lengthÊı×éµÄ³¤¶È
-	* Êı×éµÄ×î´óË÷Òı:arr.length - 1;
+* A:æ¡ˆä¾‹æ¼”ç¤º
+	* æ•°ç»„éå†ï¼šå°±æ˜¯ä¾æ¬¡è¾“å‡ºæ•°ç»„ä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ ã€‚
+	* æ•°ç»„çš„å±æ€§:arr.lengthæ•°ç»„çš„é•¿åº¦
+	* æ•°ç»„çš„æœ€å¤§ç´¢å¼•:arr.length - 1;
 */
 class Demo8_Array {
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ class Demo8_Array {
 			System.out.println(arr[i]);
 		}
 		System.out.println("---------------");
-		//arr.length ´ú±íµÄÊÇÊı×éµÄ³¤¶È
+		//arr.length ä»£è¡¨çš„æ˜¯æ•°ç»„çš„é•¿åº¦
 		System.out.println(arr.length);
 		for (int i = 0;i < arr.length ;i++ ) {
 			System.out.println(arr[i]);
@@ -30,9 +30,9 @@ class Demo8_Array {
 	}
 
 	/*
-	Êı×éµÄ±éÀú
-	1,·µ»ØÖµÀàĞÍvoid
-	2,²ÎÊıÁĞ±íint[] arr
+	æ•°ç»„çš„éå†
+	1,è¿”å›å€¼ç±»å‹void
+	2,å‚æ•°åˆ—è¡¨int[] arr
 	*/
 
 	public static void print(int[] arr) {

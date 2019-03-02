@@ -9,11 +9,11 @@ public class MyProxy implements Sourceable {
 	}
 
 	private void before() {
-		System.out.println("我是MyProxy的before方法");
+		System.out.println("鎴戞槸MyProxy鐨刡efore鏂规硶");
 	}
 	
 	private void after() {
-		System.out.println("我是MyProxy的after方法");
+		System.out.println("鎴戞槸MyProxy鐨刟fter鏂规硶");
 	}
 	
 	@Override

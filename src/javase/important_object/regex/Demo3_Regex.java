@@ -3,13 +3,13 @@ package javase.important_object.regex;
 public class Demo3_Regex {
 
 	/**
-	 * 	. ÈÎºÎ×Ö·û
-		\d Êı×Ö£º[0-9] 
-		\D ·ÇÊı×Ö£º [^0-9] 
-		\s ¿Õ°××Ö·û£º[ \t\n\x0B\f\r] 
-		\S ·Ç¿Õ°××Ö·û£º[^\s] 
-		\w µ¥´Ê×Ö·û£º[a-zA-Z_0-9] 
-		\W ·Çµ¥´Ê×Ö·û£º[^\w] 
+	 * 	. ä»»ä½•å­—ç¬¦
+		\d æ•°å­—ï¼š[0-9] 
+		\D éæ•°å­—ï¼š [^0-9] 
+		\s ç©ºç™½å­—ç¬¦ï¼š[ \t\n\x0B\f\r] 
+		\S éç©ºç™½å­—ç¬¦ï¼š[^\s] 
+		\w å•è¯å­—ç¬¦ï¼š[a-zA-Z_0-9] 
+		\W éå•è¯å­—ç¬¦ï¼š[^\w] 
 
 	 */
 	public static void main(String[] args) {
@@ -44,8 +44,8 @@ public class Demo3_Regex {
 	private static void demo4() {
 		String regex = "\\s";
 		System.out.println(" ".matches(regex));
-		System.out.println("	".matches(regex)); 				//Ò»¸ötab¼ü
-		System.out.println("    ".matches(regex)); 				//ËÄ¸ö¿Õ¸ñ
+		System.out.println("	".matches(regex)); 				//ä¸€ä¸ªtabé”®
+		System.out.println("    ".matches(regex)); 				//å››ä¸ªç©ºæ ¼
 	}
 
 	private static void demo3() {
@@ -56,7 +56,7 @@ public class Demo3_Regex {
 	}
 
 	private static void demo2() {
-		String regex = "\\d";					//\´ú±í×ªÒå×Ö·û,Èç¹ûÏë±íÊ¾\dµÄ»°,ĞèÒª\\d
+		String regex = "\\d";					//\ä»£è¡¨è½¬ä¹‰å­—ç¬¦,å¦‚æœæƒ³è¡¨ç¤º\dçš„è¯,éœ€è¦\\d
 		System.out.println("0".matches(regex));
 		System.out.println("a".matches(regex));
 		System.out.println("9".matches(regex));

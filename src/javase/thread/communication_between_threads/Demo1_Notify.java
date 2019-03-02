@@ -4,7 +4,7 @@ public class Demo1_Notify {
 
 	/**
 	 * @param args
-	 * µÈ´ı»½ĞÑ»úÖÆ
+	 * ç­‰å¾…å”¤é†’æœºåˆ¶
 	 */
 	public static void main(String[] args) {
 		final Printer p = new Printer();
@@ -38,22 +38,22 @@ public class Demo1_Notify {
 
 }
 
-//µÈ´ı»½ĞÑ»úÖÆ
+//ç­‰å¾…å”¤é†’æœºåˆ¶
 class Printer {
 	private int flag = 1;
 	public void print1() throws InterruptedException {							
 		synchronized(this) {
 			if(flag != 1) {
-				this.wait();					//µ±Ç°Ïß³ÌµÈ´ı
+				this.wait();					//å½“å‰çº¿ç¨‹ç­‰å¾…
 			}
-			System.out.print("ºÚ");
-			System.out.print("Âí");
-			System.out.print("³Ì");
-			System.out.print("Ğò");
-			System.out.print("Ô±");
+			System.out.print("é»‘");
+			System.out.print("é©¬");
+			System.out.print("ç¨‹");
+			System.out.print("åº");
+			System.out.print("å‘˜");
 			System.out.print("\r\n");
 			flag = 2;
-			this.notify();						//Ëæ»ú»½ĞÑµ¥¸öµÈ´ıµÄÏß³Ì
+			this.notify();						//éšæœºå”¤é†’å•ä¸ªç­‰å¾…çš„çº¿ç¨‹
 		}
 	}
 	
@@ -62,10 +62,10 @@ class Printer {
 			if(flag != 2) {
 				this.wait();
 			}
-			System.out.print("´«");
-			System.out.print("ÖÇ");
-			System.out.print("²¥");
-			System.out.print("¿Í");
+			System.out.print("ä¼ ");
+			System.out.print("æ™º");
+			System.out.print("æ’­");
+			System.out.print("å®¢");
 			System.out.print("\r\n");
 			flag = 1;
 			this.notify();

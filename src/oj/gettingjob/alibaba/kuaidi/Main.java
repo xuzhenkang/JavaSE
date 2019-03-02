@@ -4,38 +4,38 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 /**
-ÔÚ¿ìµÝ¹«Ë¾¸ÉÏßÔËÊäµÄ³µÁ¾Ê¹ÓÃÖÐ£¬´æÔÚ×Åµ¥±ß³µºÍË«±ß³µµÄÁ½ÖÖÊ¹ÓÃ³¡¾°£¬ÀýÈç ±±¾©ÖÐÐÄ-º¼ÖÝÖÐÐÄ£¬Á½¸ö·Ö²¦ÖÐÐÄµ½±Ë´ËµÄµ¥Á¿¶ÔµÈ£¬Ôò¿ÉÒÔ¿ªË«±ß³µ£¨¼´Í¬Ò»Á¾³µ¿ÉÒÔÍù·µ¶Ô¿ª£©£¬
-¶øµ±Á½¸öÖÐÐÄµÄ¶Ô·¢µ¥Á¿²»¶ÔµÈÊ±£¬Ôò»á²ÉÓÃµ¥±ß³µ£¬²¢ÇÒË«±ß³µµÄ³É±¾ÊÇµÍÓÚµ¥±ß³µµÄ£¬¼´½«Á½Á¾¶Ô¿ªµÄµ¥±ß³µºÏ²¢ÎªÒ»Á¾Íù·µµÄË«±ß³µÊÇÄÜ¹»½ÚÊ¡ÔËÁ¦³É±¾µÄ
-µ¥±ß³µÓÅ»¯Ô­Ôò£º
-½«µ¥±ß³µÓÅ»¯µÄ¹æÔò½øÐÐ¿É³éÏóÎªÒÔÏÂÈýÖÖ£¨A,B,C¾ù±íÊ¾·Ö²¦ÖÐÐÄ£©£º
-¹æÔò-1: A-Bµ¥±ß³µ£¬B-Aµ¥±ß³µ ÓÅ»¯·½°¸£º½«A-BºÍB-AµÄÁ½Á¾µ¥±ß³µºÏ²¢ÎªË«±ß£»
-¹æÔò-2: A-Bµ¥±ß³µ£¬B-Cµ¥±ß³µ£¬C-Aµ¥±ß³µ ÓÅ»¯·½°¸£º½«A-B¡¢B-C¡¢C-AµÄÈýÁ¾µ¥±ß³µÓÅ»¯ÎªÒ»Á¾»·ÐÎÍù·µ³µ£»
-¹æÔò-3: A-Bµ¥±ß³µ£¬C-Aµ¥±ß³µ£¬B¡¢CÍ¬Ê¡ ÓÅ»¯·½°¸£ºµ±B¡¢CÍ¬Ê¡£¬½«A-B¡¢C-AÁ½Á¾µ¥±ßÓÅ»¯ÎªÒ»Á¾»·ÐÎÍù·µ
-ÎÊÌâÈçÏÂ£º
-ÒÔÄ³¿ìµÝ¹«Ë¾µÄÊµ¼Êµ¥±ß³µÊý¾ÝÎªÀý£¨ÏßÂ·ID±àÂë;³ö·Ö²¦ÖÐÐÄ; ³ö·Ö²¦ÖÐÐÄËùÔÚÊ¡;µ½´ï·Ö²¦ÖÐÐÄ;µ½´ï·Ö²¦ÖÐÐÄËùÔÚÊ¡£»³µÐÍ£»£©£¬½øÐÐÓÅ»¯£¬ÓÅ»¯µÄ¹æÔò²ÎÕÕÒÔÉÏ£¬
-²¢ÇÒÓÅÏÈ¼¶ÒÀ´Î½µµÍ£¬ºÏ²¢µÄÊ±ºòÐèÒª¿¼ÂÇ³µÐÍ£¨·ÖÎª17.5mºÍ9.6mÁ½ÖÖ£©£º1¡¢ÏàÍ¬³µÐÍ²ÅÄÜ½øÐÐºÏ²¢£»2¡¢Á½Á¾Í¬·½ÏòµÄ9.6m¿ÉÒÔÓëÒ»Á¾17.5mµÄ¶Ô¿ª³µÐÍºÏ²¢ÓÅ»¯ ËµÃ÷£º
-ÓÅ»¯Êä³ö½á¹û°´ÕÕ¹æÔò·ÖÀà£¬ÀýÈçrule1£º 2016120001+2016120002±íÊ¾½«µ¥±ß³µÏßÂ·ID±àÂëÎª2016120001ºÍ2016120002°´ÕÕ¹æÔò1ºÏ²¢ÓÅ»¯
+åœ¨å¿«é€’å…¬å¸å¹²çº¿è¿è¾“çš„è½¦è¾†ä½¿ç”¨ä¸­ï¼Œå­˜åœ¨ç€å•è¾¹è½¦å’ŒåŒè¾¹è½¦çš„ä¸¤ç§ä½¿ç”¨åœºæ™¯ï¼Œä¾‹å¦‚ åŒ—äº¬ä¸­å¿ƒ-æ­å·žä¸­å¿ƒï¼Œä¸¤ä¸ªåˆ†æ‹¨ä¸­å¿ƒåˆ°å½¼æ­¤çš„å•é‡å¯¹ç­‰ï¼Œåˆ™å¯ä»¥å¼€åŒè¾¹è½¦ï¼ˆå³åŒä¸€è¾†è½¦å¯ä»¥å¾€è¿”å¯¹å¼€ï¼‰ï¼Œ
+è€Œå½“ä¸¤ä¸ªä¸­å¿ƒçš„å¯¹å‘å•é‡ä¸å¯¹ç­‰æ—¶ï¼Œåˆ™ä¼šé‡‡ç”¨å•è¾¹è½¦ï¼Œå¹¶ä¸”åŒè¾¹è½¦çš„æˆæœ¬æ˜¯ä½ŽäºŽå•è¾¹è½¦çš„ï¼Œå³å°†ä¸¤è¾†å¯¹å¼€çš„å•è¾¹è½¦åˆå¹¶ä¸ºä¸€è¾†å¾€è¿”çš„åŒè¾¹è½¦æ˜¯èƒ½å¤ŸèŠ‚çœè¿åŠ›æˆæœ¬çš„
+å•è¾¹è½¦ä¼˜åŒ–åŽŸåˆ™ï¼š
+å°†å•è¾¹è½¦ä¼˜åŒ–çš„è§„åˆ™è¿›è¡Œå¯æŠ½è±¡ä¸ºä»¥ä¸‹ä¸‰ç§ï¼ˆA,B,Cå‡è¡¨ç¤ºåˆ†æ‹¨ä¸­å¿ƒï¼‰ï¼š
+è§„åˆ™-1: A-Bå•è¾¹è½¦ï¼ŒB-Aå•è¾¹è½¦ ä¼˜åŒ–æ–¹æ¡ˆï¼šå°†A-Bå’ŒB-Açš„ä¸¤è¾†å•è¾¹è½¦åˆå¹¶ä¸ºåŒè¾¹ï¼›
+è§„åˆ™-2: A-Bå•è¾¹è½¦ï¼ŒB-Cå•è¾¹è½¦ï¼ŒC-Aå•è¾¹è½¦ ä¼˜åŒ–æ–¹æ¡ˆï¼šå°†A-Bã€B-Cã€C-Açš„ä¸‰è¾†å•è¾¹è½¦ä¼˜åŒ–ä¸ºä¸€è¾†çŽ¯å½¢å¾€è¿”è½¦ï¼›
+è§„åˆ™-3: A-Bå•è¾¹è½¦ï¼ŒC-Aå•è¾¹è½¦ï¼ŒBã€CåŒçœ ä¼˜åŒ–æ–¹æ¡ˆï¼šå½“Bã€CåŒçœï¼Œå°†A-Bã€C-Aä¸¤è¾†å•è¾¹ä¼˜åŒ–ä¸ºä¸€è¾†çŽ¯å½¢å¾€è¿”
+é—®é¢˜å¦‚ä¸‹ï¼š
+ä»¥æŸå¿«é€’å…¬å¸çš„å®žé™…å•è¾¹è½¦æ•°æ®ä¸ºä¾‹ï¼ˆçº¿è·¯IDç¼–ç ;å‡ºåˆ†æ‹¨ä¸­å¿ƒ; å‡ºåˆ†æ‹¨ä¸­å¿ƒæ‰€åœ¨çœ;åˆ°è¾¾åˆ†æ‹¨ä¸­å¿ƒ;åˆ°è¾¾åˆ†æ‹¨ä¸­å¿ƒæ‰€åœ¨çœï¼›è½¦åž‹ï¼›ï¼‰ï¼Œè¿›è¡Œä¼˜åŒ–ï¼Œä¼˜åŒ–çš„è§„åˆ™å‚ç…§ä»¥ä¸Šï¼Œ
+å¹¶ä¸”ä¼˜å…ˆçº§ä¾æ¬¡é™ä½Žï¼Œåˆå¹¶çš„æ—¶å€™éœ€è¦è€ƒè™‘è½¦åž‹ï¼ˆåˆ†ä¸º17.5må’Œ9.6mä¸¤ç§ï¼‰ï¼š1ã€ç›¸åŒè½¦åž‹æ‰èƒ½è¿›è¡Œåˆå¹¶ï¼›2ã€ä¸¤è¾†åŒæ–¹å‘çš„9.6må¯ä»¥ä¸Žä¸€è¾†17.5mçš„å¯¹å¼€è½¦åž‹åˆå¹¶ä¼˜åŒ– è¯´æ˜Žï¼š
+ä¼˜åŒ–è¾“å‡ºç»“æžœæŒ‰ç…§è§„åˆ™åˆ†ç±»ï¼Œä¾‹å¦‚rule1ï¼š 2016120001+2016120002è¡¨ç¤ºå°†å•è¾¹è½¦çº¿è·¯IDç¼–ç ä¸º2016120001å’Œ2016120002æŒ‰ç…§è§„åˆ™1åˆå¹¶ä¼˜åŒ–
 
-±à³ÌËµÃ÷
-±àÒëÆ÷°æ±¾: Java 1.8.0_66
-ÇëÊ¹ÓÃ±ê×¼ÊäÈëÊä³ö(System.in, System.out)£»ÒÑ½ûÓÃÍ¼ÐÎ¡¢ÎÄ¼þ¡¢ÍøÂç¡¢ÏµÍ³Ïà¹ØµÄ²Ù×÷£¬Èçjava.lang.Process , javax.swing.JFrame , Runtime.getRuntime£»
-²»Òª×Ô¶¨Òå°üÃû³Æ£¬·ñÔò»á±¨´í£¬¼´²»ÒªÌí¼Ópackage answerÖ®ÀàµÄÓï¾ä£»
-Äú¿ÉÒÔÐ´ºÜ¶à¸öÀà£¬µ«ÊÇ±ØÐëÓÐÒ»¸öÀàÃûÎªMain£¬²¢ÇÒÎªpublicÊôÐÔ£¬²¢ÇÒMainÎªÎ¨Ò»µÄpublic class£¬MainÀàµÄÀïÃæ±ØÐë°üº¬Ò»¸öÃû×ÖÎª'main'µÄ¾²Ì¬·½·¨£¨º¯Êý£©£¬Õâ¸ö·½·¨ÊÇ³ÌÐòµÄÈë¿Ú
-Ê±¼äÏÞÖÆ: 3S (C/C++ÒÔÍâµÄÓïÑÔÎª: 5 S)   ÄÚ´æÏÞÖÆ: 128M (C/C++ÒÔÍâµÄÓïÑÔÎª: 640 M)
-ÊäÈë:
-ÏßÂ·Êý¾Ý£¬´óÓÚ2ÐÐ Ã¿ÐÐÓÉ6ÁÐ×é³É ÏßÂ·ID;³ö·¢·Ö²¦ÖÐÐÄÃû³Æ;³ö·¢Ê¡Ãû³Æ;µ½´ï·Ö²¦ÖÐÐÄÃû³Æ;µ½´ïÊ¡Ãû³Æ;³µÐÍ;
-Êä³ö:
-°´ÕÕÈý¸öÓÅ»¯¹æÔòÊä³öµÄµ¥±ß³µÓÅ»¯½á¹û
-ÊäÈë·¶Àý:
-350410;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;Î÷°²ÖÐÐÄ;ÉÂÎ÷Ê¡;9.6m;
-350424;Î÷°²ÖÐÐÄ;ÉÂÎ÷Ê¡;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;9.6m;
-350428;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;³¤É³ÖÐÐÄ;ºþÄÏÊ¡;17.5m;
-350432;³¤É³ÖÐÐÄ;ºþÄÏÊ¡;ÎäººÖÐÐÄ;ºþ±±Ê¡;17.5m;
-350448;ÎäººÖÐÐÄ;ºþ±±Ê¡;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;17.5m;
-350476;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;Î«·»ÖÐÐÄ;É½¶«Ê¡;9.6m;
-350479;Î«·»ÖÐÐÄ;É½¶«Ê¡;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;17.5m;
-350481;¼ÎÐËÖÐÐÄ;Õã½­Ê¡;³É¶¼ÖÐÐÄ;ËÄ´¨Ê¡;9.6m;
-Êä³ö·¶Àý:
+ç¼–ç¨‹è¯´æ˜Ž
+ç¼–è¯‘å™¨ç‰ˆæœ¬: Java 1.8.0_66
+è¯·ä½¿ç”¨æ ‡å‡†è¾“å…¥è¾“å‡º(System.in, System.out)ï¼›å·²ç¦ç”¨å›¾å½¢ã€æ–‡ä»¶ã€ç½‘ç»œã€ç³»ç»Ÿç›¸å…³çš„æ“ä½œï¼Œå¦‚java.lang.Process , javax.swing.JFrame , Runtime.getRuntimeï¼›
+ä¸è¦è‡ªå®šä¹‰åŒ…åç§°ï¼Œå¦åˆ™ä¼šæŠ¥é”™ï¼Œå³ä¸è¦æ·»åŠ package answerä¹‹ç±»çš„è¯­å¥ï¼›
+æ‚¨å¯ä»¥å†™å¾ˆå¤šä¸ªç±»ï¼Œä½†æ˜¯å¿…é¡»æœ‰ä¸€ä¸ªç±»åä¸ºMainï¼Œå¹¶ä¸”ä¸ºpublicå±žæ€§ï¼Œå¹¶ä¸”Mainä¸ºå”¯ä¸€çš„public classï¼ŒMainç±»çš„é‡Œé¢å¿…é¡»åŒ…å«ä¸€ä¸ªåå­—ä¸º'main'çš„é™æ€æ–¹æ³•ï¼ˆå‡½æ•°ï¼‰ï¼Œè¿™ä¸ªæ–¹æ³•æ˜¯ç¨‹åºçš„å…¥å£
+æ—¶é—´é™åˆ¶: 3S (C/C++ä»¥å¤–çš„è¯­è¨€ä¸º: 5 S)   å†…å­˜é™åˆ¶: 128M (C/C++ä»¥å¤–çš„è¯­è¨€ä¸º: 640 M)
+è¾“å…¥:
+çº¿è·¯æ•°æ®ï¼Œå¤§äºŽ2è¡Œ æ¯è¡Œç”±6åˆ—ç»„æˆ çº¿è·¯ID;å‡ºå‘åˆ†æ‹¨ä¸­å¿ƒåç§°;å‡ºå‘çœåç§°;åˆ°è¾¾åˆ†æ‹¨ä¸­å¿ƒåç§°;åˆ°è¾¾çœåç§°;è½¦åž‹;
+è¾“å‡º:
+æŒ‰ç…§ä¸‰ä¸ªä¼˜åŒ–è§„åˆ™è¾“å‡ºçš„å•è¾¹è½¦ä¼˜åŒ–ç»“æžœ
+è¾“å…¥èŒƒä¾‹:
+350410;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;è¥¿å®‰ä¸­å¿ƒ;é™•è¥¿çœ;9.6m;
+350424;è¥¿å®‰ä¸­å¿ƒ;é™•è¥¿çœ;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;9.6m;
+350428;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;é•¿æ²™ä¸­å¿ƒ;æ¹–å—çœ;17.5m;
+350432;é•¿æ²™ä¸­å¿ƒ;æ¹–å—çœ;æ­¦æ±‰ä¸­å¿ƒ;æ¹–åŒ—çœ;17.5m;
+350448;æ­¦æ±‰ä¸­å¿ƒ;æ¹–åŒ—çœ;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;17.5m;
+350476;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;æ½åŠä¸­å¿ƒ;å±±ä¸œçœ;9.6m;
+350479;æ½åŠä¸­å¿ƒ;å±±ä¸œçœ;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;17.5m;
+350481;å˜‰å…´ä¸­å¿ƒ;æµ™æ±Ÿçœ;æˆéƒ½ä¸­å¿ƒ;å››å·çœ;9.6m;
+è¾“å‡ºèŒƒä¾‹:
 rule1:350410+350424
 rule2:350428+350432+350448
 
@@ -71,25 +71,25 @@ public class Main {
 		
 	}
 	
-	public static boolean isRule1(UnilateralLine entry1, UnilateralLine entry2) {// A-Bµ¥±ß³µ£¬B-Aµ¥±ß³µ
+	public static boolean isRule1(UnilateralLine entry1, UnilateralLine entry2) {// A-Bå•è¾¹è½¦ï¼ŒB-Aå•è¾¹è½¦
 		return entry1.sCen.equals(entry2.eCen) && entry1.eCen.equals(entry2.sCen);
 	}
-	public static boolean isRule2(UnilateralLine entry1, UnilateralLine entry2, UnilateralLine entry3) {//A-Bµ¥±ß³µ£¬B-Cµ¥±ß³µ£¬C-Aµ¥±ß³µ 
+	public static boolean isRule2(UnilateralLine entry1, UnilateralLine entry2, UnilateralLine entry3) {//A-Bå•è¾¹è½¦ï¼ŒB-Cå•è¾¹è½¦ï¼ŒC-Aå•è¾¹è½¦ 
 		return entry1.sCen.equals(entry3.eCen) && entry1.eCen.equals(entry2.sCen) && entry2.eCen.equals(entry3.sCen);
 	}
-	public static boolean isRule3(UnilateralLine entry1, UnilateralLine entry2) {//A-Bµ¥±ß³µ£¬C-Aµ¥±ß³µ£¬B¡¢CÍ¬Ê¡
+	public static boolean isRule3(UnilateralLine entry1, UnilateralLine entry2) {//A-Bå•è¾¹è½¦ï¼ŒC-Aå•è¾¹è½¦ï¼ŒBã€CåŒçœ
 		return entry1.sCen.equals(entry2.eCen) && entry1.ePro.equals(entry2.sPro);
 	}
 	
 
 	public static class UnilateralLine {
 		private String id;
-		private String sCen;// ³ö·¢·Ö²¦
-		private String sPro;// ³ö·¢Ê¡
-		private String eCen;// µ½´ï·Ö²¦
-		private String ePro;// µ½´ïÊ¡
+		private String sCen;// å‡ºå‘åˆ†æ‹¨
+		private String sPro;// å‡ºå‘çœ
+		private String eCen;// åˆ°è¾¾åˆ†æ‹¨
+		private String ePro;// åˆ°è¾¾çœ
 		// 9.6m/17.5m
-		private String tType;// ³µÐÍ
+		private String tType;// è½¦åž‹
 
 		public UnilateralLine(String id, String sCen, String sPro, String eCen, String ePro, String tType) {
 			this.id = id;

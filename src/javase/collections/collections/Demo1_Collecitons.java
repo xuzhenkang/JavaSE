@@ -6,7 +6,7 @@ import java.util.Collections;
 public class Demo1_Collecitons {
 
 	/**
-	 * 	CollecitonsÖĞµÄ³£¼û·½·¨
+	 * 	Collecitonsä¸­çš„å¸¸è§æ–¹æ³•
 	 * 	public static <T> void sort(List<T> list)
 		public static <T> int binarySearch(List<?> list,T key)
 		public static <T> T max(Collection<?> coll)
@@ -22,9 +22,9 @@ public class Demo1_Collecitons {
 		list.add("d");
 		list.add("g");
 		list.add("f");
-		//System.out.println(Collections.max(list)); 			//¸ù¾İÄ¬ÈÏÅÅĞò½á¹û»ñÈ¡¼¯ºÏÖĞµÄ×î´óÖµ
-		//Collections.reverse(list);							//·´×ª¼¯ºÏ
-		Collections.shuffle(list);								//Ëæ»úÖÃ»»,¿ÉÒÔÓÃÀ´Ï´ÅÆ
+		//System.out.println(Collections.max(list)); 			//æ ¹æ®é»˜è®¤æ’åºç»“æœè·å–é›†åˆä¸­çš„æœ€å¤§å€¼
+		//Collections.reverse(list);							//åè½¬é›†åˆ
+		Collections.shuffle(list);								//éšæœºç½®æ¢,å¯ä»¥ç”¨æ¥æ´—ç‰Œ
 		System.out.println(list);
 	}
 
@@ -49,7 +49,7 @@ public class Demo1_Collecitons {
 		list.add("d");
 		
 		System.out.println(list);
-		Collections.sort(list);						//½«¼¯ºÏÅÅĞò
+		Collections.sort(list);						//å°†é›†åˆæ’åº
 		System.out.println(list);
 	}
 

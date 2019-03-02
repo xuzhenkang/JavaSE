@@ -7,29 +7,29 @@ import java.util.Map.Entry;
 public class Demo3_Iterator {
 
 	/**
-	 * Map¼¯ºÏµÄµÚ¶şÖÖµü´ú,¸ù¾İ¼üÖµ¶Ô¶ÔÏó,»ñÈ¡¼üºÍÖµ
-	 *  A:¼üÖµ¶Ô¶ÔÏóÕÒ¼üºÍÖµË¼Â·£º
-		* »ñÈ¡ËùÓĞ¼üÖµ¶Ô¶ÔÏóµÄ¼¯ºÏ
-		* ±éÀú¼üÖµ¶Ô¶ÔÏóµÄ¼¯ºÏ£¬»ñÈ¡µ½Ã¿Ò»¸ö¼üÖµ¶Ô¶ÔÏó
-		* ¸ù¾İ¼üÖµ¶Ô¶ÔÏóÕÒ¼üºÍÖµ
+	 * Mapé›†åˆçš„ç¬¬äºŒç§è¿­ä»£,æ ¹æ®é”®å€¼å¯¹å¯¹è±¡,è·å–é”®å’Œå€¼
+	 *  A:é”®å€¼å¯¹å¯¹è±¡æ‰¾é”®å’Œå€¼æ€è·¯ï¼š
+		* è·å–æ‰€æœ‰é”®å€¼å¯¹å¯¹è±¡çš„é›†åˆ
+		* éå†é”®å€¼å¯¹å¯¹è±¡çš„é›†åˆï¼Œè·å–åˆ°æ¯ä¸€ä¸ªé”®å€¼å¯¹å¯¹è±¡
+		* æ ¹æ®é”®å€¼å¯¹å¯¹è±¡æ‰¾é”®å’Œå€¼
 	 */
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<>();
-		map.put("ÕÅÈı", 23);
-		map.put("ÀîËÄ", 24);
-		map.put("ÍõÎå", 25);
-		map.put("ÕÔÁù", 26);
+		map.put("å¼ ä¸‰", 23);
+		map.put("æå››", 24);
+		map.put("ç‹äº”", 25);
+		map.put("èµµå…­", 26);
 		
-		//Map.EntryËµÃ÷EntryÊÇMapµÄÄÚ²¿½Ó¿Ú,½«¼üºÍÖµ·â×°³ÉÁËEntry¶ÔÏó,²¢´æ´¢ÔÚSet¼¯ºÏÖĞ
+		//Map.Entryè¯´æ˜Entryæ˜¯Mapçš„å†…éƒ¨æ¥å£,å°†é”®å’Œå€¼å°è£…æˆäº†Entryå¯¹è±¡,å¹¶å­˜å‚¨åœ¨Seté›†åˆä¸­
 		/*Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
-		//»ñÈ¡Ã¿Ò»¸ö¶ÔÏó
+		//è·å–æ¯ä¸€ä¸ªå¯¹è±¡
 		Iterator<Map.Entry<String, Integer>> it = entrySet.iterator();
 		while(it.hasNext()) {
-			//»ñÈ¡Ã¿Ò»¸öEntry¶ÔÏó
-			Map.Entry<String, Integer> en = it.next();	//¸¸ÀàÒıÓÃÖ¸Ïò×ÓÀà¶ÔÏó
-			//Entry<String, Integer> en = it.next();	//Ö±½Ó»ñÈ¡µÄÊÇ×ÓÀà¶ÔÏó
-			String key = en.getKey();					//¸ù¾İ¼üÖµ¶Ô¶ÔÏó»ñÈ¡¼ü
-			Integer value = en.getValue();				//¸ù¾İ¼üÖµ¶Ô¶ÔÏó»ñÈ¡Öµ
+			//è·å–æ¯ä¸€ä¸ªEntryå¯¹è±¡
+			Map.Entry<String, Integer> en = it.next();	//çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡
+			//Entry<String, Integer> en = it.next();	//ç›´æ¥è·å–çš„æ˜¯å­ç±»å¯¹è±¡
+			String key = en.getKey();					//æ ¹æ®é”®å€¼å¯¹å¯¹è±¡è·å–é”®
+			Integer value = en.getValue();				//æ ¹æ®é”®å€¼å¯¹å¯¹è±¡è·å–å€¼
 			System.out.println(key + "=" + value);
 		}*/
 		

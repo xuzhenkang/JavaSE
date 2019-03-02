@@ -7,47 +7,47 @@ import java.util.Iterator;
 public class Demo10_ArrayList {
 
 	/**
-	 * * A:°¸ÀıÑİÊ¾
-			* ĞèÇó£ºArrayListÈ¥³ı¼¯ºÏÖĞ×Ô¶¨Òå¶ÔÏóÔªËØµÄÖØ¸´Öµ(¶ÔÏóµÄ³ÉÔ±±äÁ¿ÖµÏàÍ¬)
-		* B:×¢ÒâÊÂÏî
-			* ÖØĞ´equals()·½·¨µÄ
-		contains·½·¨ÅĞ¶ÏÊÇ·ñ°üº¬,µ×²ãÒÀÀµµÄÊÇequals·½·¨
-		remove·½·¨ÅĞ¶ÏÊÇ·ñÉ¾³ı,µ×²ãÒÀÀµµÄÊÇequals·½·¨
+	 * * A:æ¡ˆä¾‹æ¼”ç¤º
+			* éœ€æ±‚ï¼šArrayListå»é™¤é›†åˆä¸­è‡ªå®šä¹‰å¯¹è±¡å…ƒç´ çš„é‡å¤å€¼(å¯¹è±¡çš„æˆå‘˜å˜é‡å€¼ç›¸åŒ)
+		* B:æ³¨æ„äº‹é¡¹
+			* é‡å†™equals()æ–¹æ³•çš„
+		containsæ–¹æ³•åˆ¤æ–­æ˜¯å¦åŒ…å«,åº•å±‚ä¾èµ–çš„æ˜¯equalsæ–¹æ³•
+		removeæ–¹æ³•åˆ¤æ–­æ˜¯å¦åˆ é™¤,åº•å±‚ä¾èµ–çš„æ˜¯equalsæ–¹æ³•
 	 */
 	public static void main(String[] args) {
-		ArrayList list = new ArrayList();				//´´½¨¼¯ºÏ¶ÔÏó
-		list.add(new Person("ÕÅÈı", 23));
-		list.add(new Person("ÕÅÈı", 23));
-		list.add(new Person("ÀîËÄ", 24));
-		list.add(new Person("ÀîËÄ", 24));
-		list.add(new Person("ÀîËÄ", 24));
-		list.add(new Person("ÀîËÄ", 24));
+		ArrayList list = new ArrayList();				//åˆ›å»ºé›†åˆå¯¹è±¡
+		list.add(new Person("å¼ ä¸‰", 23));
+		list.add(new Person("å¼ ä¸‰", 23));
+		list.add(new Person("æå››", 24));
+		list.add(new Person("æå››", 24));
+		list.add(new Person("æå››", 24));
+		list.add(new Person("æå››", 24));
 		
-		//ArrayList newList = getSingle(list);			//µ÷ÓÃ·½·¨È¥³ıÖØ¸´
+		//ArrayList newList = getSingle(list);			//è°ƒç”¨æ–¹æ³•å»é™¤é‡å¤
 		//System.out.println(newList);
-		list.remove(new Person("ÕÅÈı", 23));
+		list.remove(new Person("å¼ ä¸‰", 23));
 		System.out.println(list);
 	}
 
 	/*
-	 * ´´½¨ĞÂ¼¯ºÏ½«ÖØ¸´ÔªËØÈ¥µô
-	 * 1,Ã÷È··µ»ØÖµÀàĞÍ,·µ»ØArrayList
-	 * 2,Ã÷È·²ÎÊıÁĞ±íArrayList
+	 * åˆ›å»ºæ–°é›†åˆå°†é‡å¤å…ƒç´ å»æ‰
+	 * 1,æ˜ç¡®è¿”å›å€¼ç±»å‹,è¿”å›ArrayList
+	 * 2,æ˜ç¡®å‚æ•°åˆ—è¡¨ArrayList
 	 * 
-	 * ·ÖÎö:
-	 * 1,´´½¨ĞÂ¼¯ºÏ
-	 * 2,¸ù¾İ´«ÈëµÄ¼¯ºÏ(ÀÏ¼¯ºÏ)»ñÈ¡µü´úÆ÷
-	 * 3,±éÀúÀÏ¼¯ºÏ
-	 * 4,Í¨¹ıĞÂ¼¯ºÏÅĞ¶ÏÊÇ·ñ°üº¬ÀÏ¼¯ºÏÖĞµÄÔªËØ,Èç¹û°üº¬¾Í²»Ìí¼Ó,Èç¹û²»°üº¬¾ÍÌí¼Ó
+	 * åˆ†æ:
+	 * 1,åˆ›å»ºæ–°é›†åˆ
+	 * 2,æ ¹æ®ä¼ å…¥çš„é›†åˆ(è€é›†åˆ)è·å–è¿­ä»£å™¨
+	 * 3,éå†è€é›†åˆ
+	 * 4,é€šè¿‡æ–°é›†åˆåˆ¤æ–­æ˜¯å¦åŒ…å«è€é›†åˆä¸­çš„å…ƒç´ ,å¦‚æœåŒ…å«å°±ä¸æ·»åŠ ,å¦‚æœä¸åŒ…å«å°±æ·»åŠ 
 	 */
 	public static ArrayList getSingle(ArrayList list) {
-		ArrayList newList = new ArrayList<>();					//1,´´½¨ĞÂ¼¯ºÏ
-		Iterator it = list.iterator();							//2,¸ù¾İ´«ÈëµÄ¼¯ºÏ(ÀÏ¼¯ºÏ)»ñÈ¡µü´úÆ÷
+		ArrayList newList = new ArrayList<>();					//1,åˆ›å»ºæ–°é›†åˆ
+		Iterator it = list.iterator();							//2,æ ¹æ®ä¼ å…¥çš„é›†åˆ(è€é›†åˆ)è·å–è¿­ä»£å™¨
 		
-		while(it.hasNext()) {									//3,±éÀúÀÏ¼¯ºÏ
-			Object obj = it.next();								//¼ÇÂ¼×¡Ã¿Ò»¸öÔªËØ
-			if(!newList.contains(obj)) {						//Èç¹ûĞÂ¼¯ºÏÖĞ²»°üº¬ÀÏ¼¯ºÏÖĞµÄÔªËØ
-				newList.add(obj);								//½«¸ÃÔªËØÌí¼Ó
+		while(it.hasNext()) {									//3,éå†è€é›†åˆ
+			Object obj = it.next();								//è®°å½•ä½æ¯ä¸€ä¸ªå…ƒç´ 
+			if(!newList.contains(obj)) {						//å¦‚æœæ–°é›†åˆä¸­ä¸åŒ…å«è€é›†åˆä¸­çš„å…ƒç´ 
+				newList.add(obj);								//å°†è¯¥å…ƒç´ æ·»åŠ 
 			}
 		}
 		

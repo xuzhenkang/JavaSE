@@ -1,28 +1,28 @@
 package datastructure.linearlist;
 
 /**
- * ×¢Òâ£¬´ËLinkedListÓëjdkÖĞµÄLinkedListÊÇ²»Í¬µÄ£¬ ±¾LinkedListÖ»ÎªÁË½âÊÍÁ´±íµÄÊı¾İ½á¹¹¡£
+ * æ³¨æ„ï¼Œæ­¤LinkedListä¸jdkä¸­çš„LinkedListæ˜¯ä¸åŒçš„ï¼Œ æœ¬LinkedListåªä¸ºäº†è§£é‡Šé“¾è¡¨çš„æ•°æ®ç»“æ„ã€‚
  * 
  * @author kang
  *
  */
 public class LinkedList {
 	/**
-	 * Êı¾İÓò
+	 * æ•°æ®åŸŸ
 	 */
 	private int data;
 	/**
-	 * Ö¸ÕëÓò
+	 * æŒ‡é’ˆåŸŸ
 	 */
 	private LinkedList next = null;
 
 	/**
-	 * ÊÇ·ñ´øÍ·½áµã
+	 * æ˜¯å¦å¸¦å¤´ç»“ç‚¹
 	 */
 	private boolean withHead = true;
 
 	/**
-	 * ¼ÙÉèÊı×éaÖĞÓĞn¸öÔªËØ¡£Î²²å·¨´´½¨Á´±í¡£(²»´øÍ·½áµã)
+	 * å‡è®¾æ•°ç»„aä¸­æœ‰nä¸ªå…ƒç´ ã€‚å°¾æ’æ³•åˆ›å»ºé“¾è¡¨ã€‚(ä¸å¸¦å¤´ç»“ç‚¹)
 	 * 
 	 * @param a
 	 */
@@ -42,7 +42,7 @@ public class LinkedList {
 	}
 
 	/**
-	 * ´´½¨Ò»¸ö´øÓĞÍ·½áµãµÄÁ´±í£¬²ÉÓÃÎ²²å·¨
+	 * åˆ›å»ºä¸€ä¸ªå¸¦æœ‰å¤´ç»“ç‚¹çš„é“¾è¡¨ï¼Œé‡‡ç”¨å°¾æ’æ³•
 	 * @param a
 	 */
 	private void createListR(int[] a) {
@@ -60,7 +60,7 @@ public class LinkedList {
 	}
 
 	/**
-	 * ²»´øÍ·½áµãµÄÁ´±í²»ÄÜÊ¹ÓÃÍ·²å·¨
+	 * ä¸å¸¦å¤´ç»“ç‚¹çš„é“¾è¡¨ä¸èƒ½ä½¿ç”¨å¤´æ’æ³•
 	 * 
 	 * @param a
 	 */
@@ -86,7 +86,7 @@ public class LinkedList {
 	
 
 	/**
-	 * AºÍBÊÇÁ½¸öµ¥Á´±í£¨´øÍ·½áµã£©£¬ÆäÖĞÔªËØµİÔöÓĞĞò£¬Éè¼ÆÒ»¸öËã·¨ ½«AºÍB¹é²¢³ÉÒ»¸ö°´ÔªËØÖµ·Ñµİ¼õÓĞĞòµÄÁ´±íC£¬CÓÉAºÍBÖĞµÄ½áµã×é³É¡£
+	 * Aå’ŒBæ˜¯ä¸¤ä¸ªå•é“¾è¡¨ï¼ˆå¸¦å¤´ç»“ç‚¹ï¼‰ï¼Œå…¶ä¸­å…ƒç´ é€’å¢æœ‰åºï¼Œè®¾è®¡ä¸€ä¸ªç®—æ³• å°†Aå’ŒBå½’å¹¶æˆä¸€ä¸ªæŒ‰å…ƒç´ å€¼è´¹é€’å‡æœ‰åºçš„é“¾è¡¨Cï¼ŒCç”±Aå’ŒBä¸­çš„ç»“ç‚¹ç»„æˆã€‚
 	 */
 
 	
@@ -101,22 +101,22 @@ public class LinkedList {
 	}
 	/**
 	 * 
-	 * @param a Êı×é
-	 * @param withHead ÊÇ·ñ´øÓĞÍ·½áµã
-	 * @param isTailInsert ÊÇ·ñÎªÎ²²å·¨´´½¨Á´±í(true´ú±í²ÉÓÃÎ²²å·¨´´½¨£¬false´ú±í²ÉÓÃÍ·²å·¨´´½¨)
+	 * @param a æ•°ç»„
+	 * @param withHead æ˜¯å¦å¸¦æœ‰å¤´ç»“ç‚¹
+	 * @param isTailInsert æ˜¯å¦ä¸ºå°¾æ’æ³•åˆ›å»ºé“¾è¡¨(trueä»£è¡¨é‡‡ç”¨å°¾æ’æ³•åˆ›å»ºï¼Œfalseä»£è¡¨é‡‡ç”¨å¤´æ’æ³•åˆ›å»º)
 	 * @throws HeadInsertNoHeadLinkedListException 
 	 */
 	public LinkedList(int[] a, boolean withHead, boolean isTailInsert) throws HeadInsertNoHeadLinkedListException {
 		this.withHead = withHead;
-		// ²»´øÍ·½áµãÎŞ·¨²ÉÓÃÍ·²å·¨
+		// ä¸å¸¦å¤´ç»“ç‚¹æ— æ³•é‡‡ç”¨å¤´æ’æ³•
 		if (!withHead && !isTailInsert) {
 			throw new HeadInsertNoHeadLinkedListException();
 		} else if (!withHead && isTailInsert) {
-			this.createNoHeadListR(a);// µ÷ÓÃ²»´øÍ·½áµãµÄÎ²²å·¨
+			this.createNoHeadListR(a);// è°ƒç”¨ä¸å¸¦å¤´ç»“ç‚¹çš„å°¾æ’æ³•
 		} else if (withHead && isTailInsert) {
-			this.createListR(a); // µ÷ÓÃ´øÍ·½áµãµÄÎ²²å·¨
+			this.createListR(a); // è°ƒç”¨å¸¦å¤´ç»“ç‚¹çš„å°¾æ’æ³•
 		} else  {
-			this.createListF(a);// µ÷ÓÃ´øÍ·½áµãµÄÍ·²å·¨
+			this.createListF(a);// è°ƒç”¨å¸¦å¤´ç»“ç‚¹çš„å¤´æ’æ³•
 		} 
 	}
 	
@@ -135,7 +135,7 @@ public class LinkedList {
 		return result;
 	}
 
-	// ¸ÃÁ´±íÊÇ·ñÓĞ´øÓĞÍ·½áµãµÄÁ´±í
+	// è¯¥é“¾è¡¨æ˜¯å¦æœ‰å¸¦æœ‰å¤´ç»“ç‚¹çš„é“¾è¡¨
 	public boolean isWithHead() {
 		return withHead;
 	}
@@ -145,12 +145,12 @@ public class LinkedList {
 		private static final long serialVersionUID = 1L;
 
 		public HeadInsertNoHeadLinkedListException() {
-			super("²»´øÍ·½áµãÎŞ·¨²ÉÓÃÍ·²å·¨¡£");
+			super("ä¸å¸¦å¤´ç»“ç‚¹æ— æ³•é‡‡ç”¨å¤´æ’æ³•ã€‚");
 		}
 	}
 	
 	/**
-	 * »ªÎªÃæÊÔÌâ£ºµ¹ÖÃÒ»¸öÁ´±í
+	 * åä¸ºé¢è¯•é¢˜ï¼šå€’ç½®ä¸€ä¸ªé“¾è¡¨
 	 */
 	
 	

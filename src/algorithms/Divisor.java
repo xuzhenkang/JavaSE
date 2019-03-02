@@ -1,5 +1,5 @@
 package algorithms;
-// 求n个整数的最大公约数
+// 姹俷涓暣鏁扮殑鏈�澶у叕绾︽暟
 public class Divisor {
 
 	public int getMaxDivisor(int[] array) {
@@ -15,7 +15,7 @@ public class Divisor {
 				return j;
 			}
 		}
-		return -1;// 无最大公约数
+		return -1;// 鏃犳渶澶у叕绾︽暟
 	}
 
 	public int getMin(int[] a) {

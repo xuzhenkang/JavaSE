@@ -1,14 +1,14 @@
 package javase.important_object.string;
 /**
- * - A:StringµÄ×ª»»¹¦ÄÜ£º
-    - byte[] getBytes():°Ñ×Ö·û´®×ª»»³É×Ö·ûÊı×é¡£
-    - char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊı×é
-    - static String valueOf(char[] chs):°Ñ×Ö·ûÊı×é×ª³É×Ö·û´®¡£
+ * - A:Stringçš„è½¬æ¢åŠŸèƒ½ï¼š
+    - byte[] getBytes():æŠŠå­—ç¬¦ä¸²è½¬æ¢æˆå­—ç¬¦æ•°ç»„ã€‚
+    - char[] toCharArray():æŠŠå­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+    - static String valueOf(char[] chs):æŠŠå­—ç¬¦æ•°ç»„è½¬æˆå­—ç¬¦ä¸²ã€‚
 
-        - ×¢Òâ£ºStringÀàµÄvalueOf·½·¨¿ÉÒÔ°ÑÈÎÒâÀàĞÍµÄÊı¾İ×ª»»³É×Ö·û´®
-    - String toLowerCase():°Ñ×Ö·û´®×ª³ÉĞ¡Ğ´¡£(ÁË½â)
-    - String toUpperCase():°Ñ×Ö·û´®×ª³É´óĞ´¡£
-    - String concat(String str):°Ñ×Ö·û´®Æ´½Ó¡£
+        - æ³¨æ„ï¼šStringç±»çš„valueOfæ–¹æ³•å¯ä»¥æŠŠä»»æ„ç±»å‹çš„æ•°æ®è½¬æ¢æˆå­—ç¬¦ä¸²
+    - String toLowerCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå°å†™ã€‚(äº†è§£)
+    - String toUpperCase():æŠŠå­—ç¬¦ä¸²è½¬æˆå¤§å†™ã€‚
+    - String concat(String str):æŠŠå­—ç¬¦ä¸²æ‹¼æ¥ã€‚
  * @author Dan
  *
  */

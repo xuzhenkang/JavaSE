@@ -2,7 +2,7 @@ package javase.base.operator.relational_operator;
 
 class Demo1_Operator {
 	public static void main(String[] args) {
-		//¹ØÏµÔËËã·û
+		//å…³ç³»è¿ç®—ç¬¦
 		//==,!=,>,>=,<,<= 
 		System.out.println(4 == 3);
 		System.out.println(4 != 3);

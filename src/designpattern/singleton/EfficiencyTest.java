@@ -3,15 +3,15 @@ package designpattern.singleton;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * ���Զ��̻߳��������ֵ���ģʽ��Ч�����
+ * 测试多线程环境下五种单例模式的效率情况
  * 
- * ���Խ����
- * �ٶȣ��ɿ쵽������ö�ٵ���ģʽ>����ʽ����ģʽ>��̬�ڲ��൥��ģʽ>˫�ؼ��������ģʽ>����ʽ����ģʽ
+ * 测试结果：
+ * 速度（由快到慢）：枚举单例模式>饿汉式单例模式>静态内部类单例模式>双重检测锁单例模式>懒汉式单例模式
  * 
- * ʹ��ԭ��
- * ��������ռ����Դ�٣�����Ҫ�ӳټ��أ� ö��ʽ���ڶ���ʽ
- * ��������ռ����Դ����Ҫ�ӳټ��أ���̬�ڲ���ʽ��������ʽ
- * ˫�ؼ����ʽ ����JVM�ײ��ڲ�ģ�͵�ԭ��ż����������⣬������ʹ�á�
+ * 使用原则：
+ * 单例对象占用资源少，不需要延迟加载， 枚举式由于饿汉式
+ * 单例对象占用资源大，需要延迟加载，静态内部类式由于懒汉式
+ * 双重检测锁式 由于JVM底层内部模型的原因，偶尔会出现问题，不建议使用。
  * 
  * @author Kang
  *
@@ -30,11 +30,11 @@ public class EfficiencyTest {
 				@Override
 				public void run() {
 					for (int i = 0; i < 10000000; i++) {
-//						Object o = SingletonHungry.getInstance(); //���н���� 41
-//						Object o = SingletonLazy.getInstance(); // ���н����23389
-//						Object o = SingletonDCL.getInstance(); // ���н����175
-//						Object o = SingletonSIC.getInstance(); // ���н����54
-						SingletonEnum e = SingletonEnum.INSTANCE; // ���н����34
+//						Object o = SingletonHungry.getInstance(); //运行结果： 41
+//						Object o = SingletonLazy.getInstance(); // 运行结果：23389
+//						Object o = SingletonDCL.getInstance(); // 运行结果：175
+//						Object o = SingletonSIC.getInstance(); // 运行结果：54
+						SingletonEnum e = SingletonEnum.INSTANCE; // 运行结果：34
 					}
 					cdl.countDown();
 				}

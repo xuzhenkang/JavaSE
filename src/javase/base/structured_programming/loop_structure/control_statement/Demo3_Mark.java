@@ -1,7 +1,7 @@
 package javase.base.structured_programming.loop_structure.control_statement;
-class Demo3_Mark {										//mark ±ê¼Ç
+class Demo3_Mark {										//mark æ ‡è®°
 	public static void main(String[] args) {
-		/*outer: for (int i = 1;i <= 10 ;i++ ) {		//a¾ÍÊÇ±êºÅ,Ö»ÒªÊÇºÏ·¨µÄ±êÊ¶·û¼´¿É
+		/*outer: for (int i = 1;i <= 10 ;i++ ) {		//aå°±æ˜¯æ ‡å·,åªè¦æ˜¯åˆæ³•çš„æ ‡è¯†ç¬¦å³å¯
 			System.out.println("i = " + i);
 			inner: for (int j = 1;j <= 10 ;j++ ) {
 				System.out.println("j = " + j);
@@ -9,8 +9,8 @@ class Demo3_Mark {										//mark ±ê¼Ç
 			}
 		}*/
 
-		System.out.println("´ó¼ÒºÃ");
+		System.out.println("å¤§å®¶å¥½");
 		http://www.heima.com
-		System.out.println("²ÅÊÇÕæµÄºÃ");
+		System.out.println("æ‰æ˜¯çœŸçš„å¥½");
 	}
 }

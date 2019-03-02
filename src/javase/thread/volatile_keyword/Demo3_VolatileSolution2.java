@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * <h4>²ÉÓÃLockµÄ·½Ê½</h4>
+ * <h4>é‡‡ç”¨Lockçš„æ–¹å¼</h4>
  * @author Kang
  *
  */
@@ -13,12 +13,12 @@ public class Demo3_VolatileSolution2 {
 	private volatile int inc = 0;
 	Lock lock = new ReentrantLock();
 	/**
-	 * volatile¹Ø¼ü×ÖÄÜ±£Ö¤¿É¼ûĞÔÃ»ÓĞ´í£¬µ«ÊÇÉÏÃæµÄ³ÌĞò´íÔÚÃ»ÄÜ±£Ö¤Ô­×ÓĞÔ¡£¿É¼ûĞÔÖ»ÄÜ±£Ö¤Ã¿´Î¶ÁÈ¡µÄÊÇ×îĞÂµÄÖµ£¬µ«ÊÇvolatileÃ»°ì·¨±£Ö¤¶Ô±äÁ¿µÄ²Ù×÷µÄÔ­×ÓĞÔ¡£
+	 * volatileå…³é”®å­—èƒ½ä¿è¯å¯è§æ€§æ²¡æœ‰é”™ï¼Œä½†æ˜¯ä¸Šé¢çš„ç¨‹åºé”™åœ¨æ²¡èƒ½ä¿è¯åŸå­æ€§ã€‚å¯è§æ€§åªèƒ½ä¿è¯æ¯æ¬¡è¯»å–çš„æ˜¯æœ€æ–°çš„å€¼ï¼Œä½†æ˜¯volatileæ²¡åŠæ³•ä¿è¯å¯¹å˜é‡çš„æ“ä½œçš„åŸå­æ€§ã€‚
 	 */
 	public synchronized void increase() {
 		lock.lock();
 		try {
-			this.inc++; // ×ÔÔö²Ù×÷²»ÊÇÔ­×ÓĞÔ²Ù×÷£¡Òò´Ëµ¼ÖÂ½á¹û²»ÕıÈ·
+			this.inc++; // è‡ªå¢æ“ä½œä¸æ˜¯åŸå­æ€§æ“ä½œï¼å› æ­¤å¯¼è‡´ç»“æœä¸æ­£ç¡®
 		} finally {
 			lock.unlock();
 		}
@@ -43,7 +43,7 @@ public class Demo3_VolatileSolution2 {
 			}.start();
 		}
 
-		while (Thread.activeCount() > 1) { // ±£Ö¤Ç°ÃæµÄÏß³Ì¶¼Ö´ĞĞÍê
+		while (Thread.activeCount() > 1) { // ä¿è¯å‰é¢çš„çº¿ç¨‹éƒ½æ‰§è¡Œå®Œ
 			Thread.yield();
 		}
 		System.out.println(t.getInc());

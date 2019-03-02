@@ -7,25 +7,25 @@ public class Demo9_Hashtable {
 
 	/**
 	 * @param args
-	 * ÃæÊÔÌâ
-	 * HashMapºÍHashtableµÄÇø±ğ
-	 * ¹²Í¬µã:
-	 * µ×²ã¶¼ÊÇ¹şÏ£Ëã·¨,¶¼ÊÇË«ÁĞ¼¯ºÏ
-	 * Çø±ğ:
-	 * 1,HashMapÊÇÏß³Ì²»°²È«µÄ,Ğ§ÂÊ¸ß,JDK1.2°æ±¾
-	 *   HashtableÊÇÏß³Ì°²È«µÄ,Ğ§ÂÊµÍ,JDK1.0°æ±¾µÄ
-	 * 2,HashMap¿ÉÒÔ´æ´¢null¼üºÍnullÖµ
-	 *   Hashtable²»¿ÉÒÔ´æ´¢null¼üºÍnullÖµ
+	 * é¢è¯•é¢˜
+	 * HashMapå’ŒHashtableçš„åŒºåˆ«
+	 * å…±åŒç‚¹:
+	 * åº•å±‚éƒ½æ˜¯å“ˆå¸Œç®—æ³•,éƒ½æ˜¯åŒåˆ—é›†åˆ
+	 * åŒºåˆ«:
+	 * 1,HashMapæ˜¯çº¿ç¨‹ä¸å®‰å…¨çš„,æ•ˆç‡é«˜,JDK1.2ç‰ˆæœ¬
+	 *   Hashtableæ˜¯çº¿ç¨‹å®‰å…¨çš„,æ•ˆç‡ä½,JDK1.0ç‰ˆæœ¬çš„
+	 * 2,HashMapå¯ä»¥å­˜å‚¨nullé”®å’Œnullå€¼
+	 *   Hashtableä¸å¯ä»¥å­˜å‚¨nullé”®å’Œnullå€¼
 	 */
 	public static void main(String[] args) {
 		HashMap<String, Integer> hm = new HashMap<>();
 		hm.put(null, 23);
-		hm.put("ÀîËÄ", null);
+		hm.put("æå››", null);
 		System.out.println(hm);
 		
 		/*Hashtable<String, Integer> ht = new Hashtable<>();
 		//ht.put(null, 23);
-		ht.put("ÕÅÈı", null);
+		ht.put("å¼ ä¸‰", null);
 		System.out.println(ht);*/
 		
 		
